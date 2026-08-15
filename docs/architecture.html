@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dias Irae — Architecture</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #eee8dc;
+      --muted: #aaa295;
+      --surface: #181715;
+      --surface-raised: #211f1c;
+      --line: #3d3933;
+      --accent: #d36a43;
+      --accent-soft: #603524;
+      --success: #98b884;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #11100f;
+      color: var(--ink);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main { width: min(920px, calc(100% - 40px)); margin: 0 auto; padding: 64px 0 96px; }
+    header { border-bottom: 1px solid var(--line); padding-bottom: 32px; margin-bottom: 44px; }
+    h1, h2, h3 { line-height: 1.2; }
+    h1 { margin: 0 0 10px; font-family: Georgia, serif; font-size: clamp(2.5rem, 6vw, 4.5rem); }
+    h2 { margin: 52px 0 18px; font-size: 1.65rem; }
+    h3 { margin: 0 0 8px; font-size: 1.05rem; }
+    p, li { max-width: 76ch; }
+    a { color: #efa27e; }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    code { color: #f0b596; }
+    pre {
+      overflow-x: auto;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      color: #ded7ca;
+    }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 12px 14px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { color: var(--muted); font-size: .82rem; letter-spacing: .06em; text-transform: uppercase; }
+    .eyebrow { margin: 0 0 8px; color: var(--accent); font-size: .78rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+    .lede { margin: 0; color: var(--muted); font-size: 1.15rem; }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 22px; color: var(--muted); font-size: .9rem; }
+    .callout { padding: 20px 22px; border-left: 3px solid var(--accent); background: var(--surface); }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+    .card, .phase { padding: 20px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+    .card p, .phase p { margin: 0; color: var(--muted); }
+    .flow { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; align-items: stretch; }
+    .flow div { position: relative; display: grid; place-items: center; min-height: 72px; padding: 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface-raised); text-align: center; }
+    .flow div:not(:last-child)::after { content: "→"; position: absolute; z-index: 1; top: 50%; right: -15px; transform: translateY(-50%); color: var(--accent); }
+    .phase { margin-bottom: 14px; }
+    .phase-head { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; margin-bottom: 12px; }
+    .phase-number { color: var(--accent); font-weight: 700; }
+    .exit { color: var(--success); }
+    footer { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+    @media (max-width: 720px) {
+      main { width: min(100% - 28px, 920px); padding-top: 36px; }
+      .flow { grid-template-columns: 1fr; }
+      .flow div:not(:last-child)::after { display: none; }
+      table { display: block; overflow-x: auto; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Architecture decision and delivery plan</p>
+      <h1>Dias Irae</h1>
+      <p class="lede">A small, single-player isometric action role-playing game built with Godot and statically typed GDScript.</p>
+      <div class="meta">
+        <span>Status: accepted</span>
+        <span>Version: 0.1</span>
+        <span>Updated: 16 August 2026</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>1. Context and goals</h2>
+      <div class="callout">
+        <strong>Force statement.</strong> Gameplay rules will change rapidly while combat feel is discovered; deterministic rules must remain testable without rendering or input; success is verified by a stable, enjoyable one-room vertical slice before scope expands.
+      </div>
+      <p>This is a personal desktop game, not a live service. It has no networking, external database, compatibility burden, or team-scale deployment needs. The design therefore optimizes for correctness, fast iteration, readability, and clean gameplay boundaries—not theoretical scale.</p>
+      <h3>Initial product goal</h3>
+      <p>The player can move around one room, attack one enemy, take damage, defeat that enemy, die, and restart. Every later phase must preserve this playable loop.</p>
+      <h3>Non-goals</h3>
+      <ul>
+        <li>Multiplayer, accounts, telemetry, cloud services, mod support, or console certification.</li>
+        <li>A generalized game framework or editor tooling before the game requires it.</li>
+        <li>Procedural worlds, crafting, skill trees, or generated loot in the first vertical slice.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. Architectural position</h2>
+      <p>The project uses lightweight domain-driven design (DDD) and applies the SOLID principles—single responsibility, open/closed, Liskov substitution, interface segregation, and dependency inversion—with judgment. Domain boundaries and invariants are strict; pattern ceremony is not.</p>
+      <div class="cards">
+        <article class="card"><h3>Domain first</h3><p>Code lives with the gameplay concept it owns. A domain contains its rules, state, Godot adapters, and tests.</p></article>
+        <article class="card"><h3>Composition first</h3><p>Scenes compose focused nodes and resources. Inheritance normally stops at the closest useful Godot type.</p></article>
+        <article class="card"><h3>Explicit dependencies</h3><p>Dependencies arrive through constructors or typed exported references. Mutable global singletons are prohibited.</p></article>
+        <article class="card"><h3>Evidence before optimization</h3><p>GDScript remains the default. Native extensions are considered only after profiling identifies a measured hotspot.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. Domain map</h2>
+      <table>
+        <thead><tr><th>Domain</th><th>Owns</th><th>Introduced</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Combat</strong></td><td>Health invariants, hits, attacks, cooldowns, defeat, hit detection adapters, and combat presentation.</td><td>Phase 1</td></tr>
+          <tr><td><strong>Actors</strong></td><td>Player intent, enemy decisions, locomotion, combatant composition, and actor scenes.</td><td>Phase 1</td></tr>
+          <tr><td><strong>Encounters</strong></td><td>Room lifecycle, spawning, completion, player defeat, and restart orchestration.</td><td>Phase 1</td></tr>
+          <tr><td><strong>Loot</strong></td><td>Drop decisions, item definitions, pickups, and inventory ownership.</td><td>Phase 2</td></tr>
+          <tr><td><strong>Progression</strong></td><td>Persistent player statistics and upgrade choices.</td><td>Phase 3</td></tr>
+          <tr><td><strong>World</strong></td><td>Room definitions, transitions, collision layout, and navigation data.</td><td>Phase 2</td></tr>
+        </tbody>
+      </table>
+      <p>Only Combat, Actors, and the smallest useful part of Encounters exist initially. Other domains are added in the phase that first needs them.</p>
+    </section>
+
+    <section>
+      <h2>4. Dependency rules</h2>
+      <div class="flow" aria-label="Input flows through actor adapters and combat rules to presentation">
+        <div>Input adapter</div><div>Actor controller</div><div>Combat service</div><div>Domain result</div><div>Presentation</div>
+      </div>
+      <ol>
+        <li>Core combat state and calculations do not depend on input, animation, sound, user interface, or scene paths.</li>
+        <li>Godot nodes adapt physics, areas, timers, and animation to typed domain operations.</li>
+        <li>Synchronous rules use direct typed calls. Signals are reserved for one-to-many notifications such as “combatant defeated.”</li>
+        <li>Cross-domain orchestration goes from service to service. A domain never reaches into another domain's internal node tree or state.</li>
+        <li>The composition root assembles the initial scene and dependencies. Autoloads are allowed only for a proven application-lifetime concern.</li>
+        <li>No <code>Variant</code>, untyped array, or untyped dictionary crosses a domain boundary.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>5. Planned project structure</h2>
+      <pre><code>res://
+  project.godot
+  game/
+    bootstrap/              # composition root and main scene
+    combat/
+      model/                # health, hit, attack definitions
+      service/              # rule orchestration
+      components/           # Godot collision and timing adapters
+      presentation/         # animation, sound, particles
+      tests/
+    actors/
+      player/
+      enemies/
+      tests/
+    encounters/
+      tests/
+    world/                  # created in Phase 2
+    loot/                   # created in Phase 2
+    progression/            # created in Phase 3
+  assets/
+    art/
+    audio/
+  tests/
+    support/</code></pre>
+      <p>This is a growth map, not an instruction to create empty directories. A directory appears with its first real file. There is no generic <code>utils</code> folder; shared code is extracted only after two domains demonstrate the same stable need.</p>
+    </section>
+
+    <section>
+      <h2>6. Coding and testing standards</h2>
+      <ul>
+        <li>Use statically typed GDScript for properties, parameters, return values, arrays, and dictionaries.</li>
+        <li>Use <code>Resource</code> for authored immutable definitions and focused runtime objects for mutable state.</li>
+        <li>Keep <code>_physics_process</code>, input callbacks, and animation callbacks thin; they translate engine events into domain calls.</li>
+        <li>Names explain intent. Comments explain only non-obvious reasons.</li>
+        <li>Each business invariant receives a deterministic unit test. Scene tests verify wiring, collision, and lifecycle behavior.</li>
+        <li>Pin Godot and the selected GDScript test runner to compatible versions during Phase 0. Tests must run headlessly before gameplay implementation begins.</li>
+        <li>Profile before optimizing. A language or architecture change requires a recorded measurement and a repeatable benchmark.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. Multi-phased implementation plan</h2>
+
+      <article class="phase">
+        <div class="phase-head"><h3><span class="phase-number">Phase 0</span> — Foundation</h3><span>Tooling and proof</span></div>
+        <p><strong>Scope:</strong> Pin the Godot version; create the project and input map; establish typed GDScript warnings, formatting conventions, the test runner, headless checks, a main scene, and placeholder visuals.</p>
+        <p class="exit"><strong>Exit:</strong> A clean checkout opens without errors, tests run from the command line, and a placeholder character moves in an empty room.</p>
+      </article>
+
+      <article class="phase">
+        <div class="phase-head"><h3><span class="phase-number">Phase 1</span> — Combat vertical slice</h3><span>First playable loop</span></div>
+        <p><strong>Scope:</strong> Implement health and hit invariants, player movement, one attack, one pursuing enemy, damage feedback, defeat, player death, and restart. Use only placeholder art.</p>
+        <p class="exit"><strong>Exit:</strong> The initial product goal is playable for repeated runs; combat rules have unit tests; the scene has no errors or orphaned dependencies.</p>
+      </article>
+
+      <article class="phase">
+        <div class="phase-head"><h3><span class="phase-number">Phase 2</span> — Room loop and loot</h3><span>Repeatable structure</span></div>
+        <p><strong>Scope:</strong> Add several authored rooms, encounter completion, room transitions, one item type, pickups, a minimal inventory, and one meaningful equipment choice.</p>
+        <p class="exit"><strong>Exit:</strong> A player can clear a short sequence of rooms, receive a drop, equip it, and observe a tested combat change.</p>
+      </article>
+
+      <article class="phase">
+        <div class="phase-head"><h3><span class="phase-number">Phase 3</span> — Build depth</h3><span>Meaningful variation</span></div>
+        <p><strong>Scope:</strong> Add two complementary abilities, three enemy roles, a boss, upgrade choices, and save/load only if persistent runs are now valuable.</p>
+        <p class="exit"><strong>Exit:</strong> A complete run presents distinct tactical decisions and ends in a boss victory or player defeat; persistence round-trips exactly if implemented.</p>
+      </article>
+
+      <article class="phase">
+        <div class="phase-head"><h3><span class="phase-number">Phase 4</span> — Presentation and hardening</h3><span>Personal release</span></div>
+        <p><strong>Scope:</strong> Replace placeholders selectively; add sound, effects, camera polish, accessibility settings, performance profiling, balancing, export configuration, and regression checks.</p>
+        <p class="exit"><strong>Exit:</strong> The game exports and launches on the target desktop, completes a full run without errors, maintains the chosen frame-rate target, and has no known progress-blocking defect.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>8. Decision gates</h2>
+      <ul>
+        <li>Do not begin a later phase until the current phase's exit criteria pass.</li>
+        <li>Do not add a domain, abstraction, or plugin without a current use case.</li>
+        <li>Do not add save-file compatibility until the game is distributed and real saves need preservation.</li>
+        <li>Do not introduce C++ or another language until profiling proves typed GDScript is the limiting factor.</li>
+        <li>Any persistent data contract is documented before code depends on it.</li>
+      </ul>
+    </section>
+
+    <footer>
+      This document is the architectural baseline. Update it when a decision changes a domain boundary, dependency rule, delivery phase, or persistence contract—not for ordinary implementation detail.
+    </footer>
+  </main>
+</body>
+</html>
