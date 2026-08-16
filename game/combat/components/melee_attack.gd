@@ -8,12 +8,11 @@ signal performed
 @export_range(0.05, 10.0, 0.05, "or_greater") var cooldown_seconds: float = 0.5
 
 var _cooldown_remaining: float = 0.0
-var _damage: Damage
+var _damage_bonus: int = 0
 
 
 func _ready() -> void:
 	assert(attack_area != null, "MeleeAttack requires an attack Area2D dependency")
-	_damage = Damage.new(damage_amount)
 
 
 func _physics_process(delta: float) -> void:
@@ -26,8 +25,18 @@ func try_attack() -> bool:
 
 	_cooldown_remaining = cooldown_seconds
 	performed.emit()
+	var damage: Damage = Damage.new(current_damage())
 	for area: Area2D in attack_area.get_overlapping_areas():
 		var hurtbox: Hurtbox = area as Hurtbox
 		if hurtbox != null:
-			var _result: DamageResult = hurtbox.receive_damage(_damage)
+			var _result: DamageResult = hurtbox.receive_damage(damage)
 	return true
+
+
+func equip_damage_bonus(value: int) -> void:
+	assert(value >= 0, "Equipment damage bonus cannot be negative")
+	_damage_bonus = value
+
+
+func current_damage() -> int:
+	return damage_amount + _damage_bonus
