@@ -47,6 +47,10 @@ func current_enemy() -> EnemyController:
 	return _enemy
 
 
+func inventory() -> Inventory:
+	return _inventory
+
+
 func equip_collected_weapon() -> bool:
 	if _inventory.has_equipped_item(EquipmentSlot.Location.RIGHT_HAND_HELD):
 		return false

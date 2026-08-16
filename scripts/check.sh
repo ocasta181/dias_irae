@@ -10,7 +10,7 @@ if ! command -v "$godot_binary" >/dev/null 2>&1; then
 	exit 1
 fi
 
-installed_version=$($godot_binary --version)
+installed_version=$("$godot_binary" --version)
 case "$installed_version" in
 	4.7.1.stable.*) ;;
 	*)

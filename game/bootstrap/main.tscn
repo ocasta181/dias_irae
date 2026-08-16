@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3]
+[gd_scene load_steps=18 format=3]
 
 [ext_resource type="Script" path="res://game/bootstrap/placeholder_room.gd" id="1_room"]
 [ext_resource type="PackedScene" path="res://game/actors/player/player.tscn" id="2_player"]
@@ -13,6 +13,7 @@
 [ext_resource type="Resource" path="res://game/loot/items/ashen_edge.tres" id="11_reward"]
 [ext_resource type="Script" path="res://game/loot/presentation/equipment_status.gd" id="12_equipment"]
 [ext_resource type="Script" path="res://game/world/room_definition.gd" id="13_room_definition"]
+[ext_resource type="Script" path="res://game/loot/presentation/inventory_panel.gd" id="14_inventory"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBox_overlay"]
 bg_color = Color(0.047, 0.043, 0.039, 0.9)
@@ -113,7 +114,7 @@ theme_override_constants/margin_bottom = 8
 [node name="Label" type="Label" parent="Interface/Controls/Margin"]
 theme_override_colors/font_color = Color(0.68, 0.63, 0.56, 1)
 theme_override_font_sizes/font_size = 13
-text = "W A S D  ·  MOVE     SPACE / CLICK  ·  ATTACK     E  ·  EQUIP"
+text = "W A S D / ARROWS · MOVE    SPACE / CLICK · ATTACK    E · EQUIP    I · INVENTORY"
 
 [node name="EncounterStatus" type="Label" parent="Interface" node_paths=PackedStringArray("run")]
 anchors_preset = 10
@@ -158,3 +159,14 @@ theme_override_colors/font_color = Color(0.48, 0.43, 0.38, 1)
 theme_override_font_sizes/font_size = 12
 text = "PHASE 2  ·  ROOM LOOP + LOOT"
 horizontal_alignment = 2
+
+[node name="InventoryPanel" type="Control" parent="Interface" node_paths=PackedStringArray("run")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("14_inventory")
+run = NodePath("../../RunController")

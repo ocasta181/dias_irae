@@ -61,6 +61,13 @@ func stored_item_count() -> int:
 	return _placements.size()
 
 
+func stored_placements() -> Array[InventoryPlacement]:
+	var copies: Array[InventoryPlacement] = []
+	for placement: InventoryPlacement in _placements:
+		copies.append(InventoryPlacement.new(placement.item, placement.origin))
+	return copies
+
+
 func has_equipped_item(slot: EquipmentSlot.Location) -> bool:
 	return _equipment.has(slot)
 

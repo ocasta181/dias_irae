@@ -6,6 +6,18 @@ func after_test() -> void:
 	Input.action_release("attack")
 	Input.action_release("restart")
 	Input.action_release("equip")
+	Input.action_release("inventory")
+
+
+func test_inventory_panel_opens_and_closes() -> void:
+	var runner: GdUnitSceneRunner = scene_runner("res://game/bootstrap/main.tscn")
+	var inventory_panel: InventoryPanel = runner.find_child("InventoryPanel") as InventoryPanel
+
+	assert_bool(inventory_panel.is_open()).is_false()
+	inventory_panel.toggle_inventory()
+	assert_bool(inventory_panel.is_open()).is_true()
+	inventory_panel.toggle_inventory()
+	assert_bool(inventory_panel.is_open()).is_false()
 
 
 func test_player_attack_damages_an_enemy_in_range() -> void:
