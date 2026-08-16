@@ -1,7 +1,11 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene load_steps=10 format=3]
 
 [ext_resource type="Script" path="res://game/bootstrap/placeholder_room.gd" id="1_room"]
 [ext_resource type="PackedScene" path="res://game/actors/player/player.tscn" id="2_player"]
+[ext_resource type="PackedScene" path="res://game/actors/enemies/enemy.tscn" id="3_enemy"]
+[ext_resource type="Script" path="res://game/encounters/room_encounter.gd" id="4_encounter"]
+[ext_resource type="Script" path="res://game/encounters/presentation/encounter_status.gd" id="5_status"]
+[ext_resource type="Script" path="res://game/combat/presentation/health_bar.gd" id="6_health_bar"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBox_overlay"]
 bg_color = Color(0.047, 0.043, 0.039, 0.9)
@@ -15,6 +19,25 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
+[sub_resource type="StyleBoxFlat" id="Style_health_background"]
+bg_color = Color(0.08, 0.07, 0.065, 0.95)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.28, 0.24, 0.21, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="Style_health_fill"]
+bg_color = Color(0.63, 0.13, 0.07, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
 [node name="Main" type="Node2D"]
 
 [node name="PlaceholderRoom" type="Node2D" parent="."]
@@ -22,13 +45,23 @@ script = ExtResource("1_room")
 
 [node name="Player" parent="." instance=ExtResource("2_player")]
 
+[node name="Enemy" parent="." node_paths=PackedStringArray("target", "target_health") instance=ExtResource("3_enemy")]
+position = Vector2(310, 0)
+target = NodePath("../Player")
+target_health = NodePath("../Player/HealthComponent")
+
+[node name="RoomEncounter" type="Node" parent="." node_paths=PackedStringArray("player_health", "enemy_health")]
+script = ExtResource("4_encounter")
+player_health = NodePath("../Player/HealthComponent")
+enemy_health = NodePath("../Enemy/HealthComponent")
+
 [node name="Interface" type="CanvasLayer" parent="."]
 
 [node name="Title" type="Label" parent="Interface"]
 offset_left = 32.0
 offset_top = 28.0
 offset_right = 240.0
-offset_bottom = 90.0
+offset_bottom = 66.0
 theme_override_colors/font_color = Color(0.91, 0.84, 0.72, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
 theme_override_constants/shadow_offset_x = 2
@@ -36,11 +69,31 @@ theme_override_constants/shadow_offset_y = 2
 theme_override_font_sizes/font_size = 26
 text = "DIAS IRAE"
 
+[node name="PlayerHealthLabel" type="Label" parent="Interface"]
+offset_left = 34.0
+offset_top = 70.0
+offset_right = 144.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(0.58, 0.52, 0.46, 1)
+theme_override_font_sizes/font_size = 11
+text = "VITALITY"
+
+[node name="PlayerHealth" type="ProgressBar" parent="Interface" node_paths=PackedStringArray("health_component")]
+offset_left = 32.0
+offset_top = 92.0
+offset_right = 252.0
+offset_bottom = 108.0
+theme_override_styles/background = SubResource("Style_health_background")
+theme_override_styles/fill = SubResource("Style_health_fill")
+show_percentage = false
+script = ExtResource("6_health_bar")
+health_component = NodePath("../../Player/HealthComponent")
+
 [node name="Controls" type="PanelContainer" parent="Interface"]
 offset_left = 32.0
-offset_top = 82.0
-offset_right = 226.0
-offset_bottom = 126.0
+offset_top = 124.0
+offset_right = 352.0
+offset_bottom = 168.0
 theme_override_styles/panel = SubResource("StyleBox_overlay")
 
 [node name="Margin" type="MarginContainer" parent="Interface/Controls"]
@@ -52,9 +105,25 @@ theme_override_constants/margin_bottom = 8
 [node name="Label" type="Label" parent="Interface/Controls/Margin"]
 theme_override_colors/font_color = Color(0.68, 0.63, 0.56, 1)
 theme_override_font_sizes/font_size = 13
-text = "W A S D   ·   MOVE"
+text = "W A S D  ·  MOVE     SPACE / CLICK  ·  ATTACK"
 
-[node name="Status" type="Label" parent="Interface"]
+[node name="EncounterStatus" type="Label" parent="Interface" node_paths=PackedStringArray("encounter")]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 30.0
+offset_bottom = 58.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.77, 0.47, 0.3, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 15
+text = "DEFEAT THE WRETCH"
+horizontal_alignment = 1
+script = ExtResource("5_status")
+encounter = NodePath("../../RoomEncounter")
+
+[node name="Phase" type="Label" parent="Interface"]
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
@@ -68,5 +137,5 @@ grow_horizontal = 0
 grow_vertical = 0
 theme_override_colors/font_color = Color(0.48, 0.43, 0.38, 1)
 theme_override_font_sizes/font_size = 12
-text = "PHASE 0  ·  FOUNDATION"
+text = "PHASE 1  ·  COMBAT SLICE"
 horizontal_alignment = 2

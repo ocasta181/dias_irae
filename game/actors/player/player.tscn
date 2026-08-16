@@ -1,49 +1,115 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene load_steps=13 format=3]
 
 [ext_resource type="Script" path="res://game/actors/player/player_controller.gd" id="1_controller"]
 [ext_resource type="Script" path="res://game/actors/player/player_input.gd" id="2_input"]
+[ext_resource type="Script" path="res://game/combat/components/health_component.gd" id="3_health"]
+[ext_resource type="Script" path="res://game/combat/components/hurtbox.gd" id="4_hurtbox"]
+[ext_resource type="Script" path="res://game/combat/components/melee_attack.gd" id="5_attack"]
+[ext_resource type="Script" path="res://game/actors/player/player_attack_input.gd" id="6_attack_input"]
+[ext_resource type="Script" path="res://game/combat/presentation/attack_flash.gd" id="7_attack_flash"]
+[ext_resource type="Script" path="res://game/combat/presentation/combatant_feedback.gd" id="8_feedback"]
 
 [sub_resource type="CapsuleShape2D" id="Capsule_player"]
 radius = 12.0
 height = 34.0
 
+[sub_resource type="CircleShape2D" id="Circle_hurtbox"]
+radius = 16.0
+
+[sub_resource type="CircleShape2D" id="Circle_attack"]
+radius = 68.0
+
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("input_source") groups=["player"]]
 script = ExtResource("1_controller")
 input_source = NodePath("PlayerInput")
 
-[node name="Shadow" type="Polygon2D" parent="."]
+[node name="Visual" type="Node2D" parent="."]
+
+[node name="Shadow" type="Polygon2D" parent="Visual"]
 z_index = -1
 position = Vector2(0, 17)
 polygon = PackedVector2Array(-22, 0, -16, -6, 0, -9, 16, -6, 22, 0, 16, 6, 0, 9, -16, 6)
 color = Color(0.02, 0.015, 0.012, 0.72)
 
-[node name="Body" type="Polygon2D" parent="."]
+[node name="Body" type="Polygon2D" parent="Visual"]
 polygon = PackedVector2Array(-19, 15, -14, -7, 0, -20, 14, -7, 19, 15, 0, 24)
 color = Color(0.43, 0.11, 0.075, 1)
 
-[node name="Mantle" type="Polygon2D" parent="."]
+[node name="Mantle" type="Polygon2D" parent="Visual"]
 position = Vector2(0, -7)
 polygon = PackedVector2Array(-17, 7, -13, -5, 0, -11, 13, -5, 17, 7, 0, 12)
 color = Color(0.72, 0.25, 0.13, 1)
 
-[node name="Head" type="Polygon2D" parent="."]
+[node name="Head" type="Polygon2D" parent="Visual"]
 position = Vector2(0, -21)
 polygon = PackedVector2Array(-8, 0, -6, -6, 0, -9, 6, -6, 8, 0, 6, 7, 0, 9, -6, 7)
 color = Color(0.84, 0.67, 0.49, 1)
 
-[node name="Facing" type="Polygon2D" parent="."]
+[node name="Facing" type="Polygon2D" parent="Visual"]
 position = Vector2(0, -25)
 polygon = PackedVector2Array(-5, 1, 5, 1, 0, 7)
 color = Color(0.12, 0.08, 0.06, 1)
+
+[node name="AttackArc" type="Polygon2D" parent="."]
+z_index = -1
+polygon = PackedVector2Array(-68, 0, -58, -34, -34, -58, 0, -68, 34, -58, 58, -34, 68, 0, 52, 0, 44, -25, 25, -44, 0, -52, -25, -44, -44, -25, -52, 0)
+color = Color(0.93, 0.46, 0.23, 0.62)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
 shape = SubResource("Capsule_player")
 
+[node name="HealthComponent" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("3_health")
+maximum_health = 100
+
+[node name="Hurtbox" type="Area2D" parent="." node_paths=PackedStringArray("health_component")]
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+script = ExtResource("4_hurtbox")
+health_component = NodePath("../HealthComponent")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = SubResource("Circle_hurtbox")
+
+[node name="AttackArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
+shape = SubResource("Circle_attack")
+
+[node name="MeleeAttack" type="Node" parent="." node_paths=PackedStringArray("attack_area")]
+script = ExtResource("5_attack")
+attack_area = NodePath("../AttackArea")
+damage_amount = 12
+cooldown_seconds = 0.38
+
 [node name="PlayerInput" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("2_input")
 
+[node name="PlayerAttackInput" type="Node" parent="." node_paths=PackedStringArray("attack")]
+script = ExtResource("6_attack_input")
+attack = NodePath("../MeleeAttack")
+
+[node name="AttackFlash" type="Node" parent="." node_paths=PackedStringArray("target")]
+script = ExtResource("7_attack_flash")
+target = NodePath("../AttackArc")
+
+[node name="CombatantFeedback" type="Node" parent="." node_paths=PackedStringArray("target")]
+script = ExtResource("8_feedback")
+target = NodePath("../Visual")
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position_smoothing_enabled = true
 position_smoothing_speed = 8.0
+
+[connection signal="defeated" from="HealthComponent" to="." method="on_defeated"]
+[connection signal="defeated" from="HealthComponent" to="PlayerAttackInput" method="on_defeated"]
+[connection signal="defeated" from="HealthComponent" to="CombatantFeedback" method="show_defeat"]
+[connection signal="health_changed" from="HealthComponent" to="CombatantFeedback" method="show_damage"]
+[connection signal="performed" from="MeleeAttack" to="AttackFlash" method="play"]

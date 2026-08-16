@@ -2,9 +2,9 @@
 
 An isometric action role-playing game built with Godot 4.7.1 and statically typed GDScript.
 
-## Run the foundation build
+## Play the combat slice
 
-Open `project.godot` in Godot 4.7.1 and run the main scene. Move the placeholder character with the W, A, S, and D keys.
+Open `project.godot` in Godot 4.7.1 and run the main scene. Move with the W, A, S, and D keys. Attack with Space or the left mouse button. After victory or defeat, press R to restart.
 
 ## Verify the project
 
