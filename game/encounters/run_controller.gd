@@ -10,7 +10,7 @@ signal equipment_changed(message: String)
 @export var room_renderer: PlaceholderRoom
 @export var enemy_scene: PackedScene
 @export var pickup_scene: PackedScene
-@export var reward: WeaponDefinition
+@export var reward: ItemDefinition
 @export var rooms: Array[RoomDefinition] = []
 
 var _inventory: Inventory = Inventory.new()
@@ -31,7 +31,7 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if _run_ended and Input.is_action_just_pressed("restart"):
 		var _reload_error: Error = get_tree().reload_current_scene()
-	elif _inventory.weapon_count() > 0 and not _inventory.has_equipped_weapon() and Input.is_action_just_pressed("equip"):
+	elif _inventory.stored_item_count() > 0 and not _inventory.has_equipped_item(EquipmentSlot.Location.RIGHT_HAND_HELD) and Input.is_action_just_pressed("equip"):
 		equip_collected_weapon()
 
 
@@ -48,13 +48,14 @@ func current_enemy() -> EnemyController:
 
 
 func equip_collected_weapon() -> bool:
-	if _inventory.has_equipped_weapon():
+	if _inventory.has_equipped_item(EquipmentSlot.Location.RIGHT_HAND_HELD):
 		return false
-	if not _inventory.equip(0):
+	if not _inventory.equip_at(Vector2i.ZERO, EquipmentSlot.Location.RIGHT_HAND_HELD):
 		return false
 	player_attack.equip_damage_bonus(_inventory.equipped_damage_bonus())
-	equipment_changed.emit("%s  ·  DAMAGE %d" % [_inventory.equipped_name().to_upper(), player_attack.current_damage()])
-	_set_message("%s EQUIPPED" % _inventory.equipped_name().to_upper())
+	var held_item: ItemDefinition = _inventory.equipped_item(EquipmentSlot.Location.RIGHT_HAND_HELD)
+	equipment_changed.emit("%s  ·  DAMAGE %d" % [held_item.display_name.to_upper(), player_attack.current_damage()])
+	_set_message("%s EQUIPPED" % held_item.display_name.to_upper())
 	_advance_room.call_deferred()
 	return true
 
@@ -76,9 +77,9 @@ func _start_room() -> void:
 func _on_enemy_defeated() -> void:
 	if _run_ended:
 		return
-	if _room_index == 0 and _inventory.weapon_count() == 0:
+	if _room_index == 0 and _inventory.stored_item_count() == 0:
 		var pickup: WeaponPickup = pickup_scene.instantiate() as WeaponPickup
-		pickup.weapon = reward
+		pickup.item = reward
 		pickup.position = _enemy.position
 		pickup.collected.connect(_on_reward_collected)
 		add_child(pickup)
@@ -87,10 +88,11 @@ func _on_enemy_defeated() -> void:
 		_advance_room.call_deferred()
 
 
-func _on_reward_collected(weapon: WeaponDefinition) -> void:
-	_inventory.add(weapon)
-	equipment_changed.emit("%s  ·  UNEQUIPPED" % weapon.display_name.to_upper())
-	_set_message("%s COLLECTED  ·  PRESS E TO EQUIP" % weapon.display_name.to_upper())
+func _on_reward_collected(item: ItemDefinition) -> void:
+	var placed: bool = _inventory.place(item, Vector2i.ZERO)
+	assert(placed, "The authored encounter reward must fit in an empty inventory")
+	equipment_changed.emit("%s  ·  UNEQUIPPED" % item.display_name.to_upper())
+	_set_message("%s COLLECTED  ·  PRESS E TO EQUIP" % item.display_name.to_upper())
 
 
 func _advance_room() -> void:

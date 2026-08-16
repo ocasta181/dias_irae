@@ -1,8 +1,10 @@
-[gd_resource type="Resource" script_class="WeaponDefinition" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="ItemDefinition" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://game/loot/model/weapon_definition.gd" id="1"]
+[ext_resource type="Script" path="res://game/loot/model/item_definition.gd" id="1"]
 
 [resource]
 script = ExtResource("1")
 display_name = "Ashen Edge"
+inventory_size = Vector2i(1, 3)
+allowed_slots = Array[int]([3, 4])
 damage_bonus = 6
