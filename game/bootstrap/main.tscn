@@ -1,0 +1,72 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://game/bootstrap/placeholder_room.gd" id="1_room"]
+[ext_resource type="PackedScene" path="res://game/actors/player/player.tscn" id="2_player"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBox_overlay"]
+bg_color = Color(0.047, 0.043, 0.039, 0.9)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.31, 0.27, 0.23, 0.8)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="Main" type="Node2D"]
+
+[node name="PlaceholderRoom" type="Node2D" parent="."]
+script = ExtResource("1_room")
+
+[node name="Player" parent="." instance=ExtResource("2_player")]
+
+[node name="Interface" type="CanvasLayer" parent="."]
+
+[node name="Title" type="Label" parent="Interface"]
+offset_left = 32.0
+offset_top = 28.0
+offset_right = 240.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(0.91, 0.84, 0.72, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 26
+text = "DIAS IRAE"
+
+[node name="Controls" type="PanelContainer" parent="Interface"]
+offset_left = 32.0
+offset_top = 82.0
+offset_right = 226.0
+offset_bottom = 126.0
+theme_override_styles/panel = SubResource("StyleBox_overlay")
+
+[node name="Margin" type="MarginContainer" parent="Interface/Controls"]
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 8
+
+[node name="Label" type="Label" parent="Interface/Controls/Margin"]
+theme_override_colors/font_color = Color(0.68, 0.63, 0.56, 1)
+theme_override_font_sizes/font_size = 13
+text = "W A S D   ·   MOVE"
+
+[node name="Status" type="Label" parent="Interface"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -224.0
+offset_top = -54.0
+offset_right = -30.0
+offset_bottom = -28.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.48, 0.43, 0.38, 1)
+theme_override_font_sizes/font_size = 12
+text = "PHASE 0  ·  FOUNDATION"
+horizontal_alignment = 2
