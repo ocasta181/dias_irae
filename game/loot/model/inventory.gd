@@ -27,6 +27,10 @@ func equipped_damage_bonus() -> int:
 	return _equipped.damage_bonus
 
 
+func has_equipped_weapon() -> bool:
+	return _equipped != null
+
+
 func equipped_name() -> String:
 	if _equipped == null:
 		return "Unarmed"

@@ -1,11 +1,18 @@
-[gd_scene load_steps=10 format=3]
+[gd_scene load_steps=17 format=3]
 
 [ext_resource type="Script" path="res://game/bootstrap/placeholder_room.gd" id="1_room"]
 [ext_resource type="PackedScene" path="res://game/actors/player/player.tscn" id="2_player"]
 [ext_resource type="PackedScene" path="res://game/actors/enemies/enemy.tscn" id="3_enemy"]
-[ext_resource type="Script" path="res://game/encounters/room_encounter.gd" id="4_encounter"]
-[ext_resource type="Script" path="res://game/encounters/presentation/encounter_status.gd" id="5_status"]
+[ext_resource type="Script" path="res://game/encounters/run_controller.gd" id="4_encounter"]
+[ext_resource type="Script" path="res://game/encounters/presentation/run_status.gd" id="5_status"]
 [ext_resource type="Script" path="res://game/combat/presentation/health_bar.gd" id="6_health_bar"]
+[ext_resource type="PackedScene" path="res://game/loot/pickups/weapon_pickup.tscn" id="7_pickup"]
+[ext_resource type="Resource" path="res://game/world/rooms/ashen_crossing.tres" id="8_room_a"]
+[ext_resource type="Resource" path="res://game/world/rooms/bone_gallery.tres" id="9_room_b"]
+[ext_resource type="Resource" path="res://game/world/rooms/ember_vault.tres" id="10_room_c"]
+[ext_resource type="Resource" path="res://game/loot/items/ashen_edge.tres" id="11_reward"]
+[ext_resource type="Script" path="res://game/loot/presentation/equipment_status.gd" id="12_equipment"]
+[ext_resource type="Script" path="res://game/world/room_definition.gd" id="13_room_definition"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBox_overlay"]
 bg_color = Color(0.047, 0.043, 0.039, 0.9)
@@ -45,15 +52,16 @@ script = ExtResource("1_room")
 
 [node name="Player" parent="." instance=ExtResource("2_player")]
 
-[node name="Enemy" parent="." node_paths=PackedStringArray("target", "target_health") instance=ExtResource("3_enemy")]
-position = Vector2(310, 0)
-target = NodePath("../Player")
-target_health = NodePath("../Player/HealthComponent")
-
-[node name="RoomEncounter" type="Node" parent="." node_paths=PackedStringArray("player_health", "enemy_health")]
+[node name="RunController" type="Node" parent="." node_paths=PackedStringArray("player", "player_health", "player_attack", "room_renderer")]
 script = ExtResource("4_encounter")
+player = NodePath("../Player")
 player_health = NodePath("../Player/HealthComponent")
-enemy_health = NodePath("../Enemy/HealthComponent")
+player_attack = NodePath("../Player/MeleeAttack")
+room_renderer = NodePath("../PlaceholderRoom")
+enemy_scene = ExtResource("3_enemy")
+pickup_scene = ExtResource("7_pickup")
+reward = ExtResource("11_reward")
+rooms = Array[ExtResource("13_room_definition")]([ExtResource("8_room_a"), ExtResource("9_room_b"), ExtResource("10_room_c")])
 
 [node name="Interface" type="CanvasLayer" parent="."]
 
@@ -105,9 +113,9 @@ theme_override_constants/margin_bottom = 8
 [node name="Label" type="Label" parent="Interface/Controls/Margin"]
 theme_override_colors/font_color = Color(0.68, 0.63, 0.56, 1)
 theme_override_font_sizes/font_size = 13
-text = "W A S D  ·  MOVE     SPACE / CLICK  ·  ATTACK"
+text = "W A S D  ·  MOVE     SPACE / CLICK  ·  ATTACK     E  ·  EQUIP"
 
-[node name="EncounterStatus" type="Label" parent="Interface" node_paths=PackedStringArray("encounter")]
+[node name="EncounterStatus" type="Label" parent="Interface" node_paths=PackedStringArray("run")]
 anchors_preset = 10
 anchor_right = 1.0
 offset_top = 30.0
@@ -121,7 +129,18 @@ theme_override_font_sizes/font_size = 15
 text = "DEFEAT THE WRETCH"
 horizontal_alignment = 1
 script = ExtResource("5_status")
-encounter = NodePath("../../RoomEncounter")
+run = NodePath("../../RunController")
+
+[node name="EquipmentStatus" type="Label" parent="Interface" node_paths=PackedStringArray("run")]
+offset_left = 32.0
+offset_top = 182.0
+offset_right = 390.0
+offset_bottom = 204.0
+theme_override_colors/font_color = Color(0.76, 0.63, 0.45, 1)
+theme_override_font_sizes/font_size = 12
+text = "UNARMED  ·  DAMAGE 12"
+script = ExtResource("12_equipment")
+run = NodePath("../../RunController")
 
 [node name="Phase" type="Label" parent="Interface"]
 anchors_preset = 3
@@ -137,5 +156,5 @@ grow_horizontal = 0
 grow_vertical = 0
 theme_override_colors/font_color = Color(0.48, 0.43, 0.38, 1)
 theme_override_font_sizes/font_size = 12
-text = "PHASE 1  ·  COMBAT SLICE"
+text = "PHASE 2  ·  ROOM LOOP + LOOT"
 horizontal_alignment = 2

@@ -4,7 +4,7 @@ An isometric action role-playing game built with Godot 4.7.1 and statically type
 
 ## Play the combat slice
 
-Open `project.godot` in Godot 4.7.1 and run the main scene. Move with the W, A, S, and D keys. Attack with Space or the left mouse button. After victory or defeat, press R to restart.
+Open `project.godot` in Godot 4.7.1 and run the main scene. Move with the W, A, S, and D keys. Attack with Space or the left mouse button. Walk over loot to collect it and press E to equip it. After completing the run or dying, press R to restart.
 
 ## Verify the project
 
