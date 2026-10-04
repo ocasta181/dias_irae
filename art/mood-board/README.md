@@ -41,7 +41,7 @@ The later paintings contribute mood, flesh and color. Near-period embroidery and
 
 Useful review notes: which references carry the right feeling; which are too colorful, clean, ornate or overtly monstrous; and how coarse the pixels, strong the outlines and exaggerated the proportions should be. The approved dark, pixelated balance is directed by the user; exact sprite scale and finish remain open for review.
 
-The new [dress and equipment supplement](equipment/index.html) contains 34 active dated European choices from the 12th–14th centuries, including different helmets, padding and plates, gloves, leggings, footwear, shields, daggers, polearms and unarmored dress. Each card has decisions and written commentary. Save its downloaded review as `art/mood-board/equipment/manifest.md`; the original 26-reference approval is retained.
+The new [dress and equipment supplement](equipment/index.html) contains 36 active dated European choices from the 12th–14th centuries, including different helmets, padding and plates, gloves, leggings, footwear, shields, daggers, polearms and unarmored dress. Each card has decisions and written commentary. Save its downloaded review as `art/mood-board/equipment/manifest.md`; the original 26-reference approval is retained.
 
 The board approval is recorded in the checklist. Concept candidates are now being generated from the accepted references and the refined brief; review them in [the concept manifest](../concepts/manifest.md).
 

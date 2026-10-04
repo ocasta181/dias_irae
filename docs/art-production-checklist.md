@@ -2,7 +2,7 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
-Last updated: 2026-10-04. Current stage: **original mood board approved; S09 selected for development, preferred S13/S17 textures recorded; camera/proportions rejected, alternative generator selection pending, and a 34-reference dated European equipment board ready for selection**.
+Last updated: 2026-10-04. Current stage: **original mood board approved; S09 selected for development, preferred S13/S17 textures recorded; camera/proportions rejected, alternative generator selection pending, and a 36-reference dated European equipment board ready for selection**.
 
 ## Story and visual constraints
 
@@ -46,6 +46,7 @@ Success: a locally reviewable collection with individual removable images and pr
 - [x] Expand to 34 active, genuinely different European options from the 12th, 13th and 14th centuries, including non-greathelms, non-mail torso armor, boots, gloves, leggings, shields, polearms and daggers; retain 11 excluded entries as source history.
 - [x] Give every active reference a source-supported year or year range; distinguish object/style date from photograph date and exclude 15th-century material.
 - [x] Verify all 34 active images and 45 source/history records, dates, provenance, links, decisions, commentary, export and mobile layout; preserve excluded-row browser drafts.
+- [x] Put the dated equipment choices prominently on the main mood board and add source-dated 12th-century ankle shoes and 13th-century slip-on boots; board 03 now has 36 active choices and 47 source/history records.
 - [ ] **User selects dress and equipment references and approves the resulting direction before further cast concepts.**
 
 ## 2. Concept art — after mood board approval
@@ -144,6 +145,8 @@ Success: the agreed first level is playable from entry to exit with accepted art
 | 2026-10-04 | Dated equipment selection ready | Expanded to 34 active European 12th–14th-century references with numeric dates, construction differences, gloves, legwear, footwear, shields, daggers, polearms and non-armored dress. Eleven earlier entries excluded with history retained. Source pixels, hashes, links, date evidence, Chrome controls, mobile layout and complete export verified; hidden-row comments survive | User selects equipment and image provider; camera/proportion pilot remains unapproved |
 | 2026-10-04 | Current alternative-model comparison | Current Arena snapshot and provider documentation supersede the initial shortlist with MAI-Image-2.6, Reve 2.1 and Grok Imagine Image 2.0. Public access verified; none tested on Guarin. Proposed first trial: MAI with a fresh geometry guide. Preferred texture and exaggerated proportions remain explicit requirements | User chooses provider; configure access and verify trial pricing before the camera/proportion pilot |
 | 2026-10-04 | Distinct art-style exploration | S01–S03 rejected for large eyes and nearly identical style. S04–S06 generated in flat ink, coarse pixel and dimensional sculpted media, all with full-face helmets and narrow visors; prior images preserved as rejected | Verify the updated gallery, then user selection of the closest new style |
+
+| 2026-10-04 | Equipment board delivery correction | Equipment board 03 has 36 selectable dated references, with four footwear options across the requested centuries. Main mood board now has a prominent equipment preview and direct review links. Fresh browser confirms 36 cards, dates and comment boxes; Chrome verifies persistence, full export, loaded images and mobile layout | User reviews equipment board 03 and supplies selections/comments |
 
 Review artifacts: [gallery](../art/mood-board/index.html), [overview](../art/mood-board/overview.jpg), [review manifest](../art/mood-board/manifest.md), [review instructions](../art/mood-board/README.md).
 

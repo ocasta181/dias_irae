@@ -1,8 +1,8 @@
 # Dated European equipment board
 
-[Open the interactive gallery](index.html): **34 active references** from the 12th, 13th and 14th centuries, with a source-supported year or range on every card. Approximate dates remain approximate. No 15th-century style is proposed. Eleven undated or out-of-range entries are retained only in the source history; identifiers are never reused.
+[Open the interactive gallery](index.html): **36 active references** from the 12th, 13th and 14th centuries, with a source-supported year or range on every card. Approximate dates remain approximate. No 15th-century style is proposed. Eleven undated or out-of-range entries are retained only in the source history; identifiers are never reused.
 
-Compare seven helmet options, padded and plate torso protection, three hand-protection options, three legwear/leg-armor options, boots and shoes, two shield shapes, five sword/dagger/polearm choices, three religious clothing references, two work/travel clothing references and four noble dress/material references. The mail effigy also supplies hand and torso evidence. Dates of objects or represented styles are separate from photographic dates.
+Compare seven helmet options, padded and plate torso protection, three hand-protection options, three legwear/leg-armor options, four footwear options across the three centuries, two shield shapes, five sword/dagger/polearm choices, three religious clothing references, two work/travel clothing references and four noble dress/material references. The mail effigy also supplies hand and torso evidence. Dates of objects or represented styles are separate from photographic dates.
 
 Most references show surviving objects. E26/E42/E45 are period paintings or manuscript depictions; E22/E27/E38/E40 are historical sculptures. E41 is a clearly labeled modern reproduction of a 12th-century spear type. None of these distinctions is concealed. Source links and date evidence accompany each card; credited images are saved unchanged.
 
