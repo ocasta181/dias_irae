@@ -1,0 +1,34 @@
+{
+  "id": "G01",
+  "selected_style": "S49",
+  "name": "dirty-paint-wash",
+  "prompt": "art/concepts/gameplay/prompts/g01-dirty-paint-wash.txt",
+  "cwd": "/private/tmp/dias-gameplay-1bb36ec5-c4d2-4515-b9fb-df7ec84192d0",
+  "request": "/private/tmp/dias-gameplay-1bb36ec5-c4d2-4515-b9fb-df7ec84192d0/request.txt",
+  "session_id": "1bb36ec5-c4d2-4515-b9fb-df7ec84192d0",
+  "provider": "Grok CLI native image_gen",
+  "exact_image_model": "not exposed",
+  "date": "2026-10-05",
+  "actual_tool_input": {
+    "prompt": "Create ONE entirely new wide 16:9 in-game gameplay concept screenshot for Dias Irae. ONLY DRAWN TWO-DIMENSIONAL ART. No 3D art, 3D rendering, sculpted figures, 2.5D modeled surfaces, miniature photography, studio light, bevels or polished material gradients. This is a fully drawn game world, not a character portrait on a landscape backdrop.\n\nCAMERA AND COMPOSITION: elevated orthographic three-quarter game camera at approximately 45 degrees above the horizontal ground, no horizon, no low cinematic viewpoint. Look DOWN into the scene; visible roof surfaces, helmet crown and feet positions must all agree. The playable hero is near the lower middle, roughly 9 percent of frame height INCLUDING his giant helmet, surrounded by traversable space. All people share the same game scale and elevated projection. An open diagonal muddy path leads toward the church in the upper left, a well is near the middle right, a burnt mill beside a stream sits at upper right. Two afflicted neighbors and one lean wolf occupy the path ahead as a readable small encounter. Use grounded contact marks but never rounded material modeling. Keep terrain readable as a playable surface and scenery visually separated from actors.\n\nSTORY: fictional Rivoire, in the Royans/Isere setting of southeastern France, late summer 1101. Poor small rural settlement: low limestone and timber houses, rough grey roofing, a modest Romanesque parish church with thick walls and round arches, exhausted rye plots blackened by blight, muddy well, shattered burnt watermill with a clotted wheel by a narrow stream. The church is small, no cathedral, no Gothic pointed arches, no later plate armor, no exotic non-European costume. Afflicted parishioners remain recognizable ordinary rural neighbors in worn tunics and hose, fearful and gaunt, not generic armored zombies or late-act demons. No high fantasy spires or magical glowing forest.\n\nFIXED GUARIN COSTUME AND PROPORTIONS: extremely short, broad, squat and endearing cartoon knight. Huge full-face cylindrical iron greathelm with narrow black eye slit and a few small breathing holes, no exposed eyes or skin inside the helmet. Entire figure is only TWO helmet-heights tall; the helmet itself is almost half the total character height. Tiny broad torso, stubby short limbs and oversized little boots. Worn ring mail, torn faded wine-red scarf/cape and short waistcloth, plain brown leather gloves and belt, dirty brown leg wraps and short brown boots. One straight dull steel sword, straight blade and simple crossguard, in his right hand; taupe wooden kite shield with a single narrow faded wine-red vertical panel in his left. Keep these items consistent, no different outfits or realistic human proportions. The greathelm is an explicit permitted anachronism in the story, not a reason to move the village into a later century.\n\nMOOD: dark, muddy, dirty, poor, worn, tired, desperate, dreary and hopeless. Characters are cute by their exaggerated structure, never cheerful or bright. Palette charcoal, peat brown, dirty limestone, dull iron and exhausted muted wine. Restrained contrast keeps the little player readable; no saturated red or blue scenery, no theatrical glow, no beautiful sunbeams. Hollow Knight informs silhouette economy and dark negative space; Diablo II informs oppressive village composition and grime rather than anatomically realistic figures. Light Castle Crashers influence only in squat structure. Apply the specific rendering style below to EVERYTHING in the scene, not just the hero.\n\nA small restrained flat dark bottom interface strip may show one muted wine resource shape, one grey-blue resource shape, and four empty square action slots. No labels, numbers, logos, menus, watermark or dense text. Most of the frame is the game world. Do not add title art, panels, comparison sheets or portrait inserts.\n\nSPECIFIC RENDERING STYLE FOR THIS ONE SCREEN:\nDirty layered brush painting: irregular opaque gouache patches over smoky grey-brown watercolor washes, streaks from a worn dry brush, rough rubbed edges, dull wet stains and imperfect hand-painted contours. Broad pooled grey mud and eroded chalk-like surfaces. Small iron and cloth shapes should be painted with the same rough pigment, no polished gradients. No pixel grid, no clean vector contour, no glossy material shading. Restrained black-brown outlines dissolve into grime. It should look like a tired painting brought to life as a game, with the appeal of small endearing figures surviving a bleak environment. The whole world, roofs and characters share this dirty painted medium.",
+    "aspect_ratio": "16:9"
+  },
+  "prompt_verification": "Identical text; only the final newline was omitted by the dispatcher. No reference input.",
+  "tool_output": {
+    "type": "ImageGen",
+    "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-gameplay-1bb36ec5-c4d2-4515-b9fb-df7ec84192d0/1bb36ec5-c4d2-4515-b9fb-df7ec84192d0/images/1.jpg",
+    "filename": "1.jpg",
+    "session_folder": "images"
+  },
+  "image": "art/concepts/gameplay/images/g01-dirty-paint-wash.jpg",
+  "dimensions": [
+    1280,
+    720
+  ],
+  "sha256": "1d4ff42981d9659e7c723d2573f2bab4d996abbfed270049b0f55119effa9c9d",
+  "prompt_sha256": "5b8e1db5d07191026b0e40db43f2fdaccab08492264edd972153232ba69d5dcf",
+  "orchestration_cost_usd": 0.01031424,
+  "image_cost_usd": "not exposed",
+  "visual_assessment": "Excluded for weaker medium match, larger player, costume substitution, duplicate knight or actor projection; see assessment.md.",
+  "presentation": "Internal screen attempt; excluded from the review gallery"
+}

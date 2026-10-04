@@ -1,0 +1,39 @@
+{
+  "id": "G01",
+  "selected_style": "S49",
+  "name": "dirty-paint-wash",
+  "prompt": "art/concepts/gameplay/prompts/g01-dirty-paint-wash-v03.txt",
+  "cwd": "/private/tmp/dias-gameplay-269f63d4-eace-4afd-b55d-42405ffb1715",
+  "request": "/private/tmp/dias-gameplay-269f63d4-eace-4afd-b55d-42405ffb1715/request.txt",
+  "session_id": "269f63d4-eace-4afd-b55d-42405ffb1715",
+  "revision": "v03",
+  "provider": "Grok CLI native image_gen",
+  "exact_image_model": "not exposed",
+  "date": "2026-10-05",
+  "actual_tool_input": {
+    "prompt": "All scenery AND the single knight use dirty gouache and watercolor painting: broad worn brush strokes, smoky uneven grey-brown pigment stains, opaque rough patches, soft rubbed paint edges, hand-painted mottled iron and ragged cloth. No pen sketch or comic outlines. No clean vector fills. Dark and desaturated. This should feel like controlling a tiny endearing figure inside a muddy, weary painting.\n\nCreate one new 16:9 gameplay screen, entirely DRAWN 2D. No 3D rendering, no 2.5D modeled materials, no miniature or studio lighting.\n\nONE player knight ONLY, at the lower center. He is short, squat and cute: a huge closed CYLINDRICAL FLAT-TOP GREATHELM accounts for HALF his total height, tiny wide torso and stubby legs below. One slit, small breath holes, NO eyes or visible face. Dark ring MAIL on torso and shoulders, brown gloves and belt, faded wine-red torn scarf/cape and waist rag, brown leg wraps and short boots. One straight iron sword in the right hand, taupe wooden kite shield with ONE NARROW wine-red stripe in the left. No pointed/round helmet, no plate shoulders, no extra knights. Do not redesign this costume.\n\nZoomed-out orthographic three-quarter game camera looking DOWN at about 45 degrees: broad helmet crown and roofs visible. Small player about 10 percent of screen height, not a huge foreground illustration. Traverse an open muddy diagonal path across a poor village. Small rural Romanesque limestone church upper left, ROUND arches and modest bell feature. A muddy well right of path. A burnt watermill upper right beside narrow stream, broken black wet timbers, one wheel. Low poor houses and blighted rye plots. Two unarmored exhausted villagers in tunics and hose, one lean wolf ahead of player; all at the same small actor scale. No other armed characters. Fictional Rivoire, Royans/Isere, southeastern France, late summer 1101; the greathelm is the one permitted anachronism. No Gothic architecture or later plate armor.\n\nMuddy, dark, filthy, worn, desperate and dreary, cute by structure only. Charcoal, muted earth, dirty grey stone, dull iron, faded wine cloth. No bright gold ground, sunny glow or saturated colors. World and actors must share the rendering style. Bottom 7 percent: simple dark flat strip with muted wine/grey-blue resource shapes and four EMPTY small slots; NO text, logo, portrait, stats or watermark. Full game world, no portrait inserts or comparison sheet.",
+    "aspect_ratio": "16:9"
+  },
+  "prompt_verification": "Identical text; final newline omitted. No reference input.",
+  "tool_output": {
+    "type": "ImageGen",
+    "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-gameplay-269f63d4-eace-4afd-b55d-42405ffb1715/269f63d4-eace-4afd-b55d-42405ffb1715/images/1.jpg",
+    "filename": "1.jpg",
+    "session_folder": "images"
+  },
+  "image": "art/concepts/gameplay/images/g01-dirty-paint-wash-v03.jpg",
+  "dimensions": [
+    1280,
+    720
+  ],
+  "sha256": "0638716ff4ef886a68569f976e7df41bb3dec4f43574a0a6e865560d8b079104",
+  "prompt_sha256": "3b0fbbd459e00a726c70aa9557a790c34d1982f777be28b2bb82d7c22feffa8f",
+  "orchestration_cost_usd": 0.00917048,
+  "image_cost_usd": "not exposed",
+  "visual_assessment": {
+    "source_style": "S49",
+    "observations": "Broad dirty brush strokes and uneven washed color extend the S49 painting preference across the village. The closed cylindrical helmet and single player are retained.",
+    "limitations": "The player is larger and more upright than the brief; helmet lighting still suggests volume, and the paper-brush look is lighter than the darkest mood references."
+  },
+  "presentation": "Presented for user review; not production approved"
+}

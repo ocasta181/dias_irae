@@ -1,6 +1,6 @@
 # Four gameplay-screen style comparisons
 
-Requested on 2026-10-05. The user has ordered the character gallery and chosen four different styles. Their identifiers and order must be retrieved before any generation; they have not yet been read. This is a generation brief, not a delivered image or an approved art direction.
+Requested on 2026-10-05. The user has ordered the character gallery and chosen four different styles. Their Brave order was retrieved on 2026-10-05: S49, S13, S15, S01. The full review is saved in the parent concept manifest. This is a generation brief, not a delivered image or an approved art direction.
 
 ## Shared scene
 
@@ -19,3 +19,7 @@ A restrained bottom game interface may contain muted red/blue resource shapes an
 Use Grok, as already selected by the user. Apply the imagegen skill's prompt and inspection guidance while preserving that explicit provider choice. Each screen gets its own complete raw prompt, fresh empty working directory and new session identifier. No prior generated concept, screenshot, gameplay screen, guide, composite or conversation history is supplied as an image or session input. Describe each selected style in words after inspecting it. Only approved mood-board base images are allowed as optional image inputs.
 
 Save the four prompts, actual tool inputs, source outputs, image dimensions/hashes and parent visual assessments. Verify that the four requested generations actually occurred, that they are distinct and that each follows its selected style. Do not label a style match or camera angle as exact when it is not. Present all four for review; do not create sprite sheets or implement the level at this step.
+
+## Delivered review checkpoint
+
+Four [gameplay examples](index.html) follow that order. [Parent assessment](assessment.md) identifies approximate medium matches and unresolved costume, scale, proportion and camera limitations. Ten actual outputs were inspected; four are presented, six remain internal, and one capacity failure produced no image. No character concept image was altered or supplied to the generator.
