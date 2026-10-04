@@ -1,3 +1,11 @@
+# Gameplay assessment — correction
+
+The user rejected G01–G04. My previous inspection was too lenient. The player was too large, the selected character images were not actual inputs, and character/world palette, lighting and medium did not agree. Text descriptions were an inadequate substitute for the chosen designs. These outputs must not serve as reference art.
+
+Current production uses the exact S49/S13/S15/S01 files. Every new output must be inspected for reference identity, total actor height, shared medium, palette and light, squat anatomy, projection and playable scene composition. Passing tool status alone is not a visual pass. The 24-screen exploration is in progress; no new output is yet accepted.
+
+## Superseded assessment of rejected outputs
+
 # Parent assessment of gameplay-screen examples
 
 I inspected all ten actual outputs, their source styles and the exact Grok tool inputs. One additional call produced no image because the provider returned a temporary capacity error; the identical request was retried in a fresh session. Every successful output is an unchanged 1280 × 720 JPEG, and every call has only `prompt` and `aspect_ratio` fields. Dispatcher text differs only by an omitted final newline. The image provider’s precise model identifier is not exposed.

@@ -2,7 +2,7 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
-Last updated: 2026-10-05. Current stage: **approved mood/equipment boards; the user has sorted and chosen four styles for gameplay-screen comparisons. Their full Brave review is saved, with S49 / S13 / S15 / S01 as the top four. The approved direct-save server and button work without a file picker. Four gameplay-screen examples are delivered for review in that order. Style matches are approximate, with camera, player scale and costume limits recorded; sprite sheets and level implementation remain gated**.
+Last updated: 2026-10-05. Current stage: **mood/equipment boards approved; S49 / S13 / S15 / S01 selected. Direct saving works. The user rejected G01–G04 for design, scale, palette and lighting failures. Production now requires exact selected character images as gameplay inputs. A 24-screen exploration is in progress: three Grok and three built-in generations per source, each with a distinct scene/composition prompt. Sprite sheets and implementation remain gated**.
 
 ## Story and visual constraints
 
@@ -109,6 +109,11 @@ Success: a locally reviewable collection with individual removable images and pr
 - [x] Implement and verify direct saving: 16 endpoint tests, preserved review/ranking/toggle checks, actual Brave save and repeated save without downloads. Preserve dated manifest copies, reject stale baselines and embed current saved reviews on reload. See [save evidence](../art/concepts/direct-save-preview.png) and [server](../scripts/serve_art.py).
 - [x] Generate, inspect and present four [gameplay-screen examples](../art/concepts/gameplay/index.html) in the selected S49 / S13 / S15 / S01 order. Inspect ten actual outputs, exclude six internal attempts, and record one provider-capacity failure with an identical-prompt fresh-session retry. Preserve all text-only inputs, unchanged source bytes, hashes, dimensions and [parent assessments](../art/concepts/gameplay/assessment.md). Exact style matches, game-scale proportions and calibrated camera remain unresolved; G02 is the weakest texture match. No new character-style gallery, sprites or implemented level.
 - [x] Reconcile the full Brave review: all additional comments, historical/planned rows and 45 ranked IDs are in the project manifest. Top four: S49, S13, S15, S01. S49’s preferred paint texture supersedes the earlier parent decision to hold that style back; S13 is one of the closest styles in the user’s notes. Preserve each selection’s rendering medium for gameplay comparisons, without redesigning the character or treating ranking as final asset approval.
+- [x] Record rejection of G01–G04 and replace the obsolete text-only rule with the user's image production chain. Exact selected source files are mandatory gameplay inputs.
+- [x] Define 24 complete prompts: six distinct scene/composition/lighting experiments per source, three with Grok and three with the built-in image generator. Save unchanged source hashes and [production plan](../art/concepts/gameplay/production-plan.json).
+- [ ] Generate all 24 reference-based screens, verifying the exact source in every call.
+- [ ] Inspect every output for source fidelity, squat proportions, shared actor scale, palette, lighting, medium and camera; record failures plainly.
+- [ ] Present the 24-screen comparison with direct saving and request user review.
 - [ ] Correct remaining costume drift and check the shortest squat proportions before production. Freeze mail, hidden skin, plain helmet, narrow wine shield panel, buckle and sword construction after style review.
 - [ ] Resolve calibrated camera consistency. The target remains around 45 degrees above the ground; no achieved angle or exact 15-degree increase is claimed.
 - [ ] **User approves the camera/proportion and rendering direction before the remaining concept batch.** Equipment collection approved with regional and cultural limits; no new Guarin concept is accepted yet.
@@ -214,3 +219,6 @@ Future work resumes from the current unchecked step after the relevant human rev
 | 2026-10-05 | Four gameplay examples presented | The user confirmed gameplay-screen comparisons in S49 / S13 / S15 / S01, not character redesign. Four screens are in the direct-save gallery with source-style links and explicit limits. Ten outputs were inspected, six excluded; one capacity call produced no image. Save was verified for both boards, including the actual full Brave review and a repeat save. | User reviews the four whole-screen directions; camera, scale and exact style fit remain unapproved |
 
 Current decision at commit `3aef464`: preserve the four explicitly selected styles and fixed costume brief, present gameplay examples for review, and stop before sprites or implementation. Confidence: 100%, based on the user’s confirmed instruction. Review does not imply approval of the documented output deviations.
+
+
+2026-10-05 decision at commit `d65175fc5254cb837d39b156b13cae98e6fedd40`: use the four recorded selected images as literal character-design inputs, including S01's original nasal helmet, and produce six distinct scene prompts per image across the two requested providers. Confidence: 98%, based on the latest explicit exact-image and 24-output instructions. The earlier text-only restriction is superseded for this production stage. No new character redesign is authorized.

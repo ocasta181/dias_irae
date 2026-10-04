@@ -13,15 +13,13 @@ Verified on 2026-10-04. The user selected Grok for future concept work. **The ex
 
 The CLI needs network access and permission to update its own authentication/session cache under `~/.grok`. The initial restricted call could not acquire its authentication lock; the permitted retry refreshed the login and succeeded. A sandbox failure does not mean the user's account needs another login.
 
-## Mandatory rule for every generation
+## Mandatory rule for every generation — updated 2026-10-05
 
-The user requires a **complete raw prompt for every iteration**. Each call must use a new independent session. Never pass a pre-existing generated concept from a prior iteration, including a rejected, failed, selected or previously preferred output. Do not reuse it through uploads, screenshots, generated guides, composites, derivatives or session history.
+Use a complete written prompt for every call. The production chain is **approved mood-board images → character exploration → exact selected character image → gameplay-screen exploration**. For gameplay screens, supply the unchanged selected character file as an actual image input, preserve its design and rendering medium, and extend that medium across the entire world. Do not substitute a written approximation. Do not use failed gameplay outputs, screenshots, composites, generated guides or prior session history as references. Grok uses a fresh session and native `image_edit`; the built-in generator receives the exact source path. Record source paths and SHA256 hashes, inspect actual tool inputs, and view every output before presentation. Check character identity, squat proportions, equal human actor scale, shared palette, lighting, texture and projection.
 
-Image inputs are optional. If used, they must be **approved base images from `art/mood-board/` or its approved equipment supplement**, identified in the source inventory and review manifest. Text-only generation is the default. Keep costume, proportions, camera and feedback in the raw written prompt. Do not use `--resume`, a prior concept conversation, or instructions such as “restyle this candidate.”
+This replaces the earlier text-only restriction for the next production stage. Current selected inputs are S49, S13, S15 and S01. The latest user request authorizes three Grok screens and three built-in screens for each source: 24 separate prompts and outputs.
 
-Before each call, inspect the exact request and every proposed image path. After the call, verify the actual `tool_call.rawInput`: its prompt must match the saved raw prompt, and any image paths must belong to the approved mood-board inventory. Stop if the tool rewrites the prompt or supplies an unapproved reference. Earlier image-edit experiments are history, not an authorized workflow.
-
-## Calling it from this workspace
+## Earlier text-only calls — historical example
 
 Use a prompt file to specify one exact `image_gen` call, its prompt and aspect ratio, then require the returned path and prohibit extra generations. The tested command is:
 
@@ -51,7 +49,7 @@ The CLI's language model orchestrates its built-in Imagine tool. **The image too
 
 The test reported **$0.01088476** in language-model orchestration usage. It did not expose a separate image charge or subscription deduction, so this is not a verified total image-generation cost. Published direct-API image pricing is separate evidence in [the alternatives comparison](image-model-alternatives.md).
 
-## Current flat redraw and verified input rules
+## Earlier flat redraw — historical input rules
 
 Latest direction: completely flat drawn fills and graphic dirt marks; no rounded shading, edge glints, bevels or 2.5D appearance. The knight must look dark, muddy, poor, wretched, worn, tired and desperate. A/C need visibly different media; B needs a normal barrel helmet and intact faceplate. Every complete raw prompt states the full costume, proportions, story region/date, camera target and mood-board roles.
 
@@ -89,7 +87,7 @@ The new styles differ in dimensional shading, flat graphic masses and dry painte
 
 The user discarded S24–S34 on 2026-10-04 because the prior-image workflow anchored the results. The eleven source images, prompts, generation records, generated camera guides and batch previews were removed from the workspace and active gallery. Git commit `b02e92b` retains the prior audit history; it must not supply generation inputs.
 
-The earlier S18/S22/S23 comparison used generated-image restyles. That method is now prohibited by the user's rule above. Older studies remain review history only, including S09 and the texture-preferred S13/S17. Their written design lessons can inform raw prompts; their image files must never be supplied to the generator.
+The earlier S18/S22/S23 comparison used generated-image restyles. The user then prohibited reusing failed character explorations. The new production-stage instruction now explicitly requires the exact selected S49/S13/S15/S01 files as gameplay inputs. Failed outputs remain excluded.
 
 The discard-and-workflow correction itself did not generate replacements. The independent S35–S40 generations documented above followed it. The desired output camera remains about 45 degrees above the ground; numeric prompts are not measured camera evidence.
 
@@ -99,6 +97,8 @@ Sources checked: [official headless calls](https://docs.x.ai/build/cli/headless-
 
 ## Gameplay-screen checkpoint — 2026-10-05
 
-The actual Brave ranking is captured in `art/concepts/manifest.md`: S49, S13, S15, S01. Four [gameplay examples](../art/concepts/gameplay/index.html) follow that order. Each complete written brief preserves the story and costume; no selected concept or prior gameplay image is sent as input. Ten unchanged 1280 × 720 outputs and one temporary-capacity failure are recorded in `art/concepts/gameplay/records/`. The failed request was retried with identical text in a fresh session. Actual inputs contain only prompt and aspect ratio; the dispatcher omitted a final newline without changing prompt text.
+G01–G04 are rejected by the user: the player is oversized, the selected designs were not preserved, and actors differ from the world in palette and lighting. The text-only workflow failed this production stage. The earlier inspection was too lenient.
 
-Parent inspection presents four and excludes six internal attempts, including duplicated knights, armor substitutions and weaker rendering matches. [Assessment](../art/concepts/gameplay/assessment.md) explicitly records that G02 is too ink-led for an exact S13 texture match and that player scale, proportions, costume details and calibrated camera remain unapproved. These screens demonstrate possible gameplay composition; they do not implement a game level or create new character-style alternatives. The provider still does not expose an exact image-model identifier or separate image cost.
+Current work: 24 reference-based screens, six distinct scene/composition prompts for each of S49/S13/S15/S01. Three use Grok native `image_edit`; three use the built-in image generator. Preserve the exact source design, including S01's original open nasal helmet, rather than replacing it with a new design. Both providers receive the unchanged selected file, not previous gameplay failures.
+
+For Grok use the standard dispatcher, `--tools image_edit --allow image_edit --permission-mode dontAsk --no-subagents --disable-web-search --verbatim --max-turns 4`, a new empty working directory and unused `--session-id`. Do not use a system prompt override for this route. Request one native `image_edit` call with the exact saved prompt and `image` array containing the selected absolute path. Verify its actual input before accepting any result. The installed tool says single-reference edits preserve source aspect ratio; record returned dimensions without stretching or cropping the art. No exact image-model identifier or image cost is exposed.

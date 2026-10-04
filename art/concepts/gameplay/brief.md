@@ -1,25 +1,22 @@
-# Four gameplay-screen style comparisons
+# Reference-based gameplay exploration
 
-Requested on 2026-10-05. The user has ordered the character gallery and chosen four different styles. Their Brave order was retrieved on 2026-10-05: S49, S13, S15, S01. The full review is saved in the parent concept manifest. This is a generation brief, not a delivered image or an approved art direction.
+The user selected S49, S13, S15 and S01, in that order. Their latest request is **three Grok screens plus three built-in screens per exact character source: 24 outputs**. Each of the six uses a different scene/composition/lighting prompt. The original files remain unchanged and are actual generator inputs.
 
-## Shared scene
+Use a complete written prompt for every call. The production chain is **approved mood-board images → character exploration → exact selected character image → gameplay-screen exploration**. For gameplay screens, supply the unchanged selected character file as an actual image input, preserve its design and rendering medium, and extend that medium across the entire world. Do not substitute a written approximation. Do not use failed gameplay outputs, screenshots, composites, generated guides or prior session history as references. Grok uses a fresh session and native `image_edit`; the built-in generator receives the exact source path. Record source paths and SHA256 hashes, inspect actual tool inputs, and view every output before presentation. Check character identity, squat proportions, equal human actor scale, shared palette, lighting, texture and projection.
 
-Show the same playable Act I encounter in each rendering style: Guarin on the muddy approach to fictional Rivoire, in the Royans/Isère story setting in late summer 1101. A small Romanesque parish church, low limestone and timber houses, a well, blighted rye and the wet charcoal shell of the mill establish the homecoming. Two recognizable afflicted parishioners and a wolf create a readable encounter, with an open movement path around them. Keep the church's round arches, thick walls and modest scale. Avoid later Gothic forms and later-act demons.
+## Exploration matrix
 
-Use a wide 16:9 gameplay frame, viewed from an elevated orthographic three-quarter camera targeting about 45 degrees above the ground. The character belongs at game scale within the environment, rather than as a portrait pasted over scenery. Roof tops, ground paths and helmet crowns must support the elevated view. The image is a concept of gameplay; it is not implemented gameplay or a measured camera calibration.
+| Provider | Scene | Main variation |
+|---|---|---|
+| Grok | Rain lane | Tight diagonal navigation, diffuse wet daylight |
+| Grok | Burned mill | Open riverbank defensive encounter, cool reflections |
+| Grok | Church refuge | Compact interior cutaway, candle pools and shadow |
+| Built-in | Blighted rye | Broad sparse traversal, muted ochre and fog |
+| Built-in | Night courtyard | Intimate household interaction, very low oil-lamp light |
+| Built-in | Grain store | Geometric cutaway investigation, slit-window cold light |
 
-Guarin retains the oversized enclosed cylindrical greathelm, tiny broad body and stubby limbs. Keep him approximately two helmet-heights tall. Use the same worn ring mail, faded wine-red scarf/cape and waist cloth, brown gloves/belt/wraps/short boots, straight sword and taupe wooden kite shield with a narrow wine panel. The greathelm is the explicit anachronism. No exposed eyes, realistic human proportions, new armor or outfit substitutions.
+Each scene is an exploration of the fictional Royans/Isère story setting in 1101, not new story canon or historical evidence. Use modest Romanesque forms, ordinary afflicted neighbors and wolves. No Gothic additions or later-act demon army. Each source governs its exact costume; the full-face greathelm remains the deliberate exception in S49/S13/S15, while S01's selected original nasal helmet is preserved rather than silently redesigned.
 
-Keep the ordinary village poor, dirty, exhausted and dreary. Use charcoal, muddy brown, faded wine, dull iron and dirty limewash. Environmental details must use the same flat two-dimensional drawing language as the selected character style. Avoid three-dimensional rendering, miniature photography, modeled material highlights, glossy effects, cheerful colors and comic-book presentation.
+All human actors share cute squat proportions and near-equal total projected height. Environments share their drawing medium, low palette and lighting. Target elevated orthographic view around 45 degrees; a prompt is not a camera calibration. No sprites or level implementation at this stage.
 
-A restrained bottom game interface may contain muted red/blue resource shapes and a few empty action slots. Treat it as a provisional visual aid, not an approved systems design. Avoid dense generated writing and invented statistics.
-
-## Input and review rules
-
-Use Grok, as already selected by the user. Apply the imagegen skill's prompt and inspection guidance while preserving that explicit provider choice. Each screen gets its own complete raw prompt, fresh empty working directory and new session identifier. No prior generated concept, screenshot, gameplay screen, guide, composite or conversation history is supplied as an image or session input. Describe each selected style in words after inspecting it. Only approved mood-board base images are allowed as optional image inputs.
-
-Save the four prompts, actual tool inputs, source outputs, image dimensions/hashes and parent visual assessments. Verify that the four requested generations actually occurred, that they are distinct and that each follows its selected style. Do not label a style match or camera angle as exact when it is not. Present all four for review; do not create sprite sheets or implement the level at this step.
-
-## Delivered review checkpoint
-
-Four [gameplay examples](index.html) follow that order. [Parent assessment](assessment.md) identifies approximate medium matches and unresolved costume, scale, proportion and camera limitations. Ten actual outputs were inspected; four are presented, six remain internal, and one capacity failure produced no image. No character concept image was altered or supplied to the generator.
+Full prompts and source hashes are in [production-plan.json](production-plan.json). The previous G01–G04 were rejected for source-design failure, mismatched world rendering and excessive player scale.
