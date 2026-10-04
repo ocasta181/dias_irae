@@ -1,0 +1,14 @@
+{
+  "purpose": "Deterministic composition guide, not a game concept or historical object.",
+  "projection": "orthographic",
+  "before_degrees_above_ground": 30,
+  "after_degrees_above_ground": 45,
+  "delta_degrees": 15,
+  "azimuth_degrees": -55,
+  "crown_plane": "horizontal",
+  "cylinder_axis": "vertical",
+  "before_crown_minor_major_ratio": 0.49999999999999994,
+  "after_crown_minor_major_ratio": 0.7071067811865475,
+  "previous_illustration_elevation": "Approximately 30 degrees; not certified geometry.",
+  "geometry_changes_between_views": null
+}
