@@ -31,8 +31,8 @@
     "../../story/characters.md"
   ],
   "regional_scope": "Royans/Isere story, 1101. Greathelm is the explicit user-approved anachronism; no local adoption of broad European equipment is inferred.",
-  "status": "pending",
-  "user_notes": "",
+  "status": "rejected",
+  "user_notes": "User rejected the malformed B and requested a complete redraw. The oversized lid and compressed faceplate were not acceptable; earlier parent assessment missed this failure.",
   "inspection_notes": [
     "Clearly flat 2D shapes, thin contours and restrained dark color. The lid is much broader and the body compact; no added knee armor. This is the most graphic approach. Mail is too sparse, light upper-arm patches need clarification, and helmet strips drift onto the crown. Eligible for style review, not a finished costume/camera reference."
   ],
@@ -47,8 +47,9 @@
       "camera": "closer; not calibrated",
       "style_distinction": "sparse flat animation shapes"
     },
-    "release": "style review only; production approval blocked by costume and camera",
-    "limit": "2D appearance is a visual judgment; provider internal rendering steps are not exposed."
+    "release": "superseded; user revision required",
+    "limit": "2D appearance is a visual judgment; provider internal rendering steps are not exposed.",
+    "superseded_by_latest_user_feedback": "User rejected the malformed B and requested a complete redraw. The oversized lid and compressed faceplate were not acceptable; earlier parent assessment missed this failure."
   },
   "desired_camera_degrees_above_ground": 45,
   "requested_nominal_camera_degrees_above_ground": 75,

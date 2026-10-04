@@ -31,8 +31,8 @@
     "../../story/characters.md"
   ],
   "regional_scope": "Royans/Isere story, 1101. Greathelm is the explicit user-approved anachronism; no local adoption of broad European equipment is inferred.",
-  "status": "pending",
-  "user_notes": "",
+  "status": "revise",
+  "user_notes": "User revision: still reads as 3D/2.5D. Make it much flatter, darker and more wretched; A and C were too similar. The earlier parent flatness judgment was too lenient.",
   "inspection_notes": [
     "Visible brush marks and muted gray, taupe and dried-wine colors; a drawn 2D surface rather than a glossy miniature. The huge helmet and short body remain cute. The view is still shallow, mail marks are repetitive, and an extra horizontal helmet brace appeared. Eligible for style review, not a finished costume/camera reference."
   ],
@@ -47,8 +47,9 @@
       "camera": "too shallow",
       "style_distinction": "soft drawn paint"
     },
-    "release": "style review only; production approval blocked by costume and camera",
-    "limit": "2D appearance is a visual judgment; provider internal rendering steps are not exposed."
+    "release": "superseded; user revision required",
+    "limit": "2D appearance is a visual judgment; provider internal rendering steps are not exposed.",
+    "superseded_by_latest_user_feedback": "User revision: still reads as 3D/2.5D. Make it much flatter, darker and more wretched; A and C were too similar. The earlier parent flatness judgment was too lenient."
   },
   "desired_camera_degrees_above_ground": 45,
   "requested_nominal_camera_degrees_above_ground": 60,

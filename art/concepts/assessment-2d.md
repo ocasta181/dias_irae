@@ -1,5 +1,7 @@
 # Parent review of the 2D Grok concepts
 
+**Historical assessment, superseded by user feedback.** A/C still read as 3D/2.5D and too similar; B had malformed helmet geometry. The parent flatness/geometry judgment below was too lenient. See [the new assessment](assessment-flat.md).
+
 Reviewed 2026-10-04. I inspected the actual images against the approved [game-language board](../mood-board/game-language.jpg), [complete overview](../mood-board/overview.jpg) and latest user instructions. Images were viewed locally; none were supplied to the generator. These are judgments from visible art, not provider claims or automatic image scores.
 
 ## Review criteria

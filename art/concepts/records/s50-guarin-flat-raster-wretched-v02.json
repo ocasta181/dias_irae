@@ -1,0 +1,71 @@
+{
+  "identifier": "S50",
+  "approach": "A \u2014 Flat fine raster",
+  "version": "v02",
+  "image": "images/s50-guarin-flat-raster-wretched-v02.jpg",
+  "prompt": "prompts/s50-guarin-flat-raster-wretched-v02.txt",
+  "tool": "Grok CLI image_gen",
+  "model": "Exact Imagine image model not exposed by CLI result",
+  "cli": "/Users/ocasta/.grok/bin/grok",
+  "cli_version": "1.0.46 (2765805b9442) [stable]",
+  "generation_date": "2026-10-04",
+  "input_mode": "independent complete raw text only",
+  "reference_identifiers": [],
+  "reference_inputs": [],
+  "regional_scope": "Royans/Isere, 1101; greathelm is the explicit user-approved anachronism. Costume details are stylization, not historical evidence.",
+  "status": "revise",
+  "user_notes": "Held back: fine pixel art and grim color, but raised metallic edge highlights still imply 2.5D volume. Added helmet fitting and costume drift.",
+  "inspection_notes": [
+    "Held back: fine pixel art and grim color, but raised metallic edge highlights still imply 2.5D volume. Added helmet fitting and costume drift."
+  ],
+  "quality_assessment": {
+    "assessor": "Parent assistant, after viewing the actual image",
+    "comparison_basis": "Approved mood board and latest demand for flat, distinct, darker and more wretched art",
+    "checks": {
+      "flatness": "fails: raised highlights",
+      "mood": "dark and worn",
+      "style_distinction": "fine pixels",
+      "costume": "needs correction",
+      "camera": "not calibrated; head tilt cannot establish elevation"
+    },
+    "release": "held back after parent inspection",
+    "limit": "Appearance is a visual judgment; provider internal rendering steps are not exposed."
+  },
+  "desired_camera_degrees_above_ground": 45,
+  "requested_nominal_camera_degrees_above_ground": 45,
+  "camera_limit": "The generated view is not calibrated. Head tilt, stylized lids and occlusion prevent a reliable numeric measurement. No exact 15-degree increase is claimed.",
+  "source_output": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-flat-s50-s52%2Fs50/f4c533fc-b967-4e7f-971d-042be8c03b10/images/1.jpg",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "sha256": "25cefae3d9768967a52b6a4ecd84b0c466244b9453df70463d371e2bc846c7eb",
+  "format": "JPEG",
+  "tool_call_count": 1,
+  "independent_working_directory": "/private/tmp/dias-grok-flat-s50-s52/s50",
+  "explicit_new_session_id": "f4c533fc-b967-4e7f-971d-042be8c03b10",
+  "resume_or_continue_used": false,
+  "dispatcher_system_prompt_override": "Dispatch exactly one image_gen call with the supplied complete raw prompt verbatim. Only completely flat 2D drawn art is allowed. No 3D or 2.5D appearance. Do not use images, history, memory, other tools, subagents or extra generations.",
+  "attempts": [
+    {
+      "tool": "image_gen",
+      "tool_input": {
+        "prompt": "TRUE 2D PIXEL ART with a fine visible raster grid: sprite-scale 256 pixels tall, densely sampled small pixels, not huge low-resolution blocks. Build the knight entirely from tiny SQUARE COLOR CLUSTERS with visibly stepped edges and granular pixel grime. Use solid low-value color patches with NO gradient shading, NO continuous ink contour, NO painterly brush strokes. Only six dirty dark colors; flat pixel groups indicate rusty spots and threadbare cloth. This option must be unmistakably fine pixel art, rather than a vector or shaded painting.\n\nABSOLUTELY FLAT 2D DRAWING. Use uniform solid dark fills. Dirt is flat black/brown marks. Helmet top, front and shield stay flat fills, with NO modeled shading, gradients, edge highlights, shiny bevels or 3D/2.5D appearance. Body parts may overlap as drawn silhouettes, never as lit rounded volumes. A completely solid nearly-black charcoal background filling the whole canvas, NOT beige, brown paper, a painted scene, decorative frame or studio backdrop.\n\nThe mood is wretched poverty and exhaustion: hopeless, mud-caked, greasy, worn, tired, desperate, dreary. Shoulders droop, short arms hang wearily, heavy helmet upright but burdening the tiny body, battered sword held low. Dirty dark-gray iron, muddy brown cloth/leather and nearly-black dried-brown-wine rags; no fresh red, pale silver, attractive glints, cheerful colors or heroic posture. The knight is cute only because he has a very huge head and tiny squat body, never because he looks happy or polished.\n\nApproved mood board: Hollow Knight gives simple economical 2D shapes, oversized heads, tiny bodies and gloomy readability. Diablo II gives bleak dirty earthly colors and worn gear, not realistic anatomy or rendered volume. Castle Crashers has only a trace of compact posing; no comedy. Darkwood and sacred-horror painting references add isolation, black recesses and dried-red stains. The story is a returning rural household knight, Guarin, Royans/Isere, 1101. Greathelm is the expressly allowed anachronism.\n\nFIXED LOADOUT: a huge full-face dull-iron cylindrical greathelm roughly as tall as wide, upright, plain level circular lid same width as the sides, NO overhang or brim, substantial intact front faceplate, narrow black visor, small breathing holes and two plain vertical rivet strips. No eyes, face or visible skin. Tiny broad torso, very short arms and legs, short wide boots: two head-heights tall overall. Dark RING MAIL shirt and short sleeves over mud-dark cloth covering the upper arms; small linked broken rings indicate mail, not scales, disks or dots. Ragged filthy dried-wine scarf and short cape and waist cloth; brown belt/plain rectangular buckle, plain brown gloves, taupe-brown cloth forearm/shin wraps, short rounded brown boots. No extra armor, metal joint disks, ornament or costume pieces. Straight double-edged arming sword at viewer-left, disk pommel and straight crossguard, straight blade pointing low across the front to lower-right. Elongated pointed wooden kite shield at viewer-right, taupe wood, dull iron rim, narrow faded dirty wine-red panel; chipped and mud-stained.\n\nWhole character, ONE view, all feet and equipment tips visible. Elevated orthographic three-quarter game view around 45 degrees above ground, diagonally facing lower-right. Draw the level lid as a broad ellipse fitting a normal upright barrel helmet, with a substantial front faceplate below it; do not make a pancake helmet. Isometric projection is shown by contours and overlapping flat shapes, NEVER surface lighting. Small flat black muddy foot mark only. Square canvas, generous quiet margins, no text. Keep every surface dark and flat and keep the background solid near-black.\n\nFINAL MEDIUM RULE: TRUE 2D PIXEL ART with a fine visible raster grid: sprite-scale 256 pixels tall, densely sampled small pixels, not huge low-resolution blocks. Build the knight entirely from tiny SQUARE COLOR CLUSTERS with visibly stepped edges and granular pixel grime. Use solid low-value color patches with NO gradient shading, NO continuous ink contour, NO painterly brush strokes. Only six dirty dark colors; flat pixel groups indicate rusty spots and threadbare cloth. This option must be unmistakably fine pixel art, rather than a vector or shaded painting.\nSOLID NEAR-BLACK BACKGROUND. FLAT FILLS, NO SHADING GRADIENTS.",
+        "aspect_ratio": "1:1"
+      },
+      "tool_status": "completed",
+      "tool_output": {
+        "type": "ImageGen",
+        "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-flat-s50-s52%2Fs50/f4c533fc-b967-4e7f-971d-042be8c03b10/images/1.jpg",
+        "filename": "1.jpg",
+        "session_folder": "images"
+      },
+      "session_id": "f4c533fc-b967-4e7f-971d-042be8c03b10",
+      "stop_reason": "end_turn",
+      "reported_orchestration_cost_usd": 0.00986952,
+      "orchestration_model": "grok-4.7-build"
+    }
+  ],
+  "reported_orchestration_cost_usd": 0.00986952,
+  "billing_limit": "CLI language-model orchestration usage only; separate image charges/subscription deductions are not exposed."
+}

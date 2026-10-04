@@ -1,0 +1,71 @@
+{
+  "identifier": "S52",
+  "approach": "C \u2014 Rough flat stencil",
+  "version": "v02",
+  "image": "images/s52-guarin-flat-stencil-wretched-v02.jpg",
+  "prompt": "prompts/s52-guarin-flat-stencil-wretched-v02.txt",
+  "tool": "Grok CLI image_gen",
+  "model": "Exact Imagine image model not exposed by CLI result",
+  "cli": "/Users/ocasta/.grok/bin/grok",
+  "cli_version": "1.0.46 (2765805b9442) [stable]",
+  "generation_date": "2026-10-04",
+  "input_mode": "independent complete raw text only",
+  "reference_identifiers": [],
+  "reference_inputs": [],
+  "regional_scope": "Royans/Isere, 1101; greathelm is the explicit user-approved anachronism. Costume details are stylization, not historical evidence.",
+  "status": "pending",
+  "user_notes": "",
+  "inspection_notes": [
+    "Broad irregular flat patches and broken stencil edges replace the ink outline. Muddy brown rags, stains and sagging posture feel wretched. The front plate is lighter than the shell; mail becomes patched cloth and the narrow wine shield panel is missing. Camera remains uncalibrated."
+  ],
+  "quality_assessment": {
+    "assessor": "Parent assistant, after viewing the actual image",
+    "comparison_basis": "Approved mood board and latest demand for flat, distinct, darker and more wretched art",
+    "checks": {
+      "flatness": "flatter broad patches; faceplate value still differs",
+      "mood": "muddy, torn and tired",
+      "style_distinction": "rough stencil edges",
+      "costume": "needs correction",
+      "camera": "not calibrated; head tilt cannot establish elevation"
+    },
+    "release": "style review with stated limitations; no production approval",
+    "limit": "Appearance is a visual judgment; provider internal rendering steps are not exposed."
+  },
+  "desired_camera_degrees_above_ground": 45,
+  "requested_nominal_camera_degrees_above_ground": 45,
+  "camera_limit": "The generated view is not calibrated. Head tilt, stylized lids and occlusion prevent a reliable numeric measurement. No exact 15-degree increase is claimed.",
+  "source_output": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-flat-s50-s52%2Fs52/e72d3e94-5a3b-4317-acb7-b8e16f9025e3/images/1.jpg",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "sha256": "cbb4912d46205147ee3747b8d33c718e30323610d3d385027f71f135724e0b66",
+  "format": "JPEG",
+  "tool_call_count": 1,
+  "independent_working_directory": "/private/tmp/dias-grok-flat-s50-s52/s52",
+  "explicit_new_session_id": "e72d3e94-5a3b-4317-acb7-b8e16f9025e3",
+  "resume_or_continue_used": false,
+  "dispatcher_system_prompt_override": "Dispatch exactly one image_gen call with the supplied complete raw prompt verbatim. Only completely flat 2D drawn art is allowed. No 3D or 2.5D appearance. Do not use images, history, memory, other tools, subagents or extra generations.",
+  "attempts": [
+    {
+      "tool": "image_gen",
+      "tool_input": {
+        "prompt": "FLAT 2D ROUGH STENCIL GAME CHARACTER. Large ragged solid silhouette shapes and BROKEN UNEVEN EDGES, rough erased gaps, irregular flat soot marks and a few carved-looking thin scratches. Use exactly three muted flat colors plus black: filthy iron gray, mud brown and almost-black dried wine. This is graphic stained ink, NOT a brush painting, NOT watercolor, NOT pixel stipple, NOT engraved crosshatching, NOT volumetric shading. Poverty and hopelessness should be visible in torn contour shapes and flat worn patches. No crisp outline: rough shape edges define the figure.\n\nABSOLUTELY FLAT 2D DRAWING. Use uniform solid dark fills. Dirt is flat black/brown marks. Helmet top, front and shield stay flat fills, with NO modeled shading, gradients, edge highlights, shiny bevels or 3D/2.5D appearance. Body parts may overlap as drawn silhouettes, never as lit rounded volumes. A completely solid nearly-black charcoal background filling the whole canvas, NOT beige, brown paper, a painted scene, decorative frame or studio backdrop.\n\nThe mood is wretched poverty and exhaustion: hopeless, mud-caked, greasy, worn, tired, desperate, dreary. Shoulders droop, short arms hang wearily, heavy helmet upright but burdening the tiny body, battered sword held low. Dirty dark-gray iron, muddy brown cloth/leather and nearly-black dried-brown-wine rags; no fresh red, pale silver, attractive glints, cheerful colors or heroic posture. The knight is cute only because he has a very huge head and tiny squat body, never because he looks happy or polished.\n\nApproved mood board: Hollow Knight gives simple economical 2D shapes, oversized heads, tiny bodies and gloomy readability. Diablo II gives bleak dirty earthly colors and worn gear, not realistic anatomy or rendered volume. Castle Crashers has only a trace of compact posing; no comedy. Darkwood and sacred-horror painting references add isolation, black recesses and dried-red stains. The story is a returning rural household knight, Guarin, Royans/Isere, 1101. Greathelm is the expressly allowed anachronism.\n\nFIXED LOADOUT: a huge full-face dull-iron cylindrical greathelm roughly as tall as wide, upright, plain level circular lid same width as the sides, NO overhang or brim, substantial intact front faceplate, narrow black visor, small breathing holes and two plain vertical rivet strips. No eyes, face or visible skin. Tiny broad torso, very short arms and legs, short wide boots: two head-heights tall overall. Dark RING MAIL shirt and short sleeves over mud-dark cloth covering the upper arms; small linked broken rings indicate mail, not scales, disks or dots. Ragged filthy dried-wine scarf and short cape and waist cloth; brown belt/plain rectangular buckle, plain brown gloves, taupe-brown cloth forearm/shin wraps, short rounded brown boots. No extra armor, metal joint disks, ornament or costume pieces. Straight double-edged arming sword at viewer-left, disk pommel and straight crossguard, straight blade pointing low across the front to lower-right. Elongated pointed wooden kite shield at viewer-right, taupe wood, dull iron rim, narrow faded dirty wine-red panel; chipped and mud-stained.\n\nWhole character, ONE view, all feet and equipment tips visible. Elevated orthographic three-quarter game view around 45 degrees above ground, diagonally facing lower-right. Draw the level lid as a broad ellipse fitting a normal upright barrel helmet, with a substantial front faceplate below it; do not make a pancake helmet. Isometric projection is shown by contours and overlapping flat shapes, NEVER surface lighting. Small flat black muddy foot mark only. Square canvas, generous quiet margins, no text. Keep every surface dark and flat and keep the background solid near-black.\n\nFINAL MEDIUM RULE: FLAT 2D ROUGH STENCIL GAME CHARACTER. Large ragged solid silhouette shapes and BROKEN UNEVEN EDGES, rough erased gaps, irregular flat soot marks and a few carved-looking thin scratches. Use exactly three muted flat colors plus black: filthy iron gray, mud brown and almost-black dried wine. This is graphic stained ink, NOT a brush painting, NOT watercolor, NOT pixel stipple, NOT engraved crosshatching, NOT volumetric shading. Poverty and hopelessness should be visible in torn contour shapes and flat worn patches. No crisp outline: rough shape edges define the figure.\nSOLID NEAR-BLACK BACKGROUND. FLAT FILLS, NO SHADING GRADIENTS.",
+        "aspect_ratio": "1:1"
+      },
+      "tool_status": "completed",
+      "tool_output": {
+        "type": "ImageGen",
+        "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-flat-s50-s52%2Fs52/e72d3e94-5a3b-4317-acb7-b8e16f9025e3/images/1.jpg",
+        "filename": "1.jpg",
+        "session_folder": "images"
+      },
+      "session_id": "e72d3e94-5a3b-4317-acb7-b8e16f9025e3",
+      "stop_reason": "end_turn",
+      "reported_orchestration_cost_usd": 0.009962,
+      "orchestration_model": "grok-4.7-build"
+    }
+  ],
+  "reported_orchestration_cost_usd": 0.009962,
+  "billing_limit": "CLI language-model orchestration usage only; separate image charges/subscription deductions are not exposed."
+}

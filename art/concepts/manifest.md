@@ -1,28 +1,52 @@
 # Concept art review manifest
 
-Current checkpoint: **S41 / S46 / S45 are the assessed 2D-only comparison. No character concept is approved.** A uses soft drawn paint and Diablo II's muted mood; B uses economical Hollow Knight-like flat shapes; C uses rough painted grain. All use complete raw prompts in new isolated Grok sessions, with explicit 2D-only instructions and no image input.
+Current checkpoint: **S55 / S51 / S52 are the new flat-style comparison. No character concept is approved.** A uses fine pixel clusters; B uses sparse ink contours; C uses rough stencil patches. B's malformed lid/faceplate was redrawn. The brief now demands much flatter art, dark filth, poverty, wear, exhaustion and despair.
 
 ## Mandatory generation rule
 
 Each iteration must begin with a complete raw prompt in a new independent generation session. Never pass a concept from a prior iteration, whether failed, rejected or previously preferred. Do not upload a concept screenshot, prior output, generated geometry guide, composite or restyled derivative. If images are supplied, they must be approved base references from the mood board or its approved equipment supplement. Text-only generation is allowed. Do not carry previous concepts through session history. Record and inspect the actual tool input to verify this rule before treating an output as a candidate.
 
-Only 2D art is allowed. Prohibit 3D renders, sculpts, miniature photography, glossy shaders and studio-lighting effects in every complete raw prompt and dispatcher instruction. Describe the approved mood and each reference's role; game names alone are not enough. The parent assistant must view and assess each output before presenting it. Hold back failures of the 2D or mood requirements and record why. Production camera and costume approval remain separate open requirements.
+Only flat 2D art is allowed. Flat fills and graphic marks must replace modeled volume; grime on a shaded object does not satisfy this rule. Prohibit 3D renders, sculpts, miniature photography, glossy shaders and studio-lighting effects in every complete raw prompt and dispatcher instruction. Describe the approved mood and each reference's role; game names alone are not enough. The parent assistant must view and assess each output before presenting it. Hold back failures of the 2D or mood requirements and record why. Production camera and costume approval remain separate open requirements.
 
-I viewed the approved mood board and all six new images. S42 was too clean, S43 too similar to B with an extra helmet fitting, and S44 added knee armor. These remain internal revisions. The presented three pass my 2D-appearance, muted-mood and cute-proportion review, with specific costume and camera issues still open. **S45 is my strongest mood match.** This assessment is not user acceptance.
+Eight new drawings were inspected. Five were held back for wrong medium, light backgrounds or modeled metallic highlights. The presented trio is flatter and more distinct than the previous comparison, with limitations in costume, pose and camera still documented in [the assessment](assessment-flat.md). B/C most clearly convey exhaustion; A keeps the shortest, squattest structure but has visible costume drift. These are style proposals, not approved final assets.
 
-The same costume was specified each time: full-face greathelm, ring mail, wine scarf/cape/waist cloth, brown belt/gloves/wraps/boots, straight arming sword and taupe wooden kite shield. Small construction and mail-notation drift is documented in [my image-by-image assessment](assessment-2d.md). Royans/Isère, 1101 remains the story scope; the greathelm is the explicit anachronism.
+Each call used a complete raw prompt and a new independent session. **A uses only approved mood-board base M22 (Hollow Knight combat), through `image_edit`; B and C use `image_gen` with no image input.** No prior generated concept, screenshot, guide, composite or session history was supplied. One earlier reference-call dispatcher failed without producing an image; S54 is documented below, and S55 retried in a new session.
 
-**Camera is still inconsistent.** Target is about 45 degrees above ground, 15 steeper than the earlier estimated 30. Rough output estimates: A 25–35 degrees, B 35–50, C 30–40. Nominal prompts were 60, 75 and 65 respectively to counter flattening; those numbers do not measure the result. Helmet tilt and stylized lids limit estimates. Neither an exact increase nor a consistent projection is claimed.
+The fixed costume and Royans/Isère, 1101 story remain authoritative; the greathelm is the allowed anachronism. Generator additions and substitutions are revision issues, not new costume canon. **Camera remains uncalibrated.** Target remains about 45 degrees above the ground; no achieved angle or exact 15-degree increase is claimed.
 
-Review [the gallery](index.html?v=8#current-styles), [overview](comparison-grok-2d-v01.jpg), [assessment](assessment-2d.md), [raw inputs](../../docs/grok-image-generation.md) and [checklist](../../docs/art-production-checklist.md). Decisions and comments remain available for each view. Manifest export preserves earlier and planned rows.
+Review [the gallery](index.html?v=9#current-styles), [overview](comparison-grok-flat-v01.jpg), [assessment](assessment-flat.md) and [progress checklist](../../docs/art-production-checklist.md). Per-view decisions and commentary remain available. Export preserves historical and planned rows.
 
-## Current 2D comparison — pending user review
+## Current flat-style comparison — pending user review
 
 | Identifier | Candidate | Purpose | Image | Status | Notes |
 |---|---|---|---|---|---|
-| S41 | A — Diablo II mood, drawn in 2D | Assessed 2D mood/style study | [S41](images/s41-guarin-diablo-2d-v01.jpg) | pending |  |
-| S46 | B — Hollow Knight shapes, somber 2D | Assessed 2D mood/style study | [S46](images/s46-guarin-hollow-knight-2d-v03.jpg) | pending |  |
-| S45 | C — Dark painted 2D blend | Assessed 2D mood/style study | [S45](images/s45-guarin-blended-2d-v02.jpg) | pending |  |
+| S55 | A — Flat fine raster | Flat style study | [S55](images/s55-guarin-flat-raster-mood-base-v05.jpg) | pending |  |
+| S51 | B — Worn flat ink animation | Flat style study | [S51](images/s51-guarin-flat-ink-wretched-v02.jpg) | pending |  |
+| S52 | C — Rough flat stencil | Flat style study | [S52](images/s52-guarin-flat-stencil-wretched-v02.jpg) | pending |  |
+
+## Flat trials held back after parent review
+
+| Identifier | Candidate | Purpose | Image | Status | Notes |
+|---|---|---|---|---|---|
+| S47 | A — Flat fine raster | Flat style study | [S47](images/s47-guarin-flat-raster-wretched-v01.jpg) | revise | Held back: dark flat fills but lost the requested fine raster medium. Light upper arms and upright body weaken the fixed costume and exhausted pose. |
+| S48 | B — Worn flat ink animation | Flat style study | [S48](images/s48-guarin-flat-ink-wretched-v01.jpg) | revise | Held back: the barrel helmet is repaired and the drawing is flat, but the light beige background misses the required charcoal mood. |
+| S49 | C — Flat dirty charcoal wash | Flat style study | [S49](images/s49-guarin-flat-wash-wretched-v01.jpg) | revise | Held back: the dirty wash still models rounded volume and uses a light paper background. This fails the stricter flatness requirement. |
+| S50 | A — Flat fine raster | Flat style study | [S50](images/s50-guarin-flat-raster-wretched-v02.jpg) | revise | Held back: fine pixel art and grim color, but raised metallic edge highlights still imply 2.5D volume. Added helmet fitting and costume drift. |
+| S53 | A — Flat fine raster | Flat style study | [S53](images/s53-guarin-flat-raster-wretched-v03.jpg) | revise | Held back: the short squat pixel silhouette is useful, but metallic rim highlights and an added side fitting persist. Not promoted as a solution to flatness. |
+
+## Failed reference dispatch — no image
+
+| Identifier | Candidate | Purpose | Image | Status | Notes |
+|---|---|---|---|---|---|
+| S54 | A — Approved-base reference trial | Native image_edit dispatch | — | revise | Dispatcher override searched for a tool instead of calling the available native image_edit. No generation occurred and no image was submitted. Retried in a new session as S55 with the standard dispatcher. |
+
+## Previous comparison — user requested flatter, grittier art
+
+| Identifier | Candidate | Purpose | Image | Status | Notes |
+|---|---|---|---|---|---|
+| S41 | A — Diablo II mood, drawn in 2D | Assessed 2D mood/style study | [S41](images/s41-guarin-diablo-2d-v01.jpg) | revise | User revision: still reads as 3D/2.5D. Make it much flatter, darker and more wretched; A and C were too similar. The earlier parent flatness judgment was too lenient. |
+| S46 | B — Hollow Knight shapes, somber 2D | Assessed 2D mood/style study | [S46](images/s46-guarin-hollow-knight-2d-v03.jpg) | rejected | User rejected the malformed B and requested a complete redraw. The oversized lid and compressed faceplate were not acceptable; earlier parent assessment missed this failure. |
+| S45 | C — Dark painted 2D blend | Assessed 2D mood/style study | [S45](images/s45-guarin-blended-2d-v02.jpg) | revise | User revision: still too modeled and too similar to A. Make it flatter, darker, muddier, dirtier and exhausted. The earlier parent flatness judgment was too lenient. |
 
 ## Held back after my image review
 

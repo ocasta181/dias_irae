@@ -1,0 +1,82 @@
+{
+  "identifier": "S55",
+  "approach": "A \u2014 Flat fine raster",
+  "version": "v05",
+  "image": "images/s55-guarin-flat-raster-mood-base-v05.jpg",
+  "prompt": "prompts/s55-guarin-flat-raster-mood-base-v05.txt",
+  "tool": "Grok CLI image_edit",
+  "model": "Exact Imagine image model not exposed by CLI result",
+  "cli": "/Users/ocasta/.grok/bin/grok",
+  "cli_version": "1.0.46 (2765805b9442) [stable]",
+  "generation_date": "2026-10-04",
+  "input_mode": "complete independent raw prompt with approved M22 base only",
+  "reference_identifiers": [
+    "M22"
+  ],
+  "reference_inputs": [
+    {
+      "identifier": "M22",
+      "file": "art/mood-board/07-game-language/m22-hollow-knight-combat.jpg",
+      "sha256": "d7d892c41c6f5c375050ff966e07accc6d9f59198a340059c449b9da589abee5"
+    }
+  ],
+  "regional_scope": "Royans/Isere, 1101; greathelm is the explicit user-approved anachronism. Costume details are stylization, not historical evidence.",
+  "status": "pending",
+  "user_notes": "",
+  "inspection_notes": [
+    "Flat stepped pixel clusters; broad dark fills replace the modeled metal sheen. Huge helmet and very short body are preserved. Rust and torn cloth add wear, although the pose is less exhausted than B/C. Unrequested circular helmet fitting, exposed light arms and overly broad red shield panel need correction. Camera remains too shallow/unverified."
+  ],
+  "quality_assessment": {
+    "assessor": "Parent assistant, after viewing the actual image",
+    "comparison_basis": "Approved mood board and latest demand for flat, distinct, darker and more wretched art",
+    "checks": {
+      "flatness": "flatter stepped fills; discrete surface values remain",
+      "mood": "dark and worn; less exhausted pose",
+      "style_distinction": "fine pixel clusters",
+      "costume": "needs correction",
+      "camera": "not calibrated; head tilt cannot establish elevation"
+    },
+    "release": "style review with stated limitations; no production approval",
+    "limit": "Appearance is a visual judgment; provider internal rendering steps are not exposed."
+  },
+  "desired_camera_degrees_above_ground": 45,
+  "requested_nominal_camera_degrees_above_ground": 45,
+  "camera_limit": "The generated view is not calibrated. Head tilt, stylized lids and occlusion prevent a reliable numeric measurement. No exact 15-degree increase is claimed.",
+  "source_output": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-flat-s55/4db05221-8b08-4bac-8451-b5d608813adb/images/1.jpg",
+  "dimensions": [
+    1360,
+    768
+  ],
+  "sha256": "dc9ea9f5741fca38e5586c2c0855c0ebdd979d662335bbba0a8b4a86f3b434be",
+  "format": "JPEG",
+  "tool_call_count": 1,
+  "independent_working_directory": "/private/tmp/dias-grok-flat-s55",
+  "explicit_new_session_id": "4db05221-8b08-4bac-8451-b5d608813adb",
+  "resume_or_continue_used": false,
+  "dispatcher_system_prompt_override": false,
+  "attempts": [
+    {
+      "tool": "image_edit",
+      "tool_input": {
+        "image": [
+          "/Users/ocasta/Code/Dias Irae/art/mood-board/07-game-language/m22-hollow-knight-combat.jpg"
+        ],
+        "prompt": "Use the supplied APPROVED MOOD-BOARD screenshot ONLY for its flat 2D character-shape language. Create a wholly new single human knight described below. Do not copy the bugs, faces, stage, environment, colors or composition. The reference must suppress rounded material lighting, not add a scene.\n\nFLAT PIXEL SILHOUETTES, not a pixelated shaded render. Every metal surface uses the SAME SINGLE uniform dirty dark-gray fill; crown and front have no light/shadow difference. NO bright edge pixels, rims, bevels, metallic highlights or side gradients. Define helmet, sword and shield by dark pixel contours and a few flat black details. Tiny pixel dirt spots are flat marks. Keep all cloth underlayers soot-black, never bare beige arms. Only six very DARK colors: soot black, dirty charcoal iron gray, mud brown, blackened taupe and dried-brown-wine. The figure is a very short squat exhausted cartoon with a giant head, not an upright heroic adult. No helmet ornaments, hinges, ear disks, extra armor or jewelry.\n\nTRUE 2D PIXEL ART with a fine visible raster grid: sprite-scale 256 pixels tall, densely sampled small pixels, not huge low-resolution blocks. Build the knight entirely from tiny SQUARE COLOR CLUSTERS with visibly stepped edges and granular pixel grime. Use solid low-value color patches with NO gradient shading, NO continuous ink contour, NO painterly brush strokes. Only six dirty dark colors; flat pixel groups indicate rusty spots and threadbare cloth. This option must be unmistakably fine pixel art, rather than a vector or shaded painting.\n\nABSOLUTELY FLAT 2D DRAWING. Use uniform solid dark fills. Dirt is flat black/brown marks. Helmet top, front and shield stay flat fills, with NO modeled shading, gradients, edge highlights, shiny bevels or 3D/2.5D appearance. Body parts may overlap as drawn silhouettes, never as lit rounded volumes. A completely solid nearly-black charcoal background filling the whole canvas, NOT beige, brown paper, a painted scene, decorative frame or studio backdrop.\n\nThe mood is wretched poverty and exhaustion: hopeless, mud-caked, greasy, worn, tired, desperate, dreary. Shoulders droop, short arms hang wearily, heavy helmet upright but burdening the tiny body, battered sword held low. Dirty dark-gray iron, muddy brown cloth/leather and nearly-black dried-brown-wine rags; no fresh red, pale silver, attractive glints, cheerful colors or heroic posture. The knight is cute only because he has a very huge head and tiny squat body, never because he looks happy or polished.\n\nApproved mood board: Hollow Knight gives simple economical 2D shapes, oversized heads, tiny bodies and gloomy readability. Diablo II gives bleak dirty earthly colors and worn gear, not realistic anatomy or rendered volume. Castle Crashers has only a trace of compact posing; no comedy. Darkwood and sacred-horror painting references add isolation, black recesses and dried-red stains. The story is a returning rural household knight, Guarin, Royans/Isere, 1101. Greathelm is the expressly allowed anachronism.\n\nFIXED LOADOUT: a huge full-face dull-iron cylindrical greathelm roughly as tall as wide, upright, plain level circular lid same width as the sides, NO overhang or brim, substantial intact front faceplate, narrow black visor, small breathing holes and two plain vertical rivet strips. No eyes, face or visible skin. Tiny broad torso, very short arms and legs, short wide boots: two head-heights tall overall. Dark RING MAIL shirt and short sleeves over mud-dark cloth covering the upper arms; small linked broken rings indicate mail, not scales, disks or dots. Ragged filthy dried-wine scarf and short cape and waist cloth; brown belt/plain rectangular buckle, plain brown gloves, taupe-brown cloth forearm/shin wraps, short rounded brown boots. No extra armor, metal joint disks, ornament or costume pieces. Straight double-edged arming sword at viewer-left, disk pommel and straight crossguard, straight blade pointing low across the front to lower-right. Elongated pointed wooden kite shield at viewer-right, taupe wood, dull iron rim, narrow faded dirty wine-red panel; chipped and mud-stained.\n\nWhole character, ONE view, all feet and equipment tips visible. Elevated orthographic three-quarter game view around 45 degrees above ground, diagonally facing lower-right. Draw the level lid as a broad ellipse fitting a normal upright barrel helmet, with a substantial front faceplate below it; do not make a pancake helmet. Isometric projection is shown by contours and overlapping flat shapes, NEVER surface lighting. Small flat black muddy foot mark only. Square canvas, generous quiet margins, no text. Keep every surface dark and flat and keep the background solid near-black.\n\nFINAL MEDIUM RULE: TRUE 2D PIXEL ART with a fine visible raster grid: sprite-scale 256 pixels tall, densely sampled small pixels, not huge low-resolution blocks. Build the knight entirely from tiny SQUARE COLOR CLUSTERS with visibly stepped edges and granular pixel grime. Use solid low-value color patches with NO gradient shading, NO continuous ink contour, NO painterly brush strokes. Only six dirty dark colors; flat pixel groups indicate rusty spots and threadbare cloth. This option must be unmistakably fine pixel art, rather than a vector or shaded painting.\nSOLID NEAR-BLACK BACKGROUND. FLAT FILLS, NO SHADING GRADIENTS.\n\nFINAL IMPORTANT RULE: FLAT PIXEL SILHOUETTES, not a pixelated shaded render. Every metal surface uses the SAME SINGLE uniform dirty dark-gray fill; crown and front have no light/shadow difference. NO bright edge pixels, rims, bevels, metallic highlights or side gradients. Define helmet, sword and shield by dark pixel contours and a few flat black details. Tiny pixel dirt spots are flat marks. Keep all cloth underlayers soot-black, never bare beige arms. Only six very DARK colors: soot black, dirty charcoal iron gray, mud brown, blackened taupe and dried-brown-wine. The figure is a very short squat exhausted cartoon with a giant head, not an upright heroic adult. No helmet ornaments, hinges, ear disks, extra armor or jewelry.",
+        "aspect_ratio": "1:1"
+      },
+      "tool_status": "completed",
+      "tool_output": {
+        "type": "ImageEdit",
+        "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-flat-s55/4db05221-8b08-4bac-8451-b5d608813adb/images/1.jpg",
+        "filename": "1.jpg",
+        "session_folder": "images"
+      },
+      "session_id": "4db05221-8b08-4bac-8451-b5d608813adb",
+      "stop_reason": "end_turn",
+      "reported_orchestration_cost_usd": 0.0164152,
+      "orchestration_model": "grok-4.7-build"
+    }
+  ],
+  "reported_orchestration_cost_usd": 0.0164152,
+  "billing_limit": "CLI language-model orchestration usage only; separate image charges/subscription deductions are not exposed."
+}

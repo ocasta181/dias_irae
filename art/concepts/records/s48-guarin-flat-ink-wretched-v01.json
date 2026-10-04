@@ -1,0 +1,71 @@
+{
+  "identifier": "S48",
+  "approach": "B \u2014 Worn flat ink animation",
+  "version": "v01",
+  "image": "images/s48-guarin-flat-ink-wretched-v01.jpg",
+  "prompt": "prompts/s48-guarin-flat-ink-wretched-v01.txt",
+  "tool": "Grok CLI image_gen",
+  "model": "Exact Imagine image model not exposed by CLI result",
+  "cli": "/Users/ocasta/.grok/bin/grok",
+  "cli_version": "1.0.46 (2765805b9442) [stable]",
+  "generation_date": "2026-10-04",
+  "input_mode": "independent complete raw text only",
+  "reference_identifiers": [],
+  "reference_inputs": [],
+  "regional_scope": "Royans/Isere, 1101; greathelm is the explicit user-approved anachronism. Costume details are stylization, not historical evidence.",
+  "status": "revise",
+  "user_notes": "Held back: the barrel helmet is repaired and the drawing is flat, but the light beige background misses the required charcoal mood.",
+  "inspection_notes": [
+    "Held back: the barrel helmet is repaired and the drawing is flat, but the light beige background misses the required charcoal mood."
+  ],
+  "quality_assessment": {
+    "assessor": "Parent assistant, after viewing the actual image",
+    "comparison_basis": "Approved mood board and latest demand for flat, distinct, darker and more wretched art",
+    "checks": {
+      "flatness": "flat",
+      "mood": "light background fails",
+      "style_distinction": "sparse ink",
+      "costume": "needs correction",
+      "camera": "not calibrated; head tilt cannot establish elevation"
+    },
+    "release": "held back after parent inspection",
+    "limit": "Appearance is a visual judgment; provider internal rendering steps are not exposed."
+  },
+  "desired_camera_degrees_above_ground": 45,
+  "requested_nominal_camera_degrees_above_ground": 45,
+  "camera_limit": "The generated view is not calibrated. Head tilt, stylized lids and occlusion prevent a reliable numeric measurement. No exact 15-degree increase is claimed.",
+  "source_output": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-flat-s47-s49%2Fs48/93706950-5ced-4644-bd41-3bb99dd03ba7/images/1.jpg",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "sha256": "b8408d8839e6b37cb290eca71a7557fa997cdb6c00538c55ea4d36d188c7a762",
+  "format": "JPEG",
+  "tool_call_count": 1,
+  "independent_working_directory": "/private/tmp/dias-grok-flat-s47-s49/s48",
+  "explicit_new_session_id": "93706950-5ced-4644-bd41-3bb99dd03ba7",
+  "resume_or_continue_used": false,
+  "dispatcher_system_prompt_override": "Dispatch exactly one image_gen call with the supplied complete raw prompt verbatim. Only completely flat 2D drawn art is allowed. No 3D or 2.5D appearance. Do not use images, history, memory, other tools, subagents or extra generations.",
+  "attempts": [
+    {
+      "tool": "image_gen",
+      "tool_input": {
+        "prompt": "DRAWING LANGUAGE B: flat 2D hand-drawn animation using thin uneven charcoal ink contours and broad simple solid color shapes. Only two dull dark values per material, a few sparse scratch lines, dirty broken edges and tattered silhouettes. Hollow Knight-like economical shape design, with an intact ordinary barrel greathelm drawn as a coherent cylinder, never a giant dish. This is the most graphic and sparsely marked option; no dense textures, pixel clusters or smooth modeling.\n\nHARD MEDIUM RULE: completely FLAT hand-drawn 2D game art. Even the helmet, boots and shield use flat color areas. No 3D or 2.5D appearance, modeled rounded shading, gradients, bevels, realistic reflections, rim light, sculpt, CG miniature or material-render lighting. Dirt consists of flat marks, not lighting that describes volume. Use only two dark values per material. A top plane may have one flat slightly different value to communicate the drawn view; never a rounded highlight.\n\nMOOD: darker, grittier, muddier, dirtier, drearier, hopeless, poor, wretched, worn, tired, desperate. A small returning knight whose gear has survived rain, famine and too much walking: sagging shoulders, head heavy but upright, sword hanging low, shield held wearily. He is endearing only through oversized-head/tiny-body structure, never cheerful, clean, proud, heroic or fashionable. Encrusted mud, greasy soot, abraded iron, threadbare cloth, split wood, frayed wraps and old stains. Dark dried-brown/wine cloth almost merges into charcoal; avoid pink, fresh red and pale silver. Very sparse dull gray marks, no attractive gleam.\n\nAPPROVED BOARD: Hollow Knight supplies compact rounded silhouettes, readable 2D shapes and darkness; Diablo II supplies grim earthy colors and wear, NOT its realistic anatomy or rendered depth. Castle Crashers contributes only a trace of squat proportions, no bright color or comedy. Darkwood and the sacred-horror paintings supply isolation, black recesses and faded dried red. The role of these references is mood and drawing structure, not copying characters, symbols or outfits.\n\nFIXED SUBJECT: Guarin, rural household knight in the Royans/Isere story set in 1101. Huge enclosed barrel greathelm, tiny broad torso, stubby arms/legs and small wide boots, approximately two helmet-heights tall. Face and eyes entirely hidden. Helmet is a coherent upright cylinder roughly as tall as wide: level flat lid SAME DIAMETER as the helmet sides, NO brim, overhang or pancake cap. Narrow black visor in a substantial intact faceplate, two plain vertical rivet strips and small breathing holes. Greathelm is the explicit anachronism. Plain dark ring-mail shirt/short sleeves, ragged very faded wine scarf and short cape and waist cloth. Brown belt/plain rectangular buckle, plain brown gloves, muddy taupe-brown forearm/shin cloth wraps, short rounded brown boots. No metal knee/elbow plates, bare skin, jewelry, emblems or new costume pieces. Show mail with economical tiny interlocking broken ring marks, not scales or huge discs.\n\nIn viewer-left hand: straight double-edged arming sword, disk pommel, brown grip and straight crossguard, intact straight blade pointing low across the front toward lower-right. At viewer-right: elongated pointed taupe wooden kite shield, dull iron rim, one narrow extremely faded dirty wine-red panel. Same loadout in all styles; wear changes its condition, not its identity.\n\nCOMPOSITION: ONE whole character, square canvas, quiet charcoal ground, small flat muddy foot mark, no writing, decorative border or panels. Elevated orthographic three-quarter game view, about 45 degrees above the ground, facing diagonally lower-right. Show the level lid as a broad ellipse aligned with the cylinder's sides and a substantial visible front faceplate below it. Keep the helmet upright and structurally coherent. Body is squat and foreshortened, but both feet, sword and shield tips remain readable. Do not solve the angle by flattening the helmet into an oversized plate.\n\nFINAL DRAWING RULE: DRAWING LANGUAGE B: flat 2D hand-drawn animation using thin uneven charcoal ink contours and broad simple solid color shapes. Only two dull dark values per material, a few sparse scratch lines, dirty broken edges and tattered silhouettes. Hollow Knight-like economical shape design, with an intact ordinary barrel greathelm drawn as a coherent cylinder, never a giant dish. This is the most graphic and sparsely marked option; no dense textures, pixel clusters or smooth modeling.",
+        "aspect_ratio": "1:1"
+      },
+      "tool_status": "completed",
+      "tool_output": {
+        "type": "ImageGen",
+        "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-flat-s47-s49%2Fs48/93706950-5ced-4644-bd41-3bb99dd03ba7/images/1.jpg",
+        "filename": "1.jpg",
+        "session_folder": "images"
+      },
+      "session_id": "93706950-5ced-4644-bd41-3bb99dd03ba7",
+      "stop_reason": "end_turn",
+      "reported_orchestration_cost_usd": 0.01034348,
+      "orchestration_model": "grok-4.7-build"
+    }
+  ],
+  "reported_orchestration_cost_usd": 0.01034348,
+  "billing_limit": "CLI language-model orchestration usage only; separate image charges/subscription deductions are not exposed."
+}
