@@ -1,14 +1,32 @@
 # Concept art review manifest
 
-Current checkpoint: **S24–S34 discarded at the user's request. No active character comparison is ready for review.** The eleven images, their prompt/record files, comparison preview and generated camera guides have been removed from the workspace. Git commit `b02e92b` retains the earlier audit history. The original mood board and equipment board remain approved.
+Current checkpoint: **Three fresh Grok drawings S38–S40 are ready for review. No character concept is accepted yet.** A compares Diablo II material depth, B Hollow Knight shape economy and C a painted blend. Each uses a separate empty working directory and an explicitly new session ID. The actual tool calls contain only the full raw prompt and square aspect ratio. No image inputs were supplied.
 
 ## Mandatory generation rule
 
 Each iteration must begin with a complete raw prompt in a new independent generation session. Never pass a concept from a prior iteration, whether failed, rejected or previously preferred. Do not upload a concept screenshot, prior output, generated geometry guide, composite or restyled derivative. If images are supplied, they must be approved base references from the mood board or its approved equipment supplement. Text-only generation is allowed. Do not carry previous concepts through session history. Record and inspect the actual tool input to verify this rule before treating an output as a candidate.
 
-The next Guarin comparison still needs Diablo II-led, Hollow Knight-led and blended game rendering, with the same costume described in every prompt, a huge full-face greathelm, tiny squat body and short limbs. The requested camera target remains about 45 degrees above the ground, about 15 steeper than the earlier estimated 30-degree view. Camera and final art style remain unapproved. Keep regional/cultural precision for the 1101 Royans/Isère story; the greathelm remains the explicit anachronism.
+The same costume is specified in every prompt: huge full-face greathelm, ring-mail shirt, ragged wine-red cloth, brown belt/gloves/wraps/short boots, straight arming sword and wooden kite shield. The outputs retain that loadout, with visible helmet and mail-symbol drift recorded below. The story stays in the Royans/Isère in 1101; the greathelm is the explicit anachronism.
 
-No new generation was run for this discard-and-workflow correction. Review decisions below record the rejection; removed images are unavailable as references. Earlier studies remain historical material only. See [the generation procedure](../../docs/grok-image-generation.md), [visual brief](visual-brief.md) and [progress checklist](../../docs/art-production-checklist.md).
+**Camera remains unresolved.** Desired output is about 45 degrees above the ground, 15 steeper than the earlier estimated 30-degree view. S35–S37 undershot a 45-degree prompt. S38–S40 request 55 degrees to counter that flattening. Estimated output ranges: A 22–32 degrees, B 25–35, C 35–45. These are rough illustration estimates, assuming a level circular crown. Tilt and stylization limit them; no exact increase or consistent camera is claimed. Please review rendering and proportions with this limitation visible.
+
+Review [the gallery](index.html?v=7#current-styles), [three-way overview](comparison-grok-independent-v02.jpg), [exact generation evidence](../../docs/grok-image-generation.md), [visual brief](visual-brief.md) and [progress checklist](../../docs/art-production-checklist.md). Each current drawing has Accept, Reject, Revise and Pending controls plus a comment box. Downloading the manifest preserves historical and planned rows.
+
+## Current independent comparison — pending review
+
+| Identifier | Candidate | Purpose | Image | Status | Notes |
+|---|---|---|---|---|---|
+| S38 | A — Diablo II led | Independent text-only style study | [S38](images/s38-guarin-diablo-game-isolated-v01.jpg) | pending |  |
+| S39 | B — Hollow Knight led | Independent text-only style study | [S39](images/s39-guarin-hollow-game-isolated-v01.jpg) | pending |  |
+| S40 | C — Blended game rendering | Independent text-only style study | [S40](images/s40-guarin-blended-game-isolated-v01.jpg) | pending |  |
+
+## First independent raw-text trials — internal revisions
+
+| Identifier | Candidate | Purpose | Image | Status | Notes |
+|---|---|---|---|---|---|
+| S35 | A — Diablo II led | Independent text-only style study | [S35](images/s35-guarin-diablo-led-independent-v01.jpg) | revise | Independent raw-text trial. The view stayed too shallow and the metal construction gained details. Kept as an internal revision, never as a generation input. |
+| S36 | B — Hollow Knight led | Independent text-only style study | [S36](images/s36-guarin-hollow-knight-led-independent-v01.jpg) | revise | Independent raw-text trial. Flat drawing language, huge helmet and compact body, but the view stayed too shallow. Kept as an internal revision, never as a generation input. |
+| S37 | C — Diablo II / Hollow Knight blend | Independent text-only style study | [S37](images/s37-guarin-blended-independent-v01.jpg) | revise | Independent raw-text trial. Painted texture, but the body became less squat and the camera stayed too shallow. Kept as an internal revision, never as a generation input. |
 
 ## Discarded comparison — rejected by the user
 

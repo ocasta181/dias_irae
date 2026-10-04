@@ -1,0 +1,73 @@
+{
+  "identifier": "S35",
+  "approach": "A \u2014 Diablo II led",
+  "version": "v01",
+  "image": "images/s35-guarin-diablo-led-independent-v01.jpg",
+  "prompt": "prompts/s35-guarin-diablo-led-independent-v01.txt",
+  "tool": "Grok CLI image_gen",
+  "model": "Exact Imagine model not exposed by CLI tool result",
+  "cli": "/Users/ocasta/.grok/bin/grok",
+  "cli_version": "1.0.46 (2765805b9442) [stable]",
+  "generation_date": "2026-10-04",
+  "input_mode": "independent text-only generation",
+  "reference_identifiers": [],
+  "reference_inputs": [],
+  "design_reference_identifiers": [
+    "M20",
+    "M21",
+    "M22",
+    "M23"
+  ],
+  "reference_roles": "Written art direction only. No image, prior generated concept, guide, derivative or resumed conversation supplied.",
+  "story_sources": [
+    "../../story/story-arch.md",
+    "../../story/characters.md"
+  ],
+  "regional_scope": "Royans/Isere story setting, 1101. The full-face greathelm is the explicit user-approved anachronism. Broad European references are not evidence of local adoption.",
+  "status": "revise",
+  "user_notes": "Independent raw-text trial. The view stayed too shallow and the metal construction gained details. Kept as an internal revision, never as a generation input.",
+  "inspection_notes": [
+    "Independent raw-text trial. The view stayed too shallow and the metal construction gained details. Kept as an internal revision, never as a generation input."
+  ],
+  "desired_camera_degrees_above_ground": 45,
+  "requested_nominal_camera_degrees_above_ground": 45,
+  "camera_limit": "The three earlier raw-text trials undershot a 45-degree request. The next prompts use a nominal 55 degrees to counter observed flattening. Output camera is still inconsistent and not calibrated; no exact 15-degree increase is claimed. Helmet tilt and stylized ellipses limit estimates.",
+  "estimated_camera_range_degrees_above_ground": [
+    25,
+    35
+  ],
+  "source_output": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-independent-s35-s37%2Fs35/01a10860-5268-7682-99e7-92cc119ebad3/images/1.jpg",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "sha256": "f966a0cc05ede7b6e687b8085985093c46631e7e7e6b5d73cdd2a68ef834ff47",
+  "format": "JPEG",
+  "tool_call_count": 1,
+  "independent_working_directory": "/private/tmp/dias-grok-independent-s35-s37/s35",
+  "explicit_new_session_id": null,
+  "resume_or_continue_used": false,
+  "dispatcher_system_prompt_override": null,
+  "attempts": [
+    {
+      "tool": "image_gen",
+      "tool_input": {
+        "prompt": "Create ONE original full-body playable knight character concept for a dark isometric fantasy video game. New drawing from this text only. Square canvas, single character, charcoal background, a subtle ground shadow, no labels or panels.\nCamera: orthographic elevated three-quarter view, 45 DEGREES ABOVE THE GROUND, looking steeply downward. The upright barrel helmet has a LEVEL flat circular crown: show a broad DEEP top ellipse about 70 percent as deep as it is wide. The top is a large visible surface, shoulders partly hidden by the huge helmet, torso and legs strongly foreshortened. The figure faces diagonally toward the lower-right. This is the gameplay view of Diablo II, with a more elevated camera, not a side view or low portrait camera. Do not tilt the helmet to fake the top view.\nProportions: VERY SHORT, SQUAT, CUTE and CARTOONY. Enormous helmet/head, tiny broad body, short stubby arms and legs, small wide boots. About 2.1 helmet heights tall in world proportions. The helmet is nearly as wide as the whole torso and arms. No tall realistic adult anatomy. No visible eyes, skin or face.\nCostume, repeated completely: dull iron full-face cylindrical GREATHELM with a plain flat top, two plain vertical riveted face strips, a narrow black visor slit and small round breathing holes. Plain dark ring-mail shirt and sleeves. Ragged dark wine-red neck scarf, short cape and waist cloth. Brown leather belt with a plain rectangular buckle, brown gloves, taupe/brown forearm and shin wraps, short rounded brown boots. Straight double-edged arming sword in the viewer-left hand, straight crossguard, disk pommel; blade points down diagonally across the front toward the lower-right. Elongated wooden kite shield at viewer-right, dull iron rim, taupe wood and one narrow faded wine-red panel. No other armor, garments, insignia, jewelry or weapons. Rural household-knight costume for the Royans/Isere lands in an 1101 story; full-face greathelm is the deliberately allowed anachronism.\nDark muted iron gray, taupe/brown and dried-wine palette. Readable silhouette at small gameplay size. No comic-book hatching, engraving, theatrical portrait framing, huge eyes, photoreal adult knight, bright plastic toy, shiny metal or coarse square mosaic.\n\nSTYLE: DIABLO II LED. A compact pre-rendered action-game sprite look, with sculptural shaded material planes, deep occlusion and economical fine raster color clusters. Weathered iron, leather and cloth have grounded dark material weight and restrained low-key highlights. No black ink outlines. Simplify mail to grouped texture signs, keep the enormous head and tiny chubby body cute. It should feel like an early dark isometric video-game character, not a photograph of a miniature or a modern heroic illustration.",
+        "aspect_ratio": "1:1"
+      },
+      "tool_status": "completed",
+      "tool_output": {
+        "type": "ImageGen",
+        "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-independent-s35-s37%2Fs35/01a10860-5268-7682-99e7-92cc119ebad3/images/1.jpg",
+        "filename": "1.jpg",
+        "session_folder": "images"
+      },
+      "session_id": "01a10860-5268-7682-99e7-92cc119ebad3",
+      "stop_reason": "end_turn",
+      "reported_orchestration_cost_usd": 0.01166064,
+      "orchestration_model": "grok-4.7-build"
+    }
+  ],
+  "reported_orchestration_cost_usd": 0.01166064,
+  "billing_limit": "CLI language-model orchestration usage only; separate image charges or subscription deductions are not exposed."
+}

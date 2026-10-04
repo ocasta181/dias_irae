@@ -1,6 +1,6 @@
 # Dias Irae — concept direction
 
-Mood board approved on **2026-10-04**; all original 26 references retained. **S09** remains the selected written design direction; **S13/S17 textures** remain preferred history. Keep the oversized head, tiny body and short limbs. The user selected Grok and approved [equipment board 04](../mood-board/equipment/index.html?v=4), subject to cultural and geographic precision. The user discarded **S24–S34** because prior generated images anchored the results. Those batch files and generated guides are removed. No active comparison or full character concept is approved.
+Mood board approved on **2026-10-04**; all original 26 references retained. **S09** remains the selected written design direction; **S13/S17 textures** remain preferred history. Keep the oversized head, tiny body and short limbs. The user selected Grok and approved [equipment board 04](../mood-board/equipment/index.html?v=4), subject to cultural and geographic precision. The user discarded **S24–S34** because prior generated images anchored the results. Those batch files and generated guides are removed. Three fresh text-only concepts S38–S40 are ready for review; no full character concept is approved. Camera consistency and mail detail remain unresolved.
 
 Earlier feedback remains authoritative: oversized heads and small bodies, small/no visible eyes, darker than S04, softer/finer than S05, straight swords and a full-face **greathelm**, with its anachronism explicitly allowed. C01/C02 and S01–S03 were rejected. S07/S08 were rejected as too similar; the later S09 selection supersedes its rejection. S10–S12 explore separate drawing systems but remain unselected and have not been redrawn.
 
@@ -16,7 +16,7 @@ People remain recognizably adult or child through clothing, role and restrained 
 
 The game references guide drawing and readability. The story supplies identities, anatomy, equipment, buildings and symbols. The user confirmed the Diablo II elevated isometric gameplay view and requested a camera **15 degrees steeper**. The previous view was estimated near 30 degrees above the ground; the intended new view is about 45. State the camera and visible top surfaces in each raw prompt. A numeric prompt does not certify the generated camera. Camera approval remains open. Production projection, scale and proportions will be fixed after review.
 
-The next three approaches should compare game rendering: dimensional low-key materials for Diablo II, economical graphic values for Hollow Knight, and painted material patches for the blend. Generate each independently. Avoid decorative comic hatching, thick illustration framing and anatomical realism. Retain cute squat structure in every version. Exact sprite pixel density and mail symbols remain for the accepted pilot.
+The current S38–S40 approaches compare game rendering: dimensional low-key materials for Diablo II, economical graphic values for Hollow Knight, and painted material patches for the blend. Generate each independently. Avoid decorative comic hatching, thick illustration framing and anatomical realism. Retain cute squat structure in every version. Exact sprite pixel density and mail symbols remain for the accepted pilot.
 
 ## Story constraints
 

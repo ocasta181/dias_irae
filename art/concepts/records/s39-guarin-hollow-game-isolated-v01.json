@@ -1,0 +1,73 @@
+{
+  "identifier": "S39",
+  "approach": "B \u2014 Hollow Knight led",
+  "version": "v01",
+  "image": "images/s39-guarin-hollow-game-isolated-v01.jpg",
+  "prompt": "prompts/s39-guarin-hollow-game-isolated-v01.txt",
+  "tool": "Grok CLI image_gen",
+  "model": "Exact Imagine model not exposed by CLI tool result",
+  "cli": "/Users/ocasta/.grok/bin/grok",
+  "cli_version": "1.0.46 (2765805b9442) [stable]",
+  "generation_date": "2026-10-04",
+  "input_mode": "independent text-only generation",
+  "reference_identifiers": [],
+  "reference_inputs": [],
+  "design_reference_identifiers": [
+    "M20",
+    "M21",
+    "M22",
+    "M23"
+  ],
+  "reference_roles": "Written art direction only. No image, prior generated concept, guide, derivative or resumed conversation supplied.",
+  "story_sources": [
+    "../../story/story-arch.md",
+    "../../story/characters.md"
+  ],
+  "regional_scope": "Royans/Isere story setting, 1101. The full-face greathelm is the explicit user-approved anachronism. Broad European references are not evidence of local adoption.",
+  "status": "pending",
+  "user_notes": "",
+  "inspection_notes": [
+    "Flat animation shapes and few value steps; the strongest cartoon structure. Helmet tilt limits the camera estimate. Mail marks read like scales and need revision; the request specified ring mail."
+  ],
+  "desired_camera_degrees_above_ground": 45,
+  "requested_nominal_camera_degrees_above_ground": 55,
+  "camera_limit": "The three earlier raw-text trials undershot a 45-degree request. The next prompts use a nominal 55 degrees to counter observed flattening. Output camera is still inconsistent and not calibrated; no exact 15-degree increase is claimed. Helmet tilt and stylized ellipses limit estimates.",
+  "estimated_camera_range_degrees_above_ground": [
+    25,
+    35
+  ],
+  "source_output": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-isolated-s38-s40%2Fs39/c097ec00-7a7d-4176-b364-3573861ca63b/images/1.jpg",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "sha256": "9fb13a5d9c6e18d8cc3a94961592dc7bb45198e55f3d312d7f4a646db4cb7305",
+  "format": "JPEG",
+  "tool_call_count": 1,
+  "independent_working_directory": "/private/tmp/dias-grok-isolated-s38-s40/s39",
+  "explicit_new_session_id": "c097ec00-7a7d-4176-b364-3573861ca63b",
+  "resume_or_continue_used": false,
+  "dispatcher_system_prompt_override": "You dispatch one text-only image_gen call. Copy the supplied raw prompt exactly. Do not use references, history, memory, other tools, or additional generations.",
+  "attempts": [
+    {
+      "tool": "image_gen",
+      "tool_input": {
+        "prompt": "Create a Hollow Knight inspired HAND-DRAWN 2D GAME SPRITE: extremely simple smooth graphic shapes, solid silhouettes, broad matte shadow shapes, two tones per material, delicate dark contours and almost no surface detail. Mail reads as a few grouped tiny rings. Make an endearing compact animated-game character; the head is a helmet, not a bug mask. The image must look deliberately flat, clean and economical rather than etched or realistic.\n\nONE whole-body knight on a plain charcoal square canvas, subtle floor shadow, no writing. High bird's-eye orthographic game camera looking DOWN from 55 degrees above the ground. The upright barrel helmet's level flat circular lid is a broad deep ellipse, depth about 80% of its width; the top plane dominates, shoulders are mostly hidden beneath it, body and legs foreshortened. He faces diagonally lower-right.\n\nEXAGGERATED CUTE PROPORTIONS: enormous wide helmet, tiny broad belly, very short stubby arms and legs, squat rounded boots. Roughly two head-heights tall before foreshortening. The head is wider than the body.\n\nWear a dull iron full-face cylindrical greathelm, plain flat crown, two vertical riveted face strips, narrow black visor slit, small breathing holes, no visible eyes or skin. Dark plain ring-mail shirt and short sleeves, ragged dried-wine scarf and short cape, matching ragged waist cloth, brown belt with plain rectangular buckle, brown gloves, taupe-brown forearm and shin wraps, short rounded brown boots. In viewer-left hand hold a straight double-edged arming sword: straight crossguard, disk pommel, straight blade pointing down across the front toward lower-right. Carry an elongated taupe wooden kite shield at viewer-right with dull iron rim and one narrow faded wine-red panel. Keep these exact costume pieces, restrained iron gray, taupe and dried-wine colors. This is a rural household knight from the Royans/Isere lands in a story set in 1101; the full-face greathelm is a deliberately allowed anachronism. No extra plate armor or ornament.",
+        "aspect_ratio": "1:1"
+      },
+      "tool_status": "completed",
+      "tool_output": {
+        "type": "ImageGen",
+        "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-isolated-s38-s40%2Fs39/c097ec00-7a7d-4176-b364-3573861ca63b/images/1.jpg",
+        "filename": "1.jpg",
+        "session_folder": "images"
+      },
+      "session_id": "c097ec00-7a7d-4176-b364-3573861ca63b",
+      "stop_reason": "end_turn",
+      "reported_orchestration_cost_usd": 0.01224748,
+      "orchestration_model": "grok-4.7-build"
+    }
+  ],
+  "reported_orchestration_cost_usd": 0.01224748,
+  "billing_limit": "CLI language-model orchestration usage only; separate image charges or subscription deductions are not exposed."
+}
