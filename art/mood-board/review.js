@@ -10,8 +10,6 @@
   const saveStatus = document.getElementById("review-save-status");
   const exportButton = document.getElementById("download-manifest");
   const preferenceGrid = document.getElementById("preference-grid");
-  const unsortedGrid = document.getElementById("unsorted-grid");
-  const emptyRanking = document.getElementById("empty-ranking");
   const orderStorageKey = `${storageKey}:preference-order`;
   let preferenceOrder = [];
   let draft = {};
@@ -131,41 +129,33 @@
     } catch {
       storageAvailable = false;
     }
-    preferenceOrder = [...new Set(savedOrder ?? manifestOrder)]
+    const rankedIds = [...new Set(savedOrder ?? manifestOrder)]
       .filter((id) => referenceIds.has(id));
+    preferenceOrder = [
+      ...cards.map((card) => card.dataset.reference).filter((id) => !rankedIds.includes(id)),
+      ...rankedIds,
+    ];
     const rankControls = new Map();
     let draggedCard;
     let dropTarget;
 
     function applyOrder() {
-      const sortedIds = new Set(preferenceOrder);
       for (const id of preferenceOrder) preferenceGrid.append(cardsById.get(id));
       for (const card of cards) {
         const id = card.dataset.reference;
         const index = preferenceOrder.indexOf(id);
-        const sorted = sortedIds.has(id);
-        if (!sorted) unsortedGrid.append(card);
-        card.dataset.preferenceRank = sorted ? String(index + 1) : "";
-        const { handle, earlier, later, toggle } = rankControls.get(id);
-        handle.textContent = sorted ? `↕ Rank ${index + 1}` : "↕ Unsorted";
-        toggle.textContent = sorted ? "Unsort" : "Sort";
-        toggle.setAttribute("aria-label", `Move ${id} to ${sorted ? "Unsorted" : "Sorted"}`);
-        earlier.disabled = !sorted || index === 0;
-        later.disabled = !sorted || index === preferenceOrder.length - 1;
+        card.dataset.preferenceRank = String(index + 1);
+        const { handle, earlier, later } = rankControls.get(id);
+        handle.textContent = `↕ ${index + 1}`;
+        earlier.disabled = index === 0;
+        later.disabled = index === preferenceOrder.length - 1;
       }
-      emptyRanking.hidden = preferenceOrder.length > 0;
     }
 
     function moveCard(id, index) {
       const previous = preferenceOrder.indexOf(id);
-      if (previous >= 0) preferenceOrder.splice(previous, 1);
+      preferenceOrder.splice(previous, 1);
       preferenceOrder.splice(Math.max(0, Math.min(preferenceOrder.length, index)), 0, id);
-      applyOrder();
-      saveDraft();
-    }
-
-    function unsortCard(id) {
-      preferenceOrder = preferenceOrder.filter((rankedId) => rankedId !== id);
       applyOrder();
       saveDraft();
     }
@@ -189,9 +179,7 @@
         const positions = { ArrowUp: index - 1, ArrowDown: index + 1, Home: 0, End: preferenceOrder.length - 1 };
         if (!(event.key in positions)) return;
         event.preventDefault();
-        moveCard(id, index < 0
-          ? (event.key === "Home" || event.key === "ArrowUp" ? 0 : preferenceOrder.length)
-          : positions[event.key]);
+        moveCard(id, positions[event.key]);
         handle.focus();
       });
       handle.addEventListener("dragstart", (event) => {
@@ -217,8 +205,7 @@
         if (!draggedCard || draggedCard === card) return;
         event.preventDefault();
         const sourceId = draggedCard.dataset.reference;
-        if (card.parentElement === preferenceGrid) moveCard(sourceId, preferenceOrder.indexOf(id));
-        else unsortCard(sourceId);
+        moveCard(sourceId, preferenceOrder.indexOf(id));
         clearDropTarget();
       });
       const earlier = document.createElement("button");
@@ -231,33 +218,9 @@
       later.textContent = "↓";
       later.setAttribute("aria-label", `Move ${id} later`);
       later.addEventListener("click", () => moveCard(id, preferenceOrder.indexOf(id) + 1));
-      const toggle = document.createElement("button");
-      toggle.type = "button";
-      toggle.addEventListener("click", () => {
-        if (preferenceOrder.includes(id)) unsortCard(id);
-        else moveCard(id, preferenceOrder.length);
-      });
-      rankControls.set(id, { handle, earlier, later, toggle });
-      bar.append(handle, toggle, earlier, later);
+      rankControls.set(id, { handle, earlier, later });
+      bar.append(handle, earlier, later);
       card.prepend(bar);
-    }
-    for (const grid of [preferenceGrid, unsortedGrid]) {
-      grid.addEventListener("dragover", (event) => {
-        if (!draggedCard || event.target.closest(".card")) return;
-        event.preventDefault();
-        event.dataTransfer.dropEffect = "move";
-        clearDropTarget();
-        dropTarget = grid;
-        grid.classList.add("rank-drop-target");
-      });
-      grid.addEventListener("drop", (event) => {
-        if (!draggedCard || event.target.closest(".card")) return;
-        event.preventDefault();
-        const id = draggedCard.dataset.reference;
-        if (grid === preferenceGrid) moveCard(id, preferenceOrder.length);
-        else unsortCard(id);
-        clearDropTarget();
-      });
     }
     applyOrder();
   }
@@ -282,13 +245,8 @@
     }).join("\n");
     if (preferenceGrid) {
       updated = updated.replace(/\n## Preference ranking\n[\s\S]*?(?=\n## |\s*$)/, "").trimEnd();
-      updated += "\n\n## Preference ranking\n\nRanking does not change acceptance decisions.\n\n### Sorted — most preferred first\n\n";
-      updated += preferenceOrder.length
-        ? preferenceOrder.map((id, index) => `${index + 1}. ${id}`).join("\n") + "\n"
-        : "None yet.\n";
-      updated += "\n### Unsorted\n\n";
-      updated += cards.filter((card) => !preferenceOrder.includes(card.dataset.reference))
-        .map((card) => `- ${card.dataset.reference}`).join("\n") + "\n";
+      updated += "\n\n## Preference ranking\n\nGallery order, first to last. Ranking does not change acceptance decisions.\n\n";
+      updated += preferenceOrder.map((id, index) => `${index + 1}. ${id}`).join("\n") + "\n";
     }
     const url = URL.createObjectURL(new Blob([updated], { type: "text/markdown;charset=utf-8" }));
     const link = document.createElement("a");

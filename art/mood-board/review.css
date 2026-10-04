@@ -60,10 +60,6 @@
 .review-toolbar button:focus-visible,
 .review-controls textarea:focus-visible { outline: 2px solid #e8d59e; outline-offset: 3px; }
 
-.ranking-grid { min-height: 120px; }
-.empty-ranking { grid-column: 1 / -1; padding: 32px; border: 2px dashed #655e4e; text-align: center; }
-.empty-ranking[hidden] { display: none; }
-.ranking-grid.rank-drop-target { outline: 3px solid #d7bd82; outline-offset: 3px; }
 .rank-controls { display: flex; gap: 8px; padding: 10px; background: #1b1b18; }
 .rank-controls button {
   min-height: 44px;
