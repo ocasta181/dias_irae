@@ -1,0 +1,35 @@
+{
+  "identifier": "S04",
+  "approach": "A — Flat ink cartoon",
+  "version": "v01",
+  "image": "images/s04-flat-ink-cartoon-v01.png",
+  "prompt": "prompts/s04-flat-ink-cartoon-v01.txt",
+  "tool": "image_gen.imagegen (built-in)",
+  "model": "not exposed by tool",
+  "generation_date": "2026-10-04",
+  "reference_identifiers": [
+    "M26",
+    "M24"
+  ],
+  "story_sources": [
+    "../../story/characters.md"
+  ],
+  "user_overrides": [
+    "Guarin helmet must fully cover his face; supersedes open nasal-helm constraint.",
+    "No oversized eyes; previous three similar styles rejected."
+  ],
+  "status": "pending",
+  "user_notes": "",
+  "inspection_notes": [
+    "Broad planar color, heavy ink contour and almost no dimensional shading.",
+    "Full face covered by a solid metal faceplate; narrow dark visor; no visible human eyes, mouth or beard.",
+    "Large head, small torso and short limbs retained; muted wine, bone, taupe and charcoal palette.",
+    "This is a rendering-direction concept; exact production palette, pixel grid and animation remain unvalidated."
+  ],
+  "source_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-03554a2c-ca84-4458-bc38-84ce947d25d9.png",
+  "sha256": "a2dc746c1a19c716596e2bdb26196f34c17240ef02358c81ce448053c78a477e",
+  "dimensions": [
+    1346,
+    1168
+  ]
+}

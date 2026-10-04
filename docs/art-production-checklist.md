@@ -2,7 +2,7 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
-Last updated: 2026-10-04. Current stage: **mood board approved; three cute-proportion concepts awaiting the user's selection**.
+Last updated: 2026-10-04. Current stage: **mood board approved; three contrasting art styles S04–S06 awaiting the user's selection**.
 
 ## Story and visual constraints
 
@@ -10,12 +10,12 @@ Source material: [story spine](../story/story-arch.md), [characters](../story/ch
 
 - Late summer 1101; rural homecoming, diseased harvest, household grief, sacramental horror.
 - Romanesque buildings: thick walls, small windows, round arches, barrel vaults, limewash, painted apses. No later Gothic architecture by default.
-- Mail hauberks, nasal helms, kite shields, arming swords, worn wool and linen. No plate armor.
+- Mail hauberks, kite shields, arming swords, worn wool and linen. No plate body armor. User-directed exception for Guarin: a full-face helm with narrow visor openings replaces the earlier open nasal-helm constraint.
 - Story palette: rye gold, charcoal, limewash, Antonine black and taupe, dried-blood wine, pig-fat yellow, bone white, dull iron.
 - Isenheim supplies emotional intensity, diseased flesh, sacred light and monstrous forms. Its later date does not make its architecture or clothing period references.
 - Act I begins with recognizable parishioners and wolves. Later locusts and overt demons must not replace that opening escalation.
 - First level is provisionally the Act I homecoming through Rivoire and Raimon's undercroft. Confirm the playable extent before implementation.
-- Latest rendering clarification: dark and pixelated with a cutesy feel, oversized heads and small bodies structurally closer to Hollow Knight and Castle Crashers. Diablo II remains relevant to composition, materials, environment detail and lighting; realistic adult proportions were rejected. Historical and sacred references govern story and period kit.
+- Latest rendering clarification: dark and pixelated/cartoon, cutesy large-head/small-body structure, smaller eyes, and genuinely distinct art styles. Compare flat ink, chunky pixel minimalism and sculpted pixel toy. Diablo II remains relevant to composition, materials, environment detail and lighting. Realistic anatomy and the previous three overly similar styles were rejected.
 - Exact pixel density, edge treatment, camera angle, animation directions and frame counts remain open for review and the sprite pilot.
 
 ## 1. Mood board
@@ -44,7 +44,9 @@ Success: a locally reviewable collection with individual removable images and pr
 - [x] Preserve the rejected first Guarin and parish-cast sheets; stop that batch after the user's proportion correction.
 - [x] Generate, inspect and save three distinct cute-proportion approaches for Guarin, with exact prompts and generation records.
 - [x] Build and verify the comparison gallery with reversible decisions, commentary, browser drafts and manifest export; preserve the ungenerated planned rows during export.
-- [ ] **User selects the closest structural approach from S01–S03.**
+- [x] Record the rejection of S01–S03: eyes too big and styles too similar; preserve the images as rejected history.
+- [x] Generate and inspect three contrasting rendering styles S04–S06 with the required full-face helm and narrow visor.
+- [ ] **User selects the closest new style from S04–S06.**
 - [ ] Generate story-aligned concept candidates, using the approved mood board as references.
 - [ ] Save every candidate locally, alongside its exact prompt, reference identifiers, tool, version and review status.
 - [ ] Inspect period equipment, character identity, story motifs, silhouette and camera consistency.
@@ -72,7 +74,7 @@ Candidate first-level scope to refine:
 | Category | Story candidates | States/actions to decide |
 |---|---|---|
 | Characters | Guarin; Almodis; Odo; Giraud; Agnes; blighted parishioners; wolves; Raimon | Guarin idle/walk/sword attacks/block/hurt/death/interact; people idle/talk; enemies movement/tells/attack/hurt/death; Raimon's borrowed gait and boss tells |
-| Items | Sword, kite shield, nasal helm, mail, wrapped splinter, rye head, sclerotia, household keys, reserved wheat host | Equipped and held views; icons and pickups where needed; wrapped/exposed splinter; intact/smashed sclerotia; ordinary/blighted grain; host reserved/encountered |
+| Items | Sword, kite shield, full-face helm for Guarin, mail, wrapped splinter, rye head, sclerotia, household keys, reserved wheat host | Equipped and held views; icons and pickups where needed; wrapped/exposed splinter; intact/smashed sclerotia; ordinary/blighted grain; host reserved/encountered |
 | Environments | Arrival terraces, village, burned mill, church and yard, castrum hall, paddock, undercroft | Paths and limestone; rye; limewash and slab roofs; doors/shutters; mill wheel and debris; altar/crucifix/aumbry; graves; hearth, barrels, mummified apples; wall cutaways |
 
 Do not invent pickups or state machines merely to fill a sheet. The story's altar encounter and inventory presentation may require different art for the same object.
@@ -115,10 +117,11 @@ Success: the agreed first level is playable from entry to exit with accepted art
 | 2026-10-04 | Interactive HTML review and reference correction | All 26 cards support reversible decisions and written commentary. Chrome verified reload persistence, complete manifest export, preserved credits, mobile layout and export with browser storage disabled. Diablo II and Darkwood are visible; Diablo II's broader supporting influence is restored | User reviews in the gallery, saves the downloaded manifest and explicitly approves the board |
 | 2026-10-04 | Mood board approved and concept direction refined | User explicitly approved all current references; no saved row exceptions or additions. Latest direction is more cartoony than Diablo II, less cartoony than Hollow Knight; visual brief and initial eight concepts defined | Generate, inspect and present concept candidates |
 | 2026-10-04 | Character proportion correction | First C01/C02 sheets rejected as too grounded. User requests a cutesy feel, oversized heads and small bodies. Three new approaches S01–S03 generated, visually inspected and preserved with prompts, records, dimensions and hashes. Concept gallery verified in Chrome for review, reload persistence, export and mobile layout; approved mood-board state synchronized. Remaining batch is on hold | User selects the closest approach, then resume the concept batch in that structure |
+| 2026-10-04 | Distinct art-style exploration | S01–S03 rejected for large eyes and nearly identical style. S04–S06 generated in flat ink, coarse pixel and dimensional sculpted media, all with full-face helmets and narrow visors; prior images preserved as rejected | Verify the updated gallery, then user selection of the closest new style |
 
 Review artifacts: [gallery](../art/mood-board/index.html), [overview](../art/mood-board/overview.jpg), [review manifest](../art/mood-board/manifest.md), [review instructions](../art/mood-board/README.md).
 
-Concept art has begun: two rejected initial sheets and three new structural approaches. No sprite sheets or first-level implementation have been produced. Game runtime tests were not run for these art-workflow changes; interactive HTML review is checked in Chrome. Existing story and Godot edits are excluded from these art-workflow commits.
+Concept art has begun: five rejected earlier images and three new art-style candidates. No sprite sheets or first-level implementation have been produced. Game runtime tests were not run for these art-workflow changes; interactive HTML review is checked in Chrome. Existing story and Godot edits are excluded from these art-workflow commits.
 
 Mood board approval: **approved 2026-10-04**. Concept approval: **pending**. Asset lists: **not finalized**. Sprite approval: **pending**. Engine decision: **provisional Godot**.
 

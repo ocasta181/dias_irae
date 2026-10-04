@@ -1,20 +1,30 @@
 # Concept art review manifest
 
-Status: **three structural approaches awaiting your selection**. Mood board approved on 2026-10-04; concept approval remains separate.
+Status: **three contrasting art styles S04–S06 awaiting your selection**. Mood board approved on 2026-10-04; concept approval remains separate.
 
-The first Guarin and parish-cast sheets were too grounded and were rejected. Latest direction: **a more cutesy feel, oversized heads and small bodies structurally similar to Hollow Knight and Castle Crashers**. Diablo II remains relevant to materials, environment detail and lighting. Select the closest of A, B or C before the remaining batch resumes.
+Latest user requirements: **oversized heads, small bodies, smaller eyes, a full-face helm, and three wildly different art styles**. The previous S01–S03 comparison was rejected as the same style with outfit changes and overly large eyes. The new comparison varies medium, contours, texture density and dimensional lighting while keeping subject, muted palette and equipment broadly consistent. No earlier generated image was used as a style reference.
 
-Open [the comparison gallery](index.html) or [the comparison overview](comparison.jpg). Each gallery card has decision buttons and a commentary box; download the manifest and save it here to share those choices. A choice can also be made directly in chat. No candidate is automatically accepted.
+Open [the comparison gallery](index.html) or [the new comparison overview](comparison-v02.jpg). Each card has decision buttons and a commentary box. Download the manifest and save it here to share choices, or choose A, B or C in chat. No candidate is automatically accepted.
 
-Exact generation prompts are in `prompts/`; per-image tool, source references, dimensions, hashes and inspection notes are in `records/`. The built-in ImageGen tool was used; the tool does not expose its model/version. Originals are preserved unchanged.
+Exact prompts are in `prompts/`; per-image tool, references, dimensions, hashes, user overrides and inspection notes are in `records/`. The built-in ImageGen tool was used; its model/version is not exposed. Originals remain unchanged. Guarin's full-face helm is a user-directed exception to the story's earlier open nasal-helm instruction.
 
-## Three structural approaches
+## New art-style comparison
 
 | Identifier | Candidate | Story purpose | Image | Status | Notes |
 |---|---|---|---|---|---|
-| S01 | A — Round and gentle | Guarin; Softest silhouette, round face and large quiet eyes. | [S01 v01](images/s01-round-gentle-v01.png) | pending | |
-| S02 | B — Bold and chunky | Guarin; Strong outlines, graphic features and compact limbs. | [S02 v01](images/s02-bold-chunky-v01.png) | pending | |
-| S03 | C — Angular pixel charm | Guarin; Faceted helmet, expressive face and more material depth. | [S03 v01](images/s03-angular-pixel-charm-v01.png) | pending | |
+| S04 | A — Flat ink cartoon | Guarin; Broad planar color, heavy ink contour and almost no dimensional shading. | [S04 v01](images/s04-flat-ink-cartoon-v01.png) | pending | |
+| S05 | B — Chunky pixel minimalism | Guarin; Coarse square pixel clusters, stepped geometry and sparse material detail. | [S05 v01](images/s05-chunky-pixel-minimalism-v01.png) | pending | |
+| S06 | C — Sculpted pixel toy | Guarin; Dimensional faceted volumes, light-driven form and no ink contours. | [S06 v01](images/s06-sculpted-pixel-toy-v01.png) | pending | |
+
+## Previous comparison — rejected
+
+[Earlier comparison overview](comparison.jpg). Rejected by the user: eyes too big and all three styles too similar. Do not use these as style or production references.
+
+| Identifier | Candidate | Story purpose | Image | Status | Notes |
+|---|---|---|---|---|---|
+| S01 | Round and gentle | Prior proportion-only exploration | [S01 v01](images/s01-round-gentle-v01.png) | rejected | User: eyes too big; styles too similar. |
+| S02 | Bold and chunky | Prior proportion-only exploration | [S02 v01](images/s02-bold-chunky-v01.png) | rejected | User: eyes too big; styles too similar. |
+| S03 | Angular pixel charm | Prior proportion-only exploration | [S03 v01](images/s03-angular-pixel-charm-v01.png) | rejected | User: eyes too big; styles too similar. |
 
 ## Initial batch — held for the selected structure
 

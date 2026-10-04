@@ -1,0 +1,35 @@
+{
+  "identifier": "S06",
+  "approach": "C — Sculpted pixel toy",
+  "version": "v01",
+  "image": "images/s06-sculpted-pixel-toy-v01.png",
+  "prompt": "prompts/s06-sculpted-pixel-toy-v01.txt",
+  "tool": "image_gen.imagegen (built-in)",
+  "model": "not exposed by tool",
+  "generation_date": "2026-10-04",
+  "reference_identifiers": [
+    "M20",
+    "M23"
+  ],
+  "story_sources": [
+    "../../story/characters.md"
+  ],
+  "user_overrides": [
+    "Guarin helmet must fully cover his face; supersedes open nasal-helm constraint.",
+    "No oversized eyes; previous three similar styles rejected."
+  ],
+  "status": "pending",
+  "user_notes": "",
+  "inspection_notes": [
+    "Dimensional faceted volumes, light-driven form and no ink contours.",
+    "Full face covered by a solid metal faceplate; narrow dark visor; no visible human eyes, mouth or beard.",
+    "Large head, small torso and short limbs retained; muted wine, bone, taupe and charcoal palette.",
+    "This is a rendering-direction concept; exact production palette, pixel grid and animation remain unvalidated."
+  ],
+  "source_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-b7a1d120-54cd-423a-b316-6ae2fcf63c31.png",
+  "sha256": "10e889e8d67eff59f3ff4687d88e9ba51f64380e7a5d959b5241632ac7e5353d",
+  "dimensions": [
+    1366,
+    1152
+  ]
+}
