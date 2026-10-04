@@ -2,7 +2,7 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
-Last updated: 2026-10-04. Current stage: **original mood board approved; S09 selected for development, preferred S13/S17 textures recorded; camera/proportions rejected; Grok selected with existing-login image generation verified; a revised 42-reference equipment board (40 twelfth-century, 2 early-thirteenth-century) ready for selection**.
+Last updated: 2026-10-04. Current stage: **original mood board approved; S09 selected for development, preferred S13/S17 textures recorded; camera/proportions rejected; Grok selected with existing-login image generation verified; the 42-reference equipment board approved with a cultural/geographic constraint; three Grok Guarin rendering variations in production**.
 
 ## Story and visual constraints
 
@@ -49,7 +49,7 @@ Success: a locally reviewable collection with individual removable images and pr
 - [x] Put the dated equipment choices prominently on the main mood board and add source-dated 12th-century ankle shoes and 13th-century slip-on boots; board 03 now has 36 active choices and 47 source/history records.
 - [x] Replace the active selection across every category with at least 90% 12th-century sources and at most 10% early 13th (1201–1230). Board 04 has 42 active choices: 40 (95.2%) 12th-century and 2 (4.8%) early-13th allowances. Add 10 new 12th-century helmet/headpiece views, retain 40 excluded records and all prior notes, and label uncertain construction and regional comparisons.
 - [x] Verify board 04’s 42 active and 82 total records, date limits, image decoding/dimensions/hashes, enlarged detail views, browser decisions/commentary/export and mobile layout. Confirm that excluded-row notes still export and the original mood board remains approved. Save [the browser preview](../art/mood-board/equipment/board-04-preview.png).
-- [ ] **User selects dress and equipment references and approves the resulting direction before further cast concepts.**
+- [x] **User approves the equipment board** in chat on 2026-10-04: "all this looks great", subject to cultural and geographic precision. Retain the approved collection; do not treat every European source as local to the 1101 story. Guarin’s existing costume stays fixed in the next style comparison.
 
 ## 2. Concept art — after mood board approval
 
@@ -72,8 +72,8 @@ Success: a locally reviewable collection with individual removable images and pr
 - [x] Pause built-in generation and research [three current alternatives](image-model-alternatives.md): MAI-Image-2.6, Reve 2.1 and Grok Imagine Image 2.0; verify public availability, published capabilities, current Arena rankings and available USD pricing. MAI/Reve trial pricing remains to verify for the selected access route.
 - [x] **User selects Grok** on 2026-10-04, using their existing account and installed CLI.
 - [x] Verify Grok CLI 1.0.46, cached-login refresh and one unattended `image_gen` call; preserve the neutral 1024 × 1024 connection test and [connection instructions](grok-image-generation.md). Exact underlying Imagine model ID and reference editing remain unverified.
-- [ ] Review a small camera/proportion pilot with the preferred texture.
-- [ ] **User approves the camera/proportion direction and selects dress/equipment references before the remaining concept batch.**
+- [ ] Review a small camera/proportion pilot with the preferred texture. The user now authorizes three Grok art-style variations of Guarin with the same costume; rendering selection remains open.
+- [ ] **User approves the camera/proportion and rendering direction before the remaining concept batch.** Equipment collection approved with regional and cultural limits; no new Guarin concept is accepted yet.
 - [ ] Generate story-aligned concept candidates, using the approved mood board as references.
 - [ ] Save every candidate locally, alongside its exact prompt, reference identifiers, tool, version and review status.
 - [ ] Inspect period equipment, character identity, story motifs, silhouette and camera consistency.
