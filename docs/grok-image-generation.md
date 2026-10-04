@@ -51,13 +51,25 @@ The CLI's language model orchestrates its built-in Imagine tool. **The image too
 
 The test reported **$0.01088476** in language-model orchestration usage. It did not expose a separate image charge or subscription deduction, so this is not a verified total image-generation cost. Published direct-API image pricing is separate evidence in [the alternatives comparison](image-model-alternatives.md).
 
-## 2D-only generation and parent assessment
+## Current flat redraw and verified input rules
+
+Latest direction: completely flat drawn fills and graphic dirt marks; no rounded shading, edge glints, bevels or 2.5D appearance. The knight must look dark, muddy, poor, wretched, worn, tired and desperate. A/C need visibly different media; B needs a normal barrel helmet and intact faceplate. Every complete raw prompt states the full costume, proportions, story region/date, camera target and mood-board roles.
+
+S47–S53 each used exactly one native `image_gen` call with no image input in a fresh empty working directory and a unique explicit session ID. Parent inspection held back S47/S48/S49/S50/S53. Current B S51 uses sparse ink and C S52 rough stencil; both are flatter and more exhausted, with costume/view limitations.
+
+For A, S55 used a new session, the standard CLI dispatcher and one native `image_edit` call. The actual `image` array contains **only approved mood-board base M22** (`art/mood-board/07-game-language/m22-hollow-knight-combat.jpg`), hash checked against the approved inventory. The complete prompt requests a wholly new knight and uses M22 only for flat shape language. No generated concept, screenshot, guide, derivative or previous-session history was supplied. The native name `image_edit` does not mean a prior knight was used. Fine pixel output S55 is the current A; its 16:9 provider output is preserved unchanged despite the square request.
+
+The earlier S54 override dispatcher failed: two unsuccessful `search_tool` calls, no image tool call, no image submitted, no generated output. Do not resume that failed session. Standard dispatch in new S55 called native image_edit successfully. Use the standard dispatcher for this approved-base route; tools allow-list `image_edit`, `--permission-mode dontAsk`, `--no-subagents`, `--disable-web-search`, `--verbatim`, `--max-turns 4`. A request must explicitly name the native tool, exact complete prompt and single approved reference path. Text-only calls keep the restricted image_gen dispatcher.
+
+[Current gallery](../art/concepts/index.html?v=9#current-styles), [parent assessment](../art/concepts/assessment-flat.md). Exact successful inputs, source paths, session IDs, output dimensions and hashes are in `art/concepts/records/`. Inspect actual art; never infer flatness, mood or camera compliance from a successful tool status. Current costume and calibrated camera remain unapproved.
+
+## Previous 2D assessment — superseded by user feedback
 
 The user requires only 2D art. Every dispatcher system prompt and complete raw image prompt now explicitly prohibit 3D art. The raw prompt must describe the approved board's mood, shape language, palette, light and reference roles; sending game names and a costume alone is insufficient. Avoid positive directions such as “pre-rendered,” “volumetric” or “toy-like,” which caused the earlier drift.
 
-S41–S46 were generated in six unique explicitly new sessions, each with one `image_gen` call, only `prompt` and `aspect_ratio` inputs, no uploaded images, no resume and no prior session history. All actual prompts match the saved complete text. The parent assistant viewed the approved board and all six actual outputs, held back S42/S43/S44 and recorded why. [Assessment](../art/concepts/assessment-2d.md), [current gallery](../art/concepts/index.html?v=8#current-styles).
+S41–S46 were generated in six unique explicitly new sessions, each with one `image_gen` call, only `prompt` and `aspect_ratio` inputs, no uploaded images, no resume and no prior session history. All actual prompts match the saved complete text. The parent assistant viewed the approved board and all six actual outputs, held back S42/S43/S44 and recorded why. [Assessment](../art/concepts/assessment-2d.md), [gallery with preserved history](../art/concepts/index.html?v=9#current-styles).
 
-Current style candidates: S41 (soft drawn paint), S46 (sparse graphic shapes), S45 (gritty painted blend). All pass the parent 2D-appearance and muted-mood screen. None is a production-approved costume or camera reference. S45 is the strongest mood match in that assessment; human approval is pending. Records include exact prompts, actual calls, session IDs and specific visual findings. The image provider's internal rendering steps and exact Imagine model ID are not exposed.
+Previous style candidates: S41 (soft drawn paint), S46 (sparse graphic shapes), S45 (gritty painted blend). The original parent screen was too lenient: user feedback identified modeled volume in A/C and malformed B geometry. The current redraw supersedes this assessment. None is a production-approved costume or camera reference. S45 was the strongest mood match in that superseded assessment; the user requested further revision. Records include exact prompts, actual calls, session IDs and specific visual findings. The image provider's internal rendering steps and exact Imagine model ID are not exposed.
 
 ## Earlier independent Guarin comparison — 2D rerun requested
 
