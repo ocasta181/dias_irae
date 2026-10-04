@@ -1,0 +1,80 @@
+{
+  "identifier": "S20",
+  "approach": "Tinted charcoal and etched hatching",
+  "version": "v01",
+  "image": "images/s20-guarin-charcoal-etching-grok-v01.jpg",
+  "prompt": "prompts/s20-guarin-charcoal-etching-grok-v01.txt",
+  "tool": "Grok CLI image_gen",
+  "model": "Exact Imagine model not exposed by CLI tool result",
+  "cli": "/Users/ocasta/.grok/bin/grok",
+  "cli_version": "1.0.46 (2765805b9442) [stable]",
+  "generation_date": "2026-10-04",
+  "input_mode": "fresh text-only generation",
+  "reference_identifiers": [],
+  "design_reference_identifiers": [
+    "S09",
+    "S13",
+    "S17"
+  ],
+  "reference_roles": "Prior selected design translated into the text prompt; no image input.",
+  "story_sources": [
+    "../../story/story-arch.md",
+    "../../story/characters.md"
+  ],
+  "regional_scope": "Royans/Isere story setting, 1101; broader European comparison sources are not evidence of local adoption. Full-face greathelm is the explicit user exception.",
+  "status": "revise",
+  "user_notes": "Internal revision: independent fresh drawing added crossed crown strips and changed facing/sword direction. One capacity failure was retried successfully. Superseded in the current comparison.",
+  "inspection_notes": [
+    "Internal revision: independent fresh drawing added crossed crown strips and changed facing/sword direction. One capacity failure was retried successfully. Superseded in the current comparison.",
+    "Full-face greathelm, concealed eyes, exaggerated head/small body, mail, wine cloth, brown wraps/boots, sword and kite shield remain the intended design.",
+    "Camera target is 40 degrees above ground. The current trio retains the base drawing’s shallower crown ellipse; no corrected 40-degree angle is claimed. Assuming a level circular top, the base suggests roughly 30 degrees; tilt, drawing simplification and stylization prevent a certified estimate.",
+    "Only rendering is under comparison in S18/S22/S23; production camera, pixel grid, animation and sprite treatment await review."
+  ],
+  "requested_nominal_camera_degrees_above_ground": 40,
+  "source_output": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-guarin-styles%2Fs20/01a107c7-d9a3-7e50-bbc4-ee66f7227650/images/1.jpg",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "sha256": "75d3d5950c64250cd867206c7493072d56c43cddbb97f639ec23e382d869a44a",
+  "format": "JPEG",
+  "tool_call_count": 2,
+  "attempts": [
+    {
+      "tool": "image_gen",
+      "tool_input": {
+        "prompt": "Draw ONE full-body Guarin, a weary returning household knight from the Royans/Isere lands in 1101, as a dark, cute-proportioned isometric game character. Create an entirely NEW drawing from this text, with no input image. His oversized helmet/head takes about 43 percent of his total standing height: a tiny stocky torso, very short arms and stubby legs beneath a huge head, approximately 2.3 head heights tall overall. Preserve this exact costume and loadout: fully enclosed dull-iron cylindrical greathelm with flat circular crown, two plain riveted reinforcing strips, one narrow black visor slit and a few small round breathing holes; fine RING mail shirt and sleeves beneath a ragged faded wine-red scarf and short cape, ragged wine-red waist cloth, one brown leather belt with plain rectangular buckle, taupe/brown cloth wraps at forearms and lower legs, plain brown gloves and short rounded brown leather boots. His face and eyes are entirely concealed. His right hand on the viewer's left holds a short, perfectly straight double-edged arming sword down diagonally: disk pommel, simple brown grip, straight crossguard, straight symmetrical blade, and centered point all rigidly aligned. His left hand on the viewer's right carries the SAME medium-sized elongated kite shield of weathered taupe wood, plain dull iron rim and one narrow faded wine-red vertical panel. The greathelm and simplified wraps are deliberate established character-design exceptions; this is a regional story character, not a claim that every part is an excavated French costume of 1101. Keep ring mail rather than scales or plate, with restrained local materials, no imported royal ornament, invented heraldic order, symbols, crests or new costume pieces.\nUse the SAME elevated orthographic gameplay view in this comparison, camera about 40 degrees ABOVE THE HORIZONTAL GROUND, looking down on a character facing diagonally toward the lower-right. His vertical barrel helmet has a level horizontal circular top, seen as a DEEP ellipse with minor axis about 64 percent of its major axis; expose the top, shoulders, shield rim and boot tops coherently, rather than an eye-level portrait. His head stays upright. Keep both feet, sword tip and shield tip visible in a neutral idle stance, centered with generous margin against a simple flat charcoal background and small grounding shadow. Use soot gray iron, muted taupe/brown, dark dried-wine cloth and sparse bone-gray highlights, solemn but endearing. This must preserve oversized-head/small-body charm rather than adult human anatomy. Rendering is the ONLY variable: costume, color placement, equipment, pose, view and proportions remain as above. One character, one view, no scene, captions, text, logo, panels, large eyes or bright glowing details.\n\nRENDERING C: a rough 2D charcoal-and-etching drawing tinted with muted wine and taupe washes. Build volume with coarse directional hatch strokes, irregular broken scratch lines, small stippled shadow masses and scraped dusty highlights, with abundant large quiet shapes between marks. Angular abbreviated facets, rasped silhouettes and expressive hand-drawn marks give it a much more raw, print-like construction than smooth cel ink or soft gouache. Keep the identical cute huge-head/tiny-body proportions and fixed costume, not realistic anatomy or a medieval manuscript copy. Subtle pixel-adjacent clustering only, not a coarse mosaic. The result should feel like a dark, colored charcoal print adapted for an isometric game.",
+        "aspect_ratio": "1:1"
+      },
+      "tool_status": "failed",
+      "tool_output": {
+        "error": "tool_execution_failed",
+        "message": "Image generation failed with HTTP 429 Too Many Requests: {\"code\":\"Some resource has been exhausted\",\"error\":\"The service is temporarily at capacity. Please retry your request shortly.\"}"
+      },
+      "session_id": "01a107c6-3f5e-7322-a4d9-f1823a561a5d",
+      "stop_reason": "end_turn",
+      "reported_orchestration_cost_usd": 0.0125188,
+      "orchestration_model": "grok-4.7-build"
+    },
+    {
+      "tool": "image_gen",
+      "tool_input": {
+        "prompt": "Draw ONE full-body Guarin, a weary returning household knight from the Royans/Isere lands in 1101, as a dark, cute-proportioned isometric game character. Create an entirely NEW drawing from this text, with no input image. His oversized helmet/head takes about 43 percent of his total standing height: a tiny stocky torso, very short arms and stubby legs beneath a huge head, approximately 2.3 head heights tall overall. Preserve this exact costume and loadout: fully enclosed dull-iron cylindrical greathelm with flat circular crown, two plain riveted reinforcing strips, one narrow black visor slit and a few small round breathing holes; fine RING mail shirt and sleeves beneath a ragged faded wine-red scarf and short cape, ragged wine-red waist cloth, one brown leather belt with plain rectangular buckle, taupe/brown cloth wraps at forearms and lower legs, plain brown gloves and short rounded brown leather boots. His face and eyes are entirely concealed. His right hand on the viewer's left holds a short, perfectly straight double-edged arming sword down diagonally: disk pommel, simple brown grip, straight crossguard, straight symmetrical blade, and centered point all rigidly aligned. His left hand on the viewer's right carries the SAME medium-sized elongated kite shield of weathered taupe wood, plain dull iron rim and one narrow faded wine-red vertical panel. The greathelm and simplified wraps are deliberate established character-design exceptions; this is a regional story character, not a claim that every part is an excavated French costume of 1101. Keep ring mail rather than scales or plate, with restrained local materials, no imported royal ornament, invented heraldic order, symbols, crests or new costume pieces.\nUse the SAME elevated orthographic gameplay view in this comparison, camera about 40 degrees ABOVE THE HORIZONTAL GROUND, looking down on a character facing diagonally toward the lower-right. His vertical barrel helmet has a level horizontal circular top, seen as a DEEP ellipse with minor axis about 64 percent of its major axis; expose the top, shoulders, shield rim and boot tops coherently, rather than an eye-level portrait. His head stays upright. Keep both feet, sword tip and shield tip visible in a neutral idle stance, centered with generous margin against a simple flat charcoal background and small grounding shadow. Use soot gray iron, muted taupe/brown, dark dried-wine cloth and sparse bone-gray highlights, solemn but endearing. This must preserve oversized-head/small-body charm rather than adult human anatomy. Rendering is the ONLY variable: costume, color placement, equipment, pose, view and proportions remain as above. One character, one view, no scene, captions, text, logo, panels, large eyes or bright glowing details.\n\nRENDERING C: a rough 2D charcoal-and-etching drawing tinted with muted wine and taupe washes. Build volume with coarse directional hatch strokes, irregular broken scratch lines, small stippled shadow masses and scraped dusty highlights, with abundant large quiet shapes between marks. Angular abbreviated facets, rasped silhouettes and expressive hand-drawn marks give it a much more raw, print-like construction than smooth cel ink or soft gouache. Keep the identical cute huge-head/tiny-body proportions and fixed costume, not realistic anatomy or a medieval manuscript copy. Subtle pixel-adjacent clustering only, not a coarse mosaic. The result should feel like a dark, colored charcoal print adapted for an isometric game.",
+        "aspect_ratio": "1:1"
+      },
+      "tool_status": "completed",
+      "tool_output": {
+        "type": "ImageGen",
+        "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-guarin-styles%2Fs20/01a107c7-d9a3-7e50-bbc4-ee66f7227650/images/1.jpg",
+        "filename": "1.jpg",
+        "session_folder": "images"
+      },
+      "session_id": "01a107c7-d9a3-7e50-bbc4-ee66f7227650",
+      "stop_reason": "end_turn",
+      "reported_orchestration_cost_usd": 0.00943976,
+      "orchestration_model": "grok-4.7-build"
+    }
+  ],
+  "reported_orchestration_cost_usd": 0.021958560000000002,
+  "billing_limit": "CLI language-model orchestration usage only; separate image charges or subscription deductions are not exposed."
+}

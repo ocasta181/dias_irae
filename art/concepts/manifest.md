@@ -1,14 +1,30 @@
 # Concept art review manifest
 
-Current checkpoint: **texture preferred in S13 and S17; camera and exaggerated proportions require revision. Built-in generation paused while choosing an alternative model.** The newer S17 body drifted toward realistic anatomy. Keep the oversized greathelm/head, tiny body and short limbs. No complete concept is approved.
+Current checkpoint: **three Grok rendering directions for Guarin, with the same costume and pose.** The original mood board and equipment board are approved. Cultural and geographic precision remains required; see [the visual brief](visual-brief.md). No new character concept is approved yet.
 
-The user originally selected S09 for development and requested only that character from the Diablo II elevated gameplay view. Only that character direction was developed. The subsequent S13–S17 camera studies failed to deliver the requested view consistently. Numeric angles in prompts were targets, not measured results or production-camera settings.
+S09 remains the selected original character direction; S13/S17 supply preferred texture history. S18 is a fresh text-only Grok drawing of that costume. S22 and S23 are Grok `image_edit` restyles of S18 so the current comparison changes the drawing language while retaining costume, proportions, pose and camera. These are rendering transformations, not fresh camera redraws. All source images remain unchanged. Earlier independent Grok attempts are retained below with internal revision notes.
 
-S14–S17 were generated from scratch with text-only briefs and no image inputs. S13 used S09 for character/style and M21 for camera guidance. Prompts, input modes, source outputs, dimensions and hashes are preserved in `prompts/` and `records/`. The built-in tool does not expose its model/version. No external provider has yet generated a candidate.
+Keep the oversized full-face greathelm, tiny body and short limbs. The common costume is plain ring mail, wine-red scarf/cape and waist cloth, brown belt/gloves/wraps/short boots, straight sword and wooden kite shield with a narrow wine-red panel. Broader European references do not establish local costume for every role. The greathelm remains the explicit anachronism.
 
-The user asked for three current alternatives. See [image-model-alternatives.md](../../docs/image-model-alternatives.md). Proposed first test: Nano Banana Pro, with an explicit exaggerated-proportion and camera composition guide. Provider selection and pilot review remain pending.
+**Camera remains unapproved.** The fresh base requested 40 degrees above the ground; its crown is shallower. A rough estimate near 30 degrees assumes a level circular crown and cannot certify the illustration. The two current restyles hold that view for a fair rendering comparison. Pixel density and sprite treatment are also unapproved.
 
-Review [the gallery](index.html), with reversible decisions and commentary. Download the manifest to save choices, or review in chat. Export preserves all planned rows and prior decisions. The [dress and equipment board](../mood-board/equipment/index.html) is also being expanded to diverse dated European references from the 12th–14th centuries; the original 26-image mood board remains approved.
+Review [the gallery](index.html?v=5), with reversible decisions and commentary, or [the three-way overview](comparison-grok-v01.jpg). Download the manifest to share selections. Export preserves planned rows and earlier decisions. The installed Grok CLI generated the images; its tool results do not expose an exact Imagine model identifier. The S20 capacity error and retry are recorded.
+
+## Current Grok comparison — choose the drawing language
+
+| Identifier | Candidate | Purpose | Image | Status | Notes |
+|---|---|---|---|---|---|
+| S18 | A — Graphic ink and cel shadows | Same-costume rendering comparison | [S18](images/s18-guarin-graphic-ink-grok-v01.jpg) | pending |  |
+| S22 | B — Dry gouache | Same-costume rendering comparison | [S22](images/s22-guarin-dry-gouache-grok-v02.jpg) | pending |  |
+| S23 | C — Tinted charcoal and etched hatching | Same-costume rendering comparison | [S23](images/s23-guarin-charcoal-etching-grok-v03.jpg) | pending |  |
+
+## Earlier Grok fresh-drawing attempts — internal revisions
+
+| Identifier | Candidate | Purpose | Image | Status | Notes |
+|---|---|---|---|---|---|
+| S19 | Dry gouache | Same-costume rendering comparison | [S19](images/s19-guarin-dry-gouache-grok-v01.jpg) | revise | Internal revision: independent fresh drawing changed small helmet, buckle and pose details. S22 replaces it in the controlled comparison; no user rejection is implied. |
+| S20 | Tinted charcoal and etched hatching | Same-costume rendering comparison | [S20](images/s20-guarin-charcoal-etching-grok-v01.jpg) | revise | Internal revision: independent fresh drawing added crossed crown strips and changed facing/sword direction. One capacity failure was retried successfully. Superseded in the current comparison. |
+| S21 | Tinted charcoal and etched hatching | Same-costume rendering comparison | [S21](images/s21-guarin-charcoal-etching-grok-v02.jpg) | revise | Internal revision: fresh redraw corrected the sword direction but tilted the helmet and altered faceplate seams. Retained as generation history; S23 is the controlled comparison. |
 
 ## Preferred texture references — revision required
 
@@ -67,4 +83,4 @@ Review [the gallery](index.html), with reversible decisions and commentary. Down
 | C07 | Undercroft encounter | Low vaults, stores and readable encounter space | — | planned | Match exterior and church materials. |
 | C08 | Evidence and ritual objects | Grain, sclerotia, wheat host, splinter and keys | — | planned | Concept studies do not imply every object becomes a pickup. |
 
-Progress source of truth: [art-production-checklist.md](../../docs/art-production-checklist.md). [Visual brief](visual-brief.md). Resume further concepts after model/camera/proportion and equipment review; define each asset category before sprite production.
+Progress source of truth: [art-production-checklist.md](../../docs/art-production-checklist.md). [Visual brief](visual-brief.md). Review the current Grok rendering comparison and camera/proportions before further cast concepts; define each asset category before sprite production.

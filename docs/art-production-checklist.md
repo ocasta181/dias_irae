@@ -2,7 +2,7 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
-Last updated: 2026-10-04. Current stage: **original mood board approved; S09 selected for development, preferred S13/S17 textures recorded; camera/proportions rejected; Grok selected with existing-login image generation verified; the 42-reference equipment board approved with a cultural/geographic constraint; three Grok Guarin rendering variations in production**.
+Last updated: 2026-10-04. Current stage: **original mood board approved; S09 selected for development, preferred S13/S17 textures recorded; camera/proportions rejected; Grok selected with existing-login image generation verified; the 42-reference equipment board approved with a cultural/geographic constraint; three Grok Guarin rendering candidates ready for review (S18/S22/S23), with the same costume and pose; camera approval remains open**.
 
 ## Story and visual constraints
 
@@ -15,7 +15,7 @@ Source material: [story spine](../story/story-arch.md), [characters](../story/ch
 - Isenheim supplies emotional intensity, diseased flesh, sacred light and monstrous forms. Its later date does not make its architecture or clothing period references.
 - Act I begins with recognizable parishioners and wolves. Later locusts and overt demons must not replace that opening escalation.
 - First level is provisionally the Act I homecoming through Rivoire and Raimon's undercroft. Confirm the playable extent before implementation.
-- Latest rendering clarification: dark and pixelated/cartoon, cutesy large-head/small-body structure, smaller eyes, and genuinely distinct art styles. S09 is now selected for development; S13/S17 textures are preferred, but later camera studies and proportion drift were rejected. Built-in generation remains paused; the user selected Grok and its installed CLI passed an image-generation connection test. The Guarin pilot is still untested. Diablo II remains relevant to composition, materials, environment detail and lighting. Realistic anatomy and the previous three overly similar styles were rejected.
+- Latest rendering clarification: dark and pixelated/cartoon, cutesy large-head/small-body structure, smaller eyes, and genuinely distinct art styles. S09 is selected for development; S13/S17 textures are preferred, but later camera studies and proportion drift were rejected. Built-in generation remains paused. Grok produced the current S18/S22/S23 style comparison with one costume and pose; rendering and camera approval remain open. Diablo II remains relevant to composition, materials, environment detail and lighting. Realistic anatomy and the previous overly similar styles were rejected.
 - Exact pixel density, edge treatment, camera angle, animation directions and frame counts remain open for review and the sprite pilot.
 
 ## 1. Mood board
@@ -71,7 +71,9 @@ Success: a locally reviewable collection with individual removable images and pr
 - [x] Record texture-only preference for S13/S17, camera failures and drift toward human proportions.
 - [x] Pause built-in generation and research [three current alternatives](image-model-alternatives.md): MAI-Image-2.6, Reve 2.1 and Grok Imagine Image 2.0; verify public availability, published capabilities, current Arena rankings and available USD pricing. MAI/Reve trial pricing remains to verify for the selected access route.
 - [x] **User selects Grok** on 2026-10-04, using their existing account and installed CLI.
-- [x] Verify Grok CLI 1.0.46, cached-login refresh and one unattended `image_gen` call; preserve the neutral 1024 × 1024 connection test and [connection instructions](grok-image-generation.md). Exact underlying Imagine model ID and reference editing remain unverified.
+- [x] Verify Grok CLI 1.0.46, cached-login refresh and one unattended `image_gen` call; preserve the neutral 1024 × 1024 connection test and [connection instructions](grok-image-generation.md). This initial test did not expose an exact Imagine model ID or test reference editing.
+- [x] Generate a fresh Grok Guarin base S18, then rendering-only restyles S22/S23 of the same costume and pose: graphic ink, dry gouache and charcoal hatching. Preserve S19/S20/S21 as internal revision history. Record the S20 capacity error and retry; keep exact prompts, actual tool calls, source outputs and image hashes.
+- [x] Verify all 25 concept cards, including the three current styles: preserved earlier decisions, exact prompt/tool calls, source hashes, S18 reference lineage, browser decisions/commentary/export and mobile layout. Equipment approval and the original mood board remain intact.
 - [ ] Review a small camera/proportion pilot with the preferred texture. The user now authorizes three Grok art-style variations of Guarin with the same costume; rendering selection remains open.
 - [ ] **User approves the camera/proportion and rendering direction before the remaining concept batch.** Equipment collection approved with regional and cultural limits; no new Guarin concept is accepted yet.
 - [ ] Generate story-aligned concept candidates, using the approved mood board as references.
