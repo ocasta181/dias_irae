@@ -2,7 +2,7 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
-Last updated: 2026-10-04. Current stage: assembling the mood board for review.
+Last updated: 2026-10-04. Current stage: **mood board ready; awaiting the user's review and explicit approval**.
 
 ## Story and visual constraints
 
@@ -22,11 +22,11 @@ Source material: [story spine](../story/story-arch.md), [characters](../story/ch
 - [x] Read the story, character dossiers, opening locations and systems design.
 - [x] Inspect the existing Godot combat slice and locate PresidentFighter.
 - [x] Record the initial engine and generation-tool assessment in [art-tooling.md](art-tooling.md).
-- [ ] Gather and download curated internet images into `art/mood-board/`.
-- [ ] Record source pages, creators, licenses, dates and specific story relevance.
-- [ ] Build a browsable gallery and an overview image; visually inspect every reference.
-- [ ] Verify files decode, references resolve, and gallery paths are valid.
-- [ ] Request the user's review. The user may delete images and add their own in `art/mood-board/user-references/`.
+- [x] Gather and download 21 curated internet images into `art/mood-board/`.
+- [x] Record source pages, creators, licenses, dates and specific story relevance.
+- [x] Build a browsable gallery and an overview image; visually inspect every reference.
+- [x] Verify all 21 images decode, dimensions and hashes match, source records cover every file, and local gallery/document links resolve.
+- [x] Request the user's review with this checkpoint. The user may delete images and add their own in `art/mood-board/user-references/`.
 - [ ] Reconcile removals, additions and review notes; agree the palette and rendering direction.
 - [ ] **User explicitly approves the mood board.**
 
@@ -100,6 +100,11 @@ Success: the agreed first level is playable from entry to exit with accepted art
 | Date | Checkpoint | Verified | Next |
 |---|---|---|---|
 | 2026-10-04 | Story and project reconnaissance | Isometric Godot prototype exists; PresidentFighter is at `../Personal/PresidentFighter`, not `../PresidentFighter`; art direction anchored in the story | Assemble and inspect internet references |
+| 2026-10-04 | Mood board ready for review | 21 references across seven themes; visual inspection corrected two mismatched search results; missing scan credit recovered from its source page; images, hashes, dimensions, provenance and local links verified | User removes/adds references and approves the reconciled board |
+
+Review artifacts: [gallery](../art/mood-board/index.html), [overview](../art/mood-board/overview.jpg), [review manifest](../art/mood-board/manifest.md), [review instructions](../art/mood-board/README.md).
+
+No concept art, sprite sheets or first-level implementation has been produced in this phase. Runtime tests were not run for this reference/document change. Existing story and Godot edits were not included in these art-workflow commits.
 
 Mood board approval: **pending**. Concept approval: **pending**. Asset lists: **not finalized**. Sprite approval: **pending**. Engine decision: **provisional Godot**.
 
