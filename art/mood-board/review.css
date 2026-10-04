@@ -61,7 +61,8 @@
 .review-controls textarea:focus-visible { outline: 2px solid #e8d59e; outline-offset: 3px; }
 
 .rank-controls { display: flex; gap: 8px; padding: 10px; background: #1b1b18; }
-.rank-controls button {
+.rank-controls button,
+.rank-controls input {
   min-height: 44px;
   padding: 8px 12px;
   border: 1px solid #655e4e;
@@ -71,9 +72,19 @@
   font-size: 13px;
   cursor: pointer;
 }
-.rank-controls .rank-handle { flex: 1; text-align: left; cursor: grab; }
+.rank-controls .rank-handle { cursor: grab; }
+.rank-controls .rank-position { flex: 1; min-width: 0; width: 70px; cursor: text; }
 .rank-controls .rank-handle:active { cursor: grabbing; }
 .rank-controls button:disabled { opacity: .35; cursor: default; }
-.rank-controls button:focus-visible { outline: 2px solid #e8d59e; outline-offset: 3px; }
+.rank-controls button:focus-visible,
+.rank-controls input:focus-visible { outline: 2px solid #e8d59e; outline-offset: 3px; }
+#preference-grid > .card { cursor: grab; }
+#preference-grid.images-only .body,
+#preference-grid.images-only .rank-controls { display: none; }
+.gallery-controls { margin: 16px 0; }
+.gallery-controls button { font: inherit; padding: 8px 12px; min-height: 44px; background: #23231e; color: #e5ddcc; border: 1px solid #655e4e; cursor: pointer; }
+.gallery-controls button:focus-visible { outline: 2px solid #e8d59e; outline-offset: 3px; }
+body.review-dragging,
+body.review-dragging * { cursor: grabbing !important; user-select: none; }
 .card.rank-dragging { opacity: .4; }
 .card.rank-drop-target { outline: 3px solid #d7bd82; outline-offset: 3px; }

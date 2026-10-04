@@ -117,6 +117,33 @@
   }
 
   if (preferenceGrid) {
+    const imageToggle = document.getElementById("images-only");
+    const viewStorageKey = `${storageKey}:images-only`;
+    let imagesOnly = false;
+    try {
+      imagesOnly = localStorage.getItem(viewStorageKey) === "true";
+    } catch {
+      storageAvailable = false;
+    }
+
+    function updateView() {
+      preferenceGrid.classList.toggle("images-only", imagesOnly);
+      imageToggle.setAttribute("aria-pressed", String(imagesOnly));
+      imageToggle.textContent = imagesOnly ? "Show details" : "Images only";
+    }
+
+    imageToggle.addEventListener("click", () => {
+      imagesOnly = !imagesOnly;
+      updateView();
+      try {
+        localStorage.setItem(viewStorageKey, String(imagesOnly));
+      } catch {
+        storageAvailable = false;
+        showSaveStatus();
+      }
+    });
+    updateView();
+
     const cardsById = new Map(cards.map((card) => [card.dataset.reference, card]));
     const rankingSection = manifest.match(/\n## Preference ranking\n([\s\S]*?)(?=\n## |\s*$)/);
     const manifestOrder = rankingSection
@@ -136,8 +163,9 @@
       ...rankedIds,
     ];
     const rankControls = new Map();
-    let draggedCard;
+    let press;
     let dropTarget;
+    let suppressClick = false;
 
     function applyOrder() {
       for (const id of preferenceOrder) preferenceGrid.append(cardsById.get(id));
@@ -145,8 +173,8 @@
         const id = card.dataset.reference;
         const index = preferenceOrder.indexOf(id);
         card.dataset.preferenceRank = String(index + 1);
-        const { handle, earlier, later } = rankControls.get(id);
-        handle.textContent = `↕ ${index + 1}`;
+        const { position, earlier, later } = rankControls.get(id);
+        position.value = String(index + 1);
         earlier.disabled = index === 0;
         later.disabled = index === preferenceOrder.length - 1;
       }
@@ -165,6 +193,80 @@
       dropTarget = undefined;
     }
 
+    function updateDropTarget() {
+      const target = document.elementFromPoint(press.x, press.y)?.closest(".card[data-reference]");
+      clearDropTarget();
+      if (target && target !== press.card && target.parentElement === preferenceGrid) {
+        dropTarget = target;
+        target.classList.add("rank-drop-target");
+      }
+    }
+
+    function dragFrame() {
+      const edge = 70;
+      const scroll = press.y < edge ? -14 : press.y > window.innerHeight - edge ? 14 : 0;
+      if (scroll) {
+        window.scrollBy(0, scroll);
+        updateDropTarget();
+      }
+      press.frame = requestAnimationFrame(dragFrame);
+    }
+
+    function beginDrag() {
+      clearTimeout(press.timer);
+      press.active = true;
+      press.card.setPointerCapture(press.pointerId);
+      press.card.classList.add("rank-dragging");
+      document.body.classList.add("review-dragging");
+      window.getSelection()?.removeAllRanges();
+      updateDropTarget();
+      press.frame = requestAnimationFrame(dragFrame);
+    }
+
+    function endPress(event) {
+      if (!press || event.pointerId !== press.pointerId) return;
+      clearTimeout(press.timer);
+      if (press.active) {
+        event.preventDefault();
+        if (event.type === "pointerup" && dropTarget) {
+          moveCard(press.card.dataset.reference, preferenceOrder.indexOf(dropTarget.dataset.reference));
+        }
+        cancelAnimationFrame(press.frame);
+        press.card.classList.remove("rank-dragging");
+        document.body.classList.remove("review-dragging");
+        if (press.card.hasPointerCapture(press.pointerId)) press.card.releasePointerCapture(press.pointerId);
+        suppressClick = true;
+        setTimeout(() => { suppressClick = false; }, 0);
+      }
+      press = undefined;
+      clearDropTarget();
+    }
+
+    window.addEventListener("pointermove", (event) => {
+      if (!press || event.pointerId !== press.pointerId) return;
+      press.x = event.clientX;
+      press.y = event.clientY;
+      if (!press.active && Math.hypot(press.x - press.startX, press.y - press.startY) > 6) {
+        if (press.editable) {
+          clearTimeout(press.timer);
+          press = undefined;
+          return;
+        }
+        beginDrag();
+      }
+      if (press.active) {
+        event.preventDefault();
+        updateDropTarget();
+      }
+    }, { passive: false });
+    window.addEventListener("pointerup", endPress);
+    window.addEventListener("pointercancel", endPress);
+    preferenceGrid.addEventListener("click", (event) => {
+      if (!suppressClick) return;
+      event.preventDefault();
+      event.stopImmediatePropagation();
+    }, true);
+
     for (const card of cards) {
       const id = card.dataset.reference;
       const bar = document.createElement("div");
@@ -172,7 +274,7 @@
       const handle = document.createElement("button");
       handle.type = "button";
       handle.className = "rank-handle";
-      handle.draggable = true;
+      handle.textContent = "↕";
       handle.setAttribute("aria-label", `Rank ${id}: drag, use up/down keys, Home or End`);
       handle.addEventListener("keydown", (event) => {
         const index = preferenceOrder.indexOf(id);
@@ -182,31 +284,41 @@
         moveCard(id, positions[event.key]);
         handle.focus();
       });
-      handle.addEventListener("dragstart", (event) => {
-        draggedCard = card;
-        event.dataTransfer.effectAllowed = "move";
-        event.dataTransfer.setData("text/plain", id);
-        card.classList.add("rank-dragging");
+      const position = document.createElement("input");
+      position.className = "rank-position";
+      position.type = "number";
+      position.min = "1";
+      position.max = String(cards.length);
+      position.step = "1";
+      position.required = true;
+      position.setAttribute("aria-label", `Position for ${id}`);
+      function enterPosition() {
+        if (!position.checkValidity()) {
+          position.reportValidity();
+          return;
+        }
+        const index = position.valueAsNumber - 1;
+        if (index !== preferenceOrder.indexOf(id)) moveCard(id, index);
+      }
+      position.addEventListener("blur", enterPosition);
+      position.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          enterPosition();
+          position.focus();
+        } else if (event.key === "Escape") {
+          position.value = String(preferenceOrder.indexOf(id) + 1);
+        }
       });
-      handle.addEventListener("dragend", () => {
-        card.classList.remove("rank-dragging");
-        draggedCard = undefined;
-        clearDropTarget();
-      });
-      card.addEventListener("dragover", (event) => {
-        if (!draggedCard || draggedCard === card) return;
-        event.preventDefault();
-        event.dataTransfer.dropEffect = "move";
-        clearDropTarget();
-        dropTarget = card;
-        card.classList.add("rank-drop-target");
-      });
-      card.addEventListener("drop", (event) => {
-        if (!draggedCard || draggedCard === card) return;
-        event.preventDefault();
-        const sourceId = draggedCard.dataset.reference;
-        moveCard(sourceId, preferenceOrder.indexOf(id));
-        clearDropTarget();
+      card.addEventListener("dragstart", (event) => event.preventDefault());
+      card.addEventListener("pointerdown", (event) => {
+        if (event.button !== 0 || press) return;
+        press = {
+          card, pointerId: event.pointerId, x: event.clientX, y: event.clientY,
+          startX: event.clientX, startY: event.clientY,
+          editable: Boolean(event.target.closest("input, textarea")), active: false,
+        };
+        press.timer = setTimeout(beginDrag, 250);
       });
       const earlier = document.createElement("button");
       earlier.type = "button";
@@ -218,8 +330,8 @@
       later.textContent = "↓";
       later.setAttribute("aria-label", `Move ${id} later`);
       later.addEventListener("click", () => moveCard(id, preferenceOrder.indexOf(id) + 1));
-      rankControls.set(id, { handle, earlier, later });
-      bar.append(handle, earlier, later);
+      rankControls.set(id, { position, earlier, later });
+      bar.append(handle, position, earlier, later);
       card.prepend(bar);
     }
     applyOrder();
