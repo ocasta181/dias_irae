@@ -1,6 +1,6 @@
 # Art generation and engine assessment
 
-Assessment date: 2026-10-04. The mood board and equipment board are approved. Grok's existing-login generation access works. The user discarded S24–S34 and requires every future iteration to start from a complete raw prompt in an independent session. Optional image inputs may come only from approved mood-board base references; prior generated concepts and guides are prohibited. [Generation instructions](grok-image-generation.md) record this rule. Engine decisions remain provisional until the asset pilot is reviewed.
+Assessment date: 2026-10-04. The mood board and equipment board are approved. Grok's existing-login generation access works. The user discarded S24–S34 and requires every future iteration to start from a complete raw prompt in an independent session. Optional image inputs may come only from approved mood-board base references; prior generated concepts and guides are prohibited. [Generation instructions](grok-image-generation.md) record this rule. The latest rendering rule permits only 2D drawn art, with full mood-board context in each raw prompt and parent visual assessment before presentation. Engine decisions remain provisional until the asset pilot is reviewed.
 
 ## Concept generation
 

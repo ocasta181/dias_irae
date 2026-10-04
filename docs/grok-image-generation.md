@@ -51,7 +51,15 @@ The CLI's language model orchestrates its built-in Imagine tool. **The image too
 
 The test reported **$0.01088476** in language-model orchestration usage. It did not expose a separate image charge or subscription deduction, so this is not a verified total image-generation cost. Published direct-API image pricing is separate evidence in [the alternatives comparison](image-model-alternatives.md).
 
-## Current independent Guarin comparison
+## 2D-only generation and parent assessment
+
+The user requires only 2D art. Every dispatcher system prompt and complete raw image prompt now explicitly prohibit 3D art. The raw prompt must describe the approved board's mood, shape language, palette, light and reference roles; sending game names and a costume alone is insufficient. Avoid positive directions such as “pre-rendered,” “volumetric” or “toy-like,” which caused the earlier drift.
+
+S41–S46 were generated in six unique explicitly new sessions, each with one `image_gen` call, only `prompt` and `aspect_ratio` inputs, no uploaded images, no resume and no prior session history. All actual prompts match the saved complete text. The parent assistant viewed the approved board and all six actual outputs, held back S42/S43/S44 and recorded why. [Assessment](../art/concepts/assessment-2d.md), [current gallery](../art/concepts/index.html?v=8#current-styles).
+
+Current style candidates: S41 (soft drawn paint), S46 (sparse graphic shapes), S45 (gritty painted blend). All pass the parent 2D-appearance and muted-mood screen. None is a production-approved costume or camera reference. S45 is the strongest mood match in that assessment; human approval is pending. Records include exact prompts, actual calls, session IDs and specific visual findings. The image provider's internal rendering steps and exact Imagine model ID are not exposed.
+
+## Earlier independent Guarin comparison — 2D rerun requested
 
 S35–S40 were generated from complete raw prompts in six different sessions, with only `image_gen` enabled. The actual tool inputs contain exactly `prompt` and `aspect_ratio`; no image references were supplied. Each prompt matches the saved text. S35–S37 are internal revisions because the camera stayed shallow. S38–S40 are the current style comparison.
 

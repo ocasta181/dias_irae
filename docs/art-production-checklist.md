@@ -2,7 +2,7 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
-Last updated: 2026-10-04. Current stage: **mood board and equipment board approved; three fresh Grok drawings S38–S40 ready for review. All six new calls use separate text-only sessions. S35–S37 are internal revisions. Camera consistency and mail detail remain unresolved; concept approval is open**.
+Last updated: 2026-10-04. Current stage: **approved mood/equipment boards; 2D-only Grok rerun assessed. Six new independent raw-text images produced, three held back after parent review, and S41/S46/S45 presented for style review. C is the closest mood match in my assessment. Camera and costume details remain unresolved; no concept approved**.
 
 ## Story and visual constraints
 
@@ -16,6 +16,7 @@ Source material: [story spine](../story/story-arch.md), [characters](../story/ch
 - Act I begins with recognizable parishioners and wolves. Later locusts and overt demons must not replace that opening escalation.
 - First level is provisionally the Act I homecoming through Rivoire and Raimon's undercroft. Confirm the playable extent before implementation.
 - Latest rendering clarification: dark, cute and cartoony, with a huge head, tiny squat body and short limbs. Compare Diablo II-led, Hollow Knight-led and blended game rendering, with the costume stated in full in every raw prompt. The user discarded S24–S34 and prohibited prior-image iteration. Earlier style preferences remain written design guidance only; no prior concept image may be uploaded.
+- Latest hard rendering rule: only 2D drawn art. No 3D renders, sculpts, glossy miniatures or studio material effects. Each complete raw prompt must explain the mood-board roles and the parent assistant must inspect the actual output.
 - Exact pixel density, edge treatment, camera angle, animation directions and frame counts remain open for review and the sprite pilot.
 
 ## 1. Mood board
@@ -82,7 +83,11 @@ Success: a locally reviewable collection with individual removable images and pr
 - [x] Verify removal of all 42 batch files, eleven rejected manifest rows, no active browser candidates, valid remaining links/images and preserved earlier notes. Both approved boards and the review code remain unchanged. Save [the discard checkpoint](../art/concepts/discarded-batch-preview.png).
 - [x] Generate six independent text-only Guarin studies. Preserve S35–S37 as internal camera/proportion revisions; present S38–S40 as Diablo II-led, Hollow Knight-led and blended rendering. The latter calls explicitly set new session IDs and use a dispatcher system prompt. No images, guides, prior history or resumed sessions supplied. Save [the live review preview](../art/concepts/fresh-grok-review-preview.png).
 - [x] Verify exact raw prompts, one `image_gen` call per session, six unique session IDs, unchanged source pixels, image hashes/dimensions, review decisions/commentary/export and preserved approved boards.
-- [ ] Resolve camera consistency and mail-symbol drift. A/B still appear shallow; C is closer. No exact 15-degree camera increase is claimed.
+- [x] Record the user request to rerun S38–S40 as 2D-only art with sufficient mood-board context and parent assessment. Mark those three as revisions.
+- [x] Generate S41–S46 in six new explicitly isolated sessions with complete raw prompts, 2D-only rules in the dispatcher and prompt, mood/reference roles, fixed costume and no image inputs.
+- [x] View all six outputs against the approved board. Hold back S42 for clean/detail-heavy drawing, S43 for style similarity and an extra helmet fitting, and S44 for unrequested knee armor. Present S41/S46/S45 with [concrete assessment findings](../art/concepts/assessment-2d.md).
+- [x] Verify exact tool inputs, six distinct new sessions, unchanged provider pixels, unique image hashes/dimensions, local links, preserved history/planned rows and review controls. Save [the 2D board preview](../art/concepts/grok-2d-review-preview.png).
+- [ ] Resolve camera consistency and costume/mail-symbol drift before production. A/C remain shallow; B is closer but not calibrated. No exact 15-degree increase is claimed.
 - [ ] **User approves the camera/proportion and rendering direction before the remaining concept batch.** Equipment collection approved with regional and cultural limits; no new Guarin concept is accepted yet.
 - [ ] Generate story-aligned concept candidates, using the approved mood board as references.
 - [ ] Save every candidate locally, alongside its exact prompt, reference identifiers, tool, version and review status.
@@ -163,10 +168,11 @@ Success: the agreed first level is playable from entry to exit with accepted art
 | 2026-10-04 | Steeper game-art comparison ready | S30/S31/S34 compare Diablo II-led, Hollow Knight-led and blended rendering with a shared costume, huge helmet and squat body. The attempted proxy/restyle workflow was later rejected; current view estimated around 40–45 degrees against a 45-degree target. Eleven source outputs and their audit evidence were initially checked; batch files were later removed. Download completion capture remains unverified | Superseded by the discard-and-input-rule correction |
 | 2026-10-04 | Batch discarded; input rule corrected | S24–S34 removed from the workspace and gallery. Eleven rejection rows retain the decision history. Every generation now requires a complete independent raw prompt and only approved mood-board base references as optional images. No new generation was run at that checkpoint | Superseded by the independent concepts delivered below |
 | 2026-10-04 | Independent concepts delivered | Six raw-text generations completed in six unique sessions; S38–S40 visibly compare dimensional, flat and painted rendering. No images uploaded; tool inputs match saved prompts. Camera inconsistency and mail drift are recorded | User reviews the three drawings and comments before further concepts |
+| 2026-10-04 | 2D-only rerun assessed | Six independent raw-text calls with full mood context. Parent visual review held back three outputs; S41/S46/S45 show soft paint, graphic shapes and gritty pigment. No 3D-looking output in the presented trio; source bytes and actual inputs verified. Costume/view limitations are explicit | User reviews 2D direction; camera/costume correction remains open |
 
 Review artifacts: [gallery](../art/mood-board/index.html), [overview](../art/mood-board/overview.jpg), [review manifest](../art/mood-board/manifest.md), [review instructions](../art/mood-board/README.md).
 
-Three independent Grok drawings S38–S40 are now available in the concept gallery and manifest. All new calls used raw text only and distinct sessions. Rendering choices are ready to review; camera consistency and mail details need revision. No concept is accepted, and no sprite sheets or first-level implementation have been produced. Existing story and Godot edits remain excluded.
+S41/S46/S45 are the assessed 2D mood/style comparison. Six new sessions used full raw text only; three outputs were held back after visual review. The darkest painted blend S45 is my closest mood match. Camera and costume details remain open, and no character concept is accepted. No sprites or first-level implementation were produced. Existing story and Godot edits remain excluded.
 
 Mood board approval: **approved 2026-10-04**. Concept approval: **pending**. Asset lists: **not finalized**. Sprite approval: **pending**. Engine decision: **provisional Godot**.
 
