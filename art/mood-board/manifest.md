@@ -2,11 +2,11 @@
 
 Review status: **pending**. Board-wide approval is recorded in [the checklist](../../docs/art-production-checklist.md). Keeping files does not constitute approval.
 
-Set each Decision to `accepted`, `rejected` or `revise`, or delete the image and leave a note. Your own additions go in `user-references/`; they will be inventoried at reconciliation.
+Review each reference and write commentary in [the HTML gallery](index.html), then use **Download manifest** to save your decisions here. You may also edit the Decision and Your notes columns directly with `accepted`, `rejected`, `revise` or `pending`. Your own additions go in `user-references/`; they will be inventoried at reconciliation.
 
 Open [the gallery](index.html) or [the overview](overview.jpg). Every file is a downloaded internet reference; no concept art has been generated.
 
-User-directed game language: **dark, pixelated/cartoony**. **Hollow Knight is primary; Castle Crashers is very light.** Darkwood is atmosphere-only, and Diablo II: Resurrected is camera-only. Historical and sacred references govern story, period kit and motifs. Exact pixel scale and edge treatment await the concept/pilot review.
+User-directed game language: **dark, pixelated/cartoony**. **Hollow Knight is primary; Castle Crashers is very light.** Diablo II: Resurrected remains a supporting influence for isometric composition, environmental detail, materials and lighting; Darkwood informs atmosphere. Historical and sacred references govern story, period kit and motifs. Exact pixel scale and edge treatment await the concept/pilot review.
 
 [Focused game-language overview](game-language.jpg).
 
@@ -22,8 +22,8 @@ Hollow Knight leads the art style. Castle Crashers contributes a very light touc
 | M25 | [Hollow Knight — luminous depth](07-game-language/m25-hollow-knight-luminous-depth.jpg) | Primary art-style reference: strong foreground silhouettes, softened background layers and small clear forms held inside luminous darkness. | Treat glow as a controlled accent in the story palette. These hand-drawn references guide a dark pixelated/cartoon rendition, not a prescribed pixel grid. | pending | |
 | M26 | [Castle Crashers — a trace of cartoon action](07-game-language/m26-castle-crashers-action-shapes.jpg) | Very light influence: compact body proportions, clear weapon silhouettes and expressive action poses. | Keep this influence small. The game’s comedy, bright faction colors and enclosed fantasy helmets do not define our tone or 1101 equipment. | pending | |
 | M19 | [Darkwood — a room inside darkness](07-game-language/m19-darkwood-darkness.png) | Atmosphere only: localized visibility and an ordinary room under pressure. The user’s rendering direction is led by Hollow Knight. | Modern top-down setting; take atmosphere and value hierarchy, not the camera, setting or user interface. | pending | |
-| M20 | [Diablo II: Resurrected — the room reads](07-game-language/m20-diablo-ritual-interior.webp) | Camera only: isometric floor geometry and actor placement in a stone interior. The user’s rendering direction is led by Hollow Knight. | Camera, depth and light reference only; do not copy sigils, demons, equipment or lore. | pending | |
-| M21 | [Diablo II: Resurrected — bodies in the field](07-game-language/m21-diablo-exterior-readability.webp) | Camera only: actor placement and layered ground in an isometric exterior. The user’s rendering direction is led by Hollow Knight. | The effects density and fantasy palette are comparison points to review, not adopted requirements. | pending | |
+| M20 | [Diablo II: Resurrected — the room reads](07-game-language/m20-diablo-ritual-interior.webp) | Supporting influence: isometric composition, actor placement, grounded stone materials and dramatic interior lighting. Hollow Knight leads the cartoon shape language. | Adapt composition, materials and light to the story; do not copy sigils, demons, equipment or lore. | pending | |
+| M21 | [Diablo II: Resurrected — bodies in the field](07-game-language/m21-diablo-exterior-readability.webp) | Supporting influence: isometric actor placement, layered vegetation, environmental detail and warm/cool light contrast. Hollow Knight leads the cartoon shape language. | Adapt environmental density and lighting for readable cartoon sprites in the story palette. | pending | |
 
 ## Sacred flesh, judgment and light
 

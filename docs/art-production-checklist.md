@@ -15,7 +15,7 @@ Source material: [story spine](../story/story-arch.md), [characters](../story/ch
 - Isenheim supplies emotional intensity, diseased flesh, sacred light and monstrous forms. Its later date does not make its architecture or clothing period references.
 - Act I begins with recognizable parishioners and wolves. Later locusts and overt demons must not replace that opening escalation.
 - First level is provisionally the Act I homecoming through Rivoire and Raimon's undercroft. Confirm the playable extent before implementation.
-- User-directed rendering target: dark, pixelated/cartoony. Hollow Knight is the primary art-style influence; Castle Crashers is a very light influence. Darkwood is atmosphere-only and Diablo is camera-only. Historical and sacred references still govern materials and story motifs.
+- User-directed rendering target: dark, pixelated/cartoony. Hollow Knight is the primary art-style influence; Castle Crashers is a very light influence. Diablo II supports isometric composition, environmental detail, grounded materials and lighting; Darkwood informs atmosphere. Keep the other game references visible. Historical and sacred references still govern materials and story motifs.
 - Exact pixel density, edge treatment, camera angle, animation directions and frame counts remain open for review and the sprite pilot.
 
 ## 1. Mood board
@@ -29,6 +29,8 @@ Source material: [story spine](../story/story-arch.md), [characters](../story/ch
 - [x] Verify the revised 26-image board: decoding, dimensions, hashes, provenance, influence hierarchy and local links.
 - [x] Request the user's review with this checkpoint. The user may delete images and add their own in `art/mood-board/user-references/`.
 - [x] Incorporate the user's requested dark pixelated/cartoon direction and weighted game-language references.
+- [x] Enable and verify in-gallery decisions and commentary, with browser drafts and a downloadable manifest.
+- [x] Keep Diablo II and the other game references visible; retain Diablo II's relevance to composition, environmental detail, materials and lighting.
 - [ ] Reconcile removals, additions and review notes; agree the palette and rendering direction.
 - [ ] **User explicitly approves the mood board.**
 
@@ -106,10 +108,11 @@ Success: the agreed first level is playable from entry to exit with accepted art
 | 2026-10-04 | Mood board ready for review | 21 references across seven themes; visual inspection corrected two mismatched search results; missing scan credit recovered from its source page; images, hashes, dimensions, provenance and local links verified | User removes/adds references and approves the reconciled board |
 | 2026-10-04 | Review-state and attribution audit | No references added or removed; all decisions still pending. Recovered M15 photographer and original-photo links from Flickr and documented the pre-existing Commons crop | User review and explicit mood board approval |
 | 2026-10-04 | User-directed art-style revision | Four official Hollow Knight references added as primary influences; one Castle Crashers reference added as very light; earlier games scoped to atmosphere/camera. Direction recorded in the board, concept manifest and tooling brief. All 26 images, provenance, links and weighted previews verified | User review and explicit mood board approval |
+| 2026-10-04 | Interactive HTML review and reference correction | All 26 cards support reversible decisions and written commentary. Chrome verified reload persistence, complete manifest export, preserved credits, mobile layout and export with browser storage disabled. Diablo II and Darkwood are visible; Diablo II's broader supporting influence is restored | User reviews in the gallery, saves the downloaded manifest and explicitly approves the board |
 
 Review artifacts: [gallery](../art/mood-board/index.html), [overview](../art/mood-board/overview.jpg), [review manifest](../art/mood-board/manifest.md), [review instructions](../art/mood-board/README.md).
 
-No concept art, sprite sheets or first-level implementation has been produced in this phase. Runtime tests were not run for this reference/document change. Existing story and Godot edits were not included in these art-workflow commits.
+No concept art, sprite sheets or first-level implementation has been produced in this phase. Game runtime tests were not run for these art-workflow changes; the interactive HTML review was checked in Chrome. Existing story and Godot edits were not included in these art-workflow commits.
 
 Mood board approval: **pending**. Concept approval: **pending**. Asset lists: **not finalized**. Sprite approval: **pending**. Engine decision: **provisional Godot**.
 

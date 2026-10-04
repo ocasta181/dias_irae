@@ -15,7 +15,7 @@ A veteran comes home to an ordinary household in a harvest that has gone wrong. 
 - **Hollow Knight — primary:** clear silhouettes, economical character shapes, strong outlines, dark foreground masses, atmospheric depth, selective luminous accents and melancholy. Translate that shape and value language into our pixelated/cartoon sprites and the story's earthy palette. Its hand-drawn reference images guide form; exact pixel density and edge treatment will be settled in the concept and sprite pilot.
 - **Castle Crashers — very light:** a little compact character proportion, expressive posing and immediate weapon/action readability. Keep its influence narrow; the palette and comic tone are not the target.
 - **Darkwood — atmosphere only:** localized visibility and ordinary spaces under pressure.
-- **Diablo II: Resurrected — camera only:** isometric spatial readability and actor placement. It no longer sets the rendering treatment.
+- **Diablo II: Resurrected — supporting influence:** isometric composition, actor placement, environmental detail, grounded materials and dramatic lighting. Keep these references visible alongside the others; Hollow Knight still leads the cartoon shape language.
 
 The historical and sacred references still define subjects, materials and motifs. The new game references define how those subjects are simplified and drawn. Guarin keeps his period equipment and human identity; the story's churches stay Romanesque. This is an art-style direction, with the existing isometric game as the gameplay context.
 
@@ -38,10 +38,11 @@ The later paintings contribute mood, flesh and color. Near-period embroidery and
 
 ## How to review
 
-1. Delete individual image files that do not fit. The gallery hides unavailable images when reloaded; the overview remains a snapshot until rebuilt.
-2. Add your own images to `user-references/` or the appropriate category folder. Keep any source/credit notes beside them when available. The current gallery is a snapshot; new additions will appear when the board is reconciled after review.
-3. Optionally mark manifest rows `accepted`, `rejected` or `revise` and leave notes. Every existing row starts `pending`.
-4. Tell me when the revised mood board is approved. Keeping an image or accepting individual rows does not automatically approve the whole board.
+1. Open [the HTML gallery](index.html). Each reference has **Accept**, **Reject**, **Revise** and **Pending** buttons plus a **Your commentary** text box. Decisions remain reversible and rejected references stay visible.
+2. Your choices and commentary save as a draft in the same browser. If browser storage is unavailable, the gallery says so; use **Download manifest** to preserve the review. Opening the page in a different browser does not transfer its draft.
+3. When ready, click **Download manifest** and save the downloaded file as `art/mood-board/manifest.md`, replacing the existing manifest. This captures every decision and comment without changing source credits. The browser draft does not directly edit repository files; `sources.json` and preview images remain snapshots until reconciliation.
+4. You may still delete individual image files or add your own to `user-references/` or the appropriate category folder. Keep source/credit notes beside additions. The gallery hides missing images on reload; additions and overview images are refreshed at reconciliation.
+5. Tell me when the revised mood board is approved. Keeping an image or accepting individual rows does not automatically approve the whole board.
 
 Useful review notes: which references carry the right feeling; which are too colorful, clean, ornate or overtly monstrous; and how coarse the pixels, strong the outlines and exaggerated the proportions should be. The dark, pixelated/cartoon target and reference hierarchy are directed by the user; exact sprite scale and finish remain open for review.
 

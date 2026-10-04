@@ -518,8 +518,8 @@
     "file": "07-game-language/m20-diablo-ritual-interior.webp",
     "category": "07-game-language",
     "title": "Diablo II: Resurrected — the room reads",
-    "why": "Camera only: isometric floor geometry and actor placement in a stone interior. The user’s rendering direction is led by Hollow Knight.",
-    "caution": "Camera, depth and light reference only; do not copy sigils, demons, equipment or lore.",
+    "why": "Supporting influence: isometric composition, actor placement, grounded stone materials and dramatic interior lighting. Hollow Knight leads the cartoon shape language.",
+    "caution": "Adapt composition, materials and light to the story; do not copy sigils, demons, equipment or lore.",
     "source_title": "Blizzard Entertainment official media",
     "source_page": "https://diablo2.blizzard.com/",
     "download_url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blt8b24dfc6e7cf3533/6962c80db39c9b77a5dbf697/media_gallery_1.webp",
@@ -539,15 +539,15 @@
     ],
     "sha256": "f58891fd535a023798a3340ffa9084fe68b1c49035669dbed027ce479fa3601b",
     "review": "pending",
-    "influence": "camera only"
+    "influence": "supporting"
   },
   {
     "id": "M21",
     "file": "07-game-language/m21-diablo-exterior-readability.webp",
     "category": "07-game-language",
     "title": "Diablo II: Resurrected — bodies in the field",
-    "why": "Camera only: actor placement and layered ground in an isometric exterior. The user’s rendering direction is led by Hollow Knight.",
-    "caution": "The effects density and fantasy palette are comparison points to review, not adopted requirements.",
+    "why": "Supporting influence: isometric actor placement, layered vegetation, environmental detail and warm/cool light contrast. Hollow Knight leads the cartoon shape language.",
+    "caution": "Adapt environmental density and lighting for readable cartoon sprites in the story palette.",
     "source_title": "Blizzard Entertainment official media",
     "source_page": "https://diablo2.blizzard.com/",
     "download_url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blt13b33ff17c0adaba/6962c82d54918683a250dd73/media_gallery_2.webp",
@@ -567,7 +567,7 @@
     ],
     "sha256": "a8e36296824d69c0f10186e8d2335e21d0313264d90a6a779a319172e58dcbae",
     "review": "pending",
-    "influence": "camera only"
+    "influence": "supporting"
   },
   {
     "id": "M22",
