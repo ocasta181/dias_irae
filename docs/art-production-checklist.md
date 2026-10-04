@@ -2,7 +2,7 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
-Last updated: 2026-10-05. Current stage: **mood/equipment boards approved; S49 / S13 / S15 / S01 selected. Direct saving works. The user rejected G01–G04 for design, scale, palette and lighting failures. Production now requires exact selected character images as gameplay inputs. The 24-screen exploration is delivered: three Grok and three built-in generations per source, each with a distinct scene/composition prompt. Every call used the exact selected image. Parent inspection marks 11 Grok screens for revision and 13 candidates for user review; no camera or asset approval is claimed. Sprite sheets and implementation remain gated**.
+Last updated: 2026-10-05. Current stage: **the 24-screen gameplay exploration is under user review. The user has now authorized a researched campaign asset inventory, a complete Guarin animation pilot in the style of the #1 gameplay preference captured after the inventory check, and an animation-debugging app. This specific authorization releases the pilot from the older concept-approval gate. Other sprite categories and first-level implementation retain their review gates.**
 
 ## Story and visual constraints
 
@@ -129,15 +129,15 @@ Success: accepted concepts cover the characters, props and spaces the first leve
 
 ## 3. Asset lists and production specification — before each sprite category
 
-Create `art/sprites/asset-list.md` after the concept review; do not treat the candidate scope below as a finalized inventory.
+The researched campaign inventory is [asset-list.md](../art/sprites/asset-list.md), with sources and animation/export rules in [production-spec.md](../art/sprites/production-spec.md). It distinguishes required, draft, and conditional assets. The user authorized this work while reviewing gameplay screens; draft mechanics remain open.
 
 - [x] Record the user's dark, pixelated/cartoon target and the Hollow Knight / Castle Crashers influence hierarchy.
 - [ ] Agree exact pixel density, outline/edge treatment and degree of caricature in the chosen direction.
 - [ ] Decide engine and camera before committing to final sprite dimensions.
-- [ ] Specify world scale, canvas size, foot anchor, shadow treatment, lighting direction, transparency, atlas padding and naming.
-- [ ] Define character list and movement/actions per character, direction coverage, frame counts, timing and equipment visibility.
-- [ ] Define item list and exact visible states, distinguishing inventory icons, world pickups and held equipment.
-- [ ] Define environment list: terrain, transitions, structures, interiors, props, occlusion pieces and animated states.
+- [x] Specify provisional pilot scale, foot anchor, shadow treatment, lighting, transparency, atlas padding and naming; final game scale remains a review decision.
+- [x] Define campaign characters and state sets; specify first-pilot directions, frames, timing, and equipment fidelity; draft actions remain listed for later production.
+- [x] Define item list and exact visible states, distinguishing inventory icons, world pickups and held equipment.
+- [x] Define environment list: all campaign locations, terrain, structures, props, occlusion and changing states.
 - [ ] Confirm the list for each category before creating it. Record omissions and deferred assets explicitly.
 
 Candidate first-level scope to refine:
@@ -151,6 +151,8 @@ Candidate first-level scope to refine:
 Do not invent pickups or state machines merely to fill a sheet. The story's altar encounter and inventory presentation may require different art for the same object.
 
 ## 4. Sprites — accepted concepts and defined lists required
+
+**Latest authorization, 2026-10-05:** produce the complete first Guarin pilot and its selectable animation viewer after the inventory check, using the current #1 gameplay preference. This does not approve the art or authorize final assets for all other characters. Pilot coverage is eight directions × eight state families × six source frames (384 planned cells), with separate entry/hold/exit tags for guard and prayer. Final campaign abilities remain subject to the draft mechanic decisions recorded in the inventory.
 
 - [ ] Create and review one small style/animation pilot before producing the full set.
 - [ ] Produce character movement and action sheets from the defined character list.

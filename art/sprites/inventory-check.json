@@ -1,0 +1,202 @@
+{
+  "checked_at": "2026-10-05",
+  "commit": "eb1f01ec8c0748773ded89d55dc74bf9e7606296",
+  "sources": {
+    "story/locations.md": {
+      "sha256": "51e06a73e2e013219d345942e0a32f11857e955dd21aac043466f0d70978a656"
+    },
+    "story/characters.md": {
+      "sha256": "377cc82bd6b99f428e926c60fd795081155fe4250560a893114073d06b357deb"
+    },
+    "story/systems.md": {
+      "sha256": "4a8a2a9b3fb2fe20db96d0c9f68355e492c1d7db9ebfb20840d789f7155ff7e1"
+    },
+    "story/story-arch.md": {
+      "sha256": "1fd7af1a3d50b0859b004117adaa28d9489c41c9253cc9aed1d9f538fbb376f4"
+    },
+    "README.md": {
+      "sha256": "e619a7035fa51a09f9a99012ea0aa4f92faf851760798b7e14ac8e8d824d528d"
+    }
+  },
+  "named_people_covered": [
+    "Guarin of Royans",
+    "Almodis of Royans",
+    "Fulk of Livron",
+    "Brother Odo",
+    "Prior Isarn",
+    "Brother Durand",
+    "Agnes",
+    "Raimon the Long",
+    "Father Giraud",
+    "Raimbaut of Saillans",
+    "Lambert",
+    "Aimar of Royans",
+    "Gaston of Valloire",
+    "Abaddon",
+    "Adhemar of Le Puy",
+    "Peter Bartholomew",
+    "Longinus",
+    "Urban II",
+    "Raymond of Toulouse"
+  ],
+  "location_mapping": [
+    {
+      "source_heading": "The last league into the Royans",
+      "inventory_id": "E01",
+      "inventory_label": "Last league into Royans"
+    },
+    {
+      "source_heading": "The village of Rivoire",
+      "inventory_id": "E02",
+      "inventory_label": "Rivoire village"
+    },
+    {
+      "source_heading": "Church of Saint-Laurent",
+      "inventory_id": "E03",
+      "inventory_label": "Saint-Laurent and yard"
+    },
+    {
+      "source_heading": "The mill",
+      "inventory_id": "E04",
+      "inventory_label": "Burned mill"
+    },
+    {
+      "source_heading": "The castrum of Rivoire",
+      "inventory_id": "E05",
+      "inventory_label": "Rivoire castrum"
+    },
+    {
+      "source_heading": "The undercroft and paddock",
+      "inventory_id": "E06",
+      "inventory_label": "Undercroft and paddock"
+    },
+    {
+      "source_heading": "The Bourne road and Pont-en-Royans",
+      "inventory_id": "E07",
+      "inventory_label": "Bourne road / Pont-en-Royans"
+    },
+    {
+      "source_heading": "The lazaret on the Pont road",
+      "inventory_id": "E08",
+      "inventory_label": "Pont lazaret"
+    },
+    {
+      "source_heading": "Abbey-hospital of Saint Anthony at La-Motte-Saint-Didier",
+      "inventory_id": "E09",
+      "inventory_label": "La-Motte abbey-hospital"
+    },
+    {
+      "source_heading": "The infirmary",
+      "inventory_id": "E10",
+      "inventory_label": "Infirmary"
+    },
+    {
+      "source_heading": "The bakehouse and the rye chapel",
+      "inventory_id": "E11",
+      "inventory_label": "Bakehouse and rye chapel"
+    },
+    {
+      "source_heading": "The scriptorium and the side chapel of the remnant",
+      "inventory_id": "E12",
+      "inventory_label": "Scriptorium / remnant chapel"
+    },
+    {
+      "source_heading": "The maladrerie below the abbey",
+      "inventory_id": "E13",
+      "inventory_label": "Maladrerie"
+    },
+    {
+      "source_heading": "The Isère and Rhône corridor",
+      "inventory_id": "E14",
+      "inventory_label": "Isère/Rhône corridor"
+    },
+    {
+      "source_heading": "Abandoned castra and charcoal camps",
+      "inventory_id": "E15",
+      "inventory_label": "Abandoned castra / charcoal camps"
+    },
+    {
+      "source_heading": "Collegiate shadow of Romans",
+      "inventory_id": "E16",
+      "inventory_label": "Romans / Saint-Barnard"
+    },
+    {
+      "source_heading": "The commandery above the Drôme",
+      "inventory_id": "E17",
+      "inventory_label": "Commandery above Drôme"
+    },
+    {
+      "source_heading": "The closed town of Crest",
+      "inventory_id": "E18",
+      "inventory_label": "Crest"
+    },
+    {
+      "source_heading": "The pilgrimage hospice",
+      "inventory_id": "E19",
+      "inventory_label": "Pilgrimage hospice"
+    },
+    {
+      "source_heading": "The Antonine charnel",
+      "inventory_id": "E20",
+      "inventory_label": "Antonine charnel"
+    },
+    {
+      "source_heading": "The Merovingian crypt",
+      "inventory_id": "E21",
+      "inventory_label": "Merovingian crypt"
+    },
+    {
+      "source_heading": "The Roman granary and mithraeum",
+      "inventory_id": "E22",
+      "inventory_label": "Roman granary / mithraeum"
+    },
+    {
+      "source_heading": "The older shaft",
+      "inventory_id": "E23",
+      "inventory_label": "Older shaft / agent landings"
+    },
+    {
+      "source_heading": "The pit in the grain",
+      "inventory_id": "E24",
+      "inventory_label": "Pit in grain / ending"
+    },
+    {
+      "source_heading": "The floor of St. Peter's, Antioch",
+      "inventory_id": "E25",
+      "inventory_label": "Antioch memory"
+    },
+    {
+      "source_heading": "Maʿarrat, the night of the pot",
+      "inventory_id": "E26",
+      "inventory_label": "Maʿarrat memory"
+    },
+    {
+      "source_heading": "Jerusalem, July 1099",
+      "inventory_id": "E27",
+      "inventory_label": "Jerusalem memory"
+    },
+    {
+      "source_heading": "Peter's corridor of fire",
+      "inventory_id": "E28",
+      "inventory_label": "Corridor of fire memory"
+    }
+  ],
+  "conditional_vision": "E29",
+  "draft_abilities_covered": [
+    "Cut",
+    "Thrust",
+    "Guard",
+    "Bash",
+    "Throw",
+    "Sign of the Cross",
+    "Psalm",
+    "Reservation",
+    "Spare",
+    "Confiteor",
+    "Unconsecrated blow",
+    "Vow-strike",
+    "Deus vult",
+    "Anathema"
+  ],
+  "coverage": "All current source entities covered; quantities and draft mechanics are provisional. Visual art approval is separate."
+}
