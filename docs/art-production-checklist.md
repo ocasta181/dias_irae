@@ -2,7 +2,7 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
-Last updated: 2026-10-05. Current stage: **approved mood/equipment boards; the user has sorted and chosen four styles for gameplay-screen comparisons. Their ordering has not yet been retrieved. A direct-save contract is prepared for explicit approval; the current server only serves files. No new gameplay drawings, sprite sheets or level implementation have been produced at this checkpoint**.
+Last updated: 2026-10-05. Current stage: **approved mood/equipment boards; the user has sorted and chosen four styles for gameplay-screen comparisons. Their full Brave review is saved, with S49 / S13 / S15 / S01 as the top four. The approved direct-save server and button work without a file picker. Gameplay-screen comparisons are being assembled; sprite sheets and level implementation remain gated**.
 
 ## Story and visual constraints
 
@@ -105,10 +105,10 @@ Success: a locally reviewable collection with individual removable images and pr
 - [x] Correct the responsive layout to add columns as the screen widens. Use automatic columns with a 320-pixel minimum tile width, removing the fixed three-column and forced single-column rules. Verify 1 / 2 / 3 / 5 / 9 columns at 360 / 900 / 1,280 / 1,920 / 3,416 pixels, without overflow. All 45 cards remain minimized; comments, decisions and order are unchanged. Restore the test viewport and save [the adaptive column preview](../art/concepts/adaptive-columns-preview.png). This supersedes the prior fixed-column interpretation.
 - [x] Record the user’s request for four gameplay-screen comparisons and prepare [the shared scene brief](../art/concepts/gameplay/brief.md). Do not infer the chosen identifiers from the app browser’s test ordering.
 - [x] Inspect the running static server and prepare [the exact direct-save contract](review-save-contract.md). Implementation awaits explicit approval under supplied AGENTS.md section 15. Broad Brave review reading was rejected by automatic approval review; the narrow exported-file search is blocked by operating-system permissions.
-- [ ] Obtain permission to read the Brave review contents needed to retrieve the user’s actual ordering and top four styles.
-- [ ] Implement and verify direct saving after approval of the proposed API contract.
+- [x] Obtain explicit approval on 2026-10-05 for the exact direct-save API contract and reading the relevant Brave review contents.
+- [x] Implement and verify direct saving: 16 endpoint tests, preserved review/ranking/toggle checks, actual Brave save and repeated save without downloads. Preserve dated manifest copies, reject stale baselines and embed current saved reviews on reload. See [save evidence](../art/concepts/direct-save-preview.png) and [server](../scripts/serve_art.py).
 - [ ] Generate, inspect and deliver one fresh gameplay-screen example for each of the four selected styles.
-- [ ] Reconcile the full saved Brave review, including the user’s additional historical comments and preference order, into the manifest and generation records before choosing the next art iteration.
+- [x] Reconcile the full Brave review: all additional comments, historical/planned rows and 45 ranked IDs are in the project manifest. Top four: S49, S13, S15, S01. S49’s preferred paint texture supersedes the earlier parent decision to hold that style back; S13 is one of the closest styles in the user’s notes. Preserve each selection’s rendering medium for gameplay comparisons, without redesigning the character or treating ranking as final asset approval.
 - [ ] Correct remaining costume drift and check the shortest squat proportions before production. Freeze mail, hidden skin, plain helmet, narrow wine shield panel, buckle and sword construction after style review.
 - [ ] Resolve calibrated camera consistency. The target remains around 45 degrees above the ground; no achieved angle or exact 15-degree increase is claimed.
 - [ ] **User approves the camera/proportion and rendering direction before the remaining concept batch.** Equipment collection approved with regional and cultural limits; no new Guarin concept is accepted yet.
@@ -208,3 +208,5 @@ S55/S51/S52 are the current flat-style proposals. B/C show the most exhaustion; 
 Mood board approval: **approved 2026-10-04**. Concept approval: **pending**. Asset lists: **not finalized**. Sprite approval: **pending**. Engine decision: **provisional Godot**.
 
 Future work resumes from the current unchecked step after the relevant human review; it must not generate concepts or sprites across an unapproved gate.
+
+2026-10-05 checkpoint: user approved direct saving and Brave access; the full review is captured. User then confirmed the next task is four gameplay examples in the selected styles, not another character-style exploration. No further character concept variants are authorized by this step.

@@ -11,6 +11,15 @@
   const exportButton = document.getElementById("download-manifest");
   const preferenceGrid = document.getElementById("preference-grid");
   const orderStorageKey = `${storageKey}:preference-order`;
+  const directBoard = {
+    "art/concepts/manifest.md": "concepts",
+    "art/concepts/gameplay/manifest.md": "gameplay",
+  }[document.body.dataset.manifestPath];
+  let saveBaseline;
+  async function manifestHash(content) {
+    const hash = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(content));
+    return [...new Uint8Array(hash)].map((byte) => byte.toString(16).padStart(2, "0")).join("");
+  }
   let preferenceOrder = [];
   let draft = {};
   let storageAvailable = true;
@@ -48,7 +57,7 @@
 
   function showSaveStatus() {
     saveStatus.textContent = storageAvailable
-      ? `Draft saved in this browser. Use ${exportButton.textContent} to download your review.`
+      ? `Draft saved in this browser. Use ${exportButton.textContent} to ${directBoard ? "save it to the project" : "download your review"}.`
       : `This browser cannot save the draft. Use ${exportButton.textContent} to keep your review.`;
   }
 
@@ -334,8 +343,7 @@
       .replace(/\r?\n/g, "<br>");
   }
 
-  exportButton.addEventListener("click", () => {
-    saveDraft();
+  function reviewedManifest() {
     let updated = manifest.split("\n").map((line) => {
       const match = line.match(/^\| ([A-Z]\d+) \|/);
       if (!match || !reviews.has(match[1])) return line;
@@ -349,6 +357,33 @@
       updated = updated.replace(/\n## Preference ranking\n[\s\S]*?(?=\n## |\s*$)/, "").trimEnd();
       updated += "\n\n## Preference ranking\n\nGallery order, first to last. Ranking does not change acceptance decisions.\n\n";
       updated += preferenceOrder.map((id, index) => `${index + 1}. ${id}`).join("\n") + "\n";
+    }
+    return updated;
+  }
+
+  exportButton.addEventListener("click", async () => {
+    saveDraft();
+    const updated = reviewedManifest();
+    if (directBoard) {
+      exportButton.disabled = true;
+      saveStatus.textContent = "Saving review to the project…";
+      try {
+        saveBaseline ??= await manifestHash(manifest);
+        const response = await fetch("/api/review", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ board: directBoard, manifest: updated, baseline: saveBaseline }),
+        });
+        const result = await response.json();
+        if (!response.ok || !result.saved) throw new Error(result.error || "The server did not confirm the save.");
+        saveBaseline = result.baseline;
+        saveStatus.textContent = `Review saved to ${result.path}. Comments, decisions and order are saved.`;
+      } catch (error) {
+        saveStatus.textContent = `Save failed: ${error.message} Your draft is kept in this page${storageAvailable ? " and browser" : ""}.`;
+      } finally {
+        exportButton.disabled = false;
+      }
+      return;
     }
     const url = URL.createObjectURL(new Blob([updated], { type: "text/markdown;charset=utf-8" }));
     const link = document.createElement("a");

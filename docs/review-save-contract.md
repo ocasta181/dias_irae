@@ -1,8 +1,8 @@
-# Direct review saving — proposed contract
+# Direct review saving — contract 1
 
-Status: awaiting explicit approval under the supplied AGENTS.md, section 15. No server or browser code depends on this proposal yet.
+Status: explicitly approved by the user on 2026-10-05 under the supplied AGENTS.md, section 15. Approval also covers reading the relevant Brave review, including its comments and decisions.
 
-## Current server
+## Previous server
 
 The board is served by Python's static HTTP server on `127.0.0.1:8765`, rooted at this project. The running command is `python -m http.server 8765 --bind 127.0.0.1`.
 
@@ -11,7 +11,7 @@ The board is served by Python's static HTTP server on `127.0.0.1:8765`, rooted a
 - Save review currently downloads `manifest.md`; it does not write a project file.
 - Comments, decisions and order are saved separately in the reviewing browser. The user's Brave draft has not been retrieved. The app browser's test order is not the user's order.
 
-## Proposed local application programming interface (API)
+## Approved local application programming interface (API)
 
 Add `POST /api/review` with `Content-Type: application/json` and this exact request shape:
 
@@ -70,3 +70,7 @@ The two approved mood boards retain their current review/export behavior; this c
 - Confirm stale, malformed, excessive and foreign-origin writes cannot replace a manifest.
 - Confirm failures preserve the browser draft.
 - Retrieve and record the user's actual top four before generating. Do not use the app browser's test ordering as a substitute.
+
+## Running and verified implementation
+
+Run `python3 scripts/serve_art.py` from the project. It replaces the former static server on port 8765. Save review was verified in the user’s Brave tab: all 45 ranked IDs and comments reached the project manifest, and a second save succeeded without a download or file picker. The server serves the saved manifest on reload. Sixteen endpoint tests cover both boards, recoverable original files, repeated saves, stale baselines, invalid requests, foreign origins, size limits, write failures and safe HTML embedding. Isolated browser-script checks confirm that ranking, card toggles, comments and both approved mood-board exports remain intact.
