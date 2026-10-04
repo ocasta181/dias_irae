@@ -1,0 +1,52 @@
+{
+  "checked_on": "2026-10-04",
+  "purpose": "Verify existing Grok login and unattended image generation; not a game concept.",
+  "cli": "/Users/ocasta/.grok/bin/grok",
+  "cli_version": "1.0.46 (2765805b9442) [stable]",
+  "authentication": "Existing cached Grok login; CLI refreshed credentials. No API key supplied.",
+  "flags": [
+    "--cwd",
+    "/private/tmp/dias-grok-integration",
+    "--prompt-file",
+    "/private/tmp/dias-grok-integration/connection-test.txt",
+    "--output-format",
+    "streaming-json",
+    "--tools",
+    "image_gen",
+    "--allow",
+    "image_gen",
+    "--permission-mode",
+    "dontAsk",
+    "--no-subagents",
+    "--disable-web-search",
+    "--verbatim",
+    "--max-turns",
+    "2"
+  ],
+  "instruction": "This is a connection test only. Call image_gen exactly once with this exact prompt: \"A single plain gray cube on a white background, viewed from above at a three-quarter angle. Minimal neutral test illustration, no text.\" Use aspect_ratio \"1:1\". Do not call image_edit or any other tool. Do not make variations, retries, edits, additional images, subagents or repository changes. After the call, report the returned image file path or URL and any error. Do not claim success without a successful image_gen result.\n",
+  "tool": "image_gen",
+  "tool_input": {
+    "prompt": "A single plain gray cube on a white background, viewed from above at a three-quarter angle. Minimal neutral test illustration, no text.",
+    "aspect_ratio": "1:1"
+  },
+  "tool_status": "completed",
+  "image_model": "Not exposed by CLI tool result; do not infer an exact Imagine model ID from the orchestration model.",
+  "orchestration_model": "grok-4.7-build",
+  "tool_call_count": 1,
+  "stop_reason": "end_turn",
+  "output": "cube.jpg",
+  "output_bytes": 145481,
+  "sha256": "2b5c62c9fbc0e29b5c0f874a6927094264e8ca6b26ae0aa79557d19839d761c3",
+  "reported_orchestration_cost_usd": 0.01088476,
+  "billing_limit": "CLI reports language-model usage; no separate image charge or subscription deduction was exposed.",
+  "limitations": [
+    "Image editing and reference inputs were not tested.",
+    "No Guarin camera, proportions or style pilot generated.",
+    "Exact Imagine model ID and quality/resolution controls not exposed by this CLI tool."
+  ],
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "format": "JPEG"
+}

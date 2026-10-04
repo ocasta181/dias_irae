@@ -2,7 +2,7 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
-Last updated: 2026-10-04. Current stage: **original mood board approved; S09 selected for development, preferred S13/S17 textures recorded; camera/proportions rejected, alternative generator selection pending, and a 36-reference dated European equipment board ready for selection**.
+Last updated: 2026-10-04. Current stage: **original mood board approved; S09 selected for development, preferred S13/S17 textures recorded; camera/proportions rejected; Grok selected with existing-login image generation verified; a 36-reference dated European equipment board ready for selection**.
 
 ## Story and visual constraints
 
@@ -15,7 +15,7 @@ Source material: [story spine](../story/story-arch.md), [characters](../story/ch
 - Isenheim supplies emotional intensity, diseased flesh, sacred light and monstrous forms. Its later date does not make its architecture or clothing period references.
 - Act I begins with recognizable parishioners and wolves. Later locusts and overt demons must not replace that opening escalation.
 - First level is provisionally the Act I homecoming through Rivoire and Raimon's undercroft. Confirm the playable extent before implementation.
-- Latest rendering clarification: dark and pixelated/cartoon, cutesy large-head/small-body structure, smaller eyes, and genuinely distinct art styles. S09 is now selected for development; S13/S17 textures are preferred, but later camera studies and proportion drift were rejected. Built-in generation is paused while selecting another provider. Diablo II remains relevant to composition, materials, environment detail and lighting. Realistic anatomy and the previous three overly similar styles were rejected.
+- Latest rendering clarification: dark and pixelated/cartoon, cutesy large-head/small-body structure, smaller eyes, and genuinely distinct art styles. S09 is now selected for development; S13/S17 textures are preferred, but later camera studies and proportion drift were rejected. Built-in generation remains paused; the user selected Grok and its installed CLI passed an image-generation connection test. The Guarin pilot is still untested. Diablo II remains relevant to composition, materials, environment detail and lighting. Realistic anatomy and the previous three overly similar styles were rejected.
 - Exact pixel density, edge treatment, camera angle, animation directions and frame counts remain open for review and the sprite pilot.
 
 ## 1. Mood board
@@ -68,7 +68,8 @@ Success: a locally reviewable collection with individual removable images and pr
 - [x] Generate S15 from scratch with the requested midpoint target between S13 and S14; record that the actual output did not resolve the view, preserve earlier studies as revisions.
 - [x] Record texture-only preference for S13/S17, camera failures and drift toward human proportions.
 - [x] Pause built-in generation and research [three current alternatives](image-model-alternatives.md): MAI-Image-2.6, Reve 2.1 and Grok Imagine Image 2.0; verify public availability, published capabilities, current Arena rankings and available USD pricing. MAI/Reve trial pricing remains to verify for the selected access route.
-- [ ] Select an alternative provider and verify its access.
+- [x] **User selects Grok** on 2026-10-04, using their existing account and installed CLI.
+- [x] Verify Grok CLI 1.0.46, cached-login refresh and one unattended `image_gen` call; preserve the neutral 1024 × 1024 connection test and [connection instructions](grok-image-generation.md). Exact underlying Imagine model ID and reference editing remain unverified.
 - [ ] Review a small camera/proportion pilot with the preferred texture.
 - [ ] **User approves the camera/proportion direction and selects dress/equipment references before the remaining concept batch.**
 - [ ] Generate story-aligned concept candidates, using the approved mood board as references.
@@ -145,12 +146,12 @@ Success: the agreed first level is playable from entry to exit with accepted art
 | 2026-10-04 | Dated equipment selection ready | Expanded to 34 active European 12th–14th-century references with numeric dates, construction differences, gloves, legwear, footwear, shields, daggers, polearms and non-armored dress. Eleven earlier entries excluded with history retained. Source pixels, hashes, links, date evidence, Chrome controls, mobile layout and complete export verified; hidden-row comments survive | User selects equipment and image provider; camera/proportion pilot remains unapproved |
 | 2026-10-04 | Current alternative-model comparison | Current Arena snapshot and provider documentation supersede the initial shortlist with MAI-Image-2.6, Reve 2.1 and Grok Imagine Image 2.0. Public access verified; none tested on Guarin. Proposed first trial: MAI with a fresh geometry guide. Preferred texture and exaggerated proportions remain explicit requirements | User chooses provider; configure access and verify trial pricing before the camera/proportion pilot |
 | 2026-10-04 | Distinct art-style exploration | S01–S03 rejected for large eyes and nearly identical style. S04–S06 generated in flat ink, coarse pixel and dimensional sculpted media, all with full-face helmets and narrow visors; prior images preserved as rejected | Verify the updated gallery, then user selection of the closest new style |
-
 | 2026-10-04 | Equipment board delivery correction | Equipment board 03 has 36 selectable dated references, with four footwear options across the requested centuries. Main mood board now has a prominent equipment preview and direct review links. Fresh browser confirms 36 cards, dates and comment boxes; Chrome verifies persistence, full export, loaded images and mobile layout | User reviews equipment board 03 and supplies selections/comments |
+| 2026-10-04 | Grok selected and connected | Official CLI 1.0.46 refreshed its existing login, retrieved models and successfully executed one restricted headless image-generation call. Exact tool prompt, valid 1024 × 1024 JPEG and sanitized record preserved; no API key supplied. Underlying Imagine model ID and reference editing unverified; no Guarin pilot generated | Review a Grok camera/proportion pilot and the pending equipment selections |
 
 Review artifacts: [gallery](../art/mood-board/index.html), [overview](../art/mood-board/overview.jpg), [review manifest](../art/mood-board/manifest.md), [review instructions](../art/mood-board/README.md).
 
-Concept art has begun: S09 selected for development; S13/S17 textures preferred; camera and proportions unapproved; built-in generation paused; alternative model comparison recorded; earlier candidates preserved with their decisions. No sprite sheets or first-level implementation have been produced. Game runtime tests were not run for these art-workflow changes; interactive HTML review is checked in Chrome. Existing story and Godot edits are excluded from these art-workflow commits.
+Concept art has begun: S09 selected for development; S13/S17 textures preferred; camera and proportions unapproved; built-in generation paused; Grok selected and CLI image-generation access verified; earlier candidates preserved with their decisions. No sprite sheets or first-level implementation have been produced. Game runtime tests were not run for these art-workflow changes; interactive HTML review is checked in Chrome. Existing story and Godot edits are excluded from these art-workflow commits.
 
 Mood board approval: **approved 2026-10-04**. Concept approval: **pending**. Asset lists: **not finalized**. Sprite approval: **pending**. Engine decision: **provisional Godot**.
 
