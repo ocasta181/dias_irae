@@ -2,6 +2,8 @@
 
 Status: **planning only — mood board approval pending**. No concept art has been generated.
 
+User-directed rendering target: **dark, pixelated/cartoony**, with **Hollow Knight as the primary art-style reference** and **Castle Crashers as a very light influence**. Favor clear outlined silhouettes, simplified shapes, atmospheric depth and restrained accent light in the story's earthy palette. Keep Castle Crashers limited to a little proportion and pose readability. Exact pixel density and edge treatment await the concept review and sprite pilot. The story supplies human identities, period kit and sacred/body-horror motifs; reference games do not supply characters or lore.
+
 After mood board approval, confirm this candidate list and replace each empty image field with a relative link to the generated version. Review statuses are `planned`, `pending`, `accepted`, `rejected`, and `revise`. Only the user sets `accepted` or `rejected`; record requested revisions in Notes.
 
 | Identifier | Candidate | Story purpose | Image | Status | Notes |

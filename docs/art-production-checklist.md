@@ -15,18 +15,20 @@ Source material: [story spine](../story/story-arch.md), [characters](../story/ch
 - Isenheim supplies emotional intensity, diseased flesh, sacred light and monstrous forms. Its later date does not make its architecture or clothing period references.
 - Act I begins with recognizable parishioners and wolves. Later locusts and overt demons must not replace that opening escalation.
 - First level is provisionally the Act I homecoming through Rivoire and Raimon's undercroft. Confirm the playable extent before implementation.
-- Sprite rendering style, camera angle, resolution, animation directions and frame counts remain undecided until review.
+- User-directed rendering target: dark, pixelated/cartoony. Hollow Knight is the primary art-style influence; Castle Crashers is a very light influence. Darkwood is atmosphere-only and Diablo is camera-only. Historical and sacred references still govern materials and story motifs.
+- Exact pixel density, edge treatment, camera angle, animation directions and frame counts remain open for review and the sprite pilot.
 
 ## 1. Mood board
 
 - [x] Read the story, character dossiers, opening locations and systems design.
 - [x] Inspect the existing Godot combat slice and locate PresidentFighter.
 - [x] Record the initial engine and generation-tool assessment in [art-tooling.md](art-tooling.md).
-- [x] Gather and download 21 curated internet images into `art/mood-board/`.
+- [x] Gather and download 26 curated internet images into `art/mood-board/`, including four primary Hollow Knight references and one very-light Castle Crashers reference.
 - [x] Record source pages, creators, licenses, dates and specific story relevance.
 - [x] Build a browsable gallery and an overview image; visually inspect every reference.
-- [x] Verify all 21 images decode, dimensions and hashes match, source records cover every file, and local gallery/document links resolve.
+- [x] Verify the revised 26-image board: decoding, dimensions, hashes, provenance, influence hierarchy and local links.
 - [x] Request the user's review with this checkpoint. The user may delete images and add their own in `art/mood-board/user-references/`.
+- [x] Incorporate the user's requested dark pixelated/cartoon direction and weighted game-language references.
 - [ ] Reconcile removals, additions and review notes; agree the palette and rendering direction.
 - [ ] **User explicitly approves the mood board.**
 
@@ -50,7 +52,8 @@ Success: accepted concepts cover the characters, props and spaces the first leve
 
 Create `art/sprites/asset-list.md` after the concept review; do not treat the candidate scope below as a finalized inventory.
 
-- [ ] Agree rendering treatment: painted sprites, pixel art, or another explicitly chosen approach.
+- [x] Record the user's dark, pixelated/cartoon target and the Hollow Knight / Castle Crashers influence hierarchy.
+- [ ] Agree exact pixel density, outline/edge treatment and degree of caricature in the chosen direction.
 - [ ] Decide engine and camera before committing to final sprite dimensions.
 - [ ] Specify world scale, canvas size, foot anchor, shadow treatment, lighting direction, transparency, atlas padding and naming.
 - [ ] Define character list and movement/actions per character, direction coverage, frame counts, timing and equipment visibility.
@@ -102,6 +105,7 @@ Success: the agreed first level is playable from entry to exit with accepted art
 | 2026-10-04 | Story and project reconnaissance | Isometric Godot prototype exists; PresidentFighter is at `../Personal/PresidentFighter`, not `../PresidentFighter`; art direction anchored in the story | Assemble and inspect internet references |
 | 2026-10-04 | Mood board ready for review | 21 references across seven themes; visual inspection corrected two mismatched search results; missing scan credit recovered from its source page; images, hashes, dimensions, provenance and local links verified | User removes/adds references and approves the reconciled board |
 | 2026-10-04 | Review-state and attribution audit | No references added or removed; all decisions still pending. Recovered M15 photographer and original-photo links from Flickr and documented the pre-existing Commons crop | User review and explicit mood board approval |
+| 2026-10-04 | User-directed art-style revision | Four official Hollow Knight references added as primary influences; one Castle Crashers reference added as very light; earlier games scoped to atmosphere/camera. Direction recorded in the board, concept manifest and tooling brief. All 26 images, provenance, links and weighted previews verified | User review and explicit mood board approval |
 
 Review artifacts: [gallery](../art/mood-board/index.html), [overview](../art/mood-board/overview.jpg), [review manifest](../art/mood-board/manifest.md), [review instructions](../art/mood-board/README.md).
 

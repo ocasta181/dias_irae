@@ -6,6 +6,25 @@ Set each Decision to `accepted`, `rejected` or `revise`, or delete the image and
 
 Open [the gallery](index.html) or [the overview](overview.jpg). Every file is a downloaded internet reference; no concept art has been generated.
 
+User-directed game language: **dark, pixelated/cartoony**. **Hollow Knight is primary; Castle Crashers is very light.** Darkwood is atmosphere-only, and Diablo II: Resurrected is camera-only. Historical and sacred references govern story, period kit and motifs. Exact pixel scale and edge treatment await the concept/pilot review.
+
+[Focused game-language overview](game-language.jpg).
+
+## Dark, pixelated and cartoon
+
+Hollow Knight leads the art style. Castle Crashers contributes a very light touch of proportion and posing. Pixel density and edge treatment will be reviewed in our own story context.
+
+| ID | Reference | Why it belongs | Limits | Decision | Your notes |
+|---|---|---|---|---|---|
+| M22 | [Hollow Knight — clear combat silhouettes](07-game-language/m22-hollow-knight-combat.jpg) | Primary art-style reference: bold outlines, simple body masses and a readable small protagonist against a larger enemy. | Use shape economy and readable action; Guarin remains a human in period mail, and Raimon follows his story anatomy. | pending | |
+| M23 | [Hollow Knight — layered gloom](07-game-language/m23-hollow-knight-layered-gloom.jpg) | Primary art-style reference: dark framing, a pale actor, atmospheric layers and expressive space around simple figures. | Translate the value structure into rye, limewash and charcoal; exact hue, pixel density and isometric projection remain our own decisions. | pending | |
+| M24 | [Hollow Knight — ritual accent light](07-game-language/m24-hollow-knight-ritual-light.jpg) | Primary art-style reference: clean outlined figures, theatrical poses and a restrained family of dark reds around a sacred-looking encounter. | Adapt the light hierarchy and gestures to the story; do not adopt this game’s characters, symbols, Gothic forms or lore. | pending | |
+| M25 | [Hollow Knight — luminous depth](07-game-language/m25-hollow-knight-luminous-depth.jpg) | Primary art-style reference: strong foreground silhouettes, softened background layers and small clear forms held inside luminous darkness. | Treat glow as a controlled accent in the story palette. These hand-drawn references guide a dark pixelated/cartoon rendition, not a prescribed pixel grid. | pending | |
+| M26 | [Castle Crashers — a trace of cartoon action](07-game-language/m26-castle-crashers-action-shapes.jpg) | Very light influence: compact body proportions, clear weapon silhouettes and expressive action poses. | Keep this influence small. The game’s comedy, bright faction colors and enclosed fantasy helmets do not define our tone or 1101 equipment. | pending | |
+| M19 | [Darkwood — a room inside darkness](07-game-language/m19-darkwood-darkness.png) | Atmosphere only: localized visibility and an ordinary room under pressure. The user’s rendering direction is led by Hollow Knight. | Modern top-down setting; take atmosphere and value hierarchy, not the camera, setting or user interface. | pending | |
+| M20 | [Diablo II: Resurrected — the room reads](07-game-language/m20-diablo-ritual-interior.webp) | Camera only: isometric floor geometry and actor placement in a stone interior. The user’s rendering direction is led by Hollow Knight. | Camera, depth and light reference only; do not copy sigils, demons, equipment or lore. | pending | |
+| M21 | [Diablo II: Resurrected — bodies in the field](07-game-language/m21-diablo-exterior-readability.webp) | Camera only: actor placement and layered ground in an isometric exterior. The user’s rendering direction is led by Hollow Knight. | The effects density and fantasy palette are comparison points to review, not adopted requirements. | pending | |
+
 ## Sacred flesh, judgment and light
 
 Later sacred painting and manuscript monsters establish the emotional range.
@@ -66,20 +85,14 @@ The sacred and the domestic share the same material world.
 | M17 | [Wine as the second species](06-bread-bone-and-ritual/m17-chalice.jpg) | Cup silhouette, dull precious metal and the visual weight of a sacred vessel. | A rich surviving vessel; rural parish equipment should be plainer and worn. | pending | |
 | M18 | [A meal can be a sacrament](06-bread-bone-and-ritual/m18-bread-and-dark-table.jpg) | Bread, folded cloth, metal and dark table: ordinary food carries the moral horror. | Later still life: materials and value structure only; replace later glassware, food and luxury settings. | pending | |
 
-## Camera, darkness and readable bodies
-
-Comparison references for rendering decisions; their settings and symbols are not our story.
-
-| ID | Reference | Why it belongs | Limits | Decision | Your notes |
-|---|---|---|---|---|---|
-| M19 | [Darkwood — a room inside darkness](07-game-language/m19-darkwood-darkness.png) | Readable pools of light, a fragile human scale and concealment around ordinary rooms. | Modern top-down setting; take atmosphere and value hierarchy, not the camera, setting or user interface. | pending | |
-| M20 | [Diablo II: Resurrected — the room reads](07-game-language/m20-diablo-ritual-interior.webp) | Isometric floor geometry, warm points of light and a readable actor in a heavy stone interior. | Camera, depth and light reference only; do not copy sigils, demons, equipment or lore. | pending | |
-| M21 | [Diablo II: Resurrected — bodies in the field](07-game-language/m21-diablo-exterior-readability.webp) | Actor/background separation and layered ground vegetation in an isometric exterior. | The effects density and fantasy palette are comparison points to review, not adopted requirements. | pending | |
-
 ## Sources and credits
 
 Files were retrieved on 2026-10-04. The gallery uses local downloaded copies. `sources.json` preserves original and download URLs, creator/credit metadata, source descriptions, dimensions and hashes. Use the license link or source-page licensing section for the full terms.
 
+- **M22** — [Hollow Knight — clear combat silhouettes: source](https://www.hollowknight.com/). Creator: Team Cherry. License: [All rights reserved — reference only; no reuse license inferred](https://www.hollowknight.com/). Credit: Official developer website screenshot.
+- **M23** — [Hollow Knight — layered gloom: source](https://www.hollowknight.com/). Creator: Team Cherry. License: [All rights reserved — reference only; no reuse license inferred](https://www.hollowknight.com/). Credit: Official developer website screenshot.
+- **M24** — [Hollow Knight — ritual accent light: source](https://www.hollowknight.com/). Creator: Team Cherry. License: [All rights reserved — reference only; no reuse license inferred](https://www.hollowknight.com/). Credit: Official developer website screenshot.
+- **M25** — [Hollow Knight — luminous depth: source](https://www.hollowknight.com/). Creator: Team Cherry. License: [All rights reserved — reference only; no reuse license inferred](https://www.hollowknight.com/). Credit: Official developer website screenshot.
 - **M01** — [Sacred flesh under judgment: source](https://commons.wikimedia.org/wiki/File:Isenheimer_Altar_(Colmar)_jm01221_deriv.jpg). Creator: joergens.mi. License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). Credit: Own work. Attribution: © Jörgens.mi.
 - **M02** — [The body becomes a visitation: source](https://commons.wikimedia.org/wiki/File:Matthias_Gr%C3%BCnewald_-_The_Temptation_of_St_Anthony_-_WGA10765.jpg). Creator: Matthias Grünewald. License: [Public domain](https://commons.wikimedia.org/wiki/File:Matthias_Gr%C3%BCnewald_-_The_Temptation_of_St_Anthony_-_WGA10765.jpg). Credit: Web Gallery of Art:   Image  Info about artworkwga QS:P11807,"g/grunewal/2isenhei/3view/3view2r".
 - **M03** — [Sacred light that overwhelms: source](https://commons.wikimedia.org/wiki/File:Matthias_Gr%C3%BCnewald_-_Resurrection.jpg). Creator: Gleb Simonov. License: [Public domain](https://commons.wikimedia.org/wiki/File:Matthias_Gr%C3%BCnewald_-_Resurrection.jpg). Credit: Own work.
@@ -98,6 +111,7 @@ Files were retrieved on 2026-10-04. The gallery uses local downloaded copies. `s
 - **M16** — [A small container for a large wound: source](https://commons.wikimedia.org/wiki/File:5ReliekkistIvoor02.jpg). Creator: Kleon3. License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0). Credit: Own work.
 - **M17** — [Wine as the second species: source](https://commons.wikimedia.org/wiki/File:Chalice_of_St_Remigius_(Saint_Remi)_from_the_Palais_du_Tau_in_Reims.jpg). Creator: Buster.laroux. License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0). Credit: Own work.
 - **M18** — [A meal can be a sacrament: source](https://commons.wikimedia.org/wiki/File:Hans_van_Sant_-_Still_life_or_monochrome_banketje.jpg). Creator: Hans van Sant. License: [Public domain](https://commons.wikimedia.org/wiki/File:Hans_van_Sant_-_Still_life_or_monochrome_banketje.jpg). Credit: https://douwesfineart.com/product/hans-van-sant-monochrome-banketje-with-two-pewter-dishes-an-overturned-silver-tazza-a-gilt-knife-a-glass-with-beer-a-rummer-with-wine-a-roll-of-bread-nuts-olivers-and-a-half-peeled-lemon/.
+- **M26** — [Castle Crashers — a trace of cartoon action: source](https://ww2.castlecrashers.com/game/). Creator: The Behemoth. License: [All rights reserved — reference only; no reuse license inferred](https://ww2.castlecrashers.com/game/). Credit: Official developer website screenshot.
 - **M19** — [Darkwood — a room inside darkness: source](https://www.darkwoodgame.com/presskit/). Creator: Acid Wizard Studio / Darkwood. License: [All rights reserved — reference only; no reuse license inferred](https://www.darkwoodgame.com/presskit/). Credit: Official developer media.
 - **M20** — [Diablo II: Resurrected — the room reads: source](https://diablo2.blizzard.com/). Creator: Blizzard Entertainment. License: [All rights reserved — reference only; no reuse license inferred](https://diablo2.blizzard.com/). Credit: Official developer media.
 - **M21** — [Diablo II: Resurrected — bodies in the field: source](https://diablo2.blizzard.com/). Creator: Blizzard Entertainment. License: [All rights reserved — reference only; no reuse license inferred](https://diablo2.blizzard.com/). Credit: Official developer media.

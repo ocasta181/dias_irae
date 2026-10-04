@@ -10,7 +10,9 @@ No concept images have been generated. Mood board approval is required first.
 
 The advantage at this stage is an available reference-driven generation and editing workflow without another account or integration. A third-party service is worth evaluating if the pilot reveals a specific unmet requirement, such as reliable multi-direction animation or a particular finish. No third-party service has been tested or selected. Do not claim one produces better results without a comparison on the same brief.
 
-Concept generation is not a guarantee of a usable sprite sheet. For sprite production, use accepted concepts to establish identity, generate a small pilot, then validate and assemble frames with deterministic tooling. Temporal consistency, fixed scale, clean alpha, anchors and grid placement must be checked. Keep pixel art versus painted sprites undecided until the user reviews the board.
+Concept generation is not a guarantee of a usable sprite sheet. For sprite production, use accepted concepts to establish identity, generate a small pilot, then validate and assemble frames with deterministic tooling. Temporal consistency, fixed scale, clean alpha, anchors and grid placement must be checked. The user's direction is dark, pixelated/cartoon sprites, strongly influenced by Hollow Knight and very lightly by Castle Crashers. Exact pixel density and edge treatment will be established through review and the pilot.
+
+Prompt briefs must carry that hierarchy explicitly: Hollow Knight informs silhouette economy, outlined shapes, layered darkness and restrained light; Castle Crashers contributes only a small amount of posing and proportion. Period kit and story motifs come from our story and historical references. The existing Diablo references are for camera/spatial readability, and Darkwood is for atmosphere. Neither sets the rendering style.
 
 The [imagegen skill](/Users/ocasta/.codex/skills/.system/imagegen/SKILL.md) supplies the workflow. The default is the built-in tool. Its command-line interface (CLI) fallback is a separate option requiring explicit selection and a locally configured credential; it is not needed for the proposed concept workflow.
 
@@ -36,7 +38,7 @@ Carry forward explicit authored content, stable asset names, validation and smal
 
 ## Engine comparison
 
-Assumption: the game remains the sprite-based isometric action role-playing game described by this repository. Success requires legible combat, painted or pixel sprites, interiors with occlusion, authored exploration and story encounters.
+Assumption: the game remains the sprite-based isometric action role-playing game described by this repository. Success requires legible combat, dark pixelated/cartoon sprites, interiors with occlusion, authored exploration and story encounters. The newly directed art language continues to fit the existing Godot sprite workflow.
 
 | Option | Fit | Decision pressure |
 |---|---|---|
