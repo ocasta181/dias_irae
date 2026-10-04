@@ -1,6 +1,7 @@
 (() => {
   const manifest = JSON.parse(document.getElementById("review-manifest").textContent);
   const cards = [...document.querySelectorAll(".card[data-reference]")];
+  const referenceIds = new Set(cards.map((card) => card.dataset.reference));
   const decisions = ["pending", "accepted", "rejected", "revise"];
   const labels = { pending: "Pending", accepted: "Accept", rejected: "Reject", revise: "Revise" };
   const reviews = new Map();
@@ -18,8 +19,8 @@
   }
 
   for (const line of manifest.split("\n")) {
-    const match = line.match(/^\| (M\d+) \|/);
-    if (!match) continue;
+    const match = line.match(/^\| ([A-Z]\d+) \|/);
+    if (!match || !referenceIds.has(match[1])) continue;
     const cells = line.split("|");
     const decoder = document.createElement("textarea");
     decoder.innerHTML = cells.at(-2).trim().replace(/<br\s*\/?\s*>/gi, "\n");
@@ -118,8 +119,8 @@
 
   document.getElementById("download-manifest").addEventListener("click", () => {
     const updated = manifest.split("\n").map((line) => {
-      const match = line.match(/^\| (M\d+) \|/);
-      if (!match) return line;
+      const match = line.match(/^\| ([A-Z]\d+) \|/);
+      if (!match || !reviews.has(match[1])) return line;
       const review = reviews.get(match[1]);
       const cells = line.split("|");
       cells[cells.length - 3] = ` ${review.decision} `;
@@ -134,7 +135,8 @@
     link.click();
     link.remove();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
-    saveStatus.textContent = "Manifest download started. Save it as art/mood-board/manifest.md to share your review.";
+    const manifestPath = document.body.dataset.manifestPath || "art/mood-board/manifest.md";
+    saveStatus.textContent = `Manifest download started. Save it as ${manifestPath} to share your review.`;
   });
 
   saveDraft();

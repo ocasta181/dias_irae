@@ -1,0 +1,32 @@
+{
+  "identifier": "C02",
+  "version": "v01",
+  "image": "images/c02-parish-cast-v01.png",
+  "prompt": "prompts/c02-parish-cast-v01.txt",
+  "tool": "image_gen.imagegen (built-in)",
+  "model": "not exposed by tool",
+  "generation_date": "2026-10-04",
+  "reference_identifiers": [
+    "C01-v01 (draft)",
+    "M22",
+    "M21",
+    "M09"
+  ],
+  "story_sources": [
+    "../../story/characters.md",
+    "../../story/locations.md",
+    "../../story/story-arch.md"
+  ],
+  "status": "rejected",
+  "user_notes": "User rejected the first batch: wants a more cutesy feel, oversized heads and small bodies structurally closer to Hollow Knight and Castle Crashers.",
+  "inspection_notes": [
+    "Four recognizable figures generated, but adult proportions were too grounded for the clarified target.",
+    "Odo lacks a visible crooked stitched tau; Giraud gained a stole; Agnes gained an unrequested doll. Exclude this sheet from production references."
+  ],
+  "source_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-7e72794f-2004-4ab6-9cee-6cfdf6f74c9e.png",
+  "sha256": "c53c657153461f95227b5045b603598104f0bd97bc8b9afcfabe93807faa5009",
+  "dimensions": [
+    1536,
+    1024
+  ]
+}

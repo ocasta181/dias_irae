@@ -1,0 +1,31 @@
+{
+  "identifier": "S01",
+  "approach": "A",
+  "version": "v01",
+  "image": "images/s01-round-gentle-v01.png",
+  "prompt": "prompts/s01-round-gentle-v01.txt",
+  "tool": "image_gen.imagegen (built-in)",
+  "model": "not exposed by tool",
+  "generation_date": "2026-10-04",
+  "reference_identifiers": [
+    "M22",
+    "M26",
+    "M08"
+  ],
+  "story_sources": [
+    "../../story/characters.md"
+  ],
+  "status": "pending",
+  "user_notes": "",
+  "inspection_notes": [
+    "Softest silhouette, round face and large quiet eyes.",
+    "Oversized head, tiny body, short limbs and period equipment visible.",
+    "This is a structural style comparison, not a validated pixel grid or production sprite. Confirm hair-side identity details and final equipment shapes after selecting the approach."
+  ],
+  "source_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-d7a1761d-9301-4f8b-a47d-857634a19a7b.png",
+  "sha256": "0f4801261cae1b13aad877130680b835bb6193bb6f44b747fcc1b059fab0aa2e",
+  "dimensions": [
+    1536,
+    1024
+  ]
+}

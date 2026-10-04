@@ -1,0 +1,31 @@
+{
+  "identifier": "S02",
+  "approach": "B",
+  "version": "v01",
+  "image": "images/s02-bold-chunky-v01.png",
+  "prompt": "prompts/s02-bold-chunky-v01.txt",
+  "tool": "image_gen.imagegen (built-in)",
+  "model": "not exposed by tool",
+  "generation_date": "2026-10-04",
+  "reference_identifiers": [
+    "M22",
+    "M26",
+    "M08"
+  ],
+  "story_sources": [
+    "../../story/characters.md"
+  ],
+  "status": "pending",
+  "user_notes": "",
+  "inspection_notes": [
+    "Strong outlines, graphic features and compact limbs.",
+    "Oversized head, tiny body, short limbs and period equipment visible.",
+    "This is a structural style comparison, not a validated pixel grid or production sprite. Confirm hair-side identity details and final equipment shapes after selecting the approach."
+  ],
+  "source_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-c6a3cf3a-64d9-4df5-8e37-caefc35acd74.png",
+  "sha256": "1ff021db7488fd2a37ecab971ff96487844c4e336d78f5234bfd6f52937dee52",
+  "dimensions": [
+    1536,
+    1024
+  ]
+}

@@ -1,12 +1,12 @@
-# Dias Irae — approved concept direction
+# Dias Irae — concept direction
 
-Mood board approved by the user in chat on **2026-10-04**. All 26 references remain; no removals or additions were supplied. The approval includes this refinement: **more cartoony than Diablo II, less cartoony than Hollow Knight**. This supersedes the earlier instruction to let Hollow Knight dominate the rendering treatment.
+Mood board approved by the user in chat on **2026-10-04**. All 26 references remain; no removals or additions were supplied. The first interpretation of "more cartoony than Diablo II, less cartoony than Hollow Knight" produced overly grounded characters. The user rejected those results and clarified the structure: **more cutesy, oversized heads and small bodies, structurally similar to Hollow Knight and Castle Crashers**. This latest clarification governs character anatomy. Three approaches are now awaiting selection.
 
 ## Rendering target
 
-Dark, pixelated, moderately stylized isometric action role-playing game. Hollow Knight contributes readable silhouettes, economical shapes, atmospheric layers and controlled light. Diablo II supplies a counterweight: human proportions, material weight, environmental texture and grounded darkness. Castle Crashers contributes a light touch of expressive posing and clear actions. Darkwood supports the unease of ordinary spaces.
+Dark, pixelated, cute-proportioned isometric action role-playing game. Hollow Knight and Castle Crashers guide character structure: large heads, compact bodies and short limbs, with readable expressions and silhouettes. Diablo II remains relevant to material weight, environmental texture, composition and grounded darkness; its realistic human proportions do not govern the new characters. Darkwood supports the unease of ordinary spaces.
 
-People remain visibly adult or child, with moderate caricature rather than oversized heads or tiny bodies. Keep faces expressive but restrained. Use clear dark contours, shaped shadows, crisp stepped edges and clustered texture. Mail, wool, limewash and wood should read as different materials without photographic noise. This first concept batch establishes the balance; final pixel density, sprite dimensions, animation directions and engine import settings remain for the reviewed pilot.
+People remain recognizably adult or child through face, clothing and role, with deliberately oversized heads and tiny bodies. Keep the overall feel cute while expressions and palette carry the sadness. Use clear dark contours, shaped shadows, crisp stepped edges and controlled clustered texture. Simplify mail and folds; avoid gritty realism and detailed facial planes. Three Guarin approaches compare round/gentle, bold/chunky and angular pixel charm. Final proportions follow the user's selection; pixel density, sprite dimensions, animation directions and engine import settings remain for the reviewed pilot.
 
 The game references guide drawing and readability. The story supplies identities, anatomy, equipment, buildings and symbols. Concepts use a provisional elevated three-quarter/isometric context consistent with the existing game; character identity sheets may also include a closer face or material detail.
 
@@ -34,4 +34,4 @@ The game references guide drawing and readability. The story supplies identities
 | C07 | Undercroft | Low vaults, stores, mummified apples and readable encounter floor |
 | C08 | Evidence and ritual objects | Ordinary versus blighted grain, clean wheat host, wrapped splinter and keys |
 
-Each image is a candidate, not an accepted asset or sprite sheet. Review in [manifest.md](manifest.md). Prompts and generation records are saved beside the images. Sprite asset lists will be defined after the required concepts are accepted.
+The initial batch is on hold after C01 and C02 were rejected. Select a structural approach from S01–S03 before resuming the cast, enemies, environments and objects. Each image is a candidate, not an accepted asset or sprite sheet. Review in [the gallery](index.html) or [manifest.md](manifest.md). Prompts and generation records are saved beside the images. Sprite asset lists will be defined after the required concepts are accepted.

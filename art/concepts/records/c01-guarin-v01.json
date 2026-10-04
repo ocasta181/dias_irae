@@ -1,0 +1,33 @@
+{
+  "identifier": "C01",
+  "version": "v01",
+  "image": "images/c01-guarin-v01.png",
+  "prompt": "prompts/c01-guarin-v01.txt",
+  "tool": "image_gen.imagegen (built-in)",
+  "model": "not exposed by tool",
+  "generation_date": "2026-10-04",
+  "reference_identifiers": [
+    "M22",
+    "M21",
+    "M08",
+    "M01"
+  ],
+  "story_sources": [
+    "../../story/characters.md",
+    "../../story/locations.md",
+    "../../story/story-arch.md"
+  ],
+  "status": "rejected",
+  "user_notes": "User rejected the first batch: wants a more cutesy feel, oversized heads and small bodies structurally closer to Hollow Knight and Castle Crashers.",
+  "inspection_notes": [
+    "Adult human silhouette and worn period kit visible; mail, nasal helm, kite shield and ordinary sword represented.",
+    "Helmet-off portrait shows the white hair streak; right-hand study indicates a shortened little finger.",
+    "Pixel treatment and proportion balance are candidates for user review; not a production sprite specification."
+  ],
+  "source_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-07573b02-2b0b-411a-acba-7b0183c7ad49.png",
+  "sha256": "4276ee3c77d5c2c6cee211ffb3591716dce0bfa42e4ec0f6210b498d4e04e236",
+  "dimensions": [
+    1536,
+    1024
+  ]
+}

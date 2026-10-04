@@ -2,7 +2,7 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
-Last updated: 2026-10-04. Current stage: **mood board approved; first concept batch in production**.
+Last updated: 2026-10-04. Current stage: **mood board approved; three cute-proportion concepts awaiting the user's selection**.
 
 ## Story and visual constraints
 
@@ -15,7 +15,7 @@ Source material: [story spine](../story/story-arch.md), [characters](../story/ch
 - Isenheim supplies emotional intensity, diseased flesh, sacred light and monstrous forms. Its later date does not make its architecture or clothing period references.
 - Act I begins with recognizable parishioners and wolves. Later locusts and overt demons must not replace that opening escalation.
 - First level is provisionally the Act I homecoming through Rivoire and Raimon's undercroft. Confirm the playable extent before implementation.
-- Approved rendering target: dark and pixelated, more cartoony than Diablo II and less cartoony than Hollow Knight. Balance clear cartoon shapes with grounded human proportions, materials and environmental detail. Castle Crashers remains a light influence on posing; Darkwood informs atmosphere. The approval refinement supersedes the earlier Hollow Knight-dominant treatment. Historical and sacred references govern story and period kit.
+- Latest rendering clarification: dark and pixelated with a cutesy feel, oversized heads and small bodies structurally closer to Hollow Knight and Castle Crashers. Diablo II remains relevant to composition, materials, environment detail and lighting; realistic adult proportions were rejected. Historical and sacred references govern story and period kit.
 - Exact pixel density, edge treatment, camera angle, animation directions and frame counts remain open for review and the sprite pilot.
 
 ## 1. Mood board
@@ -41,6 +41,10 @@ Success: a locally reviewable collection with individual removable images and pr
 - [x] Identify the available generation tool and document how references will be used.
 - [x] Freeze a concise visual brief from the accepted references and the story.
 - [x] Define the initial eight-image concept list in [the concept manifest](../art/concepts/manifest.md), covering the story's characters, spaces and objects.
+- [x] Preserve the rejected first Guarin and parish-cast sheets; stop that batch after the user's proportion correction.
+- [x] Generate, inspect and save three distinct cute-proportion approaches for Guarin, with exact prompts and generation records.
+- [x] Build and verify the comparison gallery with reversible decisions, commentary, browser drafts and manifest export; preserve the ungenerated planned rows during export.
+- [ ] **User selects the closest structural approach from S01–S03.**
 - [ ] Generate story-aligned concept candidates, using the approved mood board as references.
 - [ ] Save every candidate locally, alongside its exact prompt, reference identifiers, tool, version and review status.
 - [ ] Inspect period equipment, character identity, story motifs, silhouette and camera consistency.
@@ -109,12 +113,12 @@ Success: the agreed first level is playable from entry to exit with accepted art
 | 2026-10-04 | Review-state and attribution audit | No references added or removed; all decisions still pending. Recovered M15 photographer and original-photo links from Flickr and documented the pre-existing Commons crop | User review and explicit mood board approval |
 | 2026-10-04 | User-directed art-style revision | Four official Hollow Knight references added as primary influences; one Castle Crashers reference added as very light; earlier games scoped to atmosphere/camera. Direction recorded in the board, concept manifest and tooling brief. All 26 images, provenance, links and weighted previews verified | User review and explicit mood board approval |
 | 2026-10-04 | Interactive HTML review and reference correction | All 26 cards support reversible decisions and written commentary. Chrome verified reload persistence, complete manifest export, preserved credits, mobile layout and export with browser storage disabled. Diablo II and Darkwood are visible; Diablo II's broader supporting influence is restored | User reviews in the gallery, saves the downloaded manifest and explicitly approves the board |
-
 | 2026-10-04 | Mood board approved and concept direction refined | User explicitly approved all current references; no saved row exceptions or additions. Latest direction is more cartoony than Diablo II, less cartoony than Hollow Knight; visual brief and initial eight concepts defined | Generate, inspect and present concept candidates |
+| 2026-10-04 | Character proportion correction | First C01/C02 sheets rejected as too grounded. User requests a cutesy feel, oversized heads and small bodies. Three new approaches S01–S03 generated, visually inspected and preserved with prompts, records, dimensions and hashes. Concept gallery verified in Chrome for review, reload persistence, export and mobile layout; approved mood-board state synchronized. Remaining batch is on hold | User selects the closest approach, then resume the concept batch in that structure |
 
 Review artifacts: [gallery](../art/mood-board/index.html), [overview](../art/mood-board/overview.jpg), [review manifest](../art/mood-board/manifest.md), [review instructions](../art/mood-board/README.md).
 
-No concept art, sprite sheets or first-level implementation has been produced in this phase. Game runtime tests were not run for these art-workflow changes; the interactive HTML review was checked in Chrome. Existing story and Godot edits were not included in these art-workflow commits.
+Concept art has begun: two rejected initial sheets and three new structural approaches. No sprite sheets or first-level implementation have been produced. Game runtime tests were not run for these art-workflow changes; interactive HTML review is checked in Chrome. Existing story and Godot edits are excluded from these art-workflow commits.
 
 Mood board approval: **approved 2026-10-04**. Concept approval: **pending**. Asset lists: **not finalized**. Sprite approval: **pending**. Engine decision: **provisional Godot**.
 

@@ -1,0 +1,31 @@
+{
+  "identifier": "S03",
+  "approach": "C",
+  "version": "v01",
+  "image": "images/s03-angular-pixel-charm-v01.png",
+  "prompt": "prompts/s03-angular-pixel-charm-v01.txt",
+  "tool": "image_gen.imagegen (built-in)",
+  "model": "not exposed by tool",
+  "generation_date": "2026-10-04",
+  "reference_identifiers": [
+    "M22",
+    "M26",
+    "M08"
+  ],
+  "story_sources": [
+    "../../story/characters.md"
+  ],
+  "status": "pending",
+  "user_notes": "",
+  "inspection_notes": [
+    "Faceted helmet, expressive face and more material depth.",
+    "Oversized head, tiny body, short limbs and period equipment visible.",
+    "This is a structural style comparison, not a validated pixel grid or production sprite. Confirm hair-side identity details and final equipment shapes after selecting the approach."
+  ],
+  "source_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-044544a2-d250-4161-a84d-33f67eca4c2b.png",
+  "sha256": "3302ff7076616d2485a753109394c03141a9fc322dd5be31ef48e38e254ed494",
+  "dimensions": [
+    1374,
+    1145
+  ]
+}
