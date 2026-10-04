@@ -1,0 +1,55 @@
+{
+  "id": "G24",
+  "source": "S01",
+  "source_path": "/Users/ocasta/Code/Dias Irae/art/concepts/images/s01-round-gentle-v01.png",
+  "source_sha256": "0f4801261cae1b13aad877130680b835bb6193bb6f44b747fcc1b059fab0aa2e",
+  "provider": "Grok CLI native image_edit",
+  "scene": "burned-mill",
+  "title": "Burned mill / defensive encounter",
+  "stem": "g24-s01-grok-burned-mill-v01",
+  "prompt_path": "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/prompts/g24-s01-grok-burned-mill-v01.txt",
+  "prompt_sha256": "3ad9900f5f375adeaddf3a86816aec24e55db592790a9c9bd0769a73331dde51",
+  "status": "generated",
+  "date": "2026-10-05",
+  "session_id": "3a28eb07-0f3f-4b7c-a52d-49bd4fa7cfe0",
+  "cwd": "/private/tmp/dias-ref-screen-g24-3a28eb07-0f3f-4b7c-a52d-49bd4fa7cfe0",
+  "fresh_session": true,
+  "resume_used": false,
+  "system_prompt_override": false,
+  "actual_tool_inputs": [
+    {
+      "prompt": "Use case: identity-preserve / gameplay concept.\nReference: The supplied image is the EXACT selected character S01, the authoritative character design AND drawing medium. Build one coherent 2D game scene from this reference. Preserve his helmet construction, head/body ratio, silhouette, costume, sword, shield shape/marking, cloth colors and surface finish. Do not invent a substitute knight. For S01 use only the full-body knight, not the separate portrait; otherwise preserve the enclosed greathelm exactly as shown.\n\nScene experiment: Explore an open riverbank encounter beside the wet burned shell of a small timber watermill with one broken wheel. Guarin braces his original shield against a lean wolf; two weary unarmored villagers stand on the same bank a few steps away. Compose the stream diagonally across a broad ground plane, charred debris forming a movement loop. Cold overcast green-grey reflections and muddy wine-brown details; readable combat spacing, no magical effects.\n\nArt direction: fine square pixel clusters, stepped dark edges, compact muted color groups and very cute squat figures; use the full-body character on the left, ignore the extra head portrait, and retain the original open nasal helmet and bearded face. Paint/draw the WORLD and all people in this same reference medium, with the same texture density and edge language. Fictional Rivoire, Royans/Isère story setting, late summer 1101: poor, muddy, dreary, hopeless, worn and weary. Hollow Knight supplies cute oversized-head/tiny-body readability; Diablo II supplies dirty material darkness and elevated game composition. All people have the same exaggerated short squat anatomy. Their clothes reflect ordinary poor villagers or priests, not later armor.\n\nGameplay composition: an elevated orthographic three-quarter game camera around 45 degrees above the ground; visible roof/floor and head-top planes, no horizon. This is an actual gameplay-view exploration with an open movement path, not a poster or foreground character portrait. ONE player only. Player and other standing adult humans have EQUAL rendered full-body height within about 10%; each roughly 8–10% of the scene height, on the SAME projection and ground plane. His giant head must not make him a giant person: match total height to the villagers. Doors are about one-and-a-half actor heights. No huge foreground hero and tiny background humans.\n\nIntegration: identical local lighting, low values and dirty palette across knight, villagers, buildings and terrain; grounded contact shadows and consistent overlap. His reference colors receive the scene's common light naturally. The scene must feel drawn by one game artist, never a cut-out pasted onto unrelated scenery. Only drawn 2D art; no 3D models, diorama render, glossy metallic studio lighting, photorealism, heroic spotlight or comic-book panels. No collage, reference inset, duplicate hero, large caption, portrait panel or visible text. Favor a landscape playable composition where the provider permits it. Preserve the exact reference identity and cute short squat body throughout.\n",
+      "image": [
+        "/Users/ocasta/Code/Dias Irae/art/concepts/images/s01-round-gentle-v01.png"
+      ],
+      "aspect_ratio": "16:9"
+    }
+  ],
+  "reference_verified": true,
+  "tool_call_count": 1,
+  "tool_output": {
+    "type": "ImageEdit",
+    "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-ref-screen-g24-3a28eb07-0f3f-4b7c-a52d-49bd4fa7cfe0/3a28eb07-0f3f-4b7c-a52d-49bd4fa7cfe0/images/1.jpg",
+    "filename": "1.jpg",
+    "session_folder": "images"
+  },
+  "exit_code": 0,
+  "orchestration_cost_usd": 0.0097002,
+  "image_cost_usd": "not exposed",
+  "exact_image_model": "not exposed",
+  "visual_assessment": {
+    "assessor": "Parent assistant after viewing the actual image and exact character source",
+    "observations": "S01 identity and stepped pixel surfaces are retained in a riverbank encounter with a common muted palette. The player is not oversized against nearby people.",
+    "limitations": "Held back: neighbors have longer bodies, the camera is shallower than intended, and the scale/composition still leans toward scene illustration rather than a wide playable map.",
+    "review_state": "revise",
+    "camera": "Uncalibrated; no achieved numerical camera angle claimed",
+    "production_approval": false
+  },
+  "image": "art/concepts/gameplay/images/g24-s01-grok-burned-mill-v01.jpg",
+  "sha256": "7281e092d06165f0367a9f9716af4e78574e3aaf6be8641a7a9d5f0e3725129a",
+  "dimensions": [
+    1248,
+    832
+  ],
+  "presentation": "Visible as exploration with explicit assessment; no asset approval"
+}

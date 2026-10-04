@@ -1,0 +1,55 @@
+{
+  "id": "G17",
+  "source": "S15",
+  "source_path": "/Users/ocasta/Code/Dias Irae/art/concepts/images/s15-guarin-mid-camera-v04.png",
+  "source_sha256": "f93a8ba6ac6ffe71d517c95d2f162e30b8f1c7d869e1f944e2bc64925eb63b1d",
+  "provider": "Grok CLI native image_edit",
+  "scene": "rain-lane",
+  "title": "Rain lane / navigation",
+  "stem": "g17-s15-grok-rain-lane-v01",
+  "prompt_path": "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/prompts/g17-s15-grok-rain-lane-v01.txt",
+  "prompt_sha256": "11dfd3c95c2adb05cfa3b5586a8be32c1258cbcfb252d48be00821d82d022e0b",
+  "status": "generated",
+  "date": "2026-10-05",
+  "session_id": "1cd94689-654e-4692-ae0c-81c25d8d74c0",
+  "cwd": "/private/tmp/dias-ref-screen-g17-1cd94689-654e-4692-ae0c-81c25d8d74c0",
+  "fresh_session": true,
+  "resume_used": false,
+  "system_prompt_override": false,
+  "actual_tool_inputs": [
+    {
+      "prompt": "Use case: identity-preserve / gameplay concept.\nReference: The supplied image is the EXACT selected character S15, the authoritative character design AND drawing medium. Build one coherent 2D game scene from this reference. Preserve his helmet construction, head/body ratio, silhouette, costume, sword, shield shape/marking, cloth colors and surface finish. Do not invent a substitute knight. For S01 use only the full-body knight, not the separate portrait; otherwise preserve the enclosed greathelm exactly as shown.\n\nScene experiment: Explore a confined diagonal village lane after rain. Guarin waits beside a shallow muddy well while two afflicted neighbors obstruct a branching path between low limestone cottages. A modest round-arched church lies far up the lane. Use an asymmetric map-like arrangement, wet ash-grey daylight, puddles and quiet spatial tension; no battle pose. The navigable ground and corners should feel like a real playable route.\n\nArt direction: granular dry painted textures with stronger drawn contours and finely articulated worn mail; extend the attached precise dirty drawing to terrain, architecture and every actor. Paint/draw the WORLD and all people in this same reference medium, with the same texture density and edge language. Fictional Rivoire, Royans/Isère story setting, late summer 1101: poor, muddy, dreary, hopeless, worn and weary. Hollow Knight supplies cute oversized-head/tiny-body readability; Diablo II supplies dirty material darkness and elevated game composition. All people have the same exaggerated short squat anatomy. Their clothes reflect ordinary poor villagers or priests, not later armor.\n\nGameplay composition: an elevated orthographic three-quarter game camera around 45 degrees above the ground; visible roof/floor and head-top planes, no horizon. This is an actual gameplay-view exploration with an open movement path, not a poster or foreground character portrait. ONE player only. Player and other standing adult humans have EQUAL rendered full-body height within about 10%; each roughly 8–10% of the scene height, on the SAME projection and ground plane. His giant head must not make him a giant person: match total height to the villagers. Doors are about one-and-a-half actor heights. No huge foreground hero and tiny background humans.\n\nIntegration: identical local lighting, low values and dirty palette across knight, villagers, buildings and terrain; grounded contact shadows and consistent overlap. His reference colors receive the scene's common light naturally. The scene must feel drawn by one game artist, never a cut-out pasted onto unrelated scenery. Only drawn 2D art; no 3D models, diorama render, glossy metallic studio lighting, photorealism, heroic spotlight or comic-book panels. No collage, reference inset, duplicate hero, large caption, portrait panel or visible text. Favor a landscape playable composition where the provider permits it. Preserve the exact reference identity and cute short squat body throughout.\n",
+      "image": [
+        "/Users/ocasta/Code/Dias Irae/art/concepts/images/s15-guarin-mid-camera-v04.png"
+      ],
+      "aspect_ratio": "16:9"
+    }
+  ],
+  "reference_verified": true,
+  "tool_call_count": 1,
+  "tool_output": {
+    "type": "ImageEdit",
+    "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-ref-screen-g17-1cd94689-654e-4692-ae0c-81c25d8d74c0/1cd94689-654e-4692-ae0c-81c25d8d74c0/images/1.jpg",
+    "filename": "1.jpg",
+    "session_folder": "images"
+  },
+  "exit_code": 0,
+  "orchestration_cost_usd": 0.01386792,
+  "image_cost_usd": "not exposed",
+  "exact_image_model": "not exposed",
+  "visual_assessment": {
+    "assessor": "Parent assistant after viewing the actual image and exact character source",
+    "observations": "S15's vertical rivet strips, intact greathelm, mail and scarf are recognizable; character/world color is subdued and shared.",
+    "limitations": "Held back: low outdoor horizon and long-bodied villagers defeat the cute isometric game grammar. The player is too large relative to the screen, though not several times taller than people.",
+    "review_state": "revise",
+    "camera": "Uncalibrated; no achieved numerical camera angle claimed",
+    "production_approval": false
+  },
+  "image": "art/concepts/gameplay/images/g17-s15-grok-rain-lane-v01.jpg",
+  "sha256": "3c0e9db9e9c1a325690eb70d8ea1dadbb8928b47d8635abf0eac75b3f719a014",
+  "dimensions": [
+    976,
+    1056
+  ],
+  "presentation": "Visible as exploration with explicit assessment; no asset approval"
+}

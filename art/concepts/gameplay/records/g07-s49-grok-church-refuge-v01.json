@@ -1,0 +1,55 @@
+{
+  "id": "G07",
+  "source": "S49",
+  "source_path": "/Users/ocasta/Code/Dias Irae/art/concepts/images/s49-guarin-flat-wash-wretched-v01.jpg",
+  "source_sha256": "778b6d3f56d80fe4d5b83e5550278b69984790239624de76e5b1e7b40d75611f",
+  "provider": "Grok CLI native image_edit",
+  "scene": "church-refuge",
+  "title": "Church refuge / exploration",
+  "stem": "g07-s49-grok-church-refuge-v01",
+  "prompt_path": "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/prompts/g07-s49-grok-church-refuge-v01.txt",
+  "prompt_sha256": "cc253356ffaf7a99785801edc85532c9934b009e7de6135f79f6da34e697e164",
+  "status": "generated",
+  "date": "2026-10-05",
+  "session_id": "5e78a394-0c4e-4196-8316-9bcc2178a12e",
+  "cwd": "/private/tmp/dias-ref-screen-g07-5e78a394-0c4e-4196-8316-9bcc2178a12e",
+  "fresh_session": true,
+  "resume_used": false,
+  "system_prompt_override": false,
+  "actual_tool_inputs": [
+    {
+      "prompt": "Use case: identity-preserve / gameplay concept.\nReference: The supplied image is the EXACT selected character S49, the authoritative character design AND drawing medium. Build one coherent 2D game scene from this reference. Preserve his helmet construction, head/body ratio, silhouette, costume, sword, shield shape/marking, cloth colors and surface finish. Do not invent a substitute knight. For S01 use only the full-body knight, not the separate portrait; otherwise preserve the enclosed greathelm exactly as shown.\n\nScene experiment: Explore a compact cutaway interior of a poor rural Romanesque parish church. Guarin stands in the aisle beside a tonsured priest and an afflicted neighbor, all at equal actor scale. Thick limestone walls, simple round arches, rough wooden benches, a small altar and one low candle establish a shelter scene. Arrange rooms and aisle as an intimate navigable floor plan; muted amber candle pools in large cool charcoal shadows, no Gothic architecture or supernatural spectacle.\n\nArt direction: dirty gouache/watercolor-like brush washes and scraped pigment, irregular drawn edges, muted grey-brown and faded wine; extend the attached painting medium to every background object and actor. Paint/draw the WORLD and all people in this same reference medium, with the same texture density and edge language. Fictional Rivoire, Royans/Isère story setting, late summer 1101: poor, muddy, dreary, hopeless, worn and weary. Hollow Knight supplies cute oversized-head/tiny-body readability; Diablo II supplies dirty material darkness and elevated game composition. All people have the same exaggerated short squat anatomy. Their clothes reflect ordinary poor villagers or priests, not later armor.\n\nGameplay composition: an elevated orthographic three-quarter game camera around 45 degrees above the ground; visible roof/floor and head-top planes, no horizon. This is an actual gameplay-view exploration with an open movement path, not a poster or foreground character portrait. ONE player only. Player and other standing adult humans have EQUAL rendered full-body height within about 10%; each roughly 8–10% of the scene height, on the SAME projection and ground plane. His giant head must not make him a giant person: match total height to the villagers. Doors are about one-and-a-half actor heights. No huge foreground hero and tiny background humans.\n\nIntegration: identical local lighting, low values and dirty palette across knight, villagers, buildings and terrain; grounded contact shadows and consistent overlap. His reference colors receive the scene's common light naturally. The scene must feel drawn by one game artist, never a cut-out pasted onto unrelated scenery. Only drawn 2D art; no 3D models, diorama render, glossy metallic studio lighting, photorealism, heroic spotlight or comic-book panels. No collage, reference inset, duplicate hero, large caption, portrait panel or visible text. Favor a landscape playable composition where the provider permits it. Preserve the exact reference identity and cute short squat body throughout.\n",
+      "image": [
+        "/Users/ocasta/Code/Dias Irae/art/concepts/images/s49-guarin-flat-wash-wretched-v01.jpg"
+      ],
+      "aspect_ratio": "16:9"
+    }
+  ],
+  "reference_verified": true,
+  "tool_call_count": 1,
+  "tool_output": {
+    "type": "ImageEdit",
+    "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-ref-screen-g07-5e78a394-0c4e-4196-8316-9bcc2178a12e/5e78a394-0c4e-4196-8316-9bcc2178a12e/images/1.jpg",
+    "filename": "1.jpg",
+    "session_folder": "images"
+  },
+  "exit_code": 0,
+  "orchestration_cost_usd": 0.01348508,
+  "image_cost_usd": "not exposed",
+  "exact_image_model": "not exposed",
+  "visual_assessment": {
+    "assessor": "Parent assistant after viewing the actual image and exact character source",
+    "observations": "S49 identity and washed paint extend into a dim stone interior; human heights are broadly comparable.",
+    "limitations": "Held back: neighbors are much more anatomically realistic and the close framing reads as a scene illustration rather than a game-level view.",
+    "review_state": "revise",
+    "camera": "Uncalibrated; no achieved numerical camera angle claimed",
+    "production_approval": false
+  },
+  "image": "art/concepts/gameplay/images/g07-s49-grok-church-refuge-v01.jpg",
+  "sha256": "b815bd0905876cb374d0c039bc1af0984871727040dea857454cccce9e35fc91",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "presentation": "Visible as exploration with explicit assessment; no asset approval"
+}

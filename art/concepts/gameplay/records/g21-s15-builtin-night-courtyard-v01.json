@@ -1,0 +1,42 @@
+{
+  "id": "G21",
+  "source": "S15",
+  "source_path": "/Users/ocasta/Code/Dias Irae/art/concepts/images/s15-guarin-mid-camera-v04.png",
+  "source_sha256": "f93a8ba6ac6ffe71d517c95d2f162e30b8f1c7d869e1f944e2bc64925eb63b1d",
+  "provider": "Built-in image_gen",
+  "scene": "night-courtyard",
+  "title": "Lamp-lit courtyard / interaction",
+  "stem": "g21-s15-builtin-night-courtyard-v01",
+  "prompt_path": "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/prompts/g21-s15-builtin-night-courtyard-v01.txt",
+  "prompt_sha256": "bd68eccbd119d39d58b45caf656528abfb6abd64b43ee334055a82b6f13b2c17",
+  "status": "generated",
+  "prompt": "Use case: identity-preserve / gameplay concept.\nReference: The supplied image is the EXACT selected character S15, the authoritative character design AND drawing medium. Build one coherent 2D game scene from this reference. Preserve his helmet construction, head/body ratio, silhouette, costume, sword, shield shape/marking, cloth colors and surface finish. Do not invent a substitute knight. For S01 use only the full-body knight, not the separate portrait; otherwise preserve the enclosed greathelm exactly as shown.\n\nScene experiment: Explore a cramped household courtyard at night, with Guarin approaching three weary villagers sorting a few salvageable household objects around a low oil lamp. A timber lean-to, patched limestone walls, a broken cart, a water trough and closed wooden doors create short paths and interactable silhouettes. Offset courtyard composition, very low dirty amber illumination against muted greenish soot-black shadows; small intimate human activity and poverty, no combat effects.\n\nArt direction: granular dry painted textures with stronger drawn contours and finely articulated worn mail; extend the attached precise dirty drawing to terrain, architecture and every actor. Paint/draw the WORLD and all people in this same reference medium, with the same texture density and edge language. Fictional Rivoire, Royans/Isère story setting, late summer 1101: poor, muddy, dreary, hopeless, worn and weary. Hollow Knight supplies cute oversized-head/tiny-body readability; Diablo II supplies dirty material darkness and elevated game composition. All people have the same exaggerated short squat anatomy. Their clothes reflect ordinary poor villagers or priests, not later armor.\n\nGameplay composition: an elevated orthographic three-quarter game camera around 45 degrees above the ground; visible roof/floor and head-top planes, no horizon. This is an actual gameplay-view exploration with an open movement path, not a poster or foreground character portrait. ONE player only. Player and other standing adult humans have EQUAL rendered full-body height within about 10%; each roughly 8–10% of the scene height, on the SAME projection and ground plane. His giant head must not make him a giant person: match total height to the villagers. Doors are about one-and-a-half actor heights. No huge foreground hero and tiny background humans.\n\nIntegration: identical local lighting, low values and dirty palette across knight, villagers, buildings and terrain; grounded contact shadows and consistent overlap. His reference colors receive the scene's common light naturally. The scene must feel drawn by one game artist, never a cut-out pasted onto unrelated scenery. Only drawn 2D art; no 3D models, diorama render, glossy metallic studio lighting, photorealism, heroic spotlight or comic-book panels. No collage, reference inset, duplicate hero, large caption, portrait panel or visible text. Favor a landscape playable composition where the provider permits it. Preserve the exact reference identity and cute short squat body throughout.\n",
+  "source_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-77872491-680f-462d-8ba3-89a3bec2b788.png",
+  "requested_tool_input": {
+    "prompt": "Use case: identity-preserve / gameplay concept.\nReference: The supplied image is the EXACT selected character S15, the authoritative character design AND drawing medium. Build one coherent 2D game scene from this reference. Preserve his helmet construction, head/body ratio, silhouette, costume, sword, shield shape/marking, cloth colors and surface finish. Do not invent a substitute knight. For S01 use only the full-body knight, not the separate portrait; otherwise preserve the enclosed greathelm exactly as shown.\n\nScene experiment: Explore a cramped household courtyard at night, with Guarin approaching three weary villagers sorting a few salvageable household objects around a low oil lamp. A timber lean-to, patched limestone walls, a broken cart, a water trough and closed wooden doors create short paths and interactable silhouettes. Offset courtyard composition, very low dirty amber illumination against muted greenish soot-black shadows; small intimate human activity and poverty, no combat effects.\n\nArt direction: granular dry painted textures with stronger drawn contours and finely articulated worn mail; extend the attached precise dirty drawing to terrain, architecture and every actor. Paint/draw the WORLD and all people in this same reference medium, with the same texture density and edge language. Fictional Rivoire, Royans/Isère story setting, late summer 1101: poor, muddy, dreary, hopeless, worn and weary. Hollow Knight supplies cute oversized-head/tiny-body readability; Diablo II supplies dirty material darkness and elevated game composition. All people have the same exaggerated short squat anatomy. Their clothes reflect ordinary poor villagers or priests, not later armor.\n\nGameplay composition: an elevated orthographic three-quarter game camera around 45 degrees above the ground; visible roof/floor and head-top planes, no horizon. This is an actual gameplay-view exploration with an open movement path, not a poster or foreground character portrait. ONE player only. Player and other standing adult humans have EQUAL rendered full-body height within about 10%; each roughly 8–10% of the scene height, on the SAME projection and ground plane. His giant head must not make him a giant person: match total height to the villagers. Doors are about one-and-a-half actor heights. No huge foreground hero and tiny background humans.\n\nIntegration: identical local lighting, low values and dirty palette across knight, villagers, buildings and terrain; grounded contact shadows and consistent overlap. His reference colors receive the scene's common light naturally. The scene must feel drawn by one game artist, never a cut-out pasted onto unrelated scenery. Only drawn 2D art; no 3D models, diorama render, glossy metallic studio lighting, photorealism, heroic spotlight or comic-book panels. No collage, reference inset, duplicate hero, large caption, portrait panel or visible text. Favor a landscape playable composition where the provider permits it. Preserve the exact reference identity and cute short squat body throughout.\n",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/concepts/images/s15-guarin-mid-camera-v04.png"
+    ],
+    "transparent_background": false
+  },
+  "date": "2026-10-05",
+  "image": "art/concepts/gameplay/images/g21-s15-builtin-night-courtyard-v01.png",
+  "sha256": "af660c91747ed623a824fa059fd17d56c955bbec913b6d83ef7870314c0a8fda",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "reference_verified": true,
+  "visual_assessment": {
+    "assessor": "Parent assistant after viewing the actual image and exact character source",
+    "observations": "S15 design and prominent mail/helm details are preserved in an oil-lit courtyard. Villagers are short with large heads, similar total height, and the same dirty drawn texture and warm local light.",
+    "limitations": "For review: people's eyes may be too large/blank; lighting remains modeled by drawn values and may need further flattening. Figures are larger than the prompt's screen-height target.",
+    "review_state": "pending",
+    "camera": "Uncalibrated; no achieved numerical camera angle claimed",
+    "production_approval": false
+  },
+  "exact_image_model": "not exposed by tool",
+  "image_cost_usd": "not exposed",
+  "provider_internal_image_preprocessing": "not exposed",
+  "presentation": "Visible as exploration with explicit assessment; no asset approval"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "G06",
+  "source": "S49",
+  "source_path": "/Users/ocasta/Code/Dias Irae/art/concepts/images/s49-guarin-flat-wash-wretched-v01.jpg",
+  "source_sha256": "778b6d3f56d80fe4d5b83e5550278b69984790239624de76e5b1e7b40d75611f",
+  "provider": "Grok CLI native image_edit",
+  "scene": "burned-mill",
+  "title": "Burned mill / defensive encounter",
+  "stem": "g06-s49-grok-burned-mill-v01",
+  "prompt_path": "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/prompts/g06-s49-grok-burned-mill-v01.txt",
+  "prompt_sha256": "6434461b66e46bce79d4daa0a6dc8233cde6bf8ed8d40c6047c4728699b23e29",
+  "status": "generated",
+  "date": "2026-10-05",
+  "session_id": "9000690a-c71d-4f67-97dc-38194c6d6d7d",
+  "cwd": "/private/tmp/dias-ref-screen-g06-9000690a-c71d-4f67-97dc-38194c6d6d7d",
+  "fresh_session": true,
+  "resume_used": false,
+  "system_prompt_override": false,
+  "actual_tool_inputs": [
+    {
+      "prompt": "Use case: identity-preserve / gameplay concept.\nReference: The supplied image is the EXACT selected character S49, the authoritative character design AND drawing medium. Build one coherent 2D game scene from this reference. Preserve his helmet construction, head/body ratio, silhouette, costume, sword, shield shape/marking, cloth colors and surface finish. Do not invent a substitute knight. For S01 use only the full-body knight, not the separate portrait; otherwise preserve the enclosed greathelm exactly as shown.\n\nScene experiment: Explore an open riverbank encounter beside the wet burned shell of a small timber watermill with one broken wheel. Guarin braces his original shield against a lean wolf; two weary unarmored villagers stand on the same bank a few steps away. Compose the stream diagonally across a broad ground plane, charred debris forming a movement loop. Cold overcast green-grey reflections and muddy wine-brown details; readable combat spacing, no magical effects.\n\nArt direction: dirty gouache/watercolor-like brush washes and scraped pigment, irregular drawn edges, muted grey-brown and faded wine; extend the attached painting medium to every background object and actor. Paint/draw the WORLD and all people in this same reference medium, with the same texture density and edge language. Fictional Rivoire, Royans/Isère story setting, late summer 1101: poor, muddy, dreary, hopeless, worn and weary. Hollow Knight supplies cute oversized-head/tiny-body readability; Diablo II supplies dirty material darkness and elevated game composition. All people have the same exaggerated short squat anatomy. Their clothes reflect ordinary poor villagers or priests, not later armor.\n\nGameplay composition: an elevated orthographic three-quarter game camera around 45 degrees above the ground; visible roof/floor and head-top planes, no horizon. This is an actual gameplay-view exploration with an open movement path, not a poster or foreground character portrait. ONE player only. Player and other standing adult humans have EQUAL rendered full-body height within about 10%; each roughly 8–10% of the scene height, on the SAME projection and ground plane. His giant head must not make him a giant person: match total height to the villagers. Doors are about one-and-a-half actor heights. No huge foreground hero and tiny background humans.\n\nIntegration: identical local lighting, low values and dirty palette across knight, villagers, buildings and terrain; grounded contact shadows and consistent overlap. His reference colors receive the scene's common light naturally. The scene must feel drawn by one game artist, never a cut-out pasted onto unrelated scenery. Only drawn 2D art; no 3D models, diorama render, glossy metallic studio lighting, photorealism, heroic spotlight or comic-book panels. No collage, reference inset, duplicate hero, large caption, portrait panel or visible text. Favor a landscape playable composition where the provider permits it. Preserve the exact reference identity and cute short squat body throughout.\n",
+      "image": [
+        "/Users/ocasta/Code/Dias Irae/art/concepts/images/s49-guarin-flat-wash-wretched-v01.jpg"
+      ],
+      "aspect_ratio": "16:9"
+    }
+  ],
+  "reference_verified": true,
+  "tool_call_count": 1,
+  "tool_output": {
+    "type": "ImageEdit",
+    "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-ref-screen-g06-9000690a-c71d-4f67-97dc-38194c6d6d7d/9000690a-c71d-4f67-97dc-38194c6d6d7d/images/1.jpg",
+    "filename": "1.jpg",
+    "session_folder": "images"
+  },
+  "exit_code": 0,
+  "orchestration_cost_usd": 0.01487976,
+  "image_cost_usd": "not exposed",
+  "exact_image_model": "not exposed",
+  "visual_assessment": "awaiting parent inspection",
+  "image": "art/concepts/gameplay/images/g06-s49-grok-burned-mill-v01.jpg",
+  "sha256": "4221eef9a16a8251751c0fbe246d2ef68f321e85404a28fa11d5cfdc04a3435b",
+  "dimensions": [
+    1024,
+    1024
+  ]
+}

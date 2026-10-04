@@ -7,10 +7,11 @@
     "provider": "grok",
     "scene": "rain-lane",
     "title": "Rain lane / navigation",
-    "stem": "g05-s49-grok-rain-lane-v01",
-    "prompt_path": "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/prompts/g05-s49-grok-rain-lane-v01.txt",
-    "prompt_sha256": "e7e2e9d2b3bdece9d20da36f18faf76224ee1fe9dd59c196b1c9b4cc7e0ab5fe",
-    "status": "planned"
+    "stem": "g05-s49-grok-rain-lane-v02",
+    "prompt_path": "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/prompts/g05-s49-grok-rain-lane-v02.txt",
+    "prompt_sha256": "8f5fdbd0edd2fde9aa01488d970e27fa8477a98191a68052ec6169b5fb5dfbc3",
+    "status": "planned",
+    "revision": "v02"
   },
   {
     "id": "G06",

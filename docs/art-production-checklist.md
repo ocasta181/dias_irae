@@ -2,7 +2,7 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
-Last updated: 2026-10-05. Current stage: **mood/equipment boards approved; S49 / S13 / S15 / S01 selected. Direct saving works. The user rejected G01–G04 for design, scale, palette and lighting failures. Production now requires exact selected character images as gameplay inputs. A 24-screen exploration is in progress: three Grok and three built-in generations per source, each with a distinct scene/composition prompt. Sprite sheets and implementation remain gated**.
+Last updated: 2026-10-05. Current stage: **mood/equipment boards approved; S49 / S13 / S15 / S01 selected. Direct saving works. The user rejected G01–G04 for design, scale, palette and lighting failures. Production now requires exact selected character images as gameplay inputs. The 24-screen exploration is delivered: three Grok and three built-in generations per source, each with a distinct scene/composition prompt. Every call used the exact selected image. Parent inspection marks 11 Grok screens for revision and 13 candidates for user review; no camera or asset approval is claimed. Sprite sheets and implementation remain gated**.
 
 ## Story and visual constraints
 
@@ -15,8 +15,9 @@ Source material: [story spine](../story/story-arch.md), [characters](../story/ch
 - Isenheim supplies emotional intensity, diseased flesh, sacred light and monstrous forms. Its later date does not make its architecture or clothing period references.
 - Act I begins with recognizable parishioners and wolves. Later locusts and overt demons must not replace that opening escalation.
 - First level is provisionally the Act I homecoming through Rivoire and Raimon's undercroft. Confirm the playable extent before implementation.
-- Latest rendering clarification: dark, cute and cartoony, with a huge head, tiny squat body and short limbs. Compare Diablo II-led, Hollow Knight-led and blended game rendering, with the costume stated in full in every raw prompt. The user discarded S24–S34 and prohibited prior-image iteration. Earlier style preferences remain written design guidance only; no prior concept image may be uploaded.
-- Latest hard rendering rule: only flat 2D drawn art. No 2.5D appearance, rounded surface shading, metallic bevels or edge glints. Dirt alone does not remove volume. Push dark filth, poverty, wear, exhaustion and despair. No 3D renders, sculpts, glossy miniatures or studio material effects. Each complete raw prompt must explain the mood-board roles and the parent assistant must inspect the actual output.
+- Current production rule: dark, cute and cartoony, with a huge head, tiny squat body and short limbs. Approved mood-board images feed character exploration; exact selected S49/S13/S15/S01 character files feed gameplay exploration. The user's latest explicit production-chain instruction supersedes the older blanket prohibition on selected character inputs. Failed iterations remain excluded.
+- Current rendering rule: only 2D drawn art, preserving each selected source's exact drawing medium and value treatment, including S49's preferred dirty painting. The selection supersedes the prior demand to flatten its painted values into uniform fills. Retain dark filth, poverty, wear, exhaustion and despair; exclude 3D renders, sculpts, glossy miniatures and studio material effects. Inspect actual outputs.
+- Current comparison preserves each exact costume, including S01's original nasal helmet and face. This is the latest source-fidelity instruction, not a new production costume approval. S49/S13/S15 retain their closed greathelms.
 - Exact pixel density, edge treatment, camera angle, animation directions and frame counts remain open for review and the sprite pilot.
 
 ## 1. Mood board
@@ -111,9 +112,9 @@ Success: a locally reviewable collection with individual removable images and pr
 - [x] Reconcile the full Brave review: all additional comments, historical/planned rows and 45 ranked IDs are in the project manifest. Top four: S49, S13, S15, S01. S49’s preferred paint texture supersedes the earlier parent decision to hold that style back; S13 is one of the closest styles in the user’s notes. Preserve each selection’s rendering medium for gameplay comparisons, without redesigning the character or treating ranking as final asset approval.
 - [x] Record rejection of G01–G04 and replace the obsolete text-only rule with the user's image production chain. Exact selected source files are mandatory gameplay inputs.
 - [x] Define 24 complete prompts: six distinct scene/composition/lighting experiments per source, three with Grok and three with the built-in image generator. Save unchanged source hashes and [production plan](../art/concepts/gameplay/production-plan.json).
-- [ ] Generate all 24 reference-based screens, verifying the exact source in every call.
-- [ ] Inspect every output for source fidelity, squat proportions, shared actor scale, palette, lighting, medium and camera; record failures plainly.
-- [ ] Present the 24-screen comparison with direct saving and request user review.
+- [x] Generate all 24 reference-based screens, verifying the exact source in every call. Preserve 25 successful outputs (one excluded Grok trial), one capacity failure and an unexecuted automatic-review rejection of an extra mood-board upload. No failed output was reused.
+- [x] Inspect every output for source fidelity, squat proportions, shared actor scale, palette, lighting, medium and camera. Mark 11 Grok candidates for revision; record specific limits on the stronger 13 candidates. See [assessment](../art/concepts/gameplay/assessment.md).
+- [x] Present the [24-screen comparison](../art/concepts/gameplay/index.html) with exact source thumbnails, one sortable minimized gallery, commentary and direct saving. User review remains pending.
 - [ ] Correct remaining costume drift and check the shortest squat proportions before production. Freeze mail, hidden skin, plain helmet, narrow wine shield panel, buckle and sword construction after style review.
 - [ ] Resolve calibrated camera consistency. The target remains around 45 degrees above the ground; no achieved angle or exact 15-degree increase is claimed.
 - [ ] **User approves the camera/proportion and rendering direction before the remaining concept batch.** Equipment collection approved with regional and cultural limits; no new Guarin concept is accepted yet.
@@ -208,7 +209,7 @@ Success: the agreed first level is playable from entry to exit with accepted art
 
 Review artifacts: [gallery](../art/mood-board/index.html), [overview](../art/mood-board/overview.jpg), [review manifest](../art/mood-board/manifest.md), [review instructions](../art/mood-board/README.md).
 
-S55/S51/S52 are the current flat-style proposals. B/C show the most exhaustion; A is the shortest and squattest. Eight drawings were inspected and five held back. All use complete independent raw prompts; only A uses an approved mood-board base. Camera, costume and silhouette consistency remain open; no character concept is accepted. No sprites or first-level implementation were produced. Existing story and Godot edits remain excluded.
+Earlier checkpoint, now superseded: S55/S51/S52 were the flat-style proposals. B/C show the most exhaustion; A is the shortest and squattest. Eight drawings were inspected and five held back. All use complete independent raw prompts; only A uses an approved mood-board base. Camera, costume and silhouette consistency remain open; no character concept is accepted. No sprites or first-level implementation were produced. Existing story and Godot edits remain excluded.
 
 Mood board approval: **approved 2026-10-04**. Concept approval: **pending**. Asset lists: **not finalized**. Sprite approval: **pending**. Engine decision: **provisional Godot**.
 
@@ -222,3 +223,5 @@ Current decision at commit `3aef464`: preserve the four explicitly selected styl
 
 
 2026-10-05 decision at commit `d65175fc5254cb837d39b156b13cae98e6fedd40`: use the four recorded selected images as literal character-design inputs, including S01's original nasal helmet, and produce six distinct scene prompts per image across the two requested providers. Confidence: 98%, based on the latest explicit exact-image and 24-output instructions. The earlier text-only restriction is superseded for this production stage. No new character redesign is authorized.
+
+2026-10-05 checkpoint at commit `763d5a9`: all 24 requested explorations generated with exact source-image arguments; 25 actual outputs inspected including one excluded duplicate-helmet trial. Grok camera/anatomy failures are explicitly marked revise; built-in world cohesion is stronger. Review pending. The source-only fallback completed generation after automatic review denied an additional mood-board upload. No permission is requested for that unused extra input.

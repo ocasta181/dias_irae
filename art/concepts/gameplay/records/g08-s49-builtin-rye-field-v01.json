@@ -1,0 +1,42 @@
+{
+  "id": "G08",
+  "source": "S49",
+  "source_path": "/Users/ocasta/Code/Dias Irae/art/concepts/images/s49-guarin-flat-wash-wretched-v01.jpg",
+  "source_sha256": "778b6d3f56d80fe4d5b83e5550278b69984790239624de76e5b1e7b40d75611f",
+  "provider": "Built-in image_gen",
+  "scene": "rye-field",
+  "title": "Blighted rye / traversal",
+  "stem": "g08-s49-builtin-rye-field-v01",
+  "prompt_path": "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/prompts/g08-s49-builtin-rye-field-v01.txt",
+  "prompt_sha256": "c80015433d341b690da36dfbe8106232409108e450c65662f02a71e58356ce10",
+  "status": "generated",
+  "prompt": "Use case: identity-preserve / gameplay concept.\nReference: The supplied image is the EXACT selected character S49, the authoritative character design AND drawing medium. Build one coherent 2D game scene from this reference. Preserve his helmet construction, head/body ratio, silhouette, costume, sword, shield shape/marking, cloth colors and surface finish. Do not invent a substitute knight. For S01 use only the full-body knight, not the separate portrait; otherwise preserve the enclosed greathelm exactly as shown.\n\nScene experiment: Explore broad blighted rye terraces at the edge of the village. Guarin moves along a winding path with two bent, exhausted farmers nearby and a lean wolf emerging at its turn. Ruined dry-stone boundaries, collapsed sacks and thin dark orchard trees create a sparse, open traversal map. Wide negative space, desaturated ochre vegetation, dirty blue-grey fog and late overcast light; dread and rural hunger rather than a picturesque landscape.\n\nArt direction: dirty gouache/watercolor-like brush washes and scraped pigment, irregular drawn edges, muted grey-brown and faded wine; extend the attached painting medium to every background object and actor. Paint/draw the WORLD and all people in this same reference medium, with the same texture density and edge language. Fictional Rivoire, Royans/Isère story setting, late summer 1101: poor, muddy, dreary, hopeless, worn and weary. Hollow Knight supplies cute oversized-head/tiny-body readability; Diablo II supplies dirty material darkness and elevated game composition. All people have the same exaggerated short squat anatomy. Their clothes reflect ordinary poor villagers or priests, not later armor.\n\nGameplay composition: an elevated orthographic three-quarter game camera around 45 degrees above the ground; visible roof/floor and head-top planes, no horizon. This is an actual gameplay-view exploration with an open movement path, not a poster or foreground character portrait. ONE player only. Player and other standing adult humans have EQUAL rendered full-body height within about 10%; each roughly 8–10% of the scene height, on the SAME projection and ground plane. His giant head must not make him a giant person: match total height to the villagers. Doors are about one-and-a-half actor heights. No huge foreground hero and tiny background humans.\n\nIntegration: identical local lighting, low values and dirty palette across knight, villagers, buildings and terrain; grounded contact shadows and consistent overlap. His reference colors receive the scene's common light naturally. The scene must feel drawn by one game artist, never a cut-out pasted onto unrelated scenery. Only drawn 2D art; no 3D models, diorama render, glossy metallic studio lighting, photorealism, heroic spotlight or comic-book panels. No collage, reference inset, duplicate hero, large caption, portrait panel or visible text. Favor a landscape playable composition where the provider permits it. Preserve the exact reference identity and cute short squat body throughout.\n",
+  "source_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-3c9d9101-b552-4690-8d1d-6c1731103df8.png",
+  "requested_tool_input": {
+    "prompt": "Use case: identity-preserve / gameplay concept.\nReference: The supplied image is the EXACT selected character S49, the authoritative character design AND drawing medium. Build one coherent 2D game scene from this reference. Preserve his helmet construction, head/body ratio, silhouette, costume, sword, shield shape/marking, cloth colors and surface finish. Do not invent a substitute knight. For S01 use only the full-body knight, not the separate portrait; otherwise preserve the enclosed greathelm exactly as shown.\n\nScene experiment: Explore broad blighted rye terraces at the edge of the village. Guarin moves along a winding path with two bent, exhausted farmers nearby and a lean wolf emerging at its turn. Ruined dry-stone boundaries, collapsed sacks and thin dark orchard trees create a sparse, open traversal map. Wide negative space, desaturated ochre vegetation, dirty blue-grey fog and late overcast light; dread and rural hunger rather than a picturesque landscape.\n\nArt direction: dirty gouache/watercolor-like brush washes and scraped pigment, irregular drawn edges, muted grey-brown and faded wine; extend the attached painting medium to every background object and actor. Paint/draw the WORLD and all people in this same reference medium, with the same texture density and edge language. Fictional Rivoire, Royans/Isère story setting, late summer 1101: poor, muddy, dreary, hopeless, worn and weary. Hollow Knight supplies cute oversized-head/tiny-body readability; Diablo II supplies dirty material darkness and elevated game composition. All people have the same exaggerated short squat anatomy. Their clothes reflect ordinary poor villagers or priests, not later armor.\n\nGameplay composition: an elevated orthographic three-quarter game camera around 45 degrees above the ground; visible roof/floor and head-top planes, no horizon. This is an actual gameplay-view exploration with an open movement path, not a poster or foreground character portrait. ONE player only. Player and other standing adult humans have EQUAL rendered full-body height within about 10%; each roughly 8–10% of the scene height, on the SAME projection and ground plane. His giant head must not make him a giant person: match total height to the villagers. Doors are about one-and-a-half actor heights. No huge foreground hero and tiny background humans.\n\nIntegration: identical local lighting, low values and dirty palette across knight, villagers, buildings and terrain; grounded contact shadows and consistent overlap. His reference colors receive the scene's common light naturally. The scene must feel drawn by one game artist, never a cut-out pasted onto unrelated scenery. Only drawn 2D art; no 3D models, diorama render, glossy metallic studio lighting, photorealism, heroic spotlight or comic-book panels. No collage, reference inset, duplicate hero, large caption, portrait panel or visible text. Favor a landscape playable composition where the provider permits it. Preserve the exact reference identity and cute short squat body throughout.\n",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/concepts/images/s49-guarin-flat-wash-wretched-v01.jpg"
+    ],
+    "transparent_background": false
+  },
+  "date": "2026-10-05",
+  "image": "art/concepts/gameplay/images/g08-s49-builtin-rye-field-v01.png",
+  "sha256": "f27496837172e86c2f291d2979c7510c84c736f060fd0e8dc8a9aad986cd79c0",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "reference_verified": true,
+  "visual_assessment": {
+    "assessor": "Parent assistant after viewing the actual image and exact character source",
+    "observations": "S49's huge distinctive helmet, scarf, original shield and broad painted texture remain recognizable. Muddy pigment and diffuse light carry across the rye, buildings and people. Human figure heights are comparable, with hunched farmers.",
+    "limitations": "For review: figures occupy more screen height than the 8–10% prompt target; farmers are less exaggerated than the knight. Environment density and calibrated camera are not approved.",
+    "review_state": "pending",
+    "camera": "Uncalibrated; no achieved numerical camera angle claimed",
+    "production_approval": false
+  },
+  "exact_image_model": "not exposed by tool",
+  "image_cost_usd": "not exposed",
+  "provider_internal_image_preprocessing": "not exposed",
+  "presentation": "Visible as exploration with explicit assessment; no asset approval"
+}
