@@ -20,11 +20,12 @@
 
   for (const line of manifest.split("\n")) {
     const match = line.match(/^\| ([A-Z]\d+) \|/);
-    if (!match || !referenceIds.has(match[1])) continue;
+    if (!match) continue;
     const cells = line.split("|");
     const decoder = document.createElement("textarea");
     decoder.innerHTML = cells.at(-2).trim().replace(/<br\s*\/?\s*>/gi, "\n");
     const decision = cells.at(-3).trim();
+    if (!decisions.includes(decision)) continue;
     const note = decoder.value;
     const baseline = JSON.stringify([decision, note]);
     const saved = draft[match[1]];
@@ -37,7 +38,7 @@
 
   function updateSummary() {
     const counts = Object.fromEntries(decisions.map((decision) => [decision, 0]));
-    for (const review of reviews.values()) counts[review.decision]++;
+    for (const id of referenceIds) counts[reviews.get(id).decision]++;
     summary.textContent = `${counts.accepted} accepted · ${counts.rejected} rejected · ${counts.revise} to revise · ${counts.pending} pending`;
   }
 
@@ -49,7 +50,7 @@
 
   function saveDraft() {
     try {
-      localStorage.setItem(storageKey, JSON.stringify(Object.fromEntries(reviews)));
+      localStorage.setItem(storageKey, JSON.stringify({ ...draft, ...Object.fromEntries(reviews) }));
       storageAvailable = true;
     } catch {
       storageAvailable = false;

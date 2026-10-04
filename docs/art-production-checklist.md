@@ -2,7 +2,7 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
-Last updated: 2026-10-04. Current stage: **original mood board approved; S09 selected for development, preferred S13/S17 textures recorded; camera/proportions rejected, alternative generator selection pending, and equipment board expanding to dated diverse European options**.
+Last updated: 2026-10-04. Current stage: **original mood board approved; S09 selected for development, preferred S13/S17 textures recorded; camera/proportions rejected, alternative generator selection pending, and a 34-reference dated European equipment board ready for selection**.
 
 ## Story and visual constraints
 
@@ -43,9 +43,9 @@ Success: a locally reviewable collection with individual removable images and pr
 - [x] Identify period differences and the user-approved greathelm exception; record source pages, credits, licenses, dimensions and hashes.
 - [x] Build the separate [equipment review gallery](../art/mood-board/equipment/index.html), overview, manifest and source inventory with individual decisions and commentary.
 - [x] Verify the initial 23-reference supplement’s controls, commentary, persistence, export and mobile layout in Chrome.
-- [ ] Expand to genuinely different European options from the 12th, 13th and 14th centuries, including non-greathelms, non-mail torso armor, boots, gloves, leggings, shields, polearms and daggers.
-- [ ] Give every active reference a source-supported year or year range; distinguish object/style date from photograph date and exclude 15th-century material.
-- [ ] Verify the expanded images, dates, provenance, links, decisions, commentary, export and mobile layout.
+- [x] Expand to 34 active, genuinely different European options from the 12th, 13th and 14th centuries, including non-greathelms, non-mail torso armor, boots, gloves, leggings, shields, polearms and daggers; retain 11 excluded entries as source history.
+- [x] Give every active reference a source-supported year or year range; distinguish object/style date from photograph date and exclude 15th-century material.
+- [x] Verify all 34 active images and 45 source/history records, dates, provenance, links, decisions, commentary, export and mobile layout; preserve excluded-row browser drafts.
 - [ ] **User selects dress and equipment references and approves the resulting direction before further cast concepts.**
 
 ## 2. Concept art — after mood board approval
@@ -61,12 +61,12 @@ Success: a locally reviewable collection with individual removable images and pr
 - [x] Preserve S07–S09 and record their initially rejected comparison; S07/S08 remain rejected.
 - [x] Produce S10–S12 as separate cutout, woodcut and stitched drawing systems; retain as unselected history.
 - [x] **User selects S09 for continued development**, by attaching that image and requesting its isometric camera redraw. This supersedes S09's earlier rejection only.
-- [x] Redraw only the attached character as S13, preserving style and equipment from the Diablo II gameplay camera.
-- [ ] Verify the updated texture checkpoint, manifests and generation records.
+- [x] Redraw only the attached character as S13 to explore the Diablo II gameplay camera; retain its preferred texture, record the unapproved camera.
+- [x] Verify the updated texture checkpoint, manifests and generation records.
 - [x] Generate S14 from scratch with no image inputs at a higher camera; record the request to reduce its angle.
-- [x] Generate S15 from scratch at the requested midpoint between S13 and S14; preserve both earlier camera studies as revisions.
+- [x] Generate S15 from scratch with the requested midpoint target between S13 and S14; record that the actual output did not resolve the view, preserve earlier studies as revisions.
 - [x] Record texture-only preference for S13/S17, camera failures and drift toward human proportions.
-- [x] Pause built-in generation and research [three current alternatives](image-model-alternatives.md), including capabilities, USD costs and access.
+- [x] Pause built-in generation and research [three current alternatives](image-model-alternatives.md): MAI-Image-2.6, Reve 2.1 and Grok Imagine Image 2.0; verify public availability, published capabilities, current Arena rankings and available USD pricing. MAI/Reve trial pricing remains to verify for the selected access route.
 - [ ] Select an alternative provider and verify its access.
 - [ ] Review a small camera/proportion pilot with the preferred texture.
 - [ ] **User approves the camera/proportion direction and selects dress/equipment references before the remaining concept batch.**
@@ -141,6 +141,8 @@ Success: the agreed first level is playable from entry to exit with accepted art
 | 2026-10-04 | Mood board approved and concept direction refined | User explicitly approved all current references; no saved row exceptions or additions. Latest direction is more cartoony than Diablo II, less cartoony than Hollow Knight; visual brief and initial eight concepts defined | Generate, inspect and present concept candidates |
 | 2026-10-04 | Character proportion correction | First C01/C02 sheets rejected as too grounded. User requests a cutesy feel, oversized heads and small bodies. Three new approaches S01–S03 generated, visually inspected and preserved with prompts, records, dimensions and hashes. Concept gallery verified in Chrome for review, reload persistence, export and mobile layout; approved mood-board state synchronized. Remaining batch is on hold | User selects the closest approach, then resume the concept batch in that structure |
 | 2026-10-04 | Camera review and generator checkpoint | S09 selected; S13/S17 textures preferred, camera and anatomy rejected. Built-in generation paused; three alternative providers researched. All 68 current references, manifests, hashes, source credits and Chrome review controls verified. Equipment expansion remains in progress | Select generator; review a camera/proportion pilot and expanded dated equipment board |
+| 2026-10-04 | Dated equipment selection ready | Expanded to 34 active European 12th–14th-century references with numeric dates, construction differences, gloves, legwear, footwear, shields, daggers, polearms and non-armored dress. Eleven earlier entries excluded with history retained. Source pixels, hashes, links, date evidence, Chrome controls, mobile layout and complete export verified; hidden-row comments survive | User selects equipment and image provider; camera/proportion pilot remains unapproved |
+| 2026-10-04 | Current alternative-model comparison | Current Arena snapshot and provider documentation supersede the initial shortlist with MAI-Image-2.6, Reve 2.1 and Grok Imagine Image 2.0. Public access verified; none tested on Guarin. Proposed first trial: MAI with a fresh geometry guide. Preferred texture and exaggerated proportions remain explicit requirements | User chooses provider; configure access and verify trial pricing before the camera/proportion pilot |
 | 2026-10-04 | Distinct art-style exploration | S01–S03 rejected for large eyes and nearly identical style. S04–S06 generated in flat ink, coarse pixel and dimensional sculpted media, all with full-face helmets and narrow visors; prior images preserved as rejected | Verify the updated gallery, then user selection of the closest new style |
 
 Review artifacts: [gallery](../art/mood-board/index.html), [overview](../art/mood-board/overview.jpg), [review manifest](../art/mood-board/manifest.md), [review instructions](../art/mood-board/README.md).
