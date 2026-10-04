@@ -1,0 +1,77 @@
+{
+  "identifier": "S34",
+  "approach": "Diablo II / Hollow Knight blend",
+  "version": "v04",
+  "image": "images/s34-guarin-blended-game-grok-v04.jpg",
+  "prompt": "prompts/s34-guarin-blended-game-grok-v04.txt",
+  "tool": "Grok CLI image_edit",
+  "model": "Exact Imagine model not exposed by CLI tool result",
+  "cli": "/Users/ocasta/.grok/bin/grok",
+  "cli_version": "1.0.46 (2765805b9442) [stable]",
+  "generation_date": "2026-10-04",
+  "input_mode": "single-image controlled finish or rendering transformation",
+  "reference_identifiers": [
+    "S33"
+  ],
+  "design_reference_identifiers": [
+    "S09",
+    "S13",
+    "S17",
+    "M20",
+    "M21",
+    "M22"
+  ],
+  "reference_inputs": [
+    {
+      "path": "images/s33-guarin-blended-game-grok-v03.jpg",
+      "sha256": "b3f917bdc7eb8f28894e27366e82ee36e49b217f8f7e818b8edf8c06efa82535"
+    }
+  ],
+  "reference_roles": "Geometry guide supplies a new projected composition; the lower-angle S22 costume reference was removed after S24/S25 failed. Later restyles preserve the corrected composition. Actual uploaded inputs are listed separately.",
+  "story_sources": [
+    "../../story/story-arch.md",
+    "../../story/characters.md"
+  ],
+  "regional_scope": "Royans/Isere story setting, 1101; broader European comparisons are not evidence of local adoption. Full-face greathelm is the explicit user exception. No new heraldry or body armor proposed.",
+  "status": "pending",
+  "user_notes": "",
+  "inspection_notes": [
+    "Painted matte material patches and colored edges combine clean shapes with grounded dark shading. Same costume and steep composition; unintended mail ornaments removed. Fine pixel density and final mail symbols remain review items."
+  ],
+  "desired_camera_degrees_above_ground": 45,
+  "guide_camera_degrees_above_ground": null,
+  "camera_limit": "Previous illustration appears near 30 degrees. The current trio appears around 40–45 degrees: visibly steeper, consistent with an approximate +15-degree target, not certified 3D geometry. Level circular crown assumed. A 60-degree proxy was needed to compensate for observed Grok flattening; the generated result does not use a certified 60-degree camera.",
+  "source_output": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-game-vibe-v02%2Fs34/01a10825-0802-70e0-b968-76d21683b3d0/images/1.jpg",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "sha256": "758a8e8a7afd24154fcc6a883e75fd7040cb68c6e496b9f6b6c21fe9ca62502c",
+  "format": "JPEG",
+  "tool_call_count": 1,
+  "attempts": [
+    {
+      "tool": "image_edit",
+      "tool_input": {
+        "prompt": "Remove ONLY the large round ornamental medallions/brooches attached to the mail shirt and sleeves. Replace their small areas with the surrounding plain dark mail pattern. The costume has plain ring mail, with no medallions or ceremonial jewelry. Preserve EVERY other detail: the exact painted game-art style, material textures, shading, all contours, steep camera, broad helmet crown ellipse, tiny body and short limbs, helmet and face rivets, visor, wine cloth, leather gloves/wraps/boots, sword, shield and background. Do not add anything or recompose the character. Only remove the round decorative ornaments from the shirt/sleeves.",
+        "image": [
+          "/Users/ocasta/Code/Dias Irae/art/concepts/images/s33-guarin-blended-game-grok-v03.jpg"
+        ],
+        "aspect_ratio": "1:1"
+      },
+      "tool_status": "completed",
+      "tool_output": {
+        "type": "ImageEdit",
+        "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-game-vibe-v02%2Fs34/01a10825-0802-70e0-b968-76d21683b3d0/images/1.jpg",
+        "filename": "1.jpg",
+        "session_folder": "images"
+      },
+      "session_id": "01a10825-0802-70e0-b968-76d21683b3d0",
+      "stop_reason": "end_turn",
+      "reported_orchestration_cost_usd": 0.00977772,
+      "orchestration_model": "grok-4.7-build"
+    }
+  ],
+  "reported_orchestration_cost_usd": 0.00977772,
+  "billing_limit": "CLI language-model orchestration usage only; separate image charges or subscription deductions are not exposed."
+}

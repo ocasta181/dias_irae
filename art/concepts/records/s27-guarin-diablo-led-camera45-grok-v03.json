@@ -1,0 +1,77 @@
+{
+  "identifier": "S27",
+  "approach": "Diablo II led",
+  "version": "v03",
+  "image": "images/s27-guarin-diablo-led-camera45-grok-v03.jpg",
+  "prompt": "prompts/s27-guarin-diablo-led-camera45-grok-v03.txt",
+  "tool": "Grok CLI image_edit",
+  "model": "Exact Imagine model not exposed by CLI tool result",
+  "cli": "/Users/ocasta/.grok/bin/grok",
+  "cli_version": "1.0.46 (2765805b9442) [stable]",
+  "generation_date": "2026-10-04",
+  "input_mode": "geometry-only redraw",
+  "reference_identifiers": [
+    "CAM45"
+  ],
+  "design_reference_identifiers": [
+    "S09",
+    "S13",
+    "S17",
+    "M20",
+    "M21",
+    "M22"
+  ],
+  "reference_inputs": [
+    {
+      "path": "references/camera-45/camera-45-guide.png",
+      "sha256": "b0ee4cf85152244e703fd478a7b00578fccc8b7e7f3a19fc89e4ab5a18b744c3"
+    }
+  ],
+  "reference_roles": "Geometry guide supplies a new projected composition; the lower-angle S22 costume reference was removed after S24/S25 failed. Later restyles preserve the corrected composition. Actual uploaded inputs are listed separately.",
+  "story_sources": [
+    "../../story/story-arch.md",
+    "../../story/characters.md"
+  ],
+  "regional_scope": "Royans/Isere story setting, 1101; broader European comparisons are not evidence of local adoption. Full-face greathelm is the explicit user exception. No new heraldry or body armor proposed.",
+  "status": "revise",
+  "user_notes": "",
+  "inspection_notes": [
+    "Internal revision: short geometry-only prompt produced a steeper view but the crown still suggested only about 35 degrees. Used to diagnose projection flattening; not the final candidate."
+  ],
+  "desired_camera_degrees_above_ground": 45,
+  "guide_camera_degrees_above_ground": 45,
+  "camera_limit": "Previous illustration appears near 30 degrees. The current trio appears around 40–45 degrees: visibly steeper, consistent with an approximate +15-degree target, not certified 3D geometry. Level circular crown assumed. A 60-degree proxy was needed to compensate for observed Grok flattening; the generated result does not use a certified 60-degree camera.",
+  "source_output": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-game-vibe-v02%2Fs27-camera45/01a1081b-fe1c-7513-aa0b-6c2a91c8c6a1/images/1.jpg",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "sha256": "43fa88eafbe48bd413893f9a0adf0b79c52496614349e46c0d4dcf3aaa8cd9d1",
+  "format": "JPEG",
+  "tool_call_count": 1,
+  "attempts": [
+    {
+      "tool": "image_edit",
+      "tool_input": {
+        "prompt": "Paint and texture this supplied geometric knight into a Diablo II inspired GAME SPRITE concept. PRESERVE THE EXACT INPUT SILHOUETTE AND ALL PROJECTED SHAPES. Especially preserve the helmet top ellipse, exactly as wide AND AS DEEP as the input, with the same top and bottom boundaries. The camera is a steep downward bird's eye view. The top of the helmet is a broad dominant oval, not a narrow lid. Do not change the perspective or recompose the picture. Preserve the helmet front's projected height, the tiny body and stubby limbs. No realistic adult anatomy. The knight is short, squat and cute, an enormous bucket helmet on a tiny chubby body. Dull worn iron, plain riveted vertical bands, dark slit without visible eyes, small breathing holes; ring mail; ragged wine-red scarf/cape and waist cloth; brown gloves, wraps and short boots; straight double edged sword with disk pommel and straight crossguard; wood kite shield with iron rim and narrow faded red panel. Add these costume details INSIDE the existing projected shapes. Broad muted light and shadow, restrained gritty material clusters, quiet dark background. An in-game pre-rendered raster character feel, not a comic book, no ink outlines or hatching. Do not flatten or shrink the helmet top oval. Do not lengthen limbs. No captions.",
+        "image": [
+          "/Users/ocasta/Code/Dias Irae/art/concepts/references/camera-45/camera-45-guide.png"
+        ],
+        "aspect_ratio": "1:1"
+      },
+      "tool_status": "completed",
+      "tool_output": {
+        "type": "ImageEdit",
+        "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-game-vibe-v02%2Fs27-camera45/01a1081b-fe1c-7513-aa0b-6c2a91c8c6a1/images/1.jpg",
+        "filename": "1.jpg",
+        "session_folder": "images"
+      },
+      "session_id": "01a1081b-fe1c-7513-aa0b-6c2a91c8c6a1",
+      "stop_reason": "end_turn",
+      "reported_orchestration_cost_usd": 0.0121006,
+      "orchestration_model": "grok-4.7-build"
+    }
+  ],
+  "reported_orchestration_cost_usd": 0.0121006,
+  "billing_limit": "CLI language-model orchestration usage only; separate image charges or subscription deductions are not exposed."
+}

@@ -97,6 +97,7 @@ def render(elevation):
     image.save(ROOT/f'camera-{elevation}-guide.png')
     return image
 before=render(30);after=render(45)
+render(60)
 canvas=Image.new('RGB',(2048,1100),(27,29,27));canvas.paste(before,(0,65));canvas.paste(after,(1024,65))
 draw=ImageDraw.Draw(canvas);font=ImageFont.truetype('/System/Library/Fonts/Supplemental/Arial.ttf',30)
 draw.text((25,18),'Geometry guide only: 30 degrees',fill=(223,220,207),font=font);draw.text((1049,18),'Same geometry: 45 degrees (+15)',fill=(223,220,207),font=font)

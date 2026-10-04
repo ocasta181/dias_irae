@@ -1,0 +1,77 @@
+{
+  "identifier": "S33",
+  "approach": "Diablo II / Hollow Knight blend",
+  "version": "v03",
+  "image": "images/s33-guarin-blended-game-grok-v03.jpg",
+  "prompt": "prompts/s33-guarin-blended-game-grok-v03.txt",
+  "tool": "Grok CLI image_edit",
+  "model": "Exact Imagine model not exposed by CLI tool result",
+  "cli": "/Users/ocasta/.grok/bin/grok",
+  "cli_version": "1.0.46 (2765805b9442) [stable]",
+  "generation_date": "2026-10-04",
+  "input_mode": "single-image controlled finish or rendering transformation",
+  "reference_identifiers": [
+    "S31"
+  ],
+  "design_reference_identifiers": [
+    "S09",
+    "S13",
+    "S17",
+    "M20",
+    "M21",
+    "M22"
+  ],
+  "reference_inputs": [
+    {
+      "path": "images/s31-guarin-hollow-knight-led-game-grok-v02.jpg",
+      "sha256": "cc2dfdc4921ac52f45a41805f15af890e4955e00093355afb28f70e591070eae"
+    }
+  ],
+  "reference_roles": "Geometry guide supplies a new projected composition; the lower-angle S22 costume reference was removed after S24/S25 failed. Later restyles preserve the corrected composition. Actual uploaded inputs are listed separately.",
+  "story_sources": [
+    "../../story/story-arch.md",
+    "../../story/characters.md"
+  ],
+  "regional_scope": "Royans/Isere story setting, 1101; broader European comparisons are not evidence of local adoption. Full-face greathelm is the explicit user exception. No new heraldry or body armor proposed.",
+  "status": "revise",
+  "user_notes": "",
+  "inspection_notes": [
+    "Internal revision: painted blend achieved a distinct surface finish but introduced round decorative medallions on the mail. S34 removes those unintended ornaments without redesigning the costume."
+  ],
+  "desired_camera_degrees_above_ground": 45,
+  "guide_camera_degrees_above_ground": null,
+  "camera_limit": "Previous illustration appears near 30 degrees. The current trio appears around 40–45 degrees: visibly steeper, consistent with an approximate +15-degree target, not certified 3D geometry. Level circular crown assumed. A 60-degree proxy was needed to compensate for observed Grok flattening; the generated result does not use a certified 60-degree camera.",
+  "source_output": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-game-vibe-v02%2Fs33/01a10823-d7b1-7dc0-9e03-81b42604787e/images/1.jpg",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "sha256": "b3f917bdc7eb8f28894e27366e82ee36e49b217f8f7e818b8edf8c06efa82535",
+  "format": "JPEG",
+  "tool_call_count": 1,
+  "attempts": [
+    {
+      "tool": "image_edit",
+      "tool_input": {
+        "prompt": "Render this exact 2D knight as a hand-painted ISOMETRIC GAME SPRITE blending Hollow Knight's clean graphic shapes with Diablo II's dark material weight. Keep every contour, costume part, color placement, pose, squat cute proportions and the steep view EXACTLY. The huge helmet crown keeps the SAME broad deep ellipse; never lower the view or lengthen the body. Within these shapes, replace linework with colored edges and economical painterly raster clusters. Shade dull iron, brown leather and wine cloth with broad matte color patches and soft deep occlusion; add sparse grouped scuff highlights, not photographic noise. Mail becomes a few clean ring symbols in coherent dark patches, never a dense zigzag pattern. Retain the 2D graphic readability and charm, with more grounded shaded material depth than the source: medium detail, clear values, dark muted palette. A readable playable dark-fantasy video-game character at small scale. No black comic ink, hatching, engraving, pencil marks, photo-realistic miniature, shiny plastic, coarse square mosaic, changed outfit, eyes, captions or panels. Preserve the plain iron crown, face strips, slit, breathing holes, scarf/cape, wraps, sword, shield and short boots.",
+        "image": [
+          "/Users/ocasta/Code/Dias Irae/art/concepts/images/s31-guarin-hollow-knight-led-game-grok-v02.jpg"
+        ],
+        "aspect_ratio": "1:1"
+      },
+      "tool_status": "completed",
+      "tool_output": {
+        "type": "ImageEdit",
+        "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-game-vibe-v02%2Fs33/01a10823-d7b1-7dc0-9e03-81b42604787e/images/1.jpg",
+        "filename": "1.jpg",
+        "session_folder": "images"
+      },
+      "session_id": "01a10823-d7b1-7dc0-9e03-81b42604787e",
+      "stop_reason": "end_turn",
+      "reported_orchestration_cost_usd": 0.0107814,
+      "orchestration_model": "grok-4.7-build"
+    }
+  ],
+  "reported_orchestration_cost_usd": 0.0107814,
+  "billing_limit": "CLI language-model orchestration usage only; separate image charges or subscription deductions are not exposed."
+}

@@ -1,0 +1,77 @@
+{
+  "identifier": "S26",
+  "approach": "Diablo II led",
+  "version": "v02",
+  "image": "images/s26-guarin-diablo-led-camera45-grok-v02.jpg",
+  "prompt": "prompts/s26-guarin-diablo-led-camera45-grok-v02.txt",
+  "tool": "Grok CLI image_edit",
+  "model": "Exact Imagine model not exposed by CLI tool result",
+  "cli": "/Users/ocasta/.grok/bin/grok",
+  "cli_version": "1.0.46 (2765805b9442) [stable]",
+  "generation_date": "2026-10-04",
+  "input_mode": "geometry-only redraw",
+  "reference_identifiers": [
+    "CAM45"
+  ],
+  "design_reference_identifiers": [
+    "S09",
+    "S13",
+    "S17",
+    "M20",
+    "M21",
+    "M22"
+  ],
+  "reference_inputs": [
+    {
+      "path": "references/camera-45/camera-45-guide.png",
+      "sha256": "b0ee4cf85152244e703fd478a7b00578fccc8b7e7f3a19fc89e4ab5a18b744c3"
+    }
+  ],
+  "reference_roles": "Geometry guide supplies a new projected composition; the lower-angle S22 costume reference was removed after S24/S25 failed. Later restyles preserve the corrected composition. Actual uploaded inputs are listed separately.",
+  "story_sources": [
+    "../../story/story-arch.md",
+    "../../story/characters.md"
+  ],
+  "regional_scope": "Royans/Isere story setting, 1101; broader European comparisons are not evidence of local adoption. Full-face greathelm is the explicit user exception. No new heraldry or body armor proposed.",
+  "status": "revise",
+  "user_notes": "",
+  "inspection_notes": [
+    "Internal revision: geometry-only redraw still flattened the crown and exposed a taller body. The 45-degree guide did not certify the generated projection. Superseded."
+  ],
+  "desired_camera_degrees_above_ground": 45,
+  "guide_camera_degrees_above_ground": 45,
+  "camera_limit": "Previous illustration appears near 30 degrees. The current trio appears around 40–45 degrees: visibly steeper, consistent with an approximate +15-degree target, not certified 3D geometry. Level circular crown assumed. A 60-degree proxy was needed to compensate for observed Grok flattening; the generated result does not use a certified 60-degree camera.",
+  "source_output": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-game-vibe-v02%2Fs26-camera45/01a1081a-80ee-7132-acd9-7c2dcf685f1f/images/1.jpg",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "sha256": "e9c8335ee507020eb8cbd46bd3677dca3febfc32d5fec89a591cae490504ce18",
+  "format": "JPEG",
+  "tool_call_count": 1,
+  "attempts": [
+    {
+      "tool": "image_edit",
+      "tool_input": {
+        "prompt": "Completely finish and redraw this NEW 45-degree orthographic character composition as high quality dark fantasy game art. The single input is a NEW 3D geometry guide, NOT a previous concept illustration. It is the ONLY authority for camera, silhouette and pose. Retain its steep view looking downward at the standing character, facing diagonally lower-right. Keep the exact projected outline and ellipse of the HUGE helmet crown: its flat circular top stays horizontal, its barrel axis is vertical, and the visible top is a DEEP ellipse with minor/major ratio 0.707 at 45 degrees above the ground. The top cap must not shrink back into a shallow ellipse. Never lower the camera, tilt the helmet, extend the torso or lengthen the legs. Use the high-angle view to occlude the shoulders and compress the body, as in the guide. Replace rough proxy blocks with worn costume, rounded shapes, beautifully lit materials and subtle game texture; do not preserve the crude box forms, blank undecorated metal or missing small costume parts. This is a new composition, not a retouch of a lower-angle character.\nKeep the existing SAME COSTUME: full-face dull iron cylindrical greathelm with flat top, two plain vertical riveted strips, narrow BLACK visor slit and small round breathing holes; NO visible eyes, skin or face; RING-mail shirt and sleeves, ragged dark wine-red scarf/short cape and waist cloth, brown belt with a plain rectangular buckle, brown gloves, taupe/brown forearm and shin wraps, short rounded brown boots. Sword in the viewer-left hand points down diagonally across the front toward the lower-right: disk pommel, straight crossguard, centered point and a rigidly straight double-edged blade. Wooden elongated kite shield on the viewer-right, dull iron rim and one narrow faded wine-red panel. Keep these items and their colors identical in all directions. The head is huge, with a tiny broad body, very short stubby limbs and wide little feet: about 2.2 helmet/head heights overall, SHORT AND SQUAT, cute, stocky and cartoony, never realistic adult anatomy or a tall slim knight. Preserve the sense of a weary adult beneath this lovable shape. The setting is the Royans/Isere lands in the 1101 story; the greathelm is the explicit user-approved exception. Do not add foreign royal ornament, emblems, plate body armor, scale cuirasses, new garments or different weapons.\nThe pose, enormous helmet, tiny torso, tiny legs, boots, sword and shield silhouettes follow the guide exactly, including the steep top view. Restore the ragged wine-red scarf, cape and waist cloth; ring-mail patches; front-face rivet strips and breathing holes; hand grip and sword guard; shield front with a narrow muted red panel. The back of the guide's shield is unfinished, so render the familiar wooden kite shield seen obliquely. Render a single playable VIDEO GAME CHARACTER with economical material grouping, readable at gameplay scale, no thick comic outlines, hatching, engraving, ink-page framing, captions or logos. Dark charcoal background and one quiet ground shadow. No realism in anatomy. The large helmet and short limbs must remain cute, compact and squat.\n\nA — DIABLO II LED GAME RENDERING: Make the underlying rendering feel like a carefully lit, pre-rendered dark action-RPG character sprite from Diablo II, adapted into this VERY CUTE SHORT SQUAT silhouette. Build sculptural iron and leather from restrained shaded planes, broad low-key highlights and deep occlusion, with gritty but economical material color clusters and fine raster-like edges. Rich dimensional material weight and atmospheric shadow, not line-art fills or comic ink. A dark muted game-sprite finish with compact chunky toy-like anatomy but worn matte real materials: no shiny plastic toy, no heroic realistic proportions, no painterly illustration wash. DII governs shading, material grouping and restrained gritty texture ONLY; the enormous full-face greathelm and short stubby body remain cute and cartoony. Retain the guide's 45-degree elevated view.",
+        "image": [
+          "/Users/ocasta/Code/Dias Irae/art/concepts/references/camera-45/camera-45-guide.png"
+        ],
+        "aspect_ratio": "1:1"
+      },
+      "tool_status": "completed",
+      "tool_output": {
+        "type": "ImageEdit",
+        "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-game-vibe-v02%2Fs26-camera45/01a1081a-80ee-7132-acd9-7c2dcf685f1f/images/1.jpg",
+        "filename": "1.jpg",
+        "session_folder": "images"
+      },
+      "session_id": "01a1081a-80ee-7132-acd9-7c2dcf685f1f",
+      "stop_reason": "end_turn",
+      "reported_orchestration_cost_usd": 0.01410932,
+      "orchestration_model": "grok-4.7-build"
+    }
+  ],
+  "reported_orchestration_cost_usd": 0.01410932,
+  "billing_limit": "CLI language-model orchestration usage only; separate image charges or subscription deductions are not exposed."
+}

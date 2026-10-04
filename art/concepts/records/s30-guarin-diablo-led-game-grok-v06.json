@@ -1,0 +1,77 @@
+{
+  "identifier": "S30",
+  "approach": "Diablo II led",
+  "version": "v06",
+  "image": "images/s30-guarin-diablo-led-game-grok-v06.jpg",
+  "prompt": "prompts/s30-guarin-diablo-led-game-grok-v06.txt",
+  "tool": "Grok CLI image_edit",
+  "model": "Exact Imagine model not exposed by CLI tool result",
+  "cli": "/Users/ocasta/.grok/bin/grok",
+  "cli_version": "1.0.46 (2765805b9442) [stable]",
+  "generation_date": "2026-10-04",
+  "input_mode": "single-image controlled finish or rendering transformation",
+  "reference_identifiers": [
+    "S28"
+  ],
+  "design_reference_identifiers": [
+    "S09",
+    "S13",
+    "S17",
+    "M20",
+    "M21",
+    "M22"
+  ],
+  "reference_inputs": [
+    {
+      "path": "images/s28-guarin-diablo-led-camera45-grok-v04.jpg",
+      "sha256": "e53c675df15d08c051428ad1f84c744ffa311d9cd9bf6b01427b10bab51b50df"
+    }
+  ],
+  "reference_roles": "Geometry guide supplies a new projected composition; the lower-angle S22 costume reference was removed after S24/S25 failed. Later restyles preserve the corrected composition. Actual uploaded inputs are listed separately.",
+  "story_sources": [
+    "../../story/story-arch.md",
+    "../../story/characters.md"
+  ],
+  "regional_scope": "Royans/Isere story setting, 1101; broader European comparisons are not evidence of local adoption. Full-face greathelm is the explicit user exception. No new heraldry or body armor proposed.",
+  "status": "pending",
+  "user_notes": "",
+  "inspection_notes": [
+    "Dimensional, low-key iron, leather and cloth with a Diablo II-led pre-rendered game feel. Plain crown restored. Huge helmet, tiny torso and short limbs remain exaggerated; mail is still detailed at concept scale."
+  ],
+  "desired_camera_degrees_above_ground": 45,
+  "guide_camera_degrees_above_ground": null,
+  "camera_limit": "Previous illustration appears near 30 degrees. The current trio appears around 40–45 degrees: visibly steeper, consistent with an approximate +15-degree target, not certified 3D geometry. Level circular crown assumed. A 60-degree proxy was needed to compensate for observed Grok flattening; the generated result does not use a certified 60-degree camera.",
+  "source_output": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-game-vibe-v02%2Fs30-finish/01a10820-6974-7610-bdfe-c6644209311a/images/1.jpg",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "sha256": "2f6f0f9405e2d85a88092ae2ced0add47a6f7aa0550c27f2728437bbf4af4608",
+  "format": "JPEG",
+  "tool_call_count": 1,
+  "attempts": [
+    {
+      "tool": "image_edit",
+      "tool_input": {
+        "prompt": "Remove ONLY the diagonal strap and its rivets from the TOP CROWN of this knight's helmet. Fill that narrow strip with the same worn iron texture as the surrounding crown. The crown remains a flat iron circle seen as this same deep oval. Preserve the existing gritty surface texture, sculptural lighting, shading, camera and EVERY character, equipment and background detail elsewhere. Keep both vertical face rivet strips. Do not redraw the whole knight, simplify surfaces, smooth textures, remove mail rings, change proportions or alter the perspective. Only remove the strap crossing the top cap.",
+        "image": [
+          "/Users/ocasta/Code/Dias Irae/art/concepts/images/s28-guarin-diablo-led-camera45-grok-v04.jpg"
+        ],
+        "aspect_ratio": "1:1"
+      },
+      "tool_status": "completed",
+      "tool_output": {
+        "type": "ImageEdit",
+        "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-game-vibe-v02%2Fs30-finish/01a10820-6974-7610-bdfe-c6644209311a/images/1.jpg",
+        "filename": "1.jpg",
+        "session_folder": "images"
+      },
+      "session_id": "01a10820-6974-7610-bdfe-c6644209311a",
+      "stop_reason": "end_turn",
+      "reported_orchestration_cost_usd": 0.00806548,
+      "orchestration_model": "grok-4.7-build"
+    }
+  ],
+  "reported_orchestration_cost_usd": 0.00806548,
+  "billing_limit": "CLI language-model orchestration usage only; separate image charges or subscription deductions are not exposed."
+}

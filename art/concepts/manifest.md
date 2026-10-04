@@ -1,22 +1,45 @@
 # Concept art review manifest
 
-Current checkpoint: **three Grok rendering directions for Guarin, with the same costume and pose.** The original mood board and equipment board are approved. Cultural and geographic precision remains required; see [the visual brief](visual-brief.md). No new character concept is approved yet.
+Current checkpoint: **three Grok game-art directions for Guarin at a visibly steeper view.** A follows Diablo II's dimensional material rendering, B follows Hollow Knight's cleaner graphic shapes, and C blends painted shapes with grounded shading. The costume, oversized greathelm, tiny body and stubby limbs remain common. Equipment and the original mood board remain approved with cultural and geographic limits.
 
-S09 remains the selected original character direction; S13/S17 supply preferred texture history. S18 is a fresh text-only Grok drawing of that costume. S22 and S23 are Grok `image_edit` restyles of S18 so the current comparison changes the drawing language while retaining costume, proportions, pose and camera. These are rendering transformations, not fresh camera redraws. All source images remain unchanged. Earlier independent Grok attempts are retained below with internal revision notes.
+The user preferred the previous A/B to C but requested less comic-book illustration, more video-game character art and a camera 15 degrees steeper. S18/S22/S23 now carry those revision notes. No current character concept is accepted yet.
 
-Keep the oversized full-face greathelm, tiny body and short limbs. The common costume is plain ring mail, wine-red scarf/cape and waist cloth, brown belt/gloves/wraps/short boots, straight sword and wooden kite shield with a narrow wine-red panel. Broader European references do not establish local costume for every role. The greathelm remains the explicit anachronism.
+**Camera: about 30 degrees before; about 40–45 degrees now, with a 45-degree target.** These are illustration estimates, not calibrated camera values. The crown is visibly deeper and the body more foreshortened. Assuming an upright cylinder with a level circular crown, its ellipse suggests the approximate range. Do not claim an exact 15-degree change from a numeric prompt alone. The [geometry guide and projection notes](references/camera-45/README.md) record the fixed 30-to-45-degree comparison and the supplemental 60-degree input used to compensate for Grok's repeated flattening.
 
-**Camera remains unapproved.** The fresh base requested 40 degrees above the ground; its crown is shallower. A rough estimate near 30 degrees assumes a level circular crown and cannot certify the illustration. The two current restyles hold that view for a fair rendering comparison. Pixel density and sprite treatment are also unapproved.
+S30 supplies the corrected costume and view. S31 is a rendering restyle of S30; S34 finishes a painted blend derived from S31. The new composition began with a freshly generated geometry proxy, rather than the prior low-angle concept. Later restyles intentionally preserve that composition. All Grok source pixels are saved unchanged. Internal failures and detail corrections are retained below, without implying user rejection.
 
-Review [the gallery](index.html?v=5), with reversible decisions and commentary, or [the three-way overview](comparison-grok-v01.jpg). Download the manifest to share selections. Export preserves planned rows and earlier decisions. The installed Grok CLI generated the images; its tool results do not expose an exact Imagine model identifier. The S20 capacity error and retry are recorded.
+Keep plain mail, ragged wine-red cloth, brown belt/gloves/wraps/short boots, the straight sword and wooden kite shield with a narrow red panel. The greathelm remains the explicit anachronism for the 1101 Royans/Isère story; broader European references are comparisons, not automatic local costume evidence. Exact sprite pixel density and projection still await review.
 
-## Current Grok comparison — choose the drawing language
+Review [the gallery](index.html?v=6#current-styles), with individual decisions and commentary, or [the three-way overview](comparison-grok-game-v02.jpg). Download the manifest to share selections. Export preserves planned rows and earlier notes. The installed Grok CLI generated the art; its results do not expose an exact Imagine model identifier.
+
+## Current game-art comparison — review style and camera
 
 | Identifier | Candidate | Purpose | Image | Status | Notes |
 |---|---|---|---|---|---|
-| S18 | A — Graphic ink and cel shadows | Same-costume rendering comparison | [S18](images/s18-guarin-graphic-ink-grok-v01.jpg) | pending |  |
-| S22 | B — Dry gouache | Same-costume rendering comparison | [S22](images/s22-guarin-dry-gouache-grok-v02.jpg) | pending |  |
-| S23 | C — Tinted charcoal and etched hatching | Same-costume rendering comparison | [S23](images/s23-guarin-charcoal-etching-grok-v03.jpg) | pending |  |
+| S30 | A — Diablo II led | Steeper view and game rendering | [S30](images/s30-guarin-diablo-led-game-grok-v06.jpg) | pending |  |
+| S31 | B — Hollow Knight led | Steeper view and game rendering | [S31](images/s31-guarin-hollow-knight-led-game-grok-v02.jpg) | pending |  |
+| S34 | C — Blended inspiration | Steeper view and game rendering | [S34](images/s34-guarin-blended-game-grok-v04.jpg) | pending |  |
+
+## Camera and finish attempts — internal revision history
+
+| Identifier | Candidate | Purpose | Image | Status | Notes |
+|---|---|---|---|---|---|
+| S24 | Diablo II led | Steeper view and game rendering | [S24](images/s24-guarin-diablo-led-grok-v01.jpg) | revise | Internal revision: two-reference Grok redraw kept the lower-angle costume image despite the 45-degree geometry guide. Material rendering improved, camera did not. Not offered as a corrected-angle candidate. |
+| S25 | Hollow Knight led | Steeper view and game rendering | [S25](images/s25-guarin-hollow-knight-led-grok-v01.jpg) | revise | Internal revision: two-reference Grok restyle kept the lower-angle costume image despite the 45-degree guide. Flatter rendering did not resolve the camera. Not offered as a corrected-angle candidate. |
+| S26 | Diablo II led | Steeper view and game rendering | [S26](images/s26-guarin-diablo-led-camera45-grok-v02.jpg) | revise | Internal revision: geometry-only redraw still flattened the crown and exposed a taller body. The 45-degree guide did not certify the generated projection. Superseded. |
+| S27 | Diablo II led | Steeper view and game rendering | [S27](images/s27-guarin-diablo-led-camera45-grok-v03.jpg) | revise | Internal revision: short geometry-only prompt produced a steeper view but the crown still suggested only about 35 degrees. Used to diagnose projection flattening; not the final candidate. |
+| S28 | Diablo II led | Steeper view and game rendering | [S28](images/s28-guarin-diablo-led-camera45-grok-v04.jpg) | revise | Internal revision: a supplemental 60-degree proxy compensated for Grok flattening and produced a visibly steeper view near the 45-degree target. An unwanted crown strap required removal. Preserved as the new composition source. |
+| S29 | Diablo II led | Steeper view and game rendering | [S29](images/s29-guarin-diablo-led-game-grok-v05.jpg) | revise | Internal revision: removing the crown strap with broad game-finishing instructions also over-smoothed the material texture. S30 retains the preferred dimensional finish with a focused correction. |
+| S32 | Diablo II / Hollow Knight blend | Steeper view and game rendering | [S32](images/s32-guarin-blended-game-grok-v02.jpg) | revise | Internal revision: first blended restyle remained too close to the dimensional Diablo II candidate. Superseded by a painted blend derived from the cleaner Hollow Knight-led view. |
+| S33 | Diablo II / Hollow Knight blend | Steeper view and game rendering | [S33](images/s33-guarin-blended-game-grok-v03.jpg) | revise | Internal revision: painted blend achieved a distinct surface finish but introduced round decorative medallions on the mail. S34 removes those unintended ornaments without redesigning the costume. |
+
+## Previous ink, gouache and charcoal comparison — revision requested
+
+| Identifier | Candidate | Purpose | Image | Status | Notes |
+|---|---|---|---|---|---|
+| S18 | A — Graphic ink and cel shadows | Same-costume rendering comparison | [S18](images/s18-guarin-graphic-ink-grok-v01.jpg) | revise | User prefers previous A/B to C, but both read too much as comic-book illustration. Steepen the view by 15 degrees and compare Diablo II-led, Hollow Knight-led and blended game rendering. Keep the cute squat proportions and fixed costume. Revision requested; no full concept approval. |
+| S22 | B — Dry gouache | Same-costume rendering comparison | [S22](images/s22-guarin-dry-gouache-grok-v02.jpg) | revise | User prefers previous A/B to C, but both read too much as comic-book illustration. Steepen the view by 15 degrees and compare Diablo II-led, Hollow Knight-led and blended game rendering. Keep the cute squat proportions and fixed costume. Revision requested; no full concept approval. |
+| S23 | C — Tinted charcoal and etched hatching | Same-costume rendering comparison | [S23](images/s23-guarin-charcoal-etching-grok-v03.jpg) | revise | User prefers previous A/B to this C. Replace the illustration-medium comparison with Diablo II-led, Hollow Knight-led and blended game rendering, at a view 15 degrees steeper. Revision requested; no explicit rejection of this individual image is implied. |
 
 ## Earlier Grok fresh-drawing attempts — internal revisions
 
@@ -83,4 +106,4 @@ Review [the gallery](index.html?v=5), with reversible decisions and commentary, 
 | C07 | Undercroft encounter | Low vaults, stores and readable encounter space | — | planned | Match exterior and church materials. |
 | C08 | Evidence and ritual objects | Grain, sclerotia, wheat host, splinter and keys | — | planned | Concept studies do not imply every object becomes a pickup. |
 
-Progress source of truth: [art-production-checklist.md](../../docs/art-production-checklist.md). [Visual brief](visual-brief.md). Review the current Grok rendering comparison and camera/proportions before further cast concepts; define each asset category before sprite production.
+Progress source of truth: [art-production-checklist.md](../../docs/art-production-checklist.md). [Visual brief](visual-brief.md). Review the current game-art comparison and camera/proportions before further cast concepts; define each asset category before sprite production.
