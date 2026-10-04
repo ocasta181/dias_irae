@@ -1,0 +1,26 @@
+{
+  "identifier": "S16",
+  "approach": "Guarin — camera correction study, revision required",
+  "version": "v05",
+  "image": "images/s16-guarin-camera-plus15-v05.png",
+  "prompt": "prompts/s16-guarin-camera-plus15-v05.txt",
+  "tool": "image_gen.imagegen (built-in)",
+  "model": "not exposed by tool",
+  "generation_date": "2026-10-04",
+  "reference_identifiers": [],
+  "reference_roles": "Text brief only; no image inputs. Generated from scratch.",
+  "status": "revise",
+  "user_notes": "Camera undershot: crown-based approximate estimate 34 degrees above ground, not the requested approximate 40. Further correction attempted.",
+  "inspection_notes": [
+    "Camera undershot: crown-based approximate estimate 34 degrees above ground, not the requested approximate 40. Further correction attempted.",
+    "Full-face greathelm, mail, wine cloth, shield and straight sword retained. Camera change and exaggerated proportions are not approved.",
+    "Prompt camera values are requests, not certified geometry. The helmet ellipse can only give a rough estimate assuming a horizontal circular crown; tilt and stylization introduce error."
+  ],
+  "requested_nominal_camera_degrees_above_ground": 40,
+  "source_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-6112ce81-fb1d-473c-bf50-8db0f567096b.png",
+  "dimensions": [
+    1199,
+    1312
+  ],
+  "sha256": "efa33cccda392001367164c3154300b4e7edb3402abcf4f8fd8216fbdb41a0e2"
+}

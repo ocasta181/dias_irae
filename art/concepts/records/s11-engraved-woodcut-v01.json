@@ -1,0 +1,43 @@
+{
+  "identifier": "S11",
+  "approach": "B — Engraved woodcut",
+  "version": "v01",
+  "image": "images/s11-engraved-woodcut-v01.png",
+  "prompt": "prompts/s11-engraved-woodcut-v01.txt",
+  "tool": "image_gen.imagegen (built-in)",
+  "model": "not exposed by tool",
+  "generation_date": "2026-10-04",
+  "reference_identifiers": [
+    "E01"
+  ],
+  "reference_roles": "E01 greathelm geometry only; no previous generated image used as a style input. Approved original mood board governs proportions, story palette and atmosphere through prompt.",
+  "generation_reference_paths": [
+    "/tmp/dias-greathelm.jpg"
+  ],
+  "durable_helmet_reference": "../mood-board/equipment/images/e01-flat-barrel.jpg",
+  "story_sources": [
+    "../../story/characters.md"
+  ],
+  "user_overrides": [
+    "Full-face greathelm, including anachronism, requested by user.",
+    "Cute large head, little body; no visible large eyes.",
+    "Darker than S04; softer/finer edges than coarse S05; straight sword.",
+    "Three genuinely different construction/rendering systems required."
+  ],
+  "status": "pending",
+  "user_notes": "",
+  "inspection_notes": [
+    "Carved line rhythms and hatching construct form; muted ash/charcoal with dried-wine accent.",
+    "Full face enclosed by barrel-shaped flat-crown helm; narrow black visor without visible eyes.",
+    "Large head and compact body retained; no curved blade observed.",
+    "Rendering-direction study. Production pixel grid, palette, texture simplification, sword alignment across views and animation remain unvalidated."
+  ],
+  "source_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-684447b2-74cb-4b7f-8572-7efabec24c70.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "sha256": "5be4e4cffd50adb33f7f79e20c85c04e6994c984c286ca2b0d47b9a862f61bb4",
+  "durable_helmet_input": "references/e01-greathelm-input.jpg",
+  "durable_helmet_input_sha256": "b4f2f99b5a26a42512599673e57f77c4f36458b3c32a96d4fc72971e3577b576"
+}

@@ -2,7 +2,7 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
-Last updated: 2026-10-04. Current stage: **mood board approved; three contrasting art styles S04–S06 awaiting the user's selection**.
+Last updated: 2026-10-04. Current stage: **original mood board approved; S09 selected for development, preferred S13/S17 textures recorded; camera/proportions rejected, alternative generator selection pending, and equipment board expanding to dated diverse European options**.
 
 ## Story and visual constraints
 
@@ -10,12 +10,12 @@ Source material: [story spine](../story/story-arch.md), [characters](../story/ch
 
 - Late summer 1101; rural homecoming, diseased harvest, household grief, sacramental horror.
 - Romanesque buildings: thick walls, small windows, round arches, barrel vaults, limewash, painted apses. No later Gothic architecture by default.
-- Mail hauberks, kite shields, arming swords, worn wool and linen. No plate body armor. User-directed exception for Guarin: a full-face helm with narrow visor openings replaces the earlier open nasal-helm constraint.
+- Mail hauberks, kite shields, arming swords, worn wool and linen. No plate body armor. User-directed exception for Guarin: a full-face greathelm with narrow visor openings (anachronism explicitly allowed) replaces the earlier open nasal-helm constraint.
 - Story palette: rye gold, charcoal, limewash, Antonine black and taupe, dried-blood wine, pig-fat yellow, bone white, dull iron.
 - Isenheim supplies emotional intensity, diseased flesh, sacred light and monstrous forms. Its later date does not make its architecture or clothing period references.
 - Act I begins with recognizable parishioners and wolves. Later locusts and overt demons must not replace that opening escalation.
 - First level is provisionally the Act I homecoming through Rivoire and Raimon's undercroft. Confirm the playable extent before implementation.
-- Latest rendering clarification: dark and pixelated/cartoon, cutesy large-head/small-body structure, smaller eyes, and genuinely distinct art styles. Compare flat ink, chunky pixel minimalism and sculpted pixel toy. Diablo II remains relevant to composition, materials, environment detail and lighting. Realistic anatomy and the previous three overly similar styles were rejected.
+- Latest rendering clarification: dark and pixelated/cartoon, cutesy large-head/small-body structure, smaller eyes, and genuinely distinct art styles. S09 is now selected for development; S13/S17 textures are preferred, but later camera studies and proportion drift were rejected. Built-in generation is paused while selecting another provider. Diablo II remains relevant to composition, materials, environment detail and lighting. Realistic anatomy and the previous three overly similar styles were rejected.
 - Exact pixel density, edge treatment, camera angle, animation directions and frame counts remain open for review and the sprite pilot.
 
 ## 1. Mood board
@@ -36,6 +36,18 @@ Source material: [story spine](../story/story-arch.md), [characters](../story/ch
 
 Success: a locally reviewable collection with individual removable images and provenance, followed by explicit approval of the revised board.
 
+### Dress and equipment supplement — separate selection gate
+
+- [x] Curate 23 internet references for greathelms, armor, weapons, shields, clergy, townspeople and nobles.
+- [x] Inspect each reference and distinguish actual objects, reconstructions, a historical sculpture and a garment detail.
+- [x] Identify period differences and the user-approved greathelm exception; record source pages, credits, licenses, dimensions and hashes.
+- [x] Build the separate [equipment review gallery](../art/mood-board/equipment/index.html), overview, manifest and source inventory with individual decisions and commentary.
+- [x] Verify the initial 23-reference supplement’s controls, commentary, persistence, export and mobile layout in Chrome.
+- [ ] Expand to genuinely different European options from the 12th, 13th and 14th centuries, including non-greathelms, non-mail torso armor, boots, gloves, leggings, shields, polearms and daggers.
+- [ ] Give every active reference a source-supported year or year range; distinguish object/style date from photograph date and exclude 15th-century material.
+- [ ] Verify the expanded images, dates, provenance, links, decisions, commentary, export and mobile layout.
+- [ ] **User selects dress and equipment references and approves the resulting direction before further cast concepts.**
+
 ## 2. Concept art — after mood board approval
 
 - [x] Identify the available generation tool and document how references will be used.
@@ -46,7 +58,18 @@ Success: a locally reviewable collection with individual removable images and pr
 - [x] Build and verify the comparison gallery with reversible decisions, commentary, browser drafts and manifest export; preserve the ungenerated planned rows during export.
 - [x] Record the rejection of S01–S03: eyes too big and styles too similar; preserve the images as rejected history.
 - [x] Generate and inspect three contrasting rendering styles S04–S06 with the required full-face helm and narrow visor.
-- [ ] **User selects the closest new style from S04–S06.**
+- [x] Preserve S07–S09 and record their initially rejected comparison; S07/S08 remain rejected.
+- [x] Produce S10–S12 as separate cutout, woodcut and stitched drawing systems; retain as unselected history.
+- [x] **User selects S09 for continued development**, by attaching that image and requesting its isometric camera redraw. This supersedes S09's earlier rejection only.
+- [x] Redraw only the attached character as S13, preserving style and equipment from the Diablo II gameplay camera.
+- [ ] Verify the updated texture checkpoint, manifests and generation records.
+- [x] Generate S14 from scratch with no image inputs at a higher camera; record the request to reduce its angle.
+- [x] Generate S15 from scratch at the requested midpoint between S13 and S14; preserve both earlier camera studies as revisions.
+- [x] Record texture-only preference for S13/S17, camera failures and drift toward human proportions.
+- [x] Pause built-in generation and research [three current alternatives](image-model-alternatives.md), including capabilities, USD costs and access.
+- [ ] Select an alternative provider and verify its access.
+- [ ] Review a small camera/proportion pilot with the preferred texture.
+- [ ] **User approves the camera/proportion direction and selects dress/equipment references before the remaining concept batch.**
 - [ ] Generate story-aligned concept candidates, using the approved mood board as references.
 - [ ] Save every candidate locally, alongside its exact prompt, reference identifiers, tool, version and review status.
 - [ ] Inspect period equipment, character identity, story motifs, silhouette and camera consistency.
@@ -74,7 +97,7 @@ Candidate first-level scope to refine:
 | Category | Story candidates | States/actions to decide |
 |---|---|---|
 | Characters | Guarin; Almodis; Odo; Giraud; Agnes; blighted parishioners; wolves; Raimon | Guarin idle/walk/sword attacks/block/hurt/death/interact; people idle/talk; enemies movement/tells/attack/hurt/death; Raimon's borrowed gait and boss tells |
-| Items | Sword, kite shield, full-face helm for Guarin, mail, wrapped splinter, rye head, sclerotia, household keys, reserved wheat host | Equipped and held views; icons and pickups where needed; wrapped/exposed splinter; intact/smashed sclerotia; ordinary/blighted grain; host reserved/encountered |
+| Items | Sword, kite shield, greathelm for Guarin, mail, wrapped splinter, rye head, sclerotia, household keys, reserved wheat host | Equipped and held views; icons and pickups where needed; wrapped/exposed splinter; intact/smashed sclerotia; ordinary/blighted grain; host reserved/encountered |
 | Environments | Arrival terraces, village, burned mill, church and yard, castrum hall, paddock, undercroft | Paths and limestone; rye; limewash and slab roofs; doors/shutters; mill wheel and debris; altar/crucifix/aumbry; graves; hearth, barrels, mummified apples; wall cutaways |
 
 Do not invent pickups or state machines merely to fill a sheet. The story's altar encounter and inventory presentation may require different art for the same object.
@@ -117,11 +140,12 @@ Success: the agreed first level is playable from entry to exit with accepted art
 | 2026-10-04 | Interactive HTML review and reference correction | All 26 cards support reversible decisions and written commentary. Chrome verified reload persistence, complete manifest export, preserved credits, mobile layout and export with browser storage disabled. Diablo II and Darkwood are visible; Diablo II's broader supporting influence is restored | User reviews in the gallery, saves the downloaded manifest and explicitly approves the board |
 | 2026-10-04 | Mood board approved and concept direction refined | User explicitly approved all current references; no saved row exceptions or additions. Latest direction is more cartoony than Diablo II, less cartoony than Hollow Knight; visual brief and initial eight concepts defined | Generate, inspect and present concept candidates |
 | 2026-10-04 | Character proportion correction | First C01/C02 sheets rejected as too grounded. User requests a cutesy feel, oversized heads and small bodies. Three new approaches S01–S03 generated, visually inspected and preserved with prompts, records, dimensions and hashes. Concept gallery verified in Chrome for review, reload persistence, export and mobile layout; approved mood-board state synchronized. Remaining batch is on hold | User selects the closest approach, then resume the concept batch in that structure |
+| 2026-10-04 | Camera review and generator checkpoint | S09 selected; S13/S17 textures preferred, camera and anatomy rejected. Built-in generation paused; three alternative providers researched. All 68 current references, manifests, hashes, source credits and Chrome review controls verified. Equipment expansion remains in progress | Select generator; review a camera/proportion pilot and expanded dated equipment board |
 | 2026-10-04 | Distinct art-style exploration | S01–S03 rejected for large eyes and nearly identical style. S04–S06 generated in flat ink, coarse pixel and dimensional sculpted media, all with full-face helmets and narrow visors; prior images preserved as rejected | Verify the updated gallery, then user selection of the closest new style |
 
 Review artifacts: [gallery](../art/mood-board/index.html), [overview](../art/mood-board/overview.jpg), [review manifest](../art/mood-board/manifest.md), [review instructions](../art/mood-board/README.md).
 
-Concept art has begun: five rejected earlier images and three new art-style candidates. No sprite sheets or first-level implementation have been produced. Game runtime tests were not run for these art-workflow changes; interactive HTML review is checked in Chrome. Existing story and Godot edits are excluded from these art-workflow commits.
+Concept art has begun: S09 selected for development; S13/S17 textures preferred; camera and proportions unapproved; built-in generation paused; alternative model comparison recorded; earlier candidates preserved with their decisions. No sprite sheets or first-level implementation have been produced. Game runtime tests were not run for these art-workflow changes; interactive HTML review is checked in Chrome. Existing story and Godot edits are excluded from these art-workflow commits.
 
 Mood board approval: **approved 2026-10-04**. Concept approval: **pending**. Asset lists: **not finalized**. Sprite approval: **pending**. Engine decision: **provisional Godot**.
 

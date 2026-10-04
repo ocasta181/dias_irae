@@ -1,0 +1,43 @@
+{
+  "identifier": "S10",
+  "approach": "A — Shadow cutout",
+  "version": "v01",
+  "image": "images/s10-shadow-cutout-v01.png",
+  "prompt": "prompts/s10-shadow-cutout-v01.txt",
+  "tool": "image_gen.imagegen (built-in)",
+  "model": "not exposed by tool",
+  "generation_date": "2026-10-04",
+  "reference_identifiers": [
+    "E01"
+  ],
+  "reference_roles": "E01 greathelm geometry only; no previous generated image used as a style input. Approved original mood board governs proportions, story palette and atmosphere through prompt.",
+  "generation_reference_paths": [
+    "/tmp/dias-greathelm.jpg"
+  ],
+  "durable_helmet_reference": "../mood-board/equipment/images/e01-flat-barrel.jpg",
+  "story_sources": [
+    "../../story/characters.md"
+  ],
+  "user_overrides": [
+    "Full-face greathelm, including anachronism, requested by user.",
+    "Cute large head, little body; no visible large eyes.",
+    "Darker than S04; softer/finer edges than coarse S05; straight sword.",
+    "Three genuinely different construction/rendering systems required."
+  ],
+  "status": "pending",
+  "user_notes": "",
+  "inspection_notes": [
+    "Broad flat dark silhouette pieces, tiny internal detail, no metal shading or mail microtexture.",
+    "Full face enclosed by barrel-shaped flat-crown helm; narrow black visor without visible eyes.",
+    "Large head and compact body retained; no curved blade observed.",
+    "Rendering-direction study. Production pixel grid, palette, texture simplification, sword alignment across views and animation remain unvalidated."
+  ],
+  "source_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-8d948afa-9c05-4a23-b578-93fec377be7a.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "sha256": "e208006ee828cb7c1e1789750108bd6af754aa4dcff731abac81294fdec82843",
+  "durable_helmet_input": "references/e01-greathelm-input.jpg",
+  "durable_helmet_input_sha256": "b4f2f99b5a26a42512599673e57f77c4f36458b3c32a96d4fc72971e3577b576"
+}

@@ -1,0 +1,38 @@
+{
+  "identifier": "S13",
+  "approach": "Guarin — selected S09, elevated isometric view",
+  "version": "v02",
+  "parent_identifier": "S09",
+  "image": "images/s13-guarin-isometric-v02.png",
+  "prompt": "prompts/s13-guarin-isometric-v02.txt",
+  "tool": "image_gen.imagegen (built-in)",
+  "model": "not exposed by tool",
+  "generation_date": "2026-10-04",
+  "reference_identifiers": [
+    "S09",
+    "M21"
+  ],
+  "reference_roles": {
+    "S09": "Exact attached character/style to preserve; only this character redrawn.",
+    "M21": "Approved Diablo II gameplay camera reference only."
+  },
+  "status": "revise",
+  "user_notes": "User prefers this texture and its more exaggerated proportions over S17. Camera still too low. Texture preference only; full concept approval pending.",
+  "inspection_notes": [
+    "Elevated view verified visually: helmet crown exposes a broad ellipse, shoulders and shield top edge visible, feet/body vertically foreshortened.",
+    "Full-face cylindrical greathelm and dark visor retained without visible eyes.",
+    "Dark textured cartoon finish, wine cloth, boots and shield preserved; no alternative art style added.",
+    "Single view only. Projection is a visual concept approximation; exact production camera, directional views and foot anchor remain for the later pilot.",
+    "Mail reads as broad overlapping loop/scallop marks at concept scale; simplify/refine it during equipment review."
+  ],
+  "story_sources": [
+    "../../story/characters.md"
+  ],
+  "source_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-c123b151-3f41-4d87-afec-bd989c982aac.png",
+  "dimensions": [
+    1312,
+    1199
+  ],
+  "sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c",
+  "user_prefers_texture": true
+}

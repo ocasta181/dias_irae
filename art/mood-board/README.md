@@ -10,9 +10,9 @@ A veteran comes home to an ordinary household in a harvest that has gone wrong. 
 
 ## Approved game-language direction — 2026-10-04
 
-**Dark and pixelated: more cartoony than Diablo II, less cartoony than Hollow Knight.** This latest approval refinement supersedes the earlier Hollow Knight-dominant rendering treatment. Use moderately stylized human proportions and textured, weighty materials inside clear cartoon silhouettes and atmospheric darkness. Castle Crashers remains a light influence on posing and action readability; Darkwood informs ordinary unease.
+**Dark and pixelated: more cartoony than Diablo II, less cartoony than Hollow Knight.** This latest approval refinement supersedes the earlier Hollow Knight-dominant rendering treatment. Subsequent character feedback clarifies cutesy oversized heads, small bodies and small/no visible eyes, with textured, weighty materials and atmospheric darkness. The selected S09 character direction and current S15 camera candidate carry that newer instruction. Castle Crashers remains a light influence on posing and action readability; Darkwood informs ordinary unease.
 
-Hollow Knight and Diablo II are the two balancing poles for the concept batch. Period kit, Romanesque spaces and sacred/body-horror motifs come from the story and historical references. The approved palette is the story's earthy palette; exact color tuning, pixel density and edge treatment remain for concept review and the sprite pilot.
+Hollow Knight and Castle Crashers guide compact character structure; Diablo II guides the elevated game camera, material weight and darkness. Period kit, Romanesque spaces and sacred/body-horror motifs come from the story and historical references. The approved palette is the story's earthy palette; exact color tuning, pixel density and edge treatment remain for concept review and the sprite pilot.
 
 Official reference sources: [Hollow Knight](https://www.hollowknight.com/), [Castle Crashers](https://ww2.castlecrashers.com/game/) and [Diablo II: Resurrected](https://diablo2.blizzard.com/). Concept direction: [visual-brief.md](../concepts/visual-brief.md).
 
@@ -24,7 +24,7 @@ Official reference sources: [Hollow Knight](https://www.hollowknight.com/), [Cas
 | `04-harvest-and-blight/` | Does the disease first read as something wrong with the harvest? |
 | `05-land-and-water/` | What do pale rock, water and the grain route contribute? |
 | `06-bread-bone-and-ritual/` | Can an ordinary meal and a modest sacred object carry the horror? |
-| `07-game-language/` | How does Hollow Knight's dark, clear cartoon language translate into our pixelated sprites, with only a trace of Castle Crashers? |
+| `07-game-language/` | How do compact cartoon characters carry Diablo II’s material weight, darkness and elevated camera? |
 | `user-references/` | Your additions; these will be reconciled into the next board revision |
 
 Palette words come directly from the story: rye gold, charcoal, limewash, Antonine black/taupe, dried-blood wine, pig-fat yellow, bone white and dull iron. The swatches in the gallery are a proposed interpretation, not an approved palette or measured samples from the images.
@@ -40,6 +40,8 @@ The later paintings contribute mood, flesh and color. Near-period embroidery and
 5. Tell me when the revised mood board is approved. Keeping an image or accepting individual rows does not automatically approve the whole board.
 
 Useful review notes: which references carry the right feeling; which are too colorful, clean, ornate or overtly monstrous; and how coarse the pixels, strong the outlines and exaggerated the proportions should be. The approved dark, pixelated balance is directed by the user; exact sprite scale and finish remain open for review.
+
+The new [dress and equipment supplement](equipment/index.html) adds 23 separately pending choices for helmets, armor, weapons, clergy, townspeople and nobles. Each card has decisions and written commentary. Save its downloaded review as `art/mood-board/equipment/manifest.md`; the original 26-reference approval is retained.
 
 The board approval is recorded in the checklist. Concept candidates are now being generated from the accepted references and the refined brief; review them in [the concept manifest](../concepts/manifest.md).
 

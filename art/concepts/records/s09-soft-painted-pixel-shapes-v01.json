@@ -1,0 +1,47 @@
+{
+  "identifier": "S09",
+  "approach": "Soft painted pixel shapes",
+  "version": "v01",
+  "image": "images/s09-soft-painted-pixel-shapes-v01.png",
+  "prompt": "prompts/s09-soft-painted-pixel-shapes-v01.txt",
+  "tool": "image_gen.imagegen (built-in)",
+  "model": "not exposed by tool",
+  "generation_date": "2026-10-04",
+  "reference_identifiers": [
+    "S04",
+    "S05",
+    "E01"
+  ],
+  "reference_roles": "S04/S05 rendering endpoints; E01 greathelm geometry only.",
+  "generation_reference_paths": [
+    "/Users/ocasta/Code/Dias Irae/art/concepts/images/s04-flat-ink-cartoon-v01.png",
+    "/Users/ocasta/Code/Dias Irae/art/concepts/images/s05-chunky-pixel-minimalism-v01.png",
+    "/tmp/dias-greathelm.jpg"
+  ],
+  "durable_helmet_reference": "../mood-board/equipment/images/e01-flat-barrel.jpg",
+  "story_sources": [
+    "../../story/characters.md"
+  ],
+  "user_overrides": [
+    "Full-face greathelm, including anachronism, requested by user.",
+    "Cute large head, little body; no visible large eyes.",
+    "Darker than S04; softer/finer edges than coarse S05; straight sword.",
+    "Three genuinely different construction/rendering systems required."
+  ],
+  "status": "revise",
+  "user_notes": "Earlier three-image comparison rejected as too similar. Subsequently the user attached S09 and selected this particular character for continued development, requesting a Diablo II isometric camera redraw. This newer selection supersedes the earlier rejection for S09 only; final approval pending.",
+  "inspection_notes": [
+    "Textured 2D shaded cartoon; too similar to S07/S08 per user.",
+    "Full face enclosed by barrel-shaped flat-crown helm; narrow black visor without visible eyes.",
+    "Large head and compact body retained; no curved blade observed.",
+    "Rendering-direction study. Production pixel grid, palette, texture simplification, sword alignment across views and animation remain unvalidated."
+  ],
+  "source_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-9bc38b3a-51a2-4293-8846-cc98ce99a1dc.png",
+  "dimensions": [
+    1312,
+    1199
+  ],
+  "sha256": "22761ac8fd764440a5dfc299e8f5b985d4c3d80c643b5754bbe0e9a603ab6a85",
+  "durable_helmet_input": "references/e01-greathelm-input.jpg",
+  "durable_helmet_input_sha256": "b4f2f99b5a26a42512599673e57f77c4f36458b3c32a96d4fc72971e3577b576"
+}

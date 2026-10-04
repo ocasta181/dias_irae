@@ -1,0 +1,27 @@
+{
+  "identifier": "S15",
+  "approach": "Guarin — midpoint camera, drawn from scratch",
+  "version": "v04",
+  "parent_direction": "S09 selected for development; midpoint between S13 and S14 cameras",
+  "image": "images/s15-guarin-mid-camera-v04.png",
+  "prompt": "prompts/s15-guarin-mid-camera-v04.txt",
+  "tool": "image_gen.imagegen (built-in)",
+  "model": "not exposed by tool",
+  "generation_date": "2026-10-04",
+  "reference_identifiers": [],
+  "reference_roles": "Text brief only. No image inputs; user requested a new drawing from scratch.",
+  "status": "revise",
+  "user_notes": "Midpoint attempt did not resolve the user’s camera concern; subsequent camera studies also rejected. Built-in generation paused.",
+  "inspection_notes": [
+    "Moderately elevated view with a broad elliptical helmet crown and more of the faceplate/body visible than S14.",
+    "Oversized full-face greathelm, compact body, mail, muted wine cloth, kite shield and straight sword maintained through the written brief.",
+    "Prompt targets approximately 50 degrees above the ground plane as the midpoint of prior requested 40/60-degree studies; exact projection is not measured or certified.",
+    "One character, one view, generated with no image inputs. Not a production sprite sheet."
+  ],
+  "source_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-235464ea-e46d-40ab-b3dc-e3b9781493ca.png",
+  "dimensions": [
+    1214,
+    1295
+  ],
+  "sha256": "f93a8ba6ac6ffe71d517c95d2f162e30b8f1c7d869e1f944e2bc64925eb63b1d"
+}

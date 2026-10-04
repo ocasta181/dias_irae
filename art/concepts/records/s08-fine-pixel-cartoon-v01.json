@@ -1,0 +1,47 @@
+{
+  "identifier": "S08",
+  "approach": "Fine pixel cartoon",
+  "version": "v01",
+  "image": "images/s08-fine-pixel-cartoon-v01.png",
+  "prompt": "prompts/s08-fine-pixel-cartoon-v01.txt",
+  "tool": "image_gen.imagegen (built-in)",
+  "model": "not exposed by tool",
+  "generation_date": "2026-10-04",
+  "reference_identifiers": [
+    "S04",
+    "S05",
+    "E01"
+  ],
+  "reference_roles": "S04/S05 rendering endpoints; E01 greathelm geometry only.",
+  "generation_reference_paths": [
+    "/Users/ocasta/Code/Dias Irae/art/concepts/images/s04-flat-ink-cartoon-v01.png",
+    "/Users/ocasta/Code/Dias Irae/art/concepts/images/s05-chunky-pixel-minimalism-v01.png",
+    "/tmp/dias-greathelm.jpg"
+  ],
+  "durable_helmet_reference": "../mood-board/equipment/images/e01-flat-barrel.jpg",
+  "story_sources": [
+    "../../story/characters.md"
+  ],
+  "user_overrides": [
+    "Full-face greathelm, including anachronism, requested by user.",
+    "Cute large head, little body; no visible large eyes.",
+    "Darker than S04; softer/finer edges than coarse S05; straight sword.",
+    "Three genuinely different construction/rendering systems required."
+  ],
+  "status": "rejected",
+  "user_notes": "User: these three are too similar; standing requirement is three truly different options.",
+  "inspection_notes": [
+    "Smaller stepped pixels; still same rendering family per user.",
+    "Full face enclosed by barrel-shaped flat-crown helm; narrow black visor without visible eyes.",
+    "Large head and compact body retained; no curved blade observed.",
+    "Rendering-direction study. Production pixel grid, palette, texture simplification, sword alignment across views and animation remain unvalidated."
+  ],
+  "source_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-2fc9a771-5478-4a5f-9039-f16f4d10a5ab.png",
+  "dimensions": [
+    1312,
+    1199
+  ],
+  "sha256": "5e63394a5defdc0121b70c7e7d3e2772073395deb8ef8622a1d065fc32cbedd4",
+  "durable_helmet_input": "references/e01-greathelm-input.jpg",
+  "durable_helmet_input_sha256": "b4f2f99b5a26a42512599673e57f77c4f36458b3c32a96d4fc72971e3577b576"
+}

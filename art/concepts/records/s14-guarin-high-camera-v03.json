@@ -1,0 +1,27 @@
+{
+  "identifier": "S14",
+  "approach": "Guarin — new high-camera drawing",
+  "version": "v03",
+  "parent_direction": "S09 selected for development",
+  "image": "images/s14-guarin-high-camera-v03.png",
+  "prompt": "prompts/s14-guarin-high-camera-v03.txt",
+  "tool": "image_gen.imagegen (built-in)",
+  "model": "not exposed by tool",
+  "generation_date": "2026-10-04",
+  "reference_identifiers": [],
+  "reference_roles": "Generated from scratch using written character/board brief only. No previous generated image or other image supplied. User explicitly requested this generation method.",
+  "status": "revise",
+  "user_notes": "User: too far, half way in between. Camera too steep; S15 is the new midpoint candidate.",
+  "inspection_notes": [
+    "Steep overhead view: large broad helmet crown, compressed faceplate/body, visible shoulder and boot tops, diagonal ground footprint.",
+    "Greathelm covers entire face; no visible eyes. Dark cartoon finish, mail, wine cloth, kite shield and straight sword retained through written brief.",
+    "Camera prompt requests 60 degrees above ground; exact mathematical projection is not measured or certified by this image.",
+    "New generation with no image inputs; not a transformed/resampled earlier image. Not a production sprite sheet."
+  ],
+  "source_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-cc3ed955-e6a6-4713-b705-55904eabf1fe.png",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "a1de71f34ee469bc7adfee2026c23e12b26f263dce94e0e5da0746c27d7cbf0d"
+}
