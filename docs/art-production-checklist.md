@@ -2,7 +2,7 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
-Last updated: 2026-10-04. Current stage: **original mood board approved; S09 selected for development, preferred S13/S17 textures recorded; camera/proportions rejected; Grok selected with existing-login image generation verified; a 36-reference dated European equipment board ready for selection**.
+Last updated: 2026-10-04. Current stage: **original mood board approved; S09 selected for development, preferred S13/S17 textures recorded; camera/proportions rejected; Grok selected with existing-login image generation verified; a revised 42-reference equipment board (40 twelfth-century, 2 early-thirteenth-century) ready for selection**.
 
 ## Story and visual constraints
 
@@ -47,6 +47,8 @@ Success: a locally reviewable collection with individual removable images and pr
 - [x] Give every active reference a source-supported year or year range; distinguish object/style date from photograph date and exclude 15th-century material.
 - [x] Verify all 34 active images and 45 source/history records, dates, provenance, links, decisions, commentary, export and mobile layout; preserve excluded-row browser drafts.
 - [x] Put the dated equipment choices prominently on the main mood board and add source-dated 12th-century ankle shoes and 13th-century slip-on boots; board 03 now has 36 active choices and 47 source/history records.
+- [x] Replace the active selection across every category with at least 90% 12th-century sources and at most 10% early 13th (1201–1230). Board 04 has 42 active choices: 40 (95.2%) 12th-century and 2 (4.8%) early-13th allowances. Add 10 new 12th-century helmet/headpiece views, retain 40 excluded records and all prior notes, and label uncertain construction and regional comparisons.
+- [x] Verify board 04’s 42 active and 82 total records, date limits, image decoding/dimensions/hashes, enlarged detail views, browser decisions/commentary/export and mobile layout. Confirm that excluded-row notes still export and the original mood board remains approved. Save [the browser preview](../art/mood-board/equipment/board-04-preview.png).
 - [ ] **User selects dress and equipment references and approves the resulting direction before further cast concepts.**
 
 ## 2. Concept art — after mood board approval
