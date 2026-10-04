@@ -2,7 +2,7 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
-Last updated: 2026-10-04. Current stage: **approved mood/equipment boards; new flat Grok concepts S55/S51/S52 ready for style review. Eight drawings inspected, five held back. B geometry repaired; fine pixels, sparse ink and rough stencil distinguish the new trio. Costume, squat silhouette consistency and camera remain unresolved; no character concept approved**.
+Last updated: 2026-10-04. Current stage: **approved mood/equipment boards; latest three concepts rejected in the user’s Brave draft for camera/body-proportion failures. Full Brave review reconciliation and preference ranking remain pending. The concept board now has Unsorted/Sorted drag ordering and an explicit Save review export. No character concept approved**.
 
 ## Story and visual constraints
 
@@ -92,6 +92,11 @@ Success: a locally reviewable collection with individual removable images and pr
 - [x] Inspect actual art. Hold back S47/S48/S49/S50/S53 for wrong medium, light backgrounds or modeled metallic highlights. Present S55/S51/S52 as fine pixels, sparse ink and rough stencil, with [specific limitations](../art/concepts/assessment-flat.md).
 - [x] Record S54 dispatch failure: no art generated; override searched for native image_edit instead of calling it. Retry as S55 in a fresh session using standard dispatch; one approved-base image_edit succeeds.
 - [x] Verify exact prompt/tool inputs, allowed reference hash, eight unique sessions, unchanged provider output bytes, dimensions, hashes and all 45 gallery references. Verify review decisions, commentary, draft persistence and complete export in isolated memory; confirm loaded art and controls in the browser. Save [the new board preview](../art/concepts/grok-flat-review-preview.png).
+- [x] Locate the user’s review in Brave: S55/S51/S52 are rejected. A has good flatness/cartoon treatment but the wrong camera and insufficient cute/squat proportions; B/C have body proportions that are too realistic. This browser draft has not yet been imported into the on-disk manifest; keep its existing row baselines unchanged while the user adds comments.
+- [x] Replace production-date/batch sections in the HTML concept board with only **Unsorted** and **Sorted**. Enable drag into/out of Sorted and preference ordering, with Sort/Unsort, arrow buttons and keyboard alternatives.
+- [x] Add explicit **Save review** export for all decisions, commentary, ranked IDs and unsorted IDs. Keep existing browser review storage unchanged; store the ranking separately under the same page path. Ranking does not imply acceptance.
+- [x] Verify native browser drag, reorder and reload persistence; restore test choices afterwards. Isolated checks verify saved comments/decisions, ranking reload/import, intentional empty ranking and unchanged mood/equipment export. No database or runtime-game code changes.
+- [ ] Reconcile the full saved Brave review, including the user’s additional historical comments and preference order, into the manifest and generation records before choosing the next art iteration.
 - [ ] Correct remaining costume drift and check the shortest squat proportions before production. Freeze mail, hidden skin, plain helmet, narrow wine shield panel, buckle and sword construction after style review.
 - [ ] Resolve calibrated camera consistency. The target remains around 45 degrees above the ground; no achieved angle or exact 15-degree increase is claimed.
 - [ ] **User approves the camera/proportion and rendering direction before the remaining concept batch.** Equipment collection approved with regional and cultural limits; no new Guarin concept is accepted yet.
@@ -176,6 +181,8 @@ Success: the agreed first level is playable from entry to exit with accepted art
 | 2026-10-04 | Independent concepts delivered | Six raw-text generations completed in six unique sessions; S38–S40 visibly compare dimensional, flat and painted rendering. No images uploaded; tool inputs match saved prompts. Camera inconsistency and mail drift are recorded | User reviews the three drawings and comments before further concepts |
 | 2026-10-04 | 2D-only rerun assessed | Six independent raw-text calls with full mood context. Parent visual review held back three outputs; S41/S46/S45 show soft paint, graphic shapes and gritty pigment. Earlier parent flatness assessment was too lenient: latest user feedback flags modeled A/C and malformed B. Source bytes/inputs verified, but visual judgment superseded | Superseded by the flat redraw below |
 | 2026-10-04 | Flatter, wretched concepts redrawn | Eight actual drawings inspected; five held back. S55/S51/S52 compare pixels, ink and rough stencil. B faceplate/lid repaired. Only approved M22 base supplied to S55; no prior concepts/history. S54 generated no art; standard dispatch succeeded in a new S55 session. Costume/proportion/view limits recorded | User reviews style and commentary; no production approval |
+
+| 2026-10-04 | Review ranking and explicit save enabled | Brave confirms rejection of the current three for camera/proportion failures. The HTML board has only Unsorted/Sorted; drag and keyboard preference ordering persist, and Save review exports comments, decisions and ranking. Existing per-item baselines preserved until full Brave export is reconciled | User completes preference ranking and shares the saved review |
 
 Review artifacts: [gallery](../art/mood-board/index.html), [overview](../art/mood-board/overview.jpg), [review manifest](../art/mood-board/manifest.md), [review instructions](../art/mood-board/README.md).
 
