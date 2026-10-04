@@ -14,7 +14,7 @@ Each call used a complete raw prompt and a new independent session. **A uses onl
 
 The fixed costume and Royans/Isère, 1101 story remain authoritative; the greathelm is the allowed anachronism. Generator additions and substitutions are revision issues, not new costume canon. **Camera remains uncalibrated.** Target remains about 45 degrees above the ground; no achieved angle or exact 15-degree increase is claimed.
 
-Review [the gallery](index.html?v=9#current-styles), [overview](comparison-grok-flat-v01.jpg), [assessment](assessment-flat.md) and [progress checklist](../../docs/art-production-checklist.md). Per-view decisions and commentary remain available. Export preserves historical and planned rows.
+Review [the gallery](index.html?v=9#current-styles), [overview](comparison-grok-flat-v01.jpg), [assessment](assessment-flat.md) and [progress checklist](../../docs/art-production-checklist.md). Per-view decisions and commentary remain available. The board has only **Unsorted** and **Sorted** sections. Drag drawings into Sorted and put the most preferred first; use Sort/Unsort or arrows as alternatives. **Save review** downloads a Markdown (.md) file with all comments, decisions, ranked IDs and unsorted IDs. The browser draft saves automatically in the browser where you review; a Brave draft is separate from the app browser. Share the saved file for reconciliation. Ranking does not imply acceptance. Export preserves historical and planned rows.
 
 ## Current flat-style comparison — pending user review
 
