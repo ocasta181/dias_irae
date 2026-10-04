@@ -1,29 +1,29 @@
 # Mood board review manifest
 
-Review status: **pending**. Board-wide approval is recorded in [the checklist](../../docs/art-production-checklist.md). Keeping files does not constitute approval.
+Review status: **approved by the user in chat on 2026-10-04**. All 26 references retained; no additions or removals supplied. Board-wide approval is recorded in [the checklist](../../docs/art-production-checklist.md). Keeping files does not constitute approval.
 
 Review each reference and write commentary in [the HTML gallery](index.html), then use **Download manifest** to save your decisions here. You may also edit the Decision and Your notes columns directly with `accepted`, `rejected`, `revise` or `pending`. Your own additions go in `user-references/`; they will be inventoried at reconciliation.
 
 Open [the gallery](index.html) or [the overview](overview.jpg). Every file is a downloaded internet reference; no concept art has been generated.
 
-User-directed game language: **dark, pixelated/cartoony**. **Hollow Knight is primary; Castle Crashers is very light.** Diablo II: Resurrected remains a supporting influence for isometric composition, environmental detail, materials and lighting; Darkwood informs atmosphere. Historical and sacred references govern story, period kit and motifs. Exact pixel scale and edge treatment await the concept/pilot review.
+Approved game language: **dark and pixelated, more cartoony than Diablo II and less cartoony than Hollow Knight**. Balance clear cartoon silhouettes with grounded human proportions, materials, environmental detail and light. Castle Crashers remains a light posing influence; Darkwood informs atmosphere. This approval refinement supersedes the earlier Hollow Knight-dominant treatment. Historical and sacred references govern story, period kit and motifs. Exact pixel scale and edge treatment await the concept/pilot review.
 
 [Focused game-language overview](game-language.jpg).
 
 ## Dark, pixelated and cartoon
 
-Hollow Knight leads the art style. Castle Crashers contributes a very light touch of proportion and posing. Pixel density and edge treatment will be reviewed in our own story context.
+Balance Hollow Knight’s clear shapes and atmosphere with Diablo II’s proportions and material weight. Castle Crashers contributes lightly to posing. Exact pixel density and edge treatment remain for the concept and sprite pilot review.
 
 | ID | Reference | Why it belongs | Limits | Decision | Your notes |
 |---|---|---|---|---|---|
-| M22 | [Hollow Knight — clear combat silhouettes](07-game-language/m22-hollow-knight-combat.jpg) | Primary art-style reference: bold outlines, simple body masses and a readable small protagonist against a larger enemy. | Use shape economy and readable action; Guarin remains a human in period mail, and Raimon follows his story anatomy. | pending | |
-| M23 | [Hollow Knight — layered gloom](07-game-language/m23-hollow-knight-layered-gloom.jpg) | Primary art-style reference: dark framing, a pale actor, atmospheric layers and expressive space around simple figures. | Translate the value structure into rye, limewash and charcoal; exact hue, pixel density and isometric projection remain our own decisions. | pending | |
-| M24 | [Hollow Knight — ritual accent light](07-game-language/m24-hollow-knight-ritual-light.jpg) | Primary art-style reference: clean outlined figures, theatrical poses and a restrained family of dark reds around a sacred-looking encounter. | Adapt the light hierarchy and gestures to the story; do not adopt this game’s characters, symbols, Gothic forms or lore. | pending | |
-| M25 | [Hollow Knight — luminous depth](07-game-language/m25-hollow-knight-luminous-depth.jpg) | Primary art-style reference: strong foreground silhouettes, softened background layers and small clear forms held inside luminous darkness. | Treat glow as a controlled accent in the story palette. These hand-drawn references guide a dark pixelated/cartoon rendition, not a prescribed pixel grid. | pending | |
-| M26 | [Castle Crashers — a trace of cartoon action](07-game-language/m26-castle-crashers-action-shapes.jpg) | Very light influence: compact body proportions, clear weapon silhouettes and expressive action poses. | Keep this influence small. The game’s comedy, bright faction colors and enclosed fantasy helmets do not define our tone or 1101 equipment. | pending | |
-| M19 | [Darkwood — a room inside darkness](07-game-language/m19-darkwood-darkness.png) | Atmosphere only: localized visibility and an ordinary room under pressure. The user’s rendering direction is led by Hollow Knight. | Modern top-down setting; take atmosphere and value hierarchy, not the camera, setting or user interface. | pending | |
-| M20 | [Diablo II: Resurrected — the room reads](07-game-language/m20-diablo-ritual-interior.webp) | Supporting influence: isometric composition, actor placement, grounded stone materials and dramatic interior lighting. Hollow Knight leads the cartoon shape language. | Adapt composition, materials and light to the story; do not copy sigils, demons, equipment or lore. | pending | |
-| M21 | [Diablo II: Resurrected — bodies in the field](07-game-language/m21-diablo-exterior-readability.webp) | Supporting influence: isometric actor placement, layered vegetation, environmental detail and warm/cool light contrast. Hollow Knight leads the cartoon shape language. | Adapt environmental density and lighting for readable cartoon sprites in the story palette. | pending | |
+| M22 | [Hollow Knight — clear combat silhouettes](07-game-language/m22-hollow-knight-combat.jpg) | Primary art-style reference: bold outlines, simple body masses and a readable small protagonist against a larger enemy. | Use shape economy and readable action; Guarin remains a human in period mail, and Raimon follows his story anatomy. | accepted | |
+| M23 | [Hollow Knight — layered gloom](07-game-language/m23-hollow-knight-layered-gloom.jpg) | Primary art-style reference: dark framing, a pale actor, atmospheric layers and expressive space around simple figures. | Translate the value structure into rye, limewash and charcoal; exact hue, pixel density and isometric projection remain our own decisions. | accepted | |
+| M24 | [Hollow Knight — ritual accent light](07-game-language/m24-hollow-knight-ritual-light.jpg) | Primary art-style reference: clean outlined figures, theatrical poses and a restrained family of dark reds around a sacred-looking encounter. | Adapt the light hierarchy and gestures to the story; do not adopt this game’s characters, symbols, Gothic forms or lore. | accepted | |
+| M25 | [Hollow Knight — luminous depth](07-game-language/m25-hollow-knight-luminous-depth.jpg) | Primary art-style reference: strong foreground silhouettes, softened background layers and small clear forms held inside luminous darkness. | Treat glow as a controlled accent in the story palette. These hand-drawn references guide a dark pixelated/cartoon rendition, not a prescribed pixel grid. | accepted | |
+| M26 | [Castle Crashers — a trace of cartoon action](07-game-language/m26-castle-crashers-action-shapes.jpg) | Very light influence: compact body proportions, clear weapon silhouettes and expressive action poses. | Keep this influence small. The game’s comedy, bright faction colors and enclosed fantasy helmets do not define our tone or 1101 equipment. | accepted | |
+| M19 | [Darkwood — a room inside darkness](07-game-language/m19-darkwood-darkness.png) | Atmosphere only: localized visibility and an ordinary room under pressure. The user’s rendering direction is led by Hollow Knight. | Modern top-down setting; take atmosphere and value hierarchy, not the camera, setting or user interface. | accepted | |
+| M20 | [Diablo II: Resurrected — the room reads](07-game-language/m20-diablo-ritual-interior.webp) | Supporting influence: isometric composition, actor placement, grounded stone materials and dramatic interior lighting. Hollow Knight leads the cartoon shape language. | Adapt composition, materials and light to the story; do not copy sigils, demons, equipment or lore. | accepted | |
+| M21 | [Diablo II: Resurrected — bodies in the field](07-game-language/m21-diablo-exterior-readability.webp) | Supporting influence: isometric actor placement, layered vegetation, environmental detail and warm/cool light contrast. Hollow Knight leads the cartoon shape language. | Adapt environmental density and lighting for readable cartoon sprites in the story palette. | accepted | |
 
 ## Sacred flesh, judgment and light
 
@@ -31,10 +31,10 @@ Later sacred painting and manuscript monsters establish the emotional range.
 
 | ID | Reference | Why it belongs | Limits | Decision | Your notes |
 |---|---|---|---|---|---|
-| M01 | [Sacred flesh under judgment](01-sacred-horror/m01-isenheim-crucifixion.jpg) | Story art bible: wounded body, black ground, bone whites and dried red. | Later painting (1512–16); use emotional and color language, not costume or architecture. | pending | |
-| M02 | [The body becomes a visitation](01-sacred-horror/m02-isenheim-temptation.jpg) | Organic, animal and diseased forms gather around a recognizable saint. | Later painting; informs the later escalation and Raimon’s uncanny anatomy, not a village full of demons. | pending | |
-| M03 | [Sacred light that overwhelms](01-sacred-horror/m03-isenheim-resurrection.jpg) | A controlled counterpoint to soot and rye: luminous warmth, white cloth, impossible light. | Later painting; saturated holy light should be exceptional rather than a permanent neon palette. | pending | |
-| M04 | [The manuscript knows the monster](01-sacred-horror/m04-beatus-locusts.jpg) | Flat heraldic shapes, human faces, repeated chitinous rhythms; Revelation 9. | Manuscript imagery is a creature-language reference for later acts, not an Act I enemy list. | pending | |
+| M01 | [Sacred flesh under judgment](01-sacred-horror/m01-isenheim-crucifixion.jpg) | Story art bible: wounded body, black ground, bone whites and dried red. | Later painting (1512–16); use emotional and color language, not costume or architecture. | accepted | |
+| M02 | [The body becomes a visitation](01-sacred-horror/m02-isenheim-temptation.jpg) | Organic, animal and diseased forms gather around a recognizable saint. | Later painting; informs the later escalation and Raimon’s uncanny anatomy, not a village full of demons. | accepted | |
+| M03 | [Sacred light that overwhelms](01-sacred-horror/m03-isenheim-resurrection.jpg) | A controlled counterpoint to soot and rye: luminous warmth, white cloth, impossible light. | Later painting; saturated holy light should be exceptional rather than a permanent neon palette. | accepted | |
+| M04 | [The manuscript knows the monster](01-sacred-horror/m04-beatus-locusts.jpg) | Flat heraldic shapes, human faces, repeated chitinous rhythms; Revelation 9. | Manuscript imagery is a creature-language reference for later acts, not an Act I enemy list. | accepted | |
 
 ## Stone that keeps its paint
 
@@ -42,9 +42,9 @@ Rounded vaults, worn plaster and the weight of a small sanctuary.
 
 | ID | Reference | Why it belongs | Limits | Decision | Your notes |
 |---|---|---|---|---|---|
-| M05 | [The church is painted](02-stone-and-limewash/m05-painted-barrel-vault.jpg) | Ochre-red narrative paint on a continuous rounded vault; sacred interiors have color. | Use the vault and paint treatment; keep the parish church much smaller than this building. | pending | |
-| M06 | [Christ in Majesty on worn plaster](02-stone-and-limewash/m06-painted-apse.jpg) | A painted Christ in Majesty, warm earth pigments and compact sacred imagery for the parish apse. | Romanesque mural reference; use paint, figure hierarchy and plaster, not a literal copy of the composition. | pending | |
-| M07 | [Low stone, short sightlines](02-stone-and-limewash/m07-low-crypt.jpg) | Weight, thick columns, cool shadows and a compressed ceiling for Raimon’s undercroft. | Photograph of surviving architecture; use spatial/material grammar rather than modern fittings. | pending | |
+| M05 | [The church is painted](02-stone-and-limewash/m05-painted-barrel-vault.jpg) | Ochre-red narrative paint on a continuous rounded vault; sacred interiors have color. | Use the vault and paint treatment; keep the parish church much smaller than this building. | accepted | |
+| M06 | [Christ in Majesty on worn plaster](02-stone-and-limewash/m06-painted-apse.jpg) | A painted Christ in Majesty, warm earth pigments and compact sacred imagery for the parish apse. | Romanesque mural reference; use paint, figure hierarchy and plaster, not a literal copy of the composition. | accepted | |
+| M07 | [Low stone, short sightlines](02-stone-and-limewash/m07-low-crypt.jpg) | Weight, thick columns, cool shadows and a compressed ceiling for Raimon’s undercroft. | Photograph of surviving architecture; use spatial/material grammar rather than modern fittings. | accepted | |
 
 ## The household, the knight, the animal
 
@@ -52,9 +52,9 @@ Recognizable people and period silhouettes come before the transformation.
 
 | ID | Reference | Why it belongs | Limits | Decision | Your notes |
 |---|---|---|---|---|---|
-| M08 | [Mail, nasal helms, kite shields](03-people-and-arms/m08-mail-and-kite-shields.jpg) | Near-period silhouettes establish Guarin’s equipment without plate armor. | Equipment proportions and visual shapes; embroidery is not a finalized sprite rendering style. | pending | |
-| M09 | [People carrying on with work](03-people-and-arms/m09-camp-meal.jpg) | Serving and preparing food; ordinary human work sits underneath crusade and sacrament. | Near-period visual reference; embroidery is not the approved sprite rendering style. | pending | |
-| M15 | [An animal before an omen](03-people-and-arms/m15-wolf.jpg) | Weight, low head, fur silhouette and the familiar animal that later stands too long. | Natural anatomy only; the story’s first wolves should not become armored fantasy beasts. | pending | |
+| M08 | [Mail, nasal helms, kite shields](03-people-and-arms/m08-mail-and-kite-shields.jpg) | Near-period silhouettes establish Guarin’s equipment without plate armor. | Equipment proportions and visual shapes; embroidery is not a finalized sprite rendering style. | accepted | |
+| M09 | [People carrying on with work](03-people-and-arms/m09-camp-meal.jpg) | Serving and preparing food; ordinary human work sits underneath crusade and sacrament. | Near-period visual reference; embroidery is not the approved sprite rendering style. | accepted | |
+| M15 | [An animal before an omen](03-people-and-arms/m15-wolf.jpg) | Weight, low head, fur silhouette and the familiar animal that later stands too long. | Natural anatomy only; the story’s first wolves should not become armored fantasy beasts. | accepted | |
 
 ## An ordinary harvest, replaced
 
@@ -62,9 +62,9 @@ Rye gold, dark cockspurs and the path that should have led home.
 
 | ID | Reference | Why it belongs | Limits | Decision | Your notes |
 |---|---|---|---|---|---|
-| M10 | [Something replaces the grain](04-harvest-and-blight/m10-ergot-in-the-ear.jpg) | Observed black growth among ordinary cereal heads; the blight must first read as harvest. | Biological form reference. No claim that this specimen is the story’s exact crop variety. | pending | |
-| M11 | [Cockspurs and black kernels](04-harvest-and-blight/m11-ergot-shapes.jpg) | Curved dark sclerotia and their scale against plant material; use for grain, mill and body motifs. | Reference photograph, not a medical depiction of the fictional disease. | pending | |
-| M12 | [Home is beyond the harvest](04-harvest-and-blight/m12-rye-path-painting.png) | An ordinary path pressed between rye and earth; restrained gold/green and dense vegetation. | 1887 landscape: palette and atmosphere only, not evidence for 1101 farming or architecture. | pending | |
+| M10 | [Something replaces the grain](04-harvest-and-blight/m10-ergot-in-the-ear.jpg) | Observed black growth among ordinary cereal heads; the blight must first read as harvest. | Biological form reference. No claim that this specimen is the story’s exact crop variety. | accepted | |
+| M11 | [Cockspurs and black kernels](04-harvest-and-blight/m11-ergot-shapes.jpg) | Curved dark sclerotia and their scale against plant material; use for grain, mill and body motifs. | Reference photograph, not a medical depiction of the fictional disease. | accepted | |
+| M12 | [Home is beyond the harvest](04-harvest-and-blight/m12-rye-path-painting.png) | An ordinary path pressed between rye and earth; restrained gold/green and dense vegetation. | 1887 landscape: palette and atmosphere only, not evidence for 1101 farming or architecture. | accepted | |
 
 ## Pale rock and the grain route
 
@@ -72,8 +72,8 @@ A severe landscape and a mill whose materials remain after the fire.
 
 | ID | Reference | Why it belongs | Limits | Decision | Your notes |
 |---|---|---|---|---|---|
-| M13 | [Pale limestone, a narrow way](05-land-and-water/m13-limestone-gorge.jpg) | Geology, gorge scale and a severe pale/dark contrast for the arrival road. | Later archival photograph: omit any later road construction from game environments. | pending | |
-| M14 | [The grain route has a body](05-land-and-water/m14-stone-watermill.jpg) | Stone, water, dark openings and mill machinery as a source of the village’s injury. | Surviving mill, not an exact 1101 reconstruction; the story’s mill is burned and wet. | pending | |
+| M13 | [Pale limestone, a narrow way](05-land-and-water/m13-limestone-gorge.jpg) | Geology, gorge scale and a severe pale/dark contrast for the arrival road. | Later archival photograph: omit any later road construction from game environments. | accepted | |
+| M14 | [The grain route has a body](05-land-and-water/m14-stone-watermill.jpg) | Stone, water, dark openings and mill machinery as a source of the village’s injury. | Surviving mill, not an exact 1101 reconstruction; the story’s mill is burned and wet. | accepted | |
 
 ## A meal, a cup, a box
 
@@ -81,9 +81,9 @@ The sacred and the domestic share the same material world.
 
 | ID | Reference | Why it belongs | Limits | Decision | Your notes |
 |---|---|---|---|---|---|
-| M16 | [A small container for a large wound](06-bread-bone-and-ritual/m16-reliquary-casket.jpg) | Portable sacred enclosure; craft and reverence can conceal grain and bone. | Use as a form/material study; avoid copying ornament wholesale or inflating a poor chaplain’s possession. | pending | |
-| M17 | [Wine as the second species](06-bread-bone-and-ritual/m17-chalice.jpg) | Cup silhouette, dull precious metal and the visual weight of a sacred vessel. | A rich surviving vessel; rural parish equipment should be plainer and worn. | pending | |
-| M18 | [A meal can be a sacrament](06-bread-bone-and-ritual/m18-bread-and-dark-table.jpg) | Bread, folded cloth, metal and dark table: ordinary food carries the moral horror. | Later still life: materials and value structure only; replace later glassware, food and luxury settings. | pending | |
+| M16 | [A small container for a large wound](06-bread-bone-and-ritual/m16-reliquary-casket.jpg) | Portable sacred enclosure; craft and reverence can conceal grain and bone. | Use as a form/material study; avoid copying ornament wholesale or inflating a poor chaplain’s possession. | accepted | |
+| M17 | [Wine as the second species](06-bread-bone-and-ritual/m17-chalice.jpg) | Cup silhouette, dull precious metal and the visual weight of a sacred vessel. | A rich surviving vessel; rural parish equipment should be plainer and worn. | accepted | |
+| M18 | [A meal can be a sacrament](06-bread-bone-and-ritual/m18-bread-and-dark-table.jpg) | Bread, folded cloth, metal and dark table: ordinary food carries the moral horror. | Later still life: materials and value structure only; replace later glassware, food and luxury settings. | accepted | |
 
 ## Sources and credits
 

@@ -1,10 +1,10 @@
 # Concept art review manifest
 
-Status: **planning only — mood board approval pending**. No concept art has been generated.
+Status: **first batch in production — mood board approved in chat on 2026-10-04**. Concept candidates require a separate user review.
 
-User-directed rendering target: **dark, pixelated/cartoony**, with **Hollow Knight as the primary art-style reference** and **Castle Crashers as a very light influence**. Favor clear outlined silhouettes, simplified shapes, atmospheric depth and restrained accent light in the story's earthy palette. Keep Castle Crashers limited to a little proportion and pose readability. Exact pixel density and edge treatment await the concept review and sprite pilot. The story supplies human identities, period kit and sacred/body-horror motifs; reference games do not supply characters or lore.
+Approved rendering target: **dark and pixelated, more cartoony than Diablo II and less cartoony than Hollow Knight**. Balance clear outlined silhouettes and atmosphere with moderately stylized human proportions and material weight. Castle Crashers remains a light posing influence. This refinement supersedes the earlier Hollow Knight-dominant rendering hierarchy. See [the visual brief](visual-brief.md).
 
-After mood board approval, confirm this candidate list and replace each empty image field with a relative link to the generated version. Review statuses are `planned`, `pending`, `accepted`, `rejected`, and `revise`. Only the user sets `accepted` or `rejected`; record requested revisions in Notes.
+The initial batch follows the eight story candidates below. Each generated version gets an image link and a generation record; only the user decides acceptance. Review statuses are `planned`, `pending`, `accepted`, `rejected`, and `revise`. Only the user sets `accepted` or `rejected`; record requested revisions in Notes.
 
 | Identifier | Candidate | Story purpose | Image | Status | Notes |
 |---|---|---|---|---|---|

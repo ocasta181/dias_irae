@@ -2,7 +2,7 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
-Last updated: 2026-10-04. Current stage: **mood board ready; awaiting the user's review and explicit approval**.
+Last updated: 2026-10-04. Current stage: **mood board approved; first concept batch in production**.
 
 ## Story and visual constraints
 
@@ -15,7 +15,7 @@ Source material: [story spine](../story/story-arch.md), [characters](../story/ch
 - Isenheim supplies emotional intensity, diseased flesh, sacred light and monstrous forms. Its later date does not make its architecture or clothing period references.
 - Act I begins with recognizable parishioners and wolves. Later locusts and overt demons must not replace that opening escalation.
 - First level is provisionally the Act I homecoming through Rivoire and Raimon's undercroft. Confirm the playable extent before implementation.
-- User-directed rendering target: dark, pixelated/cartoony. Hollow Knight is the primary art-style influence; Castle Crashers is a very light influence. Diablo II supports isometric composition, environmental detail, grounded materials and lighting; Darkwood informs atmosphere. Keep the other game references visible. Historical and sacred references still govern materials and story motifs.
+- Approved rendering target: dark and pixelated, more cartoony than Diablo II and less cartoony than Hollow Knight. Balance clear cartoon shapes with grounded human proportions, materials and environmental detail. Castle Crashers remains a light influence on posing; Darkwood informs atmosphere. The approval refinement supersedes the earlier Hollow Knight-dominant treatment. Historical and sacred references govern story and period kit.
 - Exact pixel density, edge treatment, camera angle, animation directions and frame counts remain open for review and the sprite pilot.
 
 ## 1. Mood board
@@ -31,16 +31,16 @@ Source material: [story spine](../story/story-arch.md), [characters](../story/ch
 - [x] Incorporate the user's requested dark pixelated/cartoon direction and weighted game-language references.
 - [x] Enable and verify in-gallery decisions and commentary, with browser drafts and a downloadable manifest.
 - [x] Keep Diablo II and the other game references visible; retain Diablo II's relevance to composition, environmental detail, materials and lighting.
-- [ ] Reconcile removals, additions and review notes; agree the palette and rendering direction.
-- [ ] **User explicitly approves the mood board.**
+- [x] Reconcile removals, additions and review notes; agree the palette and rendering direction. All 26 references retained; no supplied additions or removals. Style refinement recorded in [the visual brief](../art/concepts/visual-brief.md).
+- [x] **User explicitly approves the mood board.** Approved in chat on 2026-10-04: "all this looks great, approved"; "more cartoony than diablo, less cartoony than hollow knight."
 
 Success: a locally reviewable collection with individual removable images and provenance, followed by explicit approval of the revised board.
 
 ## 2. Concept art — after mood board approval
 
 - [x] Identify the available generation tool and document how references will be used.
-- [ ] Freeze a concise visual brief from the accepted references and the story.
-- [ ] Confirm the concept list in [the concept manifest](../art/concepts/manifest.md).
+- [x] Freeze a concise visual brief from the accepted references and the story.
+- [x] Define the initial eight-image concept list in [the concept manifest](../art/concepts/manifest.md), covering the story's characters, spaces and objects.
 - [ ] Generate story-aligned concept candidates, using the approved mood board as references.
 - [ ] Save every candidate locally, alongside its exact prompt, reference identifiers, tool, version and review status.
 - [ ] Inspect period equipment, character identity, story motifs, silhouette and camera consistency.
@@ -110,10 +110,12 @@ Success: the agreed first level is playable from entry to exit with accepted art
 | 2026-10-04 | User-directed art-style revision | Four official Hollow Knight references added as primary influences; one Castle Crashers reference added as very light; earlier games scoped to atmosphere/camera. Direction recorded in the board, concept manifest and tooling brief. All 26 images, provenance, links and weighted previews verified | User review and explicit mood board approval |
 | 2026-10-04 | Interactive HTML review and reference correction | All 26 cards support reversible decisions and written commentary. Chrome verified reload persistence, complete manifest export, preserved credits, mobile layout and export with browser storage disabled. Diablo II and Darkwood are visible; Diablo II's broader supporting influence is restored | User reviews in the gallery, saves the downloaded manifest and explicitly approves the board |
 
+| 2026-10-04 | Mood board approved and concept direction refined | User explicitly approved all current references; no saved row exceptions or additions. Latest direction is more cartoony than Diablo II, less cartoony than Hollow Knight; visual brief and initial eight concepts defined | Generate, inspect and present concept candidates |
+
 Review artifacts: [gallery](../art/mood-board/index.html), [overview](../art/mood-board/overview.jpg), [review manifest](../art/mood-board/manifest.md), [review instructions](../art/mood-board/README.md).
 
 No concept art, sprite sheets or first-level implementation has been produced in this phase. Game runtime tests were not run for these art-workflow changes; the interactive HTML review was checked in Chrome. Existing story and Godot edits were not included in these art-workflow commits.
 
-Mood board approval: **pending**. Concept approval: **pending**. Asset lists: **not finalized**. Sprite approval: **pending**. Engine decision: **provisional Godot**.
+Mood board approval: **approved 2026-10-04**. Concept approval: **pending**. Asset lists: **not finalized**. Sprite approval: **pending**. Engine decision: **provisional Godot**.
 
 Future work resumes from the current unchecked step after the relevant human review; it must not generate concepts or sprites across an unapproved gate.

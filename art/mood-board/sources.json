@@ -24,7 +24,7 @@
       931
     ],
     "sha256": "cb2d1314a4a6fe39e4213d1ff98fdc4940517bb54c1a067a661422647f30dc3e",
-    "review": "pending"
+    "review": "accepted"
   },
   {
     "id": "M02",
@@ -51,7 +51,7 @@
       1267
     ],
     "sha256": "2457e0d417d97fef6d1fe2e0b1207425502a7688cf79908eb0b9e0b78df7b0dc",
-    "review": "pending"
+    "review": "accepted"
   },
   {
     "id": "M03",
@@ -78,7 +78,7 @@
       2115
     ],
     "sha256": "5d239e2f8670d3e50902c59e04b8fd9ab74a0891ae92a3d342b5da49f3cd7c60",
-    "review": "pending"
+    "review": "accepted"
   },
   {
     "id": "M04",
@@ -105,7 +105,7 @@
       719
     ],
     "sha256": "b0422db125828d4be31a30c27d04d1cf14718237531eab4a304bfcf77abb74bb",
-    "review": "pending"
+    "review": "accepted"
   },
   {
     "id": "M05",
@@ -132,7 +132,7 @@
       816
     ],
     "sha256": "77e46e1f3232e6ae272cb1fed362adbc1936dbbf4e7fd8d243df4bb66f730f72",
-    "review": "pending"
+    "review": "accepted"
   },
   {
     "id": "M06",
@@ -159,7 +159,7 @@
       700
     ],
     "sha256": "964f66932f4888c420fcc3f61f024dc602bd7b0cec8c7d272bc710c350a836c3",
-    "review": "pending"
+    "review": "accepted"
   },
   {
     "id": "M07",
@@ -186,7 +186,7 @@
       1920
     ],
     "sha256": "4a8a2ac8ec873aab26462b1433129a1a1ea0e20bfd211c93961f222baf785f26",
-    "review": "pending"
+    "review": "accepted"
   },
   {
     "id": "M08",
@@ -213,7 +213,7 @@
       464
     ],
     "sha256": "328f2b6204efb086c33a203df7aab2f62464898b24c8655bf780ec546672fb18",
-    "review": "pending"
+    "review": "accepted"
   },
   {
     "id": "M09",
@@ -240,7 +240,7 @@
       820
     ],
     "sha256": "287021ce1c791e675b95d165ccbde38fe1ab1f089803633437242d1b718cd696",
-    "review": "pending"
+    "review": "accepted"
   },
   {
     "id": "M10",
@@ -267,7 +267,7 @@
       853
     ],
     "sha256": "f3730b8985c631f64f22d996635234b5781b41b3ca7125a64335e58749a6af60",
-    "review": "pending"
+    "review": "accepted"
   },
   {
     "id": "M11",
@@ -294,7 +294,7 @@
       900
     ],
     "sha256": "07275884310c06fec8de7dad16dcd975730dbcc771a2b3e3b8e20e8e9cc8add3",
-    "review": "pending"
+    "review": "accepted"
   },
   {
     "id": "M12",
@@ -321,7 +321,7 @@
       1497
     ],
     "sha256": "bf57a7f44f2a03a94d1edf3b16d93e29ba8d7dd0f6ad793a5031cc6290520a45",
-    "review": "pending"
+    "review": "accepted"
   },
   {
     "id": "M13",
@@ -348,7 +348,7 @@
       1020
     ],
     "sha256": "f68a8d6a6f03c144580cfc4c225b84f0b0ab19ffb8cef1c2632de846d6a80572",
-    "review": "pending"
+    "review": "accepted"
   },
   {
     "id": "M14",
@@ -375,7 +375,7 @@
       853
     ],
     "sha256": "7a305f2590f4ea3e94cdfee05eccb8bb88131b59330991b1cdcfab5b8ddd18ef",
-    "review": "pending"
+    "review": "accepted"
   },
   {
     "id": "M15",
@@ -402,7 +402,7 @@
       926
     ],
     "sha256": "b730e876c890223d1aa96b9f1b0352bcb2e3133d39c8a5cd1bd744e2e9890f1b",
-    "review": "pending"
+    "review": "accepted"
   },
   {
     "id": "M16",
@@ -429,7 +429,7 @@
       483
     ],
     "sha256": "1594aace05709d2de6d1fd06ec4520f04a21e5a6a4b852345572e00e346af71c",
-    "review": "pending"
+    "review": "accepted"
   },
   {
     "id": "M17",
@@ -456,7 +456,7 @@
       1767
     ],
     "sha256": "200099ce74acc4757ef35bd1f273584bf7b9b31d7c50c7f0b27c9f36bb48a220",
-    "review": "pending"
+    "review": "accepted"
   },
   {
     "id": "M18",
@@ -483,7 +483,7 @@
       977
     ],
     "sha256": "7db024c4b634d276745edde5f62c31055d0ecd29b4b88cca5ce79fb948501592",
-    "review": "pending"
+    "review": "accepted"
   },
   {
     "id": "M19",
@@ -510,7 +510,7 @@
       810
     ],
     "sha256": "b312ae48dbe10a35edcd01c87b08d9cd05642e3da25a90c1d3a40aaee3c7b5c7",
-    "review": "pending",
+    "review": "accepted",
     "influence": "atmosphere only"
   },
   {
@@ -538,7 +538,7 @@
       900
     ],
     "sha256": "f58891fd535a023798a3340ffa9084fe68b1c49035669dbed027ce479fa3601b",
-    "review": "pending",
+    "review": "accepted",
     "influence": "supporting"
   },
   {
@@ -566,7 +566,7 @@
       900
     ],
     "sha256": "a8e36296824d69c0f10186e8d2335e21d0313264d90a6a779a319172e58dcbae",
-    "review": "pending",
+    "review": "accepted",
     "influence": "supporting"
   },
   {
@@ -594,7 +594,7 @@
       335
     ],
     "sha256": "d7d892c41c6f5c375050ff966e07accc6d9f59198a340059c449b9da589abee5",
-    "review": "pending",
+    "review": "accepted",
     "influence": "primary"
   },
   {
@@ -622,7 +622,7 @@
       335
     ],
     "sha256": "480c6c60c90b135d84cb658cd53e04a5fb50b93b51a822bcf67fa8cede2e2f63",
-    "review": "pending",
+    "review": "accepted",
     "influence": "primary"
   },
   {
@@ -650,7 +650,7 @@
       1080
     ],
     "sha256": "e2de5746fdd5ad33052a363b615a2f11ddba5e8887ecea2feafc785852b7e87b",
-    "review": "pending",
+    "review": "accepted",
     "influence": "primary"
   },
   {
@@ -678,7 +678,7 @@
       1080
     ],
     "sha256": "bef0fd91f24d2cc518a2c199ce8e744dae3d6c9c3d9c677a67b8f962d356579d",
-    "review": "pending",
+    "review": "accepted",
     "influence": "primary"
   },
   {
@@ -706,7 +706,7 @@
       337
     ],
     "sha256": "62c5f566214d4252f119f806069c4d0ff245e20a11c365adfc3da33ba7ec3d5f",
-    "review": "pending",
+    "review": "accepted",
     "influence": "very light"
   }
 ]

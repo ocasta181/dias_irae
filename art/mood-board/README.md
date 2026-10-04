@@ -1,6 +1,6 @@
 # Dias Irae — mood board
 
-Review stage: **pending**. These are internet references, not generated concept art or game-ready assets.
+Review stage: **approved by the user in chat on 2026-10-04**. All 26 references retained. These are internet references, not generated concept art or game-ready assets.
 
 Open [game-language.jpg](game-language.jpg) for the weighted Hollow Knight / Castle Crashers preview, [index.html](index.html) for the gallery, [overview.jpg](overview.jpg) for the full visual overview, or the category folders to review individual files. [manifest.md](manifest.md) lists the references and gives space for decisions. Full provenance, credits, licenses, downloaded dimensions and file hashes are recorded in [sources.json](sources.json).
 
@@ -8,18 +8,13 @@ Open [game-language.jpg](game-language.jpg) for the weighted Hollow Knight / Cas
 
 A veteran comes home to an ordinary household in a harvest that has gone wrong. Limewash, mail, cold stone, folded cloth and rye are familiar. The horror emerges through those materials: black grain, a gait that has too many feet, the body caught inside a sacred image. The institutions are inhabited by people trying to help and failing in specific ways.
 
-## Game-language direction — user feedback, 2026-10-04
+## Approved game-language direction — 2026-10-04
 
-**Dark, pixelated/cartoony. Hollow Knight carries the strongest art-style influence; Castle Crashers carries very little.**
+**Dark and pixelated: more cartoony than Diablo II, less cartoony than Hollow Knight.** This latest approval refinement supersedes the earlier Hollow Knight-dominant rendering treatment. Use moderately stylized human proportions and textured, weighty materials inside clear cartoon silhouettes and atmospheric darkness. Castle Crashers remains a light influence on posing and action readability; Darkwood informs ordinary unease.
 
-- **Hollow Knight — primary:** clear silhouettes, economical character shapes, strong outlines, dark foreground masses, atmospheric depth, selective luminous accents and melancholy. Translate that shape and value language into our pixelated/cartoon sprites and the story's earthy palette. Its hand-drawn reference images guide form; exact pixel density and edge treatment will be settled in the concept and sprite pilot.
-- **Castle Crashers — very light:** a little compact character proportion, expressive posing and immediate weapon/action readability. Keep its influence narrow; the palette and comic tone are not the target.
-- **Darkwood — atmosphere only:** localized visibility and ordinary spaces under pressure.
-- **Diablo II: Resurrected — supporting influence:** isometric composition, actor placement, environmental detail, grounded materials and dramatic lighting. Keep these references visible alongside the others; Hollow Knight still leads the cartoon shape language.
+Hollow Knight and Diablo II are the two balancing poles for the concept batch. Period kit, Romanesque spaces and sacred/body-horror motifs come from the story and historical references. The approved palette is the story's earthy palette; exact color tuning, pixel density and edge treatment remain for concept review and the sprite pilot.
 
-The historical and sacred references still define subjects, materials and motifs. The new game references define how those subjects are simplified and drawn. Guarin keeps his period equipment and human identity; the story's churches stay Romanesque. This is an art-style direction, with the existing isometric game as the gameplay context.
-
-Official reference sources: [Hollow Knight](https://www.hollowknight.com/) and [Castle Crashers](https://ww2.castlecrashers.com/game/). Image-specific limits and influence tiers are in the manifest.
+Official reference sources: [Hollow Knight](https://www.hollowknight.com/), [Castle Crashers](https://ww2.castlecrashers.com/game/) and [Diablo II: Resurrected](https://diablo2.blizzard.com/). Concept direction: [visual-brief.md](../concepts/visual-brief.md).
 
 | Folder | Visual question |
 |---|---|
@@ -44,9 +39,9 @@ The later paintings contribute mood, flesh and color. Near-period embroidery and
 4. You may still delete individual image files or add your own to `user-references/` or the appropriate category folder. Keep source/credit notes beside additions. The gallery hides missing images on reload; additions and overview images are refreshed at reconciliation.
 5. Tell me when the revised mood board is approved. Keeping an image or accepting individual rows does not automatically approve the whole board.
 
-Useful review notes: which references carry the right feeling; which are too colorful, clean, ornate or overtly monstrous; and how coarse the pixels, strong the outlines and exaggerated the proportions should be. The dark, pixelated/cartoon target and reference hierarchy are directed by the user; exact sprite scale and finish remain open for review.
+Useful review notes: which references carry the right feeling; which are too colorful, clean, ornate or overtly monstrous; and how coarse the pixels, strong the outlines and exaggerated the proportions should be. The approved dark, pixelated balance is directed by the user; exact sprite scale and finish remain open for review.
 
-After the review, I will inventory the surviving and added files, refresh the board, record your explicit approval in the checklist, and generate concepts from the accepted direction. The [concept manifest](../concepts/manifest.md) is currently a candidate list only.
+The board approval is recorded in the checklist. Concept candidates are now being generated from the accepted references and the refined brief; review them in [the concept manifest](../concepts/manifest.md).
 
 ## Reference use
 
