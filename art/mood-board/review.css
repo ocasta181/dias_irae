@@ -78,12 +78,10 @@
 .rank-controls button:disabled { opacity: .35; cursor: default; }
 .rank-controls button:focus-visible,
 .rank-controls input:focus-visible { outline: 2px solid #e8d59e; outline-offset: 3px; }
+#preference-grid { align-items: start; }
 #preference-grid > .card { cursor: grab; }
-#preference-grid.images-only .body,
-#preference-grid.images-only .rank-controls { display: none; }
-.gallery-controls { margin: 16px 0; }
-.gallery-controls button { font: inherit; padding: 8px 12px; min-height: 44px; background: #23231e; color: #e5ddcc; border: 1px solid #655e4e; cursor: pointer; }
-.gallery-controls button:focus-visible { outline: 2px solid #e8d59e; outline-offset: 3px; }
+#preference-grid .body[hidden] { display: none; }
+.rank-controls .card-toggle { white-space: nowrap; }
 body.review-dragging,
 body.review-dragging * { cursor: grabbing !important; user-select: none; }
 .card.rank-dragging { opacity: .4; }

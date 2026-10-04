@@ -117,33 +117,6 @@
   }
 
   if (preferenceGrid) {
-    const imageToggle = document.getElementById("images-only");
-    const viewStorageKey = `${storageKey}:images-only`;
-    let imagesOnly = false;
-    try {
-      imagesOnly = localStorage.getItem(viewStorageKey) === "true";
-    } catch {
-      storageAvailable = false;
-    }
-
-    function updateView() {
-      preferenceGrid.classList.toggle("images-only", imagesOnly);
-      imageToggle.setAttribute("aria-pressed", String(imagesOnly));
-      imageToggle.textContent = imagesOnly ? "Show details" : "Images only";
-    }
-
-    imageToggle.addEventListener("click", () => {
-      imagesOnly = !imagesOnly;
-      updateView();
-      try {
-        localStorage.setItem(viewStorageKey, String(imagesOnly));
-      } catch {
-        storageAvailable = false;
-        showSaveStatus();
-      }
-    });
-    updateView();
-
     const cardsById = new Map(cards.map((card) => [card.dataset.reference, card]));
     const rankingSection = manifest.match(/\n## Preference ranking\n([\s\S]*?)(?=\n## |\s*$)/);
     const manifestOrder = rankingSection
@@ -330,8 +303,25 @@
       later.textContent = "↓";
       later.setAttribute("aria-label", `Move ${id} later`);
       later.addEventListener("click", () => moveCard(id, preferenceOrder.indexOf(id) + 1));
+      const body = card.querySelector(".body");
+      body.id = `details-${id}`;
+      body.hidden = true;
+      const toggle = document.createElement("button");
+      toggle.type = "button";
+      toggle.className = "card-toggle";
+      toggle.setAttribute("aria-controls", body.id);
+      function updateDetails() {
+        toggle.textContent = body.hidden ? "▸ Details" : "▾ Details";
+        toggle.setAttribute("aria-expanded", String(!body.hidden));
+        toggle.setAttribute("aria-label", `${body.hidden ? "Show" : "Hide"} details for ${id}`);
+      }
+      toggle.addEventListener("click", () => {
+        body.hidden = !body.hidden;
+        updateDetails();
+      });
+      updateDetails();
       rankControls.set(id, { position, earlier, later });
-      bar.append(handle, position, earlier, later);
+      bar.append(handle, position, earlier, later, toggle);
       card.prepend(bar);
     }
     applyOrder();
