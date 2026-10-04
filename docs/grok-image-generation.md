@@ -39,7 +39,7 @@ Use a prompt file to specify one exact `image_gen` call, its prompt and aspect r
   --max-turns 2
 ```
 
-For a concept, replace the connection-test prompt file with the agreed concept instructions and capture the event stream. The test's exact instructions are preserved in its generation record. The restricted tool list gives the agent image generation only. It does not receive project editing or shell tools. An isolated temporary working directory avoids loading this project's unrelated development instructions.
+For each concept, create a new empty working directory, generate an unused UUID and pass it with `--session-id`. Use a dispatcher `--system-prompt-override` as recorded for S38–S40 below. Do not use `--continue`, `--resume` or `--fork-session`. Replace the connection-test prompt file with the complete raw concept prompt and capture the event stream. The test's exact instructions are preserved in its generation record. The restricted tool list gives the agent image generation only. It does not receive project editing or shell tools. An isolated temporary working directory avoids loading this project's unrelated development instructions.
 
 Read the structured `tool_call` input and the completed `tool_call_update.rawOutput.path`, rather than trusting the assistant's success sentence or guessing where the output went. The CLI saves the image under its session's `images/` directory. Copy that unchanged source into `art/concepts/`, record the actual tool input, version, dimensions and hash, then add the candidate to the existing review gallery and manifest. Retain the raw event stream locally; publish only the relevant sanitized generation record.
 
@@ -51,13 +51,27 @@ The CLI's language model orchestrates its built-in Imagine tool. **The image too
 
 The test reported **$0.01088476** in language-model orchestration usage. It did not expose a separate image charge or subscription deduction, so this is not a verified total image-generation cost. Published direct-API image pricing is separate evidence in [the alternatives comparison](image-model-alternatives.md).
 
+## Current independent Guarin comparison
+
+S35–S40 were generated from complete raw prompts in six different sessions, with only `image_gen` enabled. The actual tool inputs contain exactly `prompt` and `aspect_ratio`; no image references were supplied. Each prompt matches the saved text. S35–S37 are internal revisions because the camera stayed shallow. S38–S40 are the current style comparison.
+
+For S38–S40, each empty working directory also used an explicit, unused `--session-id` and a dispatcher `--system-prompt-override`. No `--continue`, `--resume` or `--fork-session` was used. Verified IDs:
+
+| Drawing | New session ID | Evidence |
+|---|---|---|
+| S38 · Diablo II led | `8728ac7e-2a77-4671-89fe-25b5ed43644f` | [Prompt](../art/concepts/prompts/s38-guarin-diablo-game-isolated-v01.txt), [actual call](../art/concepts/records/s38-guarin-diablo-game-isolated-v01.json) |
+| S39 · Hollow Knight led | `c097ec00-7a7d-4176-b364-3573861ca63b` | [Prompt](../art/concepts/prompts/s39-guarin-hollow-game-isolated-v01.txt), [actual call](../art/concepts/records/s39-guarin-hollow-game-isolated-v01.json) |
+| S40 · Painted blend | `47e228ab-2c0d-4dc8-98da-269924a2d5b4` | [Prompt](../art/concepts/prompts/s40-guarin-blended-game-isolated-v01.txt), [actual call](../art/concepts/records/s40-guarin-blended-game-isolated-v01.json) |
+
+The new styles differ in dimensional shading, flat graphic masses and dry painted patches. Their shared silhouette comes from the repeated costume and proportion text. The records verify what was sent; they do not expose the provider's internal generation implementation. The current drawings still have inconsistent camera angles and mail simplification. A nominal 55-degree prompt was used after 45-degree requests undershot; that is not proof of the output angle. Review and concept approval remain open.
+
 ## Discarded Guarin batch
 
 The user discarded S24–S34 on 2026-10-04 because the prior-image workflow anchored the results. The eleven source images, prompts, generation records, generated camera guides and batch previews were removed from the workspace and active gallery. Git commit `b02e92b` retains the prior audit history; it must not supply generation inputs.
 
 The earlier S18/S22/S23 comparison used generated-image restyles. That method is now prohibited by the user's rule above. Older studies remain review history only, including S09 and the texture-preferred S13/S17. Their written design lessons can inform raw prompts; their image files must never be supplied to the generator.
 
-The next concept comparison still needs three independent raw-prompt directions: Diablo II led, Hollow Knight led and a blend. Describe the same costume and cute squat proportions in each. The desired camera is about 45 degrees above the ground; numeric prompts are not measured camera evidence. No replacement generation was run during this discard-and-workflow correction.
+The discard-and-workflow correction itself did not generate replacements. The independent S35–S40 generations documented above followed it. The desired output camera remains about 45 degrees above the ground; numeric prompts are not measured camera evidence.
 
 Camera, rendering, sprite grids, transparency and animation consistency remain unapproved or untested. The original mood board and equipment board retain their approval and cultural/geographic limits. See [the checklist](art-production-checklist.md) and [visual brief](../art/concepts/visual-brief.md).
 
