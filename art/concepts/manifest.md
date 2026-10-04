@@ -1,24 +1,44 @@
 # Concept art review manifest
 
-Current checkpoint: **Three fresh Grok drawings S38–S40 are ready for review. No character concept is accepted yet.** A compares Diablo II material depth, B Hollow Knight shape economy and C a painted blend. Each uses a separate empty working directory and an explicitly new session ID. The actual tool calls contain only the full raw prompt and square aspect ratio. No image inputs were supplied.
+Current checkpoint: **S41 / S46 / S45 are the assessed 2D-only comparison. No character concept is approved.** A uses soft drawn paint and Diablo II's muted mood; B uses economical Hollow Knight-like flat shapes; C uses rough painted grain. All use complete raw prompts in new isolated Grok sessions, with explicit 2D-only instructions and no image input.
 
 ## Mandatory generation rule
 
 Each iteration must begin with a complete raw prompt in a new independent generation session. Never pass a concept from a prior iteration, whether failed, rejected or previously preferred. Do not upload a concept screenshot, prior output, generated geometry guide, composite or restyled derivative. If images are supplied, they must be approved base references from the mood board or its approved equipment supplement. Text-only generation is allowed. Do not carry previous concepts through session history. Record and inspect the actual tool input to verify this rule before treating an output as a candidate.
 
-The same costume is specified in every prompt: huge full-face greathelm, ring-mail shirt, ragged wine-red cloth, brown belt/gloves/wraps/short boots, straight arming sword and wooden kite shield. The outputs retain that loadout, with visible helmet and mail-symbol drift recorded below. The story stays in the Royans/Isère in 1101; the greathelm is the explicit anachronism.
+Only 2D art is allowed. Prohibit 3D renders, sculpts, miniature photography, glossy shaders and studio-lighting effects in every complete raw prompt and dispatcher instruction. Describe the approved mood and each reference's role; game names alone are not enough. The parent assistant must view and assess each output before presenting it. Hold back failures of the 2D or mood requirements and record why. Production camera and costume approval remain separate open requirements.
 
-**Camera remains unresolved.** Desired output is about 45 degrees above the ground, 15 steeper than the earlier estimated 30-degree view. S35–S37 undershot a 45-degree prompt. S38–S40 request 55 degrees to counter that flattening. Estimated output ranges: A 22–32 degrees, B 25–35, C 35–45. These are rough illustration estimates, assuming a level circular crown. Tilt and stylization limit them; no exact increase or consistent camera is claimed. Please review rendering and proportions with this limitation visible.
+I viewed the approved mood board and all six new images. S42 was too clean, S43 too similar to B with an extra helmet fitting, and S44 added knee armor. These remain internal revisions. The presented three pass my 2D-appearance, muted-mood and cute-proportion review, with specific costume and camera issues still open. **S45 is my strongest mood match.** This assessment is not user acceptance.
 
-Review [the gallery](index.html?v=7#current-styles), [three-way overview](comparison-grok-independent-v02.jpg), [exact generation evidence](../../docs/grok-image-generation.md), [visual brief](visual-brief.md) and [progress checklist](../../docs/art-production-checklist.md). Each current drawing has Accept, Reject, Revise and Pending controls plus a comment box. Downloading the manifest preserves historical and planned rows.
+The same costume was specified each time: full-face greathelm, ring mail, wine scarf/cape/waist cloth, brown belt/gloves/wraps/boots, straight arming sword and taupe wooden kite shield. Small construction and mail-notation drift is documented in [my image-by-image assessment](assessment-2d.md). Royans/Isère, 1101 remains the story scope; the greathelm is the explicit anachronism.
 
-## Current independent comparison — pending review
+**Camera is still inconsistent.** Target is about 45 degrees above ground, 15 steeper than the earlier estimated 30. Rough output estimates: A 25–35 degrees, B 35–50, C 30–40. Nominal prompts were 60, 75 and 65 respectively to counter flattening; those numbers do not measure the result. Helmet tilt and stylized lids limit estimates. Neither an exact increase nor a consistent projection is claimed.
+
+Review [the gallery](index.html?v=8#current-styles), [overview](comparison-grok-2d-v01.jpg), [assessment](assessment-2d.md), [raw inputs](../../docs/grok-image-generation.md) and [checklist](../../docs/art-production-checklist.md). Decisions and comments remain available for each view. Manifest export preserves earlier and planned rows.
+
+## Current 2D comparison — pending user review
 
 | Identifier | Candidate | Purpose | Image | Status | Notes |
 |---|---|---|---|---|---|
-| S38 | A — Diablo II led | Independent text-only style study | [S38](images/s38-guarin-diablo-game-isolated-v01.jpg) | pending |  |
-| S39 | B — Hollow Knight led | Independent text-only style study | [S39](images/s39-guarin-hollow-game-isolated-v01.jpg) | pending |  |
-| S40 | C — Blended game rendering | Independent text-only style study | [S40](images/s40-guarin-blended-game-isolated-v01.jpg) | pending |  |
+| S41 | A — Diablo II mood, drawn in 2D | Assessed 2D mood/style study | [S41](images/s41-guarin-diablo-2d-v01.jpg) | pending |  |
+| S46 | B — Hollow Knight shapes, somber 2D | Assessed 2D mood/style study | [S46](images/s46-guarin-hollow-knight-2d-v03.jpg) | pending |  |
+| S45 | C — Dark painted 2D blend | Assessed 2D mood/style study | [S45](images/s45-guarin-blended-2d-v02.jpg) | pending |  |
+
+## Held back after my image review
+
+| Identifier | Candidate | Purpose | Image | Status | Notes |
+|---|---|---|---|---|---|
+| S42 | B — Hollow Knight shapes, somber 2D | Assessed 2D mood/style study | [S42](images/s42-guarin-hollow-knight-2d-v01.jpg) | revise | Held back after my visual review: 2D and muted, but too clean and patterned for the worn mood. Replaced by another complete raw-prompt generation; never uploaded as a reference. |
+| S43 | C — Dark painted 2D blend | Assessed 2D mood/style study | [S43](images/s43-guarin-blended-2d-v01.jpg) | revise | Held back after my visual review: 2D but too close to B, with an extra circular helmet fitting and weak mail representation. Replaced by another complete raw-prompt generation; never uploaded as a reference. |
+| S44 | B — Hollow Knight shapes, somber 2D | Assessed 2D mood/style study | [S44](images/s44-guarin-hollow-knight-2d-v02.jpg) | revise | Held back after my visual review: dark graphic 2D shapes fit the mood, but the model added knee disks outside the fixed costume. Regenerated from a complete raw prompt without supplying this image. |
+
+## Previous comparison — 2D rerun requested
+
+| Identifier | Candidate | Purpose | Image | Status | Notes |
+|---|---|---|---|---|---|
+| S38 | A — Diablo II led | Independent text-only style study | [S38](images/s38-guarin-diablo-game-isolated-v01.jpg) | revise | User requires a rerun with only 2D art and stronger mood-board context. Superseded by the assessed 2D comparison; no concept approval. |
+| S39 | B — Hollow Knight led | Independent text-only style study | [S39](images/s39-guarin-hollow-game-isolated-v01.jpg) | revise | User requires a rerun with only 2D art and stronger mood-board context. Superseded by the assessed 2D comparison; no concept approval. |
+| S40 | C — Blended game rendering | Independent text-only style study | [S40](images/s40-guarin-blended-game-isolated-v01.jpg) | revise | User requires a rerun with only 2D art and stronger mood-board context. Superseded by the assessed 2D comparison; no concept approval. |
 
 ## First independent raw-text trials — internal revisions
 

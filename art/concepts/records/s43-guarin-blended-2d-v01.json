@@ -1,0 +1,94 @@
+{
+  "identifier": "S43",
+  "approach": "C \u2014 Dark painted 2D blend",
+  "version": "v01",
+  "image": "images/s43-guarin-blended-2d-v01.jpg",
+  "prompt": "prompts/s43-guarin-blended-2d-v01.txt",
+  "tool": "Grok CLI image_gen",
+  "model": "Exact Imagine model not exposed by CLI tool result",
+  "cli": "/Users/ocasta/.grok/bin/grok",
+  "cli_version": "1.0.46 (2765805b9442) [stable]",
+  "generation_date": "2026-10-04",
+  "input_mode": "independent text-only 2D generation",
+  "reference_identifiers": [],
+  "reference_inputs": [],
+  "design_reference_identifiers": [
+    "M01",
+    "M02",
+    "M03",
+    "M19",
+    "M20",
+    "M21",
+    "M22",
+    "M23",
+    "M24",
+    "M25",
+    "M26"
+  ],
+  "reference_roles": "Approved mood-board context written in full in the prompt. No mood-board images or previous concepts uploaded. Parent assistant viewed the board and every new output before review release.",
+  "story_sources": [
+    "../../story/story-arch.md",
+    "../../story/characters.md"
+  ],
+  "regional_scope": "Royans/Isere story, 1101. Greathelm is the explicit user-approved anachronism; no local adoption of broad European equipment is inferred.",
+  "status": "revise",
+  "user_notes": "Held back after my visual review: 2D but too close to B, with an extra circular helmet fitting and weak mail representation. Replaced by another complete raw-prompt generation; never uploaded as a reference.",
+  "inspection_notes": [
+    "Held back after my visual review: 2D but too close to B, with an extra circular helmet fitting and weak mail representation. Replaced by another complete raw-prompt generation; never uploaded as a reference."
+  ],
+  "quality_assessment": {
+    "assessor": "Parent assistant, after viewing the actual image",
+    "comparison_basis": "Approved local mood-board game-language and overview images, latest user direction and fixed costume",
+    "checks": {
+      "2d_appearance": "pass",
+      "mood": "partial",
+      "cute_proportions": "pass",
+      "costume": "extra helmet fitting",
+      "camera": "too shallow",
+      "style_distinction": "too close to S42"
+    },
+    "release": "held back as internal revision",
+    "limit": "2D appearance is a visual judgment; provider internal rendering steps are not exposed."
+  },
+  "desired_camera_degrees_above_ground": 45,
+  "requested_nominal_camera_degrees_above_ground": 60,
+  "estimated_camera_range_degrees_above_ground": [
+    25,
+    40
+  ],
+  "camera_limit": "Prompt angles were increased to counter repeated flattening. Broad lids suggest rough ranges only; helmet tilt, noncircular drawing and stylization prevent calibration. No consistent 45-degree view or exact 15-degree increase is claimed.",
+  "source_output": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-2d-s41-s43%2Fs43/6845ceb5-8aff-459a-9167-2a47a6a42584/images/1.jpg",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "sha256": "018779366e20cea9ce71d31ef4d0a10955add8c1e0964cc416b027b338f36d9d",
+  "format": "JPEG",
+  "tool_call_count": 1,
+  "independent_working_directory": "/private/tmp/dias-grok-2d-s41-s43/s43",
+  "explicit_new_session_id": "6845ceb5-8aff-459a-9167-2a47a6a42584",
+  "resume_or_continue_used": false,
+  "dispatcher_system_prompt_override": "Dispatch exactly one image_gen call with the supplied complete raw prompt verbatim. Only 2D drawn art is permitted; 3D art is prohibited. No images, previous conversation, memory, other tools, subagents or extra generations.",
+  "attempts": [
+    {
+      "tool": "image_gen",
+      "tool_input": {
+        "prompt": "Create ONLY a hand-drawn 2D game character.\nSTYLE C: a hand-drawn 2D painted sprite combining Hollow Knight's compact rounded shapes with Diablo II's worn dark mood. Use broad dry-brush patches, subtle mottled pigment and angular flat shadow cutouts, thin broken colored edges and economical ring-mail marks. This must look like a tiny weathered painted game actor, darker and rougher than a clean animation cel, simpler than a detailed fantasy illustration. No smooth gradient modeling, heavy ink contours or decorative comic hatching.\n\nMANDATORY: ONLY TWO-DIMENSIONAL (2D) ART. No three-dimensional (3D) render, sculpt, model, miniature photograph, plastic or clay figure, realistic material shader, glossy metal or studio lighting. Draw by hand as a 2D game asset; use painted marks and flat shadow shapes to describe the elevated view. Create one original full-body character on a square canvas, plain charcoal-black background and small simple painted floor shadow. No writing, captions or panels.\n\nAPPROVED MOOD-BOARD CONTEXT: Hollow Knight is the strongest guide for large-head/tiny-body structure, simple shapes, restrained contours and luminous darkness (approved M22\u2013M25). Diablo II guides dark earthen colors, worn materials and elevated gameplay composition (M20\u2013M21); its realistic anatomy and 3D material rendering must not transfer. Castle Crashers contributes only a trace of short squat proportions, never its bright colors or comedy (M26). Darkwood contributes quiet unease and darkness, not its camera (M19). The sacred paintings M01\u2013M03 contribute soot-black recesses, muted bone/iron whites and dried blood red, not their later costume or spectacle. Overall feeling: solemn, weather-beaten, lonely, faintly uncanny, with an endearing compact silhouette. Neither cheerful comic-book illustration nor polished heroic fantasy.\n\nSUBJECT AND PROPORTIONS: Guarin, a road-worn household knight returning to the Royans/Isere lands in 1101. An ENORMOUS barrel helmet on a TINY BROAD BODY with very short stubby arms and legs and small wide boots. Approximately two helmet-heights tall in unprojected proportions, head wider than torso. Cute and squat, no anatomically realistic adult warrior. His face and eyes are entirely concealed. Neutral quiet idle stance facing diagonally lower-right, all equipment and feet visible.\n\nCAMERA: very elevated orthographic three-quarter gameplay view, looking steeply DOWN from 60 degrees above the ground. Helmet remains upright, its flat circular lid LEVEL, not tilted toward the viewer. Show a broad deep lid ellipse and compress the short front plate, shoulders almost hidden beneath the huge lid, belly and stubby legs strongly foreshortened. Keep the high view coherent across helmet, shield rim and boot tops. Render this projection with 2D drawn planes, not a 3D object.\n\nFIXED COSTUME: plain dull-iron fully enclosed cylindrical GREATHELM, flat unadorned crown, two plain vertical riveted strips, one narrow black visor slit and small round breathing holes. Fine interlocking RING MAIL shirt and short sleeves, drawn as tiny joined C/O curves, not overlapping scales, isolated polka dots or huge metal disks. Ragged faded dark wine-red scarf and short cape, matching ragged waist cloth. Brown leather belt with one plain rectangular buckle, plain brown gloves, taupe/brown forearm and shin wraps, short round brown boots. Straight double-edged arming sword in viewer-left hand: disk pommel, brown grip, straight crossguard and rigid straight symmetric blade pointing down across the front to lower-right. Elongated taupe wooden KITE SHIELD at viewer-right, dull iron rim, one narrow faded wine-red panel. No extra armor, clothing, insignia, crest, jewelry or weapons. These plain local materials fit the rural Royans/Isere story; the greathelm is the explicitly allowed anachronism, not evidence of 1101 regional use.\n\nCOLOR AND READABILITY: weathered warm-dark-gray iron, soot-black shadows, muddy taupe/brown leather and muted dried-wine cloth. Sparse chalk-gray edge marks, matte rough surfaces, no pale shiny silver or bright primary colors. Small controlled areas of light, large quiet areas of dark. Keep the silhouette readable at gameplay size with finely stepped drawn edges rather than large blocky mosaic pixels. Preserve costume and proportions; only the 2D drawing language varies.",
+        "aspect_ratio": "1:1"
+      },
+      "tool_status": "completed",
+      "tool_output": {
+        "type": "ImageGen",
+        "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-grok-2d-s41-s43%2Fs43/6845ceb5-8aff-459a-9167-2a47a6a42584/images/1.jpg",
+        "filename": "1.jpg",
+        "session_folder": "images"
+      },
+      "session_id": "6845ceb5-8aff-459a-9167-2a47a6a42584",
+      "stop_reason": "end_turn",
+      "reported_orchestration_cost_usd": 0.01410456,
+      "orchestration_model": "grok-4.7-build"
+    }
+  ],
+  "reported_orchestration_cost_usd": 0.01410456,
+  "billing_limit": "CLI language-model orchestration usage only; separate image charges or subscription deductions are not exposed."
+}
