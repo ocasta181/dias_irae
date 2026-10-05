@@ -1,0 +1,72 @@
+{
+  "packagePassed": true,
+  "reconstructedFrames": 9,
+  "fps": 8,
+  "cycleMs": 1000,
+  "displayTravelPxPerSecond": 54,
+  "measured": [
+    {
+      "pose": 1,
+      "source": 2,
+      "region": [
+        100,
+        145,
+        25,
+        22
+      ],
+      "point": [
+        115.5,
+        157
+      ],
+      "uncertaintyPx": 1
+    },
+    {
+      "pose": 2,
+      "source": 1,
+      "region": [
+        100,
+        145,
+        25,
+        22
+      ],
+      "point": [
+        114,
+        157
+      ],
+      "uncertaintyPx": 1
+    },
+    {
+      "pose": 3,
+      "source": 3,
+      "region": [
+        100,
+        145,
+        25,
+        22
+      ],
+      "point": [
+        111,
+        152
+      ],
+      "uncertaintyPx": 1
+    },
+    {
+      "pose": 4,
+      "source": 4,
+      "region": [
+        100,
+        145,
+        25,
+        22
+      ],
+      "point": [
+        111.5,
+        152
+      ],
+      "uncertaintyPx": 1
+    }
+  ],
+  "fullContactCoverage": false,
+  "motionAcceptance": "revise",
+  "productionReady": false
+}

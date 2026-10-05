@@ -1,0 +1,107 @@
+{
+  "passed": false,
+  "basis": "measured-art",
+  "scope": "submitted contact samples only",
+  "observation_count": 12,
+  "failures": [
+    {
+      "clip": "E-walk-v03-first-four",
+      "frame": "E-walk-v03-1",
+      "contact": "LH",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-v03-first-four",
+      "frame": "E-walk-v03-1",
+      "contact": "RH",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-v03-first-four",
+      "frame": "E-walk-v03-2",
+      "contact": "LH",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-v03-first-four",
+      "frame": "E-walk-v03-2",
+      "contact": "RH",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-v03-first-four",
+      "frame": "E-walk-v03-2",
+      "contact": "RF",
+      "reason": "contact-drift",
+      "drift_px": 5.25,
+      "budget_px": 3.0,
+      "offset_ms": 125.0,
+      "expected_world": [
+        21.75,
+        1.0
+      ],
+      "actual_world": [
+        27.0,
+        1.0
+      ]
+    },
+    {
+      "clip": "E-walk-v03-first-four",
+      "frame": "E-walk-v03-3",
+      "contact": "LH",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-v03-first-four",
+      "frame": "E-walk-v03-3",
+      "contact": "LF",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-v03-first-four",
+      "frame": "E-walk-v03-3",
+      "contact": "RF",
+      "reason": "contact-drift",
+      "drift_px": 8.40014880820572,
+      "budget_px": 3.0,
+      "offset_ms": 125.0,
+      "expected_world": [
+        21.75,
+        1.0
+      ],
+      "actual_world": [
+        28.5,
+        -4.0
+      ]
+    },
+    {
+      "clip": "E-walk-v03-first-four",
+      "frame": "E-walk-v03-4",
+      "contact": "LH",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-v03-first-four",
+      "frame": "E-walk-v03-4",
+      "contact": "LF",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-v03-first-four",
+      "frame": "E-walk-v03-4",
+      "contact": "RF",
+      "reason": "contact-drift",
+      "drift_px": 12.769592789122134,
+      "budget_px": 3.0,
+      "offset_ms": 125.0,
+      "expected_world": [
+        21.75,
+        1.0
+      ],
+      "actual_world": [
+        33.5,
+        -4.0
+      ]
+    }
+  ]
+}

@@ -48,6 +48,8 @@ Output: measurements, contact report and frame-specific defects. Pass only the c
 
 Use the same atlas the application loads. Check normal speed, slow speed, reduced size, contrasting backgrounds and the loop boundary. Exercise start, arbitrary-phase stop, turn, interruption and recovery. Inspect visible weight transfer, not only endpoint coordinates.
 
+Count the actual limb cycles, not just source drawings. A nominally long cycle can contain repeated or conflicting swings that make it look frantic. Establish a few clear motion keys first, then choose timing and root travel from their support trajectories. Check both together at the intended display size. More painted intermediate frames cannot correct wrong pose order, and slower playback cannot excuse planted-foot drift.
+
 A coherent whole animal is mandatory. Disconnected-looking necks, distorted legs, flickering fur or an unreadable gait fail even if contacts are numerically correct. Alpha connectivity can catch separated pieces; it cannot establish good anatomy or convincing overlap.
 
 If a sheet contains good intact characters but ignores the guide, record the geometry failure. Do not align every pose independently to disguise row drift. A justified next experiment reduces the handoff to one pose or a small pair, strengthens the silhouette/occlusion guide, or uses a provider with explicit pose conditioning. Preserve the same acceptable identity image; never promote the failed animation sheet to identity authority. A corrected character design can be retained while its animation is rejected.
