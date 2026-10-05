@@ -1,0 +1,37 @@
+{
+  "tool": "image_gen",
+  "model": "undisclosed",
+  "original_path": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-d1365867-4924-4520-b2ce-8442c8da52e6.png",
+  "source_path": "base-wolf-v02.png",
+  "sha256": "ee925ea9d1d9946cdaea3cf8a1538950748d305e079c96c7a76f837ff551c3b0",
+  "prompt": "base-v02-prompt.txt",
+  "status": "candidate intact identity; proportions visually checked; user approval pending",
+  "references": [
+    {
+      "role": "dominant proportions and drawing style",
+      "path": "art/concepts/images/s13-guarin-isometric-v02.png",
+      "sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c"
+    },
+    {
+      "role": "palette and environment language",
+      "path": "art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+      "sha256": "191af0e5abbd484ec225633f530e6ed6dd9ebf01c5367910c09a353c4ca465d9"
+    },
+    {
+      "role": "exaggerated skeleton and pose control",
+      "path": "art/sprites/wolf/whole-body/guides/e-neutral-v02.png",
+      "sha256": "13a6365c20fefdf5c62c1608a45ce555a953a28487a09acf74dfedcc7f3c9b50"
+    },
+    {
+      "role": "species features only; natural proportions excluded",
+      "path": "art/mood-board/03-people-and-arms/m15-wolf.jpg",
+      "sha256": "b730e876c890223d1aa96b9f1b0352bcb2e3133d39c8a5cd1bd744e2e9890f1b"
+    }
+  ],
+  "observations": [
+    "Oversized broad head, compressed torso and short thick legs are visibly exaggerated in the S13 direction.",
+    "One continuous painted animal, with connected neck, shoulders and haunches.",
+    "Raw output uses its own square placement and a slightly diagonal profile; not an exact registration or camera check. Motion pose controls, not this placement, define future frames.",
+    "No rejected prior wolf or painted components were supplied."
+  ]
+}

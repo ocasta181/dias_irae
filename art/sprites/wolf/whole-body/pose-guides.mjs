@@ -2,22 +2,26 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createCanvas } from "../source-parts.mjs";
-import { project, paw, joint, limbs, stride, walkDuration, origin } from "../motion.mjs";
+import { project, paw, joint, stride, walkDuration, origin } from "../motion.mjs";
 
 const root = dirname(fileURLToPath(import.meta.url));
 const colors = { LF: "#2b7ba0", RF: "#c56227", LH: "#634bac", RH: "#b0375c" };
+const walkStride = 24;
+const limbs = { LH: { base: -16, lateral: -8, offset: 0 }, LF: { base: 16, lateral: -8, offset: .25 }, RH: { base: -16, lateral: 8, offset: .5 }, RF: { base: 16, lateral: 8, offset: .75 } };
 
 export function wolfPose(phase, walking = true) {
   const feet = {};
   for (const [id, limb] of Object.entries(limbs)) {
     const step = walking ? paw(phase, limb) : { forward: limb.base, lift: 0, planted: true };
-    const fore = id.endsWith("F"), hip = [limb.base, 32];
-    const lower = [step.forward - (fore ? 2 : 6), step.lift + (fore ? 7 : 9)];
-    const knee = joint(hip, lower, fore ? -1 : 1, fore ? 16 : 17, fore ? 17 : 18);
+    step.forward = limb.base + (step.forward - limb.base) * walkStride / stride;
+    step.lift *= 5 / 8;
+    const fore = id.endsWith("F"), hip = [limb.base, 22];
+    const lower = [step.forward - (fore ? 1 : 4), step.lift + (fore ? 5 : 6)];
+    const knee = joint(hip, lower, fore ? -1 : 1, fore ? 10 : 11, fore ? 11 : 12);
     const local = [hip, knee, lower, [step.forward, step.lift]];
     feet[id] = { planted: step.planted, local, points: local.map(([forward, height]) => project("E", forward, limb.lateral, height)) };
   }
-  return { direction: "E", phase, origin, rootForward: walking ? stride * phase : 0, feet, head: project("E", 35, 0, 52), body: project("E", 0, 0, 32) };
+  return { direction: "E", phase, origin, rootForward: walking ? walkStride * phase : 0, feet, head: project("E", 26, 0, 40), body: project("E", 0, 0, 22) };
 }
 
 function drawGuide(context, pose, label) {
@@ -27,11 +31,11 @@ function drawGuide(context, pose, label) {
   context.font = "8px sans-serif"; context.fillStyle = "#2c2b28"; context.fillText(label, 5, 11);
   context.fillText("E / 45° / root 96,156", 5, 22);
   context.strokeStyle = "#959089"; context.lineWidth = 1;
-  context.beginPath(); context.ellipse(...pose.body, 39, 19, 0, 0, Math.PI * 2); context.stroke();
-  context.beginPath(); context.ellipse(...pose.head, 22, 22, 0, 0, Math.PI * 2); context.stroke();
-  const shoulder = project("E", 25, 0, 32), neck = project("E", 30, 0, 43), nose = project("E", 60, 0, 47);
+  context.beginPath(); context.ellipse(...pose.body, 26, 14, 0, 0, Math.PI * 2); context.stroke();
+  context.beginPath(); context.ellipse(...pose.head, 24, 24, 0, 0, Math.PI * 2); context.stroke();
+  const shoulder = project("E", 16, 0, 22), neck = project("E", 19, 0, 32), nose = project("E", 49, 0, 36);
   context.beginPath(); context.moveTo(...shoulder); context.lineTo(...neck); context.lineTo(...pose.head); context.lineTo(...nose); context.stroke();
-  context.beginPath(); context.moveTo(...project("E", -25, 0, 32)); context.lineTo(...project("E", -43, 0, 24)); context.lineTo(...project("E", -51, 0, 13)); context.stroke();
+  context.beginPath(); context.moveTo(...project("E", -16, 0, 22)); context.lineTo(...project("E", -29, 0, 17)); context.lineTo(...project("E", -35, 0, 9)); context.stroke();
   context.strokeStyle = "#b69a40";
   context.beginPath(); context.moveTo(92, 156); context.lineTo(100, 156); context.moveTo(96, 152); context.lineTo(96, 160); context.stroke();
   for (const [id, foot] of Object.entries(pose.feet)) {
@@ -57,8 +61,8 @@ async function saveGuide(name, poses, columns, rows) {
 }
 
 await mkdir(resolve(root, "guides"), { recursive: true });
-await saveGuide("e-neutral", [{ id: "E-neutral", ...wolfPose(0, false) }], 1, 1);
+await saveGuide("e-neutral-v02", [{ id: "E-neutral-v02", ...wolfPose(0, false) }], 1, 1);
 const poses = Array.from({ length: 24 }, (_, index) => ({ id: `E-walk-${index + 1}`, startMs: index * 37.5, durationMs: 37.5, ...wolfPose((index + .5) / 24) }));
-await saveGuide("e-walk-01-12", poses.slice(0, 12), 4, 3);
-await saveGuide("e-walk-13-24", poses.slice(12), 4, 3);
-console.log(JSON.stringify({ poses: 24, stride, walkDuration, guideMethod: "whole-body canine skeleton with shoulder/elbow/carpus and hip/stifle/hock, not painted parts" }));
+await saveGuide("e-walk-01-12-v02", poses.slice(0, 12), 4, 3);
+await saveGuide("e-walk-13-24-v02", poses.slice(12), 4, 3);
+console.log(JSON.stringify({ poses: 24, stride: walkStride, walkDuration, guideMethod: "exaggerated whole-body canine skeleton with shoulder/elbow/carpus and hip/stifle/hock" }));

@@ -2,6 +2,13 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
+2026-10-05 active wolf correction: the user rejected the painted-component assembly and the realistic first whole-body base. Use [whole-body skeleton-guided drawing](../art/sprites/wolf/whole-body/production-contract.md), with original S13 as the dominant proportion reference. Decision at commit `d33dc2e`, confidence 99%: the wolf must share Guarin's oversized head, tiny squat torso and short thick legs. M15 supplies species features only; rejected outputs are excluded from generation inputs.
+
+- [x] Generate and inspect [the exaggerated intact v02 base](../art/sprites/wolf/whole-body/base-wolf-v02.png); preserve original bytes, full prompt and reference hashes. This is an appearance candidate, not a measured motion or camera pass.
+- [x] Redefine canine controls with shoulder/elbow/carpus and hip/stifle/hock joints, a 48-pixel head envelope versus a 32-pixel torso axis, 24-pixel stride and 5-pixel paw lift.
+- [ ] Generate whole-body walk frames from this exact candidate and the numerical skeleton controls, then measure actual painted contacts and inspect the real export in the motion lab.
+- [ ] Pass the pilot before expanding to eight directions and other states. User visual approval remains open; the rejected 512-entry component package is not current game art.
+
 Last updated: 2026-10-05. Current stage: **30 additional exact-S13 face studies are ready on a dedicated page, with 15 Grok and 15 built-in candidates plus five earlier face studies. The 45 equipment/cast candidates and 24 gameplay screens remain under review. The researched campaign inventory, first Guarin sprite study, keyboard motion lab and numerical foot-placement framework are available. Face, equipment/cast, character-style and gameplay reviews now save ordering, commentary and decisions automatically to separate project files. No Save button is required. Further sprite categories and first-level implementation retain their review gates.**
 
 2026-10-05 face exploration, decision at commit `47bab5d`, confidence 98%: keep original S13 as the sole source, preserve outfit/body/camera and explore the unhelmeted facial shape and drawing grammar. Guarin's age, dark hair, stubble and weary expression remain the brief; the giant head and tiny squat body override realistic dossier stature.

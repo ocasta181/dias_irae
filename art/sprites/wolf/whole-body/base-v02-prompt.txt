@@ -1,0 +1,16 @@
+Use case: stylized-concept.
+Asset type: one complete 2D game wolf canonical standing sprite, true transparent RGBA background.
+
+Generate a NEW DRAWING from these four inputs. Do not reuse any earlier wolf drawing.
+Image 1 (S13 Guarin) is the PRIMARY authority for EXAGGERATED BODY PROPORTIONS and gritty flat drawing style. Translate his huge head / tiny squat body / stubby limbs proportions into a quadruped wolf.
+Image 2 (G15 courtyard) sets muted dirty grey, soot-brown and taupe palette, worn hopeless medieval game atmosphere.
+Image 3 is the mandatory skeletal proportion and standing-position guide. Fill this silhouette as ONE CONTINUOUS ANIMAL. The large head circle is intentional: skull plus muzzle width is greater than shoulder-to-hip length. Do not normalize these proportions into a real wolf.
+Image 4 (wolf photograph) is ONLY a species-feature reference for pointed ears, coarse grey fur and canine muzzle. Its natural proportions are forbidden.
+
+Subject: short squat cute but tired grim grey wolf, absurdly oversized broad head, small compressed barrel-shaped torso, four VERY SHORT thick legs, compact paws, tiny narrowed dark eyes, short blunt canine muzzle, small pointed ears, shaggy neck flowing seamlessly into torso, short worn bushy tail. Head including muzzle about 1.4-1.6 times the shoulder-to-hip distance. Head-height roughly twice the exposed leg height. The whole silhouette should read as Guarin's stout cartoon companion, not a realistic wolf. No scars copied from the photograph, no clothing, no armor.
+
+Style: entirely flat hand-drawn 2D game art with dark irregular ink contour and broad dirty painted texture patches like S13. Muted grubby warm greys, charcoal back, dull dusty light muzzle; no polished highlights, no rendered 3D volumes, no photoreal fur strands, no studio light. Restrained tiny eyes, not a mascot with huge eyes. Mournful, weary, wretched, still charming through proportions.
+
+Pose and framing: facing screen RIGHT (E) in orthographic game projection with camera 45 degrees above horizontal, enough top of head and back visible; no perspective vanishing point. All four paws planted. Use the square guide's overall registration; guide coordinates are on a 192x192 logical canvas: ground-root (96,156), body center (96,140), huge head center (122,128), forepaws approximately (112,150)/(112,162), hindpaws approximately (80,150)/(80,162). Keep guide's head and torso sizes and very short legs. Scale all guide coordinates uniformly to the output square. Preserve generous empty area above and around this small registered sprite rather than enlarging it to fill the whole canvas.
+
+Output ONLY the entire intact wolf. Remove every guide line, circle, number, colored marker and label. True transparent alpha around the animal, no painted checkerboard, ground plane, cast shadow, background, text, border or other objects. Anatomically coherent joins at neck, shoulders and hips despite the cartoon exaggeration.

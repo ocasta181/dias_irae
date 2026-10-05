@@ -8,6 +8,8 @@ Inputs: approved anatomy, style and gameplay references; camera; proportion boun
 
 Draw one complete animal/person. Inspect the neck, torso, limb topology, silhouette, face and scale before using it as a generation reference. Preserve raw bytes and record whether this is a provisional base or user-approved identity. Do not use a rejected assembly as the base.
 
+When an animal must share a human character's exaggerated proportions, make the selected character the primary proportion reference. A species photograph supplies species features, not natural body ratios. Define measurable head-to-torso and leg-to-body bounds in the project contract; draw these envelopes into the controls. Compare the actual painting with the selected character at gameplay scale before drawing animation. A good anatomical likeness does not excuse drifting back to realistic proportions.
+
 Output: one intact base image, its source record and canonical registration. A valid alpha mask or contact report cannot approve this design.
 
 ## 2. Draw anatomy-aware controls

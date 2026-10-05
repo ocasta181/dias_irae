@@ -5,7 +5,7 @@
   "source_path": "base-wolf-v01.png",
   "sha256": "8e978687f8a4c07dc602e5cc55935696521b6427a77fb8601425f158eb0e7f29",
   "prompt": "base-prompt.txt",
-  "status": "provisional intact identity; not user-approved",
+  "status": "REJECTED by user: proportions are too anatomically realistic; excluded from further generation inputs",
   "references": [
     {
       "role": "anatomy",
