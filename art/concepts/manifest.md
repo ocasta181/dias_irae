@@ -218,6 +218,7 @@ Gallery order, first to last. Ranking does not change acceptance decisions.
 44. S52
 45. S47
 
+
 ## S13 equipment and cast exploration
 
 35 equipment/face choices and ten story subjects are defined in [the list](expansion/plan.json). Every drawing uses the exact original S13 as its only image input. Dates and regional limits are explicit. Malta is the requested later heraldic exception. These are concept studies; no new sprite or game implementation is implied.
@@ -227,3 +228,6 @@ Gallery order, first to last. Ranking does not change acceptance decisions.
 | V01 | Long rounded kite | Shields | [V01](expansion/images/v01-v01.png) | pending | 1160–1180; Western European manuscript comparison. E69; manuscript silhouette, not a surviving French shield. Parent inspection: S13 helmet, body, sword, cloth, palette and view preserved. Rounded teardrop shield, ochre wood and boss are visible; lower tip longer than the original. |
 | V02 | Short flat-topped kite | Shields | [V02](expansion/images/v02-v01.png) | pending | circa 1200; Swiss surviving-shield comparison. E44; reconstruct complete shape rather than copying damage. Parent inspection: S13 identity and texture preserved. Flat shield top and charcoal boards differ from V01; overall shield height remains close to the original, so the requested shortening is modest. |
 | V03 | Domed round shield | Shields | [V03](expansion/images/v03-v01.png) | pending | circa 1150; Western European manuscript comparison. E68; construction inferred from illustrated profile. Parent inspection: S13 identity and texture preserved. Round convex shield and large boss read clearly; apparent oval is the oblique projection. Dark leather separates it from the two kite shapes. |
+| V04 | Small round target | Shields | [V04](expansion/images/v04-v01.png) | pending | 12th-century design study; Western European comparison. Size exploration from E68, not a claim of a separately documented buckler. Parent inspection: S13 identity, costume and drawing preserved. Small round bossed target is visibly reduced from V03; forearm/hand attachment is concealed by its face. |
+| V05 | Compact early heater | Shields | [V05](expansion/images/v05-v01.png) | pending | 1200–1230 design study; Western European transitional comparison. Early-13th allowance; shape inference from E44, not a dated surviving heater. Parent inspection: S13 identity and drawing preserved. Compact triangular shield, straight top and diagonal wine stripe are distinct; period attribution is an explicit early-13th design inference. |
+| V07 | Short bearded axe | One-handed weapons | [V07](expansion/images/v07-v01.png) | pending | 12th-century design study; Northwestern European tool comparison. E71; adaptation of an illustrated work axe into a short weapon is interpretive. Parent inspection: S13 body, helmet, original shield and cloth retained. Single short bearded axe replaces sword, with a visible straight wooden haft and readable iron head. |
