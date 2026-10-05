@@ -25,6 +25,10 @@ Last updated: 2026-10-05. Current stage: **45 exact-S13 equipment and cast candi
 - [x] Repair front-facing hurt sword retention with six exact-upstream S v02 poses; preserve all other 378 frames and all clip timings. All 25 tests pass, including the full supported playback-setting matrix. Fresh browser verifies all six repaired pose selections, sword retention at 96/160 pixels and hurt→idle recovery; [preview](../art/sprites/guarin/front-hurt-review-160.png) saved. User visual acceptance remains open.
 - [x] Reconcile the current tooling brief with the later exact-image instruction: G15 / S13 for the authorized pilot, original S13 for equipment/cast; failed outputs remain excluded. Keep engine and asset approvals open.
 
+2026-10-05 decision at commit `54bc09b`: run the existing art server as a macOS user login service, using Homebrew Python and the existing loopback port 8765. Confidence: 99%, based on the user's explicit request that the motion lab remain available without Codex. This changes process supervision only; review contracts and artwork stay intact.
+
+- [x] Install the independent local art server as `com.diasirae.art-server`, with login startup and automatic restart. Confirm the process belongs to macOS launchd, survives an explicit termination with a new process identifier, and serves all 17 motion-lab files, including twelve sprite pages, with HTTP status 200 and unchanged hashes. All 25 animation tests pass. Document controls in [the motion lab README](../art/sprites/guarin/README.md). The browser tool blocks the existing error tab under its URL policy; browser reload remains a user action.
+
 Source material: [story spine](../story/story-arch.md), [characters](../story/characters.md), [locations](../story/locations.md), [draft systems](../story/systems.md).
 
 - Late summer 1101; rural homecoming, diseased harvest, household grief, sacramental horror.

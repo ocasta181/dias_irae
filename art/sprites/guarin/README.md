@@ -1,6 +1,16 @@
 # Guarin animation study
 
-Open [the motion lab](http://127.0.0.1:8765/art/sprites/guarin/viewer/index.html). The existing art server is `python3 scripts/serve_art.py --port 8765` from the project root. The app needs no package install, new service, endpoint, database, or build step.
+Open [the motion lab](http://127.0.0.1:8765/art/sprites/guarin/viewer/index.html). The existing art server runs as the macOS login service `com.diasirae.art-server`, independent of Codex. It starts at login and restarts if its process exits. It listens only on this computer, at `127.0.0.1:8765`, and uses Homebrew Python with the standard library. The app needs no package install or build step.
+
+The workstation configuration is [scripts/art-server.plist](../../../scripts/art-server.plist). Install it from the project root:
+
+```sh
+mkdir -p "$HOME/Library/LaunchAgents" "$HOME/Library/Logs/DiasIrae"
+cp scripts/art-server.plist "$HOME/Library/LaunchAgents/com.diasirae.art-server.plist"
+launchctl bootstrap "gui/$(id -u)" "$HOME/Library/LaunchAgents/com.diasirae.art-server.plist"
+```
+
+Check the service with `launchctl print "gui/$(id -u)/com.diasirae.art-server"`. Restart it with `launchctl kickstart -k "gui/$(id -u)/com.diasirae.art-server"`. Stop it with `launchctl bootout "gui/$(id -u)/com.diasirae.art-server"`; use the bootstrap command to start it again. Logs are in `~/Library/Logs/DiasIrae/`. The configuration contains this workstation's absolute project, Python and log paths; update them if the project moves.
 
 Selected style: G15 / S13, captured after inventory verification on 2026-10-05 local time. The selected gameplay screen and its original character were actual image inputs in every generation. The logical sheet contains **384 drawn poses, eight directions, eight state families, and twelve playback tags per direction**. It uses twelve original transparent PNG pages: six east cut poses, six southwest hurt poses and six southeast guard poses and six front hurt poses come from separate repaired pages. Source rasters remain unchanged.
 
