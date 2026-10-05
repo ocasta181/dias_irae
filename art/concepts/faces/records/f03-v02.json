@@ -1,0 +1,69 @@
+{
+  "id": "F03",
+  "title": "Sharp wedge",
+  "provider": "grok",
+  "model": "not exposed by tool",
+  "request": {
+    "prompt": "Use case: identity-preserve / stylized-concept.\nEdit target: the supplied original S13 Guarin illustration. Produce ONE full-body character, one image, no sheet, inset, labels or text.\nChange ONLY his head: remove the helmet and replace it with an unhelmeted face. Keep the same giant head envelope, around half his whole standing height, and the original elevated three-quarter camera. Do not shrink the head or lengthen the body. Preserve the exact pose, tiny squat torso and short limbs, wine-red ragged scarf/cape, dull mail, brown gloves, belt, wrapped legs and boots. Preserve the small straight sword in his anatomical RIGHT hand and the wood-and-iron kite shield with its faded red stripe on his anatomical LEFT arm. Retain all source clothing, gear, ground shadow, framing and background. No added armor, symbols, straps, weapons or decorations.\nArt direction: use the original S13 drawing throughout: flat hand-drawn 2D, rough soot-black edges, broken dry-pigment grain, restrained muddy taupe/bone/brown/dead-wine colors on soft charcoal ground. Dark, poor, dirty, worn, tired, desperate medieval game mood. Cute compact proportions without a cheerful face. The exposed face must share the body's palette, texture, low values and restrained ambient light. No clean comic-book finish, anime eyes, glossy highlights, photorealism, 3D, 2.5D toy, sculpted volume or airbrushed portrait.\nIdentity held constant across studies: Guarin of Royans, weary 34-year-old returned soldier in 1101. Cropped uneven dark hair, a small white cut through the hair above the anatomical LEFT ear, short dark stubble, sun-darkened dirty skin. Small tired eyes, no large whites or shiny pupils. Closed mouth, exhausted neutral expression; do not change the expression into a smile, scream or rage. Preserve his story identity while exploring how the same face is drawn. This is an art-style study, not a claim that the selected greathelm is historical costume for 1101.\n\nMANDATORY FACE CORRECTION: The face is made with the SAME coarse stained pigment as the original S13 body. No clean comic contour lines or smooth skin areas. Eyes must be tiny dark closed lids or narrow dim skin gaps, each no wider than 5 percent of face width. ZERO white eyeball shapes, ZERO pupils, ZERO eye highlights. Keep eyes and facial creases low-contrast and dirty. Use broken ragged brush shapes, not clean inked cartoon eye outlines. Avoid a realistically proportioned body; only the head is exposed and the original squat body remains fixed. The specific nose, cheek and jaw design below must still be distinct. The white cut belongs above the anatomical LEFT ear, on the far side if hidden in this camera; do not add a white cross to the visible temple.\nThe distinct facial design below is essential. Make it readable at gameplay size through the shape of the face and the placement and drawing of features, rather than merely changing hairstyle or adding more dirt. Keep the same S13 drawing medium and full-body image outside the head.\n\nFace study F03: Sharp wedge.\nFacial design: Angular wedge head with wide angular temples tapering to a small squared chin. Thin separated diagonal eye cuts, long narrow triangular nose, compressed zigzag mouth and two sharp cheek wedges. Express the face through broken polygonal dry-pigment patches rather than anatomical shading.\nKeep every non-head component and the camera as in S13. One full-body image; no text or comparison panels.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png"
+    ],
+    "transparent_background": false
+  },
+  "source_sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c",
+  "original_output": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f03-a316c442-a9d2-48cd-8023-fe5043947a9c/a316c442-a9d2-48cd-8023-fe5043947a9c/images/1.jpg",
+  "file": "art/concepts/faces/images/f03-v02.jpg",
+  "sha256": "c8ddbb247b8c7c3fc528b3074f01ba6eb8da7427a956fa0480cb147e18d9b9ae",
+  "dimensions": [
+    1056,
+    976
+  ],
+  "mode": "RGB",
+  "pixel_changes": "none",
+  "parent_visual_review": "Sharp tapered jaw, angular cheeks and zigzag mouth make the wedge approach distinct. Source outfit and squat body remain recognizable. White triangular eye gaps and clean face contours persist; refine before production.",
+  "review_status": "revise",
+  "session_id": "a316c442-a9d2-48cd-8023-fe5043947a9c",
+  "fresh_session": true,
+  "cwd": "/private/tmp/dias-face-f03-a316c442-a9d2-48cd-8023-fe5043947a9c",
+  "command": [
+    "/Users/ocasta/.grok/bin/grok",
+    "--cwd",
+    "/private/tmp/dias-face-f03-a316c442-a9d2-48cd-8023-fe5043947a9c",
+    "--session-id",
+    "a316c442-a9d2-48cd-8023-fe5043947a9c",
+    "--prompt-file",
+    "/private/tmp/dias-face-f03-a316c442-a9d2-48cd-8023-fe5043947a9c/request.txt",
+    "--output-format",
+    "streaming-json",
+    "--tools",
+    "image_edit",
+    "--allow",
+    "image_edit",
+    "--permission-mode",
+    "dontAsk",
+    "--no-subagents",
+    "--disable-web-search",
+    "--verbatim",
+    "--max-turns",
+    "4"
+  ],
+  "raw_events_path": "/private/tmp/dias-face-f03-a316c442-a9d2-48cd-8023-fe5043947a9c/events.ndjson",
+  "exit_code": 0,
+  "actual_tool_inputs": [
+    {
+      "prompt": "Use case: identity-preserve / stylized-concept.\nEdit target: the supplied original S13 Guarin illustration. Produce ONE full-body character, one image, no sheet, inset, labels or text.\nChange ONLY his head: remove the helmet and replace it with an unhelmeted face. Keep the same giant head envelope, around half his whole standing height, and the original elevated three-quarter camera. Do not shrink the head or lengthen the body. Preserve the exact pose, tiny squat torso and short limbs, wine-red ragged scarf/cape, dull mail, brown gloves, belt, wrapped legs and boots. Preserve the small straight sword in his anatomical RIGHT hand and the wood-and-iron kite shield with its faded red stripe on his anatomical LEFT arm. Retain all source clothing, gear, ground shadow, framing and background. No added armor, symbols, straps, weapons or decorations.\nArt direction: use the original S13 drawing throughout: flat hand-drawn 2D, rough soot-black edges, broken dry-pigment grain, restrained muddy taupe/bone/brown/dead-wine colors on soft charcoal ground. Dark, poor, dirty, worn, tired, desperate medieval game mood. Cute compact proportions without a cheerful face. The exposed face must share the body's palette, texture, low values and restrained ambient light. No clean comic-book finish, anime eyes, glossy highlights, photorealism, 3D, 2.5D toy, sculpted volume or airbrushed portrait.\nIdentity held constant across studies: Guarin of Royans, weary 34-year-old returned soldier in 1101. Cropped uneven dark hair, a small white cut through the hair above the anatomical LEFT ear, short dark stubble, sun-darkened dirty skin. Small tired eyes, no large whites or shiny pupils. Closed mouth, exhausted neutral expression; do not change the expression into a smile, scream or rage. Preserve his story identity while exploring how the same face is drawn. This is an art-style study, not a claim that the selected greathelm is historical costume for 1101.\n\nMANDATORY FACE CORRECTION: The face is made with the SAME coarse stained pigment as the original S13 body. No clean comic contour lines or smooth skin areas. Eyes must be tiny dark closed lids or narrow dim skin gaps, each no wider than 5 percent of face width. ZERO white eyeball shapes, ZERO pupils, ZERO eye highlights. Keep eyes and facial creases low-contrast and dirty. Use broken ragged brush shapes, not clean inked cartoon eye outlines. Avoid a realistically proportioned body; only the head is exposed and the original squat body remains fixed. The specific nose, cheek and jaw design below must still be distinct. The white cut belongs above the anatomical LEFT ear, on the far side if hidden in this camera; do not add a white cross to the visible temple.\nThe distinct facial design below is essential. Make it readable at gameplay size through the shape of the face and the placement and drawing of features, rather than merely changing hairstyle or adding more dirt. Keep the same S13 drawing medium and full-body image outside the head.\n\nFace study F03: Sharp wedge.\nFacial design: Angular wedge head with wide angular temples tapering to a small squared chin. Thin separated diagonal eye cuts, long narrow triangular nose, compressed zigzag mouth and two sharp cheek wedges. Express the face through broken polygonal dry-pigment patches rather than anatomical shading.\nKeep every non-head component and the camera as in S13. One full-body image; no text or comparison panels.",
+      "image": [
+        "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png"
+      ],
+      "aspect_ratio": "1:1"
+    }
+  ],
+  "reference_verified": true,
+  "tool_output": {
+    "type": "ImageEdit",
+    "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f03-a316c442-a9d2-48cd-8023-fe5043947a9c/a316c442-a9d2-48cd-8023-fe5043947a9c/images/1.jpg",
+    "filename": "1.jpg",
+    "session_folder": "images"
+  },
+  "presentation": "review candidate"
+}

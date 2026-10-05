@@ -20,8 +20,8 @@
   ],
   "mode": "RGB",
   "pixel_changes": "none",
-  "parent_visual_review": "pending",
-  "review_status": "pending",
+  "parent_visual_review": "Soot eye band and compact round head use tiny dark eyes; however smooth face and clean contours do not share S13 granular texture. Held back for a stricter texture correction.",
+  "review_status": "revise",
   "session_id": "669447c0-fef8-48f8-88c6-74c189c42774",
   "fresh_session": true,
   "cwd": "/private/tmp/dias-face-f06-669447c0-fef8-48f8-88c6-74c189c42774",
@@ -64,5 +64,6 @@
     "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f06-669447c0-fef8-48f8-88c6-74c189c42774/669447c0-fef8-48f8-88c6-74c189c42774/images/1.jpg",
     "filename": "1.jpg",
     "session_folder": "images"
-  }
+  },
+  "presentation": "held back"
 }

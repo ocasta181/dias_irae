@@ -20,8 +20,8 @@
   ],
   "mode": "RGB",
   "pixel_changes": "none",
-  "parent_visual_review": "pending",
-  "review_status": "pending",
+  "parent_visual_review": "Narrow long face and hollow cheeks are different, but large eye whites and clean facial lines violate the granular tiny-eye brief. Held back for source-only correction.",
+  "review_status": "revise",
   "session_id": "f400cc52-034d-4e12-bb46-b8ff59b77ef3",
   "fresh_session": true,
   "cwd": "/private/tmp/dias-face-f04-f400cc52-034d-4e12-bb46-b8ff59b77ef3",
@@ -64,5 +64,6 @@
     "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f04-f400cc52-034d-4e12-bb46-b8ff59b77ef3/f400cc52-034d-4e12-bb46-b8ff59b77ef3/images/1.jpg",
     "filename": "1.jpg",
     "session_folder": "images"
-  }
+  },
+  "presentation": "held back"
 }

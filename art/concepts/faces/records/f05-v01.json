@@ -20,8 +20,8 @@
   ],
   "mode": "RGB",
   "pixel_changes": "none",
-  "parent_visual_review": "pending",
-  "review_status": "pending",
+  "parent_visual_review": "Heavy broken nose and square jaw are readable, but large white eyes, smooth skin and clean contours drift from the source medium. Held back for source-only correction.",
+  "review_status": "revise",
   "session_id": "da8d9c55-c72e-426e-999c-a70cf3572628",
   "fresh_session": true,
   "cwd": "/private/tmp/dias-face-f05-da8d9c55-c72e-426e-999c-a70cf3572628",
@@ -64,5 +64,6 @@
     "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f05-da8d9c55-c72e-426e-999c-a70cf3572628/da8d9c55-c72e-426e-999c-a70cf3572628/images/1.jpg",
     "filename": "1.jpg",
     "session_folder": "images"
-  }
+  },
+  "presentation": "held back"
 }

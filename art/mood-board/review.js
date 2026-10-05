@@ -9,6 +9,7 @@
   const summary = document.getElementById("review-summary");
   const saveStatus = document.getElementById("review-save-status");
   const exportButton = document.getElementById("download-manifest");
+  const projectSavePending = document.body.dataset.projectSavePending === "true";
   const preferenceGrid = document.getElementById("preference-grid");
   const orderStorageKey = `${storageKey}:preference-order`;
   const directBoard = {
@@ -56,6 +57,12 @@
   }
 
   function showSaveStatus() {
+    if (projectSavePending) {
+      saveStatus.textContent = storageAvailable
+        ? "Draft saved in this browser. Project saving awaits review-service approval."
+        : "This browser could not save the draft. Project saving awaits review-service approval.";
+      return;
+    }
     saveStatus.textContent = storageAvailable
       ? `Draft saved in this browser. Use ${exportButton.textContent} to ${directBoard ? "save it to the project" : "download your review"}.`
       : `This browser cannot save the draft. Use ${exportButton.textContent} to keep your review.`;
