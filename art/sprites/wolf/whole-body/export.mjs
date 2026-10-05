@@ -37,7 +37,7 @@ const bytes = page.toBuffer("image/png");
 const atlas = {
   selection: { gameplay_id: "G15", source_character: "S13 proportions / wolf base v02" },
   sourceFrames: frames.length,
-  reviewStatus: "Whole-body wolf study: oversized head, squat torso, short legs. Eight walk drawings at 8 frames per second, with stable head registration baked into the sheet. Right-facing only. The gait remains rejected; contacts and other headings/actions still need work. Not production-ready.",
+  reviewStatus: "Displayed below: the rejected older eight-frame wolf study. Replacement: twelve new drawings across one second; all twelve pose guides are ready, but no replacement frames are accepted. Two drawing trials failed pose checks. Grok motion generation is waiting for output-storage/privacy approval. Open Wolf production progress for the current work. The replacement walk is not ready.",
   directions: { E: { image: "wolf-whole-e-v03.png", dimensions: [588, 588], sha256: hash(bytes), frames, assessment: "Whole drawings use a fixed nose registration baked into the atlas; the viewer adds no bounce, sway or frame-specific position/scale changes. The existing reordered walk remains a rejected gait: contact locks, camera and far/near leg identity still need repair." } },
   clips: {
     idle: { label: "Still whole-body pose", fps: 1, loop: true, frames: [{ source: 0, durationMs: 1000 }] },

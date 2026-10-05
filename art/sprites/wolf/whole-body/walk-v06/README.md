@@ -2,6 +2,8 @@
 
 The user requires twelve different whole-body drawings across one second of walking, with the original 36 logical px/s travel. The eight-frame speed-up is withdrawn. The live lab retains the rejected old study; no replacement motion is approved.
 
+Visibility decision at `5abd966`, confidence 99%: show current production status, all twelve new guides and the held-back trials on the same local server, linked from the motion lab. This exposes progress without presenting planned diagrams or rejected trials as a completed replacement.
+
 ## Verified planning
 
 `walk-controls-v06.mjs` produces twelve unique targets, 83.333 ms holds, three drawings per quarter-cycle beat and four swing poses per paw. Joint reachability, stance contacts, fixed head/body registration and loop closure pass in the plan. These checks do not measure generated art. Forty viewer/animation tests pass after undoing the timing-only change.
