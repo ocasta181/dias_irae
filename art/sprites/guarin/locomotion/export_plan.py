@@ -54,7 +54,7 @@ def export() -> None:
         )
     plan = {
         "status": "Verified geometry targets; no replacement character artwork has been generated.",
-        "basisCommit": "7f3cc60",
+        "basisCommit": "b93df31",
         "references": selection["references"],
         "cellSize": [256, 256],
         "standingHeight": 160,
@@ -91,7 +91,7 @@ def export() -> None:
             )
         ]
     with (ROOT / "foot-targets.csv").open("w", newline="") as output:
-        writer = csv.DictWriter(output, columns)
+        writer = csv.DictWriter(output, columns, lineterminator="\n")
         writer.writeheader()
         for direction, clips in plan["directions"].items():
             for clip, poses in clips.items():
