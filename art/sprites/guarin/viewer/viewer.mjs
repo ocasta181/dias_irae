@@ -88,6 +88,13 @@ function updateStrip(page, clip) {
   if (stripKey === key) return;
   stripKey = key;
   element("frame-strip").replaceChildren();
+  const poses = clip.frames.map(entry => page.frames[entry.source]);
+  const left = Math.max(...poses.map(frame => frame.pivot[0] / frame.sourceStandingHeight));
+  const right = Math.max(...poses.map(frame => (frame.rect[2] - frame.pivot[0]) / frame.sourceStandingHeight));
+  const above = Math.max(...poses.map(frame => frame.pivot[1] / frame.sourceStandingHeight));
+  const below = Math.max(...poses.map(frame => (frame.rect[3] - frame.pivot[1]) / frame.sourceStandingHeight));
+  const height = Math.min(180 / (left + right), 180 / (above + below));
+  const foot = [10 + left * height, 10 + above * height];
   clip.frames.forEach((entry, index) => {
     const button = document.createElement("button");
     button.className = "frame-button";
@@ -96,7 +103,7 @@ function updateStrip(page, clip) {
     const preview = document.createElement("canvas");
     preview.width = 200; preview.height = 200;
     const frame = page.frames[entry.source];
-    renderPose(preview.getContext("2d"), images.get(player.direction), frame, [100, 182], 165 / page.standingHeight);
+    renderPose(preview.getContext("2d"), images.get(frame.image), frame, foot, height / frame.sourceStandingHeight);
     const caption = document.createElement("span");
     caption.textContent = `${index + 1} · ${Math.round(entry.durationMs)} ms`;
     button.append(preview, caption);
@@ -110,15 +117,17 @@ function draw() {
   const clip = atlas.clips[player.clip];
   const current = sample(clip, player.elapsedMs);
   const frame = page.frames[current.source];
-  const scale = Number(element("size").value) * stage.width / stage.getBoundingClientRect().width / page.standingHeight;
+  const previewHeight = Number(element("size").value) * stage.width / stage.getBoundingClientRect().width;
+  const scale = previewHeight / frame.sourceStandingHeight;
   background();
   context.fillStyle = "#05080445";
   context.beginPath(); context.ellipse(position[0], position[1], 30 * scale, 13 * scale, 0, 0, Math.PI * 2); context.fill();
   if (element("onion").checked) {
     const previous = clip.frames[(current.index + clip.frames.length - 1) % clip.frames.length];
-    renderPose(context, images.get(player.direction), page.frames[previous.source], position, scale, .3);
+    const previousFrame = page.frames[previous.source];
+    renderPose(context, images.get(previousFrame.image), previousFrame, position, previewHeight / previousFrame.sourceStandingHeight, .3);
   }
-  renderPose(context, images.get(player.direction), frame, position, scale);
+  renderPose(context, images.get(frame.image), frame, position, scale);
   if (element("guides").checked) {
     context.strokeStyle = "#d2b877";
     context.lineWidth = 1;
@@ -236,9 +245,13 @@ async function start() {
   if (!response.ok) throw new Error(`Sheet data unavailable (${response.status})`);
   atlas = await response.json();
   if (!atlas.directions.SE || !atlas.clips.idle) throw new Error("Required starting direction or idle clip is missing.");
-  await Promise.all(Object.entries(atlas.directions).map(async ([direction, page]) => {
-    const image = new Image(); image.src = `../${page.image}`; await image.decode(); images.set(direction, image);
-  }));
+  const sourcePaths = new Set(Object.values(atlas.directions).flatMap(page => page.frames.map(frame => frame.image)));
+  await Promise.all([...sourcePaths].map(path => new Promise((resolve, reject) => {
+    const image = new Image();
+    image.onload = () => { images.set(path, image); resolve(); };
+    image.onerror = () => reject(new Error(`Source image cannot be loaded: ${path}`));
+    image.src = `../${path}`;
+  })));
   element("basis").textContent = `${atlas.selection.gameplay_id} / ${atlas.selection.source_character} · exact upstream art · ${atlas.sourceFrames} source frames · ${Object.keys(atlas.directions).length} directions · ${Object.keys(atlas.clips).length} clips`;
   element("load-status").textContent = atlas.reviewStatus;
   for (const reference of atlas.references) {

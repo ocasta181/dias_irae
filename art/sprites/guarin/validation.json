@@ -10,7 +10,8 @@
       ],
       "alpha_fraction": 0.5642,
       "unique_cell_hashes": 48,
-      "border_touching_frames": []
+      "border_touching_frames": [],
+      "row_sources": {}
     },
     "SE": {
       "dimensions": [
@@ -19,7 +20,8 @@
       ],
       "alpha_fraction": 0.5345,
       "unique_cell_hashes": 48,
-      "border_touching_frames": []
+      "border_touching_frames": [],
+      "row_sources": {}
     },
     "E": {
       "dimensions": [
@@ -28,7 +30,19 @@
       ],
       "alpha_fraction": 0.5521,
       "unique_cell_hashes": 48,
-      "border_touching_frames": []
+      "border_touching_frames": [],
+      "row_sources": {
+        "cut": {
+          "image": "pages/guarin-e-v03.png",
+          "sha256": "2b27bb0f5ae243f7c0879adc33af7632d6ffe41d8822faa493a071bd26f9e89d",
+          "dimensions": [
+            1086,
+            1448
+          ],
+          "transparent_pixel_fraction": 0.5593,
+          "inspection": "Only the six improved cut poses are used; other regenerated families are excluded."
+        }
+      }
     },
     "NE": {
       "dimensions": [
@@ -37,7 +51,8 @@
       ],
       "alpha_fraction": 0.5872,
       "unique_cell_hashes": 48,
-      "border_touching_frames": []
+      "border_touching_frames": [],
+      "row_sources": {}
     },
     "N": {
       "dimensions": [
@@ -46,7 +61,8 @@
       ],
       "alpha_fraction": 0.6018,
       "unique_cell_hashes": 48,
-      "border_touching_frames": []
+      "border_touching_frames": [],
+      "row_sources": {}
     },
     "W": {
       "dimensions": [
@@ -55,7 +71,8 @@
       ],
       "alpha_fraction": 0.6217,
       "unique_cell_hashes": 48,
-      "border_touching_frames": []
+      "border_touching_frames": [],
+      "row_sources": {}
     },
     "NW": {
       "dimensions": [
@@ -64,7 +81,8 @@
       ],
       "alpha_fraction": 0.5961,
       "unique_cell_hashes": 48,
-      "border_touching_frames": []
+      "border_touching_frames": [],
+      "row_sources": {}
     },
     "SW": {
       "dimensions": [
@@ -73,7 +91,8 @@
       ],
       "alpha_fraction": 0.5278,
       "unique_cell_hashes": 48,
-      "border_touching_frames": []
+      "border_touching_frames": [],
+      "row_sources": {}
     }
   },
   "limits": "Hashes prove different pixels, not correct motion. Parent visual inspection and user review remain necessary. Camera angle is not numerically calibrated."

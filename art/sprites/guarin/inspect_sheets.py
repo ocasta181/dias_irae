@@ -122,9 +122,29 @@ def clip(label: str, start: int, count: int, fps: int, loop: bool, weights=None)
 
 def build_manifest() -> dict:
     active = json.loads((ROOT / "active-pages.json").read_text())
+    overrides = json.loads((ROOT / "row-overrides.json").read_text())
     pages = {}
     for direction, filename in active.items():
         data = inspect_page(ROOT / filename)
+        for frame in data["frames"]:
+            frame.update(image=filename, sourceStandingHeight=data["standingHeight"])
+        data["row_sources"] = {}
+        for family, replacement in overrides.get(direction, {}).items():
+            repaired = inspect_page(ROOT / replacement)
+            first = FAMILIES.index(family) * 6
+            for index in range(first, first + 6):
+                data["frames"][index] = {
+                    **repaired["frames"][index],
+                    "image": replacement,
+                    "sourceStandingHeight": repaired["standingHeight"],
+                }
+            data["row_sources"][family] = {
+                "image": replacement,
+                "sha256": repaired["sha256"],
+                "dimensions": repaired["dimensions"],
+                "transparent_pixel_fraction": repaired["transparent_pixel_fraction"],
+                "inspection": "Only the six improved cut poses are used; other regenerated families are excluded.",
+            }
         pages[direction] = {"image": filename, **data}
     clips = {
         "idle": clip("Idle", 0, 6, 6, True),
@@ -186,6 +206,7 @@ if __name__ == "__main__":
                 "border_touching_frames": [
                     index for index, frame in enumerate(page["frames"]) if frame["border_touch"]
                 ],
+                "row_sources": page["row_sources"],
             }
             for direction, page in manifest["directions"].items()
         },
