@@ -1,0 +1,31 @@
+{
+  "direction": "SW",
+  "version": "v02",
+  "provider": "Built-in image generation",
+  "model": "Not exposed by tool",
+  "original_generated_path": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-7617a097-475c-4f60-a7c3-f4de23706ac7.png",
+  "image": "/Users/ocasta/Code/Dias Irae/art/sprites/guarin/pages/guarin-sw-v02.png",
+  "request": {
+    "prompt": "ORIENTATION OVERRIDES THE REFERENCE POSE. Draw the character facing LOWER-LEFT, southWEST, from ABOVE his FRONT-LEFT shoulder. The LEFT shield arm is nearest viewer and the SHIELD IS ON THE LEFT SIDE OF EVERY STANDING FIGURE. The RIGHT sword arm is farther away and the SWORD IS ON THE RIGHT SIDE. The helmet's FRONT VISOR points to the LEFT, toes point lower-LEFT, ragged cape trails upper-right. Show his LEFT helmet wall and the front faceplate angled LEFT. Do not draw front-right/SOUTH-EAST. The shield must not appear on the right side. This is an independent southWEST turn of the SAME anatomical character, never a horizontal flip of art.\n\nDeliver a flat, dark, gritty HAND-DRAWN 2D game sprite sheet, with REAL TRANSPARENT background. Exactly six columns by eight rows, 48 separated full-body drawings. No text, grid lines, scenery or ground shadows. Leave generous transparent gaps; no neighboring figures touch. Each figure retains one consistent scale and foot anchor. Reference 1 G15 is the selected game texture/palette; reference 2 S13 supplies the exact costume. Draw newly oriented animation figures. Do not reuse its facing or copy it as a sprite.\n\nGuarin wears the same battered giant cylindrical iron greathelm, tiny squat torso and stumpy wrapped brown legs, faded wine ragged cloak/scarf, dull mail, brown gloves/belt, straight short sword held in ANATOMICAL RIGHT hand, worn narrow-red-striped kite shield on ANATOMICAL LEFT forearm. Helmet nearly HALF his total standing height, body cute and very short. Sooty outline and dirty mottled taupe/slate/wine paint. Flat subdued game art, never 3D/rendered/sculptural or glossy; no realistic adult anatomy. Fixed elevated orthographic game camera around 45 degrees. Camera and facing stay fixed across every pose; movement occurs within the poses.\n\nChronological frames left-to-right. Exactly eight rows, top-to-bottom:\n1 IDLE: six distinct restrained breathing/weight-settle drawings; same feet, barely moving cape; seamless loop.\n2 WALK: six distinct gait keyframes; right contact, right down/passing, left contact, left down/passing, recovery; both boots and knees visibly change, gear follows weight; in-place seamless loop, never translate whole character across cell.\n3 SWORD CUT: ready, wind-up, strong anticipation, blade contact arc, follow-through, return to ready. Sword remains straight, distinct arc; left shield on arm throughout.\n4 GUARD: lower shield begins raising; shield reaches guard; stable guarded pose; slight guarded breath; begin lowering; lowered ready. Keep sword safely withdrawn. Frames 3-4 will loop as hold.\n5 HURT: recoils; recoil peak; off-balance; settles; ready; last settle. Gear follows body; not six copies of idle.\n6 DEATH: knees buckle; falling; hits ground; rolls/settles; motion nearly stops; entirely still prone corpse. Helmet stays on, gear intact, no second helmet or lost limbs. Full body must actually lie down.\n7 INTERACT: reaches toward an object at chest/ground reach; makes contact; small manipulation; withdraws; settles; ready. Do not add an object or remove gear.\n8 PRAYER: lowers body toward kneel; kneels; quiet bowed held prayer; slight bowed breath; rising; upright ready. Frames 3-4 will loop as channel. Closed helmet remains huge, boots/body tiny.\nThe sheet is 48 NEW DRAWN animation poses of the exact reference knight. References are upstream style/design only, never paste the previous image. No camera/orientation/proportion changes between columns. Preserve anatomical handedness for this direction.\n",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+      "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png"
+    ],
+    "transparent_background": true
+  },
+  "inspection": "Parent inspected: visor/front plane and toes rotate toward lower-left; near left-arm shield occupies the lower-right/front side, right sword is farther left/back. The prompt's screen-left shield rule was a projection mistake; correct anatomical rotation takes priority. The v01 southeast repetition remains rejected. Directional study imported; motion/scale approval pending.",
+  "actual_reference_inputs": [
+    "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+    "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png"
+  ],
+  "output_sha256": "76fd8e11d0b3dde526f1447261238c124e9c3f2a70e5e4c25c1ab5399164870d",
+  "dimensions": [
+    1086,
+    1448
+  ],
+  "mode": "RGBA",
+  "reference_sha256": {
+    "art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png": "191af0e5abbd484ec225633f530e6ed6dd9ebf01c5367910c09a353c4ca465d9",
+    "art/concepts/images/s13-guarin-isometric-v02.png": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "direction": "NW",
+  "version": "v02",
+  "provider": "Built-in image generation",
+  "model": "Not exposed by tool",
+  "original_generated_path": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-42b75fd8-e6a9-4251-beae-39d455cb640b.png",
+  "image": "/Users/ocasta/Code/Dias Irae/art/sprites/guarin/pages/guarin-nw-v02.png",
+  "request": {
+    "prompt": "BACK VIEW ONLY: character facing UPPER-LEFT, northWEST, from ABOVE his BACK-LEFT shoulder. Viewer sees cloak BACK, heels, plain REAR/LEFT helmet panel, left shield arm nearest. Shield is screen-LEFT; sword right hand screen-RIGHT, blade directed upper-left when at rest. The FRONT FACE of the helmet points AWAY upper-left and is OCCLUDED. There is ABSOLUTELY NO visor slit, no horizontal black eye line, no breathing holes on the visible rear helmet. Its back is solid riveted iron. NO visible front chest scarf knot, NO front belt buckle, NO front torso. Huge ragged wine cape covers the back. All boots/poses point upper-left. Distinct from directly north and from front-left.\n\nDeliver a flat, dark, gritty HAND-DRAWN 2D game sprite sheet, with REAL TRANSPARENT background. Exactly six columns by eight rows, 48 separated full-body drawings. No text, grid lines, scenery or ground shadows. Leave generous transparent gaps; no neighboring figures touch. Each figure retains one consistent scale and foot anchor. Reference 1 G15 is the selected game texture/palette; reference 2 S13 supplies the exact costume. Draw newly oriented animation figures. Do not reuse its facing or copy it as a sprite.\n\nGuarin wears the same battered giant cylindrical iron greathelm, tiny squat torso and stumpy wrapped brown legs, faded wine ragged cloak/scarf, dull mail, brown gloves/belt, straight short sword held in ANATOMICAL RIGHT hand, worn narrow-red-striped kite shield on ANATOMICAL LEFT forearm. Helmet nearly HALF his total standing height, body cute and very short. Sooty outline and dirty mottled taupe/slate/wine paint. Flat subdued game art, never 3D/rendered/sculptural or glossy; no realistic adult anatomy. Fixed elevated orthographic game camera around 45 degrees. Camera and facing stay fixed across every pose; movement occurs within the poses.\n\nChronological frames left-to-right. Exactly eight rows, top-to-bottom:\n1 IDLE: six distinct restrained breathing/weight-settle drawings; same feet, barely moving cape; seamless loop.\n2 WALK: six distinct gait keyframes; right contact, right down/passing, left contact, left down/passing, recovery; both boots and knees visibly change, gear follows weight; in-place seamless loop, never translate whole character across cell.\n3 SWORD CUT: ready, wind-up, strong anticipation, blade contact arc, follow-through, return to ready. Sword remains straight, distinct arc; left shield on arm throughout.\n4 GUARD: lower shield begins raising; shield reaches guard; stable guarded pose; slight guarded breath; begin lowering; lowered ready. Keep sword safely withdrawn. Frames 3-4 will loop as hold.\n5 HURT: recoils; recoil peak; off-balance; settles; ready; last settle. Gear follows body; not six copies of idle.\n6 DEATH: knees buckle; falling; hits ground; rolls/settles; motion nearly stops; entirely still prone corpse. Helmet stays on, gear intact, no second helmet or lost limbs. Full body must actually lie down.\n7 INTERACT: reaches toward an object at chest/ground reach; makes contact; small manipulation; withdraws; settles; ready. Do not add an object or remove gear.\n8 PRAYER: lowers body toward kneel; kneels; quiet bowed held prayer; slight bowed breath; rising; upright ready. Frames 3-4 will loop as channel. Closed helmet remains huge, boots/body tiny.\nThe sheet is 48 NEW DRAWN animation poses of the exact reference knight. References are upstream style/design only, never paste the previous image. No camera/orientation/proportion changes between columns. Preserve anatomical handedness for this direction.\n",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+      "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png"
+    ],
+    "transparent_background": true
+  },
+  "inspection": "Parent inspected: rear-left view with solid rear helmet panel, cloak back, near left-arm shield screen-left, right sword toward far side. The false rear visor in v01 is corrected. Directional study imported; motion/scale approval pending.",
+  "actual_reference_inputs": [
+    "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+    "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png"
+  ],
+  "output_sha256": "f00d70e49d66d8dfb5a4208acf77aeae727f0e0393536d0ab1bf2796bff9fd83",
+  "dimensions": [
+    1086,
+    1448
+  ],
+  "mode": "RGBA",
+  "reference_sha256": {
+    "art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png": "191af0e5abbd484ec225633f530e6ed6dd9ebf01c5367910c09a353c4ca465d9",
+    "art/concepts/images/s13-guarin-isometric-v02.png": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c"
+  }
+}

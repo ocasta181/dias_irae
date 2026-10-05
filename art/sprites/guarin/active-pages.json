@@ -4,5 +4,7 @@
   "E": "pages/guarin-e-v02.png",
   "NE": "pages/guarin-ne-v01.png",
   "N": "pages/guarin-n-v01.png",
-  "W": "pages/guarin-w-v01.png"
+  "W": "pages/guarin-w-v01.png",
+  "NW": "pages/guarin-nw-v02.png",
+  "SW": "pages/guarin-sw-v02.png"
 }

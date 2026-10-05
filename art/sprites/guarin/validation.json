@@ -1,6 +1,6 @@
 {
-  "pages": 6,
-  "source_frames": 288,
+  "pages": 8,
+  "source_frames": 384,
   "clips_per_direction": 12,
   "page_checks": {
     "S": {
@@ -54,6 +54,24 @@
         1448
       ],
       "alpha_fraction": 0.6217,
+      "unique_cell_hashes": 48,
+      "border_touching_frames": []
+    },
+    "NW": {
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "alpha_fraction": 0.5961,
+      "unique_cell_hashes": 48,
+      "border_touching_frames": []
+    },
+    "SW": {
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "alpha_fraction": 0.5278,
       "unique_cell_hashes": 48,
       "border_touching_frames": []
     }
