@@ -25,6 +25,7 @@
       <label class="scrub">Frame <input id="frame" type="range" min="0" max="5" value="0"><output id="frame-label">1 / 6</output></label>
       <p id="readout" aria-live="off"></p>
       <p class="help">Focus the stage: arrows or W/A/S/D move; Space cuts; hold G to guard; P starts/stops prayer; H hurts; K defeats; R resets. Physical frames change independently of stage movement.</p>
+      <section class="frames" hidden><h2>Source poses</h2><p>Click a pose to pause on it. A repeated drawing is a hold, not a new motion frame.</p><div id="frame-strip"></div></section>
     </div>
     <aside class="controls">
       <label>Inspect clip<select id="clip"></select></label>
@@ -32,7 +33,7 @@
       <div class="actions"><button data-action="idle">Idle</button><button data-action="walk">Walk</button><button data-action="cut">Sword cut</button><button data-action="guard">Guard</button><button data-action="guard-off">Release guard</button><button data-action="prayer">Pray</button><button data-action="prayer-off">Rise</button><button data-action="interact">Interact</button><button data-action="hurt">Take hit</button><button data-action="death">Defeat</button><button data-action="reset">Reset character</button><button id="sequence">Run transition test</button></div>
       <label>Playback speed <output id="speed-label">1×</output><input id="speed" type="range" min="0.25" max="2" step="0.25" value="1"></label>
       <label>Clip rate (frames per second)<input id="fps" type="number" min="1" max="30" step="1" value="6"></label>
-      <label>Standing preview height <output id="size-label">96 px</output><input id="size" type="range" min="48" max="240" step="8" value="96"></label>
+      <label>Standing preview height <output id="size-label">160 px</output><input id="size" type="range" min="48" max="240" step="8" value="160"></label>
       <label>Background<select id="background"><option value="dark">Dark ground</option><option value="light">Pale ground</option><option value="checker">Transparency checker</option></select></label>
       <label>Sampling<select id="sampling"><option value="linear">Smooth sampling</option><option value="nearest">Nearest pixel</option></select></label>
       <label class="check"><input id="guides" type="checkbox" checked> Foot pivot and frame bounds</label>
@@ -40,7 +41,6 @@
       <p id="quality" class="quality"></p>
     </aside>
   </section>
-  <section class="frames" hidden><h2>Source poses</h2><p>Click a pose to pause on it. A repeated drawing is a hold, not a new motion frame.</p><div id="frame-strip"></div></section>
   <section class="references"><h2>Exact upstream references</h2><div id="references"></div></section>
   <section><h2>Events and transitions</h2><p>These are animation tests. This app does not change game damage, collision, or movement rules.</p><pre id="events" aria-live="polite"></pre></section>
 </main>
