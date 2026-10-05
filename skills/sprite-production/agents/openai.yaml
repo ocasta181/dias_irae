@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sprite Production"
+  short_description: "Plan, draw, verify and export game sprite sheets"
+  default_prompt: "Use $sprite-production to create a measured, engine-ready character sprite package with verified animation and atlas export."
