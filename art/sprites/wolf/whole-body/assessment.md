@@ -4,6 +4,8 @@
 
 The user clarifies that 12 FPS requires twelve distinct new frames across one second, not faster repetition of the old eight. The incorrect retiming is undone; old artwork retains its original one-second cycle and 54 screen px/s travel while new frames are drawn. The new v06 target plan contains twelve unique whole-body poses and four swing poses per paw, with exact stance contacts and loop closure. These are planned targets, not generated or accepted sprite art. The withdrawn v05 timing/contact reports remain historical evidence.
 
+Two individual new-pose trials fail layout/contact checks and remain held back. A continuous-motion Grok request supplies the canonical base and all twelve new guide poses, but its native video tool fails because zero-data-retention output storage is not configured. No video or twelve-frame sheet was generated. Privacy remains unchanged; production awaits a storage decision. The sanitized actual request/error is preserved in `walk-v06/video-record.json`.
+
 ## Temporal review limitation
 
 At `77b62fb`, the user again rejects the walk as flailing. The available visual tools provide snapshots, not continuous video perception. The earlier claims below of normal-speed visual inspection were too strong: screenshots confirm selected drawings and the trace confirms frame coverage, but neither establishes a convincing gait. The art remains rejected. Research into canine mechanics, animation practice and drawing cadence is now underway before another authoring attempt. Review must track the same anatomical paws across a complete cycle and its seam, and measure actual painted contacts using actual root travel.

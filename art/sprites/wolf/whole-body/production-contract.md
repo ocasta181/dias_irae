@@ -8,6 +8,8 @@
 
 Generate one complete wolf pose per call from the canonical v02 wolf and that frame's fresh guide. Never supply rejected walking paintings. Preserve the original eight-drawing study at its original duration/travel while replacements are in production; it remains rejected. The v05 reports preserve the withdrawn speed-up's history. New acceptance requires twelve distinct useful poses, coherent limb identities/contacts and measured whole-cycle/seam evidence.
 
+Current authoring checkpoint: two single-pose paintings are held back for layout/contact defects. The method changes to one continuous Grok-generated whole-body walk followed by frame extraction, retaining canonical-only identity inputs and the new guides. The actual native call fails under Grok's zero-data-retention setting because output storage is unconfigured. No video or twelve-frame replacement exists. Preserve privacy; await the user's storage choice/approval. Exact inputs, failure and remaining gates are in `walk-v06/README.md` and `video-record.json`.
+
 ## Straight-path registration correction
 
 Decision at `28a31b7`, confidence 98%: the user's instruction requires straight root travel and no added positioning animation. The active viewer already uses constant vertical translation, pivot and scale during rightward walking. The drawings themselves shift between source cells: the inspected nose edge moves by up to seven logical pixels vertically.

@@ -1,0 +1,54 @@
+{
+  "basis": "measured-art; static-pose rejection only",
+  "source": "pose01-matched-layout.png",
+  "fixedWholeCanvasScale": "192 / 1254",
+  "fixedWholePixelRegistration": [
+    -1,
+    1
+  ],
+  "method": "Human-identified paw regions; alpha>=128 lowest-edge midpoint measured on registered logical canvas",
+  "uncertaintyPx": 1,
+  "targetBudgetPx": 3,
+  "observations": {
+    "RF": {
+      "region": [
+        100,
+        149,
+        25,
+        15
+      ],
+      "point": [
+        110.5,
+        159
+      ],
+      "target": [
+        113.5,
+        161.65685424949237
+      ],
+      "pointErrorPx": 4.007352555371895
+    },
+    "RH": {
+      "region": [
+        69,
+        140,
+        17,
+        20
+      ],
+      "point": [
+        80,
+        157
+      ],
+      "target": [
+        72.5,
+        161.65685424949237
+      ],
+      "pointErrorPx": 8.828153346029685
+    }
+  },
+  "missingRequiredContacts": [
+    "LH"
+  ],
+  "farSwingPawReadable": false,
+  "passed": false,
+  "continuousMotionReviewed": false
+}

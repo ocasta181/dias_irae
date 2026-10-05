@@ -1,0 +1,32 @@
+{
+  "tool": "reference_to_video",
+  "actualInput": {
+    "prompt": "Animate the exact short, squat, oversized-headed grey/brown wolf from the pinned canonical frame as FLAT hand-drawn gritty 2D game art, in one continuous, slow four-beat walking cycle lasting exactly ONE SECOND. Keep the upper body, head, face, camera, scale and canvas position steady; paws alone flex, lift, pass forward and plant, with natural canine limb identity and no sideways spraying. Face screen-right in the same elevated orthographic game view. The anatomical footfall order is left hind, left fore, right hind, right fore at quarter-second intervals; each paw spends two thirds of its cycle planted, retracting relative to the body to oppose travelling motion, and one third folding and recovering forward. The huge head, tiny rounded torso and very short thick legs must remain exactly exaggerated like the source; preserve the same dry-paint fur texture, tiny eyes and closed mouth. <IMAGE_1> is a geometric motion guide containing twelve ordered stick poses, read left-to-right, top-to-bottom; it is not an object to include in the video. The full numerical frame plan follows in logical 192x192 canvas coordinates:\nE-walk-v06-01 phase=0.0417 LH plant 90.50,150.34 | LF lift 106.89,147.33 | RH plant 72.50,161.66 | RF plant 113.50,161.66\nE-walk-v06-02 phase=0.1250 LH plant 87.50,150.34 | LF lift 117.11,147.33 | RH plant 69.50,161.66 | RF plant 110.50,161.66\nE-walk-v06-03 phase=0.2083 LH plant 84.50,150.34 | LF lift 123.95,149.83 | RH lift 68.05,161.14 | RF plant 107.50,161.66\nE-walk-v06-04 phase=0.2917 LH plant 81.50,150.34 | LF plant 122.50,150.34 | RH lift 74.89,158.64 | RF plant 104.50,161.66\nE-walk-v06-05 phase=0.3750 LH plant 78.50,150.34 | LF plant 119.50,150.34 | RH lift 85.11,158.64 | RF plant 101.50,161.66\nE-walk-v06-06 phase=0.4583 LH plant 75.50,150.34 | LF plant 116.50,150.34 | RH lift 91.95,161.14 | RF lift 100.05,161.14\nE-walk-v06-07 phase=0.5417 LH plant 72.50,150.34 | LF plant 113.50,150.34 | RH plant 90.50,161.66 | RF lift 106.89,158.64\nE-walk-v06-08 phase=0.6250 LH plant 69.50,150.34 | LF plant 110.50,150.34 | RH plant 87.50,161.66 | RF lift 117.11,158.64\nE-walk-v06-09 phase=0.7083 LH lift 68.05,149.83 | LF plant 107.50,150.34 | RH plant 84.50,161.66 | RF lift 123.95,161.14\nE-walk-v06-10 phase=0.7917 LH lift 74.89,147.33 | LF plant 104.50,150.34 | RH plant 81.50,161.66 | RF plant 122.50,161.66\nE-walk-v06-11 phase=0.8750 LH lift 85.11,147.33 | LF plant 101.50,150.34 | RH plant 78.50,161.66 | RF plant 119.50,161.66\nE-walk-v06-12 phase=0.9583 LH lift 91.95,149.83 | LF lift 100.05,149.83 | RH plant 75.50,161.66 | RF plant 116.50,161.66\nOutput one complete intact wolf walking IN PLACE through one cycle, with no body bounce, horizontal translation, zoom, rotation, cut, 3D render, disappearing/extra legs, drawn guide marks or labels. The #00ff00 background stays perfectly uniform and fixed for extraction. No audio. The pinned last frame returns to the identical canonical pose, with the last interior motion flowing into the opening motion. We will extract twelve different whole-body poses from the generated motion; do not simply repeat eight poses faster.",
+    "aspect_ratio": "1:1",
+    "duration": 1,
+    "resolution_name": "720p",
+    "first_frame": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v06/video-base.png",
+    "last_frame": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v06/video-base.png",
+    "images": [
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v06/guides.png"
+    ]
+  },
+  "inputMatchesSavedRequest": true,
+  "inputHashes": {
+    "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v06/video-base.png": "198b89317ad9bc9246e8407858916dc20ec207b6aad3787bc33900f458125a31",
+    "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v06/guides.png": "cd418a2b2ec743141d1bb1a3ca6eda8f4052bbe49fed3b3fe59b422a923c2a4c"
+  },
+  "failedPriorAnimationInputs": false,
+  "resultStatus": "failed",
+  "actualError": {
+    "error": "tool_execution_failed",
+    "message": "Video generation tools are unavailable under zero data retention (ZDR). To enable, either turn off /privacy mode to disable ZDR or supply a user-hosted storage bucket (see https://docs.x.ai/build/settings/zdr-video-storage)."
+  },
+  "videoProduced": false,
+  "framesProduced": 0,
+  "orchestratorModel": [
+    "grok-4.6-build"
+  ],
+  "reportedOrchestrationCostUSD": 0.02291056,
+  "nextGate": "Human choice/approval for ZDR-compatible private storage or privacy-setting change; no retry or further image generation under this blocked workflow."
+}
