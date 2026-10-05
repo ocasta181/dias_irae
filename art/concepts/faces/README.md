@@ -52,3 +52,6 @@ Decision at commit `c6438cf`, confidence 95%: the requested several versions of 
 
 
 2026-10-05 correction at commit `cea2445`: the user rejected reinterpretation of the eyes. The initial F61/F70 pilot outputs are held back. All replacement requests lock the literal original F25 eye-and-brow band, including its shape, size, spacing and weary expression. Only hair and noses vary. The unscaled supporting crop comes directly from original F25, not a failed output. Original eye bounds measure 20 × 15 and 15 × 14 pixels at the 1312-pixel canvas width, with 88.5-pixel horizontal center spacing. Requests v02 and the source snapshot record this fixed feature. Visual acceptance must check that the eye treatment has not drifted.
+
+
+2026-10-05 final constraint correction at commit `feff8cb`: **only the two eye marks are constant; eyebrows vary**. The user explicitly requests eyebrow alternatives. The F70/F79 v02 eye-and-brow-locked pilots are held back. Requests v03 replace that band with an original F25 crop excluding eyebrows. Heavy level bars, thin sloping strokes and sparse broken arches are distributed across the nine hair/nose combinations per base. All three brow styles occur three times per base. No additional eye exploration is authorized. All inputs remain selected original sources, never prior outputs. This supersedes the preceding full-band lock.

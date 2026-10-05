@@ -436,7 +436,7 @@
   },
   {
     "id": "F61",
-    "title": "F25 · Close blunt crop / Tiny round button",
+    "title": "F25 · Close blunt crop / Tiny round button / Heavy level bars",
     "provider": "built-in imagegen",
     "source_id": "F25",
     "eye_reference": "F25",
@@ -445,11 +445,12 @@
     "nose_style": "Tiny round button",
     "hair_number": 1,
     "nose_number": 1,
-    "change": "Close blunt crop; Tiny round button; original F25 tiny square eyes"
+    "change": "Close blunt crop; Tiny round button; original F25 tiny square eyes",
+    "eyebrow_style": "Heavy level bars"
   },
   {
     "id": "F62",
-    "title": "F25 · Close blunt crop / Slender curved hook",
+    "title": "F25 · Close blunt crop / Slender curved hook / Thin sloping strokes",
     "provider": "built-in imagegen",
     "source_id": "F25",
     "eye_reference": "F25",
@@ -458,11 +459,12 @@
     "nose_style": "Slender curved hook",
     "hair_number": 1,
     "nose_number": 2,
-    "change": "Close blunt crop; Slender curved hook; original F25 tiny square eyes"
+    "change": "Close blunt crop; Slender curved hook; original F25 tiny square eyes",
+    "eyebrow_style": "Thin sloping strokes"
   },
   {
     "id": "F63",
-    "title": "F25 · Close blunt crop / Short crooked broad tip",
+    "title": "F25 · Close blunt crop / Short crooked broad tip / Sparse broken arches",
     "provider": "built-in imagegen",
     "source_id": "F25",
     "eye_reference": "F25",
@@ -471,11 +473,12 @@
     "nose_style": "Short crooked broad tip",
     "hair_number": 1,
     "nose_number": 3,
-    "change": "Close blunt crop; Short crooked broad tip; original F25 tiny square eyes"
+    "change": "Close blunt crop; Short crooked broad tip; original F25 tiny square eyes",
+    "eyebrow_style": "Sparse broken arches"
   },
   {
     "id": "F64",
-    "title": "F25 · Ear-length ragged side part / Tiny round button",
+    "title": "F25 · Ear-length ragged side part / Tiny round button / Thin sloping strokes",
     "provider": "built-in imagegen",
     "source_id": "F25",
     "eye_reference": "F25",
@@ -484,11 +487,12 @@
     "nose_style": "Tiny round button",
     "hair_number": 2,
     "nose_number": 1,
-    "change": "Ear-length ragged side part; Tiny round button; original F25 tiny square eyes"
+    "change": "Ear-length ragged side part; Tiny round button; original F25 tiny square eyes",
+    "eyebrow_style": "Thin sloping strokes"
   },
   {
     "id": "F65",
-    "title": "F25 · Ear-length ragged side part / Slender curved hook",
+    "title": "F25 · Ear-length ragged side part / Slender curved hook / Sparse broken arches",
     "provider": "built-in imagegen",
     "source_id": "F25",
     "eye_reference": "F25",
@@ -497,11 +501,12 @@
     "nose_style": "Slender curved hook",
     "hair_number": 2,
     "nose_number": 2,
-    "change": "Ear-length ragged side part; Slender curved hook; original F25 tiny square eyes"
+    "change": "Ear-length ragged side part; Slender curved hook; original F25 tiny square eyes",
+    "eyebrow_style": "Sparse broken arches"
   },
   {
     "id": "F66",
-    "title": "F25 · Ear-length ragged side part / Short crooked broad tip",
+    "title": "F25 · Ear-length ragged side part / Short crooked broad tip / Heavy level bars",
     "provider": "built-in imagegen",
     "source_id": "F25",
     "eye_reference": "F25",
@@ -510,11 +515,12 @@
     "nose_style": "Short crooked broad tip",
     "hair_number": 2,
     "nose_number": 3,
-    "change": "Ear-length ragged side part; Short crooked broad tip; original F25 tiny square eyes"
+    "change": "Ear-length ragged side part; Short crooked broad tip; original F25 tiny square eyes",
+    "eyebrow_style": "Heavy level bars"
   },
   {
     "id": "F67",
-    "title": "F25 · Receding sparse crown / Tiny round button",
+    "title": "F25 · Receding sparse crown / Tiny round button / Sparse broken arches",
     "provider": "built-in imagegen",
     "source_id": "F25",
     "eye_reference": "F25",
@@ -523,11 +529,12 @@
     "nose_style": "Tiny round button",
     "hair_number": 3,
     "nose_number": 1,
-    "change": "Receding sparse crown; Tiny round button; original F25 tiny square eyes"
+    "change": "Receding sparse crown; Tiny round button; original F25 tiny square eyes",
+    "eyebrow_style": "Sparse broken arches"
   },
   {
     "id": "F68",
-    "title": "F25 · Receding sparse crown / Slender curved hook",
+    "title": "F25 · Receding sparse crown / Slender curved hook / Heavy level bars",
     "provider": "built-in imagegen",
     "source_id": "F25",
     "eye_reference": "F25",
@@ -536,11 +543,12 @@
     "nose_style": "Slender curved hook",
     "hair_number": 3,
     "nose_number": 2,
-    "change": "Receding sparse crown; Slender curved hook; original F25 tiny square eyes"
+    "change": "Receding sparse crown; Slender curved hook; original F25 tiny square eyes",
+    "eyebrow_style": "Heavy level bars"
   },
   {
     "id": "F69",
-    "title": "F25 · Receding sparse crown / Short crooked broad tip",
+    "title": "F25 · Receding sparse crown / Short crooked broad tip / Thin sloping strokes",
     "provider": "built-in imagegen",
     "source_id": "F25",
     "eye_reference": "F25",
@@ -549,11 +557,12 @@
     "nose_style": "Short crooked broad tip",
     "hair_number": 3,
     "nose_number": 3,
-    "change": "Receding sparse crown; Short crooked broad tip; original F25 tiny square eyes"
+    "change": "Receding sparse crown; Short crooked broad tip; original F25 tiny square eyes",
+    "eyebrow_style": "Thin sloping strokes"
   },
   {
     "id": "F70",
-    "title": "V22 · Close blunt crop / Tiny round button",
+    "title": "V22 · Close blunt crop / Tiny round button / Heavy level bars",
     "provider": "built-in imagegen",
     "source_id": "V22",
     "eye_reference": "F25",
@@ -562,11 +571,12 @@
     "nose_style": "Tiny round button",
     "hair_number": 1,
     "nose_number": 1,
-    "change": "Close blunt crop; Tiny round button; original F25 tiny square eyes"
+    "change": "Close blunt crop; Tiny round button; original F25 tiny square eyes",
+    "eyebrow_style": "Heavy level bars"
   },
   {
     "id": "F71",
-    "title": "V22 · Close blunt crop / Slender curved hook",
+    "title": "V22 · Close blunt crop / Slender curved hook / Thin sloping strokes",
     "provider": "built-in imagegen",
     "source_id": "V22",
     "eye_reference": "F25",
@@ -575,11 +585,12 @@
     "nose_style": "Slender curved hook",
     "hair_number": 1,
     "nose_number": 2,
-    "change": "Close blunt crop; Slender curved hook; original F25 tiny square eyes"
+    "change": "Close blunt crop; Slender curved hook; original F25 tiny square eyes",
+    "eyebrow_style": "Thin sloping strokes"
   },
   {
     "id": "F72",
-    "title": "V22 · Close blunt crop / Short crooked broad tip",
+    "title": "V22 · Close blunt crop / Short crooked broad tip / Sparse broken arches",
     "provider": "built-in imagegen",
     "source_id": "V22",
     "eye_reference": "F25",
@@ -588,11 +599,12 @@
     "nose_style": "Short crooked broad tip",
     "hair_number": 1,
     "nose_number": 3,
-    "change": "Close blunt crop; Short crooked broad tip; original F25 tiny square eyes"
+    "change": "Close blunt crop; Short crooked broad tip; original F25 tiny square eyes",
+    "eyebrow_style": "Sparse broken arches"
   },
   {
     "id": "F73",
-    "title": "V22 · Ear-length ragged side part / Tiny round button",
+    "title": "V22 · Ear-length ragged side part / Tiny round button / Thin sloping strokes",
     "provider": "built-in imagegen",
     "source_id": "V22",
     "eye_reference": "F25",
@@ -601,11 +613,12 @@
     "nose_style": "Tiny round button",
     "hair_number": 2,
     "nose_number": 1,
-    "change": "Ear-length ragged side part; Tiny round button; original F25 tiny square eyes"
+    "change": "Ear-length ragged side part; Tiny round button; original F25 tiny square eyes",
+    "eyebrow_style": "Thin sloping strokes"
   },
   {
     "id": "F74",
-    "title": "V22 · Ear-length ragged side part / Slender curved hook",
+    "title": "V22 · Ear-length ragged side part / Slender curved hook / Sparse broken arches",
     "provider": "built-in imagegen",
     "source_id": "V22",
     "eye_reference": "F25",
@@ -614,11 +627,12 @@
     "nose_style": "Slender curved hook",
     "hair_number": 2,
     "nose_number": 2,
-    "change": "Ear-length ragged side part; Slender curved hook; original F25 tiny square eyes"
+    "change": "Ear-length ragged side part; Slender curved hook; original F25 tiny square eyes",
+    "eyebrow_style": "Sparse broken arches"
   },
   {
     "id": "F75",
-    "title": "V22 · Ear-length ragged side part / Short crooked broad tip",
+    "title": "V22 · Ear-length ragged side part / Short crooked broad tip / Heavy level bars",
     "provider": "built-in imagegen",
     "source_id": "V22",
     "eye_reference": "F25",
@@ -627,11 +641,12 @@
     "nose_style": "Short crooked broad tip",
     "hair_number": 2,
     "nose_number": 3,
-    "change": "Ear-length ragged side part; Short crooked broad tip; original F25 tiny square eyes"
+    "change": "Ear-length ragged side part; Short crooked broad tip; original F25 tiny square eyes",
+    "eyebrow_style": "Heavy level bars"
   },
   {
     "id": "F76",
-    "title": "V22 · Receding sparse crown / Tiny round button",
+    "title": "V22 · Receding sparse crown / Tiny round button / Sparse broken arches",
     "provider": "built-in imagegen",
     "source_id": "V22",
     "eye_reference": "F25",
@@ -640,11 +655,12 @@
     "nose_style": "Tiny round button",
     "hair_number": 3,
     "nose_number": 1,
-    "change": "Receding sparse crown; Tiny round button; original F25 tiny square eyes"
+    "change": "Receding sparse crown; Tiny round button; original F25 tiny square eyes",
+    "eyebrow_style": "Sparse broken arches"
   },
   {
     "id": "F77",
-    "title": "V22 · Receding sparse crown / Slender curved hook",
+    "title": "V22 · Receding sparse crown / Slender curved hook / Heavy level bars",
     "provider": "built-in imagegen",
     "source_id": "V22",
     "eye_reference": "F25",
@@ -653,11 +669,12 @@
     "nose_style": "Slender curved hook",
     "hair_number": 3,
     "nose_number": 2,
-    "change": "Receding sparse crown; Slender curved hook; original F25 tiny square eyes"
+    "change": "Receding sparse crown; Slender curved hook; original F25 tiny square eyes",
+    "eyebrow_style": "Heavy level bars"
   },
   {
     "id": "F78",
-    "title": "V22 · Receding sparse crown / Short crooked broad tip",
+    "title": "V22 · Receding sparse crown / Short crooked broad tip / Thin sloping strokes",
     "provider": "built-in imagegen",
     "source_id": "V22",
     "eye_reference": "F25",
@@ -666,11 +683,12 @@
     "nose_style": "Short crooked broad tip",
     "hair_number": 3,
     "nose_number": 3,
-    "change": "Receding sparse crown; Short crooked broad tip; original F25 tiny square eyes"
+    "change": "Receding sparse crown; Short crooked broad tip; original F25 tiny square eyes",
+    "eyebrow_style": "Thin sloping strokes"
   },
   {
     "id": "F79",
-    "title": "F18 · Close blunt crop / Tiny round button",
+    "title": "F18 · Close blunt crop / Tiny round button / Heavy level bars",
     "provider": "built-in imagegen",
     "source_id": "F18",
     "eye_reference": "F25",
@@ -679,11 +697,12 @@
     "nose_style": "Tiny round button",
     "hair_number": 1,
     "nose_number": 1,
-    "change": "Close blunt crop; Tiny round button; original F25 tiny square eyes"
+    "change": "Close blunt crop; Tiny round button; original F25 tiny square eyes",
+    "eyebrow_style": "Heavy level bars"
   },
   {
     "id": "F80",
-    "title": "F18 · Close blunt crop / Slender curved hook",
+    "title": "F18 · Close blunt crop / Slender curved hook / Thin sloping strokes",
     "provider": "built-in imagegen",
     "source_id": "F18",
     "eye_reference": "F25",
@@ -692,11 +711,12 @@
     "nose_style": "Slender curved hook",
     "hair_number": 1,
     "nose_number": 2,
-    "change": "Close blunt crop; Slender curved hook; original F25 tiny square eyes"
+    "change": "Close blunt crop; Slender curved hook; original F25 tiny square eyes",
+    "eyebrow_style": "Thin sloping strokes"
   },
   {
     "id": "F81",
-    "title": "F18 · Close blunt crop / Short crooked broad tip",
+    "title": "F18 · Close blunt crop / Short crooked broad tip / Sparse broken arches",
     "provider": "built-in imagegen",
     "source_id": "F18",
     "eye_reference": "F25",
@@ -705,11 +725,12 @@
     "nose_style": "Short crooked broad tip",
     "hair_number": 1,
     "nose_number": 3,
-    "change": "Close blunt crop; Short crooked broad tip; original F25 tiny square eyes"
+    "change": "Close blunt crop; Short crooked broad tip; original F25 tiny square eyes",
+    "eyebrow_style": "Sparse broken arches"
   },
   {
     "id": "F82",
-    "title": "F18 · Ear-length ragged side part / Tiny round button",
+    "title": "F18 · Ear-length ragged side part / Tiny round button / Thin sloping strokes",
     "provider": "built-in imagegen",
     "source_id": "F18",
     "eye_reference": "F25",
@@ -718,11 +739,12 @@
     "nose_style": "Tiny round button",
     "hair_number": 2,
     "nose_number": 1,
-    "change": "Ear-length ragged side part; Tiny round button; original F25 tiny square eyes"
+    "change": "Ear-length ragged side part; Tiny round button; original F25 tiny square eyes",
+    "eyebrow_style": "Thin sloping strokes"
   },
   {
     "id": "F83",
-    "title": "F18 · Ear-length ragged side part / Slender curved hook",
+    "title": "F18 · Ear-length ragged side part / Slender curved hook / Sparse broken arches",
     "provider": "built-in imagegen",
     "source_id": "F18",
     "eye_reference": "F25",
@@ -731,11 +753,12 @@
     "nose_style": "Slender curved hook",
     "hair_number": 2,
     "nose_number": 2,
-    "change": "Ear-length ragged side part; Slender curved hook; original F25 tiny square eyes"
+    "change": "Ear-length ragged side part; Slender curved hook; original F25 tiny square eyes",
+    "eyebrow_style": "Sparse broken arches"
   },
   {
     "id": "F84",
-    "title": "F18 · Ear-length ragged side part / Short crooked broad tip",
+    "title": "F18 · Ear-length ragged side part / Short crooked broad tip / Heavy level bars",
     "provider": "built-in imagegen",
     "source_id": "F18",
     "eye_reference": "F25",
@@ -744,11 +767,12 @@
     "nose_style": "Short crooked broad tip",
     "hair_number": 2,
     "nose_number": 3,
-    "change": "Ear-length ragged side part; Short crooked broad tip; original F25 tiny square eyes"
+    "change": "Ear-length ragged side part; Short crooked broad tip; original F25 tiny square eyes",
+    "eyebrow_style": "Heavy level bars"
   },
   {
     "id": "F85",
-    "title": "F18 · Receding sparse crown / Tiny round button",
+    "title": "F18 · Receding sparse crown / Tiny round button / Sparse broken arches",
     "provider": "built-in imagegen",
     "source_id": "F18",
     "eye_reference": "F25",
@@ -757,11 +781,12 @@
     "nose_style": "Tiny round button",
     "hair_number": 3,
     "nose_number": 1,
-    "change": "Receding sparse crown; Tiny round button; original F25 tiny square eyes"
+    "change": "Receding sparse crown; Tiny round button; original F25 tiny square eyes",
+    "eyebrow_style": "Sparse broken arches"
   },
   {
     "id": "F86",
-    "title": "F18 · Receding sparse crown / Slender curved hook",
+    "title": "F18 · Receding sparse crown / Slender curved hook / Heavy level bars",
     "provider": "built-in imagegen",
     "source_id": "F18",
     "eye_reference": "F25",
@@ -770,11 +795,12 @@
     "nose_style": "Slender curved hook",
     "hair_number": 3,
     "nose_number": 2,
-    "change": "Receding sparse crown; Slender curved hook; original F25 tiny square eyes"
+    "change": "Receding sparse crown; Slender curved hook; original F25 tiny square eyes",
+    "eyebrow_style": "Heavy level bars"
   },
   {
     "id": "F87",
-    "title": "F18 · Receding sparse crown / Short crooked broad tip",
+    "title": "F18 · Receding sparse crown / Short crooked broad tip / Thin sloping strokes",
     "provider": "built-in imagegen",
     "source_id": "F18",
     "eye_reference": "F25",
@@ -783,6 +809,7 @@
     "nose_style": "Short crooked broad tip",
     "hair_number": 3,
     "nose_number": 3,
-    "change": "Receding sparse crown; Short crooked broad tip; original F25 tiny square eyes"
+    "change": "Receding sparse crown; Short crooked broad tip; original F25 tiny square eyes",
+    "eyebrow_style": "Thin sloping strokes"
   }
 ]
