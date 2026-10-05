@@ -1,3 +1,5 @@
+import { createAutosave } from "./autosave.mjs?v=1";
+
 (() => {
   const manifest = JSON.parse(document.getElementById("review-manifest").textContent);
   const cards = [...document.querySelectorAll(".card[data-reference]")];
@@ -9,14 +11,16 @@
   const summary = document.getElementById("review-summary");
   const saveStatus = document.getElementById("review-save-status");
   const exportButton = document.getElementById("download-manifest");
-  const projectSavePending = document.body.dataset.projectSavePending === "true";
   const preferenceGrid = document.getElementById("preference-grid");
   const orderStorageKey = `${storageKey}:preference-order`;
   const directBoard = {
     "art/concepts/manifest.md": "concepts",
     "art/concepts/gameplay/manifest.md": "gameplay",
+    "art/concepts/expansion/manifest.md": "expansion",
+    "art/concepts/faces/manifest.md": "faces",
   }[document.body.dataset.manifestPath];
-  let saveBaseline;
+  let autosave;
+  let saveState = { status: "saved" };
   async function manifestHash(content) {
     const hash = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(content));
     return [...new Uint8Array(hash)].map((byte) => byte.toString(16).padStart(2, "0")).join("");
@@ -57,10 +61,13 @@
   }
 
   function showSaveStatus() {
-    if (projectSavePending) {
-      saveStatus.textContent = storageAvailable
-        ? "Draft saved in this browser. Project saving awaits review-service approval."
-        : "This browser could not save the draft. Project saving awaits review-service approval.";
+    if (directBoard) {
+      saveStatus.dataset.state = saveState.status;
+      if (saveState.status === "saving") saveStatus.textContent = "Saving changes to the project…";
+      else if (saveState.status === "error") {
+        saveStatus.textContent = `Automatic save failed: ${saveState.error.message} Your draft is kept in this page${storageAvailable ? " and browser" : ""}.${!saveState.error.status || saveState.error.status >= 500 ? " Retrying automatically." : ""}`;
+      } else saveStatus.textContent = "Saved to the project. Order, comments and decisions save automatically.";
+      if (!storageAvailable) saveStatus.textContent += " Browser draft storage is unavailable.";
       return;
     }
     saveStatus.textContent = storageAvailable
@@ -77,6 +84,7 @@
       storageAvailable = false;
     }
     showSaveStatus();
+    autosave?.update(reviewedManifest());
   }
 
   for (const card of cards) {
@@ -372,30 +380,43 @@
     return updated;
   }
 
-  exportButton.addEventListener("click", async () => {
-    saveDraft();
-    const updated = reviewedManifest();
-    if (directBoard) {
-      exportButton.disabled = true;
-      saveStatus.textContent = "Saving review to the project…";
-      try {
-        saveBaseline ??= await manifestHash(manifest);
+  if (directBoard) {
+    autosave = createAutosave(manifest, {
+      hash: manifestHash,
+      async send(content, baseline) {
         const response = await fetch("/api/review", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ board: directBoard, manifest: updated, baseline: saveBaseline }),
+          body: JSON.stringify({ board: directBoard, manifest: content, baseline }),
         });
         const result = await response.json();
-        if (!response.ok || !result.saved) throw new Error(result.error || "The server did not confirm the save.");
-        saveBaseline = result.baseline;
-        saveStatus.textContent = `Review saved to ${result.path}. Comments, decisions and order are saved.`;
-      } catch (error) {
-        saveStatus.textContent = `Save failed: ${error.message} Your draft is kept in this page${storageAvailable ? " and browser" : ""}.`;
-      } finally {
-        exportButton.disabled = false;
-      }
-      return;
-    }
+        if (!response.ok || !result.saved) {
+          throw Object.assign(new Error(result.error || "The server did not confirm the save."), { status: response.status });
+        }
+        return result;
+      },
+      onState(state) {
+        saveState = state;
+        showSaveStatus();
+      },
+      onSaved(content) {
+        for (const line of content.split("\n")) {
+          const match = line.match(/^\| ([A-Z]\d+) \|/);
+          if (!match || !reviews.has(match[1])) continue;
+          const cells = line.split("|");
+          const decoder = document.createElement("textarea");
+          decoder.innerHTML = cells.at(-2).trim().replace(/<br\s*\/?\s*>/gi, "\n");
+          reviews.get(match[1]).baseline = JSON.stringify([cells.at(-3).trim(), decoder.value]);
+        }
+        saveDraft();
+      },
+    });
+    window.addEventListener("online", autosave.retry);
+  }
+
+  exportButton?.addEventListener("click", () => {
+    saveDraft();
+    const updated = reviewedManifest();
     const url = URL.createObjectURL(new Blob([updated], { type: "text/markdown;charset=utf-8" }));
     const link = document.createElement("a");
     link.href = url;
