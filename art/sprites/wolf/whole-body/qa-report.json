@@ -1,0 +1,15 @@
+{
+  "packingPassed": true,
+  "reconstructedFrames": 25,
+  "wholeAlphaComponents": 1,
+  "sourceEdgeFailures": [
+    {
+      "frame": 4,
+      "sourceFile": "walk-e-01-12-v01.png",
+      "reason": "paint touches original source cell edge"
+    }
+  ],
+  "completeMotionEvidence": false,
+  "visualAcceptance": "revise",
+  "productionReady": false
+}

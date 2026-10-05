@@ -67,9 +67,10 @@ function applyCharacter(id, nextAtlas, loadedImages) {
   element("character").value = id;
   element("size").value = characters[id].size;
   element("play").textContent = "Pause";
-  element("basis").textContent = `${atlas.selection.gameplay_id} / ${atlas.selection.source_character} · ${atlas.sourceFrames} source frames · ${Object.keys(atlas.directions).length} directions · ${Object.keys(atlas.clips).length} clips`;
+  element("basis").textContent = `${atlas.selection.gameplay_id} / ${atlas.selection.source_character} · ${atlas.sourceFrames} source frames · ${Object.keys(atlas.directions).length} ${Object.keys(atlas.directions).length === 1 ? "direction" : "directions"} · ${Object.keys(atlas.clips).length} clips`;
   element("load-status").textContent = atlas.reviewStatus;
   element("stage-help").textContent = `${Object.keys(atlas.directions).length === 1 ? "D or Right arrow to walk; other headings pending" : "WASD or arrows to move"}${supports("cut") ? " · Space to strike" : " · Attack pending"}`;
+  stage.setAttribute("aria-label", `Character playground. ${element("stage-help").textContent}`);
   element("shortcuts").textContent = `${supports("guard") ? "Hold G to guard; P starts/stops prayer; " : ""}${supports("hurt") ? "H hurts; " : ""}${supports("death") ? "K defeats; " : ""}R resets. Inputs keep their normal keyboard behavior.`;
   for (const [name, file] of [["review", "manifest.md"], ["assessment", "assessment.md"], ["metadata", "atlas.json"]]) element(`sprite-${name}`).href = characters[id].root + file;
   element("references").replaceChildren();

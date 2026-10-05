@@ -47,3 +47,13 @@ uv run --no-project --with pytest pytest -q skills/sprite-production/scripts
 ```
 
 Actual image authoring, full sprite export and engine acceptance were not run for this skill-only task. The existing locomotion drawings still need the measured pilot and visual review already listed in the art production checklist.
+
+## Wolf test and corrected method — 2026-10-05
+
+The subsequent wolf test falsified the painted-component method: deterministic contact and packing checks passed, but the user rejected its disconnected-looking anatomy. The first whole-body drawing was then rejected for realistic proportions. These are retained as failure evidence, never as future generation references.
+
+At commit `7e004ab`, the corrected study uses original S13 as the dominant proportion authority, an intact exaggerated wolf base, anatomy-aware canine skeletons and complete painted animals in every pose. M15 supplies species features only. The active [whole-body contract](../art/sprites/wolf/whole-body/production-contract.md) locks the large head, short torso and stubby legs. The skill now requires this reference hierarchy, proportion checks before animation, whole-body controls for organic characters and a visual veto over numerical passes. Its rig guidance is reconciled; a rejected parts method is not a fallback.
+
+The [motion lab](http://127.0.0.1:8765/art/sprites/guarin/viewer/index.html?character=wolf) loads 25 whole-body drawings: one still pose and a 24-pose E walk study. The seven missing headings and ungenerated actions are disabled. Thirty-five controller/guide tests pass. The actual art fails contact inspection: one measured forepaw in the first six frames drifts up to 9.53 logical pixels against a 2-pixel budget. Other required contacts remain missing. Original source frame 4 also touches its cell edge. No production readiness or user approval is claimed.
+
+Deterministic checks can enforce source lineage, alpha, page/cell coverage, registration, reconstruction, timing, root travel, measured contact drift and explicit missing evidence. `whole-body/qa.mjs` demonstrates byte-exact reconstruction and actual painted-edge measurement after human identification of the paw region. Region identity, occlusion, anatomical coherence, exaggerated style and visual appeal still need review. A computed skeleton passing its own targets is not an art test.

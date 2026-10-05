@@ -1,0 +1,148 @@
+{
+  "passed": false,
+  "basis": "measured-art",
+  "scope": "submitted contact samples only",
+  "observation_count": 18,
+  "failures": [
+    {
+      "clip": "E-walk-first-six",
+      "frame": "E-walk-1",
+      "contact": "LH",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-first-six",
+      "frame": "E-walk-1",
+      "contact": "RH",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-first-six",
+      "frame": "E-walk-2",
+      "contact": "LH",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-first-six",
+      "frame": "E-walk-2",
+      "contact": "RH",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-first-six",
+      "frame": "E-walk-3",
+      "contact": "LH",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-first-six",
+      "frame": "E-walk-3",
+      "contact": "RH",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-first-six",
+      "frame": "E-walk-3",
+      "contact": "RF",
+      "reason": "contact-drift",
+      "drift_px": 4.155192534648665,
+      "budget_px": 2.0,
+      "offset_ms": 37.5,
+      "expected_world": [
+        14.5,
+        5.0
+      ],
+      "actual_world": [
+        18.625,
+        5.5
+      ]
+    },
+    {
+      "clip": "E-walk-first-six",
+      "frame": "E-walk-4",
+      "contact": "LH",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-first-six",
+      "frame": "E-walk-4",
+      "contact": "RH",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-first-six",
+      "frame": "E-walk-4",
+      "contact": "RF",
+      "reason": "contact-drift",
+      "drift_px": 4.5,
+      "budget_px": 2.0,
+      "offset_ms": 0.0,
+      "expected_world": [
+        14.5,
+        5.0
+      ],
+      "actual_world": [
+        10.0,
+        5.0
+      ]
+    },
+    {
+      "clip": "E-walk-first-six",
+      "frame": "E-walk-5",
+      "contact": "LH",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-first-six",
+      "frame": "E-walk-5",
+      "contact": "RH",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-first-six",
+      "frame": "E-walk-5",
+      "contact": "RF",
+      "reason": "contact-drift",
+      "drift_px": 2.0155644370746373,
+      "budget_px": 2.0,
+      "offset_ms": 0.0,
+      "expected_world": [
+        14.5,
+        5.0
+      ],
+      "actual_world": [
+        12.5,
+        4.75
+      ]
+    },
+    {
+      "clip": "E-walk-first-six",
+      "frame": "E-walk-6",
+      "contact": "LH",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-first-six",
+      "frame": "E-walk-6",
+      "contact": "RH",
+      "reason": "missing-measurement"
+    },
+    {
+      "clip": "E-walk-first-six",
+      "frame": "E-walk-6",
+      "contact": "RF",
+      "reason": "contact-drift",
+      "drift_px": 9.530379058568448,
+      "budget_px": 2.0,
+      "offset_ms": 37.5,
+      "expected_world": [
+        14.5,
+        5.0
+      ],
+      "actual_world": [
+        23.625,
+        2.25
+      ]
+    }
+  ]
+}

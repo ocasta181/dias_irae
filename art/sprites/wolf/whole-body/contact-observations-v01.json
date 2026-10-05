@@ -1,0 +1,284 @@
+{
+  "basis": "measured-art",
+  "max_drift_px": 2,
+  "method": "Human-identified near right forepaw region; deterministic alpha>=128 lower contact edge. RF fixed ground placement is anchored to first observed midpoint. Other required support measurements explicitly missing. Six-frame diagnostic, not complete gait evidence.",
+  "clips": [
+    {
+      "id": "E-walk-first-six",
+      "world_contacts": {
+        "LH": [
+          -7,
+          -5.656854249492369
+        ],
+        "RH": [
+          -19,
+          5.656854249492369
+        ],
+        "RF": [
+          14.5,
+          5
+        ]
+      },
+      "frames": [
+        {
+          "id": "E-walk-1",
+          "start_ms": 0,
+          "duration_ms": 37.5,
+          "pivot": [
+            96,
+            156
+          ],
+          "required_contacts": [
+            "LH",
+            "RH",
+            "RF"
+          ],
+          "contacts": {
+            "RF": [
+              110,
+              161
+            ]
+          },
+          "root_samples": [
+            {
+              "offset_ms": 0,
+              "position": [
+                0,
+                0
+              ]
+            },
+            {
+              "offset_ms": 18.75,
+              "position": [
+                0.5,
+                0
+              ]
+            },
+            {
+              "offset_ms": 37.5,
+              "position": [
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "E-walk-2",
+          "start_ms": 37.5,
+          "duration_ms": 37.5,
+          "pivot": [
+            96,
+            156
+          ],
+          "required_contacts": [
+            "LH",
+            "RH",
+            "RF"
+          ],
+          "contacts": {
+            "RF": [
+              108.25,
+              161.25
+            ]
+          },
+          "root_samples": [
+            {
+              "offset_ms": 0,
+              "position": [
+                1,
+                0
+              ]
+            },
+            {
+              "offset_ms": 18.75,
+              "position": [
+                1.5,
+                0
+              ]
+            },
+            {
+              "offset_ms": 37.5,
+              "position": [
+                2,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "E-walk-3",
+          "start_ms": 75,
+          "duration_ms": 37.5,
+          "pivot": [
+            96,
+            156
+          ],
+          "required_contacts": [
+            "LH",
+            "RH",
+            "RF"
+          ],
+          "contacts": {
+            "RF": [
+              111.625,
+              161.5
+            ]
+          },
+          "root_samples": [
+            {
+              "offset_ms": 0,
+              "position": [
+                2,
+                0
+              ]
+            },
+            {
+              "offset_ms": 18.75,
+              "position": [
+                2.5,
+                0
+              ]
+            },
+            {
+              "offset_ms": 37.5,
+              "position": [
+                3,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "E-walk-4",
+          "start_ms": 112.5,
+          "duration_ms": 37.5,
+          "pivot": [
+            96,
+            156
+          ],
+          "required_contacts": [
+            "LH",
+            "RH",
+            "RF"
+          ],
+          "contacts": {
+            "RF": [
+              103,
+              161
+            ]
+          },
+          "root_samples": [
+            {
+              "offset_ms": 0,
+              "position": [
+                3,
+                0
+              ]
+            },
+            {
+              "offset_ms": 18.75,
+              "position": [
+                3.5,
+                0
+              ]
+            },
+            {
+              "offset_ms": 37.5,
+              "position": [
+                4,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "E-walk-5",
+          "start_ms": 150,
+          "duration_ms": 37.5,
+          "pivot": [
+            96,
+            156
+          ],
+          "required_contacts": [
+            "LH",
+            "RH",
+            "RF"
+          ],
+          "contacts": {
+            "RF": [
+              104.5,
+              160.75
+            ]
+          },
+          "root_samples": [
+            {
+              "offset_ms": 0,
+              "position": [
+                4,
+                0
+              ]
+            },
+            {
+              "offset_ms": 18.75,
+              "position": [
+                4.5,
+                0
+              ]
+            },
+            {
+              "offset_ms": 37.5,
+              "position": [
+                5,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "E-walk-6",
+          "start_ms": 187.5,
+          "duration_ms": 37.5,
+          "pivot": [
+            96,
+            156
+          ],
+          "required_contacts": [
+            "LH",
+            "RH",
+            "RF"
+          ],
+          "contacts": {
+            "RF": [
+              113.625,
+              158.25
+            ]
+          },
+          "root_samples": [
+            {
+              "offset_ms": 0,
+              "position": [
+                5,
+                0
+              ]
+            },
+            {
+              "offset_ms": 18.75,
+              "position": [
+                5.5,
+                0
+              ]
+            },
+            {
+              "offset_ms": 37.5,
+              "position": [
+                6,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

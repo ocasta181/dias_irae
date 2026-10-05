@@ -1,0 +1,139 @@
+{
+  "source": "walk-e-01-12-v01.png",
+  "sha256": "ce9739b5df14a2ca198256ebd8b78db01be9e04c9157428c80eaf83a723a1225",
+  "basis": "painted pixels",
+  "measurements": [
+    {
+      "frame": 1,
+      "sourceCell": [
+        0,
+        0
+      ],
+      "annotatedRegion": [
+        165,
+        300,
+        115,
+        62
+      ],
+      "sourcePoint": [
+        232,
+        352
+      ],
+      "logicalPoint": [
+        110,
+        161
+      ],
+      "uncertaintyPx": 0.5
+    },
+    {
+      "frame": 2,
+      "sourceCell": [
+        362,
+        0
+      ],
+      "annotatedRegion": [
+        165,
+        300,
+        115,
+        62
+      ],
+      "sourcePoint": [
+        225,
+        353
+      ],
+      "logicalPoint": [
+        108.25,
+        161.25
+      ],
+      "uncertaintyPx": 0.5
+    },
+    {
+      "frame": 3,
+      "sourceCell": [
+        724,
+        0
+      ],
+      "annotatedRegion": [
+        165,
+        300,
+        115,
+        62
+      ],
+      "sourcePoint": [
+        238.5,
+        354
+      ],
+      "logicalPoint": [
+        111.625,
+        161.5
+      ],
+      "uncertaintyPx": 0.5
+    },
+    {
+      "frame": 4,
+      "sourceCell": [
+        1086,
+        0
+      ],
+      "annotatedRegion": [
+        165,
+        300,
+        115,
+        62
+      ],
+      "sourcePoint": [
+        204,
+        352
+      ],
+      "logicalPoint": [
+        103,
+        161
+      ],
+      "uncertaintyPx": 0.5
+    },
+    {
+      "frame": 5,
+      "sourceCell": [
+        0,
+        362
+      ],
+      "annotatedRegion": [
+        165,
+        300,
+        115,
+        62
+      ],
+      "sourcePoint": [
+        210,
+        351
+      ],
+      "logicalPoint": [
+        104.5,
+        160.75
+      ],
+      "uncertaintyPx": 0.5
+    },
+    {
+      "frame": 6,
+      "sourceCell": [
+        362,
+        362
+      ],
+      "annotatedRegion": [
+        165,
+        300,
+        115,
+        62
+      ],
+      "sourcePoint": [
+        246.5,
+        341
+      ],
+      "logicalPoint": [
+        113.625,
+        158.25
+      ],
+      "uncertaintyPx": 0.5
+    }
+  ]
+}

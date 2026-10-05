@@ -23,7 +23,7 @@ Each generation receives the intact v02 identity, the actual skeleton guide, S13
 - [x] Reject realistic base and component assembly; preserve them as failure evidence.
 - [x] Compute shortened, exaggerated neutral and 24 walk controls.
 - [x] Generate and inspect intact exaggerated v02 identity.
-- [ ] Draw and measure the whole-body walk pilot.
+- [x] Measure a failed six-frame diagnostic from actual painted near-forepaw pixels; retain missing observations explicitly. Maximum observed contact error 9.53 logical pixels against a 2-pixel budget.
 - [x] Draw two chronological twelve-pose whole-body source sheets and pack them deterministically for inspection. Proportions are retained; pose placement and planted-paw motion need revision.
 - [x] Make the intact wolf study the motion lab's default wolf. Offer only the available E heading and idle/walk states; never substitute a missing state with another drawing.
 - [ ] Verify real exported pilot in the local motion lab.

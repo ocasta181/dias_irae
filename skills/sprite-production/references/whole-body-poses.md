@@ -50,4 +50,6 @@ Use the same atlas the application loads. Check normal speed, slow speed, reduce
 
 A coherent whole animal is mandatory. Disconnected-looking necks, distorted legs, flickering fur or an unreadable gait fail even if contacts are numerically correct. Alpha connectivity can catch separated pieces; it cannot establish good anatomy or convincing overlap.
 
+If a sheet contains good intact characters but ignores the guide, record the geometry failure. Do not align every pose independently to disguise row drift. A justified next experiment reduces the handoff to one pose or a small pair, strengthens the silhouette/occlusion guide, or uses a provider with explicit pose conditioning. Preserve the same acceptable identity image; never promote the failed animation sheet to identity authority. A corrected character design can be retained while its animation is rejected.
+
 Output: playback evidence and a clear pilot verdict. Expand only after the pilot meets visual and motion budgets and any existing approval gate. After two targeted failures, change the control hypothesis or report the tool's limitation. Do not replace whole-body art with assembled parts merely to make a coordinate test pass.
