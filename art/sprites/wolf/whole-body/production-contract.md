@@ -2,11 +2,11 @@
 
 ## Current cadence decision
 
-2026-10-05, decision at `fcd4bc2`, confidence 95%: the user sets moving-animation playback to **12–15 FPS** and rejects 8 FPS. Default the wolf walk to **12 FPS**. Prefer its restrained cadence for the short squat design; use **15 FPS** if extra lift/recovery/landing drawings improve readability at the same cycle duration and stride. Idle holds remain separate from locomotion cadence.
+2026-10-05 user clarification at `68c47fb`, confidence 100%: **12 FPS means twelve distinct newly drawn whole-body poses across one second of action.** Create more frames; do not shorten the eight-frame cycle or accelerate travel. The incorrect timing-only change is withdrawn. The new pilot uses twelve drawings, 83.333 ms holds, a 1,000 ms cycle, 36 logical px/stride and the original 36 logical px/s ground speed (54 screen px/s at default size).
 
-The current eight-drawing study is retimed to 83.333 ms per pose, a 666.667 ms cycle and 36 logical pixels per cycle. Travel is 54 logical pixels/second, or 81 screen pixels/second at the default 96-pixel height. This timing-only change preserves the original paintings, registration and source order. It does not repair the rejected gait. New authored cycles must budget 12–15 purposeful frame changes per second; increasing drawing count must not silently accelerate their cycle or ground speed.
+`walk-controls-v06.mjs` produces twelve unique stick guides and exact joint/paw targets in `walk-v06/`. The four-beat schedule has three drawings per beat and four swing drawings per paw. A 2/3 stance fraction aligns landings and toe-offs with twelve equal hold boundaries; it is a deliberately slow stylized-walk hypothesis, not a universal canine constant. Planned held-contact error is ±1.5 logical px. Fixed body/head/pivot and exact loop closure are verified in the plan. Actual paintings must be measured separately.
 
-Earlier cadence decisions below are historical. The original eight-pose guides keep their original timestamps; the pose review reports current playback times separately. Current package/contact evidence uses v05 filenames and preserves the v04 reports.
+Generate one complete wolf pose per call from the canonical v02 wolf and that frame's fresh guide. Never supply rejected walking paintings. Preserve the original eight-drawing study at its original duration/travel while replacements are in production; it remains rejected. The v05 reports preserve the withdrawn speed-up's history. New acceptance requires twelve distinct useful poses, coherent limb identities/contacts and measured whole-cycle/seam evidence.
 
 ## Straight-path registration correction
 

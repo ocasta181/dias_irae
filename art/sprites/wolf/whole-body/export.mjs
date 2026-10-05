@@ -6,7 +6,6 @@ import { createCanvas, pixels, readBitmap, components } from "../source-parts.mj
 import { noseAnchor, registerFrame } from "./register-frame.mjs";
 
 const root = dirname(fileURLToPath(import.meta.url));
-const walkFps = 12, walkFrameMs = 1000 / walkFps, walkDurationMs = 8 * walkFrameMs, walkStride = 36;
 const sources = [
   { file: "base-wolf-v02.png", columns: 1, rows: 1, scale: .08, offset: [50, 72], first: 0 },
   { file: "walk-e-v03-1-4.png", columns: 2, rows: 2, scale: .14, offset: [56, 81], first: 1 },
@@ -38,21 +37,21 @@ const bytes = page.toBuffer("image/png");
 const atlas = {
   selection: { gameplay_id: "G15", source_character: "S13 proportions / wolf base v02" },
   sourceFrames: frames.length,
-  reviewStatus: `Whole-body wolf study: oversized head, squat torso, short legs. Eight walk drawings at ${walkFps} frames per second, with stable head registration baked into the sheet. Right-facing only. The gait remains rejected; contacts and other headings/actions still need work. Not production-ready.`,
+  reviewStatus: "Whole-body wolf study: oversized head, squat torso, short legs. Eight walk drawings at 8 frames per second, with stable head registration baked into the sheet. Right-facing only. The gait remains rejected; contacts and other headings/actions still need work. Not production-ready.",
   directions: { E: { image: "wolf-whole-e-v03.png", dimensions: [588, 588], sha256: hash(bytes), frames, assessment: "Whole drawings use a fixed nose registration baked into the atlas; the viewer adds no bounce, sway or frame-specific position/scale changes. The existing reordered walk remains a rejected gait: contact locks, camera and far/near leg identity still need repair." } },
   clips: {
     idle: { label: "Still whole-body pose", fps: 1, loop: true, frames: [{ source: 0, durationMs: 1000 }] },
-    walk: { label: "Walk study", fps: walkFps, loop: true, frames: [2, 1, 3, 4, 6, 5, 7, 8].map(source => ({ source, durationMs: walkFrameMs })) },
+    walk: { label: "Steady walk study", fps: 8, loop: true, frames: [2, 1, 3, 4, 6, 5, 7, 8].map(source => ({ source, durationMs: 125 })) },
   },
   references: [
     { label: "S13 — dominant exaggerated proportions and drawing style", url: "/art/concepts/images/s13-guarin-isometric-v02.png" },
     { label: "Intact exaggerated wolf v02 — exact animation identity input", url: "/art/sprites/wolf/whole-body/base-wolf-v02.png" },
     { label: "G15 — gritty game palette", url: "/art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png" },
   ],
-  motion: { referenceHeight: 64, walkSpeed: walkStride * 1000 / walkDurationMs, stride: walkStride, walkDuration: walkDurationMs },
+  motion: { referenceHeight: 64, walkSpeed: 36, stride: 36, walkDuration: 1000 },
   packing: "Complete painted source cells, fixed page-level scale, then whole-pixel translation to the inspected canonical nose anchor baked into each logical canvas. All source pixels preserved; no runtime registration offsets, per-frame scaling, rotation or parts assembly. Two transparent pixels per edge.",
 };
 await writeFile(resolve(root, "wolf-whole-e-v03.png"), bytes);
 await writeFile(resolve(root, "atlas.json"), JSON.stringify(atlas, null, 2) + "\n");
 await writeFile(resolve(root, "registration.json"), JSON.stringify(registration, null, 2) + "\n");
-console.log(JSON.stringify({ sourceFrames: frames.length, directions: ["E"], clips: ["idle", "walk"], fps: walkFps, displayTravel: atlas.motion.walkSpeed * 96 / atlas.motion.referenceHeight, visualStatus: "motion-revision-required" }));
+console.log(JSON.stringify({ sourceFrames: frames.length, directions: ["E"], clips: ["idle", "walk"], fps: 8, displayTravel: 54, visualStatus: "motion-revision-required" }));

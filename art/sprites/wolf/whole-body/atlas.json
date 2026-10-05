@@ -4,7 +4,7 @@
     "source_character": "S13 proportions / wolf base v02"
   },
   "sourceFrames": 9,
-  "reviewStatus": "Whole-body wolf study: oversized head, squat torso, short legs. Eight walk drawings at 12 frames per second, with stable head registration baked into the sheet. Right-facing only. The gait remains rejected; contacts and other headings/actions still need work. Not production-ready.",
+  "reviewStatus": "Whole-body wolf study: oversized head, squat torso, short legs. Eight walk drawings at 8 frames per second, with stable head registration baked into the sheet. Right-facing only. The gait remains rejected; contacts and other headings/actions still need work. Not production-ready.",
   "directions": {
     "E": {
       "image": "wolf-whole-e-v03.png",
@@ -499,41 +499,41 @@
       ]
     },
     "walk": {
-      "label": "Walk study",
-      "fps": 12,
+      "label": "Steady walk study",
+      "fps": 8,
       "loop": true,
       "frames": [
         {
           "source": 2,
-          "durationMs": 83.33333333333333
+          "durationMs": 125
         },
         {
           "source": 1,
-          "durationMs": 83.33333333333333
+          "durationMs": 125
         },
         {
           "source": 3,
-          "durationMs": 83.33333333333333
+          "durationMs": 125
         },
         {
           "source": 4,
-          "durationMs": 83.33333333333333
+          "durationMs": 125
         },
         {
           "source": 6,
-          "durationMs": 83.33333333333333
+          "durationMs": 125
         },
         {
           "source": 5,
-          "durationMs": 83.33333333333333
+          "durationMs": 125
         },
         {
           "source": 7,
-          "durationMs": 83.33333333333333
+          "durationMs": 125
         },
         {
           "source": 8,
-          "durationMs": 83.33333333333333
+          "durationMs": 125
         }
       ]
     }
@@ -554,9 +554,9 @@
   ],
   "motion": {
     "referenceHeight": 64,
-    "walkSpeed": 54,
+    "walkSpeed": 36,
     "stride": 36,
-    "walkDuration": 666.6666666666666
+    "walkDuration": 1000
   },
   "packing": "Complete painted source cells, fixed page-level scale, then whole-pixel translation to the inspected canonical nose anchor baked into each logical canvas. All source pixels preserved; no runtime registration offsets, per-frame scaling, rotation or parts assembly. Two transparent pixels per edge."
 }

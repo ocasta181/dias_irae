@@ -1,0 +1,11 @@
+{
+  "identity": {
+    "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/base-wolf-v02.png": "ee925ea9d1d9946cdaea3cf8a1538950748d305e079c96c7a76f837ff551c3b0"
+  },
+  "controls": "new planned per-pose guides",
+  "failedAnimationInputs": false,
+  "newDrawingsRequired": 12,
+  "cycleMs": 1000,
+  "groundSpeed": 36,
+  "provider": "built-in image_gen; one pose per request"
+}

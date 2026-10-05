@@ -69,7 +69,7 @@ function distinctPoses(poses) {
 test("normal 60 Hz playback draws every wolf pose in the actual declared order", () => {
   const lab = playground(); lab.select("wolf", wholeWolf); lab.step(0);
   lab.key("keydown", "d"); lab.clearDraws(); lab.step(0);
-  for (let index = 1; index <= 40; index++) lab.step(index * 1000 / 60);
+  for (let index = 1; index <= 60; index++) lab.step(index * 1000 / 60);
   assert.deepEqual(distinctPoses(lab.drawn(wholeWolf)), [2, 1, 3, 4, 6, 5, 7, 8, 2]);
 });
 
@@ -77,7 +77,7 @@ test("elapsed-time playback skips undrawn wolf poses during 500 ms display gaps"
   const lab = playground(); lab.select("wolf", wholeWolf); lab.step(0);
   lab.key("keydown", "d"); lab.clearDraws();
   for (const time of [0, 500, 1000]) lab.step(time);
-  assert.deepEqual(lab.drawn(wholeWolf), [2, 7, 6]);
+  assert.deepEqual(lab.drawn(wholeWolf), [2, 6, 2]);
 });
 
 test("frame-preserving preview draws all wolf keys despite repeated 500 ms gaps", () => {
@@ -85,7 +85,7 @@ test("frame-preserving preview draws all wolf keys despite repeated 500 ms gaps"
   lab.key("keydown", "d"); lab.clearDraws();
   for (let index = 0; index <= 8; index++) lab.step(index * 500);
   assert.deepEqual(lab.drawn(wholeWolf), [2, 1, 3, 4, 6, 5, 7, 8, 2]);
-  assert.ok(Math.abs(lab.state().player.elapsedMs - 2000 / 3) < 1e-8);
+  assert.equal(lab.state().player.elapsedMs, 1000);
   assert.ok(Math.abs(lab.state().position[0] - 504) < 1e-8);
   assert.equal(lab.state().position[1], 420);
 });
@@ -93,14 +93,14 @@ test("frame-preserving preview draws all wolf keys despite repeated 500 ms gaps"
 test("frame-preserving preview retains normal fractional timing and travel", () => {
   const lab = playground(); lab.select("wolf", wholeWolf); lab.preserveFrames(); lab.step(0);
   lab.key("keydown", "d"); lab.step(0); lab.clearDraws();
-  for (let index = 1; index <= 40; index++) lab.step(index * 1000 / 60);
+  for (let index = 1; index <= 60; index++) lab.step(index * 1000 / 60);
   assert.deepEqual(distinctPoses(lab.drawn(wholeWolf)), [2, 1, 3, 4, 6, 5, 7, 8, 2]);
-  assert.ok(Math.abs(lab.state().player.elapsedMs - 2000 / 3) < 1e-8);
+  assert.ok(Math.abs(lab.state().player.elapsedMs - 1000) < 1e-8);
   assert.ok(Math.abs(lab.state().position[0] - 504) < 1e-8);
   for (const [index, draw] of lab.transforms().entries()) {
     assert.deepEqual(draw.scale, [1.5, 1.5]);
     assert.equal(draw.translation[1], 420 - 156 * 1.5);
-    assert.ok(Math.abs(draw.translation[0] - (450 + (index + 1) * 1.35 - 96 * 1.5)) < 1e-8);
+    assert.ok(Math.abs(draw.translation[0] - (450 + (index + 1) * .9 - 96 * 1.5)) < 1e-8);
   }
 });
 
@@ -174,9 +174,9 @@ test("missing pilot headings cannot move a right-facing wolf sideways", () => {
   assert.equal(lab.state().position[0], 450);
   assert.equal(lab.state().player.clip, "idle");
   lab.key("keyup", "a"); lab.key("keydown", "d"); lab.step(1000);
-  assert.ok(Math.abs(lab.state().position[0] - 522.9) < 1e-8);
+  assert.ok(Math.abs(lab.state().position[0] - 498.6) < 1e-8);
   lab.key("keydown", "w"); lab.step(1100);
-  assert.ok(Math.abs(lab.state().position[0] - 522.9) < 1e-8);
+  assert.ok(Math.abs(lab.state().position[0] - 498.6) < 1e-8);
   assert.equal(lab.state().player.clip, "idle");
 });
 
@@ -189,12 +189,12 @@ test("pilot presets offer only drawings that exist", () => {
   assert.equal(lab.state().player.clip, "idle");
 });
 
-test("wolf walk uses 12 FPS and travels one stride per complete cycle", () => {
-  assert.equal(wholeWolf.clips.walk.fps, 12);
+test("wolf cadence revision gives fewer pose changes and meaningful travel", () => {
+  assert.equal(wholeWolf.clips.walk.fps, 8);
   assert.equal(wholeWolf.clips.walk.frames.length, 8);
-  assert.ok(Math.abs(animation.duration(wholeWolf.clips.walk) - 2000 / 3) < 1e-8);
+  assert.equal(animation.duration(wholeWolf.clips.walk), 1000);
   const lab = playground(); lab.select("wolf", wholeWolf); lab.step(0);
-  lab.key("keydown", "d"); lab.step(2000 / 3);
+  lab.key("keydown", "d"); lab.step(1000);
   assert.ok(Math.abs(lab.state().position[0] - 504) < 1e-8);
   assert.equal(animation.sample(wholeWolf.clips.walk, lab.state().player.elapsedMs).index, 0);
 });

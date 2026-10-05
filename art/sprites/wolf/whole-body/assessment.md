@@ -1,8 +1,8 @@
 # Wolf whole-body assessment
 
-## Current 12 FPS timing
+## Twelve new drawings required
 
-The user approved a 12–15 FPS moving-animation range and rejected 8 FPS. The lab now defaults this unchanged eight-drawing study to 12 FPS: 83.333 ms holds, a 666.667 ms loop and 36 logical pixels of travel per loop. The default stage speed is 81 screen pixels/second. No extra runtime bounce, sway, rotation or scale change is added. This is a timing correction; the paintings and gait remain rejected. The current `qa-timing-v05.json` and `contact-report-v05.json` use the new timestamps; earlier reports remain historical evidence.
+The user clarifies that 12 FPS requires twelve distinct new frames across one second, not faster repetition of the old eight. The incorrect retiming is undone; old artwork retains its original one-second cycle and 54 screen px/s travel while new frames are drawn. The new v06 target plan contains twelve unique whole-body poses and four swing poses per paw, with exact stance contacts and loop closure. These are planned targets, not generated or accepted sprite art. The withdrawn v05 timing/contact reports remain historical evidence.
 
 ## Temporal review limitation
 

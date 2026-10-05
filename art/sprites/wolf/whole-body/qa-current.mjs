@@ -36,16 +36,14 @@ for (const [index, frame] of atlas.directions.E.frames.entries()) {
 }
 assert.equal(rawFrames.length, 9);
 assert.equal(atlas.clips.walk.frames.length, 8);
-const cycleMs = atlas.clips.walk.frames.reduce((sum, frame) => sum + frame.durationMs, 0);
-assert.equal(atlas.clips.walk.fps, 12);
-assert.ok(atlas.clips.walk.frames.every(frame => Math.abs(frame.durationMs - 1000 / 12) < 1e-8));
-assert.ok(Math.abs(cycleMs - 8 * 1000 / 12) < 1e-8);
-assert.ok(Math.abs(atlas.motion.walkSpeed * cycleMs / 1000 - atlas.motion.stride) < 1e-8);
+assert.equal(atlas.clips.walk.frames.reduce((sum, frame) => sum + frame.durationMs, 0), 1000);
+assert.equal(atlas.clips.walk.fps, 8);
+assert.ok(atlas.clips.walk.frames.every(frame => frame.durationMs === 125));
+assert.equal(atlas.motion.walkSpeed, 36);
 assert.equal(atlas.motion.referenceHeight, 64);
 const displayTravel = atlas.motion.walkSpeed * 96 / atlas.motion.referenceHeight;
 const control = JSON.parse(await readFile(resolve(root, "guides/e-walk-v03-1-4.json"))).poses;
 const measured = [], observations = [], targets = {};
-let startMs = 0;
 for (let i = 0; i < 4; i++) {
   const source = atlas.clips.walk.frames[i].source, data = rawFrames[source];
   const offset = atlas.directions.E.frames[source].registrationAnchor.offset;
@@ -61,11 +59,9 @@ for (let i = 0; i < 4; i++) {
   const required = Object.keys(control[i].feet).filter(id => control[i].feet[id].planted);
   for (const id of required) targets[id] ??= control[i].feet[id].points.at(-1).map((value, axis) => value - [96, 156][axis] + (axis ? 0 : control[i].rootForward));
   measured.push({ pose: i + 1, source, region, point, uncertaintyPx: 1 });
-  const holdMs = atlas.clips.walk.frames[i].durationMs;
-  observations.push({ id: `E-walk-v03-${i + 1}`, start_ms: startMs, duration_ms: holdMs, pivot: [96, 156], required_contacts: required, contacts: { RF: point }, root_samples: [0, holdMs / 2, holdMs].map(offset_ms => ({ offset_ms, position: [atlas.motion.walkSpeed * (startMs + offset_ms) / 1000, 0] })) });
-  startMs += holdMs;
+  observations.push({ id: `E-walk-v03-${i + 1}`, start_ms: i * 125, duration_ms: 125, pivot: [96, 156], required_contacts: required, contacts: { RF: point }, root_samples: [0, 62.5, 125].map(offset_ms => ({ offset_ms, position: [36 * (i * 125 + offset_ms) / 1000, 0] })) });
 }
-targets.RF = [measured[0].point[0] - 96 + atlas.motion.walkSpeed * observations[0].duration_ms / 2000, measured[0].point[1] - 156];
-await writeFile(resolve(root, "contact-observations-v05.json"), JSON.stringify({ basis: "measured-art", max_drift_px: 3, method: "First four registered packed poses at 12 FPS, using the preserved human-identified near forepaw region and deterministic alpha>=128 contact edge; other required contacts explicitly missing. Fixed RF world position anchored to first observed midpoint. Uncertainty approximately one logical pixel. Earlier observations remain preserved; timestamps and root samples use the current atlas timing and travel.", clips: [{ id: "E-walk-v05-first-four", world_contacts: targets, frames: observations }] }, null, 2) + "\n");
-await writeFile(resolve(root, "qa-timing-v05.json"), JSON.stringify({ packagePassed: true, reconstructedFrames: 9, exactWholeFrameTranslations: true, fixedRegistrationAnchor: [144, 126], registrationChecks, fps: atlas.clips.walk.fps, cycleMs, displayTravelPxPerSecond: displayTravel, measured, fullContactCoverage: false, motionAcceptance: "revise", productionReady: false }, null, 2) + "\n");
+targets.RF = [measured[0].point[0] - 96 + 2.25, measured[0].point[1] - 156];
+await writeFile(resolve(root, "contact-observations-v04.json"), JSON.stringify({ basis: "measured-art", max_drift_px: 3, method: "First four registered packed poses, human-identified near forepaw region and deterministic alpha>=128 contact edge; other required contacts explicitly missing. Fixed RF world position anchored to first observed midpoint. Uncertainty approximately one logical pixel. Source v03 observations are preserved unchanged; this measures the new atlas registration separately.", clips: [{ id: "E-walk-v04-first-four", world_contacts: targets, frames: observations }] }, null, 2) + "\n");
+await writeFile(resolve(root, "qa-registration-v04.json"), JSON.stringify({ packagePassed: true, reconstructedFrames: 9, exactWholeFrameTranslations: true, fixedRegistrationAnchor: [144, 126], registrationChecks, fps: atlas.clips.walk.fps, cycleMs: 1000, displayTravelPxPerSecond: displayTravel, measured, fullContactCoverage: false, motionAcceptance: "revise", productionReady: false }, null, 2) + "\n");
 console.log(JSON.stringify({ packagePassed: true, reconstructedFrames: 9, measuredPawFrames: 4, fps: atlas.clips.walk.fps, displayTravel, productionReady: false }));

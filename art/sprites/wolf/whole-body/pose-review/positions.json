@@ -8,7 +8,7 @@
     "e-walk-v03-1-4",
     "e-walk-v03-5-8"
   ],
-  "atlasSha256": "7f66476bd68ed32403e89a2d5b1768ba1213864fe9581913b3902c2244a2015a",
+  "atlasSha256": "7b73d9e60b1546450b93a799b4ea35c5b46a3349d28e06b2d0561364eee7f839",
   "legDefinitions": {
     "LF": {
       "name": "Left foreleg · far side",
@@ -231,7 +231,7 @@
       ],
       "playback": {
         "startMs": 0,
-        "durationMs": 83.33333333333333
+        "durationMs": 125
       },
       "elements": {
         "root": [
@@ -583,8 +583,8 @@
         140.44365081389594
       ],
       "playback": {
-        "startMs": 83.33333333333333,
-        "durationMs": 83.33333333333333
+        "startMs": 125,
+        "durationMs": 125
       },
       "elements": {
         "root": [
@@ -936,8 +936,8 @@
         140.44365081389594
       ],
       "playback": {
-        "startMs": 166.66666666666666,
-        "durationMs": 83.33333333333333
+        "startMs": 250,
+        "durationMs": 125
       },
       "elements": {
         "root": [
@@ -1289,8 +1289,8 @@
         140.44365081389594
       ],
       "playback": {
-        "startMs": 250,
-        "durationMs": 83.33333333333333
+        "startMs": 375,
+        "durationMs": 125
       },
       "elements": {
         "root": [
@@ -1642,8 +1642,8 @@
         140.44365081389594
       ],
       "playback": {
-        "startMs": 333.3333333333333,
-        "durationMs": 83.33333333333333
+        "startMs": 500,
+        "durationMs": 125
       },
       "elements": {
         "root": [
@@ -1995,8 +1995,8 @@
         140.44365081389594
       ],
       "playback": {
-        "startMs": 416.66666666666663,
-        "durationMs": 83.33333333333333
+        "startMs": 625,
+        "durationMs": 125
       },
       "elements": {
         "root": [
@@ -2348,8 +2348,8 @@
         140.44365081389594
       ],
       "playback": {
-        "startMs": 499.99999999999994,
-        "durationMs": 83.33333333333333
+        "startMs": 750,
+        "durationMs": 125
       },
       "elements": {
         "root": [
@@ -2701,8 +2701,8 @@
         140.44365081389594
       ],
       "playback": {
-        "startMs": 583.3333333333333,
-        "durationMs": 83.33333333333333
+        "startMs": 875,
+        "durationMs": 125
       },
       "elements": {
         "root": [
