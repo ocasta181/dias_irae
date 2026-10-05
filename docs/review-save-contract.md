@@ -54,7 +54,7 @@ Failures return this shape: `{"saved": false, "error": "<human-readable reason>"
 | `413` | Request exceeds 1 MiB, meaning 1,048,576 bytes |
 | `500` | The file could not be saved; preserve the browser draft and report the failure |
 
-Bind only to `127.0.0.1`. Accept writes only from `http://127.0.0.1:8765` or `http://localhost:8765`. Keep the existing static reads. For the concept and gameplay HTML pages, embed the current on-disk manifest when serving the page so reload shows the saved decisions, notes and ordering. Their existing URLs and HTML response type stay the same.
+Bind only to `127.0.0.1`. Accept writes only from `http://127.0.0.1:8765` or `http://localhost:8765`. Keep the existing static reads. For all four review HTML pages, embed the current on-disk manifest when serving the page so reload shows the saved decisions, notes and ordering. Their existing URLs and HTML response type stay the same.
 
 Before replacing a manifest, retain a dated copy in that board's `review-history` folder. Write the replacement atomically. No database is used. No saved browser review is deleted.
 
@@ -76,3 +76,5 @@ The two approved mood boards retain their current review/export behavior; this c
 ## Running and verified implementation
 
 Run `python3 scripts/serve_art.py` from the project. It replaces the former static server on port 8765. Save review was verified in the user’s Brave tab: all 45 ranked IDs and comments reached the project manifest, and a second save succeeded without a download or file picker. The server serves the saved manifest on reload. Sixteen endpoint tests cover both boards, recoverable original files, repeated saves, stale baselines, invalid requests, foreign origins, size limits, write failures and safe HTML embedding. Isolated browser-script checks confirm that ranking, card toggles, comments and both approved mood-board exports remain intact.
+
+2026-10-05 automatic-save verification: 29 endpoint tests, three publisher/review-preservation tests and twelve client queue/draft tests pass. An isolated browser board saved a rank-only change, rapid commentary and an acceptance decision to its actual Markdown file. Reload retained each change. A simulated newer independent saved order survived reload from a stale browser draft. The live face page preserved every comment and decision while removing its Save button; its saved order is the authority for new concept generation.

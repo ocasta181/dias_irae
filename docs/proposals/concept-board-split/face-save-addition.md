@@ -52,3 +52,7 @@ Apply the server contract first, then its dependent client mappings and final ga
 Verify independent normal and repeated saves, stale-save rejection, file destinations, embedded saved reviews, preserved comments and ordering, card counts and the existing two boards. The face draft-transfer unit tests already check comment preservation, relative order, repeat-load protection and unavailable storage.
 
 Required approval text in the supplied AGENTS.md section 15: “Wait for explicit affirmative approval before proceeding.” The added `board` values change the API contract, so the general request for a new gallery is not used as that specific affirmative approval.
+
+## Completed implementation
+
+2026-10-05: four independent save destinations are implemented and tested. The gallery split preserves all 138 distinct rows, 120 visible drawings and current destination reviews. Each concept review page saves automatically without a button. Serialized writes, automatic transient retries, preserved local drafts and saved-ranking baselines prevent stale browser order from replacing newer project order. New rankings from another browser take precedence on reload; prior differing browser order remains recoverable in browser storage.

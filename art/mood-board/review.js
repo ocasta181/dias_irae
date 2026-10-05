@@ -1,6 +1,6 @@
-import { createAutosave } from "./autosave.mjs?v=1";
+import { createAutosave } from "./autosave.mjs?v=2";
 
-(() => {
+(async () => {
   const manifest = JSON.parse(document.getElementById("review-manifest").textContent);
   const cards = [...document.querySelectorAll(".card[data-reference]")];
   const referenceIds = new Set(cards.map((card) => card.dataset.reference));
@@ -25,6 +25,7 @@ import { createAutosave } from "./autosave.mjs?v=1";
     const hash = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(content));
     return [...new Uint8Array(hash)].map((byte) => byte.toString(16).padStart(2, "0")).join("");
   }
+  let orderBaseline = directBoard ? await manifestHash(manifest) : undefined;
   let preferenceOrder = [];
   let draft = {};
   let storageAvailable = true;
@@ -79,6 +80,7 @@ import { createAutosave } from "./autosave.mjs?v=1";
     try {
       localStorage.setItem(storageKey, JSON.stringify({ ...draft, ...Object.fromEntries(reviews) }));
       if (preferenceGrid) localStorage.setItem(orderStorageKey, JSON.stringify(preferenceOrder));
+      if (orderBaseline) localStorage.setItem(`${orderStorageKey}:baseline`, orderBaseline);
       storageAvailable = true;
     } catch {
       storageAvailable = false;
@@ -149,7 +151,13 @@ import { createAutosave } from "./autosave.mjs?v=1";
     let savedOrder;
     try {
       const saved = JSON.parse(localStorage.getItem(orderStorageKey) || "null");
-      if (Array.isArray(saved)) savedOrder = saved;
+      const savedBaseline = localStorage.getItem(`${orderStorageKey}:baseline`);
+      if (Array.isArray(saved)) {
+        if (!directBoard || savedBaseline === orderBaseline || (!savedBaseline && !manifestOrder.length)) savedOrder = saved;
+        else if (JSON.stringify(saved) !== JSON.stringify(manifestOrder)) {
+          localStorage.setItem(`${orderStorageKey}:previous-draft`, JSON.stringify(saved));
+        }
+      }
     } catch {
       storageAvailable = false;
     }
@@ -382,7 +390,7 @@ import { createAutosave } from "./autosave.mjs?v=1";
 
   if (directBoard) {
     autosave = createAutosave(manifest, {
-      hash: manifestHash,
+      hash: () => orderBaseline,
       async send(content, baseline) {
         const response = await fetch("/api/review", {
           method: "POST",
@@ -399,7 +407,8 @@ import { createAutosave } from "./autosave.mjs?v=1";
         saveState = state;
         showSaveStatus();
       },
-      onSaved(content) {
+      onSaved(content, baseline) {
+        orderBaseline = baseline;
         for (const line of content.split("\n")) {
           const match = line.match(/^\| ([A-Z]\d+) \|/);
           if (!match || !reviews.has(match[1])) continue;

@@ -7,7 +7,7 @@ Decision at commit `47bab5d`, 2026-10-05, confidence 98%: the user requests 30 a
 - Grok uses one native `image_edit` call in a fresh session and empty working directory. Actual tool input must match the saved prompt and original S13 path.
 - Provider bytes are copied unchanged into `images/`. Records preserve source/output hashes, actual inputs, dimensions and inspection findings.
 - The five earlier V21–V25 studies belong with this face comparison. Their source files and existing review content will be preserved.
-- The dedicated page will keep individual commentary, decisions and drag/number ordering, with cards minimized initially. Direct project saving needs the specific review API contract approval described in the prepared board split proposal; no new contract value has yet been implemented.
+- The dedicated page will keep individual commentary, decisions and drag/number ordering, with cards minimized initially. Order, comments and decisions save automatically to the independent project manifest after every change. There is no Save button or file picker. Conflicts remain visible and preserve the browser draft.
 
 ## Progress
 
@@ -15,9 +15,9 @@ Decision at commit `47bab5d`, 2026-10-05, confidence 98%: the user requests 30 a
 - [x] Generate and inspect 15 Grok studies; six earlier outputs were replaced after eye/texture review.
 - [x] Generate and inspect 15 built-in studies.
 - [x] Publish a dedicated face comparison page with browser drafts.
-- [ ] Approve and implement independent direct saving for face/equipment review pages.
+- [x] User authorizes automatic project saving; implement and verify face/equipment destinations and independent review pages.
 - [ ] User selects face direction.
 
 These are review candidates. Tool success is not visual approval.
 
-Inspection and current limits: [assessment](assessment.md). The face page has 30 new drawings and five existing face studies; direct saving remains pending contract approval.
+Inspection and current limits: [assessment](assessment.md). The face page has 30 new drawings and five existing face studies; project saving is automatic and verified.

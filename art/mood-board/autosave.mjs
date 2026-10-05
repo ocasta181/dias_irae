@@ -18,7 +18,7 @@ export function createAutosave(initial, { hash, send, onState, onSaved, schedule
         const result = await send(snapshot, await baseline);
         confirmed = snapshot;
         baseline = Promise.resolve(result.baseline);
-        onSaved(snapshot);
+        onSaved(snapshot, result.baseline);
       } catch (error) {
         active = false;
         if (error.status === 409) conflict = error;
