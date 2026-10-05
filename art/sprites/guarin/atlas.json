@@ -1,0 +1,2452 @@
+{
+  "selection": {
+    "gameplay_id": "G15",
+    "source_character": "S13",
+    "captured_at_utc": "2026-10-04T23:47:21.832831+00:00"
+  },
+  "sourceFrames": 96,
+  "reviewStatus": "Generated animation study. Directional and motion defects are recorded; these are not approved game assets.",
+  "directions": {
+    "SE": {
+      "image": "pages/guarin-se-v01.png",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "sha256": "7f082fb16339cec76610406f79204cdd9b363d9469e80b21c3f322a57c016097",
+      "transparent_pixel_fraction": 0.5345,
+      "frames": [
+        {
+          "family": "idle",
+          "pose": 1,
+          "rect": [
+            0,
+            0,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            35,
+            19,
+            158,
+            175
+          ],
+          "sha256": "a139257aae785d0100daed1dc0ab26e61822d636cb844a678023e090f42929c4",
+          "border_touch": false
+        },
+        {
+          "family": "idle",
+          "pose": 2,
+          "rect": [
+            181,
+            0,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            23,
+            19,
+            148,
+            172
+          ],
+          "sha256": "bc9dad99c8f82aecde32e1ae95b757265589955015312b2f93630cfbb89589fa",
+          "border_touch": false
+        },
+        {
+          "family": "idle",
+          "pose": 3,
+          "rect": [
+            362,
+            0,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            13,
+            19,
+            141,
+            172
+          ],
+          "sha256": "53a9488a36232607f1e094bf60ad8fdee40724acea1c8281c572a25ae20b1b7f",
+          "border_touch": false
+        },
+        {
+          "family": "idle",
+          "pose": 4,
+          "rect": [
+            543,
+            0,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            9,
+            19,
+            133,
+            173
+          ],
+          "sha256": "e6f4fb33431d83d165ad1a690fa6763683216243fee72576bb7fe2613f5ef97c",
+          "border_touch": false
+        },
+        {
+          "family": "idle",
+          "pose": 5,
+          "rect": [
+            724,
+            0,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            4,
+            21,
+            134,
+            170
+          ],
+          "sha256": "a82f29dc44455d117860a7ee0bf8ad63ad86814fdb1c1e873569561ad830e80d",
+          "border_touch": false
+        },
+        {
+          "family": "idle",
+          "pose": 6,
+          "rect": [
+            905,
+            0,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            6,
+            19,
+            133,
+            172
+          ],
+          "sha256": "776c4e09a59dba560f156d6044186062187205e9b98874682e0dd776cb5f87eb",
+          "border_touch": false
+        },
+        {
+          "family": "walk",
+          "pose": 1,
+          "rect": [
+            0,
+            181,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            26,
+            10,
+            162,
+            163
+          ],
+          "sha256": "6a46b4bc087c4766a287a3f866726d1f979ce7ba9035884112e6e3f28c7795e5",
+          "border_touch": false
+        },
+        {
+          "family": "walk",
+          "pose": 2,
+          "rect": [
+            181,
+            181,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            18,
+            12,
+            158,
+            173
+          ],
+          "sha256": "7b390e314ff8f8dbabd6604fa8a85d2ae134458384decd691762120dc31cc88a",
+          "border_touch": false
+        },
+        {
+          "family": "walk",
+          "pose": 3,
+          "rect": [
+            362,
+            181,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            11,
+            13,
+            154,
+            171
+          ],
+          "sha256": "aae76700e0bc807b4101b920ab33cc6cee1b70de55f7c4be3ddd28d71f5928ea",
+          "border_touch": false
+        },
+        {
+          "family": "walk",
+          "pose": 4,
+          "rect": [
+            543,
+            181,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            14,
+            14,
+            147,
+            172
+          ],
+          "sha256": "3f5c2a8b7b234c5967190ced2cc995b58ef5eac57b5c539d27496f233f91b2dd",
+          "border_touch": false
+        },
+        {
+          "family": "walk",
+          "pose": 5,
+          "rect": [
+            724,
+            181,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            3,
+            14,
+            137,
+            173
+          ],
+          "sha256": "b9b5cb15005b62c620ff7cabf8f42123056a75dccb45f1571d1dc8f4aa009c4b",
+          "border_touch": false
+        },
+        {
+          "family": "walk",
+          "pose": 6,
+          "rect": [
+            905,
+            181,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            7,
+            12,
+            141,
+            162
+          ],
+          "sha256": "404c7b87218812fc6a08e5bd7b6aca75164b92ff18615cdb63cf857b3f498869",
+          "border_touch": false
+        },
+        {
+          "family": "cut",
+          "pose": 1,
+          "rect": [
+            0,
+            362,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            35,
+            5,
+            162,
+            160
+          ],
+          "sha256": "51b6498680805d0ca9967fb04cfca4ca35b1bdca1cf31d0152e97d44b4306f7c",
+          "border_touch": false
+        },
+        {
+          "family": "cut",
+          "pose": 2,
+          "rect": [
+            181,
+            362,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            39,
+            8,
+            162,
+            165
+          ],
+          "sha256": "dbcbe3b2ef476757268792571c7561898b2368ddeb24e5d4f07eafc44cbadcd9",
+          "border_touch": false
+        },
+        {
+          "family": "cut",
+          "pose": 3,
+          "rect": [
+            362,
+            362,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            11,
+            1,
+            155,
+            165
+          ],
+          "sha256": "42f6f0568ab685c2318baa384f10ee59dde02c30629ec10769539f4c981c11bf",
+          "border_touch": false
+        },
+        {
+          "family": "cut",
+          "pose": 4,
+          "rect": [
+            543,
+            362,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            11,
+            20,
+            181,
+            163
+          ],
+          "sha256": "b83bdda7ec7930fa09b316b961f59b87faa4935fce8b41a6a98bb4f87a11dc1f",
+          "border_touch": true
+        },
+        {
+          "family": "cut",
+          "pose": 5,
+          "rect": [
+            724,
+            362,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            0,
+            22,
+            160,
+            161
+          ],
+          "sha256": "51352489fba2a7921416dfccb96e72dca500b75817cf83b9f3042ffacca51522",
+          "border_touch": true
+        },
+        {
+          "family": "cut",
+          "pose": 6,
+          "rect": [
+            905,
+            362,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            13,
+            4,
+            145,
+            159
+          ],
+          "sha256": "a28cd68885c6e1ace04129a12652bd8ad6979e89e08b73ea5504b6c48f5f46d4",
+          "border_touch": false
+        },
+        {
+          "family": "guard",
+          "pose": 1,
+          "rect": [
+            0,
+            543,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            34,
+            5,
+            164,
+            156
+          ],
+          "sha256": "da4629e69fa11f2a8335837e669e1eb3725702c18cdfbe2c274324dfdd251653",
+          "border_touch": false
+        },
+        {
+          "family": "guard",
+          "pose": 2,
+          "rect": [
+            181,
+            543,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            20,
+            6,
+            162,
+            156
+          ],
+          "sha256": "00fe55723ec268fef326550cc0dcb1cd37bdcaa048e8728857b76772dfc32d02",
+          "border_touch": false
+        },
+        {
+          "family": "guard",
+          "pose": 3,
+          "rect": [
+            362,
+            543,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            18,
+            5,
+            150,
+            156
+          ],
+          "sha256": "0d0582d9aede5f5b8dd779b5aa7b98d56d68bc7c5cff0ddff867f673ed710589",
+          "border_touch": false
+        },
+        {
+          "family": "guard",
+          "pose": 4,
+          "rect": [
+            543,
+            543,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            8,
+            5,
+            143,
+            158
+          ],
+          "sha256": "9e5d2dfcfa0d0bf861e5cd6301bdd124991231d1a4e6a02ffcd6f762e21c270d",
+          "border_touch": false
+        },
+        {
+          "family": "guard",
+          "pose": 5,
+          "rect": [
+            724,
+            543,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            3,
+            6,
+            145,
+            157
+          ],
+          "sha256": "2836627f2f1b33468d0b04fc7a5f6e580299050a3b65370ee4939bd3eab3ad4f",
+          "border_touch": false
+        },
+        {
+          "family": "guard",
+          "pose": 6,
+          "rect": [
+            905,
+            543,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            9,
+            5,
+            142,
+            154
+          ],
+          "sha256": "54ad2b321e56b920a82330601baefb0ed96775071a0aeb7b33c73054b29e0c4c",
+          "border_touch": false
+        },
+        {
+          "family": "hurt",
+          "pose": 1,
+          "rect": [
+            0,
+            724,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            43,
+            8,
+            171,
+            162
+          ],
+          "sha256": "86e4d3f31e0f3e78224384bf814e69dda31ba5c42e44a1e0ec192359c0dd75a4",
+          "border_touch": false
+        },
+        {
+          "family": "hurt",
+          "pose": 2,
+          "rect": [
+            181,
+            724,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            44,
+            17,
+            167,
+            164
+          ],
+          "sha256": "a8e000a6303e3ae9db3f3cecb075af53359ace5d3aa443bb9d7c0cbff9532a78",
+          "border_touch": false
+        },
+        {
+          "family": "hurt",
+          "pose": 3,
+          "rect": [
+            362,
+            724,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            33,
+            22,
+            153,
+            170
+          ],
+          "sha256": "6f3794316c0c76dd516857625293b62f3c5e04e73606144da5477607eb102aee",
+          "border_touch": false
+        },
+        {
+          "family": "hurt",
+          "pose": 4,
+          "rect": [
+            543,
+            724,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            23,
+            32,
+            157,
+            158
+          ],
+          "sha256": "50522d3e098285972cb75c7a08cf6567a92ecff3e537fc83034ead951c2f3f63",
+          "border_touch": false
+        },
+        {
+          "family": "hurt",
+          "pose": 5,
+          "rect": [
+            724,
+            724,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            15,
+            15,
+            143,
+            160
+          ],
+          "sha256": "43825ebcd0d5a118ea42a83bd858d7612e7c98016d917379f4089439e67bcb53",
+          "border_touch": false
+        },
+        {
+          "family": "hurt",
+          "pose": 6,
+          "rect": [
+            905,
+            724,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            12,
+            3,
+            140,
+            161
+          ],
+          "sha256": "524214eb89a1f6904876c87e4cae89d8ab41d6d482d50ef349415141561fe592",
+          "border_touch": false
+        },
+        {
+          "family": "death",
+          "pose": 1,
+          "rect": [
+            0,
+            905,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            34,
+            8,
+            170,
+            154
+          ],
+          "sha256": "44a31dc047eceec8a6cfa7a29f9532b49210bd807e011535559aa229f07d2d23",
+          "border_touch": false
+        },
+        {
+          "family": "death",
+          "pose": 2,
+          "rect": [
+            181,
+            905,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            31,
+            36,
+            160,
+            175
+          ],
+          "sha256": "331f07ca6bb247f6d0587ffb64a64ec553c6a688a8f7a87f40d69da24af98808",
+          "border_touch": false
+        },
+        {
+          "family": "death",
+          "pose": 3,
+          "rect": [
+            362,
+            905,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            21,
+            52,
+            162,
+            164
+          ],
+          "sha256": "e03c7a85046aae7c7c3e116d923fa833a17614b4ada622a142009febe47385b9",
+          "border_touch": false
+        },
+        {
+          "family": "death",
+          "pose": 4,
+          "rect": [
+            543,
+            905,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            8,
+            58,
+            168,
+            157
+          ],
+          "sha256": "1fe3be335d2f5754df973a57d3bbc95d6e6bda48530d4c6f9fb26d16965e8330",
+          "border_touch": false
+        },
+        {
+          "family": "death",
+          "pose": 5,
+          "rect": [
+            724,
+            905,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            9,
+            59,
+            181,
+            162
+          ],
+          "sha256": "7043d6892f21eec6427bab199458a43811994b870cd8e08ff6ce98b0d6f41c4a",
+          "border_touch": true
+        },
+        {
+          "family": "death",
+          "pose": 6,
+          "rect": [
+            905,
+            905,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            0,
+            58,
+            157,
+            162
+          ],
+          "sha256": "26c7a54f0b67a349e07a0fdc6653ef8a4182dc6d4f2fe90c8ce3350841729df1",
+          "border_touch": true
+        },
+        {
+          "family": "interact",
+          "pose": 1,
+          "rect": [
+            0,
+            1086,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            33,
+            3,
+            163,
+            152
+          ],
+          "sha256": "ee9c1cced57802949fe7029bd471bc17ba2587a3127a670454cb5445449dac0d",
+          "border_touch": false
+        },
+        {
+          "family": "interact",
+          "pose": 2,
+          "rect": [
+            181,
+            1086,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            27,
+            35,
+            153,
+            158
+          ],
+          "sha256": "d297ff512b84cd469f7eb6b392612d68faea182fcc9858937167b7176d974461",
+          "border_touch": false
+        },
+        {
+          "family": "interact",
+          "pose": 3,
+          "rect": [
+            362,
+            1086,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            26,
+            34,
+            161,
+            150
+          ],
+          "sha256": "00272e295a2d0998acdca1d26019a40e818db6028002d64b5103a22471094d3d",
+          "border_touch": false
+        },
+        {
+          "family": "interact",
+          "pose": 4,
+          "rect": [
+            543,
+            1086,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            21,
+            6,
+            149,
+            153
+          ],
+          "sha256": "6abe938a6235f185117c56594ad5441594e536de9abb4975fbf2183f2f4fdf17",
+          "border_touch": false
+        },
+        {
+          "family": "interact",
+          "pose": 5,
+          "rect": [
+            724,
+            1086,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            16,
+            10,
+            149,
+            181
+          ],
+          "sha256": "a76a5a93fefbd77e37cc4fa32080ce9da44a45f808aaf0eb8ccaf07f9f8a19d6",
+          "border_touch": true
+        },
+        {
+          "family": "interact",
+          "pose": 6,
+          "rect": [
+            905,
+            1086,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            14,
+            3,
+            142,
+            181
+          ],
+          "sha256": "3d7c4343e8a792043be1d3b06bd09cadc3e0fb9a1720d47b096c75633fddac5b",
+          "border_touch": true
+        },
+        {
+          "family": "prayer",
+          "pose": 1,
+          "rect": [
+            0,
+            1267,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            34,
+            2,
+            163,
+            154
+          ],
+          "sha256": "ce85f9f1de2a15a14db20808f0253ba9611208f61fc994c131d36ba5b59456f5",
+          "border_touch": false
+        },
+        {
+          "family": "prayer",
+          "pose": 2,
+          "rect": [
+            181,
+            1267,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            30,
+            14,
+            159,
+            157
+          ],
+          "sha256": "89d31ed0e358566d0cb0a0b2d48e6b42308b06632d9a44eaff63cf02d151b964",
+          "border_touch": false
+        },
+        {
+          "family": "prayer",
+          "pose": 3,
+          "rect": [
+            362,
+            1267,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            21,
+            20,
+            148,
+            153
+          ],
+          "sha256": "bd8af68de4377061ede779bdda4aa668b4ec72be5a5830d2a2f638b12eb24ff8",
+          "border_touch": false
+        },
+        {
+          "family": "prayer",
+          "pose": 4,
+          "rect": [
+            543,
+            1267,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            16,
+            20,
+            145,
+            149
+          ],
+          "sha256": "f8d392c5fa70afb8482d84934266719d752b9310c644de908b974a954e573f80",
+          "border_touch": false
+        },
+        {
+          "family": "prayer",
+          "pose": 5,
+          "rect": [
+            724,
+            1267,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            21,
+            0,
+            151,
+            154
+          ],
+          "sha256": "1b92d29f98e0ee1d1ddc38c9f5a3461d26b466e0369b567850e3d1b1d12ded52",
+          "border_touch": true
+        },
+        {
+          "family": "prayer",
+          "pose": 6,
+          "rect": [
+            905,
+            1267,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            13,
+            0,
+            144,
+            154
+          ],
+          "sha256": "eb6346f73adf136dbbb085c6946ea889bd840da2e9be235b39023ecbd1e66eec",
+          "border_touch": true
+        }
+      ],
+      "unique_cell_hashes": 48,
+      "standingHeight": 153,
+      "assessment": "Generated study; identity, pose spacing, gait, guard coverage and prayer transitions need in-motion review. Foot pivots are fixed to the source grid, not manually perfected."
+    },
+    "NW": {
+      "image": "pages/guarin-nw-v01.png",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "sha256": "d7de531d56831d2287b5e1b1285349e6a0ab4dfa00407707b91cc1564386b47e",
+      "transparent_pixel_fraction": 0.5814,
+      "frames": [
+        {
+          "family": "idle",
+          "pose": 1,
+          "rect": [
+            0,
+            0,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            32,
+            17,
+            175,
+            156
+          ],
+          "sha256": "7bca3dd8476a79ec7c24837a5b57c8f323cc4f55943be873decd5b75a60313a3",
+          "border_touch": false
+        },
+        {
+          "family": "idle",
+          "pose": 2,
+          "rect": [
+            181,
+            0,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            29,
+            15,
+            170,
+            158
+          ],
+          "sha256": "4d8bb05813fe9028e8bcf3fc5bf60fd300cfd99c3765bb210ba484c56504b85c",
+          "border_touch": false
+        },
+        {
+          "family": "idle",
+          "pose": 3,
+          "rect": [
+            362,
+            0,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            29,
+            16,
+            170,
+            157
+          ],
+          "sha256": "ec22da78baaad46ac421c679167ebb1646487af6343c0a099e3413233e4e6189",
+          "border_touch": false
+        },
+        {
+          "family": "idle",
+          "pose": 4,
+          "rect": [
+            543,
+            0,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            32,
+            16,
+            162,
+            156
+          ],
+          "sha256": "17900e0cc22989d7dfb5ae90f38df993a5ef516a99be0a7df99a246bc7c05d4b",
+          "border_touch": false
+        },
+        {
+          "family": "idle",
+          "pose": 5,
+          "rect": [
+            724,
+            0,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            24,
+            15,
+            156,
+            156
+          ],
+          "sha256": "dcf58e4f9f0bd9949e937336fbabd7486c84d9173bae405d7ac03e40791b79ad",
+          "border_touch": false
+        },
+        {
+          "family": "idle",
+          "pose": 6,
+          "rect": [
+            905,
+            0,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            24,
+            15,
+            156,
+            157
+          ],
+          "sha256": "54e0881516eb761408b9bd1f3589b3ecc2268e4e5cdb1f4fba6c9718cf05b45a",
+          "border_touch": false
+        },
+        {
+          "family": "walk",
+          "pose": 1,
+          "rect": [
+            0,
+            181,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            35,
+            1,
+            165,
+            181
+          ],
+          "sha256": "4c00fd4a377709a07b80e7b7f0a70511a3b7d8bcf7ac79d4e61f0b9fdfc3fe6f",
+          "border_touch": true
+        },
+        {
+          "family": "walk",
+          "pose": 2,
+          "rect": [
+            181,
+            181,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            24,
+            2,
+            170,
+            181
+          ],
+          "sha256": "34614cb9d8b15df47f31cf1325b3c8598b3ec49203157065260610d7a4931eeb",
+          "border_touch": true
+        },
+        {
+          "family": "walk",
+          "pose": 3,
+          "rect": [
+            362,
+            181,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            27,
+            1,
+            165,
+            181
+          ],
+          "sha256": "b968b7ca0e6208e9333cac1734ef3dbb2296e620cb8e17e298f28894feee5b59",
+          "border_touch": true
+        },
+        {
+          "family": "walk",
+          "pose": 4,
+          "rect": [
+            543,
+            181,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            25,
+            2,
+            161,
+            152
+          ],
+          "sha256": "0a86a70edf665b37f366a756b0c79b027e7fd605d641d37609d81c463b333165",
+          "border_touch": false
+        },
+        {
+          "family": "walk",
+          "pose": 5,
+          "rect": [
+            724,
+            181,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            24,
+            1,
+            160,
+            155
+          ],
+          "sha256": "54698341f71c595d9ad94f23c391a2b9c1e2467921363596fece56ab7ebb1404",
+          "border_touch": false
+        },
+        {
+          "family": "walk",
+          "pose": 6,
+          "rect": [
+            905,
+            181,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            21,
+            2,
+            157,
+            151
+          ],
+          "sha256": "68c2e55310537801acd32d7b9ec0ae0e81ac33bc05fd191e98b475b73eeedbf5",
+          "border_touch": false
+        },
+        {
+          "family": "cut",
+          "pose": 1,
+          "rect": [
+            0,
+            362,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            32,
+            0,
+            175,
+            181
+          ],
+          "sha256": "50e99d1d8f334fdf036f3410c2f2d33f687c1ded46d9ed12f0467b2bb1940b7d",
+          "border_touch": true
+        },
+        {
+          "family": "cut",
+          "pose": 2,
+          "rect": [
+            181,
+            362,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            28,
+            0,
+            163,
+            181
+          ],
+          "sha256": "fbaecbd4c114b0a925d0eafa6195fcacbf35573687307e49caadae1fe2968138",
+          "border_touch": true
+        },
+        {
+          "family": "cut",
+          "pose": 3,
+          "rect": [
+            362,
+            362,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            30,
+            0,
+            168,
+            181
+          ],
+          "sha256": "a51ba93cf7f9f7a7ea5606581868dcd892f1a823c0b5bc2ec33e521c2cd14cea",
+          "border_touch": true
+        },
+        {
+          "family": "cut",
+          "pose": 4,
+          "rect": [
+            543,
+            362,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            17,
+            4,
+            181,
+            181
+          ],
+          "sha256": "f72198497f1ed9241b68bdacc73aa8527345e43e52212235d5173bcc2464d060",
+          "border_touch": true
+        },
+        {
+          "family": "cut",
+          "pose": 5,
+          "rect": [
+            724,
+            362,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            0,
+            6,
+            181,
+            181
+          ],
+          "sha256": "a44bf3b3f20504a6ff244555dd5ab59ec8fae6e06ffa6656951f3946b2e5df3f",
+          "border_touch": true
+        },
+        {
+          "family": "cut",
+          "pose": 6,
+          "rect": [
+            905,
+            362,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            0,
+            1,
+            160,
+            181
+          ],
+          "sha256": "f8750f81e1357f0cdc063ef4bd5c9a7cb261367ce76500d9e00ae9862e84cb8d",
+          "border_touch": true
+        },
+        {
+          "family": "guard",
+          "pose": 1,
+          "rect": [
+            0,
+            543,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            32,
+            0,
+            171,
+            181
+          ],
+          "sha256": "2cc9a21c79b150cbf180e1f1a1d645fbf42bbc17e584aee93bedfa7450c24df7",
+          "border_touch": true
+        },
+        {
+          "family": "guard",
+          "pose": 2,
+          "rect": [
+            181,
+            543,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            28,
+            0,
+            172,
+            181
+          ],
+          "sha256": "ced772fef8688a29dfd3147f55a4d1d85649e404fa67fbfb9eecdfd317e91e6f",
+          "border_touch": true
+        },
+        {
+          "family": "guard",
+          "pose": 3,
+          "rect": [
+            362,
+            543,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            30,
+            0,
+            147,
+            181
+          ],
+          "sha256": "74ac7df440d2a947309e66b9d6c096102d3c9be9abbb997021a08355ee4f0c9f",
+          "border_touch": true
+        },
+        {
+          "family": "guard",
+          "pose": 4,
+          "rect": [
+            543,
+            543,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            27,
+            0,
+            152,
+            181
+          ],
+          "sha256": "1ea8ec45608fc83b48362723a47af7cf784f56cf49849a00d5706e255cf32886",
+          "border_touch": true
+        },
+        {
+          "family": "guard",
+          "pose": 5,
+          "rect": [
+            724,
+            543,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            24,
+            0,
+            168,
+            181
+          ],
+          "sha256": "f08056448568555dafe4f7a5fdac2ca9a5d2686bb41c719365e6e1a2538036df",
+          "border_touch": true
+        },
+        {
+          "family": "guard",
+          "pose": 6,
+          "rect": [
+            905,
+            543,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            21,
+            0,
+            157,
+            181
+          ],
+          "sha256": "eec17f6f606cfb5faffde9b938c03d8deea20427d9ad4e288a1139ca9480700f",
+          "border_touch": true
+        },
+        {
+          "family": "hurt",
+          "pose": 1,
+          "rect": [
+            0,
+            724,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            43,
+            0,
+            167,
+            181
+          ],
+          "sha256": "04a6b98cecc1a46d5430ee472fd543b8cc9b47a1f1f61d425952c218ba5b9586",
+          "border_touch": true
+        },
+        {
+          "family": "hurt",
+          "pose": 2,
+          "rect": [
+            181,
+            724,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            36,
+            0,
+            167,
+            181
+          ],
+          "sha256": "775b41ba771a40d5f436fff897847656d770cf4ef83f9a3b97d75aadfa8c6c0b",
+          "border_touch": true
+        },
+        {
+          "family": "hurt",
+          "pose": 3,
+          "rect": [
+            362,
+            724,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            28,
+            0,
+            164,
+            115
+          ],
+          "sha256": "df8e10cd7e729ec9e9da3584aaa9dcb820b2c009f84101f311108623d977bd9d",
+          "border_touch": true
+        },
+        {
+          "family": "hurt",
+          "pose": 4,
+          "rect": [
+            543,
+            724,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            32,
+            0,
+            175,
+            117
+          ],
+          "sha256": "4a1e418d3e6b7c1c996b352723b4009584a1f1ab11b4f72e9f131e62452b48b1",
+          "border_touch": true
+        },
+        {
+          "family": "hurt",
+          "pose": 5,
+          "rect": [
+            724,
+            724,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            30,
+            0,
+            164,
+            118
+          ],
+          "sha256": "decf38823e85f3f57966d3052bf61bbd6a4b44e9dd3f08473e37d66319e5f8ae",
+          "border_touch": true
+        },
+        {
+          "family": "hurt",
+          "pose": 6,
+          "rect": [
+            905,
+            724,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            25,
+            0,
+            157,
+            118
+          ],
+          "sha256": "d871b7af02cc2e3a679afc16d2488636ba3b6ba6c3f6f4283d49b7282bf11317",
+          "border_touch": true
+        },
+        {
+          "family": "death",
+          "pose": 1,
+          "rect": [
+            0,
+            905,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            34,
+            0,
+            157,
+            181
+          ],
+          "sha256": "b6ea00989ac329b1c0801fef4d86b996339621826637822d71e8fec5765de822",
+          "border_touch": true
+        },
+        {
+          "family": "death",
+          "pose": 2,
+          "rect": [
+            181,
+            905,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            23,
+            0,
+            177,
+            181
+          ],
+          "sha256": "ee0f1d9910ebfc01de3b4d3705f9d5e05f386fe30fb4558eacee9af58508a75d",
+          "border_touch": true
+        },
+        {
+          "family": "death",
+          "pose": 3,
+          "rect": [
+            362,
+            905,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            19,
+            4,
+            180,
+            181
+          ],
+          "sha256": "eec9c42964f5fdd32e169ce72044efe060206b0f500d85062e84c4c007662201",
+          "border_touch": true
+        },
+        {
+          "family": "death",
+          "pose": 4,
+          "rect": [
+            543,
+            905,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            11,
+            16,
+            181,
+            181
+          ],
+          "sha256": "34f2cc97cf929e7c0ccedcfc19d0badb9d777faed0eede1534dc9bd4ffca970c",
+          "border_touch": true
+        },
+        {
+          "family": "death",
+          "pose": 5,
+          "rect": [
+            724,
+            905,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            0,
+            25,
+            171,
+            181
+          ],
+          "sha256": "044c7acd87ff0f694cc36bf05d72d126a9ae6aa19acbe8c3237efa2669317f6b",
+          "border_touch": true
+        },
+        {
+          "family": "death",
+          "pose": 6,
+          "rect": [
+            905,
+            905,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            5,
+            35,
+            164,
+            181
+          ],
+          "sha256": "f8fc4b26907b114b6913dfb0d4b3abb74a404f35c53b23c12960d90dce7e4021",
+          "border_touch": true
+        },
+        {
+          "family": "interact",
+          "pose": 1,
+          "rect": [
+            0,
+            1086,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            36,
+            0,
+            173,
+            181
+          ],
+          "sha256": "d8e831c481ca06f4a773228609c10982c75e18b3d597e17aff9cc2df10c2ee1c",
+          "border_touch": true
+        },
+        {
+          "family": "interact",
+          "pose": 2,
+          "rect": [
+            181,
+            1086,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            31,
+            0,
+            161,
+            181
+          ],
+          "sha256": "c5849936cbff2c460f987f48970379f2a3da30d47d71de651f0e5207da424690",
+          "border_touch": true
+        },
+        {
+          "family": "interact",
+          "pose": 3,
+          "rect": [
+            362,
+            1086,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            30,
+            0,
+            170,
+            181
+          ],
+          "sha256": "f493c68d8832d152b394dd486355c8ce51dc2776613603d64e411b27ed31cefc",
+          "border_touch": true
+        },
+        {
+          "family": "interact",
+          "pose": 4,
+          "rect": [
+            543,
+            1086,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            31,
+            0,
+            169,
+            181
+          ],
+          "sha256": "ccc5c4b900080dad6726005f92bd7235cca9e842149373ec820579c549472d61",
+          "border_touch": true
+        },
+        {
+          "family": "interact",
+          "pose": 5,
+          "rect": [
+            724,
+            1086,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            24,
+            0,
+            156,
+            181
+          ],
+          "sha256": "d1c323dc5044065b62afe07ecbb5fd615475fe375554fb1aa98dd31575780ece",
+          "border_touch": true
+        },
+        {
+          "family": "interact",
+          "pose": 6,
+          "rect": [
+            905,
+            1086,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            24,
+            0,
+            158,
+            181
+          ],
+          "sha256": "5e7384805d3b42fe27911e14ecb10b6b8e7a296ad6bfdfa42a0330e3ae1ed66a",
+          "border_touch": true
+        },
+        {
+          "family": "prayer",
+          "pose": 1,
+          "rect": [
+            0,
+            1267,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            36,
+            0,
+            169,
+            108
+          ],
+          "sha256": "a6965b5bad4fee6654a47f6cf156e23aa540f1a9ff01b8051c7df897a871544d",
+          "border_touch": true
+        },
+        {
+          "family": "prayer",
+          "pose": 2,
+          "rect": [
+            181,
+            1267,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            38,
+            0,
+            162,
+            118
+          ],
+          "sha256": "eb5d044b050d0407b5fd29ed0909fea9bbde4c45fed197059300b29eb28a75de",
+          "border_touch": true
+        },
+        {
+          "family": "prayer",
+          "pose": 3,
+          "rect": [
+            362,
+            1267,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            35,
+            0,
+            157,
+            106
+          ],
+          "sha256": "7897da4ecfe9b2fd458081b3e33e83ead80a4e5332dca9d279b957812e958bcd",
+          "border_touch": true
+        },
+        {
+          "family": "prayer",
+          "pose": 4,
+          "rect": [
+            543,
+            1267,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            33,
+            0,
+            155,
+            113
+          ],
+          "sha256": "996c9b63c574bd4d325e09112c803eaefceefd2d4b80ea2721ce82f63fd759b1",
+          "border_touch": true
+        },
+        {
+          "family": "prayer",
+          "pose": 5,
+          "rect": [
+            724,
+            1267,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            27,
+            0,
+            155,
+            109
+          ],
+          "sha256": "a3bd5c98a87f4e37674e94c9f4b89b1bd9de570df49494e119b3d9c62781955c",
+          "border_touch": true
+        },
+        {
+          "family": "prayer",
+          "pose": 6,
+          "rect": [
+            905,
+            1267,
+            181,
+            181
+          ],
+          "pivot": [
+            90.5,
+            162.9
+          ],
+          "occupied": [
+            26,
+            0,
+            157,
+            109
+          ],
+          "sha256": "abcb4f19f8e24e3900b4000ac9913eebdc9335464f8d56eca8bfb12e8e06bc91",
+          "border_touch": true
+        }
+      ],
+      "unique_cell_hashes": 48,
+      "standingHeight": 141,
+      "assessment": "Generated study; identity, pose spacing, gait, guard coverage and prayer transitions need in-motion review. Foot pivots are fixed to the source grid, not manually perfected."
+    }
+  },
+  "clips": {
+    "idle": {
+      "label": "Idle",
+      "fps": 6,
+      "loop": true,
+      "frames": [
+        {
+          "source": 0,
+          "durationMs": 166.66666666666666
+        },
+        {
+          "source": 1,
+          "durationMs": 166.66666666666666
+        },
+        {
+          "source": 2,
+          "durationMs": 166.66666666666666
+        },
+        {
+          "source": 3,
+          "durationMs": 166.66666666666666
+        },
+        {
+          "source": 4,
+          "durationMs": 166.66666666666666
+        },
+        {
+          "source": 5,
+          "durationMs": 166.66666666666666
+        }
+      ]
+    },
+    "walk": {
+      "label": "Walk",
+      "fps": 8,
+      "loop": true,
+      "frames": [
+        {
+          "source": 6,
+          "durationMs": 125.0
+        },
+        {
+          "source": 7,
+          "durationMs": 125.0
+        },
+        {
+          "source": 8,
+          "durationMs": 125.0
+        },
+        {
+          "source": 9,
+          "durationMs": 125.0
+        },
+        {
+          "source": 10,
+          "durationMs": 125.0
+        },
+        {
+          "source": 11,
+          "durationMs": 125.0
+        }
+      ]
+    },
+    "cut": {
+      "label": "Sword cut",
+      "fps": 12,
+      "loop": false,
+      "frames": [
+        {
+          "source": 12,
+          "durationMs": 83.33333333333333
+        },
+        {
+          "source": 13,
+          "durationMs": 108.33333333333333
+        },
+        {
+          "source": 14,
+          "durationMs": 100.0
+        },
+        {
+          "source": 15,
+          "durationMs": 37.5
+        },
+        {
+          "source": 16,
+          "durationMs": 104.16666666666667
+        },
+        {
+          "source": 17,
+          "durationMs": 66.66666666666667
+        }
+      ],
+      "events": [
+        {
+          "name": "cut contact (preview only)",
+          "atMs": 291.66666666666663
+        }
+      ]
+    },
+    "guard_in": {
+      "label": "Raise guard",
+      "fps": 10,
+      "loop": false,
+      "frames": [
+        {
+          "source": 18,
+          "durationMs": 100.0
+        },
+        {
+          "source": 19,
+          "durationMs": 100.0
+        }
+      ]
+    },
+    "guard_hold": {
+      "label": "Guard hold",
+      "fps": 6,
+      "loop": true,
+      "frames": [
+        {
+          "source": 20,
+          "durationMs": 166.66666666666666
+        },
+        {
+          "source": 21,
+          "durationMs": 166.66666666666666
+        }
+      ]
+    },
+    "guard_out": {
+      "label": "Lower guard",
+      "fps": 10,
+      "loop": false,
+      "frames": [
+        {
+          "source": 22,
+          "durationMs": 100.0
+        },
+        {
+          "source": 23,
+          "durationMs": 100.0
+        }
+      ]
+    },
+    "hurt": {
+      "label": "Hurt",
+      "fps": 10,
+      "loop": false,
+      "frames": [
+        {
+          "source": 24,
+          "durationMs": 90.0
+        },
+        {
+          "source": 25,
+          "durationMs": 110.0
+        },
+        {
+          "source": 26,
+          "durationMs": 100.0
+        },
+        {
+          "source": 27,
+          "durationMs": 100.0
+        },
+        {
+          "source": 28,
+          "durationMs": 80.0
+        },
+        {
+          "source": 29,
+          "durationMs": 120.0
+        }
+      ]
+    },
+    "death": {
+      "label": "Death",
+      "fps": 8,
+      "loop": false,
+      "frames": [
+        {
+          "source": 30,
+          "durationMs": 112.5
+        },
+        {
+          "source": 31,
+          "durationMs": 125.0
+        },
+        {
+          "source": 32,
+          "durationMs": 150.0
+        },
+        {
+          "source": 33,
+          "durationMs": 150.0
+        },
+        {
+          "source": 34,
+          "durationMs": 150.0
+        },
+        {
+          "source": 35,
+          "durationMs": 312.5
+        }
+      ]
+    },
+    "interact": {
+      "label": "Interact",
+      "fps": 8,
+      "loop": false,
+      "frames": [
+        {
+          "source": 36,
+          "durationMs": 125.0
+        },
+        {
+          "source": 37,
+          "durationMs": 125.0
+        },
+        {
+          "source": 38,
+          "durationMs": 125.0
+        },
+        {
+          "source": 39,
+          "durationMs": 125.0
+        },
+        {
+          "source": 40,
+          "durationMs": 125.0
+        },
+        {
+          "source": 41,
+          "durationMs": 125.0
+        }
+      ],
+      "events": [
+        {
+          "name": "interact contact (preview only)",
+          "atMs": 375.0
+        }
+      ]
+    },
+    "kneel": {
+      "label": "Kneel",
+      "fps": 8,
+      "loop": false,
+      "frames": [
+        {
+          "source": 42,
+          "durationMs": 125.0
+        },
+        {
+          "source": 43,
+          "durationMs": 125.0
+        }
+      ]
+    },
+    "channel": {
+      "label": "Prayer channel",
+      "fps": 6,
+      "loop": true,
+      "frames": [
+        {
+          "source": 44,
+          "durationMs": 166.66666666666666
+        },
+        {
+          "source": 45,
+          "durationMs": 166.66666666666666
+        }
+      ]
+    },
+    "rise": {
+      "label": "Rise",
+      "fps": 8,
+      "loop": false,
+      "frames": [
+        {
+          "source": 46,
+          "durationMs": 125.0
+        },
+        {
+          "source": 47,
+          "durationMs": 125.0
+        }
+      ]
+    }
+  },
+  "references": [
+    {
+      "label": "G15 \u2014 selected gameplay style",
+      "url": "../../../concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png"
+    },
+    {
+      "label": "S13 \u2014 exact character identity and costume",
+      "url": "../../../concepts/images/s13-guarin-isometric-v02.png"
+    }
+  ],
+  "packing": "Original generated pixels; equal grid rectangles, no rotation, cropping exports, rescaling, recoloring or synthetic motion. Alpha-border warnings require review before engine packing."
+}

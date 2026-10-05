@@ -1,0 +1,52 @@
+{
+  "captured_at_utc": "2026-10-04T23:47:21.832831+00:00",
+  "commit": "277633f",
+  "gameplay_id": "G15",
+  "source_character": "S13",
+  "ranking": [
+    "G15",
+    "G21",
+    "G27",
+    "G09",
+    "G08",
+    "G10",
+    "G14",
+    "G16",
+    "G20",
+    "G22",
+    "G26",
+    "G28",
+    "G12",
+    "G11",
+    "G13",
+    "G25",
+    "G23",
+    "G24",
+    "G07",
+    "G06",
+    "G05",
+    "G17",
+    "G18",
+    "G19"
+  ],
+  "ranking_source": "Fresh user-saved gameplay manifest; older IAB draft has not been overwritten.",
+  "review_manifest_sha256": "096a246e36adc6dcec684752e80f0c7d6baea95395250816942818e2bdffc47a",
+  "review_row": "| G15 | S13 | Built-in — Lamp-lit courtyard / interaction | [G15](images/g15-s13-builtin-night-courtyard-v01.png) | pending | Parent assessment: S13's squat silhouette and ragged burgundy cloth remain clear. The entire courtyard shares granular dark marks and dirty lamp light; neighbors are short with oversized heads and similar total heights. For review: neighbors' simplified eyes may read too cute; tiny mail/rivet detail is simplified at screen scale. The requested 8–10% actor-height target was not achieved.<br><br>Human feedback: the npc eyes are \"button\" style here, which is not my favorite, but they are reasonably sized.  I like them better than the #2 option G21 S15. I'd be curious to see an iteration with eyes closer to G09 S49 |",
+  "references": [
+    {
+      "role": "Selected gameplay style, palette, scale grammar",
+      "path": "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+      "sha256": "191af0e5abbd484ec225633f530e6ed6dd9ebf01c5367910c09a353c4ca465d9"
+    },
+    {
+      "role": "Exact original character identity and costume",
+      "path": "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png",
+      "sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c"
+    }
+  ],
+  "provider": "built-in image generation",
+  "reason": "Native transparent output and the selected G15 screen was produced by this provider.",
+  "model": "Not exposed by tool",
+  "authorization": "2026-10-05 request: create a full character sheet in the #1 gameplay style after inventory verification.",
+  "scope": "Eight directions; eight state families; twelve tagged clips. Draft campaign ability expansions remain inventoried."
+}
