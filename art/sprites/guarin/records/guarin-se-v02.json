@@ -1,0 +1,41 @@
+{
+  "direction": "SE",
+  "version": "v02",
+  "provider": "Built-in image generation",
+  "model": "Not exposed by tool",
+  "original_generated_path": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-fe3ae6e5-06b4-4614-842d-55a10074b736.png",
+  "image": "/Users/ocasta/Code/Dias Irae/art/sprites/guarin/pages/guarin-se-v02.png",
+  "request": {
+    "prompt": "PRIMARY TARGET: a readable defensive shield raise, protective held guard, and return to ready for the exact S13 character. This is an independent new animation drawing from upstream design/style references, not an edit of a prior sprite sheet. The fourth row is what will be evaluated; preserve identity and scale for it. Other rows provide the same known layout for deterministic import.\n\nUse case: identity-preserve / game animation frame art.\nAsset type: ONE complete directional sprite sheet for a flat 2D isometric game. Actual transparent PNG, 1536 by 2048 canvas. Six columns and eight rows; 48 isolated full-body frames in equal 256 by 256 cells. No text, labels, numbers, grid lines, scenery, shadows or watermark. Each frame centered at its cell foot pivot, full weapon sweep inside cell; wide transparent gutters, no overlap between cells.\nInput image 1: the CURRENT #1 chosen gameplay screen G15. Match its dark dirty granular drawn texture, soot contours and muted slate/taupe/wine palette. Input image 2: its EXACT S13 original Guarin character, identity and costume authority. Draw this exact character, no redesign: gigantic worn flat-topped enclosed riveted greathelm with one tiny black eye slit and a few breathing holes; tiny squat body, short wrapped brown limbs, ragged wine scarf/cape, dull mail, belt, small straight one-handed sword in RIGHT hand, worn wood/iron kite shield on LEFT arm with faded narrow red stripe. Head/helmet nearly half standing height. No visible face or eyes, no plate body armor. Same gear sizes/material marks across every frame.\nOnly FLAT HAND-DRAWN 2D frame art. No 3D render, sculpture, shiny miniature, smooth plastic shading, realistic adult proportions or comic panels. The source's gritty mottled texture must remain, not clean vector coloring. Dim neutral overcast values, readable on light/dark backgrounds, no baked night lamp or heroic rim light. Fixed elevated orthographic camera about 45 degrees above ground; clear helmet top and foreshortened tiny torso. Pose direction is below; camera never moves. Keep all 48 figures at the SAME tiny-body proportion and scale.\nDIRECTION: SE \u2014 Facing diagonally toward the viewer and to screen-right. Front visor and helmet right side visible. Sword in anatomical RIGHT hand appears on screen-left; left-arm shield toward screen-right. Feet point lower-right.\nChronological frames left-to-right. Exactly eight rows, top-to-bottom:\n1 IDLE: six distinct restrained breathing/weight-settle drawings; same feet, barely moving cape; seamless loop.\n2 WALK: six distinct gait keyframes; right contact, right down/passing, left contact, left down/passing, recovery; both boots and knees visibly change, gear follows weight; in-place seamless loop, never translate whole character across cell.\n3 SWORD CUT: ready, wind-up, strong anticipation, blade contact arc, follow-through, return to ready. Sword remains straight, distinct arc; left shield on arm throughout.\n4 GUARD \u2014 THIS ROW IS THE MAIN DELIVERABLE: Six visibly different shield-height stages, feet planted at the same ground anchor. (1) Shield is beside the left hip, upper rim at shoulder, beginning the lift. (2) Left elbow bends and brings the shield ACROSS THE FRONT OF THE TORSO, upper rim rises to the narrow eye slit. (3) Full protective hold: shield face is directly in front of chest and lower faceplate, upper rim just BELOW THE EYE SLIT, point above knees, obscures the belt and most tunic. The left hand/forearm must visibly carry it, not a floating shield. (4) Same raised protective position with only restrained breathing; frames 3-4 form the hold loop. (5) Lowering: upper rim returns to chin/neck height and exposes part of belt. (6) Shield returns beside left hip, matching lowered ready. Upper rim must travel upward by roughly HALF A HELMET HEIGHT from frame 1 to frame 3. Preserve original shield dimensions, red stripe, rivets and outline; do not grow or transform shield. RIGHT sword hand stays on screen-left, withdrawn low, straight blade points down-away from the shield. Keep closed huge greathelm, tiny crouched body, both wrapped boots on the ground, and the SAME southeast orientation in all six frames. No attack, no shield bash, no levitation. A row of low idle shields is invalid.\n5 HURT: recoils; recoil peak; off-balance; settles; ready; last settle. Gear follows body; not six copies of idle.\n6 DEATH: knees buckle; falling; hits ground; rolls/settles; motion nearly stops; entirely still prone corpse. Helmet stays on, gear intact, no second helmet or lost limbs. Full body must actually lie down.\n7 INTERACT: reaches toward an object at chest/ground reach; makes contact; small manipulation; withdraws; settles; ready. Do not add an object or remove gear.\n8 PRAYER: lowers body toward kneel; kneels; quiet bowed held prayer; slight bowed breath; rising; upright ready. Frames 3-4 will loop as channel. Closed helmet remains huge, boots/body tiny.\nThe sheet is 48 NEW DRAWN animation poses of the exact reference knight. References are upstream style/design only, never paste the previous image. No camera/orientation/proportion changes between columns. Preserve anatomical handedness for this direction.\n",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+      "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png"
+    ],
+    "transparent_background": true
+  },
+  "inspection": "Parent inspected actual output: fourth row brings the shield across the front of the torso; held poses cover the belt and lower faceplate, and the exit lowers it. Preserve the right-hand sword, left shield, closed oversized helmet and tiny body. Import only six GUARD poses. Other rows are excluded: hurt loses the sword and interaction changes equipment. Exact camera and foot alignment remain provisional.",
+  "actual_reference_inputs": [
+    "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+    "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png"
+  ],
+  "output_sha256": "d8d6766dc231e328eb7323e07d993ecca30e412018915aecf98d6be1d7553c7f",
+  "dimensions": [
+    1086,
+    1448
+  ],
+  "mode": "RGBA",
+  "reference_sha256": {
+    "art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png": "191af0e5abbd484ec225633f530e6ed6dd9ebf01c5367910c09a353c4ca465d9",
+    "art/concepts/images/s13-guarin-isometric-v02.png": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c"
+  },
+  "isolated_figures": 48,
+  "selected_family": "guard",
+  "selected_poses": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ]
+}
