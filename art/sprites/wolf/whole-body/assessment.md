@@ -2,6 +2,12 @@
 
 The proportions are corrected: v02 uses a conspicuously oversized broad head, short round torso and very short thick legs. The intact neck and haunches remove the earlier component assembly's disconnected appearance. S13 is now the dominant proportion reference; M15 supplies species features only. User visual approval remains pending.
 
+## User rejects the cadence revision
+
+The user reports that the active eight-key sequence still flails and its canvas speed does not match a walk. The current motion is rejected. The [exact pose review](pose-review/index.html) shows all eight original target poses, 26 anchors per pose and their actual playback drawings. It links the unchanged guide images, complete prompts and saved generation inputs.
+
+The handoff did include the intact base, skeleton guide and numeric rows, but the output did not follow them. The original guide labels overlap and clip. Reordering drawings 1/2 and 5/6 broke correspondence with the requested phase/support schedule. Selecting runtime travel from the planned 36-pixel stride did not establish that speed from painted foot motion. Those are failures of verification and integration; lower cadence was not a gait repair. The readable review preserves these discrepancies instead of replacing the old evidence. Eyes, ears and coat markings did not receive separate numeric position controls.
+
 ## Current eight-key cadence revision
 
 The active atlas has nine complete drawings: one unchanged standing pose and eight new walk keys. Two four-pose requests supplied an enlarged skeleton control first, the exact intact v02 base second and original S13/G15 as proportion/medium and palette references. Neither rejected animation nor the first new walk output was supplied to the second call. Original pixels, prompts and input hashes are preserved in `walk-records-v03.json`.
