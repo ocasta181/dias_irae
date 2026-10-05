@@ -19,16 +19,18 @@ Each of the six requested topics has a separate report. Reports cite sources nex
 
 Research uses scholarly work, primary documents, museum collections, official archives, and specialist institutions where available. Search excerpts identify sources; opened passages establish claims. Negative evidence is described as a search limitation, not proof that a thing never existed. Suggested uses in the story are inferences, not historical findings.
 
-The parent integrates the reports, checks their key evidence, records limitations, makes incremental commits on main, and pushes only this task's files. Existing changes to art, `project.godot`, and the untracked story documents belong to other work and are excluded from these commits. No database operations or schema changes are required.
+The parent integrates the reports, checks their key evidence, records limitations, makes incremental commits containing only this task's files on main, and pushes main. Existing changes to art, `project.godot`, and the untracked story documents belong to other work and are excluded from these commits. No database operations or schema changes are required.
 
 ## Research assignments
 
-1. Christian military orders and the early hospital brotherhoods.
-2. Noble houses in and around the campaign region.
-3. Non-Christian religions, alleged cults, and religious rumors.
-4. Climate, weather evidence, astronomy, and period astrology.
-5. Technology, food, drink, and supply routes.
-6. Music, art, clothing, and architecture.
+| Subagent | Owned report |
+|---|---|
+| `/root/military_orders` | [Christian military orders and hospital brotherhoods](christian-orders.md) |
+| `/root/regional_houses` | [Regional noble houses](noble-houses.md) |
+| `/root/religions_and_rumors` | [Religions and religious rumors](religions-and-rumors.md) |
+| `/root/climate_and_sky` | [Climate and the sky](climate-and-sky.md) |
+| `/root/technology_provisions` | [Technology and daily provisions](technology-and-provisions.md) |
+| `/root/music_visual_culture` | [Music and visual culture](music-and-visual-culture.md) |
 
 Only three subagents can run at the same time alongside the parent. The second wave starts as the first wave completes. Each subagent owns one new report and must not commit, push, alter story files, or delegate further.
 
@@ -40,6 +42,10 @@ The noble-house and religion reports are complete and reviewed. The parent inspe
 
 For religious history, the parent checked Blumenkranz's Vienne entry, Daftary's accounts of Hasan-i Sabbah and the later Assassin legends, the official regional Mithraic relief record, Vaitkevičius's abstract on the Baltic god-list recorded in 1261, and Walsdorf's discussion of later witch-sabbath imagery. These establish the stated regional and chronological limits; they do not attest a local medieval pagan network or the canon's granary shrine.
 
-The climate and sky, technology and provisions, and music and visual culture subagents are now researching their assigned reports.
+The climate and sky report is complete and reviewed. The parent inspected Sigebert's scanned printed pages 366 and 367, checked Pfister's winter 1099/1100 passage on printed page 543, and opened the astronomical catalogues, comet list, and modern ergot biology sources. The two climate reconstructions measure different seasons and variables; neither establishes local weather in 1101.
 
-At commit `c60176b`, the parent added a bounded comparison for Holy Sepulchre knighthood. The order's own Vatican history marks its First Crusade origin as undocumented and places its first knightly investiture evidence in 1336. Separate modern institutional sources support the later cloak, cross, and motto. The parent also added the Antonines' retrospective black-habit description and aligned the Templar date wording across reports. These clarify familiar visual references without making them 1101 institutions or costumes.
+The parent independently reproduced the solar calculations at 45°03′ north, 5°20′ east and 44°45′ north, 5°00′ east, both at 200 meters with a zero time zone. Each 1101–1200 local table begins with 31 May 1109, Julian. The first point's maximum is at 13:21:40 Universal Time; the second is at 13:21:03. Thus neither sample shows a visible 1101 solar eclipse. The subagent also retained lunar output: 14 May 1101 penumbral magnitude 0.603; the event beginning 8 October and peaking 9 October, 0.178; 7 November, 0.173. These agree with the NASA catalogue classifications. Model predictions do not supply an eyewitness or account for clouds and mountain horizons.
+
+The technology report is complete and under final citation review. The parent checked the municipal bridge guide's 1033 mention and 1393 gateway, the direct English Heritage kite-shield description, the museum's earlier regional equipment, and the European Food Safety Authority assessment of contaminated grain and processing. The music and visual culture subagent is finishing its report. Its connection failed during compaction; the parent resumed the same assignment with the same owner.
+
+Review checkpoint: `0bd7677b6ecbfb98504bcf8a0781ef867ed478b2`. The parent added a bounded comparison for Holy Sepulchre knighthood. The order's own Vatican history marks its First Crusade origin as undocumented and places its first knightly investiture evidence in 1336. Separate modern institutional sources support the later cloak, cross, and motto. The parent also added the Antonines' retrospective black-habit description and aligned the Templar date wording across reports. These clarify familiar visual references without making them 1101 institutions or costumes.
