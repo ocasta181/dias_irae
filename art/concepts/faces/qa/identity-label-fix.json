@@ -1,0 +1,9 @@
+{
+  "decision_commit": "e5ad5fc",
+  "confidence_percent": 100,
+  "cause": "Source IDs prefixed drawing titles without an explicit source label; F37 was headed F25.",
+  "fix": "Every title and compact drag button uses the drawing ID; Based on labels identify source images separately. Preference positions remain numeric ranks.",
+  "preserved_review_rows": 65,
+  "ranking_preserved": true,
+  "backup": "art/concepts/faces/review-history/20261005T222046Z-before-identity-label-fix.md"
+}

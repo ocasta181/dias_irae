@@ -282,7 +282,7 @@ import { createAutosave } from "./autosave.mjs?v=2";
       const handle = document.createElement("button");
       handle.type = "button";
       handle.className = "rank-handle";
-      handle.textContent = "↕";
+      handle.textContent = `${id} ↕`;
       handle.setAttribute("aria-label", `Rank ${id}: drag, use up/down keys, Home or End`);
       handle.addEventListener("keydown", (event) => {
         const index = preferenceOrder.indexOf(id);

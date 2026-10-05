@@ -73,3 +73,19 @@ def test_live_galleries_preserve_all_rows_without_duplicate_candidates():
         original_faces <= sets[2],
         len(set.union(*sets)),
     ) == (63, 40, True, sum(map(len, sets)))
+
+
+def test_face_labels_identify_the_drawing_and_label_its_source_separately():
+    page = (ROOT / "faces/index.html").read_text()
+    cards = re.findall(
+        r'<article class="card" data-reference="([FV]\d+)".*?</article>', page
+    )
+    for identifier in cards:
+        card = re.search(
+            rf'<article class="card" data-reference="{identifier}".*?</article>', page
+        )[0]
+        title = re.search(r"<h3>(.*?)</h3>", card)[1]
+        assert title.startswith(identifier + " · ")
+    f37 = re.search(r'<article class="card" data-reference="F37".*?</article>', page)[0]
+    assert '<h3>F37 · Eyes: tired tapered slits</h3>' in f37
+    assert 'Based on <a href="images/f25-v01.png">F25 (source image)</a>' in f37

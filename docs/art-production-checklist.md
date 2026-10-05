@@ -322,3 +322,6 @@ Current decision at commit `3aef464`: preserve the four explicitly selected styl
 
 
 2026-10-05 eye-source correction at commit `fcd4bc2`, confidence 99%: the human eye close-up matches F37. Original F25 square eyes were an incorrect reference. The 15 completed v03 drawings are rejected and held back; the remaining old requests are not resumed. Corrected v04 requests use exact named bases with the original F37 eye-only crop, no failed output. Eyes fixed; eyebrows varied. Pilot eye review precedes further generation and publication. Human face selection remains pending.
+
+
+2026-10-06 card identity correction at commit `e5ad5fc`, confidence 100%: F25 was the source of F37, but source prefixes made titles misleading. Published all 65 existing cards with their own drawing IDs in titles and compact controls, and explicit “Based on” source labels. Preserved all decisions, comments and saved positions. Four publisher tests, lint and live browser verification pass. Wrong-eye v03 drawings remain excluded; corrected F37-eye generation is still pending.
