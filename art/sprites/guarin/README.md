@@ -6,7 +6,7 @@ Selected style: G15 / S13, captured after inventory verification on 2026-10-05 l
 
 Use the clip selector to inspect a tag, or action buttons to test transitions. Pause, step or scrub to inspect individual poses. Adjust rate, speed and standing height; show the previous pose or foot guide; compare contrasting backgrounds and both sampling modes. Stage size controls keep complete pose bounds visible. Action buttons use entry/hold/exit behavior; the selector is a deliberate diagnostic override. Manual inspection cancels the scripted transition demonstration.
 
-Focus the stage for keyboard controls: arrows or W/A/S/D move; Space cuts; G guards while held; P starts/stops prayer; H applies hurt; K defeats; R resets. Defeat stays on its final corpse frame. This does not add gameplay mechanics or change combat timing in Godot.
+Keyboard controls work across the page, except while editing inputs: arrows or W/A/S/D move; Space strikes; G guards while held; P starts/stops prayer; H applies hurt; K defeats; R resets. Movement resumes playback and cancels a running preset. Defeat stays on its final corpse frame. This does not add gameplay mechanics or change combat timing in Godot.
 
 Review decisions and comments belong in [manifest.md](manifest.md). Parent findings are in [assessment.md](assessment.md). Final export and game integration need visual approval. Draft campaign actions P09–P23 are listed in the [campaign inventory](../asset-list.md), not marked produced.
 

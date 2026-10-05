@@ -7,6 +7,7 @@ const images = new Map();
 const masks = new WeakMap();
 const logs = [];
 const keys = new Set();
+const movementKeys = new Set(["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "w", "a", "s", "d"]);
 let atlas;
 let player = createPlayer();
 let playing = true;
@@ -196,8 +197,9 @@ function tick(time) {
     if (keys.size && player.clip === "walk") {
       const [x, y] = movement();
       const length = Math.hypot(x, y) || 1;
-      position[0] = Math.max(90, Math.min(810, position[0] + x / length * delta * .10));
-      position[1] = Math.max(0, Math.min(stage.height, position[1] + y / length * delta * .05));
+      const pixels = stage.width / stage.getBoundingClientRect().width;
+      position[0] += x / length * delta * .14 * pixels;
+      position[1] += y / length * delta * .07 * pixels;
     }
     updateClipControls();
   }
@@ -237,21 +239,35 @@ function wireControls() {
     scheduled = [{ at: 200, action: "walk" }, { at: 1200, action: "cut" }, { at: 2300, action: "idle" }, { at: 2500, action: "guard" }, { at: 3400, action: "guard-off" }, { at: 4000, action: "prayer" }, { at: 5000, action: "hurt" }, { at: 5900, action: "death" }];
     log("Transition test: walk → cut → walk → guard → release → prayer → damage → death.");
   });
-  stage.addEventListener("keydown", event => {
+  document.addEventListener("keydown", event => {
+    if (event.target.closest("input, select, textarea, [contenteditable=true]") || event.ctrlKey || event.metaKey || event.altKey) return;
     const key = event.key.length === 1 ? event.key.toLowerCase() : event.key;
-    if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "w", "a", "s", "d"].includes(key)) { event.preventDefault(); keys.add(key); movement(); }
+    if (movementKeys.has(key)) {
+      event.preventDefault();
+      scheduled = [];
+      keys.add(key);
+      movement();
+      playing = true;
+      element("play").textContent = "Pause";
+    }
     if (event.repeat) return;
     const action = { " ": "cut", g: "guard", h: "hurt", k: "death", r: "reset", p: player.praying ? "prayer-off" : "prayer" }[key];
-    if (action) { event.preventDefault(); act(action); }
+    if (action) { event.preventDefault(); if (key === "g") keys.add(key); act(action); }
   });
-  stage.addEventListener("keyup", event => {
+  document.addEventListener("keyup", event => {
     const key = event.key.length === 1 ? event.key.toLowerCase() : event.key;
-    keys.delete(key);
-    if (key === "g") act("guard-off");
-    if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "w", "a", "s", "d"].includes(key)) movement();
+    const held = keys.delete(key);
+    if (held && key === "g") act("guard-off");
+    if (held && movementKeys.has(key)) movement();
   });
-  stage.addEventListener("blur", () => { keys.clear(); player = request(player, "idle"); player = request(player, "guard-off"); });
-  document.addEventListener("visibilitychange", () => { lastTime = undefined; keys.clear(); });
+  function releaseKeys() {
+    if (!keys.size) return;
+    keys.clear();
+    player = request(player, "idle");
+    player = request(player, "guard-off");
+  }
+  window.addEventListener("blur", releaseKeys);
+  document.addEventListener("visibilitychange", () => { lastTime = undefined; releaseKeys(); });
 }
 
 async function start() {
