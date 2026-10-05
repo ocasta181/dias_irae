@@ -1,18 +1,37 @@
 # Guarin animation assessment
 
-Eight-direction checkpoint, 2026-10-05. Current data contains eight direction pages, 384 source frames, and twelve playback tags per direction. All eight family rows exist in all directions; final motion inspection is in progress. This is not the completed character sheet or a production approval.
+Checkpoint: 2026-10-05. The defined P01–P08 character study has 384 source poses, eight independently drawn directions and twelve playback tags per direction. This completes the first study's source coverage. Final game export, campaign expansion P09–P23 and visual approval remain open.
 
-Selection: the user-saved #1 gameplay preference was G15, from S13, captured at `2026-10-04T23:47:21.832831+00:00`. Exact references, saved ordering, and hashes are in [selection.json](selection.json). Every generation uses G15 and the original S13; failed sprite pages are not supplied as references.
+The user-saved #1 preference was **G15 / S13**, captured after the inventory check at `2026-10-04T23:47:21.832831+00:00`. [selection.json](selection.json) retains that exact ranking, review status, paths and hashes. Rank is preference, not acceptance. Every generation and repair receives the actual G15 gameplay image and original S13 character; no failed sprite attempt is used as an image reference.
 
-Observed strengths: worn gritty iron, wine cloth, mail and short wrapped limbs retain the selected identity; several distinct gait, cut, recoil, collapse, interaction and bowed poses exist. All eight active pages have actual RGBA transparency and 48 nonempty, different-pixel figures each.
+The selected worn iron, wine cloth, mail, huge closed helmet, tiny torso and short wrapped limbs remain recognizable. The pictures contain actual separate drawn gait, cut, recoil, collapse, reaching and bowed poses. Original PNG bytes are preserved; the viewer selects measured regions. It does not rotate, recolor or translate a still image to pretend it is a newly drawn action.
 
-Known defects being corrected:
+## Repairs and exclusions
 
-- The generator did not place figures on a consistent exact grid. The importer now locates all 48 connected figures, retains measured rectangles and row/column anchors, and clips neighboring silhouettes in the viewer. All eight active pages have no source-page border contacts. No generated pixel files were changed. Manual foot-pivot refinement remains a review task.
-- East v01 repeats a forward diagonal stance and is rejected. East v02 improves the side profile, but its cut reads partly as a thrust and requires motion review. Southwest v01 repeats southeast, and northwest v01 shows a front visor on the rear; both are rejected. Their v02 replacements are imported after parent inspection of lower-left facing and a solid rear helmet, respectively. All replacements use exact upstream references only.
-- Rear diagonal rotation, guard coverage, kneeling depth, gait amplitude and loop transitions still require motion inspection. Distinct pixel hashes do not prove correct movement.
-- Camera angle is an artistic estimate, not a calibrated measured projection.
+| Finding | Action | Current result |
+|---|---|---|
+| Figure positions drift from the requested uniform grid. | Locate isolated figures; retain source rectangles, row/column anchors and neighbor masks. | 384 active source regions are nonempty, distinct by pixel hash and free of source-page border contacts. Source rasters are unchanged. |
+| E v01 repeats a diagonal front view. | Generate E v02 from upstream references. | Improved right-facing profile imported. |
+| NW v01 puts a front visor on a rear-facing body. | Generate NW v02 with a plain rear helmet. | Rear-left view imported; no false front visor. |
+| SW v01 repeats southeast. | Generate SW v02 from upstream references. | Front-left rotation imported. |
+| E v02 cut reads as a thrust. | Generate E v03 and select only its six cut poses. | Clear overhead anticipation and downward angular sweep. Keep the earlier 42 poses; exclude the new hurt row's weapon regression. |
+| SW v02 hurt loses the sword. | Request SW v03 with explicit visible sword retention. | Targeted row repair in progress. |
+| Thumbnail canvas clips overhead sword anticipation. | Fit all poses in a clip at one common normalized scale/anchor. | Full weapon travel is visible in the pose strip. |
+| Concurrent page loading fails intermittently in the in-app browser. | Load source pages in sequence and report the exact failing path. | Two subsequent fresh loads succeeded; no silent retry or omitted image. |
 
-The viewer's twelve timing/transition tests pass. The browser loads actual sheet pixels, plays Walk, selects clips, pauses, scrubs, and shows an isolated sword-contact pose without grid clipping. All eight directions now load; final motion checks and user approval remain open.
+Projection correction at commit `c2bfc28`: anatomical left does not mean screen-left. In SW, the left shield is near and can occupy screen-right/front while the right sword is far-left; SE reverses depth, not handedness. The SW v02 request contains an incorrect screen-left shield rule. Its observed front-left turn takes precedence; the original request is retained. Confidence: 95%, based on fixed-handed body rotation. SW v03 corrects the request.
 
-Projection correction at commit `c2bfc28`: anatomical left does not mean screen-left. For SW, the left-arm shield is near and can occupy screen-right/front while the sword is far-left; SE reverses depth, not handedness. The SW v02 request contains a mistaken screen-left shield rule. Its observed correctly turned front plane takes precedence over that instruction; the original prompt remains intact as provenance. Confidence: 95%, based on the fixed-handed body rotation.
+## Verification
+
+- Original source pages: 1086×1448, transparent RGBA PNG. Requests asked for larger exact cells; the provider did not return those dimensions. The importer measures actual output rather than claiming the requested dimensions were achieved.
+- All eight direction sets contain 48 usable source regions. All 96 direction/tag combinations select and draw in the browser. Repaired east cut maps to exactly six E v03 regions; the other 42 east regions remain E v02.
+- Twelve deterministic tests pass: elapsed-time/refresh independence, unequal holds, gait phase on turns, non-restarting attacks, locked action facing, recovery to movement intent, single contact event, interrupted contact cancellation, guard hold/release/early release, prayer hold/interruption, and terminal death/reset.
+- Browser transition demonstration completes walk→cut→walk, guard entry/hold/exit, kneel/channel interrupted by hurt, and held final corpse. Manual inspection cancels the demo instead of being overwritten by its pending actions.
+- Browser checks cover frame selection/stepping, pause/play, source strips, 96-pixel nearest sampling on pale ground and 160-pixel smooth sampling on dark ground. No neighboring figure appears in the inspected regions.
+- Stage preview limits use complete pose extents; resizing retains aspect and bounds. Observed browser viewport is 1280×720. The requested 375-pixel override did not change that viewport in this in-app session, so a narrow-screen visual test is not claimed.
+
+## Open art review
+
+Foot anchors are approximations, not artist-authored skeletal pivots. Check gait sliding, action recovery and loop joins in motion. Some guard raises, interactions and kneeling depth remain subtle; gear/gesture continuity needs final scrutiny across directions. Camera target is about 45 degrees above the ground, but generated projection is not calibrated. Final texture density, game-scale silhouettes and atlas sampling need a scene test before production integration.
+
+Use [manifest.md](manifest.md) for decisions and notes, and [the motion lab](viewer/index.html) for inspection. Distinct hashes prove different pixels, not motion correctness. No page is accepted solely because an image tool completed.
