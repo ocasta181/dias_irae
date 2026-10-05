@@ -1,0 +1,30 @@
+{
+  "tool": "image_gen",
+  "model": "undisclosed",
+  "prompt": "prompts/wolf-ne-parts-v01.txt",
+  "references": [
+    {
+      "role": "anatomy",
+      "path": "art/mood-board/03-people-and-arms/m15-wolf.jpg",
+      "sha256": "b730e876c890223d1aa96b9f1b0352bcb2e3133d39c8a5cd1bd744e2e9890f1b"
+    },
+    {
+      "role": "drawing style",
+      "path": "art/concepts/images/s13-guarin-isometric-v02.png",
+      "sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c"
+    },
+    {
+      "role": "palette, scale and lighting",
+      "path": "art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+      "sha256": "191af0e5abbd484ec225633f530e6ed6dd9ebf01c5367910c09a353c4ca465d9"
+    }
+  ],
+  "transparent_background": true,
+  "original_path": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-51649250-9f28-4c09-8ce1-92b1ff731b15.png",
+  "source_path": "sources/wolf-ne-parts-v01.png",
+  "sha256": "dde93376e0e3d2043a56da02a1ad248e17987eb635ca57f4667ba6c18903e888",
+  "status": "candidate parts; registration and playback pending",
+  "observations": [
+    "Correct NE facing; twelve distinct painted components. No source from a failed iteration."
+  ]
+}

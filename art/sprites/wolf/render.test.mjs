@@ -4,7 +4,7 @@ import { readParts } from "./source-parts.mjs";
 import { render } from "./render.mjs";
 import { frames } from "./motion.mjs";
 
-const parts = await readParts(new URL("./sources/wolf-se-parts-v01.png", import.meta.url));
+const parts = await readParts(new URL("./sources/wolf-se-parts-v01.png", import.meta.url), undefined, { lowerCrop: { foreLower: .68, hindLower: .68 } });
 
 test("downsampled painted paw contacts stay inside the registration budget", () => {
   for (const entry of frames("SE", "walk")) {

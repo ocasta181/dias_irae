@@ -26,10 +26,160 @@
       "direction": "SE",
       "clip": "death",
       "frames": 12
+    },
+    {
+      "direction": "E",
+      "clip": "idle",
+      "frames": 8
+    },
+    {
+      "direction": "E",
+      "clip": "walk",
+      "frames": 24
+    },
+    {
+      "direction": "E",
+      "clip": "cut",
+      "frames": 12
+    },
+    {
+      "direction": "E",
+      "clip": "hurt",
+      "frames": 8
+    },
+    {
+      "direction": "E",
+      "clip": "death",
+      "frames": 12
+    },
+    {
+      "direction": "W",
+      "clip": "idle",
+      "frames": 8
+    },
+    {
+      "direction": "W",
+      "clip": "walk",
+      "frames": 24
+    },
+    {
+      "direction": "W",
+      "clip": "cut",
+      "frames": 12
+    },
+    {
+      "direction": "W",
+      "clip": "hurt",
+      "frames": 8
+    },
+    {
+      "direction": "W",
+      "clip": "death",
+      "frames": 12
+    },
+    {
+      "direction": "SW",
+      "clip": "idle",
+      "frames": 8
+    },
+    {
+      "direction": "SW",
+      "clip": "walk",
+      "frames": 24
+    },
+    {
+      "direction": "SW",
+      "clip": "cut",
+      "frames": 12
+    },
+    {
+      "direction": "SW",
+      "clip": "hurt",
+      "frames": 8
+    },
+    {
+      "direction": "SW",
+      "clip": "death",
+      "frames": 12
+    },
+    {
+      "direction": "S",
+      "clip": "idle",
+      "frames": 8
+    },
+    {
+      "direction": "S",
+      "clip": "walk",
+      "frames": 24
+    },
+    {
+      "direction": "S",
+      "clip": "cut",
+      "frames": 12
+    },
+    {
+      "direction": "S",
+      "clip": "hurt",
+      "frames": 8
+    },
+    {
+      "direction": "S",
+      "clip": "death",
+      "frames": 12
+    },
+    {
+      "direction": "NE",
+      "clip": "idle",
+      "frames": 8
+    },
+    {
+      "direction": "NE",
+      "clip": "walk",
+      "frames": 24
+    },
+    {
+      "direction": "NE",
+      "clip": "cut",
+      "frames": 12
+    },
+    {
+      "direction": "NE",
+      "clip": "hurt",
+      "frames": 8
+    },
+    {
+      "direction": "NE",
+      "clip": "death",
+      "frames": 12
+    },
+    {
+      "direction": "NW",
+      "clip": "idle",
+      "frames": 8
+    },
+    {
+      "direction": "NW",
+      "clip": "walk",
+      "frames": 24
+    },
+    {
+      "direction": "NW",
+      "clip": "cut",
+      "frames": 12
+    },
+    {
+      "direction": "NW",
+      "clip": "hurt",
+      "frames": 8
+    },
+    {
+      "direction": "NW",
+      "clip": "death",
+      "frames": 12
     }
   ],
   "failures": [],
-  "maxRasterPawError": 0.6512636336978251,
+  "maxRasterPawError": 0.6991618026395321,
   "pages": [
     {
       "image": "pages/wolf-se-v01.png",
@@ -37,7 +187,55 @@
         1536,
         530
       ],
-      "bytes": 822578
+      "bytes": 824200
+    },
+    {
+      "image": "pages/wolf-e-v01.png",
+      "dimensions": [
+        1536,
+        638
+      ],
+      "bytes": 822064
+    },
+    {
+      "image": "pages/wolf-w-v01.png",
+      "dimensions": [
+        1536,
+        638
+      ],
+      "bytes": 821487
+    },
+    {
+      "image": "pages/wolf-sw-v01.png",
+      "dimensions": [
+        1536,
+        529
+      ],
+      "bytes": 818554
+    },
+    {
+      "image": "pages/wolf-s-v01.png",
+      "dimensions": [
+        1536,
+        300
+      ],
+      "bytes": 445620
+    },
+    {
+      "image": "pages/wolf-ne-v01.png",
+      "dimensions": [
+        1536,
+        646
+      ],
+      "bytes": 873966
+    },
+    {
+      "image": "pages/wolf-nw-v01.png",
+      "dimensions": [
+        1536,
+        645
+      ],
+      "bytes": 876017
     }
   ]
 }

@@ -43,7 +43,7 @@ export function contactAnchor(canvas) {
   throw new Error("Paw source has no opaque contact edge");
 }
 
-export async function readParts(path, registrationPath) {
+export async function readParts(path, registrationPath, settings = {}) {
   const decoded = await sharp(await readFile(path)).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
   const image = { width: decoded.info.width, height: decoded.info.height };
   const full = createCanvas(image.width, image.height); full.getContext("2d").putImageData(new ImageData(new Uint8ClampedArray(decoded.data), image.width, image.height), 0, 0);
@@ -51,7 +51,7 @@ export async function readParts(path, registrationPath) {
   const result = {}, registration = {};
   partNames.forEach((name, index) => {
     const [x, y, width, fullHeight] = located[index].rect;
-    const height = name.endsWith("Lower") ? Math.floor(fullHeight * .68) : fullHeight;
+    const height = Math.floor(fullHeight * (settings.lowerCrop?.[name] ?? 1));
     const canvas = createCanvas(name.endsWith("Paw") ? 11 : width, name.endsWith("Paw") ? 8 : height);
     canvas.getContext("2d").drawImage(full, x, y, width, height, 0, 0, canvas.width, canvas.height);
     const anchor = name.endsWith("Paw") ? contactAnchor(canvas) : null;

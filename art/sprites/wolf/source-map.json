@@ -1,3 +1,49 @@
 {
-  "SE": {"path": "sources/wolf-se-parts-v01.png", "facing": "SE", "mirror": false}
+  "SE": {
+    "path": "sources/wolf-se-parts-v01.png",
+    "facing": "SE",
+    "mirror": false,
+    "registration": {
+      "lowerCrop": {
+        "foreLower": 0.68,
+        "hindLower": 0.68
+      }
+    }
+  },
+  "E": {
+    "path": "sources/wolf-e-parts-v01.png",
+    "facing": "E",
+    "mirror": false
+  },
+  "W": {
+    "path": "sources/wolf-e-parts-v01.png",
+    "facing": "E",
+    "mirror": true
+  },
+  "SW": {
+    "path": "sources/wolf-se-parts-v01.png",
+    "facing": "SE",
+    "mirror": true,
+    "registration": {
+      "lowerCrop": {
+        "foreLower": 0.68,
+        "hindLower": 0.68
+      }
+    }
+  },
+  "S": {
+    "path": "sources/wolf-s-parts-v01.png",
+    "facing": "S",
+    "mirror": false
+  },
+  "NE": {
+    "path": "sources/wolf-ne-parts-v01.png",
+    "facing": "NE",
+    "mirror": false
+  },
+  "NW": {
+    "path": "sources/wolf-ne-parts-v01.png",
+    "facing": "NE",
+    "mirror": true
+  }
 }

@@ -34,10 +34,10 @@ export function render(parts, direction, entry) {
   }
   for (const foot of feet.slice(0, 2)) drawLeg(foot);
   if (dy < 0) paint(context, parts[entry.headPart], entry.head, 56, 56, entry.headAngle);
-  if (dy >= 0) paint(context, parts.tail, entry.tail, 22 + 22 * Math.abs(dx), 20 + 10 * Math.abs(dy), entry.tailAngle - entry.fall * Math.PI / 3, [.8, .2]);
+  if (dy >= 0) paint(context, parts.tail, entry.tail, 22 + 22 * Math.abs(dx), 20 + 10 * Math.abs(dy), entry.tailAngle, [.8, .2]);
   paint(context, parts.body, entry.body, 50 + 45 * Math.abs(dx), 45 + 35 * Math.abs(dy), .07 * entry.fall);
   for (const foot of feet.slice(2)) drawLeg(foot);
   if (dy >= 0) paint(context, parts[entry.headPart], entry.head, 56, 56, entry.headAngle);
-  if (dy < 0) paint(context, parts.tail, entry.tail, 22 + 22 * Math.abs(dx), 20 + 10 * Math.abs(dy), entry.tailAngle - entry.fall * Math.PI / 3, [.5, .2]);
+  if (dy < 0) paint(context, parts.tail, entry.tail, 22 + 22 * Math.abs(dx), 20 + 10 * Math.abs(dy), entry.tailAngle, [.5, .2]);
   return { canvas, witnesses };
 }

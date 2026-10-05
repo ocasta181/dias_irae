@@ -63,7 +63,7 @@ export function pose(direction, clip, phase) {
     head: project(direction, 44 + 5 * bite - 3 * recoil - 12 * fall, 0, 70 + breath - 42 * fall),
     headAngle: (-8 * bite + 5 * recoil + 12 * fall) * Math.PI / 180,
     headPart: fall > .75 ? "rest" : bite > .75 ? "open" : "head",
-    tail: project(direction, -34, 0, bodyHeight - 3),
+    tail: project(direction, -34 + 14 * fall, 0, bodyHeight - 3),
     tailAngle: clip === "walk" ? .025 * Math.sin(2 * Math.PI * phase) : 0,
     fall, feet,
   };

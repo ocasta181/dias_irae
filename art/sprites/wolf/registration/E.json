@@ -1,0 +1,255 @@
+{
+  "source": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/sources/wolf-e-parts-v01.png",
+  "dimensions": [
+    1448,
+    1086
+  ],
+  "parts": {
+    "body": {
+      "sourceRect": [
+        45,
+        103,
+        369,
+        240
+      ],
+      "originalComponentRect": [
+        45,
+        103,
+        369,
+        240
+      ],
+      "renderedSize": [
+        369,
+        240
+      ],
+      "contactAnchor": null,
+      "sourcePixelsSha256": "d6b02a5c8c865e7b7106e8432438410925f4859b96e894d8c1f98e5302956c06"
+    },
+    "head": {
+      "sourceRect": [
+        437,
+        77,
+        319,
+        283
+      ],
+      "originalComponentRect": [
+        437,
+        77,
+        319,
+        283
+      ],
+      "renderedSize": [
+        319,
+        283
+      ],
+      "contactAnchor": null,
+      "sourcePixelsSha256": "de4deb55915ba468605043ad7336223f8fcebbc01092ed75ec9ea31ce23bd9cf"
+    },
+    "open": {
+      "sourceRect": [
+        779,
+        78,
+        303,
+        282
+      ],
+      "originalComponentRect": [
+        779,
+        78,
+        303,
+        282
+      ],
+      "renderedSize": [
+        303,
+        282
+      ],
+      "contactAnchor": null,
+      "sourcePixelsSha256": "de8673834f705a0d733163a8b304ab3a4e36301d26049f1c60a8300a9ef4108a"
+    },
+    "tail": {
+      "sourceRect": [
+        1142,
+        139,
+        273,
+        198
+      ],
+      "originalComponentRect": [
+        1142,
+        139,
+        273,
+        198
+      ],
+      "renderedSize": [
+        273,
+        198
+      ],
+      "contactAnchor": null,
+      "sourcePixelsSha256": "f6bf0ab1689fc4e34a966754ba2ffb3748e8af0c0d1128cc9672d49d572b2925"
+    },
+    "foreUpper": {
+      "sourceRect": [
+        104,
+        397,
+        162,
+        254
+      ],
+      "originalComponentRect": [
+        104,
+        397,
+        162,
+        254
+      ],
+      "renderedSize": [
+        162,
+        254
+      ],
+      "contactAnchor": null,
+      "sourcePixelsSha256": "72c93b5d2d500fa46170a12f5e039601e554a574a6d443293b9e5a27341de93f"
+    },
+    "foreLower": {
+      "sourceRect": [
+        495,
+        430,
+        101,
+        227
+      ],
+      "originalComponentRect": [
+        495,
+        430,
+        101,
+        227
+      ],
+      "renderedSize": [
+        101,
+        227
+      ],
+      "contactAnchor": null,
+      "sourcePixelsSha256": "2e8159b99ddf10158623503bfb0bebc8cb1d695ad3f7b33d5516584059b048ce"
+    },
+    "forePaw": {
+      "sourceRect": [
+        832,
+        511,
+        138,
+        128
+      ],
+      "originalComponentRect": [
+        832,
+        511,
+        138,
+        128
+      ],
+      "renderedSize": [
+        11,
+        8
+      ],
+      "contactAnchor": [
+        6.5,
+        8
+      ],
+      "sourcePixelsSha256": "3bca555431270224a52a98ebbcf3717ad56039dd2557379354c908f3931713fd"
+    },
+    "hindUpper": {
+      "sourceRect": [
+        1156,
+        393,
+        198,
+        273
+      ],
+      "originalComponentRect": [
+        1156,
+        393,
+        198,
+        273
+      ],
+      "renderedSize": [
+        198,
+        273
+      ],
+      "contactAnchor": null,
+      "sourcePixelsSha256": "61a79d1041bbec564d4ce6d1858866697c83ffe72ea0b218994a82495b25f883"
+    },
+    "hindLower": {
+      "sourceRect": [
+        139,
+        744,
+        126,
+        251
+      ],
+      "originalComponentRect": [
+        139,
+        744,
+        126,
+        251
+      ],
+      "renderedSize": [
+        126,
+        251
+      ],
+      "contactAnchor": null,
+      "sourcePixelsSha256": "16c2eb11d201ba9a1be1e556fa228b758696993f2a4ad7ccea49365e13bd332c"
+    },
+    "hindPaw": {
+      "sourceRect": [
+        455,
+        836,
+        147,
+        125
+      ],
+      "originalComponentRect": [
+        455,
+        836,
+        147,
+        125
+      ],
+      "renderedSize": [
+        11,
+        8
+      ],
+      "contactAnchor": [
+        6,
+        8
+      ],
+      "sourcePixelsSha256": "3292e3d546b1e15a8cb3c589d5bf1c3b7695c57ad20ce56369c2efd7f8c8cebf"
+    },
+    "rest": {
+      "sourceRect": [
+        686,
+        725,
+        303,
+        281
+      ],
+      "originalComponentRect": [
+        686,
+        725,
+        303,
+        281
+      ],
+      "renderedSize": [
+        303,
+        281
+      ],
+      "contactAnchor": null,
+      "sourcePixelsSha256": "534008268e047a2c8e149a6af62db33d1791ee65c4cad862bb9f869b18d2eec1"
+    },
+    "assembled": {
+      "sourceRect": [
+        991,
+        718,
+        437,
+        299
+      ],
+      "originalComponentRect": [
+        991,
+        718,
+        437,
+        299
+      ],
+      "renderedSize": [
+        437,
+        299
+      ],
+      "contactAnchor": null,
+      "sourcePixelsSha256": "cb997af5114874a21c9d4c9bfab2800491bdee475b6f261a66435181548a9d80"
+    }
+  }
+}

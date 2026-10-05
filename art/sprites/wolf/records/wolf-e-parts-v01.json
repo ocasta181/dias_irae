@@ -1,0 +1,30 @@
+{
+  "tool": "image_gen",
+  "model": "undisclosed",
+  "prompt": "prompts/wolf-e-parts-v01.txt",
+  "references": [
+    {
+      "role": "anatomy",
+      "path": "art/mood-board/03-people-and-arms/m15-wolf.jpg",
+      "sha256": "b730e876c890223d1aa96b9f1b0352bcb2e3133d39c8a5cd1bd744e2e9890f1b"
+    },
+    {
+      "role": "drawing style",
+      "path": "art/concepts/images/s13-guarin-isometric-v02.png",
+      "sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c"
+    },
+    {
+      "role": "palette, scale and lighting",
+      "path": "art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+      "sha256": "191af0e5abbd484ec225633f530e6ed6dd9ebf01c5367910c09a353c4ca465d9"
+    }
+  ],
+  "transparent_background": true,
+  "original_path": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-e12a5630-1de0-4bd4-a771-5cf3a6f16105.png",
+  "source_path": "sources/wolf-e-parts-v01.png",
+  "sha256": "486eb4b48ee48af93b6a8a6453e88db9491aa67899cf65cbc6fe5f1e6ad00974",
+  "status": "candidate parts; registration and playback pending",
+  "observations": [
+    "Elevated right profile with separate paw-free lower legs; inspect joins in playback."
+  ]
+}

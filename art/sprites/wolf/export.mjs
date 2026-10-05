@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { resolve, dirname } from "node:path";
 import { createCanvas, pixels, readParts } from "./source-parts.mjs";
 import { render } from "./render.mjs";
-import { clips, directions, frames, origin, project, referenceHeight, stride, walkDuration } from "./motion.mjs";
+import { clips, directions, frames, origin, pose, project, referenceHeight, stride, walkDuration } from "./motion.mjs";
 
 const root = dirname(fileURLToPath(import.meta.url));
 const requested = process.argv.slice(2);
@@ -25,7 +25,7 @@ await mkdir(resolve(root, "pages"), { recursive: true });
 await mkdir(resolve(root, "registration"), { recursive: true });
 for (const direction of names) {
   const source = sources[direction];
-  const parts = await readParts(resolve(root, source.path), resolve(root, `registration/${direction}.json`));
+  const parts = await readParts(resolve(root, source.path), resolve(root, `registration/${direction}.json`), source.registration);
   const page = createCanvas(1536, 1536), ctx = page.getContext("2d");
   const pageName = `pages/wolf-${direction.toLowerCase()}-v01.png`;
   const entries = []; let x = 4, y = 4, rowHeight = 0;
@@ -33,14 +33,15 @@ for (const direction of names) {
     const clipObservations = { id: `${direction}-${clip}`, world_contacts: {}, frames: [] };
     for (const entry of frames(direction, clip)) {
       const artDirection = source.mirror ? source.facing : direction;
-      const artEntry = source.mirror ? frames(artDirection, clip)[entry.id.split("-").at(-1) - 1] : entry;
+      const artEntry = source.mirror ? pose(artDirection, clip, clip === "walk" ? (entry.phase + .5) % 1 : entry.phase) : entry;
       const drawn = render(parts, artDirection, artEntry);
       if (source.mirror) {
         const mirrored = createCanvas(192, 192), mirrorCtx = mirrored.getContext("2d");
         mirrorCtx.translate(192, 0); mirrorCtx.scale(-1, 1); mirrorCtx.drawImage(drawn.canvas, 0, 0); drawn.canvas = mirrored;
+        const originalWitnesses = { ...drawn.witnesses };
         for (const id of Object.keys(entry.feet)) {
           const opposite = (id[0] === "L" ? "R" : "L") + id[1];
-          drawn.witnesses[id] = { ...drawn.witnesses[opposite], point: [192 - drawn.witnesses[opposite].point[0], drawn.witnesses[opposite].point[1]] };
+          drawn.witnesses[id] = { ...originalWitnesses[opposite], point: [192 - originalWitnesses[opposite].point[0], originalWitnesses[opposite].point[1]] };
         }
       }
       const data = pixels(drawn.canvas); let left = 192, top = 192, right = 0, bottom = 0;
