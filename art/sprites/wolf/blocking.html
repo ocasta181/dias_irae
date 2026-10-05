@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Wolf motion blocking</title><style>body{background:#20221d;color:#d9d0be;font:16px system-ui;margin:24px}canvas{display:block;max-width:100%;background:#151913}select{margin:12px;padding:8px}a{color:#c9b77e}</style></head>
+<body>
+<h1>Wolf motion blocking</h1><p>Geometry study only. Ground crosses are fixed contacts; colored points are articulated paws. This is not finished wolf art.</p>
+<label>Facing<select id="direction"></select></label><label>State<select id="clip"></select></label>
+<canvas width="960" height="520"></canvas><p><a href="../guarin/viewer/index.html">Motion lab</a></p>
+<script type="module">
+import { directions, clips, frames, project, origin, stride, walkDuration } from './motion.mjs';
+const canvas=document.querySelector('canvas'),ctx=canvas.getContext('2d');
+const direction=document.querySelector('#direction'),clip=document.querySelector('#clip');
+for(const name of Object.keys(directions))direction.add(new Option(name,name));direction.value='SE';
+for(const [name,data]of Object.entries(clips))clip.add(new Option(data.label,name));clip.value='walk';
+const colors={LH:'#ba9580',LF:'#cea754',RH:'#779faf',RF:'#99aa71'};
+let began;
+function reset(){began=undefined}direction.onchange=reset;clip.onchange=reset;
+function tick(time){
+ began??=time;const name=clip.value,list=frames(direction.value,name),total=list.at(-1).startMs+list.at(-1).durationMs;
+ const elapsed=time-began,clock=clips[name].loop?elapsed%total:Math.min(elapsed,total-1);
+ const entry=list.find(value=>clock<value.startMs+value.durationMs);
+ const root=project(direction.value,name==='walk'?stride*clock/walkDuration:0,0);
+ ctx.fillStyle='#151913';ctx.fillRect(0,0,960,520);
+ ctx.save();ctx.translate(340,100);ctx.scale(2,2);
+ ctx.strokeStyle='#343d2c';ctx.lineWidth=.5;for(let x=-100;x<280;x+=24){ctx.beginPath();ctx.moveTo(x,200);ctx.lineTo(x+220,45);ctx.stroke()}
+ ctx.translate(root[0]-origin[0],root[1]-origin[1]);
+ for(const[id,foot]of Object.entries(entry.feet)){ctx.strokeStyle=colors[id];ctx.fillStyle=colors[id];ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(...foot.hip);ctx.lineTo(...foot.knee);ctx.lineTo(...foot.ankle);ctx.lineTo(...foot.sole);ctx.stroke();ctx.beginPath();ctx.arc(...foot.sole,3,0,Math.PI*2);ctx.fill()}
+ ctx.strokeStyle='#bcb49f';ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(...entry.tail);ctx.lineTo(...entry.body);ctx.lineTo(...entry.head);ctx.stroke();ctx.beginPath();ctx.arc(...entry.head,12,0,Math.PI*2);ctx.stroke();ctx.restore();
+ ctx.fillStyle='#d9d0be';ctx.fillText(`${direction.value} · ${clips[name].label} · frame ${list.indexOf(entry)+1}/${list.length}`,24,32);
+ requestAnimationFrame(tick)
+}requestAnimationFrame(tick);
+</script>
+</body></html>

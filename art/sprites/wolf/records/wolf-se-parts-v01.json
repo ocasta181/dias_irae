@@ -1,0 +1,32 @@
+{
+  "tool": "image_gen",
+  "model": "undisclosed",
+  "prompt": "prompts/wolf-se-parts-v01.txt",
+  "references": [
+    {
+      "role": "anatomy",
+      "path": "art/mood-board/03-people-and-arms/m15-wolf.jpg",
+      "sha256": "b730e876c890223d1aa96b9f1b0352bcb2e3133d39c8a5cd1bd744e2e9890f1b"
+    },
+    {
+      "role": "drawing style",
+      "path": "art/concepts/images/s13-guarin-isometric-v02.png",
+      "sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c"
+    },
+    {
+      "role": "palette, scale and lighting",
+      "path": "art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+      "sha256": "191af0e5abbd484ec225633f530e6ed6dd9ebf01c5367910c09a353c4ca465d9"
+    }
+  ],
+  "transparent_background": true,
+  "original_path": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-77a62b6a-6b88-4ca7-89a2-3daea3cdbd53.png",
+  "source_path": "sources/wolf-se-parts-v01.png",
+  "sha256": "b4d7ae055ace5e0a5bc47decd32a67be561856abe532bcba08be3c7b7a3d294a",
+  "status": "candidate parts; registration and playback pending",
+  "observations": [
+    "Flat gritty painted wolf; oversized head and small eyes match the brief.",
+    "Layout is irregular, so equal-cell extraction is prohibited.",
+    "Both lower-leg components contain a paw; use explicitly measured ankle regions and separate paw components."
+  ]
+}

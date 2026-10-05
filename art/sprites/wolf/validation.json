@@ -1,0 +1,43 @@
+{
+  "sourceMethod": "controlled 2D painted rig",
+  "measurementMethod": "Rasterized component witness; final occlusion reviewed visually",
+  "coverage": [
+    {
+      "direction": "SE",
+      "clip": "idle",
+      "frames": 8
+    },
+    {
+      "direction": "SE",
+      "clip": "walk",
+      "frames": 24
+    },
+    {
+      "direction": "SE",
+      "clip": "cut",
+      "frames": 12
+    },
+    {
+      "direction": "SE",
+      "clip": "hurt",
+      "frames": 8
+    },
+    {
+      "direction": "SE",
+      "clip": "death",
+      "frames": 12
+    }
+  ],
+  "failures": [],
+  "maxRasterPawError": 0.6512636336978251,
+  "pages": [
+    {
+      "image": "pages/wolf-se-v01.png",
+      "dimensions": [
+        1536,
+        530
+      ],
+      "bytes": 822578
+    }
+  ]
+}

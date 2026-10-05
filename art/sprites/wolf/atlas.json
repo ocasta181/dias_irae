@@ -1,0 +1,5017 @@
+{
+  "selection": {
+    "gameplay_id": "G15",
+    "source_character": "M15 / S13 style"
+  },
+  "sourceFrames": 64,
+  "reviewStatus": "Painted 2D wolf rig study; numerical and visual checks are recorded separately. User approval pending.",
+  "directions": {
+    "SE": {
+      "image": "pages/wolf-se-v01.png",
+      "dimensions": [
+        1536,
+        530
+      ],
+      "sha256": "ecbc7875e026973a07c017662269d19aadec3e4b94d6073bd94cf36dcfca16c1",
+      "frames": [
+        {
+          "family": "idle",
+          "pose": 1,
+          "rect": [
+            4,
+            4,
+            117,
+            83
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            81
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "f1e0d8ce1e61e6fbec679c1f64854e0dce8866773d98af1e52a509fc13068760"
+        },
+        {
+          "family": "idle",
+          "pose": 2,
+          "rect": [
+            125,
+            4,
+            117,
+            84
+          ],
+          "pivot": [
+            56,
+            63
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            93
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            82
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "6b4d7dc90cf4598895ad5c37ea7315ab021c3d96554cc145b1cc353cf1f728f3"
+        },
+        {
+          "family": "idle",
+          "pose": 3,
+          "rect": [
+            246,
+            4,
+            117,
+            84
+          ],
+          "pivot": [
+            56,
+            63
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            93
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            82
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "6b4d7dc90cf4598895ad5c37ea7315ab021c3d96554cc145b1cc353cf1f728f3"
+        },
+        {
+          "family": "idle",
+          "pose": 4,
+          "rect": [
+            367,
+            4,
+            117,
+            83
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            81
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "f1e0d8ce1e61e6fbec679c1f64854e0dce8866773d98af1e52a509fc13068760"
+        },
+        {
+          "family": "idle",
+          "pose": 5,
+          "rect": [
+            488,
+            4,
+            117,
+            83
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            81
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "0bceaff76f171a81fcdd63c40a5b9be969d5870bc2687d94aaf311a42fd5055a"
+        },
+        {
+          "family": "idle",
+          "pose": 6,
+          "rect": [
+            609,
+            4,
+            117,
+            83
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            81
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "1fa3f7df18ac353b39e9f20fa149baeebb79e62cec847bdfa45ab0e50cd71ee9"
+        },
+        {
+          "family": "idle",
+          "pose": 7,
+          "rect": [
+            730,
+            4,
+            117,
+            83
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            81
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "1fa3f7df18ac353b39e9f20fa149baeebb79e62cec847bdfa45ab0e50cd71ee9"
+        },
+        {
+          "family": "idle",
+          "pose": 8,
+          "rect": [
+            851,
+            4,
+            117,
+            83
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            81
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "0bceaff76f171a81fcdd63c40a5b9be969d5870bc2687d94aaf311a42fd5055a"
+        },
+        {
+          "family": "walk",
+          "pose": 1,
+          "rect": [
+            972,
+            4,
+            117,
+            85
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            83
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                94.5,
+                145
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                67.5,
+                146
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                111.5,
+                157
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                109.5,
+                175
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "e6da6f5a081546c738568f118aaa3257cc2945a2e0af091682fc44f9aa807246"
+        },
+        {
+          "family": "walk",
+          "pose": 2,
+          "rect": [
+            1093,
+            4,
+            117,
+            85
+          ],
+          "pivot": [
+            56,
+            63
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            93
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            83
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                93.5,
+                144
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                66.5,
+                145
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                114.5,
+                156
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                108.5,
+                175
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "d813da35d7a3d17a562104cd5cd6dfd3f31db430c6b39674db6a4ed6f306f850"
+        },
+        {
+          "family": "walk",
+          "pose": 3,
+          "rect": [
+            1214,
+            4,
+            117,
+            85
+          ],
+          "pivot": [
+            56,
+            63
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            93
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            83
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                92.5,
+                143
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                65.5,
+                144
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                118.5,
+                157
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                107.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "ec7e64b4a268d03ade6eea69be3acb90d4b8f2b95d5e99a71d78244e14629731"
+        },
+        {
+          "family": "walk",
+          "pose": 4,
+          "rect": [
+            1335,
+            4,
+            117,
+            84
+          ],
+          "pivot": [
+            56,
+            63
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            93
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            82
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                91.5,
+                143
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                64.5,
+                144
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                123.5,
+                160
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                173
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "793052538be50adfde58195ba5155f9c4c8e0dd7e9be49f9c0df903fe0322c3c"
+        },
+        {
+          "family": "walk",
+          "pose": 5,
+          "rect": [
+            4,
+            93,
+            118,
+            83
+          ],
+          "pivot": [
+            57,
+            63
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            39,
+            93
+          ],
+          "occupied": [
+            2,
+            2,
+            116,
+            81
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                90.5,
+                142
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                63.5,
+                143
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                127.5,
+                165
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                105.5,
+                172
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "1a9004a4654bba26d775e28e9b8c2c83aa4ba24ed6346aa2e9643c3ef646bf3b"
+        },
+        {
+          "family": "walk",
+          "pose": 6,
+          "rect": [
+            126,
+            93,
+            118,
+            81
+          ],
+          "pivot": [
+            57,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            39,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            116,
+            79
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                89.5,
+                141
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                62.5,
+                142
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                129.5,
+                170
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                103.5,
+                172
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "1db55c5218d44eb51cbe256fe5ca8c47c56cd8ec4f29aa14783bc4f7b067c8b3"
+        },
+        {
+          "family": "walk",
+          "pose": 7,
+          "rect": [
+            248,
+            93,
+            118,
+            80
+          ],
+          "pivot": [
+            57,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            39,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            116,
+            78
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                88.5,
+                140
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                62.5,
+                142
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                129.5,
+                170
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                102.5,
+                171
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "d0a61129316a78e112610d5a6ae4339da31f4d344e6c6f3f13f2467b29aec82b"
+        },
+        {
+          "family": "walk",
+          "pose": 8,
+          "rect": [
+            370,
+            93,
+            118,
+            79
+          ],
+          "pivot": [
+            57,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            39,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            116,
+            77
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                86.5,
+                140
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                64.5,
+                141
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                128.5,
+                169
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                101.5,
+                170
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "a36e0f8ae32cbe894c74dd02c2466f98fd3e38456c912be2ae6e38dfd84aa936"
+        },
+        {
+          "family": "walk",
+          "pose": 9,
+          "rect": [
+            492,
+            93,
+            117,
+            79
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            77
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                68.5,
+                142
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                127.5,
+                168
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                100.5,
+                169
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "dad42872c3ead8338d6f13702a7f551d940de5bed76ad1fe6e557db7c51fa45f"
+        },
+        {
+          "family": "walk",
+          "pose": 10,
+          "rect": [
+            613,
+            93,
+            117,
+            78
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            76
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                84.5,
+                138
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                73.5,
+                145
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                126.5,
+                168
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                99.5,
+                169
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "353e739253faea1f31834523fa4a22b7aaaaae441a55c74e74487c83aeeeec66"
+        },
+        {
+          "family": "walk",
+          "pose": 11,
+          "rect": [
+            734,
+            93,
+            117,
+            77
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            75
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                83.5,
+                137
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                77.5,
+                150
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                125.5,
+                167
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                98.5,
+                168
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "5779f769d2464991d4a3c84c58a41841101889a7f9484242aa63d356481bc0fd"
+        },
+        {
+          "family": "walk",
+          "pose": 12,
+          "rect": [
+            855,
+            93,
+            117,
+            76
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            74
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                82.5,
+                137
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                80.5,
+                155
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                124.5,
+                166
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                97.5,
+                167
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "72a320353e2236d0e03b5f18b5c06d4c461a0ef8ab76977aa9f18fc9a0f54a49"
+        },
+        {
+          "family": "walk",
+          "pose": 13,
+          "rect": [
+            976,
+            93,
+            117,
+            76
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            74
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                81.5,
+                136
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                80.5,
+                155
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                123.5,
+                165
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                97.5,
+                167
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "979f4d2d59c2edb3318972a848aec710b1b9d3c7aa0acac17ad02e95c56ca8cc"
+        },
+        {
+          "family": "walk",
+          "pose": 14,
+          "rect": [
+            1097,
+            93,
+            117,
+            76
+          ],
+          "pivot": [
+            56,
+            63
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            93
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            74
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                80.5,
+                135
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                79.5,
+                154
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                122.5,
+                165
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                100.5,
+                166
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "a18b77cf701495fb0893bdbaf517399bed1f3d8397fccc62ad487240ecc7300c"
+        },
+        {
+          "family": "walk",
+          "pose": 15,
+          "rect": [
+            1218,
+            93,
+            117,
+            77
+          ],
+          "pivot": [
+            56,
+            63
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            93
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            75
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                79.5,
+                134
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                78.5,
+                153
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                121.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                104.5,
+                167
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "62eb8c56fe6de2d32d1d65f8821396be9ec34b114c3c6c0a14f3b1b3b99ba31f"
+        },
+        {
+          "family": "walk",
+          "pose": 16,
+          "rect": [
+            1339,
+            93,
+            117,
+            80
+          ],
+          "pivot": [
+            56,
+            63
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            93
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            78
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                78.5,
+                134
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                77.5,
+                153
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                163
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                108.5,
+                170
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "aa663050a6e9f629846498b386cbc72005e55770163d8508cc79155f70f47d36"
+        },
+        {
+          "family": "walk",
+          "pose": 17,
+          "rect": [
+            4,
+            180,
+            117,
+            86
+          ],
+          "pivot": [
+            56,
+            63
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            93
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            84
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                77.5,
+                133
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                76.5,
+                152
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                119.5,
+                162
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                113.5,
+                175
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "8df2d90bdb40bda33a03465532ee26169874c8034211a988ac1d2010eb30e514"
+        },
+        {
+          "family": "walk",
+          "pose": 18,
+          "rect": [
+            125,
+            180,
+            117,
+            89
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            87
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                76.5,
+                132
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                74.5,
+                151
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                118.5,
+                162
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                115.5,
+                180
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "85dc8ee93f5de845911aa9a8d1b65641cf132ebd91ee923c09de7e8fea7e9a80"
+        },
+        {
+          "family": "walk",
+          "pose": 19,
+          "rect": [
+            246,
+            180,
+            117,
+            90
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            88
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                76.5,
+                132
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                73.5,
+                150
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                117.5,
+                161
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                115.5,
+                180
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "af992394e8157e96d1bcaaceeedab44e85fb87744970f465980cd8f7c4ddf79a"
+        },
+        {
+          "family": "walk",
+          "pose": 20,
+          "rect": [
+            367,
+            180,
+            117,
+            89
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            87
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                78.5,
+                131
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                72.5,
+                150
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                115.5,
+                160
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                114.5,
+                179
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "8409e73e5c427dbf26f268b9f4acd88956be4b20e356fd5033e4f6bd23874f69"
+        },
+        {
+          "family": "walk",
+          "pose": 21,
+          "rect": [
+            488,
+            180,
+            117,
+            88
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            86
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                83.5,
+                132
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                114.5,
+                159
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                113.5,
+                178
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "7d33c3b6dd6749a41637638b4c411e529bbcd1757ac44ed8ab0666437b216c09"
+        },
+        {
+          "family": "walk",
+          "pose": 22,
+          "rect": [
+            609,
+            180,
+            117,
+            87
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            85
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                87.5,
+                135
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                70.5,
+                148
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                113.5,
+                159
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                112.5,
+                178
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "c832cf957523ea1690df5316069e64da26e932ce40ac0900b1ca03565618b146"
+        },
+        {
+          "family": "walk",
+          "pose": 23,
+          "rect": [
+            730,
+            180,
+            117,
+            86
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            84
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                91.5,
+                140
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                69.5,
+                147
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                112.5,
+                158
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                111.5,
+                177
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "77d4d9ad1cf285b4066e47127420aa8dd2ebdfb2044b52383ad9ec44d454f508"
+        },
+        {
+          "family": "walk",
+          "pose": 24,
+          "rect": [
+            851,
+            180,
+            117,
+            85
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            83
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                94.5,
+                145
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                68.5,
+                147
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                111.5,
+                157
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                110.5,
+                176
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "f502205c342eb5072a804f39da1c3cffded0ff2364fcf73eaf30d62d3d11fc95"
+        },
+        {
+          "family": "cut",
+          "pose": 1,
+          "rect": [
+            972,
+            180,
+            117,
+            83
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            81
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "3e2a4dee2026a21fd32bf775d49e0e360d3c20491f40765a074d5ac2c37d86d3"
+        },
+        {
+          "family": "cut",
+          "pose": 2,
+          "rect": [
+            1093,
+            180,
+            119,
+            83
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            117,
+            81
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "d314df47e8c081f6e72e00d708ff76ab9677a62cb408337764108219c0dc5ffc"
+        },
+        {
+          "family": "cut",
+          "pose": 3,
+          "rect": [
+            1216,
+            180,
+            121,
+            82
+          ],
+          "pivot": [
+            56,
+            61
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            95
+          ],
+          "occupied": [
+            2,
+            2,
+            119,
+            80
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "e37b93b604ffc20cc498f95e30adcec6599341c75add77b1176b11cc0b524e5a"
+        },
+        {
+          "family": "cut",
+          "pose": 4,
+          "rect": [
+            1341,
+            180,
+            122,
+            82
+          ],
+          "pivot": [
+            56,
+            61
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            95
+          ],
+          "occupied": [
+            2,
+            2,
+            120,
+            80
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "70d5f229ef1b1f9f6f53d1f4afdfd2e441f7b78a6ec9c35326d85702534828d5"
+        },
+        {
+          "family": "cut",
+          "pose": 5,
+          "rect": [
+            4,
+            274,
+            122,
+            82
+          ],
+          "pivot": [
+            56,
+            61
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            95
+          ],
+          "occupied": [
+            2,
+            2,
+            120,
+            80
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "da61055ec901acc9bbaa684de373881bea4539447b924c0dfebb61482d470e98"
+        },
+        {
+          "family": "cut",
+          "pose": 6,
+          "rect": [
+            130,
+            274,
+            122,
+            82
+          ],
+          "pivot": [
+            56,
+            61
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            95
+          ],
+          "occupied": [
+            2,
+            2,
+            120,
+            80
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "b45333a71bc78a048bd63241859d1f2855ad227885997fd15490e38dafcbb743"
+        },
+        {
+          "family": "cut",
+          "pose": 7,
+          "rect": [
+            256,
+            274,
+            123,
+            82
+          ],
+          "pivot": [
+            56,
+            61
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            95
+          ],
+          "occupied": [
+            2,
+            2,
+            121,
+            80
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "8da219c4c13c3ae056cc7cbc581c1faa9ecdca8e98f463c7f0ad8ddc775db8a6"
+        },
+        {
+          "family": "cut",
+          "pose": 8,
+          "rect": [
+            383,
+            274,
+            122,
+            82
+          ],
+          "pivot": [
+            56,
+            61
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            95
+          ],
+          "occupied": [
+            2,
+            2,
+            120,
+            80
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "3ef9ddffadb8c38e6a910e386a5f696b3be2729c370f54a698ecb8628cface4e"
+        },
+        {
+          "family": "cut",
+          "pose": 9,
+          "rect": [
+            509,
+            274,
+            122,
+            82
+          ],
+          "pivot": [
+            56,
+            61
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            95
+          ],
+          "occupied": [
+            2,
+            2,
+            120,
+            80
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "207dd9aabc80ec0e0aa9ca9e06f6b7c259f05dc18c524afbdeb314236e5fc854"
+        },
+        {
+          "family": "cut",
+          "pose": 10,
+          "rect": [
+            635,
+            274,
+            121,
+            82
+          ],
+          "pivot": [
+            56,
+            61
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            95
+          ],
+          "occupied": [
+            2,
+            2,
+            119,
+            80
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "c84903eeb0c692f4749af1fd88d29db9b38c476657f376759627edb6d3f4691e"
+        },
+        {
+          "family": "cut",
+          "pose": 11,
+          "rect": [
+            760,
+            274,
+            119,
+            83
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            117,
+            81
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "df3180dac8bc0fbc8da5e598aa7c0bb8bd45788a22af7b0247a1a03ab74900d3"
+        },
+        {
+          "family": "cut",
+          "pose": 12,
+          "rect": [
+            883,
+            274,
+            117,
+            83
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            81
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "3e2a4dee2026a21fd32bf775d49e0e360d3c20491f40765a074d5ac2c37d86d3"
+        },
+        {
+          "family": "hurt",
+          "pose": 1,
+          "rect": [
+            1004,
+            274,
+            117,
+            83
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            81
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "b4e7781ec3d1cf2fe8b1a4f88fa6299e6c8471b51293fd77e5cce0b7d6b53943"
+        },
+        {
+          "family": "hurt",
+          "pose": 2,
+          "rect": [
+            1125,
+            274,
+            116,
+            84
+          ],
+          "pivot": [
+            56,
+            63
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            93
+          ],
+          "occupied": [
+            2,
+            2,
+            114,
+            82
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "a5ab1c21d16b9d1329df79c33cc46efed6be712bb6e0fa021518141ac5c1fadd"
+        },
+        {
+          "family": "hurt",
+          "pose": 3,
+          "rect": [
+            1245,
+            274,
+            115,
+            84
+          ],
+          "pivot": [
+            56,
+            63
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            93
+          ],
+          "occupied": [
+            2,
+            2,
+            113,
+            82
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "7f5ab06389f37999695905a25ba1d42c4457eac5536b7239409cd890437abba8"
+        },
+        {
+          "family": "hurt",
+          "pose": 4,
+          "rect": [
+            1364,
+            274,
+            113,
+            84
+          ],
+          "pivot": [
+            56,
+            63
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            93
+          ],
+          "occupied": [
+            2,
+            2,
+            111,
+            82
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "18143fad5918289ee0cbb9186ce85f2f06f31b9a043fb58f4ed612392edac6d6"
+        },
+        {
+          "family": "hurt",
+          "pose": 5,
+          "rect": [
+            4,
+            362,
+            113,
+            84
+          ],
+          "pivot": [
+            56,
+            63
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            93
+          ],
+          "occupied": [
+            2,
+            2,
+            111,
+            82
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "6391b9b2fe5cfd596bf37211acc959e27bbc372970e6529c379c779f18e0dba6"
+        },
+        {
+          "family": "hurt",
+          "pose": 6,
+          "rect": [
+            121,
+            362,
+            114,
+            84
+          ],
+          "pivot": [
+            56,
+            63
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            93
+          ],
+          "occupied": [
+            2,
+            2,
+            112,
+            82
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "6263b8e5161f96b31c641908222bbf96e7ee3f35219c23bb0dc09f8b9410959f"
+        },
+        {
+          "family": "hurt",
+          "pose": 7,
+          "rect": [
+            239,
+            362,
+            116,
+            84
+          ],
+          "pivot": [
+            56,
+            63
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            93
+          ],
+          "occupied": [
+            2,
+            2,
+            114,
+            82
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "22bf277e1f971d4b12e27cb7dc809492f6165af20893cdb1a570313195401526"
+        },
+        {
+          "family": "hurt",
+          "pose": 8,
+          "rect": [
+            359,
+            362,
+            117,
+            83
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            81
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "b4e7781ec3d1cf2fe8b1a4f88fa6299e6c8471b51293fd77e5cce0b7d6b53943"
+        },
+        {
+          "family": "death",
+          "pose": 1,
+          "rect": [
+            480,
+            362,
+            117,
+            83
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            81
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": true,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                164
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                174
+              ],
+              "planted": true,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "16c1f13910f2e2b3ae049b46b3e226ea9269599d2f0287f5c4d9c92feef9fbc5"
+        },
+        {
+          "family": "death",
+          "pose": 2,
+          "rect": [
+            601,
+            362,
+            117,
+            83
+          ],
+          "pivot": [
+            56,
+            62
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            40,
+            94
+          ],
+          "occupied": [
+            2,
+            2,
+            115,
+            81
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                163
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                173
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "47e42b46824aac92c4f9a8afb096d139c1525f68d57844016eb1678fe48d0bea"
+        },
+        {
+          "family": "death",
+          "pose": 3,
+          "rect": [
+            722,
+            362,
+            115,
+            82
+          ],
+          "pivot": [
+            55,
+            61
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            41,
+            95
+          ],
+          "occupied": [
+            2,
+            2,
+            113,
+            80
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                71.5,
+                149
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                120.5,
+                163
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                173
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "b49e108b3539118a0812faf59f17be6d80d389648ae6cc18a6251379791b658b"
+        },
+        {
+          "family": "death",
+          "pose": 4,
+          "rect": [
+            841,
+            362,
+            112,
+            79
+          ],
+          "pivot": [
+            53,
+            59
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            43,
+            97
+          ],
+          "occupied": [
+            2,
+            2,
+            110,
+            77
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                139
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                72.5,
+                149
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                119.5,
+                163
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                173
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "4974a5da4ccffde02bd6414d83ed4d6b3f4b8b9f858a213a3bfb1ce28101a243"
+        },
+        {
+          "family": "death",
+          "pose": 5,
+          "rect": [
+            957,
+            362,
+            107,
+            77
+          ],
+          "pivot": [
+            50,
+            57
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            46,
+            99
+          ],
+          "occupied": [
+            2,
+            2,
+            105,
+            75
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                140
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                73.5,
+                149
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                118.5,
+                163
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                172
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "a9384edbfb5d2721b850d1e5e1c6767cf29493b53a833e52c5c60ff2e0e11b86"
+        },
+        {
+          "family": "death",
+          "pose": 6,
+          "rect": [
+            1068,
+            362,
+            103,
+            74
+          ],
+          "pivot": [
+            47,
+            55
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            49,
+            101
+          ],
+          "occupied": [
+            2,
+            2,
+            101,
+            72
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                140
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                74.5,
+                149
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                117.5,
+                163
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                172
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "217f8a84e0a4e237872c5567586b4c1db64aaa629a418b9d157ac39c1c90ff43"
+        },
+        {
+          "family": "death",
+          "pose": 7,
+          "rect": [
+            1175,
+            362,
+            98,
+            75
+          ],
+          "pivot": [
+            43,
+            53
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            53,
+            103
+          ],
+          "occupied": [
+            2,
+            2,
+            96,
+            73
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                141
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                74.5,
+                149
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                117.5,
+                163
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                171
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "af1a92534d87d6bcd60ce07648b94f254a1fc8d6e5c242267a64677be250b5dc"
+        },
+        {
+          "family": "death",
+          "pose": 8,
+          "rect": [
+            1277,
+            362,
+            97,
+            76
+          ],
+          "pivot": [
+            43,
+            51
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            53,
+            105
+          ],
+          "occupied": [
+            2,
+            2,
+            95,
+            74
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                142
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                75.5,
+                149
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                116.5,
+                163
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                170
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "e8e2d6d9e398449653c48672d8b635788fab80538076180970bcd8366615f126"
+        },
+        {
+          "family": "death",
+          "pose": 9,
+          "rect": [
+            1378,
+            362,
+            93,
+            76
+          ],
+          "pivot": [
+            42,
+            49
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            54,
+            107
+          ],
+          "occupied": [
+            2,
+            2,
+            91,
+            74
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                85.5,
+                142
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                76.5,
+                149
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                115.5,
+                163
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                106.5,
+                170
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "58c0a8fa8292ef75158c44a1b4d42a270c7d3b2af0b4154480d8c8e05137fcd5"
+        },
+        {
+          "family": "death",
+          "pose": 10,
+          "rect": [
+            4,
+            450,
+            93,
+            75
+          ],
+          "pivot": [
+            42,
+            47
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            54,
+            109
+          ],
+          "occupied": [
+            2,
+            2,
+            91,
+            73
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                86.5,
+                143
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                77.5,
+                149
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                114.5,
+                163
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                105.5,
+                169
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "a64e59ab7bb509930eff888b7201b78d12b2d06a691391a78cc788da4417e525"
+        },
+        {
+          "family": "death",
+          "pose": 11,
+          "rect": [
+            101,
+            450,
+            93,
+            76
+          ],
+          "pivot": [
+            42,
+            46
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            54,
+            110
+          ],
+          "occupied": [
+            2,
+            2,
+            91,
+            74
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                86.5,
+                143
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                77.5,
+                149
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                114.5,
+                163
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                105.5,
+                169
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "ab620aef60302e46585d90f0ced039c76cdcc9bef55d53d9ef87bc9985e4e428"
+        },
+        {
+          "family": "death",
+          "pose": 12,
+          "rect": [
+            198,
+            450,
+            93,
+            76
+          ],
+          "pivot": [
+            42,
+            46
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            54,
+            110
+          ],
+          "occupied": [
+            2,
+            2,
+            91,
+            74
+          ],
+          "image": "pages/wolf-se-v01.png",
+          "sourceStandingHeight": 96,
+          "landmarks": {
+            "LH": {
+              "point": [
+                86.5,
+                143
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RH": {
+              "point": [
+                77.5,
+                149
+              ],
+              "planted": false,
+              "sourcePart": "hindPaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "LF": {
+              "point": [
+                114.5,
+                163
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            },
+            "RF": {
+              "point": [
+                105.5,
+                169
+              ],
+              "planted": false,
+              "sourcePart": "forePaw",
+              "method": "opaque bottom-edge midpoint of separately rasterized painted paw",
+              "uncertaintyPx": 1
+            }
+          },
+          "sha256": "aac1c79ccea2e35ffb2e376eb686a75de99f76ae8c7fda5edf0bdfff624f8e83"
+        }
+      ],
+      "assessment": "Fresh painted parts; exact four-paw targets and fixed idle feet. Witness masks measure source-part contact rasterization; final overlap, camera, silhouette and transitions need visual inspection."
+    }
+  },
+  "clips": {
+    "idle": {
+      "label": "Quiet idle",
+      "fps": 3.3333333333333335,
+      "loop": true,
+      "events": [],
+      "frames": [
+        {
+          "source": 0,
+          "durationMs": 300
+        },
+        {
+          "source": 1,
+          "durationMs": 300
+        },
+        {
+          "source": 2,
+          "durationMs": 300
+        },
+        {
+          "source": 3,
+          "durationMs": 300
+        },
+        {
+          "source": 4,
+          "durationMs": 300
+        },
+        {
+          "source": 5,
+          "durationMs": 300
+        },
+        {
+          "source": 6,
+          "durationMs": 300
+        },
+        {
+          "source": 7,
+          "durationMs": 300
+        }
+      ]
+    },
+    "walk": {
+      "label": "Four-beat walk",
+      "fps": 26.666666666666664,
+      "loop": true,
+      "events": [],
+      "frames": [
+        {
+          "source": 8,
+          "durationMs": 37.5
+        },
+        {
+          "source": 9,
+          "durationMs": 37.5
+        },
+        {
+          "source": 10,
+          "durationMs": 37.5
+        },
+        {
+          "source": 11,
+          "durationMs": 37.5
+        },
+        {
+          "source": 12,
+          "durationMs": 37.5
+        },
+        {
+          "source": 13,
+          "durationMs": 37.5
+        },
+        {
+          "source": 14,
+          "durationMs": 37.5
+        },
+        {
+          "source": 15,
+          "durationMs": 37.5
+        },
+        {
+          "source": 16,
+          "durationMs": 37.5
+        },
+        {
+          "source": 17,
+          "durationMs": 37.5
+        },
+        {
+          "source": 18,
+          "durationMs": 37.5
+        },
+        {
+          "source": 19,
+          "durationMs": 37.5
+        },
+        {
+          "source": 20,
+          "durationMs": 37.5
+        },
+        {
+          "source": 21,
+          "durationMs": 37.5
+        },
+        {
+          "source": 22,
+          "durationMs": 37.5
+        },
+        {
+          "source": 23,
+          "durationMs": 37.5
+        },
+        {
+          "source": 24,
+          "durationMs": 37.5
+        },
+        {
+          "source": 25,
+          "durationMs": 37.5
+        },
+        {
+          "source": 26,
+          "durationMs": 37.5
+        },
+        {
+          "source": 27,
+          "durationMs": 37.5
+        },
+        {
+          "source": 28,
+          "durationMs": 37.5
+        },
+        {
+          "source": 29,
+          "durationMs": 37.5
+        },
+        {
+          "source": 30,
+          "durationMs": 37.5
+        },
+        {
+          "source": 31,
+          "durationMs": 37.5
+        }
+      ]
+    },
+    "cut": {
+      "label": "Bite",
+      "fps": 16.666666666666668,
+      "loop": false,
+      "events": [
+        {
+          "atMs": 275,
+          "name": "bite-contact-preview"
+        }
+      ],
+      "frames": [
+        {
+          "source": 32,
+          "durationMs": 80
+        },
+        {
+          "source": 33,
+          "durationMs": 80
+        },
+        {
+          "source": 34,
+          "durationMs": 80
+        },
+        {
+          "source": 35,
+          "durationMs": 35
+        },
+        {
+          "source": 36,
+          "durationMs": 35
+        },
+        {
+          "source": 37,
+          "durationMs": 35
+        },
+        {
+          "source": 38,
+          "durationMs": 40
+        },
+        {
+          "source": 39,
+          "durationMs": 45
+        },
+        {
+          "source": 40,
+          "durationMs": 60
+        },
+        {
+          "source": 41,
+          "durationMs": 75
+        },
+        {
+          "source": 42,
+          "durationMs": 75
+        },
+        {
+          "source": 43,
+          "durationMs": 80
+        }
+      ]
+    },
+    "hurt": {
+      "label": "Recoil",
+      "fps": 19.047619047619047,
+      "loop": false,
+      "events": [],
+      "frames": [
+        {
+          "source": 44,
+          "durationMs": 60
+        },
+        {
+          "source": 45,
+          "durationMs": 45
+        },
+        {
+          "source": 46,
+          "durationMs": 45
+        },
+        {
+          "source": 47,
+          "durationMs": 50
+        },
+        {
+          "source": 48,
+          "durationMs": 50
+        },
+        {
+          "source": 49,
+          "durationMs": 50
+        },
+        {
+          "source": 50,
+          "durationMs": 60
+        },
+        {
+          "source": 51,
+          "durationMs": 60
+        }
+      ]
+    },
+    "death": {
+      "label": "Collapse",
+      "fps": 12.5,
+      "loop": false,
+      "events": [],
+      "frames": [
+        {
+          "source": 52,
+          "durationMs": 80
+        },
+        {
+          "source": 53,
+          "durationMs": 80
+        },
+        {
+          "source": 54,
+          "durationMs": 80
+        },
+        {
+          "source": 55,
+          "durationMs": 80
+        },
+        {
+          "source": 56,
+          "durationMs": 80
+        },
+        {
+          "source": 57,
+          "durationMs": 80
+        },
+        {
+          "source": 58,
+          "durationMs": 80
+        },
+        {
+          "source": 59,
+          "durationMs": 80
+        },
+        {
+          "source": 60,
+          "durationMs": 80
+        },
+        {
+          "source": 61,
+          "durationMs": 80
+        },
+        {
+          "source": 62,
+          "durationMs": 80
+        },
+        {
+          "source": 63,
+          "durationMs": 80
+        }
+      ]
+    }
+  },
+  "references": [
+    {
+      "label": "M15 — approved natural wolf anatomy",
+      "url": "/art/mood-board/03-people-and-arms/m15-wolf.jpg"
+    },
+    {
+      "label": "G15 — selected gameplay texture and palette",
+      "url": "/art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png"
+    },
+    {
+      "label": "S13 — compact proportions and drawing language",
+      "url": "/art/concepts/images/s13-guarin-isometric-v02.png"
+    }
+  ],
+  "motion": {
+    "referenceHeight": 96,
+    "walkSpeed": 40,
+    "stride": 36,
+    "walkDuration": 900
+  },
+  "packing": "Deterministically baked articulated painted parts; fixed logical root retained after trim, four-pixel gutters, no packing rotation."
+}
