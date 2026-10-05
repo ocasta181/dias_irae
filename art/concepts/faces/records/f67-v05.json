@@ -1,0 +1,27 @@
+{
+  "id": "F67",
+  "title": "F37 · Receding sparse crown / Tiny round button / Sparse broken arches",
+  "provider": "built-in imagegen",
+  "model": "not exposed by tool",
+  "request": {
+    "prompt": "Use case: precise-object-edit. Asset: F67, full-body Guarin face study.\nImage 1 is the exact F37 base: keep its jaw and cheek silhouette, mouth, same huge head and tiny squat body, S13 costume, mail, ragged red scarf and cape, boots, sword, shield, pose, elevated game camera, charcoal background, dull brown/gray/burgundy palette, and coarse flat granular 2D drawing.\nImage 2 is an exact eye-only crop from original F37.\nFIXED EYES — literal graphic copy, not another style: Copy the two small flat dark ink marks from the original F37 reference. The near mark is an irregular little T: a short horizontal bar with a tiny central downward tick. The far mark is a smaller horizontal bar with a shorter downward tick. No eye anatomy, eyeballs, white wedges, sockets, squint creases, round dots, detached squares or highlights. Keep these marks completely independent of the eyebrow treatment.\nAt the original 1312 × 1199 frame, near eye is approximately 37 × 13 pixels, at x711–748 and y428–441. Far eye ink is approximately 24 × 10 pixels, at x807–831 and y429–440. Center spacing approximately 89 pixels. Match those small proportions exactly; do not enlarge or rotate them with the brows. Replace any pre-existing eye anatomy in the target. Preserve these two ink marks even as everything else listed below changes.\nChange ONLY these three features:\nHAIR: Receding sparse crown. High temples with sparse short dark wisps and a visible crown; same adult identity, not an elderly redesign.\nNOSE: Tiny detached round button. Remove the old long vertical bridge and its ink sidewalls and replace them with flat mottled skin. The nose is only a small round nub, about 20 pixels wide by 12 pixels high at the original 1312-pixel canvas width, near the lower end of the former bridge. One short curved underside dab, no vertical line connecting nose to brow, no square nose column. The nose contour may move locally; preserve the rest of the head and jaw.\nEYEBROWS: Sparse broken arches: visibly disconnected thin pigment dabs tracing a shallow arch, separate from the eyes. Eyebrows ARE allowed to change. Do not change the eye shapes or squint them to follow the brows.\nKeep the same art style and outfit. Flat worn rough pigment, dark, muddy, tired and wretched but exaggerated and cartoony. No 3D rendering, smooth skin, clean comic-book finish, portrait crop, extra objects, text, labels or contact sheet. One complete character in the same full-body frame.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f37-v03.png",
+      "/Users/ocasta/Code/Dias Irae/art/concepts/faces/references/approved-f37-eyes-only.png"
+    ],
+    "transparent_background": false
+  },
+  "source_sha256": "8c23eb7026a4a1bb5e3207b38a116229219c403350813077c51df2b0c2bf4fd3",
+  "source_reference": "F37",
+  "original_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-78829085-7226-4183-8aea-a27f63d1d954.png",
+  "file": "art/concepts/faces/images/f67-v05.png",
+  "sha256": "7631772e3faa8231a953fe76f4f108099f0656ed111ad04cbf88a11c98caa50d",
+  "dimensions": [
+    1312,
+    1199
+  ],
+  "mode": "RGB",
+  "pixel_changes": "none",
+  "parent_visual_review": "pending",
+  "review_status": "pending"
+}
