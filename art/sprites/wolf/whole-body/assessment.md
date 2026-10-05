@@ -1,5 +1,9 @@
 # Wolf whole-body assessment
 
+## Temporal review limitation
+
+At `77b62fb`, the user again rejects the walk as flailing. The available visual tools provide snapshots, not continuous video perception. The earlier claims below of normal-speed visual inspection were too strong: screenshots confirm selected drawings and the trace confirms frame coverage, but neither establishes a convincing gait. The art remains rejected. Research into canine mechanics, animation practice and drawing cadence is now underway before another authoring attempt. Review must track the same anatomical paws across a complete cycle and its seam, and measure actual painted contacts using actual root travel.
+
 ## Registration and playback correction
 
 The active `wolf-whole-e-v03.png` uses the same complete painted animals with corrected static registration. The previously inspected nose edge varied from x 144–150 and y 119–126, including idle. Each complete logical canvas is translated by whole pixels to `(144,126)` during export. The viewer reads neither these offsets nor a bob/sway curve: all frames retain pivot `(96,156)`, canonical height 64 and a constant runtime scale.
