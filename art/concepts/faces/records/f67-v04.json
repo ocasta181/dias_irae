@@ -1,6 +1,6 @@
 {
   "id": "F67",
-  "title": "F37 · Receding sparse crown / Tiny round button / Sparse broken arches",
+  "title": "F37 \u00b7 Receding sparse crown / Tiny round button / Sparse broken arches",
   "provider": "built-in imagegen",
   "model": "not exposed by tool",
   "request": {
@@ -22,6 +22,17 @@
   ],
   "mode": "RGB",
   "pixel_changes": "none",
-  "parent_visual_review": "pending",
-  "review_status": "pending"
+  "parent_visual_review": "Held back after original full-body and eye close-up inspection: eye marks enlarge relative to the selected F37 reference. No failed output will be used as an input.",
+  "review_status": "revise",
+  "source_inputs": [
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f37-v03.png",
+      "sha256": "8c23eb7026a4a1bb5e3207b38a116229219c403350813077c51df2b0c2bf4fd3"
+    },
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/references/approved-f37-eyes-only.png",
+      "sha256": "ef87567cd3c627644a0c3d59abff5e39525d4dd6454ba749a027f47d59553570"
+    }
+  ],
+  "presentation": "held back"
 }

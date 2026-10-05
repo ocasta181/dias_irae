@@ -1,0 +1,40 @@
+{
+  "commit": "24c570a",
+  "published_new": [
+    "F61",
+    "F62",
+    "F63",
+    "F64",
+    "F66",
+    "F68",
+    "F69"
+  ],
+  "held_back": [
+    "F65",
+    "F67",
+    "F70",
+    "F71",
+    "F72",
+    "F73",
+    "F74",
+    "F75",
+    "F76",
+    "F77",
+    "F78",
+    "F79",
+    "F80",
+    "F81",
+    "F82",
+    "F83",
+    "F84",
+    "F85",
+    "F86",
+    "F87"
+  ],
+  "total_live_cards": 72,
+  "prior_reviews_preserved": 65,
+  "gallery_verified": "http://127.0.0.1:8765/art/concepts/faces/index.html",
+  "all_new_images_loaded": true,
+  "save_status": "Saved to the project.",
+  "remaining": "Correct 20 eye-drifted trials; human face review."
+}

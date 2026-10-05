@@ -1,6 +1,6 @@
 {
   "id": "F79",
-  "title": "F18 · Close blunt crop / Tiny round button / Heavy level bars",
+  "title": "F18 \u00b7 Close blunt crop / Tiny round button / Heavy level bars",
   "provider": "built-in imagegen",
   "model": "not exposed by tool",
   "request": {
@@ -22,6 +22,17 @@
   ],
   "mode": "RGB",
   "pixel_changes": "none",
-  "parent_visual_review": "pending",
-  "review_status": "pending"
+  "parent_visual_review": "Held back after original full-body and eye close-up inspection: the source face eye shapes, slant or light gaps remain rather than the fixed F37 marks. No failed output will be used as an input.",
+  "review_status": "revise",
+  "source_inputs": [
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f18-v01.png",
+      "sha256": "d84a37bb6f83f737ce0f8dda99ea488659f75591c5c13e7642827ed6a4d87540"
+    },
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/references/approved-f37-eyes-only.png",
+      "sha256": "ef87567cd3c627644a0c3d59abff5e39525d4dd6454ba749a027f47d59553570"
+    }
+  ],
+  "presentation": "held back"
 }

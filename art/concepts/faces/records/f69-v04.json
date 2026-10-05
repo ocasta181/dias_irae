@@ -1,10 +1,10 @@
 {
   "id": "F69",
-  "title": "F37 · Receding sparse crown / Short crooked broad tip / Thin sloping strokes",
+  "title": "F37 \u00b7 Receding sparse crown / Short crooked broad tip / Thin sloping strokes",
   "provider": "built-in imagegen",
   "model": "not exposed by tool",
   "request": {
-    "prompt": "Use case: precise-object-edit. Asset: F69, full-body Guarin face study.\nImage 1 is the exact F37 base: keep its jaw and cheek silhouette, mouth, same huge head and tiny squat body, S13 costume, mail, ragged red scarf and cape, boots, sword, shield, pose, elevated game camera, charcoal background, dull brown/gray/burgundy palette, and coarse flat granular 2D drawing.\nImage 2 is the EXACT eye-only source selected by the human. REPLACE Image 1's eyes with those precise two eye marks. These are short irregular horizontal black ink lids with small centered downward projections and broken coarse edges, the near eye wider than the far eye. Match their shape, width, height, spacing, slant and weary expression directly. No detached square dot eyes, no round eyes, no white eyeballs or highlights, no new eye style. The eyes are NOT a variable. Keep them visually identical to Image 2, separated from the eyebrows.\nChange ONLY these three features:\nHAIR: Receding sparse crown. High temples with sparse short dark wisps and a visible crown; same adult identity, not an elderly redesign.\nNOSE: Short crooked broad rounded tip. About 35 pixels wide and 20–25 pixels tall at the original 1312-pixel canvas width, placed low. Remove the former long bridge; draw a short bent asymmetric nub with rounded uneven lobes and two tiny unequal nostrils. No rectangular end or tall sidewall. The nose contour may move locally; preserve the rest of the head and jaw.\nEYEBROWS: Thin sloping strokes: very thin tapered sloped eyebrows, separate from the eyes. Eyebrows ARE allowed to change. Do not change the eye shapes or squint them to follow the brows.\nKeep the same art style and outfit. Flat worn rough pigment, dark, muddy, tired and wretched but exaggerated and cartoony. No 3D rendering, smooth skin, clean comic-book finish, portrait crop, extra objects, text, labels or contact sheet. One complete character in the same full-body frame.",
+    "prompt": "Use case: precise-object-edit. Asset: F69, full-body Guarin face study.\nImage 1 is the exact F37 base: keep its jaw and cheek silhouette, mouth, same huge head and tiny squat body, S13 costume, mail, ragged red scarf and cape, boots, sword, shield, pose, elevated game camera, charcoal background, dull brown/gray/burgundy palette, and coarse flat granular 2D drawing.\nImage 2 is the EXACT eye-only source selected by the human. REPLACE Image 1's eyes with those precise two eye marks. These are short irregular horizontal black ink lids with small centered downward projections and broken coarse edges, the near eye wider than the far eye. Match their shape, width, height, spacing, slant and weary expression directly. No detached square dot eyes, no round eyes, no white eyeballs or highlights, no new eye style. The eyes are NOT a variable. Keep them visually identical to Image 2, separated from the eyebrows.\nChange ONLY these three features:\nHAIR: Receding sparse crown. High temples with sparse short dark wisps and a visible crown; same adult identity, not an elderly redesign.\nNOSE: Short crooked broad rounded tip. About 35 pixels wide and 20\u201325 pixels tall at the original 1312-pixel canvas width, placed low. Remove the former long bridge; draw a short bent asymmetric nub with rounded uneven lobes and two tiny unequal nostrils. No rectangular end or tall sidewall. The nose contour may move locally; preserve the rest of the head and jaw.\nEYEBROWS: Thin sloping strokes: very thin tapered sloped eyebrows, separate from the eyes. Eyebrows ARE allowed to change. Do not change the eye shapes or squint them to follow the brows.\nKeep the same art style and outfit. Flat worn rough pigment, dark, muddy, tired and wretched but exaggerated and cartoony. No 3D rendering, smooth skin, clean comic-book finish, portrait crop, extra objects, text, labels or contact sheet. One complete character in the same full-body frame.",
     "referenced_image_paths": [
       "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f37-v03.png",
       "/Users/ocasta/Code/Dias Irae/art/concepts/faces/references/approved-f37-eyes-only.png"
@@ -22,6 +22,16 @@
   ],
   "mode": "RGB",
   "pixel_changes": "none",
-  "parent_visual_review": "pending",
-  "review_status": "pending"
+  "parent_visual_review": "Inspected original full-body drawing and side-by-side head/eye comparison against the user-selected F37 close-up. Retains the small horizontal lid marks with downward ticks rather than square dots, eye whites or anatomical eyes. Hair, nose and eyebrow treatments vary within the same rough medium; outfit, huge head, squat body and camera remain consistent. Eye pixels vary slightly under generative redraw; human review remains pending.",
+  "review_status": "pending",
+  "source_inputs": [
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f37-v03.png",
+      "sha256": "8c23eb7026a4a1bb5e3207b38a116229219c403350813077c51df2b0c2bf4fd3"
+    },
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/references/approved-f37-eyes-only.png",
+      "sha256": "ef87567cd3c627644a0c3d59abff5e39525d4dd6454ba749a027f47d59553570"
+    }
+  ]
 }

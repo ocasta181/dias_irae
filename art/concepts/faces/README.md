@@ -38,29 +38,21 @@ Decision at commit `c0b8812`, confidence 98%: retain the captured saved top twel
 The current round uses the built-in generator after the Grok trials failed the medium check. This is a documented change from the initial 15/15 provider plan. Every card links its actual request and record; these files, rather than the initial planning allocation, identify the actual generation inputs. Current images are `images/f31-v03.png` through `images/f45-v03.png`, except F38 uses `f38-v04.png`, and `images/f46-v01.png` through `images/f60-v01.png`, except F54 uses `f54-v02.png`.
 
 
-## Hair and nose round — 2026-10-05
+## Hair, nose and eyebrow round — 2026-10-06
 
-Decision at commit `c6438cf`, confidence 95%: the requested several versions of F25, V22 and F18 means a full three-by-three comparison per base, **27 drawings F61–F87**. Three hairstyles (close blunt crop, ear-length ragged side part, receding sparse crown) combine with three noses (tiny round button, slender curved hook, short crooked broad tip). All use the original F25 tiny solid square eye marks, without whites or highlights. Keep each base's own facial shape, brows, mouth, costume, proportions and rough medium.
+Current identity decision at commit `24c570a`, confidence 98%: the drawing the user chose under the misleading “F25” heading is **F37**. The selected three families are F37, V22 and F18. The user attached an authoritative eye close-up, matched to F37 with normalized image correlation 0.9926. Use only these two eye marks; eyebrows are an explicit variable.
 
-[Exact source hashes and candidate matrix](round-3-plan.json). F61–F69 use only F25. F70–F78 use exact V22 plus F25 as an eye-only reference. F79–F87 use exact F18 plus F25 as an eye-only reference. Never use a new-round or failed output as a generation input. The built-in generator is used because the previous Grok trials did not retain the granular medium.
+F61–F69 use F37, F70–F78 use V22, and F79–F87 use F18. Each family crosses three hairstyles (close blunt crop, ear-length ragged side part, receding sparse crown) and three noses (small rounded button, slender curved hook, short crooked broad tip). Heavy level bars, thin sloping strokes and sparse broken arches vary the brows. Every request includes the selected original source and the exact F37 eye reference. No failed/new-round output is a generation input.
 
-- [x] Define 27 independent requests with explicit input roles and source hashes.
-- [ ] Generate and inspect all 27 original outputs.
-- [ ] Check each eye treatment, hair silhouette, nose shape and source consistency in the full figures and face close-ups.
-- [ ] Publish inspected candidates without changing earlier comments or order.
-- [ ] User reviews the combinations.
+- [x] Resolve candidate/source ambiguity: card titles and compact controls show their own IDs, with sources separately labeled “Based on”.
+- [x] Capture exact eye reference, source hashes, candidate matrix and independent raw requests.
+- [x] Generate all 27 first corrected-source trials and inspect original full figures and head/eye comparisons.
+- [x] Publish seven checked studies: F61–F64, F66, F68 and F69. All 65 previous decisions/comments and their relative ranking are preserved; 72 cards are live.
+- [ ] Correct the 20 held-back trials for eye enlargement or retained source-eye features.
+- [ ] User reviews and chooses the face direction.
 
+Current seven images: F61 uses `images/f61-v05.png`; the other six use their `v04` images. Only these inspected variants are currently published. The remaining V22/F18 trials still reproduce source-eye anatomy or light gaps, and F65/F67 enlarge the requested marks; all twenty remain held back. Their references are correctly logged, but tool completion did not satisfy the eye constraint. Eye pixels in the displayed F37 family are visually consistent rather than mathematically identical.
 
-2026-10-05 correction at commit `cea2445`: the user rejected reinterpretation of the eyes. The initial F61/F70 pilot outputs are held back. All replacement requests lock the literal original F25 eye-and-brow band, including its shape, size, spacing and weary expression. Only hair and noses vary. The unscaled supporting crop comes directly from original F25, not a failed output. Original eye bounds measure 20 × 15 and 15 × 14 pixels at the 1312-pixel canvas width, with 88.5-pixel horizontal center spacing. Requests v02 and the source snapshot record this fixed feature. Visual acceptance must check that the eye treatment has not drifted.
+The page saves positions, comments and decisions automatically. A fresh browser load confirms all seven new images load at the beginning and saving is ready. Four publisher tests and six autosave tests pass. Source and provider output hashes are verified; provider image bytes are unchanged.
 
-
-2026-10-05 final constraint correction at commit `feff8cb`: **only the two eye marks are constant; eyebrows vary**. The user explicitly requests eyebrow alternatives. The F70/F79 v02 eye-and-brow-locked pilots are held back. Requests v03 replace that band with an original F25 crop excluding eyebrows. Heavy level bars, thin sloping strokes and sparse broken arches are distributed across the nine hair/nose combinations per base. All three brow styles occur three times per base. No additional eye exploration is authorized. All inputs remain selected original sources, never prior outputs. This supersedes the preceding full-band lock.
-
-
-2026-10-05 eye-source correction at commit `fcd4bc2`, confidence 99%: the user supplied the authoritative eye close-up. Deterministic image comparison identifies **F37** (normalized correlation 0.9926), not original F25. All 15 completed v03 round-three drawings are held back for using the wrong eyes. Requests v04 use the named F25/V22/F18 body/face bases plus the exact F37 eye-only crop. The attached reference, matching evidence, source/crop hashes and input roles are recorded. Only eyes stay fixed; eyebrows, hairstyles and noses vary. This supersedes all earlier round-three references to square F25 eyes. Success requires direct eye-shape review before publication, 3 hairstyles and 3 nose styles per base, varied eyebrows, source outfit/medium preserved, and existing comments/ranking retained.
-
-
-2026-10-06 labeling correction at commit `e5ad5fc`, confidence 100%: source names were prefixed to candidate titles, so the F37 card appeared to be called F25. Display titles now begin with the actual drawing ID, including F37, while the source link reads “Based on F25 (source image)”. The compact drag control also displays the drawing ID; the editable number remains the preference position. All 65 decisions/comments and the complete saved ranking are preserved. Four publisher tests and lint pass; live browser confirms every title/control matches its drawing ID, F37 remains first, automatic saving is ready, and there is no horizontal overflow. The generator eye reference is the user-selected F37 close-up. Incorrect v03 drawings remain held back; no replacement drawing has been published yet.
-
-
-2026-10-06 source identity resolved at commit `8fe2400`, confidence 98%: the misleading F25 heading belonged to the selected F37 drawing. The first matrix therefore uses exact **F37**, with V22 and F18 retained as the other two selected bases. All three keep only the F37 eyes fixed; eyebrows vary. Current `selected_bases` and v04 requests supersede older round-three base labels. No failed round-three output is an input.
+Correction history: early F61/F70 pilots used loose eye grammar; F70/F79 v02 mistakenly locked eyebrows; 15 completed v03 trials used original F25 square eyes. These are held back. F61 v04 finally used the chosen eye grammar but retained an overly long nose, so its independently generated v05 replaced it. The F25 title on F37 was a source label presented as a candidate title; IDs are now unambiguous.

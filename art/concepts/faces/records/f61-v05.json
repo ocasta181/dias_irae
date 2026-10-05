@@ -1,6 +1,6 @@
 {
   "id": "F61",
-  "title": "F37 · Close blunt crop / Tiny round button / Heavy level bars",
+  "title": "F37 \u00b7 Close blunt crop / Tiny round button / Heavy level bars",
   "provider": "built-in imagegen",
   "model": "not exposed by tool",
   "request": {
@@ -22,7 +22,7 @@
   ],
   "mode": "RGB",
   "pixel_changes": "none",
-  "parent_visual_review": "Inspected original full-body output against the selected F37 and user eye close-up. The two horizontal eye marks and downward ticks retain the chosen grammar; original eye-only reference was supplied. Close blunt crop, visibly reduced rounded nose and heavy level eyebrows vary. Huge head, squat body, rough grain, camera, costume and equipment retained. Eye pixels are not mathematically identical; human review remains pending.",
+  "parent_visual_review": "Inspected original full-body drawing and side-by-side head/eye comparison against the user-selected F37 close-up. Retains the small horizontal lid marks with downward ticks rather than square dots, eye whites or anatomical eyes. Hair, nose and eyebrow treatments vary within the same rough medium; outfit, huge head, squat body and camera remain consistent. Eye pixels vary slightly under generative redraw; human review remains pending.",
   "review_status": "pending",
   "source_inputs": [
     {

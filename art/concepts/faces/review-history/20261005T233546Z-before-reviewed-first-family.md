@@ -65,12 +65,6 @@ Drawing IDs identify the candidate, not its source or preference position. Based
 | F59 | F59 · Socket cuts: curved nose and lip gap | built-in imagegen | [F59](images/f59-v01.png) | pending | Inspected original full-body output and diagnostic face comparison. Dark sockets with small dim skin-colored eye cuts, interrupted nose marks and a short lip gap. The F16 face remains more anatomical than F25. The giant head, squat body, red scarf/cape, mail, sword, shield, elevated camera, dull palette and granular drawing remain consistent with the selected source. Existing costume is recognizable; this is visual consistency, not identical pixels. Pending human face selection. |
 | F60 | F60 · Granular: pin eyes and broken lips | built-in imagegen | [F60](images/f60-v01.png) | pending | Inspected original full-body output and diagnostic face comparison. V25 granular skin, small low eye marks and compressed broken lips. The lip change is subtle; no bright or clean medium drift. The giant head, squat body, red scarf/cape, mail, sword, shield, elevated camera, dull palette and granular drawing remain consistent with the selected source. Existing costume is recognizable; this is visual consistency, not identical pixels. Pending human face selection. |
 | F61 | F61 · Close blunt crop / Tiny round button / Heavy level bars | built-in imagegen | [F61](images/f61-v05.png) | pending | Inspected original full-body output against the selected F37 and user eye close-up. The two horizontal eye marks and downward ticks retain the chosen grammar; original eye-only reference was supplied. Close blunt crop, visibly reduced rounded nose and heavy level eyebrows vary. Huge head, squat body, rough grain, camera, costume and equipment retained. Eye pixels are not mathematically identical; human review remains pending. |
-| F62 | F62 · Close blunt crop / Slender curved hook / Thin sloping strokes | built-in imagegen | [F62](images/f62-v04.png) | pending | Inspected original full-body drawing and side-by-side head/eye comparison against the user-selected F37 close-up. Retains the small horizontal lid marks with downward ticks rather than square dots, eye whites or anatomical eyes. Hair, nose and eyebrow treatments vary within the same rough medium; outfit, huge head, squat body and camera remain consistent. Eye pixels vary slightly under generative redraw; human review remains pending. |
-| F63 | F63 · Close blunt crop / Short crooked broad tip / Sparse broken arches | built-in imagegen | [F63](images/f63-v04.png) | pending | Inspected original full-body drawing and side-by-side head/eye comparison against the user-selected F37 close-up. Retains the small horizontal lid marks with downward ticks rather than square dots, eye whites or anatomical eyes. Hair, nose and eyebrow treatments vary within the same rough medium; outfit, huge head, squat body and camera remain consistent. Eye pixels vary slightly under generative redraw; human review remains pending. |
-| F64 | F64 · Ear-length ragged side part / Tiny round button / Thin sloping strokes | built-in imagegen | [F64](images/f64-v04.png) | pending | Inspected original full-body drawing and side-by-side head/eye comparison against the user-selected F37 close-up. Retains the small horizontal lid marks with downward ticks rather than square dots, eye whites or anatomical eyes. Hair, nose and eyebrow treatments vary within the same rough medium; outfit, huge head, squat body and camera remain consistent. Eye pixels vary slightly under generative redraw; human review remains pending. |
-| F66 | F66 · Ear-length ragged side part / Short crooked broad tip / Heavy level bars | built-in imagegen | [F66](images/f66-v04.png) | pending | Inspected original full-body drawing and side-by-side head/eye comparison against the user-selected F37 close-up. Retains the small horizontal lid marks with downward ticks rather than square dots, eye whites or anatomical eyes. Hair, nose and eyebrow treatments vary within the same rough medium; outfit, huge head, squat body and camera remain consistent. Eye pixels vary slightly under generative redraw; human review remains pending. |
-| F68 | F68 · Receding sparse crown / Slender curved hook / Heavy level bars | built-in imagegen | [F68](images/f68-v04.png) | pending | Inspected original full-body drawing and side-by-side head/eye comparison against the user-selected F37 close-up. Retains the small horizontal lid marks with downward ticks rather than square dots, eye whites or anatomical eyes. Hair, nose and eyebrow treatments vary within the same rough medium; outfit, huge head, squat body and camera remain consistent. Eye pixels vary slightly under generative redraw; human review remains pending. |
-| F69 | F69 · Receding sparse crown / Short crooked broad tip / Thin sloping strokes | built-in imagegen | [F69](images/f69-v04.png) | pending | Inspected original full-body drawing and side-by-side head/eye comparison against the user-selected F37 close-up. Retains the small horizontal lid marks with downward ticks rather than square dots, eye whites or anatomical eyes. Hair, nose and eyebrow treatments vary within the same rough medium; outfit, huge head, squat body and camera remain consistent. Eye pixels vary slightly under generative redraw; human review remains pending. |
 | V21 | V21 · Minimal ink features | Unhelmeted face styles | [V21](../expansion/images/v21-v01.png) | pending | 1101 story character / style study; Royans fictional character. Guarin dossier; proposed face grammar. Parent inspection: Unhelmeted giant head, cropped dark hair, small ink eyes and stubble retain compact Guarin. Broad ink shadows remain textured rather than extremely sparse; scar placement needs dossier review. |
 | V22 | V22 · Dry pigment face | Unhelmeted face styles | [V22](../expansion/images/v22-v01.png) | pending | 1101 story character / style study; Royans fictional character. Guarin dossier; proposed face grammar. Parent inspection: Dry granular pigment and broken facial marks differ from the flatter face studies. Giant head and original gear remain; facial modeling is more naturalistic than V21/V24 and the scar shifts onto the cheek. |
 | V23 | V23 · Angular carved face | Unhelmeted face styles | [V23](../expansion/images/v23-v01.png) | pending | 1101 story character / style study; Royans fictional character. Guarin dossier; proposed face grammar. Parent inspection: Angular nose, blocky brow and carved facial planes give a distinct face grammar. Huge head and original gear remain. Scar is exaggerated and cheek-positioned rather than the dossier mark above the ear. |
@@ -81,75 +75,69 @@ Drawing IDs identify the candidate, not its source or preference position. Based
 
 Gallery order, first to last. Ranking does not change acceptance decisions.
 
-1. F62
-2. F63
-3. F64
-4. F66
-5. F68
-6. F69
-7. F61
-8. F37
-9. F50
-10. F51
-11. V22
-12. F41
-13. F18
-14. F46
-15. F40
-16. F31
-17. F34
-18. F32
-19. F33
-20. F35
-21. F36
-22. F38
-23. F39
-24. F42
-25. F43
-26. F44
-27. F45
-28. F47
-29. F48
-30. F49
-31. F52
-32. F53
-33. F54
-34. F55
-35. F56
-36. F57
-37. F58
-38. F59
-39. F60
-40. V25
-41. F20
-42. F25
-43. V21
-44. V23
-45. F19
-46. F26
-47. V24
-48. F23
-49. F16
-50. F21
-51. F17
-52. F28
-53. F30
-54. F24
-55. F27
-56. F29
-57. F01
-58. F02
-59. F03
-60. F04
-61. F05
-62. F06
-63. F07
-64. F22
-65. F12
-66. F14
-67. F08
-68. F09
-69. F10
-70. F11
-71. F13
-72. F15
+1. F61
+2. F37
+3. F50
+4. F51
+5. V22
+6. F41
+7. F18
+8. F46
+9. F40
+10. F31
+11. F34
+12. F32
+13. F33
+14. F35
+15. F36
+16. F38
+17. F39
+18. F42
+19. F43
+20. F44
+21. F45
+22. F47
+23. F48
+24. F49
+25. F52
+26. F53
+27. F54
+28. F55
+29. F56
+30. F57
+31. F58
+32. F59
+33. F60
+34. V25
+35. F20
+36. F25
+37. V21
+38. V23
+39. F19
+40. F26
+41. V24
+42. F23
+43. F16
+44. F21
+45. F17
+46. F28
+47. F30
+48. F24
+49. F27
+50. F29
+51. F01
+52. F02
+53. F03
+54. F04
+55. F05
+56. F06
+57. F07
+58. F22
+59. F12
+60. F14
+61. F08
+62. F09
+63. F10
+64. F11
+65. F13
+66. F15

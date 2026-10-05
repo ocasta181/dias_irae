@@ -326,3 +326,6 @@ Current decision at commit `3aef464`: preserve the four explicitly selected styl
 
 
 2026-10-06 card identity correction at commit `e5ad5fc`, confidence 100%: F25 was the source of F37, but source prefixes made titles misleading. Published all 65 existing cards with their own drawing IDs in titles and compact controls, and explicit “Based on” source labels. Preserved all decisions, comments and saved positions. Four publisher tests, lint and live browser verification pass. Wrong-eye v03 drawings remain excluded; corrected F37-eye generation is still pending.
+
+
+2026-10-06 publication checkpoint at commit `24c570a`: all 27 first corrected-source trials inspected; seven F37-family studies published, with 65 prior reviews preserved. Live gallery has 72 cards; all seven new images load at the beginning. Twenty trials held for eye enlargement or retained original V22/F18 eye features. These are not inputs. Eye corrections and the remaining two family comparisons are still required; no face-production approval is claimed.
