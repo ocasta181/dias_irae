@@ -3,27 +3,52 @@
   "measurementMethod": "Rasterized component witness; final occlusion reviewed visually",
   "coverage": [
     {
-      "direction": "SE",
+      "direction": "N",
       "clip": "idle",
       "frames": 8
     },
     {
-      "direction": "SE",
+      "direction": "N",
       "clip": "walk",
       "frames": 24
     },
     {
-      "direction": "SE",
+      "direction": "N",
       "clip": "cut",
       "frames": 12
     },
     {
-      "direction": "SE",
+      "direction": "N",
       "clip": "hurt",
       "frames": 8
     },
     {
-      "direction": "SE",
+      "direction": "N",
+      "clip": "death",
+      "frames": 12
+    },
+    {
+      "direction": "NE",
+      "clip": "idle",
+      "frames": 8
+    },
+    {
+      "direction": "NE",
+      "clip": "walk",
+      "frames": 24
+    },
+    {
+      "direction": "NE",
+      "clip": "cut",
+      "frames": 12
+    },
+    {
+      "direction": "NE",
+      "clip": "hurt",
+      "frames": 8
+    },
+    {
+      "direction": "NE",
       "clip": "death",
       "frames": 12
     },
@@ -53,52 +78,27 @@
       "frames": 12
     },
     {
-      "direction": "W",
+      "direction": "SE",
       "clip": "idle",
       "frames": 8
     },
     {
-      "direction": "W",
+      "direction": "SE",
       "clip": "walk",
       "frames": 24
     },
     {
-      "direction": "W",
+      "direction": "SE",
       "clip": "cut",
       "frames": 12
     },
     {
-      "direction": "W",
+      "direction": "SE",
       "clip": "hurt",
       "frames": 8
     },
     {
-      "direction": "W",
-      "clip": "death",
-      "frames": 12
-    },
-    {
-      "direction": "SW",
-      "clip": "idle",
-      "frames": 8
-    },
-    {
-      "direction": "SW",
-      "clip": "walk",
-      "frames": 24
-    },
-    {
-      "direction": "SW",
-      "clip": "cut",
-      "frames": 12
-    },
-    {
-      "direction": "SW",
-      "clip": "hurt",
-      "frames": 8
-    },
-    {
-      "direction": "SW",
+      "direction": "SE",
       "clip": "death",
       "frames": 12
     },
@@ -128,27 +128,52 @@
       "frames": 12
     },
     {
-      "direction": "NE",
+      "direction": "SW",
       "clip": "idle",
       "frames": 8
     },
     {
-      "direction": "NE",
+      "direction": "SW",
       "clip": "walk",
       "frames": 24
     },
     {
-      "direction": "NE",
+      "direction": "SW",
       "clip": "cut",
       "frames": 12
     },
     {
-      "direction": "NE",
+      "direction": "SW",
       "clip": "hurt",
       "frames": 8
     },
     {
-      "direction": "NE",
+      "direction": "SW",
+      "clip": "death",
+      "frames": 12
+    },
+    {
+      "direction": "W",
+      "clip": "idle",
+      "frames": 8
+    },
+    {
+      "direction": "W",
+      "clip": "walk",
+      "frames": 24
+    },
+    {
+      "direction": "W",
+      "clip": "cut",
+      "frames": 12
+    },
+    {
+      "direction": "W",
+      "clip": "hurt",
+      "frames": 8
+    },
+    {
+      "direction": "W",
       "clip": "death",
       "frames": 12
     },
@@ -182,12 +207,20 @@
   "maxRasterPawError": 0.6991618026395321,
   "pages": [
     {
-      "image": "pages/wolf-se-v01.png",
+      "image": "pages/wolf-n-v01.png",
       "dimensions": [
         1536,
-        530
+        436
       ],
-      "bytes": 824200
+      "bytes": 794531
+    },
+    {
+      "image": "pages/wolf-ne-v01.png",
+      "dimensions": [
+        1536,
+        646
+      ],
+      "bytes": 873966
     },
     {
       "image": "pages/wolf-e-v01.png",
@@ -198,20 +231,12 @@
       "bytes": 822064
     },
     {
-      "image": "pages/wolf-w-v01.png",
+      "image": "pages/wolf-se-v01.png",
       "dimensions": [
         1536,
-        638
+        530
       ],
-      "bytes": 821487
-    },
-    {
-      "image": "pages/wolf-sw-v01.png",
-      "dimensions": [
-        1536,
-        529
-      ],
-      "bytes": 818554
+      "bytes": 824200
     },
     {
       "image": "pages/wolf-s-v01.png",
@@ -222,12 +247,20 @@
       "bytes": 445620
     },
     {
-      "image": "pages/wolf-ne-v01.png",
+      "image": "pages/wolf-sw-v01.png",
       "dimensions": [
         1536,
-        646
+        529
       ],
-      "bytes": 873966
+      "bytes": 818554
+    },
+    {
+      "image": "pages/wolf-w-v01.png",
+      "dimensions": [
+        1536,
+        638
+      ],
+      "bytes": 821487
     },
     {
       "image": "pages/wolf-nw-v01.png",

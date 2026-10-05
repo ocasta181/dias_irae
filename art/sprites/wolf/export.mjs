@@ -84,3 +84,4 @@ await writeFile(resolve(root, "atlas.json"), JSON.stringify(atlas, null, 2) + "\
 await writeFile(resolve(root, "contact-observations.json"), JSON.stringify(observations, null, 2) + "\n");
 await writeFile(resolve(root, "validation.json"), JSON.stringify(qa, null, 2) + "\n");
 console.log(JSON.stringify({ poses: atlas.sourceFrames, directions: names, maxRasterPawError: qa.maxRasterPawError, failures: qa.failures.slice(0, 8) }));
+if (qa.failures.length) process.exitCode = 1;

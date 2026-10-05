@@ -45,5 +45,10 @@
     "path": "sources/wolf-ne-parts-v01.png",
     "facing": "NE",
     "mirror": true
+  },
+  "N": {
+    "path": "sources/wolf-n-parts-v01.png",
+    "facing": "N",
+    "mirror": false
   }
 }

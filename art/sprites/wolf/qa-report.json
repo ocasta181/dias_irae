@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "reconstructed": 512,
+  "testedGutters": 512,
+  "contact": {
+    "passed": true,
+    "basis": "measured-art",
+    "scope": "submitted contact samples only",
+    "observation_count": 4416,
+    "failures": []
+  },
+  "evidence": [
+    {
+      "direction": "N",
+      "decodedTextureBytes": 2678784,
+      "pageBytes": 794531
+    },
+    {
+      "direction": "NE",
+      "decodedTextureBytes": 3969024,
+      "pageBytes": 873966
+    },
+    {
+      "direction": "E",
+      "decodedTextureBytes": 3919872,
+      "pageBytes": 822064
+    },
+    {
+      "direction": "SE",
+      "decodedTextureBytes": 3256320,
+      "pageBytes": 824200
+    },
+    {
+      "direction": "S",
+      "decodedTextureBytes": 1843200,
+      "pageBytes": 445620
+    },
+    {
+      "direction": "SW",
+      "decodedTextureBytes": 3250176,
+      "pageBytes": 818554
+    },
+    {
+      "direction": "W",
+      "decodedTextureBytes": 3919872,
+      "pageBytes": 821487
+    },
+    {
+      "direction": "NW",
+      "decodedTextureBytes": 3962880,
+      "pageBytes": 876017
+    }
+  ],
+  "failures": [],
+  "scope": "Byte lineage, coverage, timing, lossless trim reconstruction, alpha gutters, page limits and component-witness contacts. Visual anatomy, mood, visible occlusion and engine import require separate review."
+}

@@ -43,11 +43,16 @@ export function contactAnchor(canvas) {
   throw new Error("Paw source has no opaque contact edge");
 }
 
-export async function readParts(path, registrationPath, settings = {}) {
+export async function readBitmap(path) {
   const decoded = await sharp(await readFile(path)).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
-  const image = { width: decoded.info.width, height: decoded.info.height };
-  const full = createCanvas(image.width, image.height); full.getContext("2d").putImageData(new ImageData(new Uint8ClampedArray(decoded.data), image.width, image.height), 0, 0);
-  const data = pixels(full), located = regions(data, image.width, image.height);
+  const full = createCanvas(decoded.info.width, decoded.info.height);
+  full.getContext("2d").putImageData(new ImageData(new Uint8ClampedArray(decoded.data), full.width, full.height), 0, 0);
+  return full;
+}
+
+export async function readParts(path, registrationPath, settings = {}) {
+  const full = await readBitmap(path);
+  const data = pixels(full), located = regions(data, full.width, full.height);
   const result = {}, registration = {};
   partNames.forEach((name, index) => {
     const [x, y, width, fullHeight] = located[index].rect;
@@ -58,6 +63,6 @@ export async function readParts(path, registrationPath, settings = {}) {
     result[name] = { canvas, anchor, name };
     registration[name] = { sourceRect: [x, y, width, height], originalComponentRect: located[index].rect, renderedSize: [canvas.width, canvas.height], contactAnchor: anchor, sourcePixelsSha256: createHash("sha256").update(pixels(canvas)).digest("hex") };
   });
-  if (registrationPath) await writeFile(registrationPath, JSON.stringify({ source: path, dimensions: [image.width, image.height], parts: registration }, null, 2) + "\n");
+  if (registrationPath) await writeFile(registrationPath, JSON.stringify({ source: path, dimensions: [full.width, full.height], parts: registration }, null, 2) + "\n");
   return result;
 }
