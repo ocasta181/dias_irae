@@ -290,3 +290,11 @@ Current decision at commit `3aef464`: preserve the four explicitly selected styl
 | 2026-10-05 | Campaign inventory and character motion lab | Primary sprite/atlas documentation researched; all campaign people, locations, draft abilities, items, world states, effects, audio and interface needs inventoried. G15 / S13 captured after coverage verification. First study has 384 drawn poses, eight facings and twelve tags; wrong facings and two state rows repaired from exact upstream images. All 96 selections, frame data and twelve timing/transition tests pass. Working checkpoints committed and pushed separately. | User reviews motion, loop joins, foot alignment and style; other asset categories and level integration keep their approval gates. |
 
 2026-10-05 round-two quality decision at commit `0ea9c58`, confidence 98%: all 15 initial Grok trials completed before the stop reached the queue. Their clean or isolated feature marks drift from the preferred grain. A narrower F31 repair still drifts. Preserve these 16 trials as held-back evidence, and use the built-in generator for all 30 current candidates. This changes the initial 15/15 provider plan to meet the user’s requested consistent drawing medium. Selected reference paths remain unchanged; failed trials are never inputs.
+
+
+2026-10-05 checkpoint at commit `c0b8812`: current preferred-feature round has 30 full-body comparison drawings, with 18 direct F25 variants and 12 neighboring top-twelve studies. All selected-source and unchanged-output hashes verified. Two faint trials were replaced independently from original F25, not from failed outputs. Mouth/brow subtlety and four remaining angular nose limits are recorded. The 16 unsuitable Grok trials remain held back; current candidates use the built-in generator. Human face selection remains pending.
+
+- [x] Capture saved top twelve and selected #5 F25 before the preferred-feature round.
+- [x] Generate and inspect 30 nearby facial-mark variants while preserving outfit and broader style.
+- [ ] Publish additions on the automatically saved face review page; verify old comments and order.
+- [ ] User reviews noses, eyes, mouths and brows and selects the useful direction.

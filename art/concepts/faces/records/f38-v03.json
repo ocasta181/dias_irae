@@ -21,6 +21,7 @@
   ],
   "mode": "RGB",
   "pixel_changes": "none",
-  "parent_visual_review": "pending",
-  "review_status": "pending"
+  "parent_visual_review": "Inspected full body and face crop. Requested feature difference was too faint for comparison. Held back in favor of an independently generated stronger feature drawing from the same original F25 source. This trial was never an input.",
+  "review_status": "revise",
+  "presentation": "held back"
 }
