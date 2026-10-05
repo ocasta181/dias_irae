@@ -2,7 +2,7 @@
   "decision_commit": "c6438cf",
   "confidence_percent": 99,
   "count": 27,
-  "method": "Nine hair/nose combinations per F25/V22/F18 base; varied eyebrows; eye marks fixed to the exact user close-up, matched to F37.",
+  "method": "Nine hair/nose combinations per selected F37/V22/F18 drawing; varied eyebrows; only the exact F37 eye marks in the user close-up remain fixed.",
   "sources": {
     "F25": {
       "file": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f25-v01.png",
@@ -15,14 +15,18 @@
     "F18": {
       "file": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f18-v01.png",
       "sha256": "d84a37bb6f83f737ce0f8dda99ea488659f75591c5c13e7642827ed6a4d87540"
+    },
+    "F37": {
+      "file": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f37-v03.png",
+      "sha256": "8c23eb7026a4a1bb5e3207b38a116229219c403350813077c51df2b0c2bf4fd3"
     }
   },
   "candidates": [
     {
       "id": "F61",
-      "title": "F25 \u00b7 Close blunt crop / Tiny round button / Heavy level bars",
+      "title": "F37 \u00b7 Close blunt crop / Tiny round button / Heavy level bars",
       "provider": "built-in imagegen",
-      "source_id": "F25",
+      "source_id": "F37",
       "eye_reference": "user-approved F37 close-up",
       "round": 3,
       "hairstyle": "Close blunt crop",
@@ -34,9 +38,9 @@
     },
     {
       "id": "F62",
-      "title": "F25 \u00b7 Close blunt crop / Slender curved hook / Thin sloping strokes",
+      "title": "F37 \u00b7 Close blunt crop / Slender curved hook / Thin sloping strokes",
       "provider": "built-in imagegen",
-      "source_id": "F25",
+      "source_id": "F37",
       "eye_reference": "user-approved F37 close-up",
       "round": 3,
       "hairstyle": "Close blunt crop",
@@ -48,9 +52,9 @@
     },
     {
       "id": "F63",
-      "title": "F25 \u00b7 Close blunt crop / Short crooked broad tip / Sparse broken arches",
+      "title": "F37 \u00b7 Close blunt crop / Short crooked broad tip / Sparse broken arches",
       "provider": "built-in imagegen",
-      "source_id": "F25",
+      "source_id": "F37",
       "eye_reference": "user-approved F37 close-up",
       "round": 3,
       "hairstyle": "Close blunt crop",
@@ -62,9 +66,9 @@
     },
     {
       "id": "F64",
-      "title": "F25 \u00b7 Ear-length ragged side part / Tiny round button / Thin sloping strokes",
+      "title": "F37 \u00b7 Ear-length ragged side part / Tiny round button / Thin sloping strokes",
       "provider": "built-in imagegen",
-      "source_id": "F25",
+      "source_id": "F37",
       "eye_reference": "user-approved F37 close-up",
       "round": 3,
       "hairstyle": "Ear-length ragged side part",
@@ -76,9 +80,9 @@
     },
     {
       "id": "F65",
-      "title": "F25 \u00b7 Ear-length ragged side part / Slender curved hook / Sparse broken arches",
+      "title": "F37 \u00b7 Ear-length ragged side part / Slender curved hook / Sparse broken arches",
       "provider": "built-in imagegen",
-      "source_id": "F25",
+      "source_id": "F37",
       "eye_reference": "user-approved F37 close-up",
       "round": 3,
       "hairstyle": "Ear-length ragged side part",
@@ -90,9 +94,9 @@
     },
     {
       "id": "F66",
-      "title": "F25 \u00b7 Ear-length ragged side part / Short crooked broad tip / Heavy level bars",
+      "title": "F37 \u00b7 Ear-length ragged side part / Short crooked broad tip / Heavy level bars",
       "provider": "built-in imagegen",
-      "source_id": "F25",
+      "source_id": "F37",
       "eye_reference": "user-approved F37 close-up",
       "round": 3,
       "hairstyle": "Ear-length ragged side part",
@@ -104,9 +108,9 @@
     },
     {
       "id": "F67",
-      "title": "F25 \u00b7 Receding sparse crown / Tiny round button / Sparse broken arches",
+      "title": "F37 \u00b7 Receding sparse crown / Tiny round button / Sparse broken arches",
       "provider": "built-in imagegen",
-      "source_id": "F25",
+      "source_id": "F37",
       "eye_reference": "user-approved F37 close-up",
       "round": 3,
       "hairstyle": "Receding sparse crown",
@@ -118,9 +122,9 @@
     },
     {
       "id": "F68",
-      "title": "F25 \u00b7 Receding sparse crown / Slender curved hook / Heavy level bars",
+      "title": "F37 \u00b7 Receding sparse crown / Slender curved hook / Heavy level bars",
       "provider": "built-in imagegen",
-      "source_id": "F25",
+      "source_id": "F37",
       "eye_reference": "user-approved F37 close-up",
       "round": 3,
       "hairstyle": "Receding sparse crown",
@@ -132,9 +136,9 @@
     },
     {
       "id": "F69",
-      "title": "F25 \u00b7 Receding sparse crown / Short crooked broad tip / Thin sloping strokes",
+      "title": "F37 \u00b7 Receding sparse crown / Short crooked broad tip / Thin sloping strokes",
       "provider": "built-in imagegen",
-      "source_id": "F25",
+      "source_id": "F37",
       "eye_reference": "user-approved F37 close-up",
       "round": 3,
       "hairstyle": "Receding sparse crown",
@@ -413,5 +417,15 @@
     "user_attachment_sha256": "ed1369f8669ed444fcd79788e9b1e30b4f4fc3dda1b83b6ea4e0c350c746339e",
     "source_match_normalized_correlation": 0.9925847947272896
   },
-  "correction_commit": "fcd4bc2"
+  "correction_commit": "fcd4bc2",
+  "selected_bases": [
+    "F37",
+    "V22",
+    "F18"
+  ],
+  "source_identity_correction": {
+    "commit": "8fe2400",
+    "confidence_percent": 98,
+    "reason": "The user identified the misleading source-prefixed F37 title as the selection confusion; use the shown F37 drawing for the formerly F25-labeled family."
+  }
 }

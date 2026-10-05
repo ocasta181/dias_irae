@@ -61,3 +61,6 @@ Decision at commit `c6438cf`, confidence 95%: the requested several versions of 
 
 
 2026-10-06 labeling correction at commit `e5ad5fc`, confidence 100%: source names were prefixed to candidate titles, so the F37 card appeared to be called F25. Display titles now begin with the actual drawing ID, including F37, while the source link reads “Based on F25 (source image)”. The compact drag control also displays the drawing ID; the editable number remains the preference position. All 65 decisions/comments and the complete saved ranking are preserved. Four publisher tests and lint pass; live browser confirms every title/control matches its drawing ID, F37 remains first, automatic saving is ready, and there is no horizontal overflow. The generator eye reference is the user-selected F37 close-up. Incorrect v03 drawings remain held back; no replacement drawing has been published yet.
+
+
+2026-10-06 source identity resolved at commit `8fe2400`, confidence 98%: the misleading F25 heading belonged to the selected F37 drawing. The first matrix therefore uses exact **F37**, with V22 and F18 retained as the other two selected bases. All three keep only the F37 eyes fixed; eyebrows vary. Current `selected_bases` and v04 requests supersede older round-three base labels. No failed round-three output is an input.

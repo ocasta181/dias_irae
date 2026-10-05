@@ -1,5 +1,5 @@
 Use case: precise-object-edit. Asset: F62, full-body Guarin face study.
-Image 1 is the exact F25 base: keep its jaw/face silhouette, mouth, same huge head and tiny squat body, S13 costume, mail, ragged red scarf and cape, boots, sword, shield, pose, elevated game camera, charcoal background, dull brown/gray/burgundy palette, and coarse flat granular 2D drawing.
+Image 1 is the exact F37 base: keep its jaw/face silhouette, mouth, same huge head and tiny squat body, S13 costume, mail, ragged red scarf and cape, boots, sword, shield, pose, elevated game camera, charcoal background, dull brown/gray/burgundy palette, and coarse flat granular 2D drawing.
 Image 2 is the EXACT eye-only source selected by the human. REPLACE Image 1's eyes with those precise two eye marks. These are short irregular horizontal black ink lids with small centered downward projections and broken coarse edges, the near eye wider than the far eye. Match their shape, width, height, spacing, slant and weary expression directly. No detached square dot eyes, no round eyes, no white eyeballs or highlights, no new eye style. The eyes are NOT a variable. Keep them visually identical to Image 2, separated from the eyebrows.
 Change ONLY these three features:
 HAIR: Close blunt crop. Short hair hugging the skull, uneven short blunt fringe, exposed ears; no tall spikes.
