@@ -43,7 +43,7 @@ Use exact file paths and hashes in the reference register. A filename or a prose
 **Inputs:** canonical anchors, clip inventory, required travel/stride, durations and error budgets.
 **Do:** calculate every frame's phase, duration, root path, support identities, landmark coordinates, limb lengths, gear paths and depth order. Derive sampling from permitted temporal error. Include loop seams and input handoffs. Use code for coordinates and deterministic projection.
 **Output:** machine-readable pose targets, per-frame tables and visible pose guides with stable frame identifiers.
-**Pass:** planted contacts remain at their world targets, lift/travel is correct, limbs remain reachable and the cycle closes. Planned targets prove the plan only; they are not measurements of finished art.
+**Pass:** planted contacts remain at their world targets, lift/travel is correct, limbs remain reachable and the cycle closes. Planned targets prove the plan only; they are not measurements of finished art. Use [contact checks](references/contact-checks.md) for the bundled deterministic checker.
 
 ### 5. Verify motion blocking
 
@@ -57,7 +57,7 @@ Use exact file paths and hashes in the reference register. A filename or a prose
 **Inputs:** exact identity/style/scene references, one facing/action's targets, pose guide and self-contained drawing request.
 **Do:** choose the smallest pilot that exposes the main risks, including a difficult view and idle when relevant. Supply actual images and embed the numerical frame table. Request one action/facing or manageable contiguous pose set. Preserve raw output, request, tool/version/settings and reference hashes. Register it to the canonical canvas, annotate actual visible landmarks and measure it.
 **Output:** original pilot drawings, source registration, measured landmarks and a defect report with frame IDs.
-**Pass:** real drawings satisfy geometry, identity, texture and scale checks. Static screenshots cannot prove motion. Follow the available image-generation tool/skill for raster authoring; do not replace requested character art with code-drawn stand-ins.
+**Pass:** real drawings satisfy geometry, identity, texture and scale checks. Static screenshots cannot prove motion. Apply [contact checks](references/contact-checks.md) to registered measurements, separately from the target plan. Follow the available image-generation tool/skill for raster authoring; do not replace requested character art with code-drawn stand-ins.
 
 ### 7. Repair failures, then complete coverage
 
