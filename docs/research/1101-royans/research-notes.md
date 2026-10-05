@@ -61,3 +61,9 @@ The dossier is a regional selection, not an exhaustive census. Several household
 Some scholarly sources expose only abstracts. The reports label those uses and restrict claims to the accessible evidence. Shared museum and biological sources were kept to short summaries across reports. Temporary source scans and calculator transcripts supported verification; no deliverable depends on a temporary asset path.
 
 The story files were untracked at the start of this task. Their relative links are checked against the shared local workspace; this task does not add them to Git. Research results do not revise the canon.
+
+## Document validation
+
+The final document check passed for all eight expected files: six reports, the index, and this record. It checked nonempty content, final newlines, local file and heading targets, web-link structure, Maps parameters, consistent table columns, and absence of internal web-reference markers or unfinished placeholders. All 46 local references resolved in the shared workspace. Web-link structure checks do not claim that every remote page will remain reachable.
+
+The six reports contain about 21,000 words. The index supplies a period overview and a list of story choices to review. Whitespace checks passed for this research directory. No game or unit tests were run because this task changes Markdown research documents only. No database operation or schema change was performed.
