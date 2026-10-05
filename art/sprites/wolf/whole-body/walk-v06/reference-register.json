@@ -7,5 +7,11 @@
   "newDrawingsRequired": 12,
   "cycleMs": 1000,
   "groundSpeed": 36,
-  "provider": "built-in image_gen; one pose per request"
+  "provider": "built-in image_gen; one pose per request",
+  "derivedIdentity": {
+    "path": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v06/canonical-canvas.png",
+    "sha256": "493f1a64ef6e9cb98fc18e3e0eb4a98a7f81e56b600354ccad0afadf69846fb4",
+    "source": "base-wolf-v02.png",
+    "method": "one fixed whole-image scale .48 and offset 300,432; original high-resolution paint retained; same logical layout as guides"
+  }
 }
