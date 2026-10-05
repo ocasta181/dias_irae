@@ -1,0 +1,47 @@
+{
+  "unchanged_frames": 378,
+  "changed_frames": [
+    {
+      "direction": "S",
+      "pose": 25,
+      "image": "pages/guarin-s-v02.png",
+      "sha256": "8718de0e6a6d1bffc58547aeb8db23d84e5e1e31e68e4a597dc691cf27f537d8"
+    },
+    {
+      "direction": "S",
+      "pose": 26,
+      "image": "pages/guarin-s-v02.png",
+      "sha256": "5846562d9fb37c7467fb5c29ca400118e9694b597b38f2a2faabbcd4d7d007fc"
+    },
+    {
+      "direction": "S",
+      "pose": 27,
+      "image": "pages/guarin-s-v02.png",
+      "sha256": "972448774fb5ccb153763e6ce96764578a22d70b61a1c9a079076ee95c52b92b"
+    },
+    {
+      "direction": "S",
+      "pose": 28,
+      "image": "pages/guarin-s-v02.png",
+      "sha256": "a616956f242b180b7e5b041db84c43532e228f447efae9a0be5f7ed0c1231436"
+    },
+    {
+      "direction": "S",
+      "pose": 29,
+      "image": "pages/guarin-s-v02.png",
+      "sha256": "68ed4a8d7f9ccb41c177b9cbaf0a7f74b72e1350567baf3be380e5816e4cc44b"
+    },
+    {
+      "direction": "S",
+      "pose": 30,
+      "image": "pages/guarin-s-v02.png",
+      "sha256": "d186498ae9e120be00571b5fc77a47ebdb572f963f52e4863c199552a73755f2"
+    }
+  ],
+  "unchanged_clip_timing": true,
+  "unchanged_selection": true,
+  "source_frames": 384,
+  "selected_family": "hurt",
+  "visual_approval": "pending",
+  "inspection": "Actual source row retains right-hand sword through all six recoil poses. Browser frame selection and recovery verification follows."
+}

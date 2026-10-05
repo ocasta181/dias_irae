@@ -620,151 +620,151 @@
           "family": "hurt",
           "pose": 1,
           "rect": [
-            54,
-            725,
-            135,
+            29,
+            696,
+            150,
             158
           ],
           "pivot": [
-            62.5,
-            142.92499999999995
+            68.0,
+            138.92499999999995
           ],
           "occupied": [
             3,
             3,
-            132,
+            147,
             155
           ],
-          "sha256": "76dfbb20e28e9f9489edd519bab4766a8f1606e9b0d5eb3eb8703f16db710b7f",
+          "sha256": "8718de0e6a6d1bffc58547aeb8db23d84e5e1e31e68e4a597dc691cf27f537d8",
           "border_touch": false,
           "neighbor_pixels_in_rectangle": 0,
-          "image": "pages/guarin-s-v01.png",
-          "sourceStandingHeight": 151
+          "image": "pages/guarin-s-v02.png",
+          "sourceStandingHeight": 150
         },
         {
           "family": "hurt",
           "pose": 2,
           "rect": [
-            214,
-            725,
-            148,
-            161
+            193,
+            690,
+            161,
+            164
           ],
           "pivot": [
-            58.5,
-            142.92499999999995
+            75.0,
+            144.92499999999995
           ],
           "occupied": [
             3,
             3,
-            145,
-            158
+            158,
+            161
           ],
-          "sha256": "3f30bb2697cc1cb67d30457172bfbdba00ab9d994505f8fbec6d17ca9f0dfbe8",
+          "sha256": "5846562d9fb37c7467fb5c29ca400118e9694b597b38f2a2faabbcd4d7d007fc",
           "border_touch": false,
           "neighbor_pixels_in_rectangle": 0,
-          "image": "pages/guarin-s-v01.png",
-          "sourceStandingHeight": 151
+          "image": "pages/guarin-s-v02.png",
+          "sourceStandingHeight": 150
         },
         {
           "family": "hurt",
           "pose": 3,
           "rect": [
-            381,
-            737,
-            154,
-            150
+            373,
+            705,
+            160,
+            143
           ],
           "pivot": [
-            50.0,
-            130.92499999999995
+            77.0,
+            129.92499999999995
           ],
           "occupied": [
             3,
             3,
-            151,
-            147
+            157,
+            140
           ],
-          "sha256": "fed2691006db5fbcf81f505a6d611bca53d9a5d96c19ac61e9bbe21565db9445",
+          "sha256": "972448774fb5ccb153763e6ce96764578a22d70b61a1c9a079076ee95c52b92b",
           "border_touch": false,
           "neighbor_pixels_in_rectangle": 0,
-          "image": "pages/guarin-s-v01.png",
-          "sourceStandingHeight": 151
+          "image": "pages/guarin-s-v02.png",
+          "sourceStandingHeight": 150
         },
         {
           "family": "hurt",
           "pose": 4,
           "rect": [
-            546,
-            729,
-            135,
-            157
+            558,
+            695,
+            153,
+            154
           ],
           "pivot": [
-            49.5,
+            67.5,
+            139.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            150,
+            151
+          ],
+          "sha256": "a616956f242b180b7e5b041db84c43532e228f447efae9a0be5f7ed0c1231436",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0,
+          "image": "pages/guarin-s-v02.png",
+          "sourceStandingHeight": 150
+        },
+        {
+          "family": "hurt",
+          "pose": 5,
+          "rect": [
+            748,
+            697,
+            134,
+            154
+          ],
+          "pivot": [
+            53.0,
+            137.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            131,
+            151
+          ],
+          "sha256": "68ed4a8d7f9ccb41c177b9cbaf0a7f74b72e1350567baf3be380e5816e4cc44b",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0,
+          "image": "pages/guarin-s-v02.png",
+          "sourceStandingHeight": 150
+        },
+        {
+          "family": "hurt",
+          "pose": 6,
+          "rect": [
+            923,
+            696,
+            135,
+            156
+          ],
+          "pivot": [
+            60.5,
             138.92499999999995
           ],
           "occupied": [
             3,
             3,
             132,
-            154
-          ],
-          "sha256": "1ec7b82d105cc7c6173861f0c95af0a7fa6d0ae739cf31a89e02c2d31e03ae27",
-          "border_touch": false,
-          "neighbor_pixels_in_rectangle": 0,
-          "image": "pages/guarin-s-v01.png",
-          "sourceStandingHeight": 151
-        },
-        {
-          "family": "hurt",
-          "pose": 5,
-          "rect": [
-            713,
-            728,
-            133,
-            155
-          ],
-          "pivot": [
-            40.5,
-            139.92499999999995
-          ],
-          "occupied": [
-            3,
-            3,
-            130,
-            152
-          ],
-          "sha256": "d0ea1427403055c3a33c053edd3ee34fd168eeeeb7660c54125f5dd875d24d3a",
-          "border_touch": false,
-          "neighbor_pixels_in_rectangle": 0,
-          "image": "pages/guarin-s-v01.png",
-          "sourceStandingHeight": 151
-        },
-        {
-          "family": "hurt",
-          "pose": 6,
-          "rect": [
-            888,
-            726,
-            132,
-            156
-          ],
-          "pivot": [
-            26.0,
-            141.92499999999995
-          ],
-          "occupied": [
-            3,
-            3,
-            129,
             153
           ],
-          "sha256": "7c3f3ced5c09e6d47c7930d990a933d8fb4cf5fd785df9a442c54779d09566cc",
+          "sha256": "d186498ae9e120be00571b5fc77a47ebdb572f963f52e4863c199552a73755f2",
           "border_touch": false,
           "neighbor_pixels_in_rectangle": 0,
-          "image": "pages/guarin-s-v01.png",
-          "sourceStandingHeight": 151
+          "image": "pages/guarin-s-v02.png",
+          "sourceStandingHeight": 150
         },
         {
           "family": "death",
@@ -1220,7 +1220,18 @@
       "unique_cell_hashes": 48,
       "standingHeight": 151,
       "assessment": "Generated study; gait, guard coverage, prayer and directional identity require motion review. Figure regions are measured, with row/column foot anchors; manual pivot refinement remains open.",
-      "row_sources": {}
+      "row_sources": {
+        "hurt": {
+          "image": "pages/guarin-s-v02.png",
+          "sha256": "9c7cc8cbdb7ca5baf13d23e557ee74874c9bc207427b8a4e20abe6b5cd41e785",
+          "dimensions": [
+            1086,
+            1448
+          ],
+          "transparent_pixel_fraction": 0.5432,
+          "inspection": "Only the six improved hurt poses are used; other regenerated families are excluded."
+        }
+      }
     },
     "SE": {
       "image": "pages/guarin-se-v01.png",

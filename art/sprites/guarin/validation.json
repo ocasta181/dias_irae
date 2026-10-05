@@ -11,7 +11,18 @@
       "alpha_fraction": 0.5642,
       "unique_cell_hashes": 48,
       "border_touching_frames": [],
-      "row_sources": {}
+      "row_sources": {
+        "hurt": {
+          "image": "pages/guarin-s-v02.png",
+          "sha256": "9c7cc8cbdb7ca5baf13d23e557ee74874c9bc207427b8a4e20abe6b5cd41e785",
+          "dimensions": [
+            1086,
+            1448
+          ],
+          "transparent_pixel_fraction": 0.5432,
+          "inspection": "Only the six improved hurt poses are used; other regenerated families are excluded."
+        }
+      }
     },
     "SE": {
       "dimensions": [

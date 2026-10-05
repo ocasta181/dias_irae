@@ -7,5 +7,8 @@
   },
   "SE": {
     "guard": "pages/guarin-se-v02.png"
+  },
+  "S": {
+    "hurt": "pages/guarin-s-v02.png"
   }
 }

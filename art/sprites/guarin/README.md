@@ -2,7 +2,7 @@
 
 Open [the motion lab](http://127.0.0.1:8765/art/sprites/guarin/viewer/index.html). The existing art server is `python3 scripts/serve_art.py --port 8765` from the project root. The app needs no package install, new service, endpoint, database, or build step.
 
-Selected style: G15 / S13, captured after inventory verification on 2026-10-05 local time. The selected gameplay screen and its original character were actual image inputs in every generation. The logical sheet contains **384 drawn poses, eight directions, eight state families, and twelve playback tags per direction**. It uses eleven original transparent PNG pages: six east cut poses, six southwest hurt poses and six southeast guard poses come from separate repaired pages. Source rasters remain unchanged.
+Selected style: G15 / S13, captured after inventory verification on 2026-10-05 local time. The selected gameplay screen and its original character were actual image inputs in every generation. The logical sheet contains **384 drawn poses, eight directions, eight state families, and twelve playback tags per direction**. It uses twelve original transparent PNG pages: six east cut poses, six southwest hurt poses and six southeast guard poses and six front hurt poses come from separate repaired pages. Source rasters remain unchanged.
 
 The default view is a controllable character stage with six side-panel presets: walk/strike/walk, eight-direction walking, guard/release/strike, kneel/pray/rise, hurt/defeat, and a full state tour. Movement and strike cancel a running preset. Reset returns the character to the starting position. The defeat pose remains held until reset.
 
