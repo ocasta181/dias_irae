@@ -3,11 +3,14 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import vm from "node:vm";
 import * as animation from "./animation.mjs";
+import { stickWolfAtlas } from "./stick-wolf.mjs";
 
 const atlas = JSON.parse(readFileSync(new URL("../atlas.json", import.meta.url)));
 const wolf = JSON.parse(readFileSync(new URL("../../wolf/atlas.json", import.meta.url)));
 const wholeWolf = JSON.parse(readFileSync(new URL("../../wolf/whole-body/atlas.json", import.meta.url)));
-const source = readFileSync(new URL("viewer.mjs", import.meta.url), "utf8").replace(/^import .*\n/, "").replace(/^start\(\)\.catch.*$/m, "");
+const plan = JSON.parse(readFileSync(new URL("../../wolf/whole-body/walk-v06/targets.json", import.meta.url)));
+const sticks = stickWolfAtlas(plan, wholeWolf.references);
+const source = readFileSync(new URL("viewer.mjs", import.meta.url), "utf8").replace(/^import .*\n/gm, "").replace(/^start\(\)\.catch.*$/m, "");
 
 function playground(startup = false) {
   const nodes = [];
@@ -33,7 +36,7 @@ function playground(startup = false) {
   class Image {
     set src(value) { queueMicrotask(() => this.onload()); }
   }
-  const scope = vm.createContext({ ...animation, document, window, inputAtlas: atlas, inputWolf: wolf, URLSearchParams, Image, fetch: url => new Promise(resolve => pendingLoads.push({ url, resolve })), requestAnimationFrame: callback => renderRequests.push(callback), Path2D: class {} });
+  const scope = vm.createContext({ ...animation, stickWolfAtlas, document, window, inputAtlas: atlas, inputWolf: wolf, inputSticks: sticks, URLSearchParams, Image, fetch: url => new Promise(resolve => pendingLoads.push({ url, resolve })), requestAnimationFrame: callback => renderRequests.push(callback), Path2D: class {} });
   vm.runInContext(source + (startup ? "" : "\natlas = inputAtlas; for (const page of Object.values(atlas.directions)) for (const frame of page.frames) images.set(frame.image, {path: frame.image}); extent = {left: 1, right: 1, above: 1, below: .3}; wireControls();"), scope);
   return {
     key(type, key, options = {}) {
@@ -42,12 +45,16 @@ function playground(startup = false) {
       return prevented;
     },
     step: time => vm.runInContext(`tick(${time})`, scope, { timeout: 200 }),
-    state: () => JSON.parse(vm.runInContext("JSON.stringify({player, position, scheduled, playing})", scope)),
+    state: () => JSON.parse(vm.runInContext("JSON.stringify({player, position, scheduled, playing, viewMode})", scope)),
     preset: id => nodes.find(item => item.dataset.sequence === id).listeners.click(),
     inspect: clip => { get("clip").value = clip; get("clip").listeners.change(); },
     tune: (speed, fps) => { get("speed").value = speed; get("fps").value = fps; get("fps").listeners.change(); },
     blur: () => window.listeners.blur(),
     select: (id, data) => { scope.inputSelected = data ?? (id === "wolf" ? wolf : atlas); return vm.runInContext(`applyCharacter("${id}", inputSelected, new Map(Object.values(inputSelected.directions).flatMap(page => page.frames).map(frame => [frame.image, {path: frame.image}])))`, scope); },
+    stick: () => vm.runInContext("applyCharacter('wolf', inputWolf, new Map(), inputSticks)", scope),
+    view: mode => { get("view").value = mode; get("view").listeners.change(); },
+    click: id => get(id).listeners.click(),
+    text: id => get(id).textContent,
     size: value => { get("size").value = value; },
     value: id => get(id).value,
     begin: () => vm.runInContext("start()", scope),
@@ -130,11 +137,92 @@ test("selecting wolf during initial loading cannot strand a hidden lab", async (
   assert.equal(lab.renders(), 1);
   lab.change("wolf"); lab.respond(1, wolf);
   await new Promise(setImmediate);
+  lab.respond(2, plan);
+  await new Promise(setImmediate);
   assert.equal(lab.visible(), true);
   assert.equal(lab.value("character"), "wolf");
   lab.respond(0, atlas); await startup;
   assert.equal(lab.value("character"), "wolf");
   lab.step(0); assert.equal(lab.state().player.clip, "idle");
+});
+
+test("Space, Right Arrow and the visible button each step once; repeats never step", () => {
+  const lab = playground(); lab.stick(); lab.view("stick-step"); lab.step(0);
+  assert.equal(lab.text("walk-frame"), "1 / 12");
+  lab.key("keydown", " "); assert.equal(lab.text("walk-frame"), "2 / 12");
+  lab.key("keydown", " ", { repeat: true }); assert.equal(lab.text("walk-frame"), "2 / 12");
+  lab.key("keyup", " "); lab.key("keydown", "ArrowRight");
+  assert.equal(lab.text("walk-frame"), "3 / 12");
+  lab.key("keydown", "ArrowRight", { repeat: true }); assert.equal(lab.text("walk-frame"), "3 / 12");
+  lab.click("walk-next"); assert.equal(lab.text("walk-frame"), "4 / 12");
+  lab.key("keydown", "ArrowLeft"); assert.equal(lab.text("walk-frame"), "3 / 12");
+});
+
+test("manual walking view visits all twelve distinct poses and wraps without moving", () => {
+  const lab = playground(); lab.stick(); lab.view("stick-step"); lab.step(0);
+  const before = lab.state().position;
+  const seen = [];
+  for (let index = 0; index < 12; index++) {
+    lab.step(index * 500); seen.push(lab.text("walk-frame"));
+    lab.key("keydown", " "); lab.key("keyup", " ");
+  }
+  assert.deepEqual(seen, Array.from({ length: 12 }, (_, index) => `${index + 1} / 12`));
+  assert.equal(lab.text("walk-frame"), "1 / 12");
+  assert.deepEqual(lab.state().position, before);
+  assert.equal(lab.state().playing, false);
+});
+
+test("frame view cannot resume through movement, restart or editing a control", () => {
+  const lab = playground(); lab.stick(); lab.view("stick-step"); lab.step(0);
+  lab.key("keydown", "d"); lab.key("keydown", "ArrowUp"); lab.click("restart");
+  lab.key("keydown", "ArrowRight", { editing: true });
+  lab.key("keydown", " ", { ctrlKey: true }); lab.step(2000);
+  assert.equal(lab.text("walk-frame"), "1 / 12");
+  assert.equal(lab.state().playing, false);
+  assert.equal(lab.state().player.elapsedMs, 0);
+  assert.equal(lab.state().position[0], 450);
+});
+
+test("stick movement plays twelve poses over a second with a straight ground root", () => {
+  const lab = playground(); lab.stick(); lab.preserveFrames(); lab.step(0);
+  lab.key("keydown", "d"); lab.step(0);
+  const poses = [], roots = [];
+  for (let index = 1; index <= 60; index++) {
+    lab.step(index * 1000 / 60); poses.push(lab.text("walk-frame")); roots.push(lab.state().position);
+  }
+  assert.equal(new Set(poses).size, 12);
+  assert.ok(Math.abs(lab.state().player.elapsedMs - 1000) < 1e-8);
+  assert.ok(Math.abs(lab.state().position[0] - 504) < 1e-8);
+  assert.ok(roots.every(root => root[1] === 420));
+  lab.key("keyup", "d"); assert.equal(lab.state().player.clip, "idle");
+});
+
+test("stick controls support eight headings and clear held movement on mode changes", () => {
+  const lab = playground(); lab.stick(); lab.step(0);
+  lab.key("keydown", "w"); lab.key("keydown", "a"); lab.step(100);
+  assert.equal(lab.state().player.direction, "NW");
+  assert.ok(lab.state().position[0] < 450 && lab.state().position[1] < 420);
+  lab.view("stick-step"); lab.key("keyup", "a"); lab.key("keyup", "w");
+  assert.equal(lab.state().player.clip, "walk");
+  lab.view("stick-move"); const root = lab.state().position; lab.step(200); lab.step(300);
+  assert.deepEqual(lab.state().position, root);
+  lab.key("keydown", "d"); lab.blur(); assert.equal(lab.state().player.clip, "idle");
+});
+
+test("E stick lines exactly follow the new guides, with fixed torso and twelve unique leg poses", () => {
+  const frames = sticks.directions.E.frames;
+  assert.equal(frames.length, 12);
+  assert.equal(new Set(frames.map(frame => JSON.stringify(frame.lines))).size, 12);
+  for (const [index, frame] of frames.entries()) {
+    assert.deepEqual(frame.pivot, [96, 156]);
+    assert.deepEqual(frame.lines.slice(0, 3), frames[0].lines.slice(0, 3));
+    for (const [limbIndex, id] of ["LH", "LF", "RH", "RF"].entries()) {
+      assert.deepEqual(frame.lines[limbIndex + 3][1], plan.poses[index].feet[id].points[1]);
+      assert.deepEqual(frame.lines[limbIndex + 3][2], plan.poses[index].feet[id].points[3]);
+    }
+    assert.ok(frame.lines.every(line => line.length <= 3));
+    assert.equal(frame.image, undefined);
+  }
 });
 
 test("changing character clears defeated state, held keys and queued actions", () => {

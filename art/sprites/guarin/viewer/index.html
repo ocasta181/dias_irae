@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dias Irae — Character motion lab</title>
-  <link rel="stylesheet" href="viewer.css?v=2">
-  <script type="module" src="viewer.mjs?v=11"></script>
+  <link rel="stylesheet" href="viewer.css?v=3">
+  <script type="module" src="viewer.mjs?v=12"></script>
 </head>
 <body>
 <main>
@@ -25,6 +25,13 @@
       <p id="playback-proof" class="help" aria-live="off"></p>
     </div>
     <aside class="controls">
+      <div id="wolf-view-controls" hidden>
+        <label>Wolf view<select id="view"><option value="stick-move">Stick figure · move</option><option value="stick-step">Stick figure · frame by frame</option><option value="sprite">Painted sprite · old study</option></select></label>
+        <div id="walk-step-controls" hidden>
+          <p>Paused walking poses. Each Space or Right Arrow press advances one frame. Hold does not repeat.</p>
+          <div class="transport"><button id="walk-previous" aria-label="Previous walking frame">←</button><output id="walk-frame">1 / 12</output><button id="walk-next" aria-label="Next walking frame">→</button></div>
+        </div>
+      </div>
       <h2>Animation sequences</h2>
       <div class="sequences"></div>
       <p id="sequence-status" role="status">Keyboard control ready.</p>
