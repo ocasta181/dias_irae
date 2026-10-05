@@ -1,0 +1,33 @@
+{
+  "tool": "image_gen",
+  "model": "undisclosed",
+  "original_path": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-7c724266-2c1c-4bec-9031-8306e212925a.png",
+  "source_path": "base-wolf-v01.png",
+  "sha256": "8e978687f8a4c07dc602e5cc55935696521b6427a77fb8601425f158eb0e7f29",
+  "prompt": "base-prompt.txt",
+  "status": "provisional intact identity; not user-approved",
+  "references": [
+    {
+      "role": "anatomy",
+      "path": "art/mood-board/03-people-and-arms/m15-wolf.jpg",
+      "sha256": "b730e876c890223d1aa96b9f1b0352bcb2e3133d39c8a5cd1bd744e2e9890f1b"
+    },
+    {
+      "role": "drawing style",
+      "path": "art/concepts/images/s13-guarin-isometric-v02.png",
+      "sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c"
+    },
+    {
+      "role": "palette, scale and lighting",
+      "path": "art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+      "sha256": "191af0e5abbd484ec225633f530e6ed6dd9ebf01c5367910c09a353c4ca465d9"
+    }
+  ],
+  "control": "guides/e-neutral.png",
+  "control_sha256": "079bff65ccd1c8ff1aeb24d835ac4ec0af9476b5bdf6d9a2f2d6e0a72097a356",
+  "observations": [
+    "Continuous whole animal; no assembled parts.",
+    "Returned size/placement and heading are not exact guide compliance. Use this as appearance reference; animation guides control pose.",
+    "Small scars make this identity asymmetric; do not mirror without a revised symmetry contract."
+  ]
+}

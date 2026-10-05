@@ -76,6 +76,8 @@ function applyCharacter(id, nextAtlas, loadedImages) {
     image.src = reference.url; image.alt = reference.label; caption.textContent = reference.label; figure.append(image, caption); element("references").append(figure);
   }
   populateActorControls(); updateClipControls(); cancelSequence();
+  document.querySelector(".lab").hidden = false; document.querySelector(".frames").hidden = false;
+  log(`${id} ready. Art remains under review; action buttons test transitions, clip selector inspects individual tags.`);
 }
 
 async function loadCharacter(id) {
@@ -413,12 +415,9 @@ function wireControls() {
 
 async function start() {
   wireControls();
+  requestAnimationFrame(tick);
   const requested = new URLSearchParams(window.location.search).get("character");
   await loadCharacter(characters[requested] ? requested : "guarin");
-  if (!atlas) return;
-  document.querySelector(".lab").hidden = false; document.querySelector(".frames").hidden = false;
-  log("Ready. Art remains under review; action buttons test transitions, clip selector inspects individual tags.");
-  requestAnimationFrame(tick);
 }
 
 start().catch(error => { element("load-status").textContent = `Cannot start: ${error.message}`; });

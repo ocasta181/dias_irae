@@ -210,25 +210,25 @@
       "image": "pages/wolf-n-v01.png",
       "dimensions": [
         1536,
-        436
+        417
       ],
-      "bytes": 794531
+      "bytes": 765954
     },
     {
       "image": "pages/wolf-ne-v01.png",
       "dimensions": [
         1536,
-        646
+        611
       ],
-      "bytes": 873966
+      "bytes": 838617
     },
     {
       "image": "pages/wolf-e-v01.png",
       "dimensions": [
         1536,
-        638
+        640
       ],
-      "bytes": 822064
+      "bytes": 820886
     },
     {
       "image": "pages/wolf-se-v01.png",
@@ -236,7 +236,7 @@
         1536,
         530
       ],
-      "bytes": 824200
+      "bytes": 825893
     },
     {
       "image": "pages/wolf-s-v01.png",
@@ -244,7 +244,7 @@
         1536,
         300
       ],
-      "bytes": 445620
+      "bytes": 445735
     },
     {
       "image": "pages/wolf-sw-v01.png",
@@ -252,23 +252,23 @@
         1536,
         529
       ],
-      "bytes": 818554
+      "bytes": 820426
     },
     {
       "image": "pages/wolf-w-v01.png",
       "dimensions": [
         1536,
-        638
+        640
       ],
-      "bytes": 821487
+      "bytes": 820579
     },
     {
       "image": "pages/wolf-nw-v01.png",
       "dimensions": [
         1536,
-        645
+        606
       ],
-      "bytes": 876017
+      "bytes": 839934
     }
   ]
 }

@@ -23,6 +23,12 @@ export function render(parts, direction, entry) {
   const [rawX, rawY] = directions[direction], length = Math.hypot(rawX, rawY), dx = rawX / length, dy = rawY / length;
   const feet = Object.entries(entry.feet).sort((a, b) => (dy * a[1].local.hip[0] + dx * a[1].lateral) - (dy * b[1].local.hip[0] + dx * b[1].lateral));
   const witnesses = {};
+  function drawHead() {
+    const part = parts[dy === -1 ? "head" : entry.headPart];
+    const width = 56 * part.canvas.width / parts.head.canvas.width;
+    const height = 56 * part.canvas.height / parts.head.canvas.height;
+    paint(context, part, entry.head, width, height, entry.headAngle, [.5, 28 / height]);
+  }
   function drawLeg([id, foot]) {
     const kind = id.endsWith("F") ? "fore" : "hind";
     bone(context, parts[`${kind}Upper`], foot.hip, foot.knee, kind === "fore" ? 14 : 17);
@@ -33,11 +39,11 @@ export function render(parts, direction, entry) {
     witnesses[id] = { point: observed, planted: foot.planted, sourcePart: `${kind}Paw`, method: "opaque bottom-edge midpoint of separately rasterized painted paw", uncertaintyPx: 1 };
   }
   for (const foot of feet.slice(0, 2)) drawLeg(foot);
-  if (dy < 0) paint(context, parts[entry.headPart], entry.head, 56, 56, entry.headAngle);
+  if (dy < 0) drawHead();
   if (dy >= 0) paint(context, parts.tail, entry.tail, 22 + 22 * Math.abs(dx), 20 + 10 * Math.abs(dy), entry.tailAngle, [.8, .2]);
   paint(context, parts.body, entry.body, 50 + 45 * Math.abs(dx), 45 + 35 * Math.abs(dy), .07 * entry.fall);
   for (const foot of feet.slice(2)) drawLeg(foot);
-  if (dy >= 0) paint(context, parts[entry.headPart], entry.head, 56, 56, entry.headAngle);
+  if (dy >= 0) drawHead();
   if (dy < 0) paint(context, parts.tail, entry.tail, 22 + 22 * Math.abs(dx), 20 + 10 * Math.abs(dy), entry.tailAngle, [.5, .2]);
   return { canvas, witnesses };
 }

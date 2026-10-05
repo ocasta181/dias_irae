@@ -3,7 +3,7 @@ import { createHash } from "node:crypto";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { execFileSync } from "node:child_process";
-import { createCanvas, pixels, readBitmap } from "./source-parts.mjs";
+import { components, createCanvas, pixels, readBitmap } from "./source-parts.mjs";
 import { clips, directions, origin } from "./motion.mjs";
 
 const root = dirname(fileURLToPath(import.meta.url));
@@ -45,7 +45,9 @@ for (const [direction, page] of Object.entries(atlas.directions)) {
     check(frame.pivot.every((value, axis) => value + frame.trimOffset[axis] === origin[axis]), "trim-moved-ground-root", subject);
     const full = createCanvas(...frame.logicalSize);
     full.getContext("2d").drawImage(bitmap, ...frame.rect, ...frame.trimOffset, width, height);
-    check(hash(pixels(full)) === frame.sha256, "packed-frame-pixels-changed", subject);
+    const reconstructedPixels = pixels(full);
+    check(hash(reconstructedPixels) === frame.sha256, "packed-frame-pixels-changed", subject);
+    check(components(reconstructedPixels, ...frame.logicalSize).length === 1, "detached-major-wolf-part", subject);
     reconstructed++;
     let clear = true;
     for (let py = y; py < y + height; py++) for (let px = x; px < x + width; px++) {

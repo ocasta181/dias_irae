@@ -1,0 +1,142 @@
+[
+  {
+    "direction": "N",
+    "clip": "idle",
+    "frame": 1,
+    "file": "n-idle.jpg",
+    "readout": "Quiet idle · N · pose 1/8 · 3.33 FPS · loop"
+  },
+  {
+    "direction": "N",
+    "clip": "walk",
+    "frame": 7,
+    "file": "n-walk.jpg",
+    "readout": "Four-beat walk · N · pose 7/24 · 26.67 FPS · loop"
+  },
+  {
+    "direction": "N",
+    "clip": "cut",
+    "frame": 6,
+    "file": "n-cut.jpg",
+    "readout": "Bite · N · pose 6/12 · 16.67 FPS · one shot"
+  },
+  {
+    "direction": "N",
+    "clip": "hurt",
+    "frame": 5,
+    "file": "n-hurt.jpg",
+    "readout": "Recoil · N · pose 5/8 · 19.05 FPS · one shot"
+  },
+  {
+    "direction": "N",
+    "clip": "death",
+    "frame": 12,
+    "file": "n-death.jpg",
+    "readout": "Collapse · N · pose 12/12 · 12.5 FPS · one shot"
+  },
+  {
+    "direction": "E",
+    "clip": "idle",
+    "frame": 1,
+    "file": "e-idle.jpg",
+    "readout": "Quiet idle · E · pose 1/8 · 3.33 FPS · loop"
+  },
+  {
+    "direction": "E",
+    "clip": "walk",
+    "frame": 7,
+    "file": "e-walk.jpg",
+    "readout": "Four-beat walk · E · pose 7/24 · 26.67 FPS · loop"
+  },
+  {
+    "direction": "E",
+    "clip": "cut",
+    "frame": 6,
+    "file": "e-cut.jpg",
+    "readout": "Bite · E · pose 6/12 · 16.67 FPS · one shot"
+  },
+  {
+    "direction": "E",
+    "clip": "hurt",
+    "frame": 5,
+    "file": "e-hurt.jpg",
+    "readout": "Recoil · E · pose 5/8 · 19.05 FPS · one shot"
+  },
+  {
+    "direction": "E",
+    "clip": "death",
+    "frame": 12,
+    "file": "e-death.jpg",
+    "readout": "Collapse · E · pose 12/12 · 12.5 FPS · one shot"
+  },
+  {
+    "direction": "S",
+    "clip": "idle",
+    "frame": 1,
+    "file": "s-idle.jpg",
+    "readout": "Quiet idle · S · pose 1/8 · 3.33 FPS · loop"
+  },
+  {
+    "direction": "S",
+    "clip": "walk",
+    "frame": 7,
+    "file": "s-walk.jpg",
+    "readout": "Four-beat walk · S · pose 7/24 · 26.67 FPS · loop"
+  },
+  {
+    "direction": "S",
+    "clip": "cut",
+    "frame": 6,
+    "file": "s-cut.jpg",
+    "readout": "Bite · S · pose 6/12 · 16.67 FPS · one shot"
+  },
+  {
+    "direction": "S",
+    "clip": "hurt",
+    "frame": 5,
+    "file": "s-hurt.jpg",
+    "readout": "Recoil · S · pose 5/8 · 19.05 FPS · one shot"
+  },
+  {
+    "direction": "S",
+    "clip": "death",
+    "frame": 12,
+    "file": "s-death.jpg",
+    "readout": "Collapse · S · pose 12/12 · 12.5 FPS · one shot"
+  },
+  {
+    "direction": "W",
+    "clip": "idle",
+    "frame": 1,
+    "file": "w-idle.jpg",
+    "readout": "Quiet idle · W · pose 1/8 · 3.33 FPS · loop"
+  },
+  {
+    "direction": "W",
+    "clip": "walk",
+    "frame": 7,
+    "file": "w-walk.jpg",
+    "readout": "Four-beat walk · W · pose 7/24 · 26.67 FPS · loop"
+  },
+  {
+    "direction": "W",
+    "clip": "cut",
+    "frame": 6,
+    "file": "w-cut.jpg",
+    "readout": "Bite · W · pose 6/12 · 16.67 FPS · one shot"
+  },
+  {
+    "direction": "W",
+    "clip": "hurt",
+    "frame": 5,
+    "file": "w-hurt.jpg",
+    "readout": "Recoil · W · pose 5/8 · 19.05 FPS · one shot"
+  },
+  {
+    "direction": "W",
+    "clip": "death",
+    "frame": 12,
+    "file": "w-death.jpg",
+    "readout": "Collapse · W · pose 12/12 · 12.5 FPS · one shot"
+  }
+]

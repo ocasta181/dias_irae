@@ -12,43 +12,43 @@
   "evidence": [
     {
       "direction": "N",
-      "decodedTextureBytes": 2678784,
-      "pageBytes": 794531
+      "decodedTextureBytes": 2562048,
+      "pageBytes": 765954
     },
     {
       "direction": "NE",
-      "decodedTextureBytes": 3969024,
-      "pageBytes": 873966
+      "decodedTextureBytes": 3753984,
+      "pageBytes": 838617
     },
     {
       "direction": "E",
-      "decodedTextureBytes": 3919872,
-      "pageBytes": 822064
+      "decodedTextureBytes": 3932160,
+      "pageBytes": 820886
     },
     {
       "direction": "SE",
       "decodedTextureBytes": 3256320,
-      "pageBytes": 824200
+      "pageBytes": 825893
     },
     {
       "direction": "S",
       "decodedTextureBytes": 1843200,
-      "pageBytes": 445620
+      "pageBytes": 445735
     },
     {
       "direction": "SW",
       "decodedTextureBytes": 3250176,
-      "pageBytes": 818554
+      "pageBytes": 820426
     },
     {
       "direction": "W",
-      "decodedTextureBytes": 3919872,
-      "pageBytes": 821487
+      "decodedTextureBytes": 3932160,
+      "pageBytes": 820579
     },
     {
       "direction": "NW",
-      "decodedTextureBytes": 3962880,
-      "pageBytes": 876017
+      "decodedTextureBytes": 3723264,
+      "pageBytes": 839934
     }
   ],
   "failures": [],

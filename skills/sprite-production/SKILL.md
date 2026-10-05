@@ -55,7 +55,7 @@ Use exact file paths and hashes in the reference register. A filename or a prose
 ### 6. Draw and measure a pilot
 
 **Inputs:** exact identity/style/scene references, one facing/action's targets, pose guide and self-contained drawing request.
-**Do:** choose the smallest pilot that exposes the main risks, including a difficult view and idle when relevant. Supply actual images and embed the numerical frame table. Request one action/facing or manageable contiguous pose set. Preserve raw output, request, tool/version/settings and reference hashes. Register it to the canonical canvas, annotate actual visible landmarks and measure it.
+**Do:** choose the smallest pilot that exposes the main risks, including a difficult view and idle when relevant. For organic characters, begin with intact whole-body drawings and matching skeletal guides. Supply actual images and embed the numerical frame table. Request one action/facing or manageable contiguous pose set. Preserve raw output, request, tool/version/settings and reference hashes. Register it to the canonical canvas, annotate actual visible landmarks and measure it. Read [whole-body pose guidance](references/whole-body-poses.md).
 **Output:** original pilot drawings, source registration, measured landmarks and a defect report with frame IDs.
 **Pass:** real drawings satisfy geometry, identity, texture and scale checks. Static screenshots cannot prove motion. Apply [contact checks](references/contact-checks.md) to registered measurements, separately from the target plan. Follow the available image-generation tool/skill for raster authoring; do not replace requested character art with code-drawn stand-ins.
 
@@ -64,7 +64,7 @@ Use exact file paths and hashes in the reference register. A filename or a prose
 **Inputs:** measured pilot, precise defect list, authoritative references and pose targets.
 **Do:** repair the smallest failed frame range without altering accepted poses. Name one change per request and repeat invariants. Recheck every affected boundary. After the pilot passes and any existing approval gate is met, produce the remaining inventory in bounded units and measure each unit before promotion.
 **Output:** versioned source frames, updated coverage matrix, measured checks and repair records.
-**Pass:** required coverage is complete and no unresolved production defect is hidden. After two targeted attempts at the same failure, diagnose the method; do not keep buying identical free-form results. Switch to controlled 2D parts/rigging or explicit manual correction within authorization, or report the concrete capability limit.
+**Pass:** required coverage is complete and no unresolved production defect is hidden. After two targeted attempts at the same failure, diagnose the method; do not keep buying identical free-form results. Strengthen pose controls, use explicit manual correction within authorization, or report the concrete capability limit. Painted-part rigs require project/user authorization and a visually convincing pilot; passing contact tests does not justify switching to that method or expanding an incoherent assembly.
 
 ### 8. Build the engine package deterministically
 

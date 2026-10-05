@@ -48,6 +48,7 @@ export function pose(direction, clip, phase) {
   const bob = clip === "walk" ? .6 * Math.sin(4 * Math.PI * phase) : 0;
   const bodyHeight = 36 + bob - 25 * fall;
   const lean = 3 * bite - 2 * recoil;
+  const headForward = directions[direction][1] < 0 ? 34 : 44;
   const feet = {};
   for (const [id, limb] of Object.entries(limbs)) {
     const data = clip === "walk" ? paw(phase, limb) : { forward: limb.base * (1 - .2 * fall), lift: 0, planted: fall === 0 };
@@ -60,7 +61,7 @@ export function pose(direction, clip, phase) {
   return {
     rootForward: clip === "walk" ? stride * phase : 0,
     body: project(direction, lean, 0, bodyHeight + breath),
-    head: project(direction, 44 + 5 * bite - 3 * recoil - 12 * fall, 0, 70 + breath - 42 * fall),
+    head: project(direction, headForward + 5 * bite - 3 * recoil - 12 * fall, 0, 70 + breath - 42 * fall),
     headAngle: (-8 * bite + 5 * recoil + 12 * fall) * Math.PI / 180,
     headPart: fall > .75 ? "rest" : bite > .75 ? "open" : "head",
     tail: project(direction, -34 + 14 * fall, 0, bodyHeight - 3),

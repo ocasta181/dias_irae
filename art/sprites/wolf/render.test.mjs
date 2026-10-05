@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readParts } from "./source-parts.mjs";
+import { components, pixels, readParts } from "./source-parts.mjs";
 import { render } from "./render.mjs";
 import { frames } from "./motion.mjs";
 
@@ -18,4 +18,13 @@ test("downsampled painted paw contacts stay inside the registration budget", () 
 test("idle breathing never moves the rasterized paws", () => {
   const observations = frames("SE", "idle").map(entry => render(parts, "SE", entry).witnesses);
   for (const sample of observations.slice(1)) assert.deepEqual(sample, observations[0]);
+});
+
+test("rear head stays joined while a visually detached placement is rejected", async () => {
+  const rear = await readParts(new URL("./sources/wolf-n-parts-v01.png", import.meta.url));
+  const entry = frames("N", "idle")[0];
+  const connected = render(rear, "N", entry).canvas;
+  assert.equal(components(pixels(connected), 192, 192).length, 1);
+  const detached = render(rear, "N", { ...entry, head: [entry.head[0], entry.head[1] - 30 * Math.SQRT1_2] }).canvas;
+  assert.ok(components(pixels(detached), 192, 192).length > 1);
 });

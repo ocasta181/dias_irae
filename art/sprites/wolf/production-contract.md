@@ -1,5 +1,7 @@
 # Wolf sprite pilot
 
+**The component study below is rejected.** See [rejection and replacement method](rejection.md). It is retained as a record, not a current production specification. The active experiment uses whole-body drawings and skeletal pose guides in `whole-body/`.
+
 Decision at commit `17828ac6feebf1391122357ea3b107f797a5908a`: build an ordinary Act I wolf from approved M15 anatomy and exact G15/S13 drawing references; use painted 2D parts with controlled joints, then bake real raster frames. Confidence: 94%. This method keeps surface detail stable while paw placement is computed rather than guessed by an image model. The user's request authorizes the wolf pilot, lab integration, inspection and repairs; final game-art approval remains theirs.
 
 ## Contract and inventory

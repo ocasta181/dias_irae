@@ -8,7 +8,7 @@ const atlas = JSON.parse(readFileSync(new URL("../atlas.json", import.meta.url))
 const wolf = JSON.parse(readFileSync(new URL("../../wolf/atlas.json", import.meta.url)));
 const source = readFileSync(new URL("viewer.mjs", import.meta.url), "utf8").replace(/^import .*\n/, "").replace(/^start\(\)\.catch.*$/m, "");
 
-function playground() {
+function playground(startup = false) {
   const nodes = [];
   const context = new Proxy({}, { get: () => () => {} });
   function node() {
@@ -21,9 +21,13 @@ function playground() {
   const get = id => { if (!elements.has(id)) elements.set(id, node()); return elements.get(id); };
   for (const [id, value] of Object.entries({ size: 160, speed: 1, sampling: "linear", background: "dark" })) get(id).value = value;
   const document = Object.assign(node(), { getElementById: get, createElement: node, querySelector: get, querySelectorAll: selector => nodes.filter(item => selector === "[data-direction]" ? item.dataset.direction : selector === "[data-sequence]" ? item.dataset.sequence : selector === ".frame-button" ? item.className === "frame-button" : false) });
-  const window = node();
-  const scope = vm.createContext({ ...animation, document, window, inputAtlas: atlas, inputWolf: wolf, requestAnimationFrame() {}, Path2D: class {} });
-  vm.runInContext(`${source}\natlas = inputAtlas; extent = {left: 1, right: 1, above: 1, below: .3}; wireControls();`, scope);
+  const window = Object.assign(node(), { location: { search: "" } });
+  const pendingLoads = [], renderRequests = [];
+  class Image {
+    set src(value) { queueMicrotask(() => this.onload()); }
+  }
+  const scope = vm.createContext({ ...animation, document, window, inputAtlas: atlas, inputWolf: wolf, URLSearchParams, Image, fetch: url => new Promise(resolve => pendingLoads.push({ url, resolve })), requestAnimationFrame: callback => renderRequests.push(callback), Path2D: class {} });
+  vm.runInContext(source + (startup ? "" : "\natlas = inputAtlas; extent = {left: 1, right: 1, above: 1, below: .3}; wireControls();"), scope);
   return {
     key(type, key, options = {}) {
       let prevented = false;
@@ -39,6 +43,11 @@ function playground() {
     select: id => vm.runInContext(`applyCharacter("${id}", ${id === "wolf" ? "inputWolf" : "inputAtlas"}, new Map())`, scope),
     size: value => { get("size").value = value; },
     value: id => get(id).value,
+    begin: () => vm.runInContext("start()", scope),
+    change: id => { get("character").value = id; get("character").listeners.change(); },
+    respond: (index, data) => pendingLoads[index].resolve({ ok: true, json: async () => data }),
+    renders: () => renderRequests.length,
+    visible: () => get(".lab").hidden === false,
   };
 }
 
@@ -49,6 +58,18 @@ test("page keyboard input moves diagonally and release returns to idle", () => {
   assert.ok(moved.position[0] > 450 && moved.position[1] < 420 && moved.player.direction === "NE");
   lab.key("keyup", "d"); assert.equal(lab.state().player.direction, "N");
   lab.key("keyup", "w"); assert.equal(lab.state().player.clip, "idle");
+});
+
+test("selecting wolf during initial loading cannot strand a hidden lab", async () => {
+  const lab = playground(true), startup = lab.begin();
+  assert.equal(lab.renders(), 1);
+  lab.change("wolf"); lab.respond(1, wolf);
+  await new Promise(setImmediate);
+  assert.equal(lab.visible(), true);
+  assert.equal(lab.value("character"), "wolf");
+  lab.respond(0, atlas); await startup;
+  assert.equal(lab.value("character"), "wolf");
+  lab.step(0); assert.equal(lab.state().player.clip, "idle");
 });
 
 test("changing character clears defeated state, held keys and queued actions", () => {

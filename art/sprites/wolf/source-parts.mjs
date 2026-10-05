@@ -9,7 +9,7 @@ export const { createCanvas, ImageData } = require(canvasModule);
 const sharp = require(require.resolve("sharp", { paths: [dirname(canvasModule)] }));
 export const partNames = ["body", "head", "open", "tail", "foreUpper", "foreLower", "forePaw", "hindUpper", "hindLower", "hindPaw", "rest", "assembled"];
 
-export function regions(pixels, width, height) {
+export function components(pixels, width, height, minimumArea = 500) {
   const visited = new Uint8Array(width * height), found = [];
   for (let start = 0; start < visited.length; start++) {
     if (visited[start] || pixels[start * 4 + 3] < 32) continue;
@@ -22,8 +22,13 @@ export function regions(pixels, width, height) {
         if (next >= 0 && !visited[next] && pixels[next * 4 + 3] >= 32) { visited[next] = 1; pending.push(next); }
       }
     }
-    if (area >= 500) found.push({ rect: [left, top, right - left, bottom - top], area });
+    if (area >= minimumArea) found.push({ rect: [left, top, right - left, bottom - top], area });
   }
+  return found;
+}
+
+export function regions(pixels, width, height) {
+  const found = components(pixels, width, height);
   if (found.length !== 12) throw new Error(`Expected 12 separate painted parts; found ${found.length}`);
   found.sort((a, b) => a.rect[1] - b.rect[1]);
   return [0, 1, 2].flatMap(row => found.slice(row * 4, row * 4 + 4).sort((a, b) => a.rect[0] - b.rect[0]));
