@@ -319,3 +319,6 @@ Current decision at commit `3aef464`: preserve the four explicitly selected styl
 2026-10-05 correction at commit `cea2445`: eyes are fixed, not an exploration variable. Initial two hairstyle/nose pilots rejected by the user and held back. Replacement generation uses exact original F25 eye-band reference and measured geometry; only hairstyles and nose styles may vary.
 
 2026-10-05 constraint correction at commit `feff8cb`: lock ONLY F25 eye marks, not eyebrows. Eyebrows are explicit exploration variables. Latest v03 requests use the original eye-only crop with no eyebrows and three distinct brow treatments in each base matrix. The two over-constrained v02 pilots are held back.
+
+
+2026-10-05 eye-source correction at commit `fcd4bc2`, confidence 99%: the human eye close-up matches F37. Original F25 square eyes were an incorrect reference. The 15 completed v03 drawings are rejected and held back; the remaining old requests are not resumed. Corrected v04 requests use exact named bases with the original F37 eye-only crop, no failed output. Eyes fixed; eyebrows varied. Pilot eye review precedes further generation and publication. Human face selection remains pending.

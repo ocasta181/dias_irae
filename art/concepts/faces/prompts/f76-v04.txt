@@ -1,0 +1,8 @@
+Use case: precise-object-edit. Asset: F76, full-body Guarin face study.
+Image 1 is the exact V22 base: keep its jaw/face silhouette, mouth, same huge head and tiny squat body, S13 costume, mail, ragged red scarf and cape, boots, sword, shield, pose, elevated game camera, charcoal background, dull brown/gray/burgundy palette, and coarse flat granular 2D drawing.
+Image 2 is the EXACT eye-only source selected by the human. REPLACE Image 1's eyes with those precise two eye marks. These are short irregular horizontal black ink lids with small centered downward projections and broken coarse edges, the near eye wider than the far eye. Match their shape, width, height, spacing, slant and weary expression directly. No detached square dot eyes, no round eyes, no white eyeballs or highlights, no new eye style. The eyes are NOT a variable. Keep them visually identical to Image 2, separated from the eyebrows.
+Change ONLY these three features:
+HAIR: Receding sparse crown. High temples with sparse short dark wisps and a visible crown; same adult identity, not an elderly redesign.
+NOSE: Tiny round button: almost absent bridge and one small low rounded nub. Shorten the former nose substantially; no tall nose column or squared end.
+EYEBROWS: Sparse broken arches: visibly disconnected thin pigment dabs tracing a shallow arch, separate from the eyes. Eyebrows ARE allowed to change. Do not change the eye shapes or squint them to follow the brows.
+Keep the same art style and outfit. Flat worn rough pigment, dark, muddy, tired and wretched but exaggerated and cartoony. No 3D rendering, smooth skin, clean comic-book finish, portrait crop, extra objects, text, labels or contact sheet. One complete character in the same full-body frame.
