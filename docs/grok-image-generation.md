@@ -17,7 +17,7 @@ The CLI needs network access and permission to update its own authentication/ses
 
 Use a complete written prompt for every call. The production chain is **approved mood-board images → character exploration → exact selected character image → gameplay-screen exploration**. For gameplay screens, supply the unchanged selected character file as an actual image input, preserve its design and rendering medium, and extend that medium across the entire world. Do not substitute a written approximation. Do not use failed gameplay outputs, screenshots, composites, generated guides or prior session history as references. Grok uses a fresh session and native `image_edit`; the built-in generator receives the exact source path. Record source paths and SHA256 hashes, inspect actual tool inputs, and view every output before presentation. Check character identity, squat proportions, equal human actor scale, shared palette, lighting, texture and projection.
 
-This replaces the earlier text-only restriction for the next production stage. Current selected inputs are S49, S13, S15 and S01. The latest user request authorizes three Grok screens and three built-in screens for each source: 24 separate prompts and outputs.
+This replaced the earlier text-only restriction for gameplay exploration. Selected inputs for that completed batch were S49, S13, S15 and S01: three Grok screens and three built-in screens for each source. The later Guarin pilot uses exact G15 / S13; the latest [45 equipment/cast candidates](../art/concepts/expansion/README.md) use only original S13. These stages used the built-in generator, with actual references and recorded inputs. Their art approval remains open.
 
 ## Earlier text-only calls — historical example
 
@@ -99,7 +99,7 @@ Sources checked: [official headless calls](https://docs.x.ai/build/cli/headless-
 
 G01–G04 are rejected by the user: the player is oversized, the selected designs were not preserved, and actors differ from the world in palette and lighting. The text-only workflow failed this production stage. The earlier inspection was too lenient.
 
-Current work: 24 reference-based screens, six distinct scene/composition prompts for each of S49/S13/S15/S01. Three use Grok native `image_edit`; three use the built-in image generator. Preserve the exact source design, including S01's original open nasal helmet, rather than replacing it with a new design. Both providers receive the unchanged selected file, not previous gameplay failures.
+Completed batch: 24 reference-based screens, six distinct scene/composition prompts for each of S49/S13/S15/S01. Three use Grok native `image_edit`; three use the built-in image generator. Preserve the exact source design, including S01's original open nasal helmet, rather than replacing it with a new design. Both providers receive the unchanged selected file, not previous gameplay failures.
 
 For Grok use the standard dispatcher, `--tools image_edit --allow image_edit --permission-mode dontAsk --no-subagents --disable-web-search --verbatim --max-turns 4`, a new empty working directory and unused `--session-id`. Do not use a system prompt override for this route. Request one native `image_edit` call with the exact saved prompt and `image` array containing the selected absolute path. Verify its actual input before accepting any result. The installed tool says single-reference edits preserve source aspect ratio; record returned dimensions without stretching or cropping the art. No exact image-model identifier or image cost is exposed.
 
