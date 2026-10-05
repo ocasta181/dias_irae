@@ -36,7 +36,8 @@ function updateClipControls() {
   }
 }
 
-function act(action) {
+function act(action, fromSequence = false) {
+  if (!fromSequence) scheduled = [];
   const before = player.clip;
   player = request(player, action);
   if (action === "reset") position = [450, 350];
@@ -136,6 +137,7 @@ function draw() {
 }
 
 function seek(index) {
+  scheduled = [];
   const clip = atlas.clips[player.clip];
   const bounded = Math.max(0, Math.min(index, clip.frames.length - 1));
   player.elapsedMs = clip.frames.slice(0, bounded).reduce((total, frame) => total + frame.durationMs, 0);
@@ -161,7 +163,7 @@ function tick(time) {
   if (playing && !document.hidden) {
     if (scheduled.length) {
       scenarioTime += delta;
-      while (scheduled.length && scheduled[0].at <= scenarioTime) act(scheduled.shift().action);
+      while (scheduled.length && scheduled[0].at <= scenarioTime) act(scheduled.shift().action, true);
     }
     const before = player.clip;
     const result = advance(player, delta * Number(element("speed").value) * clipRate / atlas.clips[player.clip].fps, atlas.clips);
@@ -197,11 +199,11 @@ function wireControls() {
     element("directions").append(button);
   }
   for (const button of document.querySelectorAll("[data-action]")) button.addEventListener("click", () => act(button.dataset.action));
-  element("clip").addEventListener("change", () => { player = inspect(player, element("clip").value); updateClipControls(); stripKey = undefined; draw(); });
+  element("clip").addEventListener("change", () => { scheduled = []; player = inspect(player, element("clip").value); updateClipControls(); stripKey = undefined; draw(); });
   element("play").addEventListener("click", () => { playing = !playing; element("play").textContent = playing ? "Pause" : "Play"; });
   element("previous").addEventListener("click", () => seek(sample(atlas.clips[player.clip], player.elapsedMs).index - 1));
   element("next").addEventListener("click", () => seek(sample(atlas.clips[player.clip], player.elapsedMs).index + 1));
-  element("restart").addEventListener("click", () => { player.elapsedMs = 0; playing = true; element("play").textContent = "Pause"; });
+  element("restart").addEventListener("click", () => { scheduled = []; player.elapsedMs = 0; playing = true; element("play").textContent = "Pause"; });
   element("frame").addEventListener("input", () => seek(Number(element("frame").value)));
   element("speed").addEventListener("input", () => { element("speed-label").textContent = `${element("speed").value}×`; });
   element("size").addEventListener("input", () => { element("size-label").textContent = `${element("size").value} px`; });
