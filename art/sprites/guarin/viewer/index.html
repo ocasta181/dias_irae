@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dias Irae — Character motion lab</title>
   <link rel="stylesheet" href="viewer.css?v=3">
-  <script type="module" src="viewer.mjs?v=12"></script>
+  <script type="module" src="viewer.mjs?v=13"></script>
 </head>
 <body>
 <main>
   <header>
     <p class="eyebrow">Dias Irae · Sprite pilot</p>
     <h1>Character motion lab</h1>
-    <label>Character<select id="character"><option value="guarin">Guarin</option><option value="wolf">Wolf</option></select></label>
+    <label>Character<select id="character"><option value="guarin">Guarin</option><option value="wolf">Wolf</option><option value="human">Human · stick figure</option></select></label>
     <p id="basis">Loading the saved art selection…</p>
   </header>
   <p id="load-status" role="status">Loading frame art…</p>
@@ -25,8 +25,8 @@
       <p id="playback-proof" class="help" aria-live="off"></p>
     </div>
     <aside class="controls">
-      <div id="wolf-view-controls" hidden>
-        <label>Wolf view<select id="view"><option value="stick-move">Stick figure · move</option><option value="stick-step">Stick figure · frame by frame</option><option value="sprite">Painted sprite · old study</option></select></label>
+      <div id="stick-view-controls" hidden>
+        <label><span id="view-label">Wolf view</span><select id="view"><option value="stick-move">Stick figure · move</option><option value="stick-step">Stick figure · frame by frame</option><option id="sprite-view" value="sprite">Painted sprite · old study</option></select></label>
         <div id="walk-step-controls" hidden>
           <p>Paused walking poses. Each Space or Right Arrow press advances one frame. Hold does not repeat.</p>
           <div class="transport"><button id="walk-previous" aria-label="Previous walking frame">←</button><output id="walk-frame">1 / 12</output><button id="walk-next" aria-label="Next walking frame">→</button></div>

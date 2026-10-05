@@ -8,6 +8,7 @@ import { stickWolfAtlas } from "./stick-wolf.mjs";
 const atlas = JSON.parse(readFileSync(new URL("../atlas.json", import.meta.url)));
 const wolf = JSON.parse(readFileSync(new URL("../../wolf/atlas.json", import.meta.url)));
 const wholeWolf = JSON.parse(readFileSync(new URL("../../wolf/whole-body/atlas.json", import.meta.url)));
+const human = JSON.parse(readFileSync(new URL("../locomotion/stick-v01/atlas.json", import.meta.url)));
 const plan = JSON.parse(readFileSync(new URL("../../wolf/whole-body/walk-v06/targets.json", import.meta.url)));
 const sticks = stickWolfAtlas(plan, wholeWolf.references);
 const source = readFileSync(new URL("viewer.mjs", import.meta.url), "utf8").replace(/^import .*\n/gm, "").replace(/^start\(\)\.catch.*$/m, "");
@@ -36,7 +37,7 @@ function playground(startup = false) {
   class Image {
     set src(value) { queueMicrotask(() => this.onload()); }
   }
-  const scope = vm.createContext({ ...animation, stickWolfAtlas, document, window, inputAtlas: atlas, inputWolf: wolf, inputSticks: sticks, URLSearchParams, Image, fetch: url => new Promise(resolve => pendingLoads.push({ url, resolve })), requestAnimationFrame: callback => renderRequests.push(callback), Path2D: class {} });
+  const scope = vm.createContext({ ...animation, stickWolfAtlas, document, window, inputAtlas: atlas, inputWolf: wolf, inputSticks: sticks, inputHuman: human, URLSearchParams, Image, fetch: url => new Promise(resolve => pendingLoads.push({ url, resolve })), requestAnimationFrame: callback => renderRequests.push(callback), Path2D: class {} });
   vm.runInContext(source + (startup ? "" : "\natlas = inputAtlas; for (const page of Object.values(atlas.directions)) for (const frame of page.frames) images.set(frame.image, {path: frame.image}); extent = {left: 1, right: 1, above: 1, below: .3}; wireControls();"), scope);
   return {
     key(type, key, options = {}) {
@@ -52,12 +53,14 @@ function playground(startup = false) {
     blur: () => window.listeners.blur(),
     select: (id, data) => { scope.inputSelected = data ?? (id === "wolf" ? wolf : atlas); return vm.runInContext(`applyCharacter("${id}", inputSelected, new Map(Object.values(inputSelected.directions).flatMap(page => page.frames).map(frame => [frame.image, {path: frame.image}])))`, scope); },
     stick: () => vm.runInContext("applyCharacter('wolf', inputWolf, new Map(), inputSticks)", scope),
+    human: () => vm.runInContext("applyCharacter('human', inputHuman, new Map(), inputHuman)", scope),
     view: mode => { get("view").value = mode; get("view").listeners.change(); },
     click: id => get(id).listeners.click(),
     text: id => get(id).textContent,
     focused: id => get(id).focused,
     size: value => { get("size").value = value; },
     value: id => get(id).value,
+    hidden: id => get(id).hidden,
     begin: () => vm.runInContext("start()", scope),
     change: id => { get("character").value = id; get("character").listeners.change(); },
     respond: (index, data) => pendingLoads[index].resolve({ ok: true, json: async () => data }),
@@ -225,6 +228,59 @@ test("E stick lines exactly follow the new guides, with fixed torso and twelve u
     assert.ok(frame.lines.every(line => line.length <= 3));
     assert.equal(frame.image, undefined);
   }
+});
+
+test("human atlas loads without raster images and defaults to controllable stick movement", async () => {
+  const lab = playground(true), startup = lab.begin();
+  lab.change("human"); lab.respond(1, human);
+  await new Promise(setImmediate);
+  assert.equal(lab.visible(), true);
+  assert.equal(lab.value("character"), "human");
+  assert.equal(lab.state().viewMode, "stick-move");
+  assert.equal(lab.state().player.direction, "SE");
+  assert.equal(lab.hidden("sprite-view"), true);
+  lab.respond(0, atlas); await startup;
+  assert.equal(lab.value("character"), "human");
+});
+
+test("human frame view steps through twelve poses once per press and holds its ground root", () => {
+  const lab = playground(); lab.human(); lab.view("stick-step"); lab.step(0);
+  const root = lab.state().position;
+  for (let index = 1; index <= 12; index++) {
+    lab.key("keydown", index % 2 ? " " : "ArrowRight");
+    lab.key("keydown", index % 2 ? " " : "ArrowRight", { repeat: true });
+    lab.step(index * 250);
+    assert.equal(lab.text("walk-frame"), `${index % 12 + 1} / 12`);
+    assert.deepEqual(lab.state().position, root);
+  }
+  lab.click("walk-next"); assert.equal(lab.text("walk-frame"), "2 / 12");
+  assert.equal(lab.state().playing, false);
+});
+
+test("human walk draws all twelve phases over a second and travels the authored 48-unit stride", () => {
+  const lab = playground(); lab.human(); lab.preserveFrames(); lab.step(0);
+  lab.key("keydown", "ArrowRight"); lab.step(0);
+  const seen = new Set();
+  for (let index = 1; index <= 60; index++) {
+    lab.step(index * 1000 / 60); seen.add(lab.text("walk-frame"));
+    assert.equal(lab.state().position[1], 420);
+  }
+  assert.equal(seen.size, 12);
+  assert.ok(Math.abs(lab.state().position[0] - 498) < 1e-8);
+  lab.key("keyup", "ArrowRight"); assert.equal(lab.state().player.clip, "idle");
+});
+
+test("human mode changes cannot select nonexistent paint or leave old character controls active", () => {
+  const lab = playground(); lab.human(); lab.view("sprite");
+  assert.equal(lab.state().viewMode, "stick-move");
+  assert.equal(lab.key("keydown", " "), false);
+  lab.key("keydown", "w"); lab.key("keydown", "a");
+  assert.equal(lab.state().player.direction, "NW");
+  lab.select("guarin"); lab.key("keydown", " ");
+  assert.equal(lab.state().player.clip, "cut");
+  assert.equal(lab.state().viewMode, "sprite");
+  lab.stick(); assert.equal(lab.state().viewMode, "stick-move");
+  assert.equal(lab.text("view-label"), "Wolf view");
 });
 
 test("changing character clears defeated state, held keys and queued actions", () => {

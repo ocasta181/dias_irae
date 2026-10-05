@@ -1,5 +1,5 @@
 import { advance, createPlayer, duration, face, inspect, request, sample, visibleDelta } from "./animation.mjs?v=2";
-import { stickWolfAtlas } from "./stick-wolf.mjs?v=1";
+import { stickWolfAtlas } from "./stick-wolf.mjs?v=2";
 
 const element = id => document.getElementById(id);
 const stage = element("stage");
@@ -32,7 +32,7 @@ let position = [450, 420];
 let extent;
 let scheduled = [];
 let scenarioTime = 0;
-const characters = { guarin: { root: "../", size: 160 }, wolf: { root: "../../wolf/whole-body/", size: 96 } };
+const characters = { guarin: { root: "../", size: 160 }, wolf: { root: "../../wolf/whole-body/", size: 96 }, human: { root: "../locomotion/stick-v01/", size: 160, review: "README.md", assessment: "README.md" } };
 let characterId = "guarin";
 let loadVersion = 0;
 let loading = false;
@@ -50,6 +50,7 @@ function actorSequences() {
   result.directions = { label: facings.length === 1 ? `Walk → stand (${facings[0]})` : `Walk in all ${facings.length} directions`, steps: [...facings.map((direction, index) => ({ at: index * 1000, action: "walk", direction })), { at: facings.length * 1000, action: "idle" }] };
   if (atlas.clips.cut) result.strike = { ...sequences.strike, label: `Walk → ${atlas.clips.cut.label.toLowerCase()} → walk`, steps: sequences.strike.steps.map(step => step.direction ? { ...step, direction: atlas.directions.E ? "E" : facings[0] } : step) };
   if (characterId === "wolf") result.tour = { label: "Wolf state tour", steps: [{ at: 200, action: "walk" }, { at: 1200, action: "cut" }, { at: 2300, action: "idle" }, { at: 3000, action: "hurt" }, { at: 4100, action: "death" }].filter(step => supports(step.action)) };
+  if (characterId === "human") result.tour = { label: "Stand → walk → stand", steps: [{ at: 0, action: "idle" }, { at: 500, action: "walk" }, { at: 2500, action: "idle" }] };
   return Object.fromEntries(Object.entries(result).filter(([, sequence]) => sequence.steps.every(step => supports(step.action))));
 }
 
@@ -79,14 +80,14 @@ function applyCharacter(id, nextAtlas, loadedImages, nextStickAtlas) {
   element("stage-help").textContent = `${Object.keys(atlas.directions).length === 1 ? "D or Right arrow to walk; other headings pending" : "WASD or arrows to move"}${supports("cut") ? " · Space to strike" : " · Attack pending"}`;
   stage.setAttribute("aria-label", `Character playground. ${element("stage-help").textContent}`);
   element("shortcuts").textContent = `${supports("guard") ? "Hold G to guard; P starts/stops prayer; " : ""}${supports("hurt") ? "H hurts; " : ""}${supports("death") ? "K defeats; " : ""}R resets. Inputs keep their normal keyboard behavior.`;
-  for (const [name, file] of [["review", "manifest.md"], ["assessment", "assessment.md"], ["metadata", "atlas.json"]]) element(`sprite-${name}`).href = characters[id].root + file;
+  for (const [name, file] of [["review", "manifest.md"], ["assessment", "assessment.md"], ["metadata", "atlas.json"]]) element(`sprite-${name}`).href = characters[id].root + (characters[id][name] ?? file);
   element("references").replaceChildren();
   for (const reference of atlas.references) {
     const figure = document.createElement("figure"), image = document.createElement("img"), caption = document.createElement("figcaption");
     image.src = reference.url; image.alt = reference.label; caption.textContent = reference.label; figure.append(image, caption); element("references").append(figure);
   }
   populateActorControls(); updateClipControls(); cancelSequence();
-  setView(id === "wolf" && stickAtlas ? "stick-move" : "sprite");
+  setView(stickAtlas ? "stick-move" : "sprite");
   document.querySelector(".lab").hidden = false; document.querySelector(".frames").hidden = false;
   log(`${id} ready. Art remains under review; action buttons test transitions, clip selector inspects individual tags.`);
 }
@@ -106,7 +107,8 @@ async function loadCharacter(id) {
       if (!planResponse.ok) throw new Error(`Stick plan unavailable (${planResponse.status})`);
       nextStickAtlas = stickWolfAtlas(await planResponse.json(), nextAtlas.references);
     }
-    const sourcePaths = new Set(Object.values(nextAtlas.directions).flatMap(page => page.frames.map(frame => frame.image)));
+    if (id === "human") nextStickAtlas = nextAtlas;
+    const sourcePaths = new Set(Object.values(nextAtlas.directions).flatMap(page => page.frames.map(frame => frame.image)).filter(Boolean));
     const loadedImages = new Map();
     for (const path of sourcePaths) await new Promise((resolve, reject) => {
       const image = new Image();
@@ -315,15 +317,19 @@ function stepWalking(offset) {
 }
 
 function setView(mode) {
+  if (characterId === "human" && mode === "sprite") mode = "stick-move";
   viewMode = stickAtlas && mode !== "sprite" ? mode : "sprite";
   atlas = viewMode === "sprite" ? spriteAtlas : stickAtlas;
   keys.clear(); scheduled = []; player = createPlayer();
-  player.direction = atlas.directions.SE && viewMode === "sprite" ? "SE" : Object.keys(atlas.directions).find(direction => direction === "E") ?? Object.keys(atlas.directions)[0];
+  player.direction = atlas.directions.SE && (viewMode === "sprite" || characterId === "human") ? "SE" : Object.keys(atlas.directions).find(direction => direction === "E") ?? Object.keys(atlas.directions)[0];
   if (viewMode === "stick-step") player = inspect(player, "walk");
   playing = viewMode !== "stick-step";
   lastTime = undefined; lastClip = undefined; stripKey = undefined; lastDrawn = undefined;
   element("view").value = viewMode;
-  element("wolf-view-controls").hidden = !stickAtlas;
+  element("stick-view-controls").hidden = !stickAtlas;
+  element("view-label").textContent = characterId === "human" ? "Human view" : "Wolf view";
+  element("sprite-view").hidden = characterId === "human";
+  element("sprite-view").disabled = characterId === "human";
   element("walk-step-controls").hidden = viewMode !== "stick-step";
   element("play").textContent = playing ? "Pause" : "Play";
   for (const id of ["play", "clip", "speed", "fps"]) element(id).disabled = viewMode === "stick-step";
