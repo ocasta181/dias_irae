@@ -52,3 +52,22 @@ Southeast guard import at commit `d873df3`: six new guard source regions replace
 Guard browser checkpoint at commit `c9c4479`: all six raise/hold/lower source poses select and render. The protective hold is legible at [96 pixels with nearest sampling](guard-review-96.png) and [160 pixels with smooth sampling](guard-review-160.png), on pale and dark ground respectively. No neighboring source figure is visible. Manual release and the guard/release/strike preset complete back to idle. These checks establish source selection and readable coverage, not calibrated camera or final foot alignment.
 
 Ground-guide decision at commit `2fddb27`, confidence 100%: the tester used a 0.5 ground-plane vertical/horizontal ratio, equivalent to a 30-degree elevated orthographic view at a 45-degree horizontal bearing. Replace it with sin(45°), approximately 0.7071, for the explicit 45-degree camera target. Grid slope and ground-plane movement share this value. A failing intent test reproduced the old movement ratio. This changes the preview guide only; source images, their estimated camera, game mechanics and endpoint contracts do not change.
+
+## Remaining guard source review — 2026-10-05
+
+Parent viewed all eight active directional source sheets and the southeast repair. Retain the other seven guard rows for pilot review; do not redraw a defensible motion merely to make all outputs new.
+
+| Facing | Source finding | Action |
+|---|---|---|
+| S | Shield crosses in front of belt/torso in held poses. | Retain; held coverage is visible. |
+| SE | Original shield stayed low; v02 crosses torso and lower faceplate. | Six repaired poses already imported. |
+| E | Far shield edge rises near the front helmet edge; right sword stays on the near side. | Retain; coverage is partly occluded in profile. |
+| NE | Far shield edge rises beyond the rear shoulder/helmet side. | Retain; do not turn the shield face toward the rear camera. |
+| N | Left shield rises beside the helmet; the rear cloak hides front coverage. | Retain the correct rear view. |
+| NW | Near shield tilts forward and its raised edge is visible. | Retain; held gesture remains modest. |
+| W | Near shield rotates forward in the held pair. | Retain; review the modest movement in motion. |
+| SW | Shield crosses the belt and torso in the held pair. | Retain; anatomical hands stay fixed. |
+
+Projection browser check at commit `3ca7e83`: eight-direction walking completes on the corrected guide; arrow-key facing and Space strike work. [Preview](projection-review.png). All 2,880 combinations of twelve clips, eight speeds and thirty frame rates complete or hold correctly after partial and delayed updates in the simulated test harness. This audit is now a repeatable test; it does not certify drawn motion or browser rendering at every setting.
+
+Front hurt repair decision at commit `3ca7e83`, confidence 98%: S v01 hurt poses 2–3 show an empty right hand instead of the retained sword. Generate a new S v02 sheet from exact G15 / S13 with explicit closed hilt grip and visible blade, inspect its fifth row, and select only those six poses if successful. Other 42 front poses must remain unchanged. No failed sprite is an input.

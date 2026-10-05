@@ -1,0 +1,41 @@
+{
+  "viewer_sha256": "51ab795355d4d64d0ef199ad78733efc0535b296b7816725295b6879063f4133",
+  "tested_combinations": 2880,
+  "clips": {
+    "idle": "idle",
+    "walk": "walk",
+    "cut": "idle",
+    "guard_in": "guard_hold",
+    "guard_hold": "guard_hold",
+    "guard_out": "idle",
+    "hurt": "idle",
+    "death": "death",
+    "interact": "idle",
+    "kneel": "channel",
+    "channel": "channel",
+    "rise": "idle"
+  },
+  "speeds": [
+    0.25,
+    0.5,
+    0.75,
+    1,
+    1.25,
+    1.5,
+    1.75,
+    2
+  ],
+  "frames_per_second": {
+    "minimum": 1,
+    "maximum": 30,
+    "step": 1
+  },
+  "elapsed_updates_ms": [
+    0,
+    137.5,
+    65536
+  ],
+  "execution_limit_ms_per_update": 200,
+  "result": "All combinations terminate, reach the expected clip and select an existing source pose.",
+  "scope": "Controller exercised through the existing simulated document and canvas test harness. Actual source art and browser rendering require separate inspection."
+}

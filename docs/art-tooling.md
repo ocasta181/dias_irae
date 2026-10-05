@@ -66,4 +66,4 @@ Primary technical sources checked in this session:
 
 ## Verification boundaries
 
-The current sprite preview has 24 passing timing, transition and keyboard tests. Its browser rendering and presets are inspected separately; these checks do not approve the source art or verify game combat. The Godot runtime was not changed by this preview work. Tests or migrations that delete database data require the separate explicit human approval specified by the project rules; general permission to test does not authorize deletion.
+The current sprite preview has 25 passing timing, transition and keyboard tests. Its browser rendering and presets are inspected separately; these checks do not approve the source art or verify game combat. The Godot runtime was not changed by this preview work. Tests or migrations that delete database data require the separate explicit human approval specified by the project rules; general permission to test does not authorize deletion.

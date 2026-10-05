@@ -29,9 +29,11 @@ function playground() {
       document.listeners[type]({ key, target: { closest: () => options.editing }, ...options, preventDefault: () => { prevented = true; } });
       return prevented;
     },
-    step: time => vm.runInContext(`tick(${time})`, scope),
+    step: time => vm.runInContext(`tick(${time})`, scope, { timeout: 200 }),
     state: () => JSON.parse(vm.runInContext("JSON.stringify({player, position, scheduled, playing})", scope)),
     preset: id => nodes.find(item => item.dataset.sequence === id).listeners.click(),
+    inspect: clip => { get("clip").value = clip; get("clip").listeners.change(); },
+    tune: (speed, fps) => { get("speed").value = speed; get("fps").value = fps; get("fps").listeners.change(); },
     blur: () => window.listeners.blur(),
   };
 }
@@ -127,4 +129,19 @@ test("ground-plane movement matches the intended 45-degree elevated view", () =>
   const horizontal = travel("ArrowRight")[0] - 450;
   const vertical = 420 - travel("ArrowUp")[1];
   assert.ok(Math.abs(vertical / horizontal - Math.sin(Math.PI / 4)) < 1e-8);
+});
+
+test("every supported playback setting can reach its recovery or held pose", () => {
+  const outcomes = { idle: "idle", walk: "walk", cut: "idle", guard_in: "guard_hold", guard_hold: "guard_hold", guard_out: "idle", hurt: "idle", death: "death", interact: "idle", kneel: "channel", channel: "channel", rise: "idle" };
+  for (const [clip, outcome] of Object.entries(outcomes)) {
+    for (let speed = .25; speed <= 2; speed += .25) {
+      for (let fps = 1; fps <= 30; fps++) {
+        const lab = playground(); lab.step(0); lab.inspect(clip); lab.tune(speed, fps);
+        lab.step(137.5); lab.step(65536);
+        const { player } = lab.state();
+        const pose = animation.sample(atlas.clips[player.clip], player.elapsedMs);
+        assert.ok(player.clip === outcome && atlas.directions.SE.frames[pose?.source], `${clip} at ${speed}× and ${fps} FPS must finish or hold with a valid pose`);
+      }
+    }
+  }
 });
