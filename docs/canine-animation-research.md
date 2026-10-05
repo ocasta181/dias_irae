@@ -6,7 +6,9 @@ Decision at `77b62fb`, confidence 95%: investigate canine mechanics and animatio
 
 The user explicitly requested the bounded-subagent skill. The installed skill now follows the confidence rule: infer reversible settings at confidence ≥80%, ask only below that threshold, preserve explicit choices and required approvals. Its frontmatter validator passes. The installed copy is independent of its former link into another project's feature branch; that original source and checkout are unchanged.
 
-Assignment: `/root/canine_gait_research`, read-only, parent model and reasoning effort inherited. It must research canine walk/trot/gallop mechanics, professional animation methods, audit our pose plan and return a concrete pilot/quality-assurance plan with reviewed primary sources. Parent owns integration and the frame-rate comparison. Investigation is running; no conclusion is accepted yet.
+Assignment: `/root/canine_gait_research`, read-only, parent model and reasoning effort inherited. The investigation is complete. Parent checked the cited gait descriptions, original duty-factor results, professional blocking advice, current guide code and failed contact report. Its conclusions below are accepted as research; no sprite-quality approval follows from them.
+
+Integration decision at `8aca7ee`, confidence 95%: retain the valid four-beat order, repair whole-body drawing/control correspondence and measure painted contacts. Cadence and stance changes below are test hypotheses, not established repairs.
 
 ## Frame timing evidence
 
@@ -29,9 +31,64 @@ Our visual tools return snapshots, not a continuously perceived video stream. Pr
 
 Before promoting another candidate, inspect an ordered full-cycle sequence including last→first, maintain anatomical paw identities, measure actual painted stance contacts against actual root travel, and inspect both stationary-root and moving-root evidence at intended scale. Check the whole animal's silhouette, texture and occlusion across transitions. Missing/occluded measurements stay missing; planned guide coordinates cannot substitute for observations. No new candidate is promoted by this research checkpoint.
 
-## Pending decisions
+## Mechanics to preserve through exaggeration
 
-- [ ] Verify and integrate the subagent's primary-source findings.
-- [ ] Choose a cadence/stride pilot from the mechanics and perceptual requirements, with a fair comparison at fixed cycle duration and travel.
+- Use the animal's anatomical left/right throughout: LF = left forepaw, RF = right forepaw, LH = left hindpaw, RH = right hindpaw. Occlusion never changes identity. Forelimb: shoulder → elbow → carpus → paw. Hindlimb: hip → stifle → hock → paw. The backward-facing hindleg bend is the hock. Canines bear weight on pads/toes with the heel elevated. Preserve those relationships while retaining the oversized head and squat short-legged S13 proportions. See [University of Minnesota veterinary anatomy](https://vanat.ahc.umn.edu/run/), digitigrade locomotion section; its anatomy does not prescribe our pixel lengths.
+- Walk is sequential four-beat motion. LH → LF → RH → RF is a valid simplified order. Normal walking alternates two- and three-foot support. The hindpaw arrives after the same-side forepaw clears; a power walk uses shorter steps and longer three-foot support. Equal quarter-cycle spacing and 75% stance are choices, not universal canine constants. See [University of Minnesota's walk explanation](https://vanat.ahc.umn.edu/gaits/walk.html).
+- Trot alternates diagonal pairs, LF/RH and RF/LH; faster versions can include flight. Slight pair dissociation is possible. See [University of Minnesota's trot explanation](https://vanat.ahc.umn.edu/gaits/trot.html). Do not create it by accelerating the four-beat walk.
+- Gallop is asymmetric, with a lead and uneven contact spacing. One rotary example is RH → LH → extended flight → LF → RF → collected flight. Dogs also use transverse gallop. See [University of Minnesota's rotary-gallop explanation](https://vanat.ahc.umn.edu/gaits/rotGallop.html). A run needs its own reference and pose plan.
+
+Stance is landing to toe-off; swing is toe-off to the next landing; duty factor is stance duration divided by the same-paw cycle. Stride is distance between successive contacts of the same paw. During stance the paw retracts relative to the body to remain fixed on the ground. Swing must show lift, clearance, forward recovery and a prepared landing. See [the veterinary gait overview](https://vanat.ahc.umn.edu/gaits/info.html). Its simplified cartoons omit trunk motion; they are footfall explanations, not complete acting reference.
+
+[Fischer, Lehmann and Andrada's original study](https://www.nature.com/articles/s41598-018-34310-0), Results—“Speed walk, speed trot, duty factor,” reports fluoroscopy-trial mean walking duty factors 0.58–0.63 and trotting values 0.42–0.47 across four domestic breeds. The marker-based trials report different ranges. Hindlimb sections describe distinct stifle/hock timing and breed differences. These observations refute a universal 75% prescription; they do not determine our wolf's exact joint angles, speed or proportions. The parent reviewed these passages in the in-app browser after the web reader's cookie redirect failed.
+
+## Authoring method
+
+[Steve Cady's original quadruped lesson](https://www.animationmentor.com/blog/how-to-animate-quadruped-walk-cycles-with-a-jurassic-world-animator/), Preparation/Blocking/Clean-up, starts with anatomy and filmed reference, then thumbnails, full/mid-stride blocking and breakdowns before polishing. His example uses a cat and Maya. Transfer the analysis and construction method to intact 2D drawings; do not adopt its species proportions or rendering medium.
+
+[Kevin Koch's timing/spacing lesson](https://www.animationmentor.com/blog/slow-in-and-slow-out-the-12-basic-principles-of-animation/) distinguishes timing from the distance features move between drawings. Interpolation alone cannot choose convincing spacing. Applied here: track the actual painted paws and silhouette landmarks, including transitions where a limb disappears behind the body. Reviewed article text does not establish that the parent or child perceived their embedded videos continuously.
+
+For the next pilot, each stage has a concrete handoff:
+
+1. **Reference analysis.** Input: one complete, readable canine walk and the intact approved-style base. Output: timestamps for every paw's landing, toe-off and passing position, anatomical identities and visible support combinations. Record ambiguous/hidden contacts; do not substitute guesses.
+2. **Motion blocking.** Input: that worksheet, fixed camera/pivot and measured base proportions. Output: plain connected-stick guides plus intact rough wolf poses at contact, passing, lift-off and pre-landing landmarks. Keep numerical identities in the separate internal worksheet. Verify short-leg reach and same-side paw clearance before painting.
+3. **Whole-cycle drawing.** Input: canonical base plus successful controls. Output: complete animals with stable skull, muzzle, coat landmarks, body volume and paw identities. Build breakdowns around the blocked action. Failed prior animations remain excluded from generation inputs. Two ignored guide formats are evidence to change the control workflow before another finished batch.
+4. **Sampling and contact measurement.** Input: coherent rough cycle. Output: ordered frames, explicit holds, measured painted contact coordinates and uncertainty. Derive travel from accepted stride and cycle, rather than assuming generated art followed target coordinates. Sample the same cycle for cadence comparisons.
+5. **Temporal and package review.** Input: complete rough export. Output: travelling and stationary-root loops at intended size/speed, chronological cycle/seam evidence, contact results and package results. Finish paint and expand headings only after those distinct gates pass.
+
+All movement is drawn into complete sprites. Runtime root travel stays straight, with constant pivot and scale. No runtime bob, sway, squash or decorative positioning.
+
+## Audit of the current guide and paintings
+
+The parent reread `pose-guides.mjs`, imported `paw()` in `motion.mjs` and `contact-report-v04.json`, and independently recalculated these values:
+
+| Current assumption | Finding |
+| --- | --- |
+| LH 0 / LF .25 / RH .5 / RF .75 landing phases | Valid simplified walk order; painted correspondence remains unproved. |
+| 75% stance, eight midpoint drawings | Six stance drawings and only two swing drawings per paw. Lift-off, clearance and landing have little independent representation. |
+| Fixed distal paw vectors | Fore `(1,-5)`, hind `(4,-6)` omit changing carpus/hock angle and paw roll. Reachability is not anatomical correctness. |
+| 36 px stride, 32 px shoulder/hip axis | Different measurements; ratio 1.125 alone does not establish an error. At 75% stance the paw retracts 27 px; short painted legs must support that reach. |
+| Squared-sine lift and smoothstep recovery | Hypothetical trajectories. Zero local forward speed at the end of recovery does not match the grounded paw's backward local speed. Inspect touchdown spacing. |
+| 36 logical px/s, 125 ms holds | Ideal midpoint hold error is ±2.25 px. A 3 px budget leaves 0.75 px for drawing error; current measurement uncertainty is about ±1 px. |
+| Actual measured contact report | Fails at 10.75 logical px drift versus 3 px, with many contacts unmeasured. Registration and frame coverage do not override this rejection. |
+
+For a fixed stride S and N equal midpoint holds, ideal stance hold error is S/(2N). Changing cycle duration and travel speed together leaves it unchanged. Playback speed cannot repair this geometric constraint or invalid drawings. The exact whole-body export remains rejected; the unused older component `pose()` bob is not the active viewer's positioning.
+
+## Proposed cadence comparison and pilot
+
+Decision at `8aca7ee`, confidence 80%: start a controlled **15 drawing-changes/second** trial, with a 20/second comparison if stepping remains distracting. This is our provisional artistic choice, not a verified Hollow Knight rate or an arithmetic midpoint between the games. At a steady 60 Hz display those rates allow uniform holds of four or three display updates respectively; dropped presentation updates still require separate coverage checks.
+
+Example comparison specification, pending reference-based blocking: same 800 ms cycle, same 24 logical px stride, same 30 logical px/s ground travel, same pose trajectory and canvas scale. Twelve drawings give 15/second and ideal ±1 px midpoint hold error; sixteen give 20/second and ±0.75 px. These are calculated sampling limits, not actual-art passes. Do not compare them by merely increasing the existing eight-frame playback control.
+
+The child's proposed 62.5% stance / 37.5% swing supplies alternating two/three supports and more swing time. It lies near the cited walking results but remains a blocking hypothesis. Keep LH/LF/RH/RF landings at 0/.25/.5/.75; toe-offs occur .625 later modulo one. Reference annotation and the exaggerated body's reach must settle the final schedule and stride before export. Equal-rate samples may fall between those event landmarks; preserve the event poses in the authoring worksheet.
+
+## Acceptance and remaining work
+
+- [x] Verify and integrate the subagent's primary-source findings and reproduce the guide's numerical audit.
+- [x] Choose a provisional 15/20 cadence comparison with fixed motion duration and travel; distinguish it from game render FPS and unverified Hollow Knight timings.
 - [ ] Correct motion blocking before detailed art; retain the user's exaggerated whole-body identity and straight runtime root path.
-- [ ] Obtain whole-cycle temporal evidence and measured painted contacts before any motion-quality pass.
+- [ ] Measure every required painted stance interval through the seam. Check the whole hold, not only its midpoint, and require error plus uncertainty to fit the budget. Missing evidence cannot pass.
+- [ ] Establish human continuous-loop/seam review before any convincing-motion claim. Tools that expose only stills/frame traces do not satisfy that observation.
+- [ ] Expand to other headings/actions only after the pilot passes; no new animation was generated or promoted by this investigation.
+
+Deterministic QA can verify source hashes, packing, clipping, pivot/scale, timestamps, complete frame coverage, support schedules and drift computed from measured artwork. It cannot establish convincing weight, limb readability or the human experience of a gait. A failed contact test decisively rejects a candidate; a passed numerical test alone cannot certify production motion.
