@@ -1,0 +1,27 @@
+{
+  "id": "F81",
+  "title": "F18 · Close blunt crop / Short crooked broad tip / Sparse broken arches",
+  "provider": "built-in imagegen",
+  "model": "not exposed by tool",
+  "request": {
+    "prompt": "Use case: precise-object-edit. Asset: F81, full-body Guarin face study.\nImage 1 is the exact F18 base: keep its jaw and cheek silhouette, mouth, same huge head and tiny squat body, S13 costume, mail, ragged red scarf and cape, boots, sword, shield, pose, elevated game camera, charcoal background, dull brown/gray/burgundy palette, and coarse flat granular 2D drawing.\nImage 2 is the EXACT eye-only source selected by the human. REPLACE Image 1's eyes with those precise two eye marks. These are short irregular horizontal black ink lids with small centered downward projections and broken coarse edges, the near eye wider than the far eye. Match their shape, width, height, spacing, slant and weary expression directly. No detached square dot eyes, no round eyes, no white eyeballs or highlights, no new eye style. The eyes are NOT a variable. Keep them visually identical to Image 2, separated from the eyebrows.\nChange ONLY these three features:\nHAIR: Close blunt crop. Short hair hugging the skull, uneven short blunt fringe, exposed ears; no tall spikes.\nNOSE: Short crooked broad rounded tip. About 35 pixels wide and 20–25 pixels tall at the original 1312-pixel canvas width, placed low. Remove the former long bridge; draw a short bent asymmetric nub with rounded uneven lobes and two tiny unequal nostrils. No rectangular end or tall sidewall. The nose contour may move locally; preserve the rest of the head and jaw.\nEYEBROWS: Sparse broken arches: visibly disconnected thin pigment dabs tracing a shallow arch, separate from the eyes. Eyebrows ARE allowed to change. Do not change the eye shapes or squint them to follow the brows.\nKeep the same art style and outfit. Flat worn rough pigment, dark, muddy, tired and wretched but exaggerated and cartoony. No 3D rendering, smooth skin, clean comic-book finish, portrait crop, extra objects, text, labels or contact sheet. One complete character in the same full-body frame.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f18-v01.png",
+      "/Users/ocasta/Code/Dias Irae/art/concepts/faces/references/approved-f37-eyes-only.png"
+    ],
+    "transparent_background": false
+  },
+  "source_sha256": "d84a37bb6f83f737ce0f8dda99ea488659f75591c5c13e7642827ed6a4d87540",
+  "source_reference": "F18",
+  "original_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-bfcd27be-401d-48c5-a5c6-1ed7d31db33b.png",
+  "file": "art/concepts/faces/images/f81-v04.png",
+  "sha256": "bfefb83f9235919a5760b5413d4a692c82e00db89c983ba0b04031f0ce747b9b",
+  "dimensions": [
+    1311,
+    1200
+  ],
+  "mode": "RGB",
+  "pixel_changes": "none",
+  "parent_visual_review": "pending",
+  "review_status": "pending"
+}
