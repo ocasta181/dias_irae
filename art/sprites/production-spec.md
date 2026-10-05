@@ -49,6 +49,8 @@ Use variable holds to keep anticipation readable and impact brief. Do not duplic
 
 ## Quality gates and continuous improvement
 
+2026-10-05 locomotion revision: the user reports directional walking defects and unstable idle feet. The [exact foot-placement contract](guarin/locomotion/README.md) supersedes prose-only gait instructions for future repairs. It defines 24 walking drawings over 800 milliseconds, a measured short stride, fixed idle feet, transition targets and drawing tolerances. Current source sheets and viewer rates remain unchanged until a measured pilot succeeds. The contract is not a claim that replacement art exists or that gameplay input behavior has changed.
+
 - [x] Log upstream selection, exact references, generation prompt, output hash, dimensions, and actual alpha for the first study.
 - [ ] Inspect every direction and action for identity, short proportions, complete weapons, closed/open helm per winner, fixed handedness, and elevated-view consistency.
 - [x] Measure source frame rectangles, occupied bounds, empty cells, clipping, distinct pixel hashes, and approximate pivot offsets. Manual alignment review remains open.
