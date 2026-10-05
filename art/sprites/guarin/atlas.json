@@ -20,1062 +20,1110 @@
           "family": "idle",
           "pose": 1,
           "rect": [
-            0,
-            0,
-            181,
-            181
+            32,
+            16,
+            129,
+            162
           ],
           "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            35,
-            19,
-            158,
-            175
-          ],
-          "sha256": "a139257aae785d0100daed1dc0ab26e61822d636cb844a678023e090f42929c4",
-          "border_touch": false
-        },
-        {
-          "family": "idle",
-          "pose": 2,
-          "rect": [
-            181,
-            0,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            23,
-            19,
-            148,
-            172
-          ],
-          "sha256": "bc9dad99c8f82aecde32e1ae95b757265589955015312b2f93630cfbb89589fa",
-          "border_touch": false
-        },
-        {
-          "family": "idle",
-          "pose": 3,
-          "rect": [
-            362,
-            0,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            13,
-            19,
-            141,
-            172
-          ],
-          "sha256": "53a9488a36232607f1e094bf60ad8fdee40724acea1c8281c572a25ae20b1b7f",
-          "border_touch": false
-        },
-        {
-          "family": "idle",
-          "pose": 4,
-          "rect": [
-            543,
-            0,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            9,
-            19,
-            133,
-            173
-          ],
-          "sha256": "e6f4fb33431d83d165ad1a690fa6763683216243fee72576bb7fe2613f5ef97c",
-          "border_touch": false
-        },
-        {
-          "family": "idle",
-          "pose": 5,
-          "rect": [
-            724,
-            0,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            4,
-            21,
-            134,
-            170
-          ],
-          "sha256": "a82f29dc44455d117860a7ee0bf8ad63ad86814fdb1c1e873569561ad830e80d",
-          "border_touch": false
-        },
-        {
-          "family": "idle",
-          "pose": 6,
-          "rect": [
-            905,
-            0,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            6,
-            19,
-            133,
-            172
-          ],
-          "sha256": "776c4e09a59dba560f156d6044186062187205e9b98874682e0dd776cb5f87eb",
-          "border_touch": false
-        },
-        {
-          "family": "walk",
-          "pose": 1,
-          "rect": [
-            0,
-            181,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            26,
-            10,
-            162,
-            163
-          ],
-          "sha256": "6a46b4bc087c4766a287a3f866726d1f979ce7ba9035884112e6e3f28c7795e5",
-          "border_touch": false
-        },
-        {
-          "family": "walk",
-          "pose": 2,
-          "rect": [
-            181,
-            181,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            18,
-            12,
-            158,
-            173
-          ],
-          "sha256": "7b390e314ff8f8dbabd6604fa8a85d2ae134458384decd691762120dc31cc88a",
-          "border_touch": false
-        },
-        {
-          "family": "walk",
-          "pose": 3,
-          "rect": [
-            362,
-            181,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            11,
-            13,
-            154,
-            171
-          ],
-          "sha256": "aae76700e0bc807b4101b920ab33cc6cee1b70de55f7c4be3ddd28d71f5928ea",
-          "border_touch": false
-        },
-        {
-          "family": "walk",
-          "pose": 4,
-          "rect": [
-            543,
-            181,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            14,
-            14,
-            147,
-            172
-          ],
-          "sha256": "3f5c2a8b7b234c5967190ced2cc995b58ef5eac57b5c539d27496f233f91b2dd",
-          "border_touch": false
-        },
-        {
-          "family": "walk",
-          "pose": 5,
-          "rect": [
-            724,
-            181,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
+            64.5,
+            142.425
           ],
           "occupied": [
             3,
-            14,
-            137,
-            173
-          ],
-          "sha256": "b9b5cb15005b62c620ff7cabf8f42123056a75dccb45f1571d1dc8f4aa009c4b",
-          "border_touch": false
-        },
-        {
-          "family": "walk",
-          "pose": 6,
-          "rect": [
-            905,
-            181,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            7,
-            12,
-            141,
-            162
-          ],
-          "sha256": "404c7b87218812fc6a08e5bd7b6aca75164b92ff18615cdb63cf857b3f498869",
-          "border_touch": false
-        },
-        {
-          "family": "cut",
-          "pose": 1,
-          "rect": [
-            0,
-            362,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            35,
-            5,
-            162,
-            160
-          ],
-          "sha256": "51b6498680805d0ca9967fb04cfca4ca35b1bdca1cf31d0152e97d44b4306f7c",
-          "border_touch": false
-        },
-        {
-          "family": "cut",
-          "pose": 2,
-          "rect": [
-            181,
-            362,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            39,
-            8,
-            162,
-            165
-          ],
-          "sha256": "dbcbe3b2ef476757268792571c7561898b2368ddeb24e5d4f07eafc44cbadcd9",
-          "border_touch": false
-        },
-        {
-          "family": "cut",
-          "pose": 3,
-          "rect": [
-            362,
-            362,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            11,
-            1,
-            155,
-            165
-          ],
-          "sha256": "42f6f0568ab685c2318baa384f10ee59dde02c30629ec10769539f4c981c11bf",
-          "border_touch": false
-        },
-        {
-          "family": "cut",
-          "pose": 4,
-          "rect": [
-            543,
-            362,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            11,
-            20,
-            181,
-            163
-          ],
-          "sha256": "b83bdda7ec7930fa09b316b961f59b87faa4935fce8b41a6a98bb4f87a11dc1f",
-          "border_touch": true
-        },
-        {
-          "family": "cut",
-          "pose": 5,
-          "rect": [
-            724,
-            362,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            0,
-            22,
-            160,
-            161
-          ],
-          "sha256": "51352489fba2a7921416dfccb96e72dca500b75817cf83b9f3042ffacca51522",
-          "border_touch": true
-        },
-        {
-          "family": "cut",
-          "pose": 6,
-          "rect": [
-            905,
-            362,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            13,
-            4,
-            145,
+            3,
+            126,
             159
           ],
-          "sha256": "a28cd68885c6e1ace04129a12652bd8ad6979e89e08b73ea5504b6c48f5f46d4",
-          "border_touch": false
+          "sha256": "22c6775b2a0de6ff9622ee3c4463c5966d08b8033c73060e4d1a6393a285c38c",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
-          "family": "guard",
-          "pose": 1,
-          "rect": [
-            0,
-            543,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            34,
-            5,
-            164,
-            156
-          ],
-          "sha256": "da4629e69fa11f2a8335837e669e1eb3725702c18cdfbe2c274324dfdd251653",
-          "border_touch": false
-        },
-        {
-          "family": "guard",
+          "family": "idle",
           "pose": 2,
           "rect": [
-            181,
-            543,
-            181,
-            181
+            201,
+            16,
+            131,
+            159
           ],
           "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            20,
-            6,
-            162,
-            156
-          ],
-          "sha256": "00fe55723ec268fef326550cc0dcb1cd37bdcaa048e8728857b76772dfc32d02",
-          "border_touch": false
-        },
-        {
-          "family": "guard",
-          "pose": 3,
-          "rect": [
-            362,
-            543,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            18,
-            5,
-            150,
-            156
-          ],
-          "sha256": "0d0582d9aede5f5b8dd779b5aa7b98d56d68bc7c5cff0ddff867f673ed710589",
-          "border_touch": false
-        },
-        {
-          "family": "guard",
-          "pose": 4,
-          "rect": [
-            543,
-            543,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            8,
-            5,
-            143,
-            158
-          ],
-          "sha256": "9e5d2dfcfa0d0bf861e5cd6301bdd124991231d1a4e6a02ffcd6f762e21c270d",
-          "border_touch": false
-        },
-        {
-          "family": "guard",
-          "pose": 5,
-          "rect": [
-            724,
-            543,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
+            65.5,
+            142.425
           ],
           "occupied": [
             3,
-            6,
-            145,
-            157
+            3,
+            128,
+            156
           ],
-          "sha256": "2836627f2f1b33468d0b04fc7a5f6e580299050a3b65370ee4939bd3eab3ad4f",
-          "border_touch": false
+          "sha256": "1896fd2ab0b568c1aa6795db212d021d77d653a81048fa06797b25d9e8b19565",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
-          "family": "guard",
-          "pose": 6,
-          "rect": [
-            905,
-            543,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            9,
-            5,
-            142,
-            154
-          ],
-          "sha256": "54ad2b321e56b920a82330601baefb0ed96775071a0aeb7b33c73054b29e0c4c",
-          "border_touch": false
-        },
-        {
-          "family": "hurt",
-          "pose": 1,
-          "rect": [
-            0,
-            724,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            43,
-            8,
-            171,
-            162
-          ],
-          "sha256": "86e4d3f31e0f3e78224384bf814e69dda31ba5c42e44a1e0ec192359c0dd75a4",
-          "border_touch": false
-        },
-        {
-          "family": "hurt",
-          "pose": 2,
-          "rect": [
-            181,
-            724,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            44,
-            17,
-            167,
-            164
-          ],
-          "sha256": "a8e000a6303e3ae9db3f3cecb075af53359ace5d3aa443bb9d7c0cbff9532a78",
-          "border_touch": false
-        },
-        {
-          "family": "hurt",
+          "family": "idle",
           "pose": 3,
           "rect": [
-            362,
-            724,
-            181,
-            181
+            372,
+            16,
+            134,
+            159
           ],
           "pivot": [
-            90.5,
-            162.9
+            67.0,
+            142.425
           ],
           "occupied": [
-            33,
-            22,
-            153,
-            170
+            3,
+            3,
+            131,
+            156
           ],
-          "sha256": "6f3794316c0c76dd516857625293b62f3c5e04e73606144da5477607eb102aee",
-          "border_touch": false
+          "sha256": "16fbb55a017aeaf1708b530d6abb23e2c7f1b2ea0d753e114f54feadef1050b3",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
-          "family": "hurt",
+          "family": "idle",
           "pose": 4,
           "rect": [
-            543,
-            724,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            23,
-            32,
-            157,
-            158
-          ],
-          "sha256": "50522d3e098285972cb75c7a08cf6567a92ecff3e537fc83034ead951c2f3f63",
-          "border_touch": false
-        },
-        {
-          "family": "hurt",
-          "pose": 5,
-          "rect": [
-            724,
-            724,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            15,
-            15,
-            143,
+            549,
+            16,
+            130,
             160
           ],
-          "sha256": "43825ebcd0d5a118ea42a83bd858d7612e7c98016d917379f4089439e67bcb53",
-          "border_touch": false
+          "pivot": [
+            65.0,
+            142.425
+          ],
+          "occupied": [
+            3,
+            3,
+            127,
+            157
+          ],
+          "sha256": "501399a25fb61d4bf9f8989ef41b87cb2438439ef5c98630ac311215b0f9cb2c",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "idle",
+          "pose": 5,
+          "rect": [
+            725,
+            18,
+            136,
+            155
+          ],
+          "pivot": [
+            68.0,
+            140.425
+          ],
+          "occupied": [
+            3,
+            3,
+            133,
+            152
+          ],
+          "sha256": "384814d8646c812a982f47f6c1fc2c6dd53b8dc1e6323db3ebb4547430dafe5c",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "idle",
+          "pose": 6,
+          "rect": [
+            908,
+            16,
+            133,
+            159
+          ],
+          "pivot": [
+            66.5,
+            142.425
+          ],
+          "occupied": [
+            3,
+            3,
+            130,
+            156
+          ],
+          "sha256": "7433068e1c21b79c7f95a3ee3d91b98b2bf291a7049346449b19a7fbec7e7481",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "walk",
+          "pose": 1,
+          "rect": [
+            23,
+            188,
+            142,
+            159
+          ],
+          "pivot": [
+            73.5,
+            150.925
+          ],
+          "occupied": [
+            3,
+            3,
+            139,
+            156
+          ],
+          "sha256": "0f28c90c8c0fd29007e4f702c06e8234b393177ef457e696c01e217e16326fec",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "walk",
+          "pose": 2,
+          "rect": [
+            196,
+            190,
+            146,
+            167
+          ],
+          "pivot": [
+            70.5,
+            148.925
+          ],
+          "occupied": [
+            3,
+            3,
+            143,
+            164
+          ],
+          "sha256": "e7b214111532317151244dafc1fc0941afdf232f1ba3f7416759043eda07a951",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "walk",
+          "pose": 3,
+          "rect": [
+            370,
+            191,
+            149,
+            164
+          ],
+          "pivot": [
+            69.0,
+            147.925
+          ],
+          "occupied": [
+            3,
+            3,
+            146,
+            161
+          ],
+          "sha256": "ac643250374854ebe272ce91e4c5f54bee2157115260bfe468e01d7e4443d556",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "walk",
+          "pose": 4,
+          "rect": [
+            554,
+            192,
+            139,
+            164
+          ],
+          "pivot": [
+            60.0,
+            146.925
+          ],
+          "occupied": [
+            3,
+            3,
+            136,
+            161
+          ],
+          "sha256": "17a9530bb1237d7d1b52cbeee5c699fe30bb9dfd3c4c70dc7f9729bb49cbafcc",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "walk",
+          "pose": 5,
+          "rect": [
+            724,
+            192,
+            140,
+            165
+          ],
+          "pivot": [
+            69.0,
+            146.925
+          ],
+          "occupied": [
+            3,
+            3,
+            137,
+            162
+          ],
+          "sha256": "efd925265949b9bc8b9ea60ffc2de25596b1c12734bcf5646c589e95163e7252",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "walk",
+          "pose": 6,
+          "rect": [
+            909,
+            190,
+            140,
+            156
+          ],
+          "pivot": [
+            65.5,
+            148.925
+          ],
+          "occupied": [
+            3,
+            3,
+            137,
+            153
+          ],
+          "sha256": "220db9820aa062fbc6338197243fe523989b748e1434939a33aee7b1d432026c",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "cut",
+          "pose": 1,
+          "rect": [
+            32,
+            364,
+            133,
+            161
+          ],
+          "pivot": [
+            64.5,
+            146.425
+          ],
+          "occupied": [
+            3,
+            3,
+            130,
+            158
+          ],
+          "sha256": "066f788a85d7733165137d018f25922e745177e9377e74b1b8e365459de9fd96",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "cut",
+          "pose": 2,
+          "rect": [
+            217,
+            367,
+            129,
+            163
+          ],
+          "pivot": [
+            49.5,
+            143.425
+          ],
+          "occupied": [
+            3,
+            3,
+            126,
+            160
+          ],
+          "sha256": "c7325de10c5aa663b547ec43d5dd15307af123eada5b7b6aa730dfeba9b020cb",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "cut",
+          "pose": 3,
+          "rect": [
+            370,
+            360,
+            150,
+            170
+          ],
+          "pivot": [
+            69.0,
+            150.425
+          ],
+          "occupied": [
+            3,
+            3,
+            147,
+            167
+          ],
+          "sha256": "85d44acb030070407088c066f19090df290f65b9a48634a954f39b84fbafc0af",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "cut",
+          "pose": 4,
+          "rect": [
+            551,
+            379,
+            162,
+            149
+          ],
+          "pivot": [
+            63.0,
+            131.425
+          ],
+          "occupied": [
+            3,
+            3,
+            159,
+            146
+          ],
+          "sha256": "7d9b84057d23cd8a31638f4475cc3d038c5487647966dd372b34365e402e6fb1",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "cut",
+          "pose": 5,
+          "rect": [
+            720,
+            381,
+            167,
+            145
+          ],
+          "pivot": [
+            73.0,
+            129.425
+          ],
+          "occupied": [
+            3,
+            3,
+            164,
+            142
+          ],
+          "sha256": "6e4dfad2267bfadff5a758e9a76184044e1e105f498f0e3dd51d844cb1552197",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "cut",
+          "pose": 6,
+          "rect": [
+            915,
+            363,
+            138,
+            161
+          ],
+          "pivot": [
+            59.5,
+            147.425
+          ],
+          "occupied": [
+            3,
+            3,
+            135,
+            158
+          ],
+          "sha256": "c0c72017e18ad99c6f7079a4db5fe0c6d239463f818392d99179e8e40f14c2cd",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "guard",
+          "pose": 1,
+          "rect": [
+            31,
+            545,
+            136,
+            157
+          ],
+          "pivot": [
+            65.5,
+            140.42499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            133,
+            154
+          ],
+          "sha256": "9d61e349cda0c651b6d0df89dcf3003a2285c84421ee5ef2da46be14ac9a43cf",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "guard",
+          "pose": 2,
+          "rect": [
+            198,
+            546,
+            148,
+            156
+          ],
+          "pivot": [
+            68.5,
+            139.42499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            145,
+            153
+          ],
+          "sha256": "e51e7e404bbabd68b481be1bda96f8ec8d840db19285c7c1daa018d8acc8225e",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "guard",
+          "pose": 3,
+          "rect": [
+            377,
+            545,
+            138,
+            157
+          ],
+          "pivot": [
+            62.0,
+            140.42499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            135,
+            154
+          ],
+          "sha256": "a58134124538a22ac401bd582bfc4c441324df56cc25923ceb9582587fbfe439",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "guard",
+          "pose": 4,
+          "rect": [
+            548,
+            545,
+            141,
+            159
+          ],
+          "pivot": [
+            66.0,
+            140.42499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            138,
+            156
+          ],
+          "sha256": "b0609786cc95557e3af114416953ff3bc793029a81f61c217f8465c3af3740e2",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "guard",
+          "pose": 5,
+          "rect": [
+            724,
+            546,
+            148,
+            157
+          ],
+          "pivot": [
+            69.0,
+            139.42499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            145,
+            154
+          ],
+          "sha256": "5a0f34619d5296d21ffbefb3187ae686727bd11babe35c177b716eefd6fe765e",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "guard",
+          "pose": 6,
+          "rect": [
+            911,
+            545,
+            139,
+            155
+          ],
+          "pivot": [
+            63.5,
+            140.42499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            136,
+            152
+          ],
+          "sha256": "b1a564600d467a0992b2af771a604b35ff5dba338a8ce72bda931a88dee34b6a",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "hurt",
+          "pose": 1,
+          "rect": [
+            40,
+            729,
+            134,
+            160
+          ],
+          "pivot": [
+            56.5,
+            142.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            131,
+            157
+          ],
+          "sha256": "0870c9e735812e8ab46a4ce7bc214d974270b0937a52da986955f8322e7f8ab0",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "hurt",
+          "pose": 2,
+          "rect": [
+            222,
+            738,
+            129,
+            153
+          ],
+          "pivot": [
+            44.5,
+            133.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            126,
+            150
+          ],
+          "sha256": "322a3838cd339668948f8239a48df0cc902a34a5636499f36af7d4b2611164eb",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "hurt",
+          "pose": 3,
+          "rect": [
+            392,
+            743,
+            126,
+            154
+          ],
+          "pivot": [
+            47.0,
+            128.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            123,
+            151
+          ],
+          "sha256": "5f949da5c7b3c35aad33755ad353f8eef8ba93c9d392a9ebb93d4db5eeeb336d",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "hurt",
+          "pose": 4,
+          "rect": [
+            563,
+            753,
+            140,
+            132
+          ],
+          "pivot": [
+            51.0,
+            118.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            137,
+            129
+          ],
+          "sha256": "f20a161b8d52243458e4a3b745a61ff94c03a2ba500763bb52a03bef7a51567d",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "hurt",
+          "pose": 5,
+          "rect": [
+            736,
+            736,
+            134,
+            151
+          ],
+          "pivot": [
+            57.0,
+            135.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            131,
+            148
+          ],
+          "sha256": "6362347d4376f2b5782f8804ff458d530e269444434c2a6a47d85e7bc43aee46",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "hurt",
           "pose": 6,
           "rect": [
-            905,
+            914,
             724,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            12,
-            3,
-            140,
-            161
-          ],
-          "sha256": "524214eb89a1f6904876c87e4cae89d8ab41d6d482d50ef349415141561fe592",
-          "border_touch": false
-        },
-        {
-          "family": "death",
-          "pose": 1,
-          "rect": [
-            0,
-            905,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            34,
-            8,
-            170,
-            154
-          ],
-          "sha256": "44a31dc047eceec8a6cfa7a29f9532b49210bd807e011535559aa229f07d2d23",
-          "border_touch": false
-        },
-        {
-          "family": "death",
-          "pose": 2,
-          "rect": [
-            181,
-            905,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            31,
-            36,
-            160,
-            175
-          ],
-          "sha256": "331f07ca6bb247f6d0587ffb64a64ec553c6a688a8f7a87f40d69da24af98808",
-          "border_touch": false
-        },
-        {
-          "family": "death",
-          "pose": 3,
-          "rect": [
-            362,
-            905,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            21,
-            52,
-            162,
+            134,
             164
           ],
-          "sha256": "e03c7a85046aae7c7c3e116d923fa833a17614b4ada622a142009febe47385b9",
-          "border_touch": false
+          "pivot": [
+            60.5,
+            147.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            131,
+            161
+          ],
+          "sha256": "433a0f9eb44c72591c67145e9bc0ea2b2de3429be947e1e6624abf54b65f6f07",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "death",
-          "pose": 4,
-          "rect": [
-            543,
-            905,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            8,
-            58,
-            168,
-            157
-          ],
-          "sha256": "1fe3be335d2f5754df973a57d3bbc95d6e6bda48530d4c6f9fb26d16965e8330",
-          "border_touch": false
-        },
-        {
-          "family": "death",
-          "pose": 5,
-          "rect": [
-            724,
-            905,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            9,
-            59,
-            181,
-            162
-          ],
-          "sha256": "7043d6892f21eec6427bab199458a43811994b870cd8e08ff6ce98b0d6f41c4a",
-          "border_touch": true
-        },
-        {
-          "family": "death",
-          "pose": 6,
-          "rect": [
-            905,
-            905,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            0,
-            58,
-            157,
-            162
-          ],
-          "sha256": "26c7a54f0b67a349e07a0fdc6653ef8a4182dc6d4f2fe90c8ce3350841729df1",
-          "border_touch": true
-        },
-        {
-          "family": "interact",
           "pose": 1,
           "rect": [
-            0,
-            1086,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            33,
-            3,
-            163,
+            31,
+            910,
+            142,
             152
           ],
-          "sha256": "ee9c1cced57802949fe7029bd471bc17ba2587a3127a670454cb5445449dac0d",
-          "border_touch": false
+          "pivot": [
+            65.5,
+            143.42499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            139,
+            149
+          ],
+          "sha256": "a691d909b6c99986a06858d0e4d0a730a2020f13afc8663751f6a64c3c3d3d7b",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "death",
+          "pose": 2,
+          "rect": [
+            209,
+            938,
+            135,
+            145
+          ],
+          "pivot": [
+            57.5,
+            115.42499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            132,
+            142
+          ],
+          "sha256": "92daaa5aa4152d3ff06185f4d292bfa028bc79304a43e84cc0855cccb3d524cc",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "death",
+          "pose": 3,
+          "rect": [
+            380,
+            954,
+            147,
+            118
+          ],
+          "pivot": [
+            59.0,
+            99.42499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            144,
+            115
+          ],
+          "sha256": "6e6f8a9ceb2bc2b682771314e80e79d5c087921e25dd5e0e5dfc000cc4df95f0",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "death",
+          "pose": 4,
+          "rect": [
+            548,
+            960,
+            166,
+            105
+          ],
+          "pivot": [
+            66.0,
+            93.42499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            163,
+            102
+          ],
+          "sha256": "cd02fd1f12c35632818c88c3509c5d234259637615c28c780749245855a3fd07",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "death",
+          "pose": 5,
+          "rect": [
+            730,
+            961,
+            157,
+            109
+          ],
+          "pivot": [
+            63.0,
+            92.42499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            154,
+            106
+          ],
+          "sha256": "b147fa708e1fb88906c551f8afe70966eb52f411d69152ca80c6bfb8b3baebb8",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "death",
+          "pose": 6,
+          "rect": [
+            899,
+            960,
+            166,
+            110
+          ],
+          "pivot": [
+            75.5,
+            93.42499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            163,
+            107
+          ],
+          "sha256": "610877601f640a3167942d6219b98faf7f8aee0059d320e909abe6a20ca760d1",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "interact",
+          "pose": 1,
+          "rect": [
+            30,
+            1086,
+            136,
+            155
+          ],
+          "pivot": [
+            66.5,
+            138.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            133,
+            152
+          ],
+          "sha256": "ee85a702b031fb1dad3e8bb12b7c30208328de117348323ffd8e8be75b9e16b8",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "interact",
           "pose": 2,
           "rect": [
-            181,
-            1086,
-            181,
-            181
+            205,
+            1118,
+            132,
+            129
           ],
           "pivot": [
-            90.5,
-            162.9
+            61.5,
+            106.92499999999995
           ],
           "occupied": [
-            27,
-            35,
-            153,
-            158
+            3,
+            3,
+            129,
+            126
           ],
-          "sha256": "d297ff512b84cd469f7eb6b392612d68faea182fcc9858937167b7176d974461",
-          "border_touch": false
+          "sha256": "9ed6805da1a522ed4dcd7e7fce01ae72d4360f470f794604f89fb38dd9466e82",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "interact",
           "pose": 3,
           "rect": [
-            362,
-            1086,
-            181,
-            181
+            385,
+            1117,
+            141,
+            122
           ],
           "pivot": [
-            90.5,
-            162.9
+            54.0,
+            107.92499999999995
           ],
           "occupied": [
-            26,
-            34,
-            161,
-            150
+            3,
+            3,
+            138,
+            119
           ],
-          "sha256": "00272e295a2d0998acdca1d26019a40e818db6028002d64b5103a22471094d3d",
-          "border_touch": false
+          "sha256": "1752ef170c060edf58d43237cb1af091709b36a92326d1a6d3ae1efb70e69a2a",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "interact",
           "pose": 4,
           "rect": [
-            543,
-            1086,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            21,
-            6,
-            149,
+            561,
+            1089,
+            134,
             153
           ],
-          "sha256": "6abe938a6235f185117c56594ad5441594e536de9abb4975fbf2183f2f4fdf17",
-          "border_touch": false
+          "pivot": [
+            53.0,
+            135.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            131,
+            150
+          ],
+          "sha256": "f9bb593f076c876b755d09030fb5c2d35e4a2bdce7c4cadf834760cf34e4177d",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "interact",
           "pose": 5,
           "rect": [
-            724,
-            1086,
-            181,
-            181
+            737,
+            1093,
+            139,
+            148
           ],
           "pivot": [
-            90.5,
-            162.9
+            56.0,
+            131.92499999999995
           ],
           "occupied": [
-            16,
-            10,
-            149,
-            181
+            3,
+            3,
+            136,
+            145
           ],
-          "sha256": "a76a5a93fefbd77e37cc4fa32080ce9da44a45f808aaf0eb8ccaf07f9f8a19d6",
-          "border_touch": true
+          "sha256": "585b92012c596e033e0920d8b0c7693096d84b8c8e3021679ecc5dd72d452a2a",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "interact",
           "pose": 6,
           "rect": [
-            905,
+            916,
             1086,
-            181,
-            181
+            134,
+            156
           ],
           "pivot": [
-            90.5,
-            162.9
+            58.5,
+            138.92499999999995
           ],
           "occupied": [
-            14,
             3,
-            142,
-            181
+            3,
+            131,
+            153
           ],
-          "sha256": "3d7c4343e8a792043be1d3b06bd09cadc3e0fb9a1720d47b096c75633fddac5b",
-          "border_touch": true
+          "sha256": "2e06255c3350174b3fe5784bd429c6f76a29740cef513d3d0f554960fdc9459a",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "prayer",
           "pose": 1,
           "rect": [
-            0,
-            1267,
-            181,
-            181
+            31,
+            1266,
+            135,
+            158
           ],
           "pivot": [
-            90.5,
-            162.9
+            65.5,
+            141.42499999999995
           ],
           "occupied": [
-            34,
-            2,
-            163,
-            154
+            3,
+            3,
+            132,
+            155
           ],
-          "sha256": "ce85f9f1de2a15a14db20808f0253ba9611208f61fc994c131d36ba5b59456f5",
-          "border_touch": false
+          "sha256": "def693eef12fab33c9f9e43fc98c1d9458e6fb3da7259fd73cd8d05de6e35bdb",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "prayer",
           "pose": 2,
           "rect": [
-            181,
-            1267,
-            181,
-            181
+            208,
+            1278,
+            135,
+            149
           ],
           "pivot": [
-            90.5,
-            162.9
+            58.5,
+            129.42499999999995
           ],
           "occupied": [
-            30,
-            14,
-            159,
-            157
+            3,
+            3,
+            132,
+            146
           ],
-          "sha256": "89d31ed0e358566d0cb0a0b2d48e6b42308b06632d9a44eaff63cf02d151b964",
-          "border_touch": false
+          "sha256": "6a84cbfbc4328bb16f963577d8204df35e6c75d62b08d53faa9e5cdb3b5200ee",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "prayer",
           "pose": 3,
           "rect": [
-            362,
-            1267,
-            181,
-            181
+            380,
+            1284,
+            133,
+            139
           ],
           "pivot": [
-            90.5,
-            162.9
+            59.0,
+            123.42499999999995
           ],
           "occupied": [
-            21,
-            20,
-            148,
-            153
+            3,
+            3,
+            130,
+            136
           ],
-          "sha256": "bd8af68de4377061ede779bdda4aa668b4ec72be5a5830d2a2f638b12eb24ff8",
-          "border_touch": false
+          "sha256": "e69f6a2f8bde078ccb56178ec986ca965f3629780fbf745306b70327f919831a",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "prayer",
           "pose": 4,
           "rect": [
-            543,
-            1267,
-            181,
-            181
+            556,
+            1284,
+            135,
+            135
           ],
           "pivot": [
-            90.5,
-            162.9
+            58.0,
+            123.42499999999995
           ],
           "occupied": [
-            16,
-            20,
-            145,
-            149
+            3,
+            3,
+            132,
+            132
           ],
-          "sha256": "f8d392c5fa70afb8482d84934266719d752b9310c644de908b974a954e573f80",
-          "border_touch": false
+          "sha256": "4c56d41892f5847ee338df0b016f1df325e82680fb65c7d396033962445b983c",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "prayer",
           "pose": 5,
           "rect": [
-            724,
-            1267,
-            181,
-            181
+            742,
+            1261,
+            136,
+            163
           ],
           "pivot": [
-            90.5,
-            162.9
+            51.0,
+            146.42499999999995
           ],
           "occupied": [
-            21,
-            0,
-            151,
-            154
+            3,
+            3,
+            133,
+            160
           ],
-          "sha256": "1b92d29f98e0ee1d1ddc38c9f5a3461d26b466e0369b567850e3d1b1d12ded52",
-          "border_touch": true
+          "sha256": "7fb8eb80e35966f7b625d4d15227238b92f2237d383c22e59ed8f1f0c0537ab6",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "prayer",
           "pose": 6,
           "rect": [
-            905,
-            1267,
-            181,
-            181
+            915,
+            1261,
+            137,
+            163
           ],
           "pivot": [
-            90.5,
-            162.9
+            59.5,
+            146.42499999999995
           ],
           "occupied": [
-            13,
-            0,
-            144,
-            154
+            3,
+            3,
+            134,
+            160
           ],
-          "sha256": "eb6346f73adf136dbbb085c6946ea889bd840da2e9be235b39023ecbd1e66eec",
-          "border_touch": true
+          "sha256": "875770dae6f461047d336fa63d7886eb603a52364fbe51ebd99a474f5725ddc3",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         }
       ],
       "unique_cell_hashes": 48,
       "standingHeight": 153,
-      "assessment": "Generated study; identity, pose spacing, gait, guard coverage and prayer transitions need in-motion review. Foot pivots are fixed to the source grid, not manually perfected."
+      "assessment": "Generated study; gait, guard coverage, prayer and directional identity require motion review. Figure regions are measured, with row/column foot anchors; manual pivot refinement remains open."
     },
     "NW": {
       "image": "pages/guarin-nw-v01.png",
@@ -1090,1062 +1138,1112 @@
           "family": "idle",
           "pose": 1,
           "rect": [
-            0,
-            0,
-            181,
-            181
+            29,
+            14,
+            149,
+            145
           ],
           "pivot": [
-            90.5,
-            162.9
+            74.5,
+            128.925
           ],
           "occupied": [
-            32,
-            17,
-            175,
-            156
+            3,
+            3,
+            146,
+            142
           ],
-          "sha256": "7bca3dd8476a79ec7c24837a5b57c8f323cc4f55943be873decd5b75a60313a3",
-          "border_touch": false
+          "sha256": "74d69287f507ff1a414f90641427012a1392d428754b17cd510bafc991fc75c8",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "idle",
           "pose": 2,
           "rect": [
-            181,
-            0,
-            181,
-            181
+            207,
+            12,
+            147,
+            149
           ],
           "pivot": [
-            90.5,
-            162.9
+            73.5,
+            130.925
           ],
           "occupied": [
-            29,
-            15,
-            170,
-            158
+            3,
+            3,
+            144,
+            146
           ],
-          "sha256": "4d8bb05813fe9028e8bcf3fc5bf60fd300cfd99c3765bb210ba484c56504b85c",
-          "border_touch": false
+          "sha256": "ac88834b822749f6c3947ac034eff80d63ebd7f766814aee8513bd58e5f76931",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "idle",
           "pose": 3,
           "rect": [
-            362,
-            0,
-            181,
-            181
+            388,
+            13,
+            147,
+            147
           ],
           "pivot": [
-            90.5,
-            162.9
+            73.5,
+            129.925
           ],
           "occupied": [
-            29,
-            16,
-            170,
-            157
+            3,
+            3,
+            144,
+            144
           ],
-          "sha256": "ec22da78baaad46ac421c679167ebb1646487af6343c0a099e3413233e4e6189",
-          "border_touch": false
+          "sha256": "3298c307506f8b054cbeb7690d4d82d63aee4912163c0b9dc093f7c8fd615d88",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "idle",
           "pose": 4,
           "rect": [
-            543,
-            0,
-            181,
-            181
+            572,
+            13,
+            136,
+            146
           ],
           "pivot": [
-            90.5,
-            162.9
+            68.0,
+            129.925
           ],
           "occupied": [
-            32,
-            16,
-            162,
-            156
+            3,
+            3,
+            133,
+            143
           ],
-          "sha256": "17900e0cc22989d7dfb5ae90f38df993a5ef516a99be0a7df99a246bc7c05d4b",
-          "border_touch": false
+          "sha256": "af3472993326ee79efcb901fdbf624ed9b022727db7c0e244d43002313898cb0",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "idle",
           "pose": 5,
           "rect": [
-            724,
-            0,
-            181,
-            181
+            745,
+            12,
+            138,
+            147
           ],
           "pivot": [
-            90.5,
-            162.9
+            69.0,
+            130.925
           ],
           "occupied": [
-            24,
-            15,
-            156,
-            156
+            3,
+            3,
+            135,
+            144
           ],
-          "sha256": "dcf58e4f9f0bd9949e937336fbabd7486c84d9173bae405d7ac03e40791b79ad",
-          "border_touch": false
+          "sha256": "a9a9ea9cedb74bea892618bed4fb9dd255124a274a084fc955b3477dfc95b03c",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "idle",
           "pose": 6,
           "rect": [
-            905,
-            0,
-            181,
-            181
+            926,
+            12,
+            138,
+            148
           ],
           "pivot": [
-            90.5,
-            162.9
+            69.0,
+            130.925
           ],
           "occupied": [
-            24,
-            15,
-            156,
-            157
+            3,
+            3,
+            135,
+            145
           ],
-          "sha256": "54e0881516eb761408b9bd1f3589b3ecc2268e4e5cdb1f4fba6c9718cf05b45a",
-          "border_touch": false
+          "sha256": "655975327aa88a55e89720e45f1b810cf1dda368ef4d420d332d50308d366fbb",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "walk",
           "pose": 1,
           "rect": [
-            0,
-            181,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            35,
-            1,
-            165,
-            181
-          ],
-          "sha256": "4c00fd4a377709a07b80e7b7f0a70511a3b7d8bcf7ac79d4e61f0b9fdfc3fe6f",
-          "border_touch": true
-        },
-        {
-          "family": "walk",
-          "pose": 2,
-          "rect": [
-            181,
-            181,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            24,
-            2,
-            170,
-            181
-          ],
-          "sha256": "34614cb9d8b15df47f31cf1325b3c8598b3ec49203157065260610d7a4931eeb",
-          "border_touch": true
-        },
-        {
-          "family": "walk",
-          "pose": 3,
-          "rect": [
-            362,
-            181,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            27,
-            1,
-            165,
-            181
-          ],
-          "sha256": "b968b7ca0e6208e9333cac1734ef3dbb2296e620cb8e17e298f28894feee5b59",
-          "border_touch": true
-        },
-        {
-          "family": "walk",
-          "pose": 4,
-          "rect": [
-            543,
-            181,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            25,
-            2,
-            161,
-            152
-          ],
-          "sha256": "0a86a70edf665b37f366a756b0c79b027e7fd605d641d37609d81c463b333165",
-          "border_touch": false
-        },
-        {
-          "family": "walk",
-          "pose": 5,
-          "rect": [
-            724,
-            181,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            24,
-            1,
-            160,
+            32,
+            179,
+            136,
             155
           ],
-          "sha256": "54698341f71c595d9ad94f23c391a2b9c1e2467921363596fece56ab7ebb1404",
-          "border_touch": false
+          "pivot": [
+            71.5,
+            139.425
+          ],
+          "occupied": [
+            3,
+            3,
+            133,
+            152
+          ],
+          "sha256": "bdac77c9d83e4128ebf004a1570b6ac4680c47bd5c451d8618470f3cf1e8351c",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "walk",
+          "pose": 2,
+          "rect": [
+            202,
+            180,
+            152,
+            155
+          ],
+          "pivot": [
+            78.5,
+            138.425
+          ],
+          "occupied": [
+            3,
+            3,
+            149,
+            152
+          ],
+          "sha256": "7a06fa4d45fb7bfc7c8221d1c7880a4800e49a49b0166be8d508202c9fd4bc5d",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "walk",
+          "pose": 3,
+          "rect": [
+            386,
+            179,
+            144,
+            155
+          ],
+          "pivot": [
+            75.5,
+            139.425
+          ],
+          "occupied": [
+            3,
+            3,
+            141,
+            152
+          ],
+          "sha256": "211f38af179e060d5053a34bf10d354c51af5a82decd62c40678b68306e8a9f4",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "walk",
+          "pose": 4,
+          "rect": [
+            565,
+            180,
+            142,
+            156
+          ],
+          "pivot": [
+            75.0,
+            138.425
+          ],
+          "occupied": [
+            3,
+            3,
+            139,
+            153
+          ],
+          "sha256": "6e51b954dbbe3e6fbef641a4eba5b31e0f0e592f8f061aae2676e5d0e718db06",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "walk",
+          "pose": 5,
+          "rect": [
+            745,
+            179,
+            142,
+            160
+          ],
+          "pivot": [
+            69.0,
+            139.425
+          ],
+          "occupied": [
+            3,
+            3,
+            139,
+            157
+          ],
+          "sha256": "04feaa92ac67598f57dab44f097a42f7995e17b380df1cbd6e9071a885e2d9d5",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "walk",
           "pose": 6,
           "rect": [
-            905,
-            181,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            21,
-            2,
-            157,
-            151
-          ],
-          "sha256": "68c2e55310537801acd32d7b9ec0ae0e81ac33bc05fd191e98b475b73eeedbf5",
-          "border_touch": false
-        },
-        {
-          "family": "cut",
-          "pose": 1,
-          "rect": [
-            0,
-            362,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            32,
-            0,
-            175,
-            181
-          ],
-          "sha256": "50e99d1d8f334fdf036f3410c2f2d33f687c1ded46d9ed12f0467b2bb1940b7d",
-          "border_touch": true
-        },
-        {
-          "family": "cut",
-          "pose": 2,
-          "rect": [
-            181,
-            362,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            28,
-            0,
-            163,
-            181
-          ],
-          "sha256": "fbaecbd4c114b0a925d0eafa6195fcacbf35573687307e49caadae1fe2968138",
-          "border_touch": true
-        },
-        {
-          "family": "cut",
-          "pose": 3,
-          "rect": [
-            362,
-            362,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            30,
-            0,
-            168,
-            181
-          ],
-          "sha256": "a51ba93cf7f9f7a7ea5606581868dcd892f1a823c0b5bc2ec33e521c2cd14cea",
-          "border_touch": true
-        },
-        {
-          "family": "cut",
-          "pose": 4,
-          "rect": [
-            543,
-            362,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            17,
-            4,
-            181,
-            181
-          ],
-          "sha256": "f72198497f1ed9241b68bdacc73aa8527345e43e52212235d5173bcc2464d060",
-          "border_touch": true
-        },
-        {
-          "family": "cut",
-          "pose": 5,
-          "rect": [
-            724,
-            362,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            0,
-            6,
-            181,
-            181
-          ],
-          "sha256": "a44bf3b3f20504a6ff244555dd5ab59ec8fae6e06ffa6656951f3946b2e5df3f",
-          "border_touch": true
-        },
-        {
-          "family": "cut",
-          "pose": 6,
-          "rect": [
-            905,
-            362,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            0,
-            1,
-            160,
-            181
-          ],
-          "sha256": "f8750f81e1357f0cdc063ef4bd5c9a7cb261367ce76500d9e00ae9862e84cb8d",
-          "border_touch": true
-        },
-        {
-          "family": "guard",
-          "pose": 1,
-          "rect": [
-            0,
-            543,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            32,
-            0,
-            171,
-            181
-          ],
-          "sha256": "2cc9a21c79b150cbf180e1f1a1d645fbf42bbc17e584aee93bedfa7450c24df7",
-          "border_touch": true
-        },
-        {
-          "family": "guard",
-          "pose": 2,
-          "rect": [
-            181,
-            543,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            28,
-            0,
-            172,
-            181
-          ],
-          "sha256": "ced772fef8688a29dfd3147f55a4d1d85649e404fa67fbfb9eecdfd317e91e6f",
-          "border_touch": true
-        },
-        {
-          "family": "guard",
-          "pose": 3,
-          "rect": [
-            362,
-            543,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            30,
-            0,
-            147,
-            181
-          ],
-          "sha256": "74ac7df440d2a947309e66b9d6c096102d3c9be9abbb997021a08355ee4f0c9f",
-          "border_touch": true
-        },
-        {
-          "family": "guard",
-          "pose": 4,
-          "rect": [
-            543,
-            543,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            27,
-            0,
-            152,
-            181
-          ],
-          "sha256": "1ea8ec45608fc83b48362723a47af7cf784f56cf49849a00d5706e255cf32886",
-          "border_touch": true
-        },
-        {
-          "family": "guard",
-          "pose": 5,
-          "rect": [
-            724,
-            543,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            24,
-            0,
-            168,
-            181
-          ],
-          "sha256": "f08056448568555dafe4f7a5fdac2ca9a5d2686bb41c719365e6e1a2538036df",
-          "border_touch": true
-        },
-        {
-          "family": "guard",
-          "pose": 6,
-          "rect": [
-            905,
-            543,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            21,
-            0,
-            157,
-            181
-          ],
-          "sha256": "eec17f6f606cfb5faffde9b938c03d8deea20427d9ad4e288a1139ca9480700f",
-          "border_touch": true
-        },
-        {
-          "family": "hurt",
-          "pose": 1,
-          "rect": [
-            0,
-            724,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            43,
-            0,
-            167,
-            181
-          ],
-          "sha256": "04a6b98cecc1a46d5430ee472fd543b8cc9b47a1f1f61d425952c218ba5b9586",
-          "border_touch": true
-        },
-        {
-          "family": "hurt",
-          "pose": 2,
-          "rect": [
-            181,
-            724,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            36,
-            0,
-            167,
-            181
-          ],
-          "sha256": "775b41ba771a40d5f436fff897847656d770cf4ef83f9a3b97d75aadfa8c6c0b",
-          "border_touch": true
-        },
-        {
-          "family": "hurt",
-          "pose": 3,
-          "rect": [
-            362,
-            724,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            28,
-            0,
-            164,
-            115
-          ],
-          "sha256": "df8e10cd7e729ec9e9da3584aaa9dcb820b2c009f84101f311108623d977bd9d",
-          "border_touch": true
-        },
-        {
-          "family": "hurt",
-          "pose": 4,
-          "rect": [
-            543,
-            724,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            32,
-            0,
-            175,
-            117
-          ],
-          "sha256": "4a1e418d3e6b7c1c996b352723b4009584a1f1ab11b4f72e9f131e62452b48b1",
-          "border_touch": true
-        },
-        {
-          "family": "hurt",
-          "pose": 5,
-          "rect": [
-            724,
-            724,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            30,
-            0,
-            164,
-            118
-          ],
-          "sha256": "decf38823e85f3f57966d3052bf61bbd6a4b44e9dd3f08473e37d66319e5f8ae",
-          "border_touch": true
-        },
-        {
-          "family": "hurt",
-          "pose": 6,
-          "rect": [
-            905,
-            724,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            25,
-            0,
-            157,
-            118
-          ],
-          "sha256": "d871b7af02cc2e3a679afc16d2488636ba3b6ba6c3f6f4283d49b7282bf11317",
-          "border_touch": true
-        },
-        {
-          "family": "death",
-          "pose": 1,
-          "rect": [
-            0,
-            905,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            34,
-            0,
-            157,
-            181
-          ],
-          "sha256": "b6ea00989ac329b1c0801fef4d86b996339621826637822d71e8fec5765de822",
-          "border_touch": true
-        },
-        {
-          "family": "death",
-          "pose": 2,
-          "rect": [
-            181,
-            905,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            23,
-            0,
-            177,
-            181
-          ],
-          "sha256": "ee0f1d9910ebfc01de3b4d3705f9d5e05f386fe30fb4558eacee9af58508a75d",
-          "border_touch": true
-        },
-        {
-          "family": "death",
-          "pose": 3,
-          "rect": [
-            362,
-            905,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            19,
-            4,
+            923,
             180,
-            181
-          ],
-          "sha256": "eec9c42964f5fdd32e169ce72044efe060206b0f500d85062e84c4c007662201",
-          "border_touch": true
-        },
-        {
-          "family": "death",
-          "pose": 4,
-          "rect": [
-            543,
-            905,
-            181,
-            181
+            142,
+            155
           ],
           "pivot": [
-            90.5,
-            162.9
+            72.0,
+            138.425
           ],
           "occupied": [
-            11,
-            16,
-            181,
-            181
+            3,
+            3,
+            139,
+            152
           ],
-          "sha256": "34f2cc97cf929e7c0ccedcfc19d0badb9d777faed0eede1534dc9bd4ffca970c",
-          "border_touch": true
+          "sha256": "9d0fe660fd9577ca7618778250871cf399f07f736b58cb74351cb9fb81af7d0a",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
-          "family": "death",
-          "pose": 5,
-          "rect": [
-            724,
-            905,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            0,
-            25,
-            171,
-            181
-          ],
-          "sha256": "044c7acd87ff0f694cc36bf05d72d126a9ae6aa19acbe8c3237efa2669317f6b",
-          "border_touch": true
-        },
-        {
-          "family": "death",
-          "pose": 6,
-          "rect": [
-            905,
-            905,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            5,
-            35,
-            164,
-            181
-          ],
-          "sha256": "f8fc4b26907b114b6913dfb0d4b3abb74a404f35c53b23c12960d90dce7e4021",
-          "border_touch": true
-        },
-        {
-          "family": "interact",
+          "family": "cut",
           "pose": 1,
           "rect": [
-            0,
-            1086,
-            181,
-            181
+            29,
+            355,
+            149,
+            150
           ],
           "pivot": [
-            90.5,
-            162.9
+            74.5,
+            133.425
           ],
           "occupied": [
-            36,
-            0,
-            173,
-            181
+            3,
+            3,
+            146,
+            147
           ],
-          "sha256": "d8e831c481ca06f4a773228609c10982c75e18b3d597e17aff9cc2df10c2ee1c",
-          "border_touch": true
+          "sha256": "07c9571ae5dbc53937250182168c80051b650325c73ae748093817cc0d58c098",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
-          "family": "interact",
+          "family": "cut",
           "pose": 2,
           "rect": [
-            181,
-            1086,
-            181,
-            181
+            206,
+            345,
+            141,
+            159
           ],
           "pivot": [
-            90.5,
-            162.9
+            74.5,
+            143.425
           ],
           "occupied": [
-            31,
-            0,
-            161,
-            181
+            3,
+            3,
+            138,
+            156
           ],
-          "sha256": "c5849936cbff2c460f987f48970379f2a3da30d47d71de651f0e5207da424690",
-          "border_touch": true
+          "sha256": "63fb19e642b3ffb2057317091a5f730a2c2e967a3d1c03401156f4b89c881d4b",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
-          "family": "interact",
+          "family": "cut",
           "pose": 3,
           "rect": [
-            362,
-            1086,
-            181,
-            181
+            389,
+            333,
+            144,
+            172
           ],
           "pivot": [
-            90.5,
-            162.9
+            72.5,
+            155.425
           ],
           "occupied": [
-            30,
-            0,
-            170,
-            181
+            3,
+            3,
+            141,
+            169
           ],
-          "sha256": "f493c68d8832d152b394dd486355c8ce51dc2776613603d64e411b27ed31cefc",
-          "border_touch": true
+          "sha256": "83367fd6a3c114f2c86e7ce9eca9450a2f3489835ef438ddc962eb3d8fd7d438",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
-          "family": "interact",
+          "family": "cut",
           "pose": 4,
           "rect": [
-            543,
-            1086,
-            181,
-            181
+            557,
+            363,
+            191,
+            141
           ],
           "pivot": [
-            90.5,
-            162.9
+            83.0,
+            125.42500000000001
           ],
           "occupied": [
-            31,
-            0,
-            169,
-            181
+            3,
+            3,
+            188,
+            138
           ],
-          "sha256": "ccc5c4b900080dad6726005f92bd7235cca9e842149373ec820579c549472d61",
-          "border_touch": true
+          "sha256": "51b61da32aaeb56736221fe2a9308cb87c38c6363232e2e42abe467fd2e4c2c3",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 176,
+          "maskPath": "M55,1h13v5h-13ZM50,2h22v5h-22ZM48,3h28v5h-28ZM46,4h32v5h-32ZM44,5h37v5h-37ZM43,6h40v5h-40ZM42,7h43v5h-43ZM41,8h45v5h-45ZM41,9h47v5h-47ZM40,10h49v5h-49ZM40,11h50v5h-50ZM39,12h52v5h-52ZM39,13h53v5h-53ZM39,14h54v5h-54ZM38,15h56v5h-56ZM38,16h57v5h-57ZM38,17h58v5h-58ZM37,18h60v5h-60ZM177,18h13v5h-13ZM28,19h7v5h-7ZM37,19h60v5h-60ZM171,19h19v5h-19ZM26,20h12v5h-12ZM36,20h62v5h-62ZM167,20h22v5h-22ZM24,21h14v5h-14ZM36,21h63v5h-63ZM165,21h23v5h-23ZM23,22h15v5h-15ZM35,22h64v5h-64ZM163,22h24v5h-24ZM22,23h78v5h-78ZM161,23h25v5h-25ZM21,24h79v5h-79ZM159,24h27v5h-27ZM20,25h80v5h-80ZM157,25h28v5h-28ZM20,26h81v5h-81ZM155,26h29v5h-29ZM19,27h82v5h-82ZM153,27h30v5h-30ZM18,28h83v5h-83ZM152,28h30v5h-30ZM17,29h84v5h-84ZM150,29h32v5h-32ZM17,30h84v5h-84ZM148,30h33v5h-33ZM16,31h85v5h-85ZM146,31h34v5h-34ZM15,32h85v5h-85ZM145,32h34v5h-34ZM15,33h85v5h-85ZM143,33h34v5h-34ZM14,34h86v5h-86ZM141,34h34v5h-34ZM13,35h87v5h-87ZM139,35h35v5h-35ZM13,36h87v5h-87ZM128,36h6v5h-6ZM138,36h34v5h-34ZM12,37h88v5h-88ZM126,37h9v5h-9ZM135,37h35v5h-35ZM11,38h88v5h-88ZM124,38h44v5h-44ZM11,39h88v5h-88ZM123,39h43v5h-43ZM10,40h89v5h-89ZM123,40h42v5h-42ZM10,41h89v5h-89ZM123,41h40v5h-40ZM9,42h89v5h-89ZM122,42h39v5h-39ZM9,43h89v5h-89ZM120,43h40v5h-40ZM9,44h89v5h-89ZM119,44h39v5h-39ZM8,45h89v5h-89ZM116,45h5v5h-5ZM118,45h39v5h-39ZM8,46h89v5h-89ZM112,46h43v5h-43ZM8,47h89v5h-89ZM110,47h44v5h-44ZM7,48h90v5h-90ZM107,48h45v5h-45ZM7,49h89v5h-89ZM101,49h49v5h-49ZM7,50h142v5h-142ZM6,51h141v5h-141ZM6,52h140v5h-140ZM6,53h140v5h-140ZM5,54h142v5h-142ZM5,55h142v5h-142ZM4,56h143v5h-143ZM4,57h142v5h-142ZM4,58h141v5h-141ZM4,59h140v5h-140ZM3,60h137v5h-137ZM137,60h6v5h-6ZM3,61h136v5h-136ZM3,62h135v5h-135ZM3,63h133v5h-133ZM3,64h131v5h-131ZM2,65h130v5h-130ZM2,66h119v5h-119ZM122,66h8v5h-8ZM2,67h117v5h-117ZM2,68h115v5h-115ZM2,69h114v5h-114ZM2,70h114v5h-114ZM1,71h112v5h-112ZM1,72h111v5h-111ZM1,73h110v5h-110ZM1,74h110v5h-110ZM1,75h109v5h-109ZM1,76h109v5h-109ZM1,77h109v5h-109ZM1,78h110v5h-110ZM1,79h112v5h-112ZM1,80h112v5h-112ZM1,81h112v5h-112ZM1,82h112v5h-112ZM1,83h112v5h-112ZM1,84h113v5h-113ZM1,85h116v5h-116ZM1,86h28v5h-28ZM27,86h94v5h-94ZM1,87h28v5h-28ZM29,87h94v5h-94ZM1,88h27v5h-27ZM29,88h94v5h-94ZM1,89h26v5h-26ZM29,89h95v5h-95ZM1,90h26v5h-26ZM28,90h97v5h-97ZM1,91h25v5h-25ZM27,91h99v5h-99ZM1,92h24v5h-24ZM26,92h101v5h-101ZM1,93h23v5h-23ZM25,93h104v5h-104ZM1,94h22v5h-22ZM25,94h107v5h-107ZM1,95h21v5h-21ZM25,95h111v5h-111ZM2,96h19v5h-19ZM24,96h112v5h-112ZM2,97h18v5h-18ZM24,97h112v5h-112ZM2,98h17v5h-17ZM24,98h107v5h-107ZM2,99h16v5h-16ZM24,99h105v5h-105ZM2,100h15v5h-15ZM25,100h105v5h-105ZM3,101h13v5h-13ZM25,101h105v5h-105ZM3,102h12v5h-12ZM25,102h106v5h-106ZM4,103h10v5h-10ZM26,103h105v5h-105ZM5,104h8v5h-8ZM26,104h105v5h-105ZM27,105h101v5h-101ZM27,106h100v5h-100ZM27,107h100v5h-100ZM28,108h100v5h-100ZM28,109h100v5h-100ZM29,110h100v5h-100ZM29,111h100v5h-100ZM30,112h100v5h-100ZM31,113h99v5h-99ZM32,114h98v5h-98ZM33,115h40v5h-40ZM73,115h44v5h-44ZM114,115h9v5h-9ZM120,115h10v5h-10ZM35,116h28v5h-28ZM74,116h43v5h-43ZM122,116h8v5h-8ZM34,117h29v5h-29ZM76,117h41v5h-41ZM123,117h7v5h-7ZM33,118h30v5h-30ZM78,118h39v5h-39ZM124,118h6v5h-6ZM33,119h31v5h-31ZM81,119h30v5h-30ZM109,119h8v5h-8ZM32,120h32v5h-32ZM82,120h29v5h-29ZM110,120h7v5h-7ZM32,121h32v5h-32ZM84,121h27v5h-27ZM111,121h6v5h-6ZM31,122h33v5h-33ZM85,122h27v5h-27ZM31,123h34v5h-34ZM86,123h26v5h-26ZM31,124h34v5h-34ZM87,124h25v5h-25ZM31,125h34v5h-34ZM88,125h24v5h-24ZM32,126h33v5h-33ZM88,126h23v5h-23ZM32,127h33v5h-33ZM89,127h22v5h-22ZM33,128h32v5h-32ZM89,128h22v5h-22ZM34,129h31v5h-31ZM90,129h20v5h-20ZM35,130h30v5h-30ZM90,130h20v5h-20ZM37,131h27v5h-27ZM91,131h18v5h-18ZM40,132h24v5h-24ZM92,132h16v5h-16ZM43,133h20v5h-20ZM94,133h13v5h-13ZM45,134h16v5h-16ZM96,134h9v5h-9ZM49,135h10v5h-10Z"
         },
         {
-          "family": "interact",
+          "family": "cut",
           "pose": 5,
           "rect": [
-            724,
-            1086,
-            181,
-            181
+            740,
+            365,
+            169,
+            142
           ],
           "pivot": [
-            90.5,
-            162.9
+            74.0,
+            123.42500000000001
           ],
           "occupied": [
-            24,
-            0,
-            156,
-            181
+            3,
+            3,
+            166,
+            139
           ],
-          "sha256": "d1c323dc5044065b62afe07ecbb5fd615475fe375554fb1aa98dd31575780ece",
-          "border_touch": true
+          "sha256": "7a57f711e94d744bfef17e8644b6a3e9db84d6162e3add1e0b5f53a77fe236a3",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 21,
+          "maskPath": "M162,1h6v5h-6ZM160,2h8v5h-8ZM158,3h10v5h-10ZM58,4h20v5h-20ZM156,4h12v5h-12ZM55,5h27v5h-27ZM154,5h14v5h-14ZM54,6h31v5h-31ZM153,6h15v5h-15ZM53,7h34v5h-34ZM151,7h16v5h-16ZM52,8h36v5h-36ZM150,8h17v5h-17ZM51,9h39v5h-39ZM149,9h18v5h-18ZM50,10h42v5h-42ZM149,10h18v5h-18ZM50,11h43v5h-43ZM148,11h18v5h-18ZM49,12h45v5h-45ZM147,12h19v5h-19ZM49,13h47v5h-47ZM147,13h19v5h-19ZM48,14h49v5h-49ZM146,14h20v5h-20ZM48,15h50v5h-50ZM145,15h21v5h-21ZM47,16h52v5h-52ZM144,16h21v5h-21ZM47,17h53v5h-53ZM143,17h22v5h-22ZM46,18h55v5h-55ZM143,18h21v5h-21ZM46,19h56v5h-56ZM142,19h22v5h-22ZM46,20h57v5h-57ZM141,20h22v5h-22ZM45,21h59v5h-59ZM140,21h22v5h-22ZM45,22h60v5h-60ZM139,22h22v5h-22ZM44,23h61v5h-61ZM139,23h22v5h-22ZM44,24h62v5h-62ZM138,24h22v5h-22ZM44,25h62v5h-62ZM137,25h22v5h-22ZM43,26h63v5h-63ZM136,26h23v5h-23ZM43,27h64v5h-64ZM136,27h22v5h-22ZM42,28h65v5h-65ZM135,28h22v5h-22ZM25,29h7v5h-7ZM42,29h65v5h-65ZM134,29h23v5h-23ZM23,30h12v5h-12ZM41,30h67v5h-67ZM134,30h22v5h-22ZM22,31h14v5h-14ZM41,31h67v5h-67ZM133,31h22v5h-22ZM20,32h16v5h-16ZM41,32h67v5h-67ZM132,32h23v5h-23ZM20,33h16v5h-16ZM40,33h68v5h-68ZM132,33h22v5h-22ZM19,34h17v5h-17ZM40,34h68v5h-68ZM131,34h23v5h-23ZM18,35h19v5h-19ZM39,35h69v5h-69ZM130,35h23v5h-23ZM17,36h20v5h-20ZM39,36h69v5h-69ZM124,36h8v5h-8ZM129,36h24v5h-24ZM16,37h21v5h-21ZM39,37h69v5h-69ZM123,37h29v5h-29ZM15,38h22v5h-22ZM38,38h70v5h-70ZM122,38h29v5h-29ZM15,39h22v5h-22ZM38,39h69v5h-69ZM122,39h29v5h-29ZM14,40h23v5h-23ZM38,40h69v5h-69ZM121,40h29v5h-29ZM14,41h23v5h-23ZM37,41h70v5h-70ZM121,41h28v5h-28ZM13,42h24v5h-24ZM37,42h69v5h-69ZM121,42h28v5h-28ZM13,43h24v5h-24ZM36,43h70v5h-70ZM120,43h28v5h-28ZM12,44h26v5h-26ZM36,44h70v5h-70ZM121,44h26v5h-26ZM11,45h27v5h-27ZM35,45h71v5h-71ZM120,45h27v5h-27ZM11,46h27v5h-27ZM35,46h70v5h-70ZM119,46h28v5h-28ZM11,47h27v5h-27ZM35,47h70v5h-70ZM118,47h30v5h-30ZM10,48h95v5h-95ZM116,48h33v5h-33ZM10,49h94v5h-94ZM113,49h36v5h-36ZM9,50h95v5h-95ZM110,50h38v5h-38ZM9,51h95v5h-95ZM107,51h41v5h-41ZM8,52h99v5h-99ZM104,52h43v5h-43ZM8,53h139v5h-139ZM7,54h139v5h-139ZM7,55h136v5h-136ZM6,56h137v5h-137ZM6,57h137v5h-137ZM6,58h136v5h-136ZM6,59h135v5h-135ZM5,60h136v5h-136ZM5,61h135v5h-135ZM5,62h133v5h-133ZM5,63h132v5h-132ZM4,64h133v5h-133ZM4,65h133v5h-133ZM4,66h123v5h-123ZM125,66h11v5h-11ZM4,67h121v5h-121ZM128,67h6v5h-6ZM4,68h120v5h-120ZM3,69h120v5h-120ZM3,70h119v5h-119ZM3,71h118v5h-118ZM3,72h117v5h-117ZM3,73h116v5h-116ZM3,74h113v5h-113ZM2,75h113v5h-113ZM2,76h113v5h-113ZM2,77h112v5h-112ZM2,78h111v5h-111ZM2,79h111v5h-111ZM2,80h112v5h-112ZM2,81h112v5h-112ZM2,82h112v5h-112ZM2,83h113v5h-113ZM2,84h115v5h-115ZM2,85h116v5h-116ZM1,86h118v5h-118ZM1,87h118v5h-118ZM1,88h121v5h-121ZM1,89h124v5h-124ZM1,90h126v5h-126ZM1,91h130v5h-130ZM1,92h135v5h-135ZM1,93h135v5h-135ZM1,94h135v5h-135ZM2,95h132v5h-132ZM2,96h130v5h-130ZM2,97h130v5h-130ZM2,98h22v5h-22ZM21,98h112v5h-112ZM2,99h21v5h-21ZM22,99h112v5h-112ZM2,100h20v5h-20ZM22,100h113v5h-113ZM2,101h20v5h-20ZM23,101h113v5h-113ZM2,102h19v5h-19ZM23,102h114v5h-114ZM2,103h17v5h-17ZM23,103h115v5h-115ZM2,104h17v5h-17ZM23,104h116v5h-116ZM3,105h14v5h-14ZM22,105h118v5h-118ZM3,106h13v5h-13ZM22,106h119v5h-119ZM3,107h12v5h-12ZM22,107h119v5h-119ZM3,108h11v5h-11ZM23,108h119v5h-119ZM4,109h10v5h-10ZM23,109h119v5h-119ZM5,110h8v5h-8ZM24,110h109v5h-109ZM135,110h8v5h-8ZM24,111h109v5h-109ZM137,111h6v5h-6ZM24,112h109v5h-109ZM24,113h104v5h-104ZM24,114h104v5h-104ZM23,115h33v5h-33ZM53,115h13v5h-13ZM64,115h63v5h-63ZM23,116h30v5h-30ZM68,116h60v5h-60ZM20,117h30v5h-30ZM70,117h41v5h-41ZM110,117h9v5h-9ZM116,117h13v5h-13ZM18,118h31v5h-31ZM71,118h38v5h-38ZM122,118h7v5h-7ZM16,119h33v5h-33ZM73,119h33v5h-33ZM15,120h33v5h-33ZM75,120h30v5h-30ZM14,121h34v5h-34ZM75,121h29v5h-29ZM14,122h34v5h-34ZM76,122h27v5h-27ZM13,123h34v5h-34ZM76,123h27v5h-27ZM13,124h34v5h-34ZM76,124h27v5h-27ZM13,125h35v5h-35ZM76,125h27v5h-27ZM13,126h35v5h-35ZM76,126h26v5h-26ZM14,127h34v5h-34ZM76,127h26v5h-26ZM14,128h34v5h-34ZM76,128h26v5h-26ZM15,129h33v5h-33ZM76,129h25v5h-25ZM16,130h32v5h-32ZM77,130h23v5h-23ZM17,131h30v5h-30ZM77,131h22v5h-22ZM19,132h28v5h-28ZM78,132h20v5h-20ZM21,133h26v5h-26ZM80,133h16v5h-16ZM25,134h21v5h-21ZM82,134h12v5h-12ZM27,135h17v5h-17ZM30,136h12v5h-12Z"
         },
         {
-          "family": "interact",
+          "family": "cut",
           "pose": 6,
           "rect": [
-            905,
-            1086,
-            181,
-            181
+            932,
+            360,
+            136,
+            147
           ],
           "pivot": [
-            90.5,
-            162.9
+            63.0,
+            128.425
           ],
           "occupied": [
-            24,
-            0,
-            158,
-            181
+            3,
+            3,
+            133,
+            144
           ],
-          "sha256": "5e7384805d3b42fe27911e14ecb10b6b8e7a296ad6bfdfa42a0330e3ae1ed66a",
-          "border_touch": true
+          "sha256": "cb817c6059f230749ab54d8ddf0936c47687a0088702732151986528623e0015",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
-          "family": "prayer",
+          "family": "guard",
           "pose": 1,
           "rect": [
-            0,
-            1267,
-            181,
-            181
+            29,
+            527,
+            145,
+            148
           ],
           "pivot": [
-            90.5,
-            162.9
+            74.5,
+            130.92499999999995
           ],
           "occupied": [
-            36,
-            0,
-            169,
-            108
+            3,
+            3,
+            142,
+            145
           ],
-          "sha256": "a6965b5bad4fee6654a47f6cf156e23aa540f1a9ff01b8051c7df897a871544d",
-          "border_touch": true
+          "sha256": "c00ae5d017965cb13029999efb69060d086908da965435c79c980e00d9161e51",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
-          "family": "prayer",
+          "family": "guard",
           "pose": 2,
           "rect": [
-            181,
-            1267,
-            181,
-            181
+            206,
+            530,
+            150,
+            143
           ],
           "pivot": [
-            90.5,
-            162.9
+            74.5,
+            127.92499999999995
           ],
           "occupied": [
-            38,
-            0,
-            162,
+            3,
+            3,
+            147,
+            140
+          ],
+          "sha256": "f1f6fb399010b6aba7b9bc107661f173d9e818ef845cff5062e8ed5875a46711",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "guard",
+          "pose": 3,
+          "rect": [
+            389,
+            526,
+            123,
+            147
+          ],
+          "pivot": [
+            72.5,
+            131.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            120,
+            144
+          ],
+          "sha256": "076d0fffce6597c7bdf260345b2364c1a28eec366dc22cdf5699a2f514de97f7",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "guard",
+          "pose": 4,
+          "rect": [
+            567,
+            526,
+            131,
+            148
+          ],
+          "pivot": [
+            73.0,
+            131.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            128,
+            145
+          ],
+          "sha256": "80590ca71985cf85b545481e74e7420a0ecf88a938cea8dd2ee6a13191075eea",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "guard",
+          "pose": 5,
+          "rect": [
+            745,
+            530,
+            150,
+            145
+          ],
+          "pivot": [
+            69.0,
+            127.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            147,
+            142
+          ],
+          "sha256": "adff649cd5d99c0305e0952623ea7b49cda2b49d1be0df13cf90d2e2dc82c05b",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "guard",
+          "pose": 6,
+          "rect": [
+            923,
+            529,
+            142,
+            146
+          ],
+          "pivot": [
+            72.0,
+            128.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            139,
+            143
+          ],
+          "sha256": "75d91c64d4634b2a9c6401dad72ad729a7bf07af9c89433e83b5de20581670ea",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "hurt",
+          "pose": 1,
+          "rect": [
+            40,
+            701,
+            130,
+            142
+          ],
+          "pivot": [
+            63.5,
+            125.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            127,
+            139
+          ],
+          "sha256": "5c0d62c43ee849bc5454323aae03b138a5893304d3f41ab6ce8cb598625cd626",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "hurt",
+          "pose": 2,
+          "rect": [
+            214,
+            699,
+            137,
+            140
+          ],
+          "pivot": [
+            66.5,
+            127.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            134,
+            137
+          ],
+          "sha256": "fccbae9154dbb60d95eb788cb76262a0afb0ad08f3e90ab75133b3eedad87ba5",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "hurt",
+          "pose": 3,
+          "rect": [
+            387,
+            704,
+            142,
+            138
+          ],
+          "pivot": [
+            74.5,
+            122.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            139,
+            135
+          ],
+          "sha256": "93db222288d08c094c29d9fad56f05208959075b6c8f9c4a434ea009b9c8ce8d",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "hurt",
+          "pose": 4,
+          "rect": [
+            572,
+            699,
+            149,
+            145
+          ],
+          "pivot": [
+            68.0,
+            127.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            146,
+            142
+          ],
+          "sha256": "b2017e0e82eb8e14d7e8a64aa53e3d7600e76efd1a9cb83b87c85e05513f3184",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "hurt",
+          "pose": 5,
+          "rect": [
+            751,
+            697,
+            140,
+            148
+          ],
+          "pivot": [
+            63.0,
+            129.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            137,
+            145
+          ],
+          "sha256": "e56b2632fc7aa0103ed201563f6df16aea4869cf3becc46d8c502a038a0fc02b",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "hurt",
+          "pose": 6,
+          "rect": [
+            927,
+            698,
+            138,
+            147
+          ],
+          "pivot": [
+            68.0,
+            128.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            135,
+            144
+          ],
+          "sha256": "e5db4051dd26be1ea9bd988bc95f18892c4ee7b6135338d9d5ae80e630bc1caf",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "death",
+          "pose": 1,
+          "rect": [
+            31,
+            881,
+            129,
+            141
+          ],
+          "pivot": [
+            72.5,
+            117.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            126,
+            138
+          ],
+          "sha256": "74b67ab28471c64f2004f8a7c719dd86343df83f39580492437234cbd34eaa33",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "death",
+          "pose": 2,
+          "rect": [
+            201,
+            892,
+            160,
+            121
+          ],
+          "pivot": [
+            79.5,
+            106.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            157,
             118
           ],
-          "sha256": "eb5d044b050d0407b5fd29ed0909fea9bbde4c45fed197059300b29eb28a75de",
-          "border_touch": true
+          "sha256": "0a1a85839b244baf277314541abba0428f28c744617da9884ba2d0d8d8a6eb33",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
-          "family": "prayer",
+          "family": "death",
           "pose": 3,
           "rect": [
-            362,
-            1267,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            35,
-            0,
-            157,
-            106
-          ],
-          "sha256": "7897da4ecfe9b2fd458081b3e33e83ead80a4e5332dca9d279b957812e958bcd",
-          "border_touch": true
-        },
-        {
-          "family": "prayer",
-          "pose": 4,
-          "rect": [
-            543,
-            1267,
-            181,
-            181
-          ],
-          "pivot": [
-            90.5,
-            162.9
-          ],
-          "occupied": [
-            33,
-            0,
-            155,
+            378,
+            906,
+            167,
             113
           ],
-          "sha256": "996c9b63c574bd4d325e09112c803eaefceefd2d4b80ea2721ce82f63fd759b1",
-          "border_touch": true
+          "pivot": [
+            83.5,
+            92.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            164,
+            110
+          ],
+          "sha256": "9d72122533e32038f27017e80f3ceba66b23286e322cb5a50dc2e4eb8ef748b5",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "death",
+          "pose": 4,
+          "rect": [
+            551,
+            918,
+            178,
+            93
+          ],
+          "pivot": [
+            89.0,
+            80.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            175,
+            90
+          ],
+          "sha256": "04bc2f3793ff14895bb8da067cc62dccb0a98339262fd6f9264f53584990a7f1",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "death",
+          "pose": 5,
+          "rect": [
+            734,
+            927,
+            164,
+            91
+          ],
+          "pivot": [
+            80.0,
+            71.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            161,
+            88
+          ],
+          "sha256": "7da5d784c1b6fc52422c8c0cd77dbdf7aa3bf8a40bb73243e7e8d7b6cb3effb8",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "death",
+          "pose": 6,
+          "rect": [
+            907,
+            937,
+            165,
+            74
+          ],
+          "pivot": [
+            88.0,
+            61.924999999999955
+          ],
+          "occupied": [
+            3,
+            3,
+            162,
+            71
+          ],
+          "sha256": "f44b50e5109618422acb1505dd7b8a758505aa257e172e668ea1ba6dac5ae822",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "interact",
+          "pose": 1,
+          "rect": [
+            33,
+            1046,
+            143,
+            143
+          ],
+          "pivot": [
+            70.5,
+            126.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            140,
+            140
+          ],
+          "sha256": "6962315128abaa0c7e0a8a8d0eea5a6363ed0b0fa8ea0b61f41b9e73d0a6b233",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "interact",
+          "pose": 2,
+          "rect": [
+            209,
+            1042,
+            136,
+            144
+          ],
+          "pivot": [
+            71.5,
+            130.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            133,
+            141
+          ],
+          "sha256": "5a2f98daf393711f263f91688e781a1ec101f9a003f7cba574de7e8ee920c4b0",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "interact",
+          "pose": 3,
+          "rect": [
+            389,
+            1045,
+            146,
+            143
+          ],
+          "pivot": [
+            72.5,
+            127.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            143,
+            140
+          ],
+          "sha256": "bae2bada1ec1d65897ae354c2a3bc1c43fcedfcd1fcab540925eb7946f8d0d57",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "interact",
+          "pose": 4,
+          "rect": [
+            571,
+            1046,
+            144,
+            144
+          ],
+          "pivot": [
+            69.0,
+            126.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            141,
+            141
+          ],
+          "sha256": "0a303d8514d6e4bd7f572f4a8f0d45ae1ef7272f76675f751b723c6097f9fea1",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "interact",
+          "pose": 5,
+          "rect": [
+            745,
+            1044,
+            138,
+            146
+          ],
+          "pivot": [
+            69.0,
+            128.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            135,
+            143
+          ],
+          "sha256": "c07ce2736a1f404ecc16664918e20bb57d514db1a0f506202b4312a7a51166d0",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "interact",
+          "pose": 6,
+          "rect": [
+            926,
+            1046,
+            140,
+            146
+          ],
+          "pivot": [
+            69.0,
+            126.92499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            137,
+            143
+          ],
+          "sha256": "ddfda599e68b3c4b43f67490b1521f7779338ceb3d5a147e314d480758b9b886",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "prayer",
+          "pose": 1,
+          "rect": [
+            33,
+            1226,
+            139,
+            152
+          ],
+          "pivot": [
+            70.5,
+            136.42499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            136,
+            149
+          ],
+          "sha256": "359d181b0eb29a1fd47f2e2d6dd2afb0c308a7190d39bb2d910c75aad480e1ca",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "prayer",
+          "pose": 2,
+          "rect": [
+            216,
+            1249,
+            130,
+            139
+          ],
+          "pivot": [
+            64.5,
+            113.42499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            127,
+            136
+          ],
+          "sha256": "d33c2f2b1ac1eccba42c4d6168768f47133632ccb0bda1174e8232930b6c49e6",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "prayer",
+          "pose": 3,
+          "rect": [
+            394,
+            1251,
+            128,
+            125
+          ],
+          "pivot": [
+            67.5,
+            111.42499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            125,
+            122
+          ],
+          "sha256": "1bfa139383606a58fe73501a30c217e8472b43df966367318d46c0a66f106aee",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
+        },
+        {
+          "family": "prayer",
+          "pose": 4,
+          "rect": [
+            573,
+            1252,
+            128,
+            131
+          ],
+          "pivot": [
+            67.0,
+            110.42499999999995
+          ],
+          "occupied": [
+            3,
+            3,
+            125,
+            128
+          ],
+          "sha256": "351c933ffcb2ec1626b3124c340320e856d0ef9918d2d7b45ac255d030035491",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "prayer",
           "pose": 5,
           "rect": [
-            724,
-            1267,
-            181,
-            181
+            748,
+            1232,
+            134,
+            147
           ],
           "pivot": [
-            90.5,
-            162.9
+            66.0,
+            130.42499999999995
           ],
           "occupied": [
-            27,
-            0,
-            155,
-            109
+            3,
+            3,
+            131,
+            144
           ],
-          "sha256": "a3bd5c98a87f4e37674e94c9f4b89b1bd9de570df49494e119b3d9c62781955c",
-          "border_touch": true
+          "sha256": "afa63b5d6b841de3e61acfe39f2dcaf8559fb4d4c97f1084be2b9d9d88cfc962",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         },
         {
           "family": "prayer",
           "pose": 6,
           "rect": [
-            905,
-            1267,
-            181,
-            181
+            928,
+            1228,
+            137,
+            151
           ],
           "pivot": [
-            90.5,
-            162.9
+            67.0,
+            134.42499999999995
           ],
           "occupied": [
-            26,
-            0,
-            157,
-            109
+            3,
+            3,
+            134,
+            148
           ],
-          "sha256": "abcb4f19f8e24e3900b4000ac9913eebdc9335464f8d56eca8bfb12e8e06bc91",
-          "border_touch": true
+          "sha256": "38ff5d0853e899187d5e752d5a9c4814d28e0487345a1b284008bdbcd8995fc5",
+          "border_touch": false,
+          "neighbor_pixels_in_rectangle": 0
         }
       ],
       "unique_cell_hashes": 48,
       "standingHeight": 141,
-      "assessment": "Generated study; identity, pose spacing, gait, guard coverage and prayer transitions need in-motion review. Foot pivots are fixed to the source grid, not manually perfected."
+      "assessment": "Generated study; gait, guard coverage, prayer and directional identity require motion review. Figure regions are measured, with row/column foot anchors; manual pivot refinement remains open."
     }
   },
   "clips": {
@@ -2448,5 +2546,5 @@
       "url": "../../../concepts/images/s13-guarin-isometric-v02.png"
     }
   ],
-  "packing": "Original generated pixels; equal grid rectangles, no rotation, cropping exports, rescaling, recoloring or synthetic motion. Alpha-border warnings require review before engine packing."
+  "packing": "Original generated pixels; measured figure regions and clipping masks isolate neighboring figures. No pixel files are altered, no rotated/warped/recolored/synthetic animation. Final atlas packing remains gated by visual review."
 }

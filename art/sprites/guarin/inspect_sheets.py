@@ -3,23 +3,65 @@ from __future__ import annotations
 import hashlib
 import json
 from pathlib import Path
+from statistics import median
 
+import numpy as np
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parent
 FAMILIES = ["idle", "walk", "cut", "guard", "hurt", "death", "interact", "prayer"]
 
 
+def figures(alpha: Image.Image) -> list[dict]:
+    parents, runs, previous = [], [], []
+
+    def root(index):
+        while parents[index] != index:
+            parents[index] = parents[parents[index]]
+            index = parents[index]
+        return index
+
+    for y, row in enumerate(np.array(alpha) > 32):
+        edges = np.diff(np.r_[False, row, False].astype(np.int8))
+        current = []
+        for start, end in zip(np.flatnonzero(edges == 1), np.flatnonzero(edges == -1)):
+            neighbors = [run[2] for run in previous if run[0] <= end and run[1] >= start]
+            if neighbors:
+                label = root(neighbors[0])
+                for neighbor in neighbors[1:]:
+                    parents[root(neighbor)] = label
+            else:
+                label = len(parents)
+                parents.append(label)
+            current.append((int(start), int(end), label))
+            runs.append((int(start), int(end), y, label))
+        previous = current
+    groups = {}
+    for start, end, y, label in runs:
+        group = groups.setdefault(root(label), {"box": [start, y, end, y + 1], "runs": [], "area": 0})
+        box = group["box"]
+        box[0], box[1] = min(box[0], start), min(box[1], y)
+        box[2], box[3] = max(box[2], end), max(box[3], y + 1)
+        group["runs"].append((start, end, y))
+        group["area"] += end - start
+    major = sorted((group for group in groups.values() if group["area"] > 2000), key=lambda group: group["box"][1])
+    if len(major) != 48:
+        raise ValueError(f"Expected 48 isolated figures; found {len(major)}. Inspect layout before importing.")
+    return [figure for row in range(8) for figure in sorted(major[row * 6:row * 6 + 6], key=lambda group: group["box"][0])]
+
+
 def inspect_page(path: Path) -> dict:
     with Image.open(path) as image:
         if image.mode != "RGBA":
             raise ValueError(f"{path.name}: no RGBA transparency")
-        if image.width % 6 or image.height % 8:
-            raise ValueError(f"{path.name}: image dimensions do not fit the specified grid")
-        width, height = image.width // 6, image.height // 8
+        located = figures(image.getchannel("A"))
+        columns = [(figure["box"][0] + figure["box"][2]) / 2 for figure in located[:6]]
+        baselines = [median(figure["box"][3] for figure in located[row * 6:row * 6 + 6]) - image.height / 8 * 0.075 for row in range(8)]
         frames = []
-        for index in range(48):
-            x, y = index % 6 * width, index // 6 * height
+        for index, figure in enumerate(located):
+            left, top, right, bottom = figure["box"]
+            x, y = max(0, left - 3), max(0, top - 3)
+            width, height = min(image.width, right + 3) - x, min(image.height, bottom + 3) - y
             frame = image.crop((x, y, x + width, y + height))
             alpha = frame.getchannel("A")
             occupied = alpha.point(lambda value: 255 if value > 32 else 0).getbbox()
@@ -32,15 +74,23 @@ def inspect_page(path: Path) -> dict:
                     "family": FAMILIES[index // 6],
                     "pose": index % 6 + 1,
                     "rect": [x, y, width, height],
-                    "pivot": [width / 2, height * 0.9],
-                    "occupied": list(occupied),
+                    "pivot": [columns[index % 6] - x, baselines[index // 6] - y],
+                    "occupied": [left - x, top - y, right - x, bottom - y],
                     "sha256": hashlib.sha256(frame.tobytes()).hexdigest(),
-                    "border_touch": occupied[0] == 0
-                    or occupied[1] == 0
-                    or occupied[2] == width
-                    or occupied[3] == height,
+                    "border_touch": left == 0 or top == 0 or right == image.width or bottom == image.height,
                 }
             )
+            neighbors = sum(
+                max(0, min(end, x + width) - max(start, x))
+                for other in located if other is not figure
+                for start, end, row_y in other["runs"] if y <= row_y < y + height
+            )
+            frames[-1]["neighbor_pixels_in_rectangle"] = neighbors
+            if neighbors:
+                frames[-1]["maskPath"] = "".join(
+                    f"M{start - x - 2},{row_y - y - 2}h{end - start + 4}v5h-{end - start + 4}Z"
+                    for start, end, row_y in figure["runs"]
+                )
         return {
             "dimensions": list(image.size),
             "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
@@ -53,7 +103,7 @@ def inspect_page(path: Path) -> dict:
                 sum(frame["occupied"][3] - frame["occupied"][1] for frame in frames[:6])
                 / 6
             ),
-            "assessment": "Generated study; identity, pose spacing, gait, guard coverage and prayer transitions need in-motion review. Foot pivots are fixed to the source grid, not manually perfected.",
+            "assessment": "Generated study; gait, guard coverage, prayer and directional identity require motion review. Figure regions are measured, with row/column foot anchors; manual pivot refinement remains open.",
         }
 
 
@@ -117,7 +167,7 @@ def build_manifest() -> dict:
                 "url": "../../../concepts/images/s13-guarin-isometric-v02.png",
             },
         ],
-        "packing": "Original generated pixels; equal grid rectangles, no rotation, cropping exports, rescaling, recoloring or synthetic motion. Alpha-border warnings require review before engine packing.",
+        "packing": "Original generated pixels; measured figure regions and clipping masks isolate neighboring figures. No pixel files are altered, no rotated/warped/recolored/synthetic animation. Final atlas packing remains gated by visual review.",
     }
 
 

@@ -4,6 +4,7 @@ const element = id => document.getElementById(id);
 const stage = element("stage");
 const context = stage.getContext("2d");
 const images = new Map();
+const masks = new WeakMap();
 const logs = [];
 const keys = new Set();
 let atlas;
@@ -50,7 +51,13 @@ function renderPose(target, image, frame, foot, scale, alpha = 1) {
   target.globalAlpha = alpha;
   target.imageSmoothingEnabled = element("sampling").value === "linear";
   const [x, y, width, height] = frame.rect;
-  target.drawImage(image, x, y, width, height, foot[0] - frame.pivot[0] * scale, foot[1] - frame.pivot[1] * scale, width * scale, height * scale);
+  target.translate(foot[0] - frame.pivot[0] * scale, foot[1] - frame.pivot[1] * scale);
+  target.scale(scale, scale);
+  if (frame.maskPath) {
+    if (!masks.has(frame)) masks.set(frame, new Path2D(frame.maskPath));
+    target.clip(masks.get(frame));
+  }
+  target.drawImage(image, x, y, width, height, 0, 0, width, height);
   target.restore();
 }
 
@@ -102,7 +109,7 @@ function draw() {
   const clip = atlas.clips[player.clip];
   const current = sample(clip, player.elapsedMs);
   const frame = page.frames[current.source];
-  const scale = Number(element("size").value) / page.standingHeight;
+  const scale = Number(element("size").value) * stage.width / stage.getBoundingClientRect().width / page.standingHeight;
   background();
   context.fillStyle = "#05080445";
   context.beginPath(); context.ellipse(position[0], position[1], 30 * scale, 13 * scale, 0, 0, Math.PI * 2); context.fill();

@@ -8,9 +8,9 @@ Observed strengths: worn gritty iron, wine cloth, mail and short wrapped limbs r
 
 Known defects being corrected:
 
-- The generator did not place figures on a consistent exact grid. A fixed-cell importer can clip weapons and include neighboring pixels. The importer must locate the actual figures and keep foot pivots explicit.
+- The generator did not place figures on a consistent exact grid. The importer now locates all 48 connected figures, retains measured rectangles and row/column anchors, and clips neighboring silhouettes in the viewer. Both imported pages now have no source-page border contacts. No generated pixel files were changed. Manual foot-pivot refinement remains a review task.
 - East v01 repeats a forward diagonal stance. It is rejected as an east-facing direction and is being regenerated from the exact upstream references.
 - Rear diagonal rotation, guard coverage, kneeling depth, gait amplitude and loop transitions still require motion inspection. Distinct pixel hashes do not prove correct movement.
 - Camera angle is an artistic estimate, not a calibrated measured projection.
 
-The viewer's twelve timing/transition tests pass. The browser loads actual sheet pixels and selectable clips; Walk changes poses. Other directions, corrected extraction, final motion checks and user approval remain open.
+The viewer's twelve timing/transition tests pass. The browser loads actual sheet pixels, plays Walk, selects clips, pauses, scrubs, and shows an isolated sword-contact pose without grid clipping. Other directions, final motion checks and user approval remain open.
