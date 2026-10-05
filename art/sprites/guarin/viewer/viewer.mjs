@@ -8,6 +8,15 @@ const masks = new WeakMap();
 const logs = [];
 const keys = new Set();
 const movementKeys = new Set(["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "w", "a", "s", "d"]);
+const directionVectors = { N: [0, -1], NE: [1, -1], E: [1, 0], SE: [1, 1], S: [0, 1], SW: [-1, 1], W: [-1, 0], NW: [-1, -1] };
+const sequences = {
+  strike: { label: "Walk → strike → walk", steps: [{ at: 0, action: "walk", direction: "E" }, { at: 900, action: "cut" }, { at: 2400, action: "idle" }] },
+  directions: { label: "Walk in all 8 directions", steps: [...Object.keys(directionVectors).map((direction, index) => ({ at: index * 1000, action: "walk", direction })), { at: 8000, action: "idle" }] },
+  guard: { label: "Guard → release → strike", steps: [{ at: 0, action: "guard" }, { at: 1200, action: "guard-off" }, { at: 1700, action: "cut" }, { at: 2800, action: "idle" }] },
+  prayer: { label: "Kneel → pray → rise", steps: [{ at: 0, action: "prayer" }, { at: 1800, action: "prayer-off" }, { at: 2500, action: "idle" }] },
+  defeat: { label: "Take hit → fall → hold", steps: [{ at: 0, action: "hurt" }, { at: 1000, action: "death" }, { at: 2200, action: "idle" }] },
+  tour: { label: "Full state tour", steps: [{ at: 200, action: "walk" }, { at: 1200, action: "cut" }, { at: 2300, action: "idle" }, { at: 2500, action: "guard" }, { at: 3400, action: "guard-off" }, { at: 4000, action: "prayer" }, { at: 5000, action: "hurt" }, { at: 5900, action: "death" }, { at: 7000, action: "idle" }] },
+};
 let atlas;
 let player = createPlayer();
 let playing = true;
@@ -25,6 +34,13 @@ function log(message) {
   element("events").textContent = logs.slice(0, 14).join("\n");
 }
 
+function cancelSequence() {
+  if (scheduled.length) player = request(request(request(player, "idle"), "guard-off"), "prayer-off");
+  scheduled = [];
+  element("sequence-status").textContent = "Keyboard control ready.";
+  for (const button of document.querySelectorAll("[data-sequence]")) button.setAttribute("aria-pressed", "false");
+}
+
 function updateClipControls() {
   element("clip").value = player.clip;
   if (lastClip !== player.clip) {
@@ -39,14 +55,14 @@ function updateClipControls() {
 }
 
 function act(action, fromSequence = false) {
-  if (!fromSequence) scheduled = [];
+  if (!fromSequence) cancelSequence();
   const before = player.clip;
   player = request(player, action);
   if (action === "reset") position = [450, stage.height * .75];
   playing = true;
   element("play").textContent = "Pause";
   updateClipControls();
-  log(`${action}: ${before} → ${player.clip}`);
+  log(`${player.direction} · ${action}: ${before} → ${player.clip}`);
 }
 
 function renderPose(target, image, frame, foot, scale, alpha = 1) {
@@ -161,7 +177,7 @@ function draw() {
 }
 
 function seek(index) {
-  scheduled = [];
+  cancelSequence();
   const clip = atlas.clips[player.clip];
   const bounded = Math.max(0, Math.min(index, clip.frames.length - 1));
   player.elapsedMs = clip.frames.slice(0, bounded).reduce((total, frame) => total + frame.durationMs, 0);
@@ -187,15 +203,23 @@ function tick(time) {
   if (playing && !document.hidden) {
     if (scheduled.length) {
       scenarioTime += delta;
-      while (scheduled.length && scheduled[0].at <= scenarioTime) act(scheduled.shift().action, true);
+      while (scheduled.length && scheduled[0].at <= scenarioTime) {
+        const step = scheduled.shift();
+        if (step.direction) player = face(player, step.direction);
+        act(step.action, true);
+      }
+      if (!scheduled.length) {
+        cancelSequence();
+        element("sequence-status").textContent = player.terminal ? "Defeated. Reset character to play again." : "Sequence complete. Keyboard control ready.";
+      }
     }
     const before = player.clip;
     const result = advance(player, delta * Number(element("speed").value) * clipRate / atlas.clips[player.clip].fps, atlas.clips);
     player = result.player;
     for (const event of result.events) log(`${player.direction} · ${event}`);
     if (before !== player.clip) log(`completed: ${before} → ${player.clip}`);
-    if (keys.size && player.clip === "walk") {
-      const [x, y] = movement();
+    if ((keys.size || scheduled.length) && player.clip === "walk") {
+      const [x, y] = keys.size ? movement() : directionVectors[player.direction];
       const length = Math.hypot(x, y) || 1;
       const pixels = stage.width / stage.getBoundingClientRect().width;
       position[0] += x / length * delta * .14 * pixels;
@@ -216,6 +240,7 @@ function wireControls() {
     if (direction) {
       button.textContent = direction; button.dataset.direction = direction; button.disabled = !atlas.directions[direction];
       button.addEventListener("click", () => {
+        cancelSequence();
         player.direction = direction;
         updateClipControls();
         log(`Inspect direction: ${direction}`);
@@ -224,33 +249,44 @@ function wireControls() {
     element("directions").append(button);
   }
   for (const button of document.querySelectorAll("[data-action]")) button.addEventListener("click", () => act(button.dataset.action));
-  element("clip").addEventListener("change", () => { scheduled = []; player = inspect(player, element("clip").value); updateClipControls(); stripKey = undefined; draw(); });
+  element("clip").addEventListener("change", () => { cancelSequence(); player = inspect(player, element("clip").value); updateClipControls(); stripKey = undefined; draw(); });
   element("play").addEventListener("click", () => { playing = !playing; element("play").textContent = playing ? "Pause" : "Play"; });
   element("previous").addEventListener("click", () => seek(sample(atlas.clips[player.clip], player.elapsedMs).index - 1));
   element("next").addEventListener("click", () => seek(sample(atlas.clips[player.clip], player.elapsedMs).index + 1));
-  element("restart").addEventListener("click", () => { scheduled = []; player.elapsedMs = 0; playing = true; element("play").textContent = "Pause"; });
+  element("restart").addEventListener("click", () => { cancelSequence(); player.elapsedMs = 0; playing = true; element("play").textContent = "Pause"; });
   element("frame").addEventListener("input", () => seek(Number(element("frame").value)));
   element("speed").addEventListener("input", () => { element("speed-label").textContent = `${element("speed").value}×`; });
   element("size").addEventListener("input", () => { element("size-label").textContent = `${element("size").value} px`; });
   element("fps").addEventListener("change", () => { clipRate = Math.max(1, Math.min(30, Number(element("fps").value) || atlas.clips[player.clip].fps)); element("fps").value = clipRate; });
   element("sampling").addEventListener("change", () => { stripKey = undefined; });
-  element("sequence").addEventListener("click", () => {
-    act("reset"); scenarioTime = 0;
-    scheduled = [{ at: 200, action: "walk" }, { at: 1200, action: "cut" }, { at: 2300, action: "idle" }, { at: 2500, action: "guard" }, { at: 3400, action: "guard-off" }, { at: 4000, action: "prayer" }, { at: 5000, action: "hurt" }, { at: 5900, action: "death" }];
-    log("Transition test: walk → cut → walk → guard → release → prayer → damage → death.");
-  });
+  for (const [id, sequence] of Object.entries(sequences)) {
+    const button = document.createElement("button");
+    button.dataset.sequence = id;
+    button.textContent = sequence.label;
+    button.setAttribute("aria-pressed", "false");
+    button.addEventListener("click", () => {
+      keys.clear();
+      act("reset");
+      scenarioTime = 0;
+      scheduled = [...sequence.steps];
+      button.setAttribute("aria-pressed", "true");
+      element("sequence-status").textContent = `Running: ${sequence.label}. Move or strike to take control.`;
+      log(`Sequence: ${sequence.label}`);
+    });
+    document.querySelector(".sequences").append(button);
+  }
   document.addEventListener("keydown", event => {
     if (event.target.closest("input, select, textarea, [contenteditable=true]") || event.ctrlKey || event.metaKey || event.altKey) return;
     const key = event.key.length === 1 ? event.key.toLowerCase() : event.key;
     if (movementKeys.has(key)) {
       event.preventDefault();
-      scheduled = [];
+      cancelSequence();
       keys.add(key);
       movement();
       playing = true;
       element("play").textContent = "Pause";
     }
-    if (event.repeat) return;
+    if (event.repeat) { if (key === " ") event.preventDefault(); return; }
     const action = { " ": "cut", g: "guard", h: "hurt", k: "death", r: "reset", p: player.praying ? "prayer-off" : "prayer" }[key];
     if (action) { event.preventDefault(); if (key === "g") keys.add(key); act(action); }
   });
