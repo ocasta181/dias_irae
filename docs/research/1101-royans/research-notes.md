@@ -11,6 +11,8 @@ Starting commit: `d33dc2ed0d9e1399819bed59b73d49c69109a400`.
 - Save the six reports and their index under `docs/research/1101-royans/`. Decision confidence: 95 percent, based on the existing repository documentation and the task's use of the project story. The write-page skill's repository convention takes precedence over its default new Page destination.
 - Historical research does not change story canon. Record conflicts, disputed dates, and fictional choices for review. Decision confidence: 99 percent; the request is for research write-ups.
 
+At commit `9740a4c`, interpret the request for "astrological events" as covering both astronomical events and the ways people interpreted them through astrology or religion. Decision confidence: 95 percent. This covers the stated request without requiring the user to choose between two closely related subjects.
+
 ## Success criteria
 
 Each of the six requested topics has a separate report. Reports cite sources next to the claims they support, identify what existed in 1101, explain later developments, and label documented facts, disputed evidence, later legend, and proposed story uses. Leadership, colors, arms, and mottoes must carry dates or explicit evidence limits. Do not project later heraldry, institutions, or beliefs back into 1101.
@@ -32,4 +34,6 @@ Only three subagents can run at the same time alongside the parent. The second w
 
 ## Verification status
 
-Research is in progress. Completed topic reports, evidence checks, and remaining limits will be recorded here before delivery.
+Research is in progress. The Christian orders report is complete and reviewed. The parent independently opened the departmental museum chronology, national library authority record, Clémentz's hospital history, the Order of Malta emblem history, and the Portuguese presidency's Aviz history. The report preserves conflicting origin summaries, disputed Saint Lazarus evidence, and undated early costumes and mottoes. Its repeated Korean Citation Index link was corrected before acceptance.
+
+The noble-house and religion reports are being completed. The climate and sky subagent has started. Technology and visual culture remain to be assigned as slots become available.
