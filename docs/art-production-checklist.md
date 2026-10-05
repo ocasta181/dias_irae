@@ -309,3 +309,5 @@ Current decision at commit `3aef464`: preserve the four explicitly selected styl
 - [x] Define 27 independent hairstyle/nose combinations and capture exact sources.
 - [ ] Generate, inspect and publish the new combinations on the automatically saved face board.
 - [ ] User reviews combinations before any final face or sprite approval.
+
+2026-10-05 correction at commit `cea2445`: eyes are fixed, not an exploration variable. Initial two hairstyle/nose pilots rejected by the user and held back. Replacement generation uses exact original F25 eye-band reference and measured geometry; only hairstyles and nose styles may vary.

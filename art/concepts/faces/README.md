@@ -49,3 +49,6 @@ Decision at commit `c6438cf`, confidence 95%: the requested several versions of 
 - [ ] Check each eye treatment, hair silhouette, nose shape and source consistency in the full figures and face close-ups.
 - [ ] Publish inspected candidates without changing earlier comments or order.
 - [ ] User reviews the combinations.
+
+
+2026-10-05 correction at commit `cea2445`: the user rejected reinterpretation of the eyes. The initial F61/F70 pilot outputs are held back. All replacement requests lock the literal original F25 eye-and-brow band, including its shape, size, spacing and weary expression. Only hair and noses vary. The unscaled supporting crop comes directly from original F25, not a failed output. Original eye bounds measure 20 × 15 and 15 × 14 pixels at the 1312-pixel canvas width, with 88.5-pixel horizontal center spacing. Requests v02 and the source snapshot record this fixed feature. Visual acceptance must check that the eye treatment has not drifted.

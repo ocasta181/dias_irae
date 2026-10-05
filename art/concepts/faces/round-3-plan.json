@@ -2,7 +2,7 @@
   "decision_commit": "c6438cf",
   "confidence_percent": 95,
   "count": 27,
-  "method": "Three hairstyles crossed with three noses for each exact selected base. F25 eye grammar constant.",
+  "method": "Three hairstyles crossed with three noses for each exact selected base. Literal original F25 eye-and-brow band locked; no eye exploration.",
   "sources": {
     "F25": {
       "file": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f25-v01.png",
@@ -369,5 +369,29 @@
       "nose_number": 3,
       "change": "Receding sparse crown; Short crooked broad tip; original F25 tiny square eyes"
     }
-  ]
+  ],
+  "eye_lock": {
+    "decision_commit": "cea2445",
+    "instruction": "Eyes fixed. Only hair and nose are variables.",
+    "file": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/references/f25-fixed-eye-band.png",
+    "source": "Exact unscaled crop of original F25",
+    "source_bounds": [
+      680,
+      390,
+      850,
+      451
+    ],
+    "sha256": "7841e48f3e691d610b3251f70adcf3a19b64108d310215a17d5c0f3b32c21e68",
+    "eye_dimensions": [
+      [
+        20,
+        15
+      ],
+      [
+        15,
+        14
+      ]
+    ],
+    "horizontal_center_spacing": 88.5
+  }
 }
