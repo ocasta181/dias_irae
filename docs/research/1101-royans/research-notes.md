@@ -36,4 +36,8 @@ Only three subagents can run at the same time alongside the parent. The second w
 
 Research is in progress. The Christian orders report is complete and reviewed. The parent independently opened the departmental museum chronology, national library authority record, Clémentz's hospital history, the Order of Malta emblem history, and the Portuguese presidency's Aviz history. The report preserves conflicting origin summaries, disputed Saint Lazarus evidence, and undated early costumes and mottoes. Its repeated Korean Citation Index link was corrected before acceptance.
 
-The noble-house and religion reports are being completed. The climate and sky subagent has started. Technology and visual culture remain to be assigned as slots become available.
+The noble-house and religion reports are complete and reviewed. The parent inspected the scanned *Regeste Dauphinois*, printed column 489, acts 2865 and 2867, and the original catalogue text for the Royans notice and Clérieu seal. The scan supports Albon's 1101 title and retains the doubtful date for Guillaume of Sassenage. The catalogue supports the Royans notice around 1040 and a single diagonal band on the Clérieu seal of 1288–1292. The report preserves uncertain succession, false and retrospective genealogical evidence, and Crest's conflicting transfer dates.
+
+For religious history, the parent checked Blumenkranz's Vienne entry, Daftary's accounts of Hasan-i Sabbah and the later Assassin legends, the official regional Mithraic relief record, Vaitkevičius's abstract on the Baltic god-list recorded in 1261, and Walsdorf's discussion of later witch-sabbath imagery. These establish the stated regional and chronological limits; they do not attest a local medieval pagan network or the canon's granary shrine.
+
+The climate and sky, technology and provisions, and music and visual culture subagents are now researching their assigned reports.
