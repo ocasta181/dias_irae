@@ -1,0 +1,202 @@
+{
+  "basis": "measured-art",
+  "max_drift_px": 3,
+  "method": "First four registered packed poses at 12 FPS, using the preserved human-identified near forepaw region and deterministic alpha>=128 contact edge; other required contacts explicitly missing. Fixed RF world position anchored to first observed midpoint. Uncertainty approximately one logical pixel. Earlier observations remain preserved; timestamps and root samples use the current atlas timing and travel.",
+  "clips": [
+    {
+      "id": "E-walk-v05-first-four",
+      "world_contacts": {
+        "LH": [
+          -2.5,
+          -5.656854249492369
+        ],
+        "RH": [
+          -20.5,
+          5.656854249492369
+        ],
+        "RF": [
+          16.75,
+          3
+        ],
+        "LF": [
+          38.5,
+          -5.656854249492369
+        ]
+      },
+      "frames": [
+        {
+          "id": "E-walk-v03-1",
+          "start_ms": 0,
+          "duration_ms": 83.33333333333333,
+          "pivot": [
+            96,
+            156
+          ],
+          "required_contacts": [
+            "LH",
+            "RH",
+            "RF"
+          ],
+          "contacts": {
+            "RF": [
+              110.5,
+              159
+            ]
+          },
+          "root_samples": [
+            {
+              "offset_ms": 0,
+              "position": [
+                0,
+                0
+              ]
+            },
+            {
+              "offset_ms": 41.666666666666664,
+              "position": [
+                2.25,
+                0
+              ]
+            },
+            {
+              "offset_ms": 83.33333333333333,
+              "position": [
+                4.5,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "E-walk-v03-2",
+          "start_ms": 83.33333333333333,
+          "duration_ms": 83.33333333333333,
+          "pivot": [
+            96,
+            156
+          ],
+          "required_contacts": [
+            "LH",
+            "RH",
+            "RF"
+          ],
+          "contacts": {
+            "RF": [
+              109,
+              159
+            ]
+          },
+          "root_samples": [
+            {
+              "offset_ms": 0,
+              "position": [
+                4.5,
+                0
+              ]
+            },
+            {
+              "offset_ms": 41.666666666666664,
+              "position": [
+                6.75,
+                0
+              ]
+            },
+            {
+              "offset_ms": 83.33333333333333,
+              "position": [
+                9,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "E-walk-v03-3",
+          "start_ms": 166.66666666666666,
+          "duration_ms": 83.33333333333333,
+          "pivot": [
+            96,
+            156
+          ],
+          "required_contacts": [
+            "LH",
+            "LF",
+            "RF"
+          ],
+          "contacts": {
+            "RF": [
+              105,
+              159
+            ]
+          },
+          "root_samples": [
+            {
+              "offset_ms": 0,
+              "position": [
+                9,
+                0
+              ]
+            },
+            {
+              "offset_ms": 41.666666666666664,
+              "position": [
+                11.249999999999998,
+                0
+              ]
+            },
+            {
+              "offset_ms": 83.33333333333333,
+              "position": [
+                13.5,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "E-walk-v03-4",
+          "start_ms": 250,
+          "duration_ms": 83.33333333333333,
+          "pivot": [
+            96,
+            156
+          ],
+          "required_contacts": [
+            "LH",
+            "LF",
+            "RF"
+          ],
+          "contacts": {
+            "RF": [
+              105.5,
+              159
+            ]
+          },
+          "root_samples": [
+            {
+              "offset_ms": 0,
+              "position": [
+                13.5,
+                0
+              ]
+            },
+            {
+              "offset_ms": 41.666666666666664,
+              "position": [
+                15.750000000000002,
+                0
+              ]
+            },
+            {
+              "offset_ms": 83.33333333333333,
+              "position": [
+                18,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

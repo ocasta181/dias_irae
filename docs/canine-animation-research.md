@@ -94,16 +94,18 @@ For a fixed stride S and N equal midpoint holds, ideal stance hold error is S/(2
 
 ## Proposed cadence comparison and pilot
 
-Decision at `8aca7ee`, confidence 80%: start a controlled **15 drawing-changes/second** trial, with a 20/second comparison if stepping remains distracting. This remains our provisional artistic choice. The later lookup places it between Hollow Knight's 12 FPS normal movement and the documented Diablo II Barbarian walk at 25 FPS; neither is a universal rate for its game. At a steady 60 Hz display those proposed rates allow uniform holds of four or three display updates respectively; dropped presentation updates still require separate coverage checks.
+User decision on 2026-10-05 supersedes the earlier 15/20 hypothesis: moving animations use **12–15 FPS**, with **8 FPS rejected**. Decision at `fcd4bc2`, confidence 95%: default the wolf walk to **12 FPS**, and compare **15 FPS** using extra purposeful poses if the short-leg swing needs more clarity. At a steady 60 Hz display, 12/15 allow uniform holds of five/four display updates. They require fewer drawings than 20 FPS while retaining the desired stepped style. Missing or malformed poses still require drawing repair.
 
-Example comparison specification, pending reference-based blocking: same 800 ms cycle, same 24 logical px stride, same 30 logical px/s ground travel, same pose trajectory and canvas scale. Twelve drawings give 15/second and ideal ±1 px midpoint hold error; sixteen give 20/second and ±0.75 px. These are calculated sampling limits, not actual-art passes. Do not compare them by merely increasing the existing eight-frame playback control.
+Example comparison specification, pending reference-based blocking: same 1,000 ms cycle, same 36 logical px stride, same 36 logical px/s travel, same pose trajectory and scale. Twelve drawings give 12/second and ideal ±1.5 px midpoint hold error; fifteen give 15/second and ±1.2 px. With approximately ±1 px measurement uncertainty these leave 0.5/0.8 px of the existing 3 px budget for additional drawing error. These are sampling limits, not actual-art passes. A 15 FPS cycle costs 25% more drawings at the same duration, giving more swing detail and less held-paw sliding. Preserve phase landmarks even when equal-rate samples fall between them.
+
+The existing eight-drawing lab study is retimed to 12 FPS as requested, shortening its cycle to 666.667 ms and scaling straight root travel to preserve 36 logical px/cycle. Its original pixels and order remain intact and rejected. This immediate playback adjustment is distinct from the fixed-duration 12/15 authoring comparison above; it adds no drawings and does not fix foot placement.
 
 The child's proposed 62.5% stance / 37.5% swing supplies alternating two/three supports and more swing time. It lies near the cited walking results but remains a blocking hypothesis. Keep LH/LF/RH/RF landings at 0/.25/.5/.75; toe-offs occur .625 later modulo one. Reference annotation and the exaggerated body's reach must settle the final schedule and stride before export. Equal-rate samples may fall between those event landmarks; preserve the event poses in the authoring worksheet.
 
 ## Acceptance and remaining work
 
 - [x] Verify and integrate the subagent's primary-source findings and reproduce the guide's numerical audit.
-- [x] Choose a provisional 15/20 cadence comparison with fixed motion duration and travel; distinguish it from game render FPS. Resolve Hollow Knight's specific clip rates through published extracted metadata.
+- [x] Adopt the user's 12–15 FPS range, default to 12, and define a fixed-duration 12/15 authoring comparison. Resolve Hollow Knight's specific clip rates through published extracted metadata.
 - [ ] Correct motion blocking before detailed art; retain the user's exaggerated whole-body identity and straight runtime root path.
 - [ ] Measure every required painted stance interval through the seam. Check the whole hold, not only its midpoint, and require error plus uncertainty to fit the budget. Missing evidence cannot pass.
 - [ ] Establish human continuous-loop/seam review before any convincing-motion claim. Tools that expose only stills/frame traces do not satisfy that observation.

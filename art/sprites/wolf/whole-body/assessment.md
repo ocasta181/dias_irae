@@ -1,5 +1,9 @@
 # Wolf whole-body assessment
 
+## Current 12 FPS timing
+
+The user approved a 12–15 FPS moving-animation range and rejected 8 FPS. The lab now defaults this unchanged eight-drawing study to 12 FPS: 83.333 ms holds, a 666.667 ms loop and 36 logical pixels of travel per loop. The default stage speed is 81 screen pixels/second. No extra runtime bounce, sway, rotation or scale change is added. This is a timing correction; the paintings and gait remain rejected. The current `qa-timing-v05.json` and `contact-report-v05.json` use the new timestamps; earlier reports remain historical evidence.
+
 ## Temporal review limitation
 
 At `77b62fb`, the user again rejects the walk as flailing. The available visual tools provide snapshots, not continuous video perception. The earlier claims below of normal-speed visual inspection were too strong: screenshots confirm selected drawings and the trace confirms frame coverage, but neither establishes a convincing gait. The art remains rejected. Research into canine mechanics, animation practice and drawing cadence is now underway before another authoring attempt. Review must track the same anatomical paws across a complete cycle and its seam, and measure actual painted contacts using actual root travel.

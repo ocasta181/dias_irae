@@ -1,0 +1,214 @@
+{
+  "packagePassed": true,
+  "reconstructedFrames": 9,
+  "exactWholeFrameTranslations": true,
+  "fixedRegistrationAnchor": [
+    144,
+    126
+  ],
+  "registrationChecks": [
+    {
+      "source": 0,
+      "before": [
+        144,
+        126
+      ],
+      "after": [
+        144,
+        126
+      ],
+      "offset": [
+        0,
+        0
+      ]
+    },
+    {
+      "source": 1,
+      "before": [
+        149,
+        124
+      ],
+      "after": [
+        144,
+        126
+      ],
+      "offset": [
+        -5,
+        2
+      ]
+    },
+    {
+      "source": 2,
+      "before": [
+        149,
+        124
+      ],
+      "after": [
+        144,
+        126
+      ],
+      "offset": [
+        -5,
+        2
+      ]
+    },
+    {
+      "source": 3,
+      "before": [
+        150,
+        119
+      ],
+      "after": [
+        144,
+        126
+      ],
+      "offset": [
+        -6,
+        7
+      ]
+    },
+    {
+      "source": 4,
+      "before": [
+        150,
+        119
+      ],
+      "after": [
+        144,
+        126
+      ],
+      "offset": [
+        -6,
+        7
+      ]
+    },
+    {
+      "source": 5,
+      "before": [
+        149,
+        125
+      ],
+      "after": [
+        144,
+        126
+      ],
+      "offset": [
+        -5,
+        1
+      ]
+    },
+    {
+      "source": 6,
+      "before": [
+        149,
+        125
+      ],
+      "after": [
+        144,
+        126
+      ],
+      "offset": [
+        -5,
+        1
+      ]
+    },
+    {
+      "source": 7,
+      "before": [
+        149,
+        122
+      ],
+      "after": [
+        144,
+        126
+      ],
+      "offset": [
+        -5,
+        4
+      ]
+    },
+    {
+      "source": 8,
+      "before": [
+        149,
+        121
+      ],
+      "after": [
+        144,
+        126
+      ],
+      "offset": [
+        -5,
+        5
+      ]
+    }
+  ],
+  "fps": 12,
+  "cycleMs": 666.6666666666666,
+  "displayTravelPxPerSecond": 81,
+  "measured": [
+    {
+      "pose": 1,
+      "source": 2,
+      "region": [
+        95,
+        147,
+        25,
+        22
+      ],
+      "point": [
+        110.5,
+        159
+      ],
+      "uncertaintyPx": 1
+    },
+    {
+      "pose": 2,
+      "source": 1,
+      "region": [
+        95,
+        147,
+        25,
+        22
+      ],
+      "point": [
+        109,
+        159
+      ],
+      "uncertaintyPx": 1
+    },
+    {
+      "pose": 3,
+      "source": 3,
+      "region": [
+        94,
+        152,
+        25,
+        22
+      ],
+      "point": [
+        105,
+        159
+      ],
+      "uncertaintyPx": 1
+    },
+    {
+      "pose": 4,
+      "source": 4,
+      "region": [
+        94,
+        152,
+        25,
+        22
+      ],
+      "point": [
+        105.5,
+        159
+      ],
+      "uncertaintyPx": 1
+    }
+  ],
+  "fullContactCoverage": false,
+  "motionAcceptance": "revise",
+  "productionReady": false
+}

@@ -1,5 +1,13 @@
 # Whole-body wolf replacement
 
+## Current cadence decision
+
+2026-10-05, decision at `fcd4bc2`, confidence 95%: the user sets moving-animation playback to **12–15 FPS** and rejects 8 FPS. Default the wolf walk to **12 FPS**. Prefer its restrained cadence for the short squat design; use **15 FPS** if extra lift/recovery/landing drawings improve readability at the same cycle duration and stride. Idle holds remain separate from locomotion cadence.
+
+The current eight-drawing study is retimed to 83.333 ms per pose, a 666.667 ms cycle and 36 logical pixels per cycle. Travel is 54 logical pixels/second, or 81 screen pixels/second at the default 96-pixel height. This timing-only change preserves the original paintings, registration and source order. It does not repair the rejected gait. New authored cycles must budget 12–15 purposeful frame changes per second; increasing drawing count must not silently accelerate their cycle or ground speed.
+
+Earlier cadence decisions below are historical. The original eight-pose guides keep their original timestamps; the pose review reports current playback times separately. Current package/contact evidence uses v05 filenames and preserves the v04 reports.
+
 ## Straight-path registration correction
 
 Decision at `28a31b7`, confidence 98%: the user's instruction requires straight root travel and no added positioning animation. The active viewer already uses constant vertical translation, pivot and scale during rightward walking. The drawings themselves shift between source cells: the inspected nose edge moves by up to seven logical pixels vertically.
