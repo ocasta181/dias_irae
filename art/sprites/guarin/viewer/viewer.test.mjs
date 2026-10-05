@@ -11,10 +11,14 @@ const source = readFileSync(new URL("viewer.mjs", import.meta.url), "utf8").repl
 
 function playground(startup = false) {
   const nodes = [];
-  const context = new Proxy({}, { get: () => () => {} });
+  const draws = [];
   function node() {
     const value = { dataset: {}, listeners: {}, children: [], value: "", width: 900, height: 560, textContent: "", checked: false };
     function remove(child) { nodes.splice(nodes.indexOf(child), 1); child.children.forEach(remove); }
+    const context = new Proxy({}, { get: (_, name) => name === "drawImage" ? (image, ...rect) => {
+      assert.ok(image, "a drawable image must be loaded before its rectangle is rendered");
+      if (value === get("stage")) draws.push({ image, rect });
+    } : () => {} });
     Object.assign(value, { addEventListener: (type, handler) => { value.listeners[type] = handler; }, setAttribute() {}, append(...children) { value.children.push(...children); }, replaceChildren() { value.children.forEach(remove); value.children = []; }, getContext: () => context, getBoundingClientRect: () => ({ width: 900, height: 560 }) });
     nodes.push(value);
     return value;
@@ -29,7 +33,7 @@ function playground(startup = false) {
     set src(value) { queueMicrotask(() => this.onload()); }
   }
   const scope = vm.createContext({ ...animation, document, window, inputAtlas: atlas, inputWolf: wolf, URLSearchParams, Image, fetch: url => new Promise(resolve => pendingLoads.push({ url, resolve })), requestAnimationFrame: callback => renderRequests.push(callback), Path2D: class {} });
-  vm.runInContext(source + (startup ? "" : "\natlas = inputAtlas; extent = {left: 1, right: 1, above: 1, below: .3}; wireControls();"), scope);
+  vm.runInContext(source + (startup ? "" : "\natlas = inputAtlas; for (const page of Object.values(atlas.directions)) for (const frame of page.frames) images.set(frame.image, {path: frame.image}); extent = {left: 1, right: 1, above: 1, below: .3}; wireControls();"), scope);
   return {
     key(type, key, options = {}) {
       let prevented = false;
@@ -42,16 +46,36 @@ function playground(startup = false) {
     inspect: clip => { get("clip").value = clip; get("clip").listeners.change(); },
     tune: (speed, fps) => { get("speed").value = speed; get("fps").value = fps; get("fps").listeners.change(); },
     blur: () => window.listeners.blur(),
-    select: (id, data) => { scope.inputSelected = data ?? (id === "wolf" ? wolf : atlas); return vm.runInContext(`applyCharacter("${id}", inputSelected, new Map())`, scope); },
+    select: (id, data) => { scope.inputSelected = data ?? (id === "wolf" ? wolf : atlas); return vm.runInContext(`applyCharacter("${id}", inputSelected, new Map(Object.values(inputSelected.directions).flatMap(page => page.frames).map(frame => [frame.image, {path: frame.image}])))`, scope); },
     size: value => { get("size").value = value; },
     value: id => get(id).value,
     begin: () => vm.runInContext("start()", scope),
     change: id => { get("character").value = id; get("character").listeners.change(); },
     respond: (index, data) => pendingLoads[index].resolve({ ok: true, json: async () => data }),
     renders: () => renderRequests.length,
+    drawn: data => draws.map(draw => Object.values(data.directions).flatMap(page => page.frames).findIndex(frame => frame.rect.every((number, index) => number === draw.rect[index]))),
+    clearDraws: () => { draws.length = 0; },
     visible: () => get(".lab").hidden === false,
   };
 }
+
+function distinctPoses(poses) {
+  return poses.filter((pose, index) => index === 0 || pose !== poses[index - 1]);
+}
+
+test("normal 60 Hz playback draws every wolf pose in the actual declared order", () => {
+  const lab = playground(); lab.select("wolf", wholeWolf); lab.step(0);
+  lab.key("keydown", "d"); lab.clearDraws(); lab.step(0);
+  for (let index = 1; index <= 60; index++) lab.step(index * 1000 / 60);
+  assert.deepEqual(distinctPoses(lab.drawn(wholeWolf)), [2, 1, 3, 4, 6, 5, 7, 8, 2]);
+});
+
+test("elapsed-time playback skips undrawn wolf poses during 500 ms display gaps", () => {
+  const lab = playground(); lab.select("wolf", wholeWolf); lab.step(0);
+  lab.key("keydown", "d"); lab.clearDraws();
+  for (const time of [0, 500, 1000]) lab.step(time);
+  assert.deepEqual(lab.drawn(wholeWolf), [2, 6, 2]);
+});
 
 test("page keyboard input moves diagonally and release returns to idle", () => {
   const lab = playground(); lab.step(0);
