@@ -36,3 +36,16 @@ Decision at commit `c0b8812`, confidence 98%: retain the captured saved top twel
 - [ ] User selects the preferred facial marks.
 
 The current round uses the built-in generator after the Grok trials failed the medium check. This is a documented change from the initial 15/15 provider plan. Every card links its actual request and record; these files, rather than the initial planning allocation, identify the actual generation inputs. Current images are `images/f31-v03.png` through `images/f45-v03.png`, except F38 uses `f38-v04.png`, and `images/f46-v01.png` through `images/f60-v01.png`, except F54 uses `f54-v02.png`.
+
+
+## Hair and nose round — 2026-10-05
+
+Decision at commit `c6438cf`, confidence 95%: the requested several versions of F25, V22 and F18 means a full three-by-three comparison per base, **27 drawings F61–F87**. Three hairstyles (close blunt crop, ear-length ragged side part, receding sparse crown) combine with three noses (tiny round button, slender curved hook, short crooked broad tip). All use the original F25 tiny solid square eye marks, without whites or highlights. Keep each base's own facial shape, brows, mouth, costume, proportions and rough medium.
+
+[Exact source hashes and candidate matrix](round-3-plan.json). F61–F69 use only F25. F70–F78 use exact V22 plus F25 as an eye-only reference. F79–F87 use exact F18 plus F25 as an eye-only reference. Never use a new-round or failed output as a generation input. The built-in generator is used because the previous Grok trials did not retain the granular medium.
+
+- [x] Define 27 independent requests with explicit input roles and source hashes.
+- [ ] Generate and inspect all 27 original outputs.
+- [ ] Check each eye treatment, hair silhouette, nose shape and source consistency in the full figures and face close-ups.
+- [ ] Publish inspected candidates without changing earlier comments or order.
+- [ ] User reviews the combinations.

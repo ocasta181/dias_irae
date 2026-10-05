@@ -9,6 +9,7 @@ This is the source of truth for the mood board → concept art → sprites → f
 - [x] Produce and preserve 24 intact walk drawings in two twelve-pose requests using the exact new base and controls. Add the whole-body E idle/walk study to the lab; remove the rejected assembly from the default wolf view. Thirty-five controller/guide tests pass. The actual walk still requires pose/contact repair; seven headings and other states are not claimed complete.
 - [x] Respond to the frenetic-walk report with eight new whole-body keys from enlarged four-pose controls. Change cadence from 26.67 to 8 pose changes/second and default travel from 40 to 54 screen pixels/second. Preserve the intact v02 identity, raw sources and exact lineage. Keep contact precision and full coverage unapproved.
 - [x] Inspect the active eight-key export at normal speed in the lab. Thirty-six controller/guide tests pass; all nine packed canvases and timing checks pass. Measure actual painted near-forepaw contacts in four playback frames: drift reaches 12.77 logical pixels against the proposed 3-pixel budget, and other required contacts remain missing. Preserve [the assessment](../art/sprites/wolf/whole-body/assessment.md), [playback preview](../art/sprites/wolf/whole-body/lab-cadence-review.jpg) and failed report; do not promote the study to production.
+- [x] Respond to the renewed flailing/speed rejection with [all eight exact stick figures](../art/sprites/wolf/whole-body/pose-review/index.html), 26 anchors per pose, joint names, support states, original handoff evidence and actual exported drawings. Expose the four runtime swaps and the planned-stride speed assumption. Preserve art, order and travel for this evidence step; mark the active walk rejected.
 - [ ] Repair whole-body pose/contact errors, measure all required contacts and inspect the corrected export in the motion lab. The source tool has ignored two targeted guide formats; change the control method before another full animation batch.
 - [ ] Pass the pilot before expanding to eight directions and other states. User visual approval remains open; the rejected 512-entry component package is not current game art.
 
@@ -301,3 +302,10 @@ Current decision at commit `3aef464`: preserve the four explicitly selected styl
 - [ ] User reviews noses, eyes, mouths and brows and selects the useful direction.
 
 2026-10-05 verification: 65 face cards published; all 35 earlier rows and their relative ranking preserved exactly. Browser confirms the project saved all 65 positions automatically, no Save button remains. Thirty-two server/publisher tests and twelve browser-state tests pass; no database is used.
+
+
+2026-10-05 decision at commit `c6438cf`, confidence 95%: produce 27 combinations from explicitly named F25, V22 and F18, nine per base. All share F25's tiny square eye marks. Three distinct hair silhouettes cross with three rounded/curved nose styles, keeping each base's face shape, weary identity, outfit and grain. Exact first base plus F25 eye-only reference are the sole inputs.
+
+- [x] Define 27 independent hairstyle/nose combinations and capture exact sources.
+- [ ] Generate, inspect and publish the new combinations on the automatically saved face board.
+- [ ] User reviews combinations before any final face or sprite approval.
