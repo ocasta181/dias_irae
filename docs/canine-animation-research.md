@@ -14,7 +14,25 @@ Integration decision at `8aca7ee`, confidence 95%: retain the valid four-beat or
 
 [Paul Siramy's original animation-extraction research](https://tristram-archives.github.io/diablo2_infodump/2013/just%20hosting%20these,%20Downloaded%20from%20Internet/documentation/extracting_diablo_2_animations.pdf), pages 36–37, documents Diablo II's 25 Hz logic clock and separate per-clip speeds. Its Barbarian walk `BATW1SS` has eight drawings played at 25 FPS: a 320 ms loop. Its neutral `BATN1SS` uses `AnimationSpeed=80`, giving `25 × 80 / 256 = 7.8125` drawing changes per second. These are documented examples, not a universal rate for every character/action or every gameplay speed modifier.
 
-[Unity's Team Cherry case study](https://unity.com/made-with-unity/hollow-knight) confirms traditional Photoshop animation, PNG sprites and 2D Toolkit. It does not publish exact clip frame rates. Team Cherry's publicly provided image library, inspected through ACMI, also supplies no timing metadata. The local Hollow Knight folder contains configuration remnants, not the game's serialized animation assets. A claimed universal 12 FPS rate is **unverified** and must not become our benchmark.
+[Unity's Team Cherry case study](https://unity.com/made-with-unity/hollow-knight) confirms traditional Photoshop animation, PNG sprites and 2D Toolkit, but publishes no clip timings. The initial lookup stopped too early at general articles and image libraries. The further lookup below establishes specific clip rates from published extracted game data. The local game folder still contains configuration remnants; these are external research findings, not measurements from a locally running game.
+
+### Hollow Knight: exact clip lookup, 2026-10-05
+
+Decision at `0cde99b`, confidence 95%: use the Knight's **12 FPS normal movement** as the Hollow Knight locomotion reference, rather than treating 12 as a universal rate. [hkrl's original reverse-engineering study](https://github.com/Ramora0/hkrl/blob/eb9844f97896b310c292c831cdbb6985eaf710ac/analysis/specs/tk2d-animator.md) reports `Run` at 12 FPS and `Turn` at 20 FPS, with playback checked against recorded game traces. [Its source description](https://github.com/Ramora0/hkrl/blob/eb9844f97896b310c292c831cdbb6985eaf710ac/README.md) identifies Hollow Knight 1.5.78 and states that the generated tables contain values read from game data.
+
+Parent independently retrieved [the pinned generated timing table](https://raw.githubusercontent.com/Ramora0/hkrl/eb9844f97896b310c292c831cdbb6985eaf710ac/sim/generated/GG_Hornet_1/tables.c), decoded its string/library indices, and read the `Knight` library (214 clips). [The table schema](https://github.com/Ramora0/hkrl/blob/eb9844f97896b310c292c831cdbb6985eaf710ac/sim/fsm/fsm_tables.h) defines each row as name, FPS, wrap mode, loop start, first frame and frame count. This prevents confusing Hornet's same-named clips with the Knight's.
+
+| Knight clip | Clip FPS | Frame slots | Loop start (zero-based) |
+| --- | ---: | ---: | ---: |
+| Idle | 12 | 9 | 0 |
+| Run (normal travelling movement) | 12 | 13 | 6 |
+| Walk (walk-zone movement) | 10 | 7 | 0 |
+| Sprint | 12 | 10 | 4 |
+| Airborne | 16 | 12 | 9 |
+| Turn | 20 | 2 | 0 |
+| Slash | 20 | 15 | 0 |
+
+These are clip playback rates, not counts of unique drawings per second; frame slots may repeat artwork. `Run` includes an initial section before its seven-frame loop. The original study describes ordinary playback using the clip's FPS, while explicit overrides can change it. The broader game's rates therefore differ by action. The 2019 [official information sheet](https://files.bbystatic.com/enW7ynTFVH2SPga2A19ssQ==/bd7c46c6-763c-4e2c-82bf-bce2a2ac5a1b.pdf) lists 60 FPS game output; that is a separate measurement.
 
 Keep these separate:
 
@@ -76,7 +94,7 @@ For a fixed stride S and N equal midpoint holds, ideal stance hold error is S/(2
 
 ## Proposed cadence comparison and pilot
 
-Decision at `8aca7ee`, confidence 80%: start a controlled **15 drawing-changes/second** trial, with a 20/second comparison if stepping remains distracting. This is our provisional artistic choice, not a verified Hollow Knight rate or an arithmetic midpoint between the games. At a steady 60 Hz display those rates allow uniform holds of four or three display updates respectively; dropped presentation updates still require separate coverage checks.
+Decision at `8aca7ee`, confidence 80%: start a controlled **15 drawing-changes/second** trial, with a 20/second comparison if stepping remains distracting. This remains our provisional artistic choice. The later lookup places it between Hollow Knight's 12 FPS normal movement and the documented Diablo II Barbarian walk at 25 FPS; neither is a universal rate for its game. At a steady 60 Hz display those proposed rates allow uniform holds of four or three display updates respectively; dropped presentation updates still require separate coverage checks.
 
 Example comparison specification, pending reference-based blocking: same 800 ms cycle, same 24 logical px stride, same 30 logical px/s ground travel, same pose trajectory and canvas scale. Twelve drawings give 15/second and ideal ±1 px midpoint hold error; sixteen give 20/second and ±0.75 px. These are calculated sampling limits, not actual-art passes. Do not compare them by merely increasing the existing eight-frame playback control.
 
@@ -85,7 +103,7 @@ The child's proposed 62.5% stance / 37.5% swing supplies alternating two/three s
 ## Acceptance and remaining work
 
 - [x] Verify and integrate the subagent's primary-source findings and reproduce the guide's numerical audit.
-- [x] Choose a provisional 15/20 cadence comparison with fixed motion duration and travel; distinguish it from game render FPS and unverified Hollow Knight timings.
+- [x] Choose a provisional 15/20 cadence comparison with fixed motion duration and travel; distinguish it from game render FPS. Resolve Hollow Knight's specific clip rates through published extracted metadata.
 - [ ] Correct motion blocking before detailed art; retain the user's exaggerated whole-body identity and straight runtime root path.
 - [ ] Measure every required painted stance interval through the seam. Check the whole hold, not only its midpoint, and require error plus uncertainty to fit the budget. Missing evidence cannot pass.
 - [ ] Establish human continuous-loop/seam review before any convincing-motion claim. Tools that expose only stills/frame traces do not satisfy that observation.
