@@ -1,5 +1,13 @@
 # Wolf whole-body assessment
 
+## Registration and playback correction
+
+The active `wolf-whole-e-v03.png` uses the same complete painted animals with corrected static registration. The previously inspected nose edge varied from x 144–150 and y 119–126, including idle. Each complete logical canvas is translated by whole pixels to `(144,126)` during export. The viewer reads neither these offsets nor a bob/sway curve: all frames retain pivot `(96,156)`, canonical height 64 and a constant runtime scale.
+
+[Registration checks](qa-registration-v04.json) reconstruct all nine drawings from the preserved v02 atlas and verify exact translated pixels, no clipping, constant head anchor and unchanged sources. The idle is unchanged. I inspected all eight registered poses in the local lab; [pose 1](registered-pose-1.jpg) and [pose 8](registered-pose-8.jpg) show the same stage placement. The frame-preserving player also shows every key during stalled updates; [playback evidence](../../guarin/viewer/playback-review.md) separates this preview policy from real-time simulation.
+
+This corrects cell placement and playback, not the underlying rejected gait. The [new contact report](contact-report-v04.json) still fails: the submitted near-forepaw drift reaches 10.75 logical pixels against the same 3-pixel budget, and other required observations remain missing. The original observations and report remain unchanged. The same identified paw regions were translated with the complete drawings for the new measurement; no target coordinate replaced a measurement. Anatomy, camera and foot movement still need repair before production acceptance.
+
 The proportions are corrected: v02 uses a conspicuously oversized broad head, short round torso and very short thick legs. The intact neck and haunches remove the earlier component assembly's disconnected appearance. S13 is now the dominant proportion reference; M15 supplies species features only. User visual approval remains pending.
 
 ## User rejects the cadence revision
@@ -18,11 +26,11 @@ The near right forepaw was identified visually in the first four playback poses.
 
 [Current package checks](qa-current.json) verify unchanged page/source hashes, reconstruct all nine packed logical canvases bit-for-bit, require one major connected alpha silhouette per drawing, and check the eight-key timing and default travel calibration. Connectivity cannot certify anatomy. Camera, limb identity, planted contacts and the loop still need repair. The lab labels this as a study and does not offer the missing seven headings or ungenerated attacks.
 
-The exporter uses one fixed scale and translation per original sheet. It never aligns or rescales individual figures, assembles limbs or copies planned target coordinates into measured metadata. Thus the visible placement failures remain exposed for inspection. A stationary whole-body idle uses one unchanged drawing; it cannot tremble from random repainting.
+The original v02 exporter used one fixed scale and translation per original sheet, so placement failures remained visible. Its atlas and metadata are preserved in `atlas-v02.json`, `registration-v02.json` and `wolf-whole-e-v02.png`. The current registration correction above changes only complete-canvas translation; it does not assemble limbs, rescale individual figures or substitute planned contact targets for measurements. A stationary whole-body idle uses one unchanged drawing.
 
 The numerical skeleton has fixed segment lengths, reachable short legs, three supports, stable head/body and contact-consistent root travel. These checks validate the plan only. Whole-body appearance and usable motion are separate gates; the full eight-direction inventory is still pending.
 
-Repeat the current exporter `export.mjs`, then `qa-current.mjs`, with the existing canvas dependency. Run the skill's `check_contacts.py` on `contact-observations-v03.json`, choosing a new output filename. Its expected exit code is 1 because this art fails the contact checks. Do not describe that rejection as passing art quality assurance.
+Repeat the current exporter `export.mjs`, then `qa-current.mjs`, with the existing canvas dependency. The latter now writes `qa-registration-v04.json` and `contact-observations-v04.json`. Run the skill's `check_contacts.py` on those observations, choosing a new output filename. Its expected exit code is 1 because this art fails the contact checks. Do not describe that rejection as passing art quality assurance.
 
 ## Archived 24-pose failure
 

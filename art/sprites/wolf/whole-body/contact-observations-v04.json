@@ -1,0 +1,202 @@
+{
+  "basis": "measured-art",
+  "max_drift_px": 3,
+  "method": "First four registered packed poses, human-identified near forepaw region and deterministic alpha>=128 contact edge; other required contacts explicitly missing. Fixed RF world position anchored to first observed midpoint. Uncertainty approximately one logical pixel. Source v03 observations are preserved unchanged; this measures the new atlas registration separately.",
+  "clips": [
+    {
+      "id": "E-walk-v04-first-four",
+      "world_contacts": {
+        "LH": [
+          -2.5,
+          -5.656854249492369
+        ],
+        "RH": [
+          -20.5,
+          5.656854249492369
+        ],
+        "RF": [
+          16.75,
+          3
+        ],
+        "LF": [
+          38.5,
+          -5.656854249492369
+        ]
+      },
+      "frames": [
+        {
+          "id": "E-walk-v03-1",
+          "start_ms": 0,
+          "duration_ms": 125,
+          "pivot": [
+            96,
+            156
+          ],
+          "required_contacts": [
+            "LH",
+            "RH",
+            "RF"
+          ],
+          "contacts": {
+            "RF": [
+              110.5,
+              159
+            ]
+          },
+          "root_samples": [
+            {
+              "offset_ms": 0,
+              "position": [
+                0,
+                0
+              ]
+            },
+            {
+              "offset_ms": 62.5,
+              "position": [
+                2.25,
+                0
+              ]
+            },
+            {
+              "offset_ms": 125,
+              "position": [
+                4.5,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "E-walk-v03-2",
+          "start_ms": 125,
+          "duration_ms": 125,
+          "pivot": [
+            96,
+            156
+          ],
+          "required_contacts": [
+            "LH",
+            "RH",
+            "RF"
+          ],
+          "contacts": {
+            "RF": [
+              109,
+              159
+            ]
+          },
+          "root_samples": [
+            {
+              "offset_ms": 0,
+              "position": [
+                4.5,
+                0
+              ]
+            },
+            {
+              "offset_ms": 62.5,
+              "position": [
+                6.75,
+                0
+              ]
+            },
+            {
+              "offset_ms": 125,
+              "position": [
+                9,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "E-walk-v03-3",
+          "start_ms": 250,
+          "duration_ms": 125,
+          "pivot": [
+            96,
+            156
+          ],
+          "required_contacts": [
+            "LH",
+            "LF",
+            "RF"
+          ],
+          "contacts": {
+            "RF": [
+              105,
+              159
+            ]
+          },
+          "root_samples": [
+            {
+              "offset_ms": 0,
+              "position": [
+                9,
+                0
+              ]
+            },
+            {
+              "offset_ms": 62.5,
+              "position": [
+                11.25,
+                0
+              ]
+            },
+            {
+              "offset_ms": 125,
+              "position": [
+                13.5,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "E-walk-v03-4",
+          "start_ms": 375,
+          "duration_ms": 125,
+          "pivot": [
+            96,
+            156
+          ],
+          "required_contacts": [
+            "LH",
+            "LF",
+            "RF"
+          ],
+          "contacts": {
+            "RF": [
+              105.5,
+              159
+            ]
+          },
+          "root_samples": [
+            {
+              "offset_ms": 0,
+              "position": [
+                13.5,
+                0
+              ]
+            },
+            {
+              "offset_ms": 62.5,
+              "position": [
+                15.75,
+                0
+              ]
+            },
+            {
+              "offset_ms": 125,
+              "position": [
+                18,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

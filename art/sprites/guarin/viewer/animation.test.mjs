@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { advance, createPlayer, face, request, sample } from "./animation.mjs";
+import { advance, createPlayer, face, request, sample, visibleDelta } from "./animation.mjs";
 
 const loop = { loop: true, frames: [{ source: 0, durationMs: 100 }, { source: 1, durationMs: 200 }] };
 const shot = { loop: false, frames: [{ source: 2, durationMs: 100 }, { source: 3, durationMs: 100 }], events: [{ name: "contact", atMs: 100 }] };
@@ -9,6 +9,18 @@ for (const name of ["cut", "hurt", "death", "interact", "guard_in", "guard_out",
 
 test("unequal frame holds survive a loop without adding a duplicate end pose", () => {
   assert.deepEqual([sample(loop, 99).source, sample(loop, 100).source, sample(loop, 299).source, sample(loop, 300).source], [0, 1, 1, 0]);
+});
+
+test("fractional-duration boundaries select the next frame without millisecond rounding", () => {
+  const fractional = { loop: true, frames: Array.from({ length: 6 }, (_, source) => ({ source, durationMs: 1000 / 12 })) };
+  for (let index = 0; index <= 6; index++) assert.equal(sample(fractional, index * 1000 / 12).index, index % 6);
+});
+
+test("frame visibility budgeting retains a single boundary and limits multiple boundaries", () => {
+  assert.equal(visibleDelta(loop, 90, 200), 200);
+  assert.equal(visibleDelta(loop, 90, 300), 10);
+  assert.equal(visibleDelta(loop, 280, 300), 20);
+  assert.equal(visibleDelta(shot, 190, 300), 10);
 });
 
 test("elapsed time gives the same pose at different display refresh rates", () => {

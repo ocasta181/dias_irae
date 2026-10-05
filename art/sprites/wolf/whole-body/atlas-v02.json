@@ -4,15 +4,15 @@
     "source_character": "S13 proportions / wolf base v02"
   },
   "sourceFrames": 9,
-  "reviewStatus": "Whole-body wolf study: oversized head, squat torso, short legs. Eight walk drawings at 8 frames per second, with stable head registration baked into the sheet. Right-facing only. The gait remains rejected; contacts and other headings/actions still need work. Not production-ready.",
+  "reviewStatus": "Whole-body wolf study: oversized head, squat torso, short legs. Eight clear walk poses at 8 frames per second; one-second cycle and longer stride. Right-facing only. Precise contacts and other headings/actions still need work; not production-ready.",
   "directions": {
     "E": {
-      "image": "wolf-whole-e-v03.png",
+      "image": "wolf-whole-e-v02.png",
       "dimensions": [
         588,
         588
       ],
-      "sha256": "738c1c007eda10968b95cb4a51148a89f3d049c5d3279097ae4134dbd17f7db5",
+      "sha256": "b5b3dc53b08b04c9012371ce3f1ee1dc21a722f0699f4d20425d300f5271b9a7",
       "frames": [
         {
           "family": "idle",
@@ -41,7 +41,7 @@
             82,
             63
           ],
-          "image": "wolf-whole-e-v03.png",
+          "image": "wolf-whole-e-v02.png",
           "sourceStandingHeight": 64,
           "sourceFile": "base-wolf-v02.png",
           "sourceRect": [
@@ -50,20 +50,6 @@
             1254,
             1254
           ],
-          "registrationAnchor": {
-            "observed": [
-              144,
-              126
-            ],
-            "target": [
-              144,
-              126
-            ],
-            "offset": [
-              0,
-              0
-            ]
-          },
           "sha256": "3d2f1ae1dcf1a9da3de7796110cc2318c15d3da7e7188cc620773f9eae5801ff"
         },
         {
@@ -88,12 +74,12 @@
             0
           ],
           "occupied": [
-            57,
-            96,
+            62,
+            94,
             88,
             63
           ],
-          "image": "wolf-whole-e-v03.png",
+          "image": "wolf-whole-e-v02.png",
           "sourceStandingHeight": 64,
           "sourceFile": "walk-e-v03-1-4.png",
           "sourceRect": [
@@ -102,21 +88,7 @@
             707.5,
             555.5
           ],
-          "registrationAnchor": {
-            "observed": [
-              149,
-              124
-            ],
-            "target": [
-              144,
-              126
-            ],
-            "offset": [
-              -5,
-              2
-            ]
-          },
-          "sha256": "96eb1e5ffbb9975cf39263f8eb7e9671efaa978d6e032c0fd0550f182b9ac571"
+          "sha256": "79c0e8eb0087405d90870f0d16b8b9b7f522384ca03f95da9c87775769a5dfb2"
         },
         {
           "family": "walk",
@@ -140,12 +112,12 @@
             0
           ],
           "occupied": [
-            57,
-            96,
+            62,
+            94,
             88,
             63
           ],
-          "image": "wolf-whole-e-v03.png",
+          "image": "wolf-whole-e-v02.png",
           "sourceStandingHeight": 64,
           "sourceFile": "walk-e-v03-1-4.png",
           "sourceRect": [
@@ -154,21 +126,7 @@
             707.5,
             555.5
           ],
-          "registrationAnchor": {
-            "observed": [
-              149,
-              124
-            ],
-            "target": [
-              144,
-              126
-            ],
-            "offset": [
-              -5,
-              2
-            ]
-          },
-          "sha256": "e49290114ce40e29fd6820c257c03fe9493704dc6b14e17132b777332cf13a89"
+          "sha256": "d7bd9012c7e54f207a64bab8e5e02c7bee0a26438799856be127c4461e3664d6"
         },
         {
           "family": "walk",
@@ -192,12 +150,12 @@
             0
           ],
           "occupied": [
-            56,
-            96,
+            62,
+            89,
             89,
             63
           ],
-          "image": "wolf-whole-e-v03.png",
+          "image": "wolf-whole-e-v02.png",
           "sourceStandingHeight": 64,
           "sourceFile": "walk-e-v03-1-4.png",
           "sourceRect": [
@@ -206,21 +164,7 @@
             707.5,
             555.5
           ],
-          "registrationAnchor": {
-            "observed": [
-              150,
-              119
-            ],
-            "target": [
-              144,
-              126
-            ],
-            "offset": [
-              -6,
-              7
-            ]
-          },
-          "sha256": "8e4b66a43cb9e456cb7e9b93f168f27f90732238e5d98a3a9bd6acde4cd81036"
+          "sha256": "020dc68d905dc5971fdebeeb9e919668039fbaebbf23bc5492a5dc367d05d18c"
         },
         {
           "family": "walk",
@@ -244,12 +188,12 @@
             0
           ],
           "occupied": [
-            56,
-            96,
+            62,
+            89,
             89,
             63
           ],
-          "image": "wolf-whole-e-v03.png",
+          "image": "wolf-whole-e-v02.png",
           "sourceStandingHeight": 64,
           "sourceFile": "walk-e-v03-1-4.png",
           "sourceRect": [
@@ -258,21 +202,7 @@
             707.5,
             555.5
           ],
-          "registrationAnchor": {
-            "observed": [
-              150,
-              119
-            ],
-            "target": [
-              144,
-              126
-            ],
-            "offset": [
-              -6,
-              7
-            ]
-          },
-          "sha256": "387abeb48791672aa8a93a387bd4291df99e16ab2d7e3c7efa1965912fac965e"
+          "sha256": "9f4cab442f86ce77b84305db7adebe754facd8102ff1cbfb5bc5c305c28838ab"
         },
         {
           "family": "walk",
@@ -296,12 +226,12 @@
             0
           ],
           "occupied": [
-            57,
-            95,
+            62,
+            94,
             88,
             65
           ],
-          "image": "wolf-whole-e-v03.png",
+          "image": "wolf-whole-e-v02.png",
           "sourceStandingHeight": 64,
           "sourceFile": "walk-e-v03-5-8.png",
           "sourceRect": [
@@ -310,21 +240,7 @@
             707.5,
             556
           ],
-          "registrationAnchor": {
-            "observed": [
-              149,
-              125
-            ],
-            "target": [
-              144,
-              126
-            ],
-            "offset": [
-              -5,
-              1
-            ]
-          },
-          "sha256": "b91f7dc514a5e3e77013530dd49b14749d7d3a3aca147813c514fa7390b456a2"
+          "sha256": "ea15ffc6071f9ab72fc46df942abe43acd1d222ef7267494971e0282a7e95b17"
         },
         {
           "family": "walk",
@@ -348,12 +264,12 @@
             0
           ],
           "occupied": [
-            57,
-            94,
+            62,
+            93,
             88,
             66
           ],
-          "image": "wolf-whole-e-v03.png",
+          "image": "wolf-whole-e-v02.png",
           "sourceStandingHeight": 64,
           "sourceFile": "walk-e-v03-5-8.png",
           "sourceRect": [
@@ -362,21 +278,7 @@
             707.5,
             556
           ],
-          "registrationAnchor": {
-            "observed": [
-              149,
-              125
-            ],
-            "target": [
-              144,
-              126
-            ],
-            "offset": [
-              -5,
-              1
-            ]
-          },
-          "sha256": "8c397441b06ffa21b6a7a05eab8e1f91bf8c4ecd2bad4aae664fc0dba38f15f6"
+          "sha256": "2cc976c1fbc713c03a2709b7528d2ee748bb99a1edda5d5744290a75a60694e8"
         },
         {
           "family": "walk",
@@ -400,12 +302,12 @@
             0
           ],
           "occupied": [
-            57,
-            95,
+            62,
+            91,
             88,
             65
           ],
-          "image": "wolf-whole-e-v03.png",
+          "image": "wolf-whole-e-v02.png",
           "sourceStandingHeight": 64,
           "sourceFile": "walk-e-v03-5-8.png",
           "sourceRect": [
@@ -414,21 +316,7 @@
             707.5,
             556
           ],
-          "registrationAnchor": {
-            "observed": [
-              149,
-              122
-            ],
-            "target": [
-              144,
-              126
-            ],
-            "offset": [
-              -5,
-              4
-            ]
-          },
-          "sha256": "fe9b054d08ad7afdded3c7826b5b78874794913b4f6c85e03b1d2e034a6ec200"
+          "sha256": "12d8952d71dc6962f1ae7d1a50bbc23fdd3b2d9396cf6db9d90c6ad6c97a763d"
         },
         {
           "family": "walk",
@@ -452,12 +340,12 @@
             0
           ],
           "occupied": [
-            58,
-            95,
+            63,
+            90,
             87,
             66
           ],
-          "image": "wolf-whole-e-v03.png",
+          "image": "wolf-whole-e-v02.png",
           "sourceStandingHeight": 64,
           "sourceFile": "walk-e-v03-5-8.png",
           "sourceRect": [
@@ -466,24 +354,10 @@
             707.5,
             556
           ],
-          "registrationAnchor": {
-            "observed": [
-              149,
-              121
-            ],
-            "target": [
-              144,
-              126
-            ],
-            "offset": [
-              -5,
-              5
-            ]
-          },
-          "sha256": "34a5b91c743c0b557392777d801a1b468d69e923705b60aab24d057906b1bc19"
+          "sha256": "da0a56d6d2e25b2f25a77916c2241a9edd1f62eb1e9475fa5ce29967cd520b21"
         }
       ],
-      "assessment": "Whole drawings use a fixed nose registration baked into the atlas; the viewer adds no bounce, sway or frame-specific position/scale changes. The existing reordered walk remains a rejected gait: contact locks, camera and far/near leg identity still need repair."
+      "assessment": "Intact painted animals, slower pose changes and more visible travel. The first two poses in each half are reversed to correct their observed near-forepaw sweep. Contact locks, row placement, camera and far/near leg identity still require verification/repair."
     }
   },
   "clips": {
@@ -558,5 +432,5 @@
     "stride": 36,
     "walkDuration": 1000
   },
-  "packing": "Complete painted source cells, fixed page-level scale, then whole-pixel translation to the inspected canonical nose anchor baked into each logical canvas. All source pixels preserved; no runtime registration offsets, per-frame scaling, rotation or parts assembly. Two transparent pixels per edge."
+  "packing": "Complete painted source cells, fixed page-level registration, untrimmed logical canvases, two transparent pixels per edge, no rotation or parts assembly."
 }

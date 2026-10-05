@@ -1,5 +1,11 @@
 # Whole-body wolf replacement
 
+## Straight-path registration correction
+
+Decision at `28a31b7`, confidence 98%: the user's instruction requires straight root travel and no added positioning animation. The active viewer already uses constant vertical translation, pivot and scale during rightward walking. The drawings themselves shift between source cells: the inspected nose edge moves by up to seven logical pixels vertically.
+
+The new export corrects that static registration. It translates each complete logical canvas by whole pixels to the standing pose's inspected nose anchor `(144,126)`, with no rescaling, rotation, limb assembly or pixel repainting. This is baked into `wolf-whole-e-v03.png`; the runtime does not read the recorded registration offsets. This explicitly replaces the pilot's former prohibition on individual registration correction below. Original sources, the v02 atlas and its metadata remain preserved. Exact pixel reconstruction and a fixed registered anchor are required; this correction does not certify the rejected gait or planted contacts.
+
 Decision at commit `d33dc2ed0d9e1399819bed59b73d49c69109a400`, confidence 99%: S13 controls the wolf's exaggerated proportions as well as its drawing style. The user's explicit correction rejects natural wolf proportions. M15 supplies species features only. No rejected wolf image is a generation input.
 
 ## Proportion lock

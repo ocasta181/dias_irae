@@ -1,0 +1,65 @@
+[
+  {
+    "file": "base-wolf-v02.png",
+    "columns": 1,
+    "rows": 1,
+    "scale": 0.08,
+    "offset": [
+      50,
+      72
+    ],
+    "first": 0,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "sourceCell": [
+      1254,
+      1254
+    ],
+    "sha256": "ee925ea9d1d9946cdaea3cf8a1538950748d305e079c96c7a76f837ff551c3b0",
+    "method": "One fixed scale and offset for the complete source sheet; no pose-level corrections."
+  },
+  {
+    "file": "walk-e-v03-1-4.png",
+    "columns": 2,
+    "rows": 2,
+    "scale": 0.14,
+    "offset": [
+      56,
+      81
+    ],
+    "first": 1,
+    "sourceSize": [
+      1415,
+      1111
+    ],
+    "sourceCell": [
+      707.5,
+      555.5
+    ],
+    "sha256": "0ec665ae6223ba831ee9491d71eb4c7f732825e8a5a476b7996c74489be15598",
+    "method": "One fixed scale and offset for the complete source sheet; no pose-level corrections."
+  },
+  {
+    "file": "walk-e-v03-5-8.png",
+    "columns": 2,
+    "rows": 2,
+    "scale": 0.14,
+    "offset": [
+      56,
+      85
+    ],
+    "first": 5,
+    "sourceSize": [
+      1415,
+      1112
+    ],
+    "sourceCell": [
+      707.5,
+      556
+    ],
+    "sha256": "aee69bace39d4430e11cee09525a30e918e9d54c5755add1816d8e3e62e5c61e",
+    "method": "One fixed scale and offset for the complete source sheet; no pose-level corrections."
+  }
+]

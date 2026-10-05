@@ -8,7 +8,7 @@
     "e-walk-v03-1-4",
     "e-walk-v03-5-8"
   ],
-  "atlasSha256": "5836ce6b0dfb38d63d0a8f6685617d46533f2ecbf496958968ca42a3ea7cdefb",
+  "atlasSha256": "7b73d9e60b1546450b93a799b4ea35c5b46a3349d28e06b2d0561364eee7f839",
   "legDefinitions": {
     "LF": {
       "name": "Left foreleg · far side",
@@ -370,12 +370,12 @@
           0
         ],
         "occupied": [
-          62,
-          94,
+          57,
+          96,
           88,
           63
         ],
-        "image": "wolf-whole-e-v02.png",
+        "image": "wolf-whole-e-v03.png",
         "sourceStandingHeight": 64,
         "sourceFile": "walk-e-v03-1-4.png",
         "sourceRect": [
@@ -384,7 +384,21 @@
           707.5,
           555.5
         ],
-        "sha256": "d7bd9012c7e54f207a64bab8e5e02c7bee0a26438799856be127c4461e3664d6"
+        "registrationAnchor": {
+          "observed": [
+            149,
+            124
+          ],
+          "target": [
+            144,
+            126
+          ],
+          "offset": [
+            -5,
+            2
+          ]
+        },
+        "sha256": "e49290114ce40e29fd6820c257c03fe9493704dc6b14e17132b777332cf13a89"
       }
     },
     {
@@ -705,12 +719,12 @@
           0
         ],
         "occupied": [
-          62,
-          94,
+          57,
+          96,
           88,
           63
         ],
-        "image": "wolf-whole-e-v02.png",
+        "image": "wolf-whole-e-v03.png",
         "sourceStandingHeight": 64,
         "sourceFile": "walk-e-v03-1-4.png",
         "sourceRect": [
@@ -719,7 +733,21 @@
           707.5,
           555.5
         ],
-        "sha256": "79c0e8eb0087405d90870f0d16b8b9b7f522384ca03f95da9c87775769a5dfb2"
+        "registrationAnchor": {
+          "observed": [
+            149,
+            124
+          ],
+          "target": [
+            144,
+            126
+          ],
+          "offset": [
+            -5,
+            2
+          ]
+        },
+        "sha256": "96eb1e5ffbb9975cf39263f8eb7e9671efaa978d6e032c0fd0550f182b9ac571"
       }
     },
     {
@@ -1040,12 +1068,12 @@
           0
         ],
         "occupied": [
-          62,
-          89,
+          56,
+          96,
           89,
           63
         ],
-        "image": "wolf-whole-e-v02.png",
+        "image": "wolf-whole-e-v03.png",
         "sourceStandingHeight": 64,
         "sourceFile": "walk-e-v03-1-4.png",
         "sourceRect": [
@@ -1054,7 +1082,21 @@
           707.5,
           555.5
         ],
-        "sha256": "020dc68d905dc5971fdebeeb9e919668039fbaebbf23bc5492a5dc367d05d18c"
+        "registrationAnchor": {
+          "observed": [
+            150,
+            119
+          ],
+          "target": [
+            144,
+            126
+          ],
+          "offset": [
+            -6,
+            7
+          ]
+        },
+        "sha256": "8e4b66a43cb9e456cb7e9b93f168f27f90732238e5d98a3a9bd6acde4cd81036"
       }
     },
     {
@@ -1375,12 +1417,12 @@
           0
         ],
         "occupied": [
-          62,
-          89,
+          56,
+          96,
           89,
           63
         ],
-        "image": "wolf-whole-e-v02.png",
+        "image": "wolf-whole-e-v03.png",
         "sourceStandingHeight": 64,
         "sourceFile": "walk-e-v03-1-4.png",
         "sourceRect": [
@@ -1389,7 +1431,21 @@
           707.5,
           555.5
         ],
-        "sha256": "9f4cab442f86ce77b84305db7adebe754facd8102ff1cbfb5bc5c305c28838ab"
+        "registrationAnchor": {
+          "observed": [
+            150,
+            119
+          ],
+          "target": [
+            144,
+            126
+          ],
+          "offset": [
+            -6,
+            7
+          ]
+        },
+        "sha256": "387abeb48791672aa8a93a387bd4291df99e16ab2d7e3c7efa1965912fac965e"
       }
     },
     {
@@ -1710,12 +1766,12 @@
           0
         ],
         "occupied": [
-          62,
-          93,
+          57,
+          94,
           88,
           66
         ],
-        "image": "wolf-whole-e-v02.png",
+        "image": "wolf-whole-e-v03.png",
         "sourceStandingHeight": 64,
         "sourceFile": "walk-e-v03-5-8.png",
         "sourceRect": [
@@ -1724,7 +1780,21 @@
           707.5,
           556
         ],
-        "sha256": "2cc976c1fbc713c03a2709b7528d2ee748bb99a1edda5d5744290a75a60694e8"
+        "registrationAnchor": {
+          "observed": [
+            149,
+            125
+          ],
+          "target": [
+            144,
+            126
+          ],
+          "offset": [
+            -5,
+            1
+          ]
+        },
+        "sha256": "8c397441b06ffa21b6a7a05eab8e1f91bf8c4ecd2bad4aae664fc0dba38f15f6"
       }
     },
     {
@@ -2045,12 +2115,12 @@
           0
         ],
         "occupied": [
-          62,
-          94,
+          57,
+          95,
           88,
           65
         ],
-        "image": "wolf-whole-e-v02.png",
+        "image": "wolf-whole-e-v03.png",
         "sourceStandingHeight": 64,
         "sourceFile": "walk-e-v03-5-8.png",
         "sourceRect": [
@@ -2059,7 +2129,21 @@
           707.5,
           556
         ],
-        "sha256": "ea15ffc6071f9ab72fc46df942abe43acd1d222ef7267494971e0282a7e95b17"
+        "registrationAnchor": {
+          "observed": [
+            149,
+            125
+          ],
+          "target": [
+            144,
+            126
+          ],
+          "offset": [
+            -5,
+            1
+          ]
+        },
+        "sha256": "b91f7dc514a5e3e77013530dd49b14749d7d3a3aca147813c514fa7390b456a2"
       }
     },
     {
@@ -2380,12 +2464,12 @@
           0
         ],
         "occupied": [
-          62,
-          91,
+          57,
+          95,
           88,
           65
         ],
-        "image": "wolf-whole-e-v02.png",
+        "image": "wolf-whole-e-v03.png",
         "sourceStandingHeight": 64,
         "sourceFile": "walk-e-v03-5-8.png",
         "sourceRect": [
@@ -2394,7 +2478,21 @@
           707.5,
           556
         ],
-        "sha256": "12d8952d71dc6962f1ae7d1a50bbc23fdd3b2d9396cf6db9d90c6ad6c97a763d"
+        "registrationAnchor": {
+          "observed": [
+            149,
+            122
+          ],
+          "target": [
+            144,
+            126
+          ],
+          "offset": [
+            -5,
+            4
+          ]
+        },
+        "sha256": "fe9b054d08ad7afdded3c7826b5b78874794913b4f6c85e03b1d2e034a6ec200"
       }
     },
     {
@@ -2715,12 +2813,12 @@
           0
         ],
         "occupied": [
-          63,
-          90,
+          58,
+          95,
           87,
           66
         ],
-        "image": "wolf-whole-e-v02.png",
+        "image": "wolf-whole-e-v03.png",
         "sourceStandingHeight": 64,
         "sourceFile": "walk-e-v03-5-8.png",
         "sourceRect": [
@@ -2729,7 +2827,21 @@
           707.5,
           556
         ],
-        "sha256": "da0a56d6d2e25b2f25a77916c2241a9edd1f62eb1e9475fa5ce29967cd520b21"
+        "registrationAnchor": {
+          "observed": [
+            149,
+            121
+          ],
+          "target": [
+            144,
+            126
+          ],
+          "offset": [
+            -5,
+            5
+          ]
+        },
+        "sha256": "34a5b91c743c0b557392777d801a1b468d69e923705b60aab24d057906b1bc19"
       }
     }
   ]
