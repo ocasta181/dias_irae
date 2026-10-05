@@ -11,6 +11,7 @@ Starting checkpoint: `e208bfd6ed1776831248e54416907569103b9b5d`.
 - Produce four substantial reports for the user's named examples, plus brief climate/sky and technology/provisions comparisons under `docs/research/1101-england/`. The examples do not form an exclusive list, and these supplements preserve the original research areas. Confidence: 90 percent. Focus on supported differences and identify shared practices where a claimed difference would be false.
 - Continue the user's explicit topic-subagent workflow. Use the previously resolved parent model and reasoning settings without overrides. Confidence: 95 percent; no new settings were requested. Keep topic owners where available. Assignments run in waves because only three subagents can run alongside the parent.
 - Use the existing Markdown research format, with direct source links, dated claims, fact-versus-rumor labels, and stated evidence limits. Do not edit canon or unrelated working-tree changes. Confidence: 99 percent.
+- The later setting-choice question concerns the current plot and game, rather than an abstract ranking of countries. Confidence: 98 percent. The parent read the story outline, character dossiers, locations and game systems before assessing narrative fit. The recommendation does not authorize a canon rewrite.
 
 ## Success criteria
 
@@ -43,4 +44,6 @@ The user replaced all previous AGENTS.md instructions during this work. The pare
 - Technology and provisions: read the complete final report. Independently checked the Oxford study's regional crop and plough evidence, the Hull project's vineyard record, and the Worcestershire framework's salt industry and dating gaps. The broad archaeological phases remain visible. Estate dues do not become household menus, and documented vineyards do not establish universal access to wine. The parent reproduced local-link, placeholder, whitespace and final-newline checks.
 - Shared-source allowances were coordinated between owners. The parent reserved brief index summaries rather than duplicating the reports.
 
-All six topic reports have completed subagent handoffs and parent review. The integrated comparison and final document checks are still in progress. No engine tests are needed for these prose-only additions.
+All six topic reports have completed subagent handoffs and parent review. The integrated index is complete, and the original dossier links to it. Final checks passed for the expected eight English documents and the revised original index: nonempty content, local link targets, Maps URL syntax, table column counts, placeholders, internal citation identifiers, trailing whitespace and final newlines. These are document checks and source spot-checks, not a claim that every remote page was re-audited. No engine tests are needed for these prose-only additions.
+
+Local source links were checked against the shared workspace. The story files remain untracked and unchanged by this research; their separate repository publication is outside this task. The incomplete English solar calculation is an explicit evidence limit, not a verified negative result.

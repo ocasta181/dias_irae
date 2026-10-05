@@ -4,6 +4,8 @@ These six reports examine the people, institutions, beliefs, environment, and ma
 
 The setting comes from [the story outline](../../../story/story-arch.md) and [the location dossiers](../../../story/locations.md). Those documents establish the fiction; the sources linked in the research reports establish historical claims. This research does not change the story files.
 
+The [England comparison](../1101-england/README.md) examines supported differences for the same 1101 story season.
+
 ## Topic reports
 
 | Report | Scope |
