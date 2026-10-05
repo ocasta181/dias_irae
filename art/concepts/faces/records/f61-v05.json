@@ -1,0 +1,37 @@
+{
+  "id": "F61",
+  "title": "F37 · Close blunt crop / Tiny round button / Heavy level bars",
+  "provider": "built-in imagegen",
+  "model": "not exposed by tool",
+  "request": {
+    "prompt": "Use case: precise-object-edit. Asset: F61, full-body Guarin face study.\nImage 1 is the exact F37 base: keep its jaw and cheek silhouette, mouth, same huge head and tiny squat body, S13 costume, mail, ragged red scarf and cape, boots, sword, shield, pose, elevated game camera, charcoal background, dull brown/gray/burgundy palette, and coarse flat granular 2D drawing.\nImage 2 is the EXACT eye-only source selected by the human. REPLACE Image 1's eyes with those precise two eye marks. These are short irregular horizontal black ink lids with small centered downward projections and broken coarse edges, the near eye wider than the far eye. Match their shape, width, height, spacing, slant and weary expression directly. No detached square dot eyes, no round eyes, no white eyeballs or highlights, no new eye style. The eyes are NOT a variable. Keep them visually identical to Image 2, separated from the eyebrows.\nChange ONLY these three features:\nHAIR: Close blunt crop. Short hair hugging the skull, uneven short blunt fringe, exposed ears; no tall spikes.\nNOSE: Tiny detached round button. Remove the old long vertical bridge and its ink sidewalls and replace them with flat mottled skin. The nose is only a small round nub, about 20 pixels wide by 12 pixels high at the original 1312-pixel canvas width, near the lower end of the former bridge. One short curved underside dab, no vertical line connecting nose to brow, no square nose column. The nose contour may move locally; preserve the rest of the head and jaw.\nEYEBROWS: Heavy level bars: coarse thick nearly level eyebrows, separate from the eyes. Eyebrows ARE allowed to change. Do not change the eye shapes or squint them to follow the brows.\nKeep the same art style and outfit. Flat worn rough pigment, dark, muddy, tired and wretched but exaggerated and cartoony. No 3D rendering, smooth skin, clean comic-book finish, portrait crop, extra objects, text, labels or contact sheet. One complete character in the same full-body frame.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f37-v03.png",
+      "/Users/ocasta/Code/Dias Irae/art/concepts/faces/references/approved-f37-eyes-only.png"
+    ],
+    "transparent_background": false
+  },
+  "source_sha256": "8c23eb7026a4a1bb5e3207b38a116229219c403350813077c51df2b0c2bf4fd3",
+  "source_reference": "F37",
+  "original_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-05799670-afe4-416c-aec3-a87d25e83978.png",
+  "file": "art/concepts/faces/images/f61-v05.png",
+  "sha256": "5b4894817a2b38cf7e3612b6bd32390d9718fd147edcc3d0648fc3a0ae642788",
+  "dimensions": [
+    1312,
+    1199
+  ],
+  "mode": "RGB",
+  "pixel_changes": "none",
+  "parent_visual_review": "Inspected original full-body output against the selected F37 and user eye close-up. The two horizontal eye marks and downward ticks retain the chosen grammar; original eye-only reference was supplied. Close blunt crop, visibly reduced rounded nose and heavy level eyebrows vary. Huge head, squat body, rough grain, camera, costume and equipment retained. Eye pixels are not mathematically identical; human review remains pending.",
+  "review_status": "pending",
+  "source_inputs": [
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f37-v03.png",
+      "sha256": "8c23eb7026a4a1bb5e3207b38a116229219c403350813077c51df2b0c2bf4fd3"
+    },
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/references/approved-f37-eyes-only.png",
+      "sha256": "ef87567cd3c627644a0c3d59abff5e39525d4dd6454ba749a027f47d59553570"
+    }
+  ]
+}

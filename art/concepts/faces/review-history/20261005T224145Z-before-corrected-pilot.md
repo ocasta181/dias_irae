@@ -1,6 +1,6 @@
 # Guarin face review
 
-Drawing IDs identify the candidate, not its source or preference position. Based on labels identify source images separately. Face studies preserve the S13 outfit and proportions. F01–F30 use original S13; F31–F60 use the captured preferred faces. The new hairstyle/nose/brow studies use F37, V22 and F18 bases with the exact eye marks in the user's F37 close-up; eyebrows vary. Five earlier face candidates remain for comparison. Review statuses are inspection notes, not production approval.
+Drawing IDs identify the candidate, not its source or preference position. Based on labels identify source images separately. Face studies preserve the S13 outfit and proportions. F01–F30 use original S13; F31–F60 use the captured preferred faces. The new hairstyle/nose/brow studies use F25, V22 and F18 bases with the exact eye marks in the user's F37 close-up; eyebrows vary. Five earlier face candidates remain for comparison. Review statuses are inspection notes, not production approval.
 
 | Identifier | Candidate | Provider | Image | Status | Notes |
 |---|---|---|---|---|---|
@@ -64,7 +64,6 @@ Drawing IDs identify the candidate, not its source or preference position. Based
 | F58 | F58 · Stepped marks: tapered crooked nose | built-in imagegen | [F58](images/f58-v01.png) | revise | Inspected original full-body output and diagnostic face comparison. Stepped coarse eye and brow marks and tapered crooked nose. The lower nose still reads fairly squared; further rounded-tip refinement is available. The giant head, squat body, red scarf/cape, mail, sword, shield, elevated camera, dull palette and granular drawing remain consistent with the selected source. Existing costume is recognizable; this is visual consistency, not identical pixels. Pending human face selection. |
 | F59 | F59 · Socket cuts: curved nose and lip gap | built-in imagegen | [F59](images/f59-v01.png) | pending | Inspected original full-body output and diagnostic face comparison. Dark sockets with small dim skin-colored eye cuts, interrupted nose marks and a short lip gap. The F16 face remains more anatomical than F25. The giant head, squat body, red scarf/cape, mail, sword, shield, elevated camera, dull palette and granular drawing remain consistent with the selected source. Existing costume is recognizable; this is visual consistency, not identical pixels. Pending human face selection. |
 | F60 | F60 · Granular: pin eyes and broken lips | built-in imagegen | [F60](images/f60-v01.png) | pending | Inspected original full-body output and diagnostic face comparison. V25 granular skin, small low eye marks and compressed broken lips. The lip change is subtle; no bright or clean medium drift. The giant head, squat body, red scarf/cape, mail, sword, shield, elevated camera, dull palette and granular drawing remain consistent with the selected source. Existing costume is recognizable; this is visual consistency, not identical pixels. Pending human face selection. |
-| F61 | F61 · Close blunt crop / Tiny round button / Heavy level bars | built-in imagegen | [F61](images/f61-v05.png) | pending | Inspected original full-body output against the selected F37 and user eye close-up. The two horizontal eye marks and downward ticks retain the chosen grammar; original eye-only reference was supplied. Close blunt crop, visibly reduced rounded nose and heavy level eyebrows vary. Huge head, squat body, rough grain, camera, costume and equipment retained. Eye pixels are not mathematically identical; human review remains pending. |
 | V21 | V21 · Minimal ink features | Unhelmeted face styles | [V21](../expansion/images/v21-v01.png) | pending | 1101 story character / style study; Royans fictional character. Guarin dossier; proposed face grammar. Parent inspection: Unhelmeted giant head, cropped dark hair, small ink eyes and stubble retain compact Guarin. Broad ink shadows remain textured rather than extremely sparse; scar placement needs dossier review. |
 | V22 | V22 · Dry pigment face | Unhelmeted face styles | [V22](../expansion/images/v22-v01.png) | pending | 1101 story character / style study; Royans fictional character. Guarin dossier; proposed face grammar. Parent inspection: Dry granular pigment and broken facial marks differ from the flatter face studies. Giant head and original gear remain; facial modeling is more naturalistic than V21/V24 and the scar shifts onto the cheek. |
 | V23 | V23 · Angular carved face | Unhelmeted face styles | [V23](../expansion/images/v23-v01.png) | pending | 1101 story character / style study; Royans fictional character. Guarin dossier; proposed face grammar. Parent inspection: Angular nose, blocky brow and carved facial planes give a distinct face grammar. Huge head and original gear remain. Scar is exaggerated and cheek-positioned rather than the dossier mark above the ear. |
@@ -75,69 +74,68 @@ Drawing IDs identify the candidate, not its source or preference position. Based
 
 Gallery order, first to last. Ranking does not change acceptance decisions.
 
-1. F61
-2. F37
-3. F50
-4. F51
-5. V22
-6. F41
-7. F18
-8. F46
-9. F40
-10. F31
-11. F34
-12. F32
-13. F33
-14. F35
-15. F36
-16. F38
-17. F39
-18. F42
-19. F43
-20. F44
-21. F45
-22. F47
-23. F48
-24. F49
-25. F52
-26. F53
-27. F54
-28. F55
-29. F56
-30. F57
-31. F58
-32. F59
-33. F60
-34. V25
-35. F20
-36. F25
-37. V21
-38. V23
-39. F19
-40. F26
-41. V24
-42. F23
-43. F16
-44. F21
-45. F17
-46. F28
-47. F30
-48. F24
-49. F27
-50. F29
-51. F01
-52. F02
-53. F03
-54. F04
-55. F05
-56. F06
-57. F07
-58. F22
-59. F12
-60. F14
-61. F08
-62. F09
-63. F10
-64. F11
-65. F13
-66. F15
+1. F37
+2. F50
+3. F51
+4. V22
+5. F41
+6. F18
+7. F46
+8. F40
+9. F31
+10. F34
+11. F32
+12. F33
+13. F35
+14. F36
+15. F38
+16. F39
+17. F42
+18. F43
+19. F44
+20. F45
+21. F47
+22. F48
+23. F49
+24. F52
+25. F53
+26. F54
+27. F55
+28. F56
+29. F57
+30. F58
+31. F59
+32. F60
+33. V25
+34. F20
+35. F25
+36. V21
+37. V23
+38. F19
+39. F26
+40. V24
+41. F23
+42. F16
+43. F21
+44. F17
+45. F28
+46. F30
+47. F24
+48. F27
+49. F29
+50. F01
+51. F02
+52. F03
+53. F04
+54. F05
+55. F06
+56. F07
+57. F22
+58. F12
+59. F14
+60. F08
+61. F09
+62. F10
+63. F11
+64. F13
+65. F15
