@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dias Irae — Character motion lab</title>
   <link rel="stylesheet" href="viewer.css?v=2">
-  <script type="module" src="viewer.mjs?v=10"></script>
+  <script type="module" src="viewer.mjs?v=11"></script>
 </head>
 <body>
 <main>
@@ -22,6 +22,7 @@
       <canvas id="stage" width="900" height="560" tabindex="0" aria-label="Character playground. WASD or arrow keys move; Space strikes."></canvas>
       <p id="stage-help" class="help">WASD or arrows to move · Space to strike</p>
       <p id="readout" aria-live="off"></p>
+      <p id="playback-proof" class="help" aria-live="off"></p>
     </div>
     <aside class="controls">
       <h2>Animation sequences</h2>
@@ -46,6 +47,7 @@
       <div class="actions"><button data-action="idle">Idle</button><button data-action="walk">Walk</button><button data-action="cut">Sword cut</button><button data-action="guard">Guard</button><button data-action="guard-off">Release guard</button><button data-action="prayer">Pray</button><button data-action="prayer-off">Rise</button><button data-action="interact">Interact</button><button data-action="hurt">Take hit</button><button data-action="death">Defeat</button></div>
       <label>Playback speed <output id="speed-label">1×</output><input id="speed" type="range" min="0.25" max="2" step="0.25" value="1"></label>
       <label>Clip rate (frames per second)<input id="fps" type="number" min="1" max="30" step="0.01" value="6"></label>
+      <label class="check"><input id="preserve-frames" type="checkbox" checked> Show every frame; slow playback during display stalls</label>
       <label>Standing preview height <output id="size-label">160 px</output><input id="size" type="range" min="48" max="240" step="8" value="160"></label>
       <label>Background<select id="background"><option value="dark">Dark ground</option><option value="light">Pale ground</option><option value="checker">Transparency checker</option></select></label>
       <label>Sampling<select id="sampling"><option value="linear">Smooth sampling</option><option value="nearest">Nearest pixel</option></select></label>

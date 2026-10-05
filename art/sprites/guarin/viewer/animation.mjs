@@ -4,7 +4,8 @@ export function duration(clip) {
 
 export function sample(clip, elapsedMs) {
   const total = duration(clip);
-  const clock = Math.round(elapsedMs * 1000) / 1000;
+  // Do not round fractional frame durations down at their exact boundary.
+  const clock = elapsedMs + .000001;
   const time = clip.loop ? clock % total : Math.min(clock, total - 0.001);
   let end = 0;
   for (let index = 0; index < clip.frames.length; index += 1) {
@@ -13,6 +14,18 @@ export function sample(clip, elapsedMs) {
       return { index, source: clip.frames[index].source, complete: !clip.loop && elapsedMs >= total };
     }
   }
+}
+
+// Preview may slow down on a hitch, but must not jump over an unseen drawing.
+// Ordinary updates that cross only one boundary retain their fractional time.
+export function visibleDelta(clip, elapsedMs, deltaMs) {
+  const total = duration(clip), current = sample(clip, elapsedMs);
+  const time = clip.loop ? elapsedMs % total : Math.min(elapsedMs, total);
+  const end = clip.frames.slice(0, current.index + 1).reduce((sum, frame) => sum + frame.durationMs, 0);
+  const untilNext = Math.max(0, end - time);
+  if (!clip.loop && current.index === clip.frames.length - 1) return Math.min(deltaMs, untilNext);
+  const following = clip.frames[(current.index + 1) % clip.frames.length].durationMs;
+  return deltaMs >= untilNext + following - .001 ? untilNext : deltaMs;
 }
 
 export function createPlayer() {

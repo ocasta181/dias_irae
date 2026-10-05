@@ -8,4 +8,12 @@ The first regression checks use the active whole-body wolf atlas, with drawable 
 - With updates at 0, 500 and 1000 milliseconds, the current loop draws only sources `2, 6, 2`: playback positions 1, 5, 1. Six keys receive no stage draw.
 - The elapsed-time state/event/travel checks remain valid for real-time simulation. They did not establish that every pose was visible.
 
-38 controller and guide tests pass at this checkpoint. No source art or playback behavior has changed yet. Frame-preserving lab playback and straight-path registration checks remain to be implemented and verified.
+38 controller and guide tests passed at the initial checkpoint, without changing art or playback behavior.
+
+## Frame-preserving preview
+
+Decision at `7c1b7af`, confidence 99%: the motion lab should expose every drawing by default. Under a display stall, discard excess preview time rather than jump over unseen poses. Root travel and preset scheduling use that same reduced preview time. At normal update rates, fractional elapsed time is preserved. The checkbox can be disabled for real-time simulation comparison; the earlier elapsed-time matrix explicitly tests that mode.
+
+The new renderer checks draw every wolf key through repeated 500-millisecond gaps, retain the original one-second cycle and 54-pixel travel at 60 Hz, and show all strike keys before recovery. They also record the actual canvas translation and scale: rightward travel is linear, vertical translation remains constant, scale remains 1.5 and no wobble/bounce transform is present. An exact fractional-frame boundary defect in `sample` was corrected: millisecond rounding previously selected the preceding key at durations such as 83⅓ milliseconds.
+
+41 controller/guide tests pass. A live browser shows `8/8 seen` and sequential repeated pose visits. Source art is unchanged. Painted registration drift remains a separate defect to correct in the atlas, without adding runtime motion.

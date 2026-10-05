@@ -1,4 +1,4 @@
-import { advance, createPlayer, duration, face, inspect, request, sample } from "./animation.mjs";
+import { advance, createPlayer, duration, face, inspect, request, sample, visibleDelta } from "./animation.mjs?v=2";
 
 const element = id => document.getElementById(id);
 const stage = element("stage");
@@ -33,6 +33,8 @@ const characters = { guarin: { root: "../", size: 160 }, wolf: { root: "../../wo
 let characterId = "guarin";
 let loadVersion = 0;
 let loading = false;
+let lastDrawn;
+let drawnPoses = [], seenPoses = new Set(), limitedUpdates = 0;
 
 function supports(action) {
   const clip = { guard: "guard_in", "guard-off": "guard_out", prayer: "kneel", "prayer-off": "rise" }[action] ?? action;
@@ -55,6 +57,7 @@ function applyCharacter(id, nextAtlas, loadedImages) {
   for (const [path, image] of loadedImages) images.set(path, image);
   keys.clear(); scheduled = []; scenarioTime = 0; logs.length = 0;
   player = createPlayer(); playing = true; lastTime = undefined; lastClip = undefined; stripKey = undefined;
+  lastDrawn = undefined;
   player.direction = atlas.directions.SE ? "SE" : Object.keys(atlas.directions)[0];
   position = [450, stage.height * .75];
   const frames = Object.values(atlas.directions).flatMap(page => page.frames);
@@ -240,6 +243,15 @@ function draw() {
     renderPose(context, images.get(previousFrame.image), previousFrame, position, previewHeight / previousFrame.sourceStandingHeight, .3);
   }
   renderPose(context, images.get(frame.image), frame, position, scale);
+  const drawKey = `${player.clip}:${player.direction}`;
+  const freshTrace = lastDrawn?.key !== drawKey || player.elapsedMs < lastDrawn.elapsedMs;
+  if (freshTrace) {
+    drawnPoses = []; seenPoses = new Set(); limitedUpdates = 0;
+  }
+  if (freshTrace || lastDrawn.index !== current.index) drawnPoses.push(current.index + 1);
+  seenPoses.add(current.index);
+  lastDrawn = { key: drawKey, index: current.index, elapsedMs: player.elapsedMs };
+  element("playback-proof").textContent = `Drawn poses: ${drawnPoses.slice(-16).join(" → ")} · ${seenPoses.size}/${clip.frames.length} seen · ${limitedUpdates} slow updates limited`;
   if (element("guides").checked) {
     context.strokeStyle = "#d2b877";
     context.lineWidth = 1;
@@ -312,9 +324,17 @@ function advancePreview(delta) {
 
 function tick(time) {
   if (loading || !atlas) { lastTime = undefined; requestAnimationFrame(tick); return; }
-  const delta = lastTime === undefined ? 0 : time - lastTime;
+  let delta = lastTime === undefined ? 0 : Math.max(0, time - lastTime);
   lastTime = time;
   if (playing && !document.hidden) {
+    if (element("preserve-frames").checked) {
+      const rawDelta = delta, clip = atlas.clips[player.clip];
+      const rate = Number(element("speed").value) * clipRate / clip.fps;
+      delta = lastDrawn?.key === `${player.clip}:${player.direction}` && player.elapsedMs >= lastDrawn.elapsedMs
+        ? visibleDelta(clip, player.elapsedMs, delta * rate) / rate : 0;
+      if (scheduled.length) delta = Math.min(delta, Math.max(0, scheduled[0].at - scenarioTime));
+      if (delta < rawDelta - .001) limitedUpdates++;
+    }
     if (scheduled.length) {
       const end = scenarioTime + delta;
       while (scheduled.length && scheduled[0].at <= end) {

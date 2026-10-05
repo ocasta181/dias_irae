@@ -15,9 +15,10 @@ function playground(startup = false) {
   function node() {
     const value = { dataset: {}, listeners: {}, children: [], value: "", width: 900, height: 560, textContent: "", checked: false };
     function remove(child) { nodes.splice(nodes.indexOf(child), 1); child.children.forEach(remove); }
-    const context = new Proxy({}, { get: (_, name) => name === "drawImage" ? (image, ...rect) => {
+    let translation, scale;
+    const context = new Proxy({}, { get: (_, name) => name === "translate" ? (...values) => { translation = values; } : name === "scale" ? (...values) => { scale = values; } : name === "drawImage" ? (image, ...rect) => {
       assert.ok(image, "a drawable image must be loaded before its rectangle is rendered");
-      if (value === get("stage")) draws.push({ image, rect });
+      if (value === get("stage")) draws.push({ image, rect, translation, scale });
     } : () => {} });
     Object.assign(value, { addEventListener: (type, handler) => { value.listeners[type] = handler; }, setAttribute() {}, append(...children) { value.children.push(...children); }, replaceChildren() { value.children.forEach(remove); value.children = []; }, getContext: () => context, getBoundingClientRect: () => ({ width: 900, height: 560 }) });
     nodes.push(value);
@@ -54,7 +55,9 @@ function playground(startup = false) {
     respond: (index, data) => pendingLoads[index].resolve({ ok: true, json: async () => data }),
     renders: () => renderRequests.length,
     drawn: data => draws.map(draw => Object.values(data.directions).flatMap(page => page.frames).findIndex(frame => frame.rect.every((number, index) => number === draw.rect[index]))),
+    transforms: () => draws.map(({ translation, scale }) => ({ translation, scale })),
     clearDraws: () => { draws.length = 0; },
+    preserveFrames: () => { get("preserve-frames").checked = true; },
     visible: () => get(".lab").hidden === false,
   };
 }
@@ -75,6 +78,42 @@ test("elapsed-time playback skips undrawn wolf poses during 500 ms display gaps"
   lab.key("keydown", "d"); lab.clearDraws();
   for (const time of [0, 500, 1000]) lab.step(time);
   assert.deepEqual(lab.drawn(wholeWolf), [2, 6, 2]);
+});
+
+test("frame-preserving preview draws all wolf keys despite repeated 500 ms gaps", () => {
+  const lab = playground(); lab.select("wolf", wholeWolf); lab.preserveFrames(); lab.step(0);
+  lab.key("keydown", "d"); lab.clearDraws();
+  for (let index = 0; index <= 8; index++) lab.step(index * 500);
+  assert.deepEqual(lab.drawn(wholeWolf), [2, 1, 3, 4, 6, 5, 7, 8, 2]);
+  assert.equal(lab.state().player.elapsedMs, 1000);
+  assert.ok(Math.abs(lab.state().position[0] - 504) < 1e-8);
+  assert.equal(lab.state().position[1], 420);
+});
+
+test("frame-preserving preview retains normal fractional timing and travel", () => {
+  const lab = playground(); lab.select("wolf", wholeWolf); lab.preserveFrames(); lab.step(0);
+  lab.key("keydown", "d"); lab.step(0); lab.clearDraws();
+  for (let index = 1; index <= 60; index++) lab.step(index * 1000 / 60);
+  assert.deepEqual(distinctPoses(lab.drawn(wholeWolf)), [2, 1, 3, 4, 6, 5, 7, 8, 2]);
+  assert.ok(Math.abs(lab.state().player.elapsedMs - 1000) < 1e-8);
+  assert.ok(Math.abs(lab.state().position[0] - 504) < 1e-8);
+  for (const [index, draw] of lab.transforms().entries()) {
+    assert.deepEqual(draw.scale, [1.5, 1.5]);
+    assert.equal(draw.translation[1], 420 - 156 * 1.5);
+    assert.ok(Math.abs(draw.translation[0] - (450 + (index + 1) * .9 - 96 * 1.5)) < 1e-8);
+  }
+});
+
+test("frame-preserving strike shows anticipation, every key and recovery during stalls", () => {
+  const lab = playground(); lab.preserveFrames(); lab.step(0); lab.key("keydown", " ");
+  const rendered = [];
+  for (let index = 1; index <= atlas.clips.cut.frames.length + 1; index++) {
+    lab.clearDraws(); lab.step(index * 500);
+    const { player } = lab.state();
+    assert.equal(lab.drawn(atlas).length, 1);
+    rendered.push([player.clip, animation.sample(atlas.clips[player.clip], player.elapsedMs).index]);
+  }
+  assert.deepEqual(rendered, [...atlas.clips.cut.frames.map((_, index) => ["cut", index]), ["idle", 0]]);
 });
 
 test("page keyboard input moves diagonally and release returns to idle", () => {
