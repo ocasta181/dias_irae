@@ -43,5 +43,9 @@
   "source_frames": 384,
   "selected_family": "hurt",
   "visual_approval": "pending",
-  "inspection": "Actual source row retains right-hand sword through all six recoil poses. Browser frame selection and recovery verification follows."
+  "inspection": "Parent viewed actual source and all six repaired hurt pose selections in the fresh browser. Sword retention is legible at 96px nearest sampling on pale ground and 160px smooth sampling on dark ground. No neighboring source figure is visible. Take hit action completes hurt\u2192idle. Final art, pivot and camera approval remain pending.",
+  "browser_previews": [
+    "front-hurt-review-96.png",
+    "front-hurt-review-160.png"
+  ]
 }
