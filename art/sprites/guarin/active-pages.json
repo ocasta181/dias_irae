@@ -1,4 +1,8 @@
 {
+  "S": "pages/guarin-s-v01.png",
   "SE": "pages/guarin-se-v01.png",
-  "NW": "pages/guarin-nw-v01.png"
+  "E": "pages/guarin-e-v02.png",
+  "NE": "pages/guarin-ne-v01.png",
+  "N": "pages/guarin-n-v01.png",
+  "W": "pages/guarin-w-v01.png"
 }

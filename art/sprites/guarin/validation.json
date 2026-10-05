@@ -1,8 +1,17 @@
 {
-  "pages": 2,
-  "source_frames": 96,
+  "pages": 6,
+  "source_frames": 288,
   "clips_per_direction": 12,
   "page_checks": {
+    "S": {
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "alpha_fraction": 0.5642,
+      "unique_cell_hashes": 48,
+      "border_touching_frames": []
+    },
     "SE": {
       "dimensions": [
         1086,
@@ -12,12 +21,39 @@
       "unique_cell_hashes": 48,
       "border_touching_frames": []
     },
-    "NW": {
+    "E": {
       "dimensions": [
         1086,
         1448
       ],
-      "alpha_fraction": 0.5814,
+      "alpha_fraction": 0.5521,
+      "unique_cell_hashes": 48,
+      "border_touching_frames": []
+    },
+    "NE": {
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "alpha_fraction": 0.5872,
+      "unique_cell_hashes": 48,
+      "border_touching_frames": []
+    },
+    "N": {
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "alpha_fraction": 0.6018,
+      "unique_cell_hashes": 48,
+      "border_touching_frames": []
+    },
+    "W": {
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "alpha_fraction": 0.6217,
       "unique_cell_hashes": 48,
       "border_touching_frames": []
     }
