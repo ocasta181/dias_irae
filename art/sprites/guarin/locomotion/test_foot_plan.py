@@ -1,7 +1,6 @@
 import math
 
 import pytest
-
 from foot_plan import (
     CLIPS,
     CYCLE_MS,
