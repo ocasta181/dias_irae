@@ -15,7 +15,11 @@ Output: `plan.mjs` computes the joints, contacts and eight projections. `atlas.j
 Review checklist:
 
 - [x] Numerically verify contact locking, support, reachability, fixed proportions, twelve unique poses, midpoint holding error and loop closure. Nine geometry checks and all 46 existing playback checks pass.
-- [ ] Verify actual lab movement and one-frame Space/Right Arrow/button stepping, repeat suppression and stationary manual review.
-- [ ] Preserve wolf blocking and original Guarin playback.
-- [ ] Visually inspect the local lab and save evidence; commit and push.
+- [x] Verify actual lab movement and one-frame Space/Right Arrow/button stepping, repeat suppression and stationary manual review.
+- [x] Preserve wolf blocking and original Guarin playback.
+- [x] Visually inspect the local lab and save evidence; commit and push.
 - [ ] User approves the human stick figure.
+
+Verification on 2026-10-06: 59 numerical and playback tests pass. Native browser input advances 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2 after twelve alternating Right Arrow/Space presses from frame 2. Clicking the next button followed by Space on the focused button advances twice in total, once per action. The eight-heading movement sequence runs with twelve poses/second. Back/forward and reload load the character selected by the URL; reload resets transient pose/mode choices. The 1440/390-pixel layouts retain usable controls, with no narrow-page horizontal overflow; the viewport override is restored. Switching characters shows the approved wolf block and preserves Guarin's original Space strike.
+
+`lab-proof.png` records the actual local page on human walking frame 3. Static visual inspection confirms connected uncolored sticks, the large head, short limbs and a clean canvas. The numerical and input checks establish registration/timing, not human approval of the gait. The final review gate remains open.
