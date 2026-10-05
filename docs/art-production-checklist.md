@@ -297,5 +297,7 @@ Current decision at commit `3aef464`: preserve the four explicitly selected styl
 
 - [x] Capture saved top twelve and selected #5 F25 before the preferred-feature round.
 - [x] Generate and inspect 30 nearby facial-mark variants while preserving outfit and broader style.
-- [ ] Publish additions on the automatically saved face review page; verify old comments and order.
+- [x] Publish additions on the automatically saved face review page; verify old comments and order.
 - [ ] User reviews noses, eyes, mouths and brows and selects the useful direction.
+
+2026-10-05 verification: 65 face cards published; all 35 earlier rows and their relative ranking preserved exactly. Browser confirms the project saved all 65 positions automatically, no Save button remains. Thirty-two server/publisher tests and twelve browser-state tests pass; no database is used.
