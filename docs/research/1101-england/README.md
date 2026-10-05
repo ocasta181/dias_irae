@@ -14,6 +14,9 @@ The comparison is between [England](https://www.google.com/maps/search/?api=1&qu
 | [Culture](culture.md) | What changes in language, memory, music, art, dress, and buildings can be supported by dated English evidence? |
 | [Climate and the sky](climate-and-sky.md) | Which differences in environment or sky visibility are supported, and what cannot be reconstructed for 1101? |
 | [Technology and provisions](technology-and-provisions.md) | Which differences in food, drink, resources and everyday technology have dated evidence? |
+| [Town settings](town-settings.md) | Which towns and surrounding districts best support Guarin's hometown, local struggle, Christian allies, and restoration of hope? |
+
+The town study ranks eight candidates for a possible English adaptation, with a separate comparison around 1150. It prioritizes community, relationships, local conflict, the knight's ability to act, and coherent quest geography. Building details are secondary accuracy notes. The working country and 1101 story date remain unchanged.
 
 ## The strongest supported contrasts
 
@@ -34,4 +37,4 @@ An English manuscript or object can provide a better surviving reference without
 
 The [research record](research-notes.md) lists scope decisions, assignments, source review, and validation.
 
-All six topic reports were researched by separate subagents and reviewed by the parent. The named households and institutions are dated to the story season; unsupported identities, later developments and unresolved local detail remain marked in the reports.
+The original six topic reports were researched by separate subagents and reviewed by the parent. A further subagent investigated the town settings. The named households and institutions are dated to the story season; unsupported identities, later developments and unresolved local detail remain marked in the reports.
