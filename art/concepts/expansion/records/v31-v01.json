@@ -1,0 +1,24 @@
+{
+  "id": "V31",
+  "title": "Hospitaller black mantle",
+  "provider": "built-in imagegen",
+  "model": "not exposed by tool",
+  "request": {
+    "prompt": "Use case: stylized-concept.\nAsset: ONE full-body game character concept illustration, one figure only, no comparison sheet, no inset, no text.\nInput image 1 is the exact S13 original. It is the mandatory drawing-medium, camera, proportion, palette and texture reference. No other iteration is a reference.\nCopy its dark hand-drawn 2D language: rough irregular dark ink edges, granular dry pigment and modest stepped marks, dirty matte iron, dead wine-red cloth, muddy brown leather, grey-bone fabric. Somber poor wretched medieval world, exhausted and desperate rather than heroic or brightly cheerful. Preserve its soft charcoal ground and small diffuse contact shadow, flat restrained values, rough distressed surfaces. Never 3D, 2.5D miniature, glossy render, studio lighting, sculpted toy, comic-book splash, airbrushed realistic anatomy or photoreal portrait.\nPreserve the exact S13 elevated three-quarter viewing direction and orthographic-like projection. Do not invent a new camera angle. Huge head around half the whole standing height, tiny compact torso, short squat legs and arms, very small eyes wherever exposed. The overall silhouette must be cute and compact even in a hopeless mood. Full figure and complete weapons fit in the frame with generous margins. Draw coherent hands and straight shafts/blades; no duplicated hands, shields or weapons.\nThis is the SAME Guarin from S13. Preserve his pose, stature, greathelm, wine scarf and ragged cape, mail, belt, wrapped gloves/legs/boots, small straight sword in anatomical RIGHT hand and worn kite shield on anatomical LEFT arm EXCEPT the category explicitly changed below. Preserve the literal S13 costume components and weathering outside that category. No additional knee disks, plated bracers, decorations, new armor, extra straps or invented insignia. Make the requested category distinctly readable while the rest remains recognizable.\n\nRequested illustration: V31 — Hospitaller black mantle.\nExact change/subject: Replace only wine cloak/scarf and outer tunic with a threadbare soot-black wool mantle/tunic and one small plain bone-white Latin cross sewn at the chest. Very poor, muddy and worn; no modern emblems. Keep original greathelm, mail, sword, shield, belt, gloves and boots.\nContext: 1113–1200 comparison; Order of St John / Jerusalem comparison. Evidence limitation: Hospitaller historical identity; later than 1101, not automatic story adoption. These notes are context, not text to draw.\nDo not change any unrequested category. ONE full character, no panels or labels.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png"
+    ],
+    "transparent_background": false
+  },
+  "input_sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c",
+  "original_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-4d0b4678-7afb-4cfa-80cc-17f8c68eee7c.png",
+  "file": "art/concepts/expansion/images/v31-v01.png",
+  "sha256": "68adaff7f7178567bb5357e4894fe71c66cfa415e9dc7efc0e155f6f468699bf",
+  "dimensions": [
+    1312,
+    1199
+  ],
+  "mode": "RGB",
+  "pixel_changes": "none",
+  "parent_visual_review": "pending"
+}
