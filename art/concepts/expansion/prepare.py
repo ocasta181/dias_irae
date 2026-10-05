@@ -37,7 +37,7 @@ def prepare():
         (ROOT / "prompts" / f"{item['id'].lower()}-v01.txt").write_text(prompt + "\n")
 
 
-def import_image(identifier, original):
+def import_image(identifier, original, version="v01"):
     item = next(item for item in PLAN if item["id"] == identifier)
     source = Path(original)
     with Image.open(source) as image:
@@ -45,21 +45,22 @@ def import_image(identifier, original):
     with Image.open(source) as image:
         extension = {"PNG": ".png", "JPEG": ".jpg", "WEBP": ".webp"}[image.format]
         dimensions, mode = image.size, image.mode
-    destination = ROOT / "images" / f"{identifier.lower()}-v01{extension}"
+    destination = ROOT / "images" / f"{identifier.lower()}-{version}{extension}"
     if destination.exists():
         raise ValueError(f"Refusing to replace {destination}")
     shutil.copyfile(source, destination)
-    request = json.loads((ROOT / "requests" / f"{identifier.lower()}-v01.json").read_text())
+    request = json.loads((ROOT / "requests" / f"{identifier.lower()}-{version}.json").read_text())
     record = {"id": identifier, "title": item["title"], "provider": "built-in imagegen", "model": "not exposed by tool", "request": request, "input_sha256": digest(BASE), "original_output": str(source), "file": str(destination.relative_to(PROJECT)), "sha256": digest(destination), "dimensions": dimensions, "mode": mode, "pixel_changes": "none", "parent_visual_review": "pending"}
-    (ROOT / "records" / f"{identifier.lower()}-v01.json").write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n")
+    (ROOT / "records" / f"{identifier.lower()}-{version}.json").write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n")
     print(json.dumps({"id": identifier, "file": record["file"], "dimensions": dimensions}))
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--import-image", nargs=2, metavar=("ID", "ORIGINAL"))
+    parser.add_argument("--version", default="v01", choices=("v01", "v02"))
     args = parser.parse_args()
     if args.import_image:
-        import_image(*args.import_image)
+        import_image(*args.import_image, version=args.version)
     else:
         prepare()

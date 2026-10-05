@@ -12,13 +12,11 @@ HEADING = "S13 equipment and cast exploration"
 def publish():
     records = []
     for item in PLAN:
-        path = ROOT / "records" / f"{item['id'].lower()}-v01.json"
-        if not path.exists():
-            continue
-        record = json.loads(path.read_text())
-        if record["parent_visual_review"] == "pending":
-            continue
-        records.append((item, record))
+        for path in sorted((ROOT / "records").glob(f"{item['id'].lower()}-v*.json"), reverse=True):
+            record = json.loads(path.read_text())
+            if record["parent_visual_review"] != "pending":
+                records.append((item, record, path.stem))
+                break
     if not records:
         print("No inspected expansion drawings to publish.")
         return
@@ -33,15 +31,27 @@ def publish():
                 old_rows[match[1]] = row
     section = f"\n\n## {HEADING}\n\n35 equipment/face choices and ten story subjects are defined in [the list](expansion/plan.json). Every drawing uses the exact original S13 as its only image input. Dates and regional limits are explicit. Malta is the requested later heraldic exception. These are concept studies; no new sprite or game implementation is implied.\n\n| Identifier | Candidate | Purpose | Image | Status | Notes |\n|---|---|---|---|---|---|\n"
     cards = []
-    for item, record in records:
+    for item, record, versioned_id in records:
         identifier = item["id"]
         relative = "expansion/images/" + Path(record["file"]).name
         status = record.get("review_status", "pending")
         notes = f"{item['date']}; {item['region']}. {item['basis']}. Parent inspection: {record['parent_visual_review']}"
         notes = notes.replace("|", "&#124;").replace("\n", "<br>")
-        section += old_rows.get(identifier, f"| {identifier} | {item['title']} | {item['category']} | [{identifier}]({relative}) | {status} | {notes} |") + "\n"
+        new_row = f"| {identifier} | {item['title']} | {item['category']} | [{identifier}]({relative}) | {status} | {notes} |"
+        old_row = old_rows.get(identifier)
+        if old_row and relative not in old_row:
+            previous_path = ROOT / "records" / f"{identifier.lower()}-v01.json"
+            previous = json.loads(previous_path.read_text())
+            previous_notes = f"{item['date']}; {item['region']}. {item['basis']}. Parent inspection: {previous['parent_visual_review']}".replace("|", "&#124;").replace("\n", "<br>")
+            previous_relative = "expansion/images/" + Path(previous["file"]).name
+            generated_row = f"| {identifier} | {item['title']} | {item['category']} | [{identifier}]({previous_relative}) | {previous.get('review_status', 'pending')} | {previous_notes} |"
+            if old_row == generated_row:
+                old_row = None
+            else:
+                old_row = old_row.replace(f"[{identifier}]({previous_relative})", f"[{identifier}]({relative})")
+        section += (old_row or new_row) + "\n"
         escape = html.escape
-        cards.append(f'<article class="card" data-reference="{identifier}" id="{identifier.lower()}"><a class="picture" href="{relative}"><img src="{relative}" alt="{escape(identifier + ' — ' + item["title"])}" loading="lazy"></a><div class="body"><div class="meta">{identifier} · {escape(item["category"])} · {status}</div><h3>{escape(item["title"])}</h3><p>{escape(item["date"] + " · " + item["region"])}</p><p>{escape(item["basis"])}</p><p>{escape(record["parent_visual_review"])}</p><a href="images/s13-guarin-isometric-v02.png">Exact S13 base</a> · <a href="expansion/requests/{identifier.lower()}-v01.json">Exact generation request</a></div></article>')
+        cards.append(f'<article class="card" data-reference="{identifier}" id="{identifier.lower()}"><a class="picture" href="{relative}"><img src="{relative}" alt="{escape(identifier + ' — ' + item["title"])}" loading="lazy"></a><div class="body"><div class="meta">{identifier} · {escape(item["category"])} · {status}</div><h3>{escape(item["title"])}</h3><p>{escape(item["date"] + " · " + item["region"])}</p><p>{escape(item["basis"])}</p><p>{escape(record["parent_visual_review"])}</p><a href="images/s13-guarin-isometric-v02.png">Exact S13 base</a> · <a href="expansion/requests/{versioned_id}.json">Exact generation request</a></div></article>')
     if prior:
         manifest = manifest[:prior.start()] + section + manifest[prior.end():]
     else:

@@ -1,0 +1,25 @@
+{
+  "id": "V18",
+  "title": "Low open iron cap",
+  "provider": "built-in imagegen",
+  "model": "not exposed by tool",
+  "request": {
+    "prompt": "Use case: stylized-concept.\nAsset: ONE full-body game character concept illustration, one figure only, no comparison sheet, no inset, no text.\nInput image 1 is the exact S13 original. It is the mandatory drawing-medium, camera, proportion, palette and texture reference. No other iteration is a reference.\nCopy its dark hand-drawn 2D language: rough irregular dark ink edges, granular dry pigment and modest stepped marks, dirty matte iron, dead wine-red cloth, muddy brown leather, grey-bone fabric. Somber poor wretched medieval world, exhausted and desperate rather than heroic or brightly cheerful. Preserve its soft charcoal ground and small diffuse contact shadow, flat restrained values, rough distressed surfaces. Never 3D, 2.5D miniature, glossy render, studio lighting, sculpted toy, comic-book splash, airbrushed realistic anatomy or photoreal portrait.\nPreserve the exact S13 elevated three-quarter viewing direction and orthographic-like projection. Do not invent a new camera angle. Huge head around half the whole standing height, tiny compact torso, short squat legs and arms, very small eyes wherever exposed. The overall silhouette must be cute and compact even in a hopeless mood. Full figure and complete weapons fit in the frame with generous margins. Draw coherent hands and straight shafts/blades; no duplicated hands, shields or weapons.\nThis is the SAME Guarin from S13. Preserve his pose, stature, greathelm, wine scarf and ragged cape, mail, belt, wrapped gloves/legs/boots, small straight sword in anatomical RIGHT hand and worn kite shield on anatomical LEFT arm EXCEPT the category explicitly changed below. Preserve the literal S13 costume components and weathering outside that category. No additional knee disks, plated bracers, decorations, new armor, extra straps or invented insignia. Make the requested category distinctly readable while the rest remains recognizable.\n\nRequested illustration: V18 — Low open iron cap.\nExact change/subject: Replace only the helmet with an oversized low smooth open iron skullcap ending at the brow. No nasal or faceplate. Huge round head with dark short hair at its edges and tiny tired eyes. Keep all other equipment.\nContext: 1160–1180; Western European manuscript comparison. Evidence limitation: E52; material/construction inferred. These notes are context, not text to draw.\nDo not change any unrequested category. ONE full character, no panels or labels.\n\nCritical face correction: this is a weary adult man aged 34, NOT a boy. Beneath the low open round iron cap show a huge broad adult head, very small half-closed slit eyes, dark cropped hair, visible coarse dark stubble, a tired jaw and sparse forehead creases. Preserve the oversized cute adult head and tiny S13 body. The cap has NO nasal, NO visor, NO full face plate. Do not enlarge the eyes or make a clean youthful baby face.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png"
+    ],
+    "transparent_background": false
+  },
+  "input_sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c",
+  "original_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-3a5b4677-6799-4a6f-8615-8c07c5a16d86.png",
+  "file": "art/concepts/expansion/images/v18-v02.png",
+  "sha256": "d20f675c68809b633b8c87c396df3346a26e06b80a4466cc902fd4af06598547",
+  "dimensions": [
+    1312,
+    1199
+  ],
+  "mode": "RGB",
+  "pixel_changes": "none",
+  "parent_visual_review": "Low open iron cap now reveals a weary adult with visible stubble and tiny tired eyes. Huge head and original S13 body, cloth and weapons remain. Replaces the too-young first face.",
+  "review_status": "pending"
+}
