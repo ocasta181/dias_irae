@@ -13,9 +13,11 @@ Decision at commit `47bab5d`, 2026-10-05, confidence 98%: the user requests 30 a
 
 - [x] Define 30 distinct face designs and fixed source constraints.
 - [x] Generate and inspect 15 Grok studies; six earlier outputs were replaced after eye/texture review.
-- [ ] Generate and inspect 15 built-in studies.
+- [x] Generate and inspect 15 built-in studies.
 - [x] Publish a dedicated face comparison page with browser drafts.
 - [ ] Approve and implement independent direct saving for face/equipment review pages.
 - [ ] User selects face direction.
 
 These are review candidates. Tool success is not visual approval.
+
+Inspection and current limits: [assessment](assessment.md). The face page has 30 new drawings and five existing face studies; direct saving remains pending contract approval.
