@@ -1,8 +1,8 @@
 import html
 import json
 import re
-from pathlib import Path
 from os.path import relpath
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 CONCEPTS = ROOT.parent

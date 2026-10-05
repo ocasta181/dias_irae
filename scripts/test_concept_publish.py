@@ -56,7 +56,7 @@ def test_publishing_keeps_independent_reviews_and_cannot_merge_into_styles(
         (tmp_path / "index.html").read_bytes(),
         set(re.findall(r'data-reference="([A-Z]\d+)"', page)) >= set(before),
         'id="download-manifest"' in page,
-    ) == (before, style_before, style_page_before, set(before), False)
+    ) == (before, style_before, style_page_before, True, False)
 
 
 def test_live_galleries_preserve_all_rows_without_duplicate_candidates():
