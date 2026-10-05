@@ -1,0 +1,70 @@
+{
+  "id": "F31",
+  "title": "F25 · Nose: small round tip",
+  "provider": "grok",
+  "model": "not exposed by tool",
+  "request": {
+    "prompt": "Edit the supplied selected illustration in its exact existing rough, mottled, granular 2D drawing medium. Make only the described tiny changes to facial marks. Keep the complete original full-body composition, huge head, tiny squat body, same face outline, hair, stubble, muted taupe-brown colors, dirty wine-red clothing, sword, shield, pose, camera and charcoal background. Every new feature must be built of the SAME jagged fragmented pigment and grain already visible in the cheeks. Match cheek colors and texture inside the nose. Do not add a smooth skin-colored patch, clean line art, a bright peach nose, a thick black outline, vector clip art, stickers, smooth comic anatomy, 3D or a different skin texture. Facial marks are tiny and understated: eyes stay minuscule and dim; the curved/tapered nose is no more than one twelfth of the head width. At 1024 image scale the nose is roughly 18-25 pixels wide and 28-45 high, not an oversized protruding cartoon object. No rectangular block or square-ended nose. Preserve every other detail and draw one full-body image, no text.\n\nSpecific small feature design: Replace the long squared nose with a short narrow bridge ending in a tiny irregular rounded tip, one dark nostril nick. Keep F25's little square eye marks, flat low brows and small mouth unchanged.\nThe new marks must share the surrounding coarse cheek grain; no clean smooth outline or isolated nose-colored shape.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f25-v01.png"
+    ],
+    "transparent_background": false
+  },
+  "source_sha256": "8b39749eb1c67c3050fe7de0ca23809dd466f4f78ceb842287d014e6debde45e",
+  "source_reference": "F25",
+  "original_output": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f31-fbd4e6c1-e0a9-4d81-bd3b-ca5fb91c4471/fbd4e6c1-e0a9-4d81-bd3b-ca5fb91c4471/images/1.jpg",
+  "file": "art/concepts/faces/images/f31-v02.jpg",
+  "sha256": "fb5d2b4acb6e549c890f13c3aedd89c0c3cbf7081633916bc54b039b36308219",
+  "dimensions": [
+    1056,
+    976
+  ],
+  "mode": "RGB",
+  "pixel_changes": "none",
+  "parent_visual_review": "Held back: facial feature contours and smooth or differently colored nose patches do not match the selected coarse broken pigment; several noses are too large. The tighter F31 v02 trial still drifts. No trial is used as a generation reference.",
+  "review_status": "revise",
+  "session_id": "fbd4e6c1-e0a9-4d81-bd3b-ca5fb91c4471",
+  "fresh_session": true,
+  "cwd": "/private/tmp/dias-face-f31-fbd4e6c1-e0a9-4d81-bd3b-ca5fb91c4471",
+  "command": [
+    "/Users/ocasta/.grok/bin/grok",
+    "--cwd",
+    "/private/tmp/dias-face-f31-fbd4e6c1-e0a9-4d81-bd3b-ca5fb91c4471",
+    "--session-id",
+    "fbd4e6c1-e0a9-4d81-bd3b-ca5fb91c4471",
+    "--prompt-file",
+    "/private/tmp/dias-face-f31-fbd4e6c1-e0a9-4d81-bd3b-ca5fb91c4471/request.txt",
+    "--output-format",
+    "streaming-json",
+    "--tools",
+    "image_edit",
+    "--allow",
+    "image_edit",
+    "--permission-mode",
+    "dontAsk",
+    "--no-subagents",
+    "--disable-web-search",
+    "--verbatim",
+    "--max-turns",
+    "4"
+  ],
+  "raw_events_path": "/private/tmp/dias-face-f31-fbd4e6c1-e0a9-4d81-bd3b-ca5fb91c4471/events.ndjson",
+  "exit_code": 0,
+  "actual_tool_inputs": [
+    {
+      "prompt": "Edit the supplied selected illustration in its exact existing rough, mottled, granular 2D drawing medium. Make only the described tiny changes to facial marks. Keep the complete original full-body composition, huge head, tiny squat body, same face outline, hair, stubble, muted taupe-brown colors, dirty wine-red clothing, sword, shield, pose, camera and charcoal background. Every new feature must be built of the SAME jagged fragmented pigment and grain already visible in the cheeks. Match cheek colors and texture inside the nose. Do not add a smooth skin-colored patch, clean line art, a bright peach nose, a thick black outline, vector clip art, stickers, smooth comic anatomy, 3D or a different skin texture. Facial marks are tiny and understated: eyes stay minuscule and dim; the curved/tapered nose is no more than one twelfth of the head width. At 1024 image scale the nose is roughly 18-25 pixels wide and 28-45 high, not an oversized protruding cartoon object. No rectangular block or square-ended nose. Preserve every other detail and draw one full-body image, no text.\n\nSpecific small feature design: Replace the long squared nose with a short narrow bridge ending in a tiny irregular rounded tip, one dark nostril nick. Keep F25's little square eye marks, flat low brows and small mouth unchanged.\nThe new marks must share the surrounding coarse cheek grain; no clean smooth outline or isolated nose-colored shape.",
+      "image": [
+        "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f25-v01.png"
+      ],
+      "aspect_ratio": "1:1"
+    }
+  ],
+  "reference_verified": true,
+  "tool_output": {
+    "type": "ImageEdit",
+    "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f31-fbd4e6c1-e0a9-4d81-bd3b-ca5fb91c4471/fbd4e6c1-e0a9-4d81-bd3b-ca5fb91c4471/images/1.jpg",
+    "filename": "1.jpg",
+    "session_folder": "images"
+  },
+  "presentation": "held back"
+}

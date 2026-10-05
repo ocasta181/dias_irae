@@ -1,0 +1,70 @@
+{
+  "id": "F40",
+  "title": "V25 · Granular: low hook and lid nicks",
+  "provider": "grok",
+  "model": "not exposed by tool",
+  "request": {
+    "prompt": "Use case: precise-object-edit / stylized-concept.\nInput image: the exact preferred face study named below, used as the edit target and the drawing-medium reference. It is explicitly selected by the user. Produce ONE full-body Guarin image, with no panels, text, labels or inset.\nChange only the specified facial feature grammar. Retain the source's facial silhouette, giant head, short squat body, hair, stubble, weary adult identity, pose, elevated three-quarter camera, framing and charcoal background. Preserve the exact wine-red worn scarf/cape, dull mail, brown gloves, belt, wrapped legs, boots, straight sword in his right hand and battered wood-and-iron kite shield on his left arm. Do not redesign, brighten, rotate or enlarge the body or equipment.\nMatch the reference's flat 2D game drawing: irregular dark edges and granular broken pigment in muddy taupe, dark brown, dull bone and dead wine red. Facial marks must have the same roughness, grain, restrained values and ambient light as the rest of the character. Tiny eyes, oversized head and tiny exhausted body remain essential. Dark, poor, wretched, dirty, worn, tired and hopeless, with cute compact proportions. No 3D, modeled toy volume, airbrushed realism, clean comic contours, glossy highlights, anime eyes, large eye whites, smiling or bright colors.\nThe nose MUST NOT remain a squared rectangular block. Draw the requested alternate nose as a small irregular tapered or curved graphic mark, with rough edges consistent with the source. No straight rectangular column, squared shovel tip or cuboid nose. Curves are built from coarse broken pigment, not smooth vector outlines. Where another feature is the study's focus, use a short softly bent nose with a rounded tapered end and keep that nose understated.\nThis is a close feature-design variation, not a different costume, different illustration medium, new portrait or facial expression sheet. Make the named change visibly legible while keeping all other features as close to the reference as possible. Preserve the source's tired neutral closed-mouth expression unless its subtle mouth line is specifically being explored.\n\nSource: V25, Granular clustered face, captured preference #1.\nStudy F40: Granular: low hook and lid nicks.\nSpecific facial change: Stay very near V25's rough clustered skin. Make eyes tiny closed lid nicks under shallow ragged brows; nose a short broad rounded hook; mouth one shallow torn dark seam. Avoid anatomical gradients or square nose.\nPreserve the reference everywhere outside those facial marks. One full-body image, no text.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/concepts/expansion/images/v25-v01.png"
+    ],
+    "transparent_background": false
+  },
+  "source_sha256": "847a24085a097e94aea9aff525015d22a1ce05fe115082a85a2686eb78cc4246",
+  "source_reference": "V25",
+  "original_output": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f40-ec7cbdb6-fb8f-4721-adbc-a4d028f909b9/ec7cbdb6-fb8f-4721-adbc-a4d028f909b9/images/1.jpg",
+  "file": "art/concepts/faces/images/f40-v01.jpg",
+  "sha256": "1c9beef8453d2670e3355138e319a176bcc967ca3500d963f13991cc712b65ac",
+  "dimensions": [
+    1056,
+    976
+  ],
+  "mode": "RGB",
+  "pixel_changes": "none",
+  "parent_visual_review": "Held back: facial feature contours and smooth or differently colored nose patches do not match the selected coarse broken pigment; several noses are too large. The tighter F31 v02 trial still drifts. No trial is used as a generation reference.",
+  "review_status": "revise",
+  "session_id": "ec7cbdb6-fb8f-4721-adbc-a4d028f909b9",
+  "fresh_session": true,
+  "cwd": "/private/tmp/dias-face-f40-ec7cbdb6-fb8f-4721-adbc-a4d028f909b9",
+  "command": [
+    "/Users/ocasta/.grok/bin/grok",
+    "--cwd",
+    "/private/tmp/dias-face-f40-ec7cbdb6-fb8f-4721-adbc-a4d028f909b9",
+    "--session-id",
+    "ec7cbdb6-fb8f-4721-adbc-a4d028f909b9",
+    "--prompt-file",
+    "/private/tmp/dias-face-f40-ec7cbdb6-fb8f-4721-adbc-a4d028f909b9/request.txt",
+    "--output-format",
+    "streaming-json",
+    "--tools",
+    "image_edit",
+    "--allow",
+    "image_edit",
+    "--permission-mode",
+    "dontAsk",
+    "--no-subagents",
+    "--disable-web-search",
+    "--verbatim",
+    "--max-turns",
+    "4"
+  ],
+  "raw_events_path": "/private/tmp/dias-face-f40-ec7cbdb6-fb8f-4721-adbc-a4d028f909b9/events.ndjson",
+  "exit_code": 0,
+  "actual_tool_inputs": [
+    {
+      "prompt": "Use case: precise-object-edit / stylized-concept.\nInput image: the exact preferred face study named below, used as the edit target and the drawing-medium reference. It is explicitly selected by the user. Produce ONE full-body Guarin image, with no panels, text, labels or inset.\nChange only the specified facial feature grammar. Retain the source's facial silhouette, giant head, short squat body, hair, stubble, weary adult identity, pose, elevated three-quarter camera, framing and charcoal background. Preserve the exact wine-red worn scarf/cape, dull mail, brown gloves, belt, wrapped legs, boots, straight sword in his right hand and battered wood-and-iron kite shield on his left arm. Do not redesign, brighten, rotate or enlarge the body or equipment.\nMatch the reference's flat 2D game drawing: irregular dark edges and granular broken pigment in muddy taupe, dark brown, dull bone and dead wine red. Facial marks must have the same roughness, grain, restrained values and ambient light as the rest of the character. Tiny eyes, oversized head and tiny exhausted body remain essential. Dark, poor, wretched, dirty, worn, tired and hopeless, with cute compact proportions. No 3D, modeled toy volume, airbrushed realism, clean comic contours, glossy highlights, anime eyes, large eye whites, smiling or bright colors.\nThe nose MUST NOT remain a squared rectangular block. Draw the requested alternate nose as a small irregular tapered or curved graphic mark, with rough edges consistent with the source. No straight rectangular column, squared shovel tip or cuboid nose. Curves are built from coarse broken pigment, not smooth vector outlines. Where another feature is the study's focus, use a short softly bent nose with a rounded tapered end and keep that nose understated.\nThis is a close feature-design variation, not a different costume, different illustration medium, new portrait or facial expression sheet. Make the named change visibly legible while keeping all other features as close to the reference as possible. Preserve the source's tired neutral closed-mouth expression unless its subtle mouth line is specifically being explored.\n\nSource: V25, Granular clustered face, captured preference #1.\nStudy F40: Granular: low hook and lid nicks.\nSpecific facial change: Stay very near V25's rough clustered skin. Make eyes tiny closed lid nicks under shallow ragged brows; nose a short broad rounded hook; mouth one shallow torn dark seam. Avoid anatomical gradients or square nose.\nPreserve the reference everywhere outside those facial marks. One full-body image, no text.",
+      "image": [
+        "/Users/ocasta/Code/Dias Irae/art/concepts/expansion/images/v25-v01.png"
+      ],
+      "aspect_ratio": "1:1"
+    }
+  ],
+  "reference_verified": true,
+  "tool_output": {
+    "type": "ImageEdit",
+    "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f40-ec7cbdb6-fb8f-4721-adbc-a4d028f909b9/ec7cbdb6-fb8f-4721-adbc-a4d028f909b9/images/1.jpg",
+    "filename": "1.jpg",
+    "session_folder": "images"
+  },
+  "presentation": "held back"
+}

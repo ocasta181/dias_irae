@@ -182,122 +182,137 @@
   {
     "id": "F31",
     "title": "F25 · Nose: small round tip",
-    "provider": "grok",
+    "provider": "built-in imagegen",
     "source_id": "F25",
     "round": 2,
-    "change": "Replace the long squared nose with a short narrow bridge ending in a tiny irregular rounded tip, one dark nostril nick. Keep F25's little square eye marks, flat low brows and small mouth unchanged."
+    "change": "Replace the long squared nose with a short narrow bridge ending in a tiny irregular rounded tip, one dark nostril nick. Keep F25's little square eye marks, flat low brows and small mouth unchanged.",
+    "attempted_provider": "grok"
   },
   {
     "id": "F32",
     "title": "F25 · Nose: lean downward hook",
-    "provider": "grok",
+    "provider": "built-in imagegen",
     "source_id": "F25",
     "round": 2,
-    "change": "A thin gently bent bridge ends in a very small downward hook, drawn as two broken earthy strokes and a shallow dark underside. No bulb or rectangular tip. Keep F25's eyes, eyebrows and mouth."
+    "change": "A thin gently bent bridge ends in a very small downward hook, drawn as two broken earthy strokes and a shallow dark underside. No bulb or rectangular tip. Keep F25's eyes, eyebrows and mouth.",
+    "attempted_provider": "grok"
   },
   {
     "id": "F33",
     "title": "F25 · Nose: blunt broken asymmetry",
-    "provider": "grok",
+    "provider": "built-in imagegen",
     "source_id": "F25",
     "round": 2,
-    "change": "A short broad flattened nose with uneven rounded lobes and a slightly crooked bridge, represented by a rough skin patch and two tiny detached nostril marks. Subtle old break, no wounds. Keep F25's other features."
+    "change": "A short broad flattened nose with uneven rounded lobes and a slightly crooked bridge, represented by a rough skin patch and two tiny detached nostril marks. Subtle old break, no wounds. Keep F25's other features.",
+    "attempted_provider": "grok"
   },
   {
     "id": "F34",
     "title": "F25 · Nose: soft low bulb",
-    "provider": "grok",
+    "provider": "built-in imagegen",
     "source_id": "F25",
     "round": 2,
-    "change": "An understated low round bulb nose with almost no visible bridge, a dull ochre oval patch and incomplete dark curved underside. Keep F25's tiny eyes, low brows and tucked closed mouth."
+    "change": "An understated low round bulb nose with almost no visible bridge, a dull ochre oval patch and incomplete dark curved underside. Keep F25's tiny eyes, low brows and tucked closed mouth.",
+    "attempted_provider": "grok"
   },
   {
     "id": "F35",
     "title": "F25 · Nose: tapered teardrop",
-    "provider": "grok",
+    "provider": "built-in imagegen",
     "source_id": "F25",
     "round": 2,
-    "change": "A narrow tapering teardrop of dirty skin pigment and one interrupted curved side stroke; the point turns softly downward. Eyes, eyebrows, mouth and face outline remain F25."
+    "change": "A narrow tapering teardrop of dirty skin pigment and one interrupted curved side stroke; the point turns softly downward. Eyes, eyebrows, mouth and face outline remain F25.",
+    "attempted_provider": "grok"
   },
   {
     "id": "F36",
     "title": "F25 · Eyes: tiny round heavy dots",
-    "provider": "grok",
+    "provider": "built-in imagegen",
     "source_id": "F25",
     "round": 2,
-    "change": "Change only F25's square eye pixels into very small uneven round dark dots tucked beneath the same low brows; no whites. Use an understated short curved nose instead of the square nose. Keep the source mouth and face outline."
+    "change": "Change only F25's square eye pixels into very small uneven round dark dots tucked beneath the same low brows; no whites. Use an understated short curved nose instead of the square nose. Keep the source mouth and face outline.",
+    "attempted_provider": "grok"
   },
   {
     "id": "F37",
     "title": "F25 · Eyes: tired tapered slits",
-    "provider": "grok",
+    "provider": "built-in imagegen",
     "source_id": "F25",
     "round": 2,
-    "change": "Replace square eyes with extremely short tapering horizontal eyelid cuts, almost closed, with one tiny under-eye tick. Original low eyebrows and mouth stay. Nose becomes a very small bent hook, not a block."
+    "change": "Replace square eyes with extremely short tapering horizontal eyelid cuts, almost closed, with one tiny under-eye tick. Original low eyebrows and mouth stay. Nose becomes a very small bent hook, not a block.",
+    "attempted_provider": "grok"
   },
   {
     "id": "F38",
     "title": "F25 · Mouth: crooked dry seam",
-    "provider": "grok",
+    "provider": "built-in imagegen",
     "source_id": "F25",
     "round": 2,
-    "change": "Keep F25's eyes and brows. Draw the small closed mouth as a thin interrupted crooked seam, one corner slightly lower, lower lip a detached two-pixel earthy nick. A tiny rounded bent nose replaces the squared nose."
+    "change": "Keep F25's eyes and brows. Draw the small closed mouth as a thin interrupted crooked seam, one corner slightly lower, lower lip a detached two-pixel earthy nick. A tiny rounded bent nose replaces the squared nose.",
+    "attempted_provider": "grok"
   },
   {
     "id": "F39",
     "title": "F25 · Brows: two offset brush chunks",
-    "provider": "grok",
+    "provider": "built-in imagegen",
     "source_id": "F25",
     "round": 2,
-    "change": "Break each horizontal brow into two short rough offset chunks, maintaining the tired low placement and tiny original eyes. Keep original mouth. Nose is a short curved dry-pigment hook with a blunt rounded end."
+    "change": "Break each horizontal brow into two short rough offset chunks, maintaining the tired low placement and tiny original eyes. Keep original mouth. Nose is a short curved dry-pigment hook with a blunt rounded end.",
+    "attempted_provider": "grok"
   },
   {
     "id": "F40",
     "title": "V25 · Granular: low hook and lid nicks",
-    "provider": "grok",
+    "provider": "built-in imagegen",
     "source_id": "V25",
     "round": 2,
-    "change": "Stay very near V25's rough clustered skin. Make eyes tiny closed lid nicks under shallow ragged brows; nose a short broad rounded hook; mouth one shallow torn dark seam. Avoid anatomical gradients or square nose."
+    "change": "Stay very near V25's rough clustered skin. Make eyes tiny closed lid nicks under shallow ragged brows; nose a short broad rounded hook; mouth one shallow torn dark seam. Avoid anatomical gradients or square nose.",
+    "attempted_provider": "grok"
   },
   {
     "id": "F41",
     "title": "V22 · Dry pigment: narrow curved bridge",
-    "provider": "grok",
+    "provider": "built-in imagegen",
     "source_id": "V22",
     "round": 2,
-    "change": "Keep V22's dry mottled grain, eye placement and jaw. Nose becomes a narrow lightly arched bridge ending in a small rounded underside notch. Thin slack mouth line has one broken central gap. No clean portrait modeling."
+    "change": "Keep V22's dry mottled grain, eye placement and jaw. Nose becomes a narrow lightly arched bridge ending in a small rounded underside notch. Thin slack mouth line has one broken central gap. No clean portrait modeling.",
+    "attempted_provider": "grok"
   },
   {
     "id": "F42",
     "title": "F18 · Angular: oblique cuts and soft tip",
-    "provider": "grok",
+    "provider": "built-in imagegen",
     "source_id": "F18",
     "round": 2,
-    "change": "Retain F18's compact angular face and oblique closed eyes, shorten the brow marks to uneven separate wedges. Replace its rectangular nose with a slender bent taper ending in a small rounded nick; original tiny mouth stays."
+    "change": "Retain F18's compact angular face and oblique closed eyes, shorten the brow marks to uneven separate wedges. Replace its rectangular nose with a slender bent taper ending in a small rounded nick; original tiny mouth stays.",
+    "attempted_provider": "grok"
   },
   {
     "id": "F43",
     "title": "F20 · Stalk: slight arch and droplet tip",
-    "provider": "grok",
+    "provider": "built-in imagegen",
     "source_id": "F20",
     "round": 2,
-    "change": "Stay close to F20's broad face and small close-set tired eyes. Nose is still long and thin but curves gently, ending in a little droplet-shaped tip instead of a flat square end. Shorter mouth seam, same tired mood."
+    "change": "Stay close to F20's broad face and small close-set tired eyes. Nose is still long and thin but curves gently, ending in a little droplet-shaped tip instead of a flat square end. Shorter mouth seam, same tired mood.",
+    "attempted_provider": "grok"
   },
   {
     "id": "F44",
     "title": "V21 · Ink shorthand: interrupted curve",
-    "provider": "grok",
+    "provider": "built-in imagegen",
     "source_id": "V21",
     "round": 2,
-    "change": "Preserve V21's economical face marks and granular medium. Nose is one short interrupted curved ink stroke with a small separate nostril dot. Eyes become slightly narrower tiny dark lid marks; mouth remains closed and understated."
+    "change": "Preserve V21's economical face marks and granular medium. Nose is one short interrupted curved ink stroke with a small separate nostril dot. Eyes become slightly narrower tiny dark lid marks; mouth remains closed and understated.",
+    "attempted_provider": "grok"
   },
   {
     "id": "F45",
     "title": "V23 · Carved: rounded elbow nose",
-    "provider": "grok",
+    "provider": "built-in imagegen",
     "source_id": "V23",
     "round": 2,
-    "change": "Keep V23's broad angular cheek grammar but replace the block nose with an irregular elbow-shaped hooked mark with a tapered rounded tip. Use two separated coarse brow wedges, small weary slits, very short flat mouth."
+    "change": "Keep V23's broad angular cheek grammar but replace the block nose with an irregular elbow-shaped hooked mark with a tapered rounded tip. Use two separated coarse brow wedges, small weary slits, very short flat mouth.",
+    "attempted_provider": "grok"
   },
   {
     "id": "F46",
