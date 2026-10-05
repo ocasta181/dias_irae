@@ -1,0 +1,69 @@
+{
+  "id": "F02",
+  "title": "Drooping pear",
+  "provider": "grok",
+  "model": "not exposed by tool",
+  "request": {
+    "prompt": "Use case: identity-preserve / stylized-concept.\nEdit target: the supplied original S13 Guarin illustration. Produce ONE full-body character, one image, no sheet, inset, labels or text.\nChange ONLY his head: remove the helmet and replace it with an unhelmeted face. Keep the same giant head envelope, around half his whole standing height, and the original elevated three-quarter camera. Do not shrink the head or lengthen the body. Preserve the exact pose, tiny squat torso and short limbs, wine-red ragged scarf/cape, dull mail, brown gloves, belt, wrapped legs and boots. Preserve the small straight sword in his anatomical RIGHT hand and the wood-and-iron kite shield with its faded red stripe on his anatomical LEFT arm. Retain all source clothing, gear, ground shadow, framing and background. No added armor, symbols, straps, weapons or decorations.\nArt direction: use the original S13 drawing throughout: flat hand-drawn 2D, rough soot-black edges, broken dry-pigment grain, restrained muddy taupe/bone/brown/dead-wine colors on soft charcoal ground. Dark, poor, dirty, worn, tired, desperate medieval game mood. Cute compact proportions without a cheerful face. The exposed face must share the body's palette, texture, low values and restrained ambient light. No clean comic-book finish, anime eyes, glossy highlights, photorealism, 3D, 2.5D toy, sculpted volume or airbrushed portrait.\nIdentity held constant across studies: Guarin of Royans, weary 34-year-old returned soldier in 1101. Cropped uneven dark hair, a small white cut through the hair above the anatomical LEFT ear, short dark stubble, sun-darkened dirty skin. Small tired eyes, no large whites or shiny pupils. Closed mouth, exhausted neutral expression; do not change the expression into a smile, scream or rage. Preserve his story identity while exploring how the same face is drawn. This is an art-style study, not a claim that the selected greathelm is historical costume for 1101.\nThe distinct facial design below is essential. Make it readable at gameplay size through the shape of the face and the placement and drawing of features, rather than merely changing hairstyle or adding more dirt. Keep the same S13 drawing medium and full-body image outside the head.\n\nFace study F02: Drooping pear.\nFacial design: Pear-shaped face: narrow temples, full low cheeks and a softly rounded heavy chin. Tiny downward-curved eyes with separate drooping brows. Short round nose represented by one curved dark hook, very short low mouth and mottled cheek stubble. Gentle tired rounded forms, no bright babyface.\nKeep every non-head component and the camera as in S13. One full-body image; no text or comparison panels.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png"
+    ],
+    "transparent_background": false
+  },
+  "source_sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c",
+  "original_output": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f02-e359492c-5cfc-49e9-b8cc-243d33683310/e359492c-5cfc-49e9-b8cc-243d33683310/images/1.jpg",
+  "file": "art/concepts/faces/images/f02-v01.jpg",
+  "sha256": "524aa8c07369d6586b26c40b83123b228e73aee44e2e6c14789e4edb44c2fc53",
+  "dimensions": [
+    1056,
+    976
+  ],
+  "mode": "RGB",
+  "pixel_changes": "none",
+  "parent_visual_review": "Round pouch face differs from F01 but eye whites are large, face is cleaner than body and white marks are duplicated. Held back; replacement requested from original S13.",
+  "review_status": "revise",
+  "session_id": "e359492c-5cfc-49e9-b8cc-243d33683310",
+  "fresh_session": true,
+  "cwd": "/private/tmp/dias-face-f02-e359492c-5cfc-49e9-b8cc-243d33683310",
+  "command": [
+    "/Users/ocasta/.grok/bin/grok",
+    "--cwd",
+    "/private/tmp/dias-face-f02-e359492c-5cfc-49e9-b8cc-243d33683310",
+    "--session-id",
+    "e359492c-5cfc-49e9-b8cc-243d33683310",
+    "--prompt-file",
+    "/private/tmp/dias-face-f02-e359492c-5cfc-49e9-b8cc-243d33683310/request.txt",
+    "--output-format",
+    "streaming-json",
+    "--tools",
+    "image_edit",
+    "--allow",
+    "image_edit",
+    "--permission-mode",
+    "dontAsk",
+    "--no-subagents",
+    "--disable-web-search",
+    "--verbatim",
+    "--max-turns",
+    "4"
+  ],
+  "raw_events_path": "/private/tmp/dias-face-f02-e359492c-5cfc-49e9-b8cc-243d33683310/events.ndjson",
+  "exit_code": 0,
+  "actual_tool_inputs": [
+    {
+      "prompt": "Use case: identity-preserve / stylized-concept.\nEdit target: the supplied original S13 Guarin illustration. Produce ONE full-body character, one image, no sheet, inset, labels or text.\nChange ONLY his head: remove the helmet and replace it with an unhelmeted face. Keep the same giant head envelope, around half his whole standing height, and the original elevated three-quarter camera. Do not shrink the head or lengthen the body. Preserve the exact pose, tiny squat torso and short limbs, wine-red ragged scarf/cape, dull mail, brown gloves, belt, wrapped legs and boots. Preserve the small straight sword in his anatomical RIGHT hand and the wood-and-iron kite shield with its faded red stripe on his anatomical LEFT arm. Retain all source clothing, gear, ground shadow, framing and background. No added armor, symbols, straps, weapons or decorations.\nArt direction: use the original S13 drawing throughout: flat hand-drawn 2D, rough soot-black edges, broken dry-pigment grain, restrained muddy taupe/bone/brown/dead-wine colors on soft charcoal ground. Dark, poor, dirty, worn, tired, desperate medieval game mood. Cute compact proportions without a cheerful face. The exposed face must share the body's palette, texture, low values and restrained ambient light. No clean comic-book finish, anime eyes, glossy highlights, photorealism, 3D, 2.5D toy, sculpted volume or airbrushed portrait.\nIdentity held constant across studies: Guarin of Royans, weary 34-year-old returned soldier in 1101. Cropped uneven dark hair, a small white cut through the hair above the anatomical LEFT ear, short dark stubble, sun-darkened dirty skin. Small tired eyes, no large whites or shiny pupils. Closed mouth, exhausted neutral expression; do not change the expression into a smile, scream or rage. Preserve his story identity while exploring how the same face is drawn. This is an art-style study, not a claim that the selected greathelm is historical costume for 1101.\nThe distinct facial design below is essential. Make it readable at gameplay size through the shape of the face and the placement and drawing of features, rather than merely changing hairstyle or adding more dirt. Keep the same S13 drawing medium and full-body image outside the head.\n\nFace study F02: Drooping pear.\nFacial design: Pear-shaped face: narrow temples, full low cheeks and a softly rounded heavy chin. Tiny downward-curved eyes with separate drooping brows. Short round nose represented by one curved dark hook, very short low mouth and mottled cheek stubble. Gentle tired rounded forms, no bright babyface.\nKeep every non-head component and the camera as in S13. One full-body image; no text or comparison panels.",
+      "image": [
+        "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png"
+      ],
+      "aspect_ratio": "1:1"
+    }
+  ],
+  "reference_verified": true,
+  "tool_output": {
+    "type": "ImageEdit",
+    "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f02-e359492c-5cfc-49e9-b8cc-243d33683310/e359492c-5cfc-49e9-b8cc-243d33683310/images/1.jpg",
+    "filename": "1.jpg",
+    "session_folder": "images"
+  },
+  "presentation": "held back"
+}

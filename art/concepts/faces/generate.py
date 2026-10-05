@@ -20,20 +20,20 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def request(identifier):
+def request(identifier, version="v01"):
     return json.loads(
-        (ROOT / "requests" / f"{identifier.lower()}-v01.json").read_text()
+        (ROOT / "requests" / f"{identifier.lower()}-{version}.json").read_text()
     )
 
 
-def import_image(identifier, source, evidence=None):
+def import_image(identifier, source, evidence=None, version="v01"):
     source = Path(source)
     with Image.open(source) as image:
         image.verify()
     with Image.open(source) as image:
         extension = {"PNG": ".png", "JPEG": ".jpg", "WEBP": ".webp"}[image.format]
         dimensions, mode = image.size, image.mode
-    destination = ROOT / "images" / f"{identifier.lower()}-v01{extension}"
+    destination = ROOT / "images" / f"{identifier.lower()}-{version}{extension}"
     if destination.exists():
         raise ValueError(f"Refusing to replace {destination}")
     shutil.copyfile(source, destination)
@@ -42,7 +42,7 @@ def import_image(identifier, source, evidence=None):
         "title": PLAN[identifier]["title"],
         "provider": PLAN[identifier]["provider"],
         "model": "not exposed by tool",
-        "request": request(identifier),
+        "request": request(identifier, version),
         "source_sha256": digest(BASE),
         "original_output": str(source),
         "file": str(destination.relative_to(PROJECT)),
@@ -54,7 +54,7 @@ def import_image(identifier, source, evidence=None):
         "review_status": "pending",
         **(evidence or {}),
     }
-    (ROOT / "records" / f"{identifier.lower()}-v01.json").write_text(
+    (ROOT / "records" / f"{identifier.lower()}-{version}.json").write_text(
         json.dumps(record, ensure_ascii=False, indent=2) + "\n"
     )
     print(
@@ -65,15 +65,15 @@ def import_image(identifier, source, evidence=None):
     )
 
 
-def generate_grok(identifier):
+def generate_grok(identifier, version="v01"):
     if PLAN[identifier]["provider"] != "grok":
         raise ValueError("Not a Grok request")
-    if list((ROOT / "records").glob(f"{identifier.lower()}-*.json")):
+    if list((ROOT / "records").glob(f"{identifier.lower()}-{version}.json")):
         raise ValueError(f"Already generated {identifier}")
     session = str(uuid.uuid4())
     cwd = Path("/private/tmp") / f"dias-face-{identifier.lower()}-{session}"
     cwd.mkdir()
-    raw = request(identifier)
+    raw = request(identifier, version)
     tool_input = {"prompt": raw["prompt"], "image": [str(BASE)], "aspect_ratio": "1:1"}
     prompt_path = cwd / "request.txt"
     prompt_path.write_text(
@@ -138,16 +138,22 @@ def generate_grok(identifier):
             f"{identifier} failed or actual inputs differed; inspect {events_path}"
         )
     evidence["tool_output"] = outputs[0]["rawOutput"]
-    import_image(identifier, evidence["tool_output"]["path"], evidence)
+    import_image(identifier, evidence["tool_output"]["path"], evidence, version)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--grok", nargs="+")
     parser.add_argument("--import-image", nargs=2, metavar=("ID", "ORIGINAL"))
+    parser.add_argument("--version", default="v01", choices=("v01", "v02"))
     args = parser.parse_args()
     if args.import_image:
-        import_image(*args.import_image)
+        import_image(*args.import_image, version=args.version)
     elif args.grok:
         with ThreadPoolExecutor(max_workers=3) as executor:
-            list(executor.map(generate_grok, args.grok))
+            list(
+                executor.map(
+                    lambda identifier: generate_grok(identifier, args.version),
+                    args.grok,
+                )
+            )
