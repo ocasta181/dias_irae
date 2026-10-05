@@ -29,6 +29,79 @@ let position = [450, 420];
 let extent;
 let scheduled = [];
 let scenarioTime = 0;
+const characters = { guarin: { root: "../", size: 160 }, wolf: { root: "../../wolf/", size: 96 } };
+let characterId = "guarin";
+let loadVersion = 0;
+let loading = false;
+
+function supports(action) {
+  const clip = { guard: "guard_in", "guard-off": "guard_out", prayer: "kneel", "prayer-off": "rise" }[action] ?? action;
+  return action === "reset" || Boolean(atlas.clips[clip]);
+}
+
+function actorSequences() {
+  const result = { ...sequences };
+  const facings = Object.keys(atlas.directions);
+  result.directions = { label: `Walk in all ${facings.length} directions`, steps: [...facings.map((direction, index) => ({ at: index * 1000, action: "walk", direction })), { at: facings.length * 1000, action: "idle" }] };
+  result.strike = { ...sequences.strike, label: `Walk → ${atlas.clips.cut.label.toLowerCase()} → walk`, steps: sequences.strike.steps.map(step => step.direction ? { ...step, direction: atlas.directions.E ? "E" : "SE" } : step) };
+  if (characterId === "wolf") result.tour = { label: "Wolf state tour", steps: [{ at: 200, action: "walk" }, { at: 1200, action: "cut" }, { at: 2300, action: "idle" }, { at: 3000, action: "hurt" }, { at: 4100, action: "death" }] };
+  return Object.fromEntries(Object.entries(result).filter(([, sequence]) => sequence.steps.every(step => supports(step.action))));
+}
+
+function applyCharacter(id, nextAtlas, loadedImages) {
+  characterId = id;
+  atlas = nextAtlas;
+  images.clear();
+  for (const [path, image] of loadedImages) images.set(path, image);
+  keys.clear(); scheduled = []; scenarioTime = 0; logs.length = 0;
+  player = createPlayer(); playing = true; lastTime = undefined; lastClip = undefined; stripKey = undefined;
+  position = [450, stage.height * .75];
+  const frames = Object.values(atlas.directions).flatMap(page => page.frames);
+  extent = {
+    left: Math.max(...frames.map(frame => frame.pivot[0] / frame.sourceStandingHeight)),
+    right: Math.max(...frames.map(frame => (frame.rect[2] - frame.pivot[0]) / frame.sourceStandingHeight)),
+    above: Math.max(...frames.map(frame => frame.pivot[1] / frame.sourceStandingHeight)),
+    below: Math.max(...frames.map(frame => (frame.rect[3] - frame.pivot[1]) / frame.sourceStandingHeight)),
+  };
+  element("character").value = id;
+  element("size").value = characters[id].size;
+  element("play").textContent = "Pause";
+  element("basis").textContent = `${atlas.selection.gameplay_id} / ${atlas.selection.source_character} · ${atlas.sourceFrames} source frames · ${Object.keys(atlas.directions).length} directions · ${Object.keys(atlas.clips).length} clips`;
+  element("load-status").textContent = atlas.reviewStatus;
+  element("shortcuts").textContent = `${supports("guard") ? "Hold G to guard; P starts/stops prayer; " : ""}H hurts; K defeats; R resets. Inputs keep their normal keyboard behavior.`;
+  for (const [name, file] of [["review", "manifest.md"], ["assessment", "assessment.md"], ["metadata", "atlas.json"]]) element(`sprite-${name}`).href = characters[id].root + file;
+  element("references").replaceChildren();
+  for (const reference of atlas.references) {
+    const figure = document.createElement("figure"), image = document.createElement("img"), caption = document.createElement("figcaption");
+    image.src = reference.url; image.alt = reference.label; caption.textContent = reference.label; figure.append(image, caption); element("references").append(figure);
+  }
+  populateActorControls(); updateClipControls(); cancelSequence();
+}
+
+async function loadCharacter(id) {
+  const version = ++loadVersion;
+  loading = true;
+  element("load-status").textContent = `Loading ${id}…`;
+  try {
+    const response = await fetch(`${characters[id].root}atlas.json`, { cache: "no-store" });
+    if (!response.ok) throw new Error(`Sheet data unavailable (${response.status})`);
+    const nextAtlas = await response.json();
+    if (!nextAtlas.directions.SE || !nextAtlas.clips.idle) throw new Error("Required starting direction or idle clip is missing.");
+    const sourcePaths = new Set(Object.values(nextAtlas.directions).flatMap(page => page.frames.map(frame => frame.image)));
+    const loadedImages = new Map();
+    for (const path of sourcePaths) await new Promise((resolve, reject) => {
+      const image = new Image();
+      image.onload = () => { loadedImages.set(path, image); resolve(); };
+      image.onerror = () => reject(new Error(`Source image cannot be loaded: ${path}`));
+      image.src = `${characters[id].root}${path}`;
+    });
+    if (version === loadVersion) applyCharacter(id, nextAtlas, loadedImages);
+  } catch (error) {
+    if (version === loadVersion) { element("load-status").textContent = `Cannot load ${id}: ${error.message}`; element("character").value = characterId; }
+  } finally {
+    if (version === loadVersion) { loading = false; lastTime = undefined; }
+  }
+}
 
 function log(message) {
   logs.unshift(message);
@@ -46,7 +119,7 @@ function updateClipControls() {
   element("clip").value = player.clip;
   if (lastClip !== player.clip) {
     clipRate = atlas.clips[player.clip].fps;
-    element("fps").value = clipRate;
+    element("fps").value = Number(clipRate.toFixed(2));
     lastClip = player.clip;
   }
   element("frame").max = atlas.clips[player.clip].frames.length - 1;
@@ -56,6 +129,7 @@ function updateClipControls() {
 }
 
 function act(action, fromSequence = false) {
+  if (loading || !supports(action)) return;
   if (!fromSequence) cancelSequence();
   const before = player.clip;
   player = request(player, action);
@@ -168,11 +242,16 @@ function draw() {
     context.moveTo(position[0], position[1] - 9); context.lineTo(position[0], position[1] + 9); context.stroke();
     context.strokeStyle = "#c8bea555";
     context.strokeRect(position[0] - frame.pivot[0] * scale, position[1] - frame.pivot[1] * scale, frame.rect[2] * scale, frame.rect[3] * scale);
+    for (const mark of Object.values(frame.landmarks ?? {})) {
+      const [px, py] = mark.point.map((value, index) => position[index] + (value - frame.trimOffset[index] - frame.pivot[index]) * scale);
+      context.fillStyle = mark.planted ? "#7cc887" : "#e6a75d";
+      context.fillRect(px - 2, py - 2, 4, 4);
+    }
   }
   updateStrip(page, clip);
   element("frame").value = current.index;
   element("frame-label").textContent = `${current.index + 1} / ${clip.frames.length}`;
-  const text = `${clip.label} · ${player.direction} · pose ${current.index + 1}/${clip.frames.length} · ${clipRate} FPS · ${current.complete ? "held final pose" : clip.loop ? "loop" : "one shot"}`;
+  const text = `${clip.label} · ${player.direction} · pose ${current.index + 1}/${clip.frames.length} · ${Number(clipRate.toFixed(2))} FPS · ${current.complete ? "held final pose" : clip.loop ? "loop" : "one shot"}`;
   if (element("readout").textContent !== text) element("readout").textContent = text;
   element("quality").textContent = page.assessment;
   for (const button of document.querySelectorAll(".frame-button")) button.setAttribute("aria-pressed", String(Number(button.dataset.frameIndex) === current.index));
@@ -215,8 +294,9 @@ function advancePreview(delta) {
       const [x, y] = keys.size ? movement() : directionVectors[player.direction];
       const length = Math.hypot(x, y) || 1;
       const pixels = stage.width / stage.getBoundingClientRect().width;
-      position[0] += x / length * step * .14 * pixels;
-      position[1] += y / length * step * .14 * groundProjection * pixels;
+      const travel = atlas.motion ? atlas.motion.walkSpeed / 1000 * Number(element("size").value) / atlas.motion.referenceHeight * rate : .14;
+      position[0] += x / length * step * travel * pixels;
+      position[1] += y / length * step * travel * groundProjection * pixels;
     }
     remaining -= step;
     updateClipControls();
@@ -224,6 +304,7 @@ function advancePreview(delta) {
 }
 
 function tick(time) {
+  if (loading || !atlas) { lastTime = undefined; requestAnimationFrame(tick); return; }
   const delta = lastTime === undefined ? 0 : time - lastTime;
   lastTime = time;
   if (playing && !document.hidden) {
@@ -249,7 +330,8 @@ function tick(time) {
   requestAnimationFrame(tick);
 }
 
-function wireControls() {
+function populateActorControls() {
+  element("clip").replaceChildren(); element("directions").replaceChildren(); document.querySelector(".sequences").replaceChildren();
   for (const [id, clip] of Object.entries(atlas.clips)) {
     const option = document.createElement("option"); option.value = id; option.textContent = clip.label; element("clip").append(option);
   }
@@ -266,6 +348,26 @@ function wireControls() {
     }
     element("directions").append(button);
   }
+  for (const button of document.querySelectorAll("[data-action]")) {
+    button.hidden = !supports(button.dataset.action);
+    if (button.dataset.action === "cut") button.textContent = atlas.clips.cut.label;
+  }
+  for (const [id, sequence] of Object.entries(actorSequences())) {
+    const button = document.createElement("button");
+    button.dataset.sequence = id; button.textContent = sequence.label; button.setAttribute("aria-pressed", "false");
+    button.addEventListener("click", () => {
+      keys.clear(); act("reset"); scenarioTime = 0; scheduled = [...sequence.steps];
+      button.setAttribute("aria-pressed", "true");
+      element("sequence-status").textContent = `Running: ${sequence.label}. Move or strike to take control.`;
+      log(`Sequence: ${sequence.label}`);
+    });
+    document.querySelector(".sequences").append(button);
+  }
+}
+
+function wireControls() {
+  if (atlas) populateActorControls();
+  element("character").addEventListener("change", () => loadCharacter(element("character").value));
   for (const button of document.querySelectorAll("[data-action]")) button.addEventListener("click", () => act(button.dataset.action));
   element("clip").addEventListener("change", () => { cancelSequence(); player = inspect(player, element("clip").value); updateClipControls(); stripKey = undefined; draw(); });
   element("play").addEventListener("click", () => { playing = !playing; element("play").textContent = playing ? "Pause" : "Play"; });
@@ -277,23 +379,8 @@ function wireControls() {
   element("size").addEventListener("input", () => { element("size-label").textContent = `${element("size").value} px`; });
   element("fps").addEventListener("change", () => { clipRate = Math.max(1, Math.min(30, Number(element("fps").value) || atlas.clips[player.clip].fps)); element("fps").value = clipRate; });
   element("sampling").addEventListener("change", () => { stripKey = undefined; });
-  for (const [id, sequence] of Object.entries(sequences)) {
-    const button = document.createElement("button");
-    button.dataset.sequence = id;
-    button.textContent = sequence.label;
-    button.setAttribute("aria-pressed", "false");
-    button.addEventListener("click", () => {
-      keys.clear();
-      act("reset");
-      scenarioTime = 0;
-      scheduled = [...sequence.steps];
-      button.setAttribute("aria-pressed", "true");
-      element("sequence-status").textContent = `Running: ${sequence.label}. Move or strike to take control.`;
-      log(`Sequence: ${sequence.label}`);
-    });
-    document.querySelector(".sequences").append(button);
-  }
   document.addEventListener("keydown", event => {
+    if (loading) return;
     if (event.target.closest("input, select, textarea, [contenteditable=true]") || event.ctrlKey || event.metaKey || event.altKey) return;
     const key = event.key.length === 1 ? event.key.toLowerCase() : event.key;
     if (movementKeys.has(key)) {
@@ -306,7 +393,7 @@ function wireControls() {
     }
     if (event.repeat) { if (key === " ") event.preventDefault(); return; }
     const action = { " ": "cut", g: "guard", h: "hurt", k: "death", r: "reset", p: player.praying ? "prayer-off" : "prayer" }[key];
-    if (action) { event.preventDefault(); if (key === "g") keys.add(key); act(action); }
+    if (action && supports(action)) { event.preventDefault(); if (key === "g") keys.add(key); act(action); }
   });
   document.addEventListener("keyup", event => {
     const key = event.key.length === 1 ? event.key.toLowerCase() : event.key;
@@ -325,33 +412,10 @@ function wireControls() {
 }
 
 async function start() {
-  const response = await fetch("../atlas.json", { cache: "no-store" });
-  if (!response.ok) throw new Error(`Sheet data unavailable (${response.status})`);
-  atlas = await response.json();
-  if (!atlas.directions.SE || !atlas.clips.idle) throw new Error("Required starting direction or idle clip is missing.");
-  const frames = Object.values(atlas.directions).flatMap(page => page.frames);
-  extent = {
-    left: Math.max(...frames.map(frame => frame.pivot[0] / frame.sourceStandingHeight)),
-    right: Math.max(...frames.map(frame => (frame.rect[2] - frame.pivot[0]) / frame.sourceStandingHeight)),
-    above: Math.max(...frames.map(frame => frame.pivot[1] / frame.sourceStandingHeight)),
-    below: Math.max(...frames.map(frame => (frame.rect[3] - frame.pivot[1]) / frame.sourceStandingHeight)),
-  };
-  const sourcePaths = new Set(Object.values(atlas.directions).flatMap(page => page.frames.map(frame => frame.image)));
-  for (const path of sourcePaths) {
-    await new Promise((resolve, reject) => {
-      const image = new Image();
-      image.onload = () => { images.set(path, image); resolve(); };
-      image.onerror = () => reject(new Error(`Source image cannot be loaded: ${path}`));
-      image.src = `../${path}`;
-    });
-  }
-  element("basis").textContent = `${atlas.selection.gameplay_id} / ${atlas.selection.source_character} · exact upstream art · ${atlas.sourceFrames} source frames · ${Object.keys(atlas.directions).length} directions · ${Object.keys(atlas.clips).length} clips`;
-  element("load-status").textContent = atlas.reviewStatus;
-  for (const reference of atlas.references) {
-    const figure = document.createElement("figure"); const image = document.createElement("img"); const caption = document.createElement("figcaption");
-    image.src = reference.url; image.alt = reference.label; caption.textContent = reference.label; figure.append(image, caption); element("references").append(figure);
-  }
-  wireControls(); updateClipControls();
+  wireControls();
+  const requested = new URLSearchParams(window.location.search).get("character");
+  await loadCharacter(characters[requested] ? requested : "guarin");
+  if (!atlas) return;
   document.querySelector(".lab").hidden = false; document.querySelector(".frames").hidden = false;
   log("Ready. Art remains under review; action buttons test transitions, clip selector inspects individual tags.");
   requestAnimationFrame(tick);

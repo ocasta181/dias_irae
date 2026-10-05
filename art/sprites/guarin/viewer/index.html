@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dias Irae — Guarin motion lab</title>
+  <title>Dias Irae — Character motion lab</title>
   <link rel="stylesheet" href="viewer.css?v=2">
-  <script type="module" src="viewer.mjs?v=7"></script>
+  <script type="module" src="viewer.mjs?v=8"></script>
 </head>
 <body>
 <main>
   <header>
     <p class="eyebrow">Dias Irae · Sprite pilot</p>
-    <h1>Guarin motion lab</h1>
+    <h1>Character motion lab</h1>
+    <label>Character<select id="character"><option value="guarin">Guarin</option><option value="wolf">Wolf</option></select></label>
     <p id="basis">Loading the saved art selection…</p>
   </header>
   <p id="load-status" role="status">Loading frame art…</p>
@@ -43,18 +44,18 @@
       <fieldset><legend>Facing</legend><div id="directions" class="compass"></div></fieldset>
       <div class="actions"><button data-action="idle">Idle</button><button data-action="walk">Walk</button><button data-action="cut">Sword cut</button><button data-action="guard">Guard</button><button data-action="guard-off">Release guard</button><button data-action="prayer">Pray</button><button data-action="prayer-off">Rise</button><button data-action="interact">Interact</button><button data-action="hurt">Take hit</button><button data-action="death">Defeat</button></div>
       <label>Playback speed <output id="speed-label">1×</output><input id="speed" type="range" min="0.25" max="2" step="0.25" value="1"></label>
-      <label>Clip rate (frames per second)<input id="fps" type="number" min="1" max="30" step="1" value="6"></label>
+      <label>Clip rate (frames per second)<input id="fps" type="number" min="1" max="30" step="0.01" value="6"></label>
       <label>Standing preview height <output id="size-label">160 px</output><input id="size" type="range" min="48" max="240" step="8" value="160"></label>
       <label>Background<select id="background"><option value="dark">Dark ground</option><option value="light">Pale ground</option><option value="checker">Transparency checker</option></select></label>
       <label>Sampling<select id="sampling"><option value="linear">Smooth sampling</option><option value="nearest">Nearest pixel</option></select></label>
-      <label class="check"><input id="guides" type="checkbox"> Foot pivot and frame bounds</label>
+      <label class="check"><input id="guides" type="checkbox"> Ground pivot, frame bounds and measured paws</label>
       <label class="check"><input id="onion" type="checkbox"> Previous pose overlay</label>
       <p class="help">Ground guide: orthographic view, 45° above ground. Drawn sprite projection remains under review.</p>
       <p id="quality" class="quality"></p>
     </div>
     </div>
-    <p class="help">Keyboard shortcuts: hold G to guard; P starts/stops prayer; H hurts; K defeats; R resets. Inputs keep their normal keyboard behavior.</p>
-    <nav><a href="../../../concepts/gameplay/index.html">Gameplay ranking</a><a href="../../asset-list.md">Asset inventory</a><a href="../../production-spec.md">Sprite specification</a><a href="../manifest.md">Sprite review</a><a href="../assessment.md">Frame assessment</a><a href="../atlas.json">Sheet metadata</a></nav>
+    <p id="shortcuts" class="help">H hurts; K defeats; R resets. Inputs keep their normal keyboard behavior.</p>
+    <nav><a href="../../../concepts/gameplay/index.html">Gameplay ranking</a><a href="../../asset-list.md">Asset inventory</a><a href="../../production-spec.md">Sprite specification</a><a id="sprite-review" href="../manifest.md">Sprite review</a><a id="sprite-assessment" href="../assessment.md">Frame assessment</a><a id="sprite-metadata" href="../atlas.json">Sheet metadata</a></nav>
   <section class="references"><h2>Exact upstream references</h2><div id="references"></div></section>
   <section><h2>Events and transitions</h2><p>These are animation tests. This app does not change game damage, collision, or movement rules.</p><pre id="events" aria-live="polite"></pre></section>
   </details>
