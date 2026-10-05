@@ -42,4 +42,40 @@ Thirty new face designs use original S13 only. Five earlier face candidates rema
 
 ## Preference ranking
 
-Move your preferred faces to the beginning of the gallery.
+Gallery order, first to last. Ranking does not change acceptance decisions.
+
+1. V25
+2. V22
+3. F18
+4. F20
+5. F25
+6. V21
+7. V23
+8. F19
+9. F26
+10. V24
+11. F23
+12. F16
+13. F21
+14. F17
+15. F28
+16. F30
+17. F24
+18. F27
+19. F29
+20. F01
+21. F02
+22. F03
+23. F04
+24. F05
+25. F06
+26. F07
+27. F22
+28. F12
+29. F14
+30. F08
+31. F09
+32. F10
+33. F11
+34. F13
+35. F15

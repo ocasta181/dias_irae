@@ -53,3 +53,27 @@ test("unavailable browser storage reports transfer failure", () => {
   runInNewContext(script, { localStorage: { getItem() { throw new Error("Unavailable"); } }, document });
   assert.equal(document.body.dataset.draftTransfer, "unavailable");
 });
+
+test("equipment and cast drafts keep their comments and exclude face candidates", () => {
+  const values = new Map([
+    [sourceKey, JSON.stringify({ V03: { note: "Shield" }, V26: { note: "Armor" }, R10: { note: "Fulk" }, V21: { note: "Face" } })],
+    [`${sourceKey}:preference-order`, JSON.stringify(["S13", "R10", "V21", "V26", "V03"])],
+  ]);
+  run(values);
+  const equipmentKey = "dias-irae:mood-board:/art/concepts/expansion/index.html";
+  assert.deepEqual(JSON.parse(values.get(equipmentKey)), { V03: { note: "Shield" }, V26: { note: "Armor" }, R10: { note: "Fulk" } });
+  assert.deepEqual(JSON.parse(values.get(`${equipmentKey}:preference-order`)), ["R10", "V26", "V03"]);
+});
+
+test("reopening styles cannot overwrite newer independent equipment reviews", () => {
+  const equipmentKey = "dias-irae:mood-board:/art/concepts/expansion/index.html";
+  const values = new Map([
+    [sourceKey, JSON.stringify({ V26: { note: "Old armor note" } })],
+    [equipmentKey, JSON.stringify({ V26: { note: "New armor note" } })],
+    [`${equipmentKey}:preference-order`, JSON.stringify(["R10", "V03", "V26"])],
+  ]);
+  run(values);
+  run(values);
+  assert.deepEqual(JSON.parse(values.get(equipmentKey)), { V26: { note: "New armor note" } });
+  assert.deepEqual(JSON.parse(values.get(`${equipmentKey}:preference-order`)), ["R10", "V03", "V26"]);
+});
