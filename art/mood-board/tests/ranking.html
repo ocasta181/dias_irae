@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Review rank insertion check</title>
+  <link rel="stylesheet" href="../review.css">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 20px; background: #1b1b18; color: #e5ddcc; font: 15px system-ui; }
+    #preference-grid { display: grid; gap: 10px; }
+    .card { border: 1px solid #61583e; }
+    .picture { padding: 12px; }
+    .body { padding: 12px; }
+  </style>
+</head>
+<body data-manifest-path="art/mood-board/tests/ranking.md">
+  <h1>Rank insertion check</h1>
+  <p>Move the fifth card to position 1. Expected: X05, X01, X02, X03, X04.</p>
+  <p id="review-summary"></p>
+  <button id="download-manifest" type="button">Export test review</button>
+  <p id="review-save-status"></p>
+  <div id="preference-grid">
+    <article class="card" data-reference="X01"><div class="picture">X01 · Original first</div><div class="body"><div class="meta">X01 · pending</div></div></article>
+    <article class="card" data-reference="X02"><div class="picture">X02 · Original second</div><div class="body"><div class="meta">X02 · pending</div></div></article>
+    <article class="card" data-reference="X03"><div class="picture">X03 · Original third</div><div class="body"><div class="meta">X03 · pending</div></div></article>
+    <article class="card" data-reference="X04"><div class="picture">X04 · Original fourth</div><div class="body"><div class="meta">X04 · pending</div></div></article>
+    <article class="card" data-reference="X05"><div class="picture">X05 · Original fifth</div><div class="body"><div class="meta">X05 · pending</div></div></article>
+  </div>
+  <script id="review-manifest" type="application/json">"# Rank insertion check\n\n| Identifier | Status | Notes |\n|---|---|---|\n| X01 | pending | First comment |\n| X02 | pending | Second comment |\n| X03 | pending | Third comment |\n| X04 | pending | Fourth comment |\n| X05 | pending | Fifth comment |\n"</script>
+  <script src="../review.js?v=rank-insertion-check"></script>
+</body>
+</html>
