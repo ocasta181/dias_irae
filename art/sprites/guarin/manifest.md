@@ -17,7 +17,7 @@ Change `pending` to `accepted`, `revise`, or `rejected`, and write a note. A ran
 | GP-N | Rear | [N v01](pages/guarin-n-v01.png) | 48 | pending | Solid rear helmet and back cloak; inspect covered limbs in gait. |
 | GP-NW | Rear/left | [NW v02](pages/guarin-nw-v02.png) | 48 | pending | Replaces false front visor on the v01 rear view. |
 | GP-W | Left profile | [W v01](pages/guarin-w-v01.png) | 48 | pending | Near shield partially hides sword hand; inspect limb continuity. |
-| GP-SW | Front/left | [SW v02](pages/guarin-sw-v02.png) | 48 | pending | Replaces wrong v01 facing. Shield screen position follows anatomical rotation. |
+| GP-SW | Front/left | [SW v02](pages/guarin-sw-v02.png) | 48 | pending | SW v02 supplies 42 poses; [SW v03](pages/guarin-sw-v03.png) supplies six hurt poses with the retained sword. Shield screen position follows anatomical rotation. |
 
 ## State families
 
@@ -42,9 +42,9 @@ Change `pending` to `accepted`, `revise`, or `rejected`, and write a note. A ran
 - [x] Isolate neighboring figures without changing generated pixels or synthesizing motion.
 - [x] Provide elapsed-time playback, unequal holds, twelve tags, eight facings, frame stepping, speed/rate/scale controls, overlays, and transition tests.
 - [x] Verify walk→cut→walk, guard release, prayer interruption, and terminal death in the browser; twelve deterministic timing/transition tests pass.
-- [x] Repair east cut with six new poses; retain its earlier 42 unaffected poses and verify the selected sources.
+- [x] Repair east cut and southwest hurt with six new poses each; retain the other 42 poses of each direction and verify source selection.
 - [ ] Refine approximate foot anchors where in-motion review shows sliding or jumps.
 - [ ] Close remaining gesture/gear continuity and loop-join findings with specific pose repairs.
 - [ ] User approves motion, camera, pixel scale, and texture before final export or game integration.
 
-The logical sheet draws from nine unchanged 1086×1448 transparent RGBA PNG pages. Eight supply directional sets; one supplies only the repaired east cut row. They are diagnostic animation sources, not tightly packed final game atlases. [atlas.json](atlas.json) defines measured rectangles, offsets, frame timing and events. Pixel hashes prove distinct drawings, not correct motion. Camera angle is estimated rather than calibrated.
+The logical sheet draws from ten unchanged transparent RGBA PNG pages: nine are 1086×1448; southwest v03 is 1199×1312. Eight supply directional sets; two supply only repaired state rows. They are diagnostic animation sources, not tightly packed final game atlases. [atlas.json](atlas.json) defines measured rectangles, offsets, frame timing and events. Pixel hashes prove distinct drawings, not correct motion. Camera angle is estimated rather than calibrated.

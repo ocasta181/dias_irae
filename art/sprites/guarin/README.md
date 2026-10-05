@@ -2,7 +2,7 @@
 
 Open [the motion lab](http://127.0.0.1:8765/art/sprites/guarin/viewer/index.html). The existing art server is `python3 scripts/serve_art.py --port 8765` from the project root. The app needs no package install, new service, endpoint, database, or build step.
 
-Selected style: G15 / S13, captured after inventory verification on 2026-10-05 local time. The selected gameplay screen and its original character were actual image inputs in every generation. The logical sheet contains **384 drawn poses, eight directions, eight state families, and twelve playback tags per direction**. It uses nine original transparent PNG pages: the six east cut poses come from a separate repaired page. Source rasters remain unchanged.
+Selected style: G15 / S13, captured after inventory verification on 2026-10-05 local time. The selected gameplay screen and its original character were actual image inputs in every generation. The logical sheet contains **384 drawn poses, eight directions, eight state families, and twelve playback tags per direction**. It uses ten original transparent PNG pages: six east cut poses and six southwest hurt poses come from separate repaired pages. Source rasters remain unchanged.
 
 Use the clip selector to inspect a tag, or action buttons to test transitions. Pause, step or scrub to inspect individual poses. Adjust rate, speed and standing height; show the previous pose or foot guide; compare contrasting backgrounds and both sampling modes. Stage size controls keep complete pose bounds visible. Action buttons use entry/hold/exit behavior; the selector is a deliberate diagnostic override. Manual inspection cancels the scripted transition demonstration.
 

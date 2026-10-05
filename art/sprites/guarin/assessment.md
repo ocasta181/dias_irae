@@ -15,7 +15,7 @@ The selected worn iron, wine cloth, mail, huge closed helmet, tiny torso and sho
 | NW v01 puts a front visor on a rear-facing body. | Generate NW v02 with a plain rear helmet. | Rear-left view imported; no false front visor. |
 | SW v01 repeats southeast. | Generate SW v02 from upstream references. | Front-left rotation imported. |
 | E v02 cut reads as a thrust. | Generate E v03 and select only its six cut poses. | Clear overhead anticipation and downward angular sweep. Keep the earlier 42 poses; exclude the new hurt row's weapon regression. |
-| SW v02 hurt loses the sword. | Request SW v03 with explicit visible sword retention. | Targeted row repair in progress. |
+| SW v02 hurt loses the sword. | Request SW v03 with explicit visible sword retention. | All six new recoil poses retain their sword. Select only hurt; keep the other 42 SW v02 poses. Browser pose inspection confirms the retained blade. |
 | Thumbnail canvas clips overhead sword anticipation. | Fit all poses in a clip at one common normalized scale/anchor. | Full weapon travel is visible in the pose strip. |
 | Concurrent page loading fails intermittently in the in-app browser. | Load source pages in sequence and report the exact failing path. | Two subsequent fresh loads succeeded; no silent retry or omitted image. |
 
@@ -23,8 +23,8 @@ Projection correction at commit `c2bfc28`: anatomical left does not mean screen-
 
 ## Verification
 
-- Original source pages: 1086×1448, transparent RGBA PNG. Requests asked for larger exact cells; the provider did not return those dimensions. The importer measures actual output rather than claiming the requested dimensions were achieved.
-- All eight direction sets contain 48 usable source regions. All 96 direction/tag combinations select and draw in the browser. Repaired east cut maps to exactly six E v03 regions; the other 42 east regions remain E v02.
+- Original source pages: nine at 1086×1448 and the southwest repair at 1199×1312, all transparent RGBA PNG. Requests asked for larger exact cells; the provider did not return those dimensions. The importer measures actual output rather than claiming the requested dimensions were achieved.
+- All eight direction sets contain 48 usable source regions. All 96 direction/tag combinations select and draw in the browser. Repaired east cut maps to exactly six E v03 regions; the other 42 east regions remain E v02. The southwest repair similarly changes only its six hurt regions; other SW regions remain v02.
 - Twelve deterministic tests pass: elapsed-time/refresh independence, unequal holds, gait phase on turns, non-restarting attacks, locked action facing, recovery to movement intent, single contact event, interrupted contact cancellation, guard hold/release/early release, prayer hold/interruption, and terminal death/reset.
 - Browser transition demonstration completes walk→cut→walk, guard entry/hold/exit, kneel/channel interrupted by hurt, and held final corpse. Manual inspection cancels the demo instead of being overwritten by its pending actions.
 - Browser checks cover frame selection/stepping, pause/play, source strips, 96-pixel nearest sampling on pale ground and 160-pixel smooth sampling on dark ground. No neighboring figure appears in the inspected regions.
