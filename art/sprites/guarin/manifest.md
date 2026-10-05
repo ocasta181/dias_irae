@@ -11,7 +11,7 @@ Change `pending` to `accepted`, `revise`, or `rejected`, and write a note. A ran
 | ID | Direction | Active source page | Poses | Decision | Notes |
 |---|---|---|---:|---|---|
 | GP-S | Front | [S v01](pages/guarin-s-v01.png) | 48 | pending | Inspect symmetry, ground anchor, and loop joins. |
-| GP-SE | Front/right | [SE v01](pages/guarin-se-v01.png) | 48 | pending | Closest to source facing; inspect weapon sweep and prayer depth. |
+| GP-SE | Front/right | [SE v01](pages/guarin-se-v01.png) | 48 | pending | Closest to source facing; [SE v02](pages/guarin-se-v02.png) supplies only six raised guard poses. The other 42 poses remain SE v01. Inspect weapon sweep and prayer depth. |
 | GP-E | Right profile | [E v02](pages/guarin-e-v02.png) | 48 | pending | E v02 supplies 42 poses; [E v03](pages/guarin-e-v03.png) supplies only the six improved cut poses. |
 | GP-NE | Rear/right | [NE v01](pages/guarin-ne-v01.png) | 48 | pending | Rear cloak and far shield; inspect gear continuity and ground anchor. |
 | GP-N | Rear | [N v01](pages/guarin-n-v01.png) | 48 | pending | Solid rear helmet and back cloak; inspect covered limbs in gait. |
@@ -26,7 +26,7 @@ Change `pending` to `accepted`, `revise`, or `rejected`, and write a note. A ran
 | P01 | Idle | idle | 6 | pending | Breathing should be restrained; texture flicker must not replace motion. |
 | P02 | Walk | walk | 6 | pending | Both feet participate; inspect passing/contact, sliding, and pose 6→1. |
 | P03 | Sword cut | cut | 6 | pending | East now uses an overhead/downward sweep. Inspect all cut recoveries and silhouette continuity. |
-| P04 | Guard | guard_in / guard_hold / guard_out | 2 / 2 / 2 | pending | Shield must meaningfully cover the body; hold must not replay raising/lowering. |
+| P04 | Guard | guard_in / guard_hold / guard_out | 2 / 2 / 2 | pending | SE v02 now covers the torso and lower faceplate in its held guard. Other directions still need coverage review; hold must not replay raising/lowering. |
 | P05 | Hurt | hurt | 6 | pending | Inspect equipment continuity during recoil and recovered stance. |
 | P06 | Death | death | 6 | pending | All directions collapse to the ground; final corpse holds until explicit debug reset. |
 | P07 | Interact | interact | 6 | pending | Reach may be obscured by the shield; do not silently swap sword/shield hands. |
@@ -43,8 +43,9 @@ Change `pending` to `accepted`, `revise`, or `rejected`, and write a note. A ran
 - [x] Provide elapsed-time playback, unequal holds, twelve tags, eight facings, frame stepping, speed/rate/scale controls, overlays, and transition tests.
 - [x] Verify walk→cut→walk, guard release, prayer interruption, and terminal death in the browser; twelve deterministic timing/transition tests pass.
 - [x] Repair east cut and southwest hurt with six new poses each; retain the other 42 poses of each direction and verify source selection.
+- [x] Repair southeast guard coverage from exact G15 / S13, importing only six guard poses; preserve all other 378 active poses and clip timings.
 - [ ] Refine approximate foot anchors where in-motion review shows sliding or jumps.
 - [ ] Close remaining gesture/gear continuity and loop-join findings with specific pose repairs.
 - [ ] User approves motion, camera, pixel scale, and texture before final export or game integration.
 
-The logical sheet draws from ten unchanged transparent RGBA PNG pages: nine are 1086×1448; southwest v03 is 1199×1312. Eight supply directional sets; two supply only repaired state rows. They are diagnostic animation sources, not tightly packed final game atlases. [atlas.json](atlas.json) defines measured rectangles, offsets, frame timing and events. Pixel hashes prove distinct drawings, not correct motion. Camera angle is estimated rather than calibrated.
+The logical sheet draws from eleven unchanged transparent RGBA PNG pages: ten are 1086×1448; southwest v03 is 1199×1312. Eight supply directional sets; three supply only repaired state rows. They are diagnostic animation sources, not tightly packed final game atlases. [atlas.json](atlas.json) defines measured rectangles, offsets, frame timing and events. Pixel hashes prove distinct drawings, not correct motion. Camera angle is estimated rather than calibrated.

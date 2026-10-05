@@ -16,6 +16,7 @@ The selected worn iron, wine cloth, mail, huge closed helmet, tiny torso and sho
 | SW v01 repeats southeast. | Generate SW v02 from upstream references. | Front-left rotation imported. |
 | E v02 cut reads as a thrust. | Generate E v03 and select only its six cut poses. | Clear overhead anticipation and downward angular sweep. Keep the earlier 42 poses; exclude the new hurt row's weapon regression. |
 | SW v02 hurt loses the sword. | Request SW v03 with explicit visible sword retention. | All six new recoil poses retain their sword. Select only hurt; keep the other 42 SW v02 poses. Browser pose inspection confirms the retained blade. |
+| SE v01 guard hold keeps the shield low beside the body. | Generate SE v02 from exact G15 / S13 and import only its six guard poses. | Held shield crosses the torso, covers the belt and lower faceplate; the other 42 SE poses and all other directions remain unchanged. New hurt/interaction rows are excluded. |
 | Thumbnail canvas clips overhead sword anticipation. | Fit all poses in a clip at one common normalized scale/anchor. | Full weapon travel is visible in the pose strip. |
 | Concurrent page loading fails intermittently in the in-app browser. | Load source pages in sequence and report the exact failing path. | Two subsequent fresh loads succeeded; no silent retry or omitted image. |
 
@@ -23,7 +24,7 @@ Projection correction at commit `c2bfc28`: anatomical left does not mean screen-
 
 ## Verification
 
-- Original source pages: nine at 1086×1448 and the southwest repair at 1199×1312, all transparent RGBA PNG. Requests asked for larger exact cells; the provider did not return those dimensions. The importer measures actual output rather than claiming the requested dimensions were achieved.
+- Original source pages: ten at 1086×1448 and the southwest repair at 1199×1312, all transparent RGBA PNG. Requests asked for larger exact cells; the provider did not return those dimensions. The importer measures actual output rather than claiming the requested dimensions were achieved.
 - All eight direction sets contain 48 usable source regions. All 96 direction/tag combinations select and draw in the browser. Repaired east cut maps to exactly six E v03 regions; the other 42 east regions remain E v02. The southwest repair similarly changes only its six hurt regions; other SW regions remain v02.
 - Twelve deterministic tests pass: elapsed-time/refresh independence, unequal holds, gait phase on turns, non-restarting attacks, locked action facing, recovery to movement intent, single contact event, interrupted contact cancellation, guard hold/release/early release, prayer hold/interruption, and terminal death/reset.
 - Browser transition demonstration completes walk→cut→walk, guard entry/hold/exit, kneel/channel interrupted by hurt, and held final corpse. Manual inspection cancels the demo instead of being overwritten by its pending actions.
@@ -45,3 +46,5 @@ Foot anchors are approximations, not artist-authored skeletal pivots. Check gait
 Use [manifest.md](manifest.md) for decisions and notes, and [the motion lab](viewer/index.html) for inspection. Distinct hashes prove different pixels, not motion correctness. No page is accepted solely because an image tool completed.
 
 Guard repair decision at commit `d1c001b`, confidence 98%: southeast v01 poses 19–24 keep the shield beside the body, including the supposed guarded hold. Redraw the guard family from exact G15 / S13 with an explicit rim-height trajectory and torso coverage. Inspect the new fourth row before importing; retain the other 42 southeast poses and all original bytes. This is an authorized pilot repair, not a new equipment choice or final sprite approval.
+
+Southeast guard import at commit `d873df3`: six new guard source regions replace only poses 19–24. Exact structural comparison verifies all other 378 frame records, every clip duration and the captured selection are unchanged. All 23 timing/controller tests pass without skips. [Import evidence](records/guarin-se-v02-import.json). Guard coverage in the other directions, foot anchors and loop joins remain open.

@@ -1,0 +1,47 @@
+{
+  "unchanged_frames": 378,
+  "changed_frames": [
+    {
+      "direction": "SE",
+      "pose": 19,
+      "image": "pages/guarin-se-v02.png",
+      "sha256": "da9b8744c34281d6ee247108b7fe5247610e387595a25fc4993b20406ae3d714"
+    },
+    {
+      "direction": "SE",
+      "pose": 20,
+      "image": "pages/guarin-se-v02.png",
+      "sha256": "0aef7a0eb0d0f8322b5f7fba02a594f9b1bb628791468294ba7d0a5e03d3d38e"
+    },
+    {
+      "direction": "SE",
+      "pose": 21,
+      "image": "pages/guarin-se-v02.png",
+      "sha256": "23992aa6b8e3d8765865ce42fdd591c16ec4e0651c465721f1d1fffdb52056cf"
+    },
+    {
+      "direction": "SE",
+      "pose": 22,
+      "image": "pages/guarin-se-v02.png",
+      "sha256": "028b22cd7cf257c012559ac4d840f81d01006a908a00910b86f259780cf0c4fe"
+    },
+    {
+      "direction": "SE",
+      "pose": 23,
+      "image": "pages/guarin-se-v02.png",
+      "sha256": "67e1c1a70409bf0eedc97feec96f714134029afa8cecc0258f6d820aae2c920c"
+    },
+    {
+      "direction": "SE",
+      "pose": 24,
+      "image": "pages/guarin-se-v02.png",
+      "sha256": "62f8f2cc142a1231271eb7300b1d170be3055102c5f9c81dfc020b830f7139f9"
+    }
+  ],
+  "unchanged_clip_timing": true,
+  "unchanged_selection": true,
+  "source_frames": 384,
+  "selected_family": "guard",
+  "visual_approval": "pending",
+  "inspection": "Source image viewed; protective torso coverage improved. Browser hold and release verification follows."
+}

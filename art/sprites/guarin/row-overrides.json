@@ -4,5 +4,8 @@
   },
   "SW": {
     "hurt": "pages/guarin-sw-v03.png"
+  },
+  "SE": {
+    "guard": "pages/guarin-se-v02.png"
   }
 }
