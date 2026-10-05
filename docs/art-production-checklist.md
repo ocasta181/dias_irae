@@ -8,6 +8,8 @@ Last updated: 2026-10-05. Current stage: **the 24-screen gameplay exploration is
 
 2026-10-05 decision at commit `ce606ee`: keep the existing sprite sources and animation state logic; make the tester a keyboard-controlled stage with side buttons for named sequences, and collapse detailed inspection tools by default. Confidence: 98%, based on the user's explicit control and layout request. This changes the static app only; no endpoint or persistence schema change is needed.
 
+- [x] Simplify the motion lab to a controllable character, page-wide WASD/arrows and Space strike, with six named sequence buttons on the side. Collapse frame inspection by default; preserve source artwork and review data. Verify all presets in the browser and eighteen animation/controller tests, including held movement, key release and preset takeover.
+
 Source material: [story spine](../story/story-arch.md), [characters](../story/characters.md), [locations](../story/locations.md), [draft systems](../story/systems.md).
 
 - Late summer 1101; rural homecoming, diseased harvest, household grief, sacramental horror.
