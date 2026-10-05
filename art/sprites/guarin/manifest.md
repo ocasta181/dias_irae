@@ -23,8 +23,8 @@ Change `pending` to `accepted`, `revise`, or `rejected`, and write a note. A ran
 
 | ID | Family | Tags | Source poses per direction | Decision | Notes |
 |---|---|---|---:|---|---|
-| P01 | Idle | idle | 6 | pending | Breathing should be restrained; texture flicker must not replace motion. |
-| P02 | Walk | walk | 6 | pending | Both feet participate; inspect passing/contact, sliding, and pose 6→1. |
+| P01 | Idle | idle | 6 | revise | User reports W trembling and N/E foot shuffling; S is the best but needs a subtler nod. Fix both soles in all eight directions and suppress texture flicker. [Repair framework](locomotion/README.md). |
+| P02 | Walk | walk | 6 | revise | User reports NW moonwalking, NE skipping, SE gliding, SW sideways dancing, and similar cardinal defects. Define exact per-frame contacts and match stride to travel before generation. [Repair framework](locomotion/README.md). |
 | P03 | Sword cut | cut | 6 | pending | East now uses an overhead/downward sweep. Inspect all cut recoveries and silhouette continuity. |
 | P04 | Guard | guard_in / guard_hold / guard_out | 2 / 2 / 2 | pending | SE v02 now covers the torso and lower faceplate in its held guard. Other directions still need coverage review; hold must not replay raising/lowering. |
 | P05 | Hurt | hurt | 6 | pending | Front and southwest recoil rows retain their swords after targeted repairs. Inspect equipment continuity and recovered stance across all views. |

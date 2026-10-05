@@ -28,6 +28,8 @@ Last updated: 2026-10-05. Current stage: **45 exact-S13 equipment and cast candi
 2026-10-05 decision at commit `54bc09b`: run the existing art server as a macOS user login service, using Homebrew Python and the existing loopback port 8765. Confidence: 99%, based on the user's explicit request that the motion lab remain available without Codex. This changes process supervision only; review contracts and artwork stay intact.
 
 - [x] Install the independent local art server as `com.diasirae.art-server`, with login startup and automatic restart. Confirm the process belongs to macOS launchd, survives an explicit termination with a new process identifier, and serves all 17 motion-lab files, including twelve sprite pages, with HTTP status 200 and unchanged hashes. All 25 animation tests pass. Document controls in [the motion lab README](../art/sprites/guarin/README.md). The browser tool blocks the existing error tab under its URL policy; browser reload remains a user action.
+- [x] Record the user's eight-direction locomotion failures and mark idle/walk for revision. Inspect all 96 source poses, identify estimated pivots and travel unconnected to an authored stride, and preserve [diagnostic contact sheets](../art/sprites/guarin/locomotion/README.md). Existing timing tests do not establish motion quality.
+- [ ] Define and verify exact numerical foot placement for every repair frame before image generation.
 
 Source material: [story spine](../story/story-arch.md), [characters](../story/characters.md), [locations](../story/locations.md), [draft systems](../story/systems.md).
 
