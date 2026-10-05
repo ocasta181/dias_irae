@@ -16,6 +16,7 @@ The dates and qualifications in this table are supported in the individual profi
 | Hospital of Saint John / Hospitallers | **Yes, as a hospital community** | Eleventh-century origins; Gérard leads it; papal privilege in 1113; military development principally in the twelfth century. |
 | Templars | **No** | About 1119–1120; older accounts give 1118. Rule approved at [Troyes](https://www.google.com/maps/search/?api=1&query=Troyes%2C+France) in 1129. |
 | Saint Lazarus | **Not securely established as an order** | A pre-crusade leper hospital is possible; formation and early charters disputed; clear institutional evidence belongs to the twelfth century. |
+| Holy Sepulchre knighthood | **Not securely established as an order** | Crusade origin tradition is undocumented; first knightly investiture evidence in 1336; later papal organization and nineteenth-century restoration. |
 | Teutonic Order | **No** | Field hospital in 1190; military transformation in 1198; papal confirmation in 1199. |
 | Calatrava | **No** | Fortress entrusted to its founders in January 1158; recognized military fraternity in 1164. |
 | Santiago | **No** | Knightly confraternity in 1170; papal confirmation in 1175. |
@@ -42,6 +43,8 @@ For visual descriptions, a **field** is the background of a heraldic design. A *
 **Culture and operation.** The Benedictine priory and lay house of alms are separate bodies. Foreign dependencies begin in **1150–1190**. For 1101, emphasize local care. [Museum dossier, pp. 11 and 19](https://musees.isere.fr/sites/portail-musee-fr/files/inline-files/DP_MSA_Chroniques%20d%27une%20abbaye_WEB_2.pdf).
 
 **Colors, symbols, and motto.** The later badge is a **blue tau**. Saint Anthony's tau and pig attributes are attested in the **twelfth century**; a 1101 uniform is unproved. Arms gained a black double-headed eagle and gold crown in **1502**. No 1101 motto was verified. Universal blue taus are a story choice. [Museum dossier, p. 7](https://musees.isere.fr/sites/portail-musee-fr/files/inline-files/DP_MSA_Chroniques%20d%27une%20abbaye_WEB_2.pdf); [Amis des Antonins: arms](https://www.les-amis-des-antonins.com/lordre-des-antonins/).
+
+The familiar **black habit with a blue tau** is described in the *Catholic Encyclopedia* of **1907**. That retrospective description supplies a later costume reference, without dating its adoption to 1095 or 1101. Use this entry for dress; the specialist chronology above provides the institutional stages. [Older reference entry](https://www.newadvent.org/cathen/01555a.htm).
 
 **Treatment traditions.** The association describes pork-fat herbal ointments and Saint Vinage: wine with plants, blessed and brought into contact with relics at **Ascension**. Its description supplies no early date for that precise recipe or ceremony. It must not be treated as a documented 1101 protocol. Nor should a later surgical image establish routine skilled amputation at the first house. [Amis des Antonins: treatment traditions](https://www.les-amis-des-antonins.com/lordre-des-antonins/).
 
@@ -74,6 +77,14 @@ For visual descriptions, a **field** is the background of a heraldic design. A *
 **Symbols and motto.** Green crosses are its familiar later identity; no securely dated 1101 badge or uniform was verified. A modern branch's history reports adoption of *Atavis et armis* in **1778**. Literally “by ancestors and arms,” it is wholly inappropriate as a 1101 motto. The modern institution's continuity claims also require separate assessment. [Present branch's retrospective history](https://stlazarus.org.au/welcome-page/about-us/history/).
 
 **Story inference.** An independent leper hospice or afflicted pilgrim is plausible. A locally stationed “Order of Saint Lazarus” combat unit would need fictional license and should not be presented as established history.
+
+## Holy Sepulchre knighthood: distinguish devotion from a documented order
+
+**History and leadership.** The order's Vatican history calls its First Crusade origin tradition **undocumented** and identifies **1336** as the first documentary evidence for investiture of knights “of the Holy Sepulchre.” That date is an evidence boundary, not a demonstrated foundation day. Clement VI entrusted the shrine to Franciscans in **1342**; later popes regulated investiture. Pius IX's restoration of the Latin patriarchate in **1847** and letters in **1868** belong to another stage. No secure 1101 grand master or organized knightly body emerges from this account. Devotion to the tomb and armed pilgrims do not establish that institution. [Vatican institutional history](https://www.vatican.va/roman_curia/institutions_connected/oessh/en/cenni_storici_en.html).
+
+**Colors, heraldry, and motto.** The familiar knight's **white cloak with a red Jerusalem cross** is a modern costume reference. The cross consists of a large cross with T-shaped ends and four smaller crosses. The modern constitution specifies **“Deus lo vult,”** meaning “God wills it.” It is a dated modern witness to the emblem and motto, without establishing their adoption in 1101. [Order's cloak explanation, 2024](https://www.oessh.va/content/ordineequestresantosepolcro/en/gran-magistero/il-gran-magistero/news-dal-gran-magistero/il-mantello--segno-luminoso-della-nostra-identita.html); [modern constitution, appendix II, articles 1 and 6](https://www.eohssouthwest.com/documents/OfficialDocuments/EOHSJ_Constitution_1978_Final-PDF_.pdf#page=37).
+
+**Culture and story use.** Pilgrimage, Christian devotion, and assistance to the Holy Land shape the later institution. Its present charitable purpose must not become a reconstructed 1101 military rule. Guarin can remember visiting or defending the shrine; giving him this named order's later rank and costume requires explicit fictional license. [Institutional history and purpose](https://www.vatican.va/roman_curia/institutions_connected/oessh/en/cenni_storici_en.html).
 
 ## Teutonic Order: future, 1190–1199
 
