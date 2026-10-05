@@ -1,0 +1,64 @@
+[
+  {
+    "source": "walk-e-v03-1-4.png",
+    "tool": "image_gen",
+    "model": "undisclosed",
+    "original_path": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-375b711f-eed3-4bbc-a3b8-75fc39fe142c.png",
+    "prompt": "walk-e-v03-1-4-prompt.txt",
+    "sha256": "0ec665ae6223ba831ee9491d71eb4c7f732825e8a5a476b7996c74489be15598",
+    "status": "cadence study; geometry/contact acceptance pending",
+    "references": [
+      {
+        "role": "primary enlarged skeletal geometry",
+        "path": "art/sprites/wolf/whole-body/guides/e-walk-v03-1-4.png",
+        "sha256": "ce5298afd73e8c7e072dae221c93749a5564048197c956d5caa10396df16db68"
+      },
+      {
+        "role": "intact wolf identity",
+        "path": "art/sprites/wolf/whole-body/base-wolf-v02.png",
+        "sha256": "ee925ea9d1d9946cdaea3cf8a1538950748d305e079c96c7a76f837ff551c3b0"
+      },
+      {
+        "role": "proportions and drawing medium",
+        "path": "art/concepts/images/s13-guarin-isometric-v02.png",
+        "sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c"
+      },
+      {
+        "role": "palette",
+        "path": "art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+        "sha256": "191af0e5abbd484ec225633f530e6ed6dd9ebf01c5367910c09a353c4ca465d9"
+      }
+    ]
+  },
+  {
+    "source": "walk-e-v03-5-8.png",
+    "tool": "image_gen",
+    "model": "undisclosed",
+    "original_path": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-acfae18f-a7b6-4931-a912-2e0865f3e422.png",
+    "prompt": "walk-e-v03-5-8-prompt.txt",
+    "sha256": "aee69bace39d4430e11cee09525a30e918e9d54c5755add1816d8e3e62e5c61e",
+    "status": "cadence study; geometry/contact acceptance pending",
+    "references": [
+      {
+        "role": "primary enlarged skeletal geometry",
+        "path": "art/sprites/wolf/whole-body/guides/e-walk-v03-5-8.png",
+        "sha256": "e5045e5fad9f682e03f42b66983f2742588368696ffb384ea8aa6a72445b4d2d"
+      },
+      {
+        "role": "intact wolf identity",
+        "path": "art/sprites/wolf/whole-body/base-wolf-v02.png",
+        "sha256": "ee925ea9d1d9946cdaea3cf8a1538950748d305e079c96c7a76f837ff551c3b0"
+      },
+      {
+        "role": "proportions and drawing medium",
+        "path": "art/concepts/images/s13-guarin-isometric-v02.png",
+        "sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c"
+      },
+      {
+        "role": "palette",
+        "path": "art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+        "sha256": "191af0e5abbd484ec225633f530e6ed6dd9ebf01c5367910c09a353c4ca465d9"
+      }
+    ]
+  }
+]

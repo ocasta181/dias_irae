@@ -9,22 +9,23 @@ const colors = { LF: "#2b7ba0", RF: "#c56227", LH: "#634bac", RH: "#b0375c" };
 const walkStride = 24;
 const limbs = { LH: { base: -16, lateral: -8, offset: 0 }, LF: { base: 16, lateral: -8, offset: .25 }, RH: { base: -16, lateral: 8, offset: .5 }, RF: { base: 16, lateral: 8, offset: .75 } };
 
-export function wolfPose(phase, walking = true) {
+export function wolfPose(phase, walking = true, geometry = { stride: 24, fore: [10, 11], hind: [11, 12] }) {
   const feet = {};
   for (const [id, limb] of Object.entries(limbs)) {
     const step = walking ? paw(phase, limb) : { forward: limb.base, lift: 0, planted: true };
-    step.forward = limb.base + (step.forward - limb.base) * walkStride / stride;
+    step.forward = limb.base + (step.forward - limb.base) * geometry.stride / stride;
     step.lift *= 5 / 8;
     const fore = id.endsWith("F"), hip = [limb.base, 22];
     const lower = [step.forward - (fore ? 1 : 4), step.lift + (fore ? 5 : 6)];
-    const knee = joint(hip, lower, fore ? -1 : 1, fore ? 10 : 11, fore ? 11 : 12);
+    const lengths = fore ? geometry.fore : geometry.hind;
+    const knee = joint(hip, lower, fore ? -1 : 1, ...lengths);
     const local = [hip, knee, lower, [step.forward, step.lift]];
     feet[id] = { planted: step.planted, local, points: local.map(([forward, height]) => project("E", forward, limb.lateral, height)) };
   }
-  return { direction: "E", phase, origin, rootForward: walking ? walkStride * phase : 0, feet, head: project("E", 26, 0, 40), body: project("E", 0, 0, 22) };
+  return { direction: "E", phase, origin, rootForward: walking ? geometry.stride * phase : 0, feet, head: project("E", 26, 0, 40), body: project("E", 0, 0, 22) };
 }
 
-function drawGuide(context, pose, label) {
+export function drawGuide(context, pose, label) {
   context.fillStyle = "#f1ede3"; context.fillRect(0, 0, 192, 192);
   context.strokeStyle = "#bdb8ae"; context.lineWidth = .5;
   context.strokeRect(0, 0, 192, 192);
@@ -60,9 +61,11 @@ async function saveGuide(name, poses, columns, rows) {
   await writeFile(resolve(root, "guides", name + ".json"), JSON.stringify(poses, null, 2) + "\n");
 }
 
-await mkdir(resolve(root, "guides"), { recursive: true });
-await saveGuide("e-neutral-v02", [{ id: "E-neutral-v02", ...wolfPose(0, false) }], 1, 1);
-const poses = Array.from({ length: 24 }, (_, index) => ({ id: `E-walk-${index + 1}`, startMs: index * 37.5, durationMs: 37.5, ...wolfPose((index + .5) / 24) }));
-await saveGuide("e-walk-01-12-v02", poses.slice(0, 12), 4, 3);
-await saveGuide("e-walk-13-24-v02", poses.slice(12), 4, 3);
-console.log(JSON.stringify({ poses: 24, stride: walkStride, walkDuration, guideMethod: "exaggerated whole-body canine skeleton with shoulder/elbow/carpus and hip/stifle/hock" }));
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  await mkdir(resolve(root, "guides"), { recursive: true });
+  await saveGuide("e-neutral-v02", [{ id: "E-neutral-v02", ...wolfPose(0, false) }], 1, 1);
+  const poses = Array.from({ length: 24 }, (_, index) => ({ id: `E-walk-${index + 1}`, startMs: index * 37.5, durationMs: 37.5, ...wolfPose((index + .5) / 24) }));
+  await saveGuide("e-walk-01-12-v02", poses.slice(0, 12), 4, 3);
+  await saveGuide("e-walk-13-24-v02", poses.slice(12), 4, 3);
+  console.log(JSON.stringify({ poses: 24, stride: walkStride, walkDuration, guideMethod: "exaggerated whole-body canine skeleton with shoulder/elbow/carpus and hip/stifle/hock" }));
+}

@@ -111,9 +111,9 @@ test("missing pilot headings cannot move a right-facing wolf sideways", () => {
   assert.equal(lab.state().position[0], 450);
   assert.equal(lab.state().player.clip, "idle");
   lab.key("keyup", "a"); lab.key("keydown", "d"); lab.step(1000);
-  assert.ok(Math.abs(lab.state().position[0] - 486) < 1e-8);
+  assert.ok(Math.abs(lab.state().position[0] - 498.6) < 1e-8);
   lab.key("keydown", "w"); lab.step(1100);
-  assert.ok(Math.abs(lab.state().position[0] - 486) < 1e-8);
+  assert.ok(Math.abs(lab.state().position[0] - 498.6) < 1e-8);
   assert.equal(lab.state().player.clip, "idle");
 });
 
@@ -124,6 +124,16 @@ test("pilot presets offer only drawings that exist", () => {
   assert.equal(lab.state().player.direction, "E");
   lab.preset("tour"); lab.step(4000);
   assert.equal(lab.state().player.clip, "idle");
+});
+
+test("wolf cadence revision gives fewer pose changes and meaningful travel", () => {
+  assert.equal(wholeWolf.clips.walk.fps, 8);
+  assert.equal(wholeWolf.clips.walk.frames.length, 8);
+  assert.equal(animation.duration(wholeWolf.clips.walk), 1000);
+  const lab = playground(); lab.select("wolf", wholeWolf); lab.step(0);
+  lab.key("keydown", "d"); lab.step(1000);
+  assert.ok(Math.abs(lab.state().position[0] - 504) < 1e-8);
+  assert.equal(animation.sample(wholeWolf.clips.walk, lab.state().player.elapsedMs).index, 0);
 });
 
 test("wolf travel follows stride when size and playback rate change", () => {

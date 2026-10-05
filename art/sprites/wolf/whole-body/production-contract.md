@@ -12,6 +12,12 @@ Landmarks to measure on the actual finished frames: skull/muzzle envelope, shoul
 
 ## Controlled pilot
 
+Cadence correction at commit `cf834d9`, confidence 96%: the user's report requires fewer purposeful pose changes and more canvas travel. The active replacement has eight new whole-body keys, 125 ms holds, a 1,000 ms cycle and 36 logical pixels per stride. At the default 96-pixel preview height, canonical height 64 gives 54 screen pixels/second. The prior study was 26.67 pose changes/second and 40 screen pixels/second. New drawings use four enlarged controls per request, with geometry as the first reference. No earlier walk output is a generation input.
+
+The new planned hold error is 2.25 logical pixels, derived from the longer holds and stride. A proposed 3-pixel combined diagnostic budget leaves 0.75 pixel for drawing uncertainty. This is not a pass for the old failed drawings or an increase that hides their 9.53-pixel error. The new art must be measured independently. Segment lengths are 11/12 fore and 12/13 hind, folded under the same 22-pixel shoulder height; the oversized head and short silhouette remain fixed.
+
+The first two source poses in each new half have their observed sweep reversed; the authored order is `2,1,3,4,6,5,7,8`. The whole source drawings are reordered, never assembled, stretched or recentered separately. Source placement and anatomical side errors still need inspection. The earlier 24-drawing study and measurements remain preserved below as failure evidence.
+
 Start with a right-facing whole-body standing pose and one full four-beat walk. Camera target: orthographic, 45 degrees above horizontal. Forelegs use shoulder/elbow/carpus/paw joints; hindlegs use hip/stifle/hock/paw joints. Root, head and torso remain registered while each paw follows its annotated guide.
 
 Shortened stride: 24 logical pixels per 900 ms. Twenty-four midpoint drawings at 37.5 ms each limit the planned contact hold error to 0.5 pixel. Maximum paw lift is 5 pixels. The resulting reference travel is 26.67 pixels/second. Actual painted contact measurements must establish the separate drawing-error budget.

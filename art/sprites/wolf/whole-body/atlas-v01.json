@@ -1,0 +1,1108 @@
+{
+  "selection": {
+    "gameplay_id": "G15",
+    "source_character": "S13 proportions / wolf base v02"
+  },
+  "sourceFrames": 25,
+  "reviewStatus": "Whole-body proportion study: oversized head, squat torso, short legs. Right-facing idle and 24 walk drawings only. Walk fails precise pose/contact checks; not production-ready. Other headings and actions are pending.",
+  "directions": {
+    "E": {
+      "image": "wolf-whole-e-v01.png",
+      "dimensions": [
+        980,
+        980
+      ],
+      "sha256": "c452d64155ed2669a19b3c13589d710406207a9224fd39b8bd90a3381ec2d709",
+      "frames": [
+        {
+          "family": "idle",
+          "pose": 1,
+          "rect": [
+            2,
+            2,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            63,
+            94,
+            82,
+            63
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "base-wolf-v02.png",
+          "sourceRect": [
+            0,
+            0,
+            1254,
+            1254
+          ],
+          "sha256": "3d2f1ae1dcf1a9da3de7796110cc2318c15d3da7e7188cc620773f9eae5801ff"
+        },
+        {
+          "family": "walk",
+          "pose": 1,
+          "rect": [
+            198,
+            2,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            54,
+            98,
+            88,
+            63
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-01-12-v01.png",
+          "sourceRect": [
+            0,
+            0,
+            362,
+            362
+          ],
+          "sha256": "941e8e9785a167316825e4722d53c3f7f35d403c65f2b48552c2d0f2a541b007"
+        },
+        {
+          "family": "walk",
+          "pose": 2,
+          "rect": [
+            394,
+            2,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            55,
+            98,
+            87,
+            63
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-01-12-v01.png",
+          "sourceRect": [
+            362,
+            0,
+            362,
+            362
+          ],
+          "sha256": "a710cb677357b1b02bc38ca25c3e1b4f5507e0ca76042b85b230dc9ec2b19bfd"
+        },
+        {
+          "family": "walk",
+          "pose": 3,
+          "rect": [
+            590,
+            2,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            55,
+            97,
+            87,
+            65
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-01-12-v01.png",
+          "sourceRect": [
+            724,
+            0,
+            362,
+            362
+          ],
+          "sha256": "a7f615b0c0d673ae03516f534c022fde6e960e5b4376528fb5359550a5bf193c"
+        },
+        {
+          "family": "walk",
+          "pose": 4,
+          "rect": [
+            786,
+            2,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            55,
+            97,
+            88,
+            64
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-01-12-v01.png",
+          "sourceRect": [
+            1086,
+            0,
+            362,
+            362
+          ],
+          "sha256": "b41f87b0763461252224a4e0c915e21f85dfe63b12a5c56652cbda3c1c8a903f"
+        },
+        {
+          "family": "walk",
+          "pose": 5,
+          "rect": [
+            2,
+            198,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            55,
+            96,
+            87,
+            65
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-01-12-v01.png",
+          "sourceRect": [
+            0,
+            362,
+            362,
+            362
+          ],
+          "sha256": "e8a270daad8f2c0f60acae6ddf1a2934ad33d43a88ca571dab4e587c6cc893f9"
+        },
+        {
+          "family": "walk",
+          "pose": 6,
+          "rect": [
+            198,
+            198,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            55,
+            96,
+            87,
+            62
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-01-12-v01.png",
+          "sourceRect": [
+            362,
+            362,
+            362,
+            362
+          ],
+          "sha256": "c6e2d653e37c5dd4f4da6314ec005de1acd3af4439400e356d06cf2542e4c4d9"
+        },
+        {
+          "family": "walk",
+          "pose": 7,
+          "rect": [
+            394,
+            198,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            53,
+            96,
+            89,
+            61
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-01-12-v01.png",
+          "sourceRect": [
+            724,
+            362,
+            362,
+            362
+          ],
+          "sha256": "ac531eae1ea4e1fd6b1fd53af281a15b6552419c67b4463dda5bd08f56650fc9"
+        },
+        {
+          "family": "walk",
+          "pose": 8,
+          "rect": [
+            590,
+            198,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            55,
+            96,
+            87,
+            65
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-01-12-v01.png",
+          "sourceRect": [
+            1086,
+            362,
+            362,
+            362
+          ],
+          "sha256": "689d5be59b27cef173562de013579929c27d21cc613f5f74be07cfff908b7c32"
+        },
+        {
+          "family": "walk",
+          "pose": 9,
+          "rect": [
+            786,
+            198,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            55,
+            90,
+            87,
+            64
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-01-12-v01.png",
+          "sourceRect": [
+            0,
+            724,
+            362,
+            362
+          ],
+          "sha256": "7f64741264954d871ff7c889ba3caaaaa3ca5aea7f8963918fc2ff6d495e1c7b"
+        },
+        {
+          "family": "walk",
+          "pose": 10,
+          "rect": [
+            2,
+            394,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            56,
+            91,
+            86,
+            63
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-01-12-v01.png",
+          "sourceRect": [
+            362,
+            724,
+            362,
+            362
+          ],
+          "sha256": "9ddece26a8ff6102e03889dc89f7e465861b1d67ad3a4e8efa691fa59c6f4530"
+        },
+        {
+          "family": "walk",
+          "pose": 11,
+          "rect": [
+            198,
+            394,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            56,
+            91,
+            86,
+            63
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-01-12-v01.png",
+          "sourceRect": [
+            724,
+            724,
+            362,
+            362
+          ],
+          "sha256": "b5d4af1d90e56674c61565c2594d17da28ec3ad2d4e15b06bd831ca2bc651bea"
+        },
+        {
+          "family": "walk",
+          "pose": 12,
+          "rect": [
+            394,
+            394,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            56,
+            91,
+            86,
+            63
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-01-12-v01.png",
+          "sourceRect": [
+            1086,
+            724,
+            362,
+            362
+          ],
+          "sha256": "6a965955896ce91a49bb5b3a41b5e0b7e0421a97bf373a7d2554a747951e9b93"
+        },
+        {
+          "family": "walk",
+          "pose": 13,
+          "rect": [
+            590,
+            394,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            57,
+            96,
+            82,
+            65
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-13-24-v01.png",
+          "sourceRect": [
+            0,
+            0,
+            362,
+            362
+          ],
+          "sha256": "0f2cdd50e77302a031ac2a835d06aaa706d60db9bc3d84a4fa2327bbb5df1d7e"
+        },
+        {
+          "family": "walk",
+          "pose": 14,
+          "rect": [
+            786,
+            394,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            56,
+            96,
+            83,
+            62
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-13-24-v01.png",
+          "sourceRect": [
+            362,
+            0,
+            362,
+            362
+          ],
+          "sha256": "d15c362626235bdd9771325138c21164375e354d52ee11de830b1f23caf64bc3"
+        },
+        {
+          "family": "walk",
+          "pose": 15,
+          "rect": [
+            2,
+            590,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            56,
+            96,
+            85,
+            64
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-13-24-v01.png",
+          "sourceRect": [
+            724,
+            0,
+            362,
+            362
+          ],
+          "sha256": "d45077780e3c15fe6354e3bea29dd6da7fe318e37da67664fc1c736c1923ec82"
+        },
+        {
+          "family": "walk",
+          "pose": 16,
+          "rect": [
+            198,
+            590,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            56,
+            96,
+            82,
+            62
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-13-24-v01.png",
+          "sourceRect": [
+            1086,
+            0,
+            362,
+            362
+          ],
+          "sha256": "d40efd8c369b0ded079a895ee47e8c988c8397ac799c53e2b738bc089e079637"
+        },
+        {
+          "family": "walk",
+          "pose": 17,
+          "rect": [
+            394,
+            590,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            58,
+            91,
+            82,
+            63
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-13-24-v01.png",
+          "sourceRect": [
+            0,
+            362,
+            362,
+            362
+          ],
+          "sha256": "6d09e21c175fd530c3b78ea32aaa5dc2484c71d1eb1f3155a91ca808613c39b8"
+        },
+        {
+          "family": "walk",
+          "pose": 18,
+          "rect": [
+            590,
+            590,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            55,
+            90,
+            85,
+            65
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-13-24-v01.png",
+          "sourceRect": [
+            362,
+            362,
+            362,
+            362
+          ],
+          "sha256": "63940bff2eb81ba24d1dbd5bd4cc9c1514798a0f77c864ba34b1d4eeb41213a0"
+        },
+        {
+          "family": "walk",
+          "pose": 19,
+          "rect": [
+            786,
+            590,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            56,
+            91,
+            84,
+            65
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-13-24-v01.png",
+          "sourceRect": [
+            724,
+            362,
+            362,
+            362
+          ],
+          "sha256": "dd9b0387301d255d419a8fe61fc7d517e0df74d48f697712dfb2811d169495e6"
+        },
+        {
+          "family": "walk",
+          "pose": 20,
+          "rect": [
+            2,
+            786,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            54,
+            91,
+            85,
+            65
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-13-24-v01.png",
+          "sourceRect": [
+            1086,
+            362,
+            362,
+            362
+          ],
+          "sha256": "548e8757fdaa88cbc5b199c1571b6f81435ddaad4c3b279f19e12b356996b80d"
+        },
+        {
+          "family": "walk",
+          "pose": 21,
+          "rect": [
+            198,
+            786,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            56,
+            86,
+            84,
+            63
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-13-24-v01.png",
+          "sourceRect": [
+            0,
+            724,
+            362,
+            362
+          ],
+          "sha256": "c4f62ccba0fceea4e60e8a3c39c230f9c3ff684983e5d36c6c307cd91f314d3d"
+        },
+        {
+          "family": "walk",
+          "pose": 22,
+          "rect": [
+            394,
+            786,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            55,
+            85,
+            85,
+            63
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-13-24-v01.png",
+          "sourceRect": [
+            362,
+            724,
+            362,
+            362
+          ],
+          "sha256": "d408332efd0f2e1b0366f86028dc4ffaadb58e742988c509c5b13f262262d3e9"
+        },
+        {
+          "family": "walk",
+          "pose": 23,
+          "rect": [
+            590,
+            786,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            55,
+            85,
+            84,
+            64
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-13-24-v01.png",
+          "sourceRect": [
+            724,
+            724,
+            362,
+            362
+          ],
+          "sha256": "39e54124ed3d4d7494e7afcafb31064c2abe91e82fa4ba3d896e6874d0f2f052"
+        },
+        {
+          "family": "walk",
+          "pose": 24,
+          "rect": [
+            786,
+            786,
+            192,
+            192
+          ],
+          "pivot": [
+            96,
+            156
+          ],
+          "logicalSize": [
+            192,
+            192
+          ],
+          "trimOffset": [
+            0,
+            0
+          ],
+          "occupied": [
+            56,
+            85,
+            83,
+            64
+          ],
+          "image": "wolf-whole-e-v01.png",
+          "sourceStandingHeight": 64,
+          "sourceFile": "walk-e-13-24-v01.png",
+          "sourceRect": [
+            1086,
+            724,
+            362,
+            362
+          ],
+          "sha256": "7eb4351bc6e91f8806ebe31686365e0f4166a629865b2ec94122ddeb010f053a"
+        }
+      ],
+      "assessment": "Intact painted animals. Proportions retained; placement, planted paws, camera and row/half-cycle seams need correction. No planned paw target is presented as a measured landmark."
+    }
+  },
+  "clips": {
+    "idle": {
+      "label": "Still whole-body pose",
+      "fps": 1,
+      "loop": true,
+      "frames": [
+        {
+          "source": 0,
+          "durationMs": 1000
+        }
+      ]
+    },
+    "walk": {
+      "label": "Whole-body walk study",
+      "fps": 26.666666666666664,
+      "loop": true,
+      "frames": [
+        {
+          "source": 1,
+          "durationMs": 37.5
+        },
+        {
+          "source": 2,
+          "durationMs": 37.5
+        },
+        {
+          "source": 3,
+          "durationMs": 37.5
+        },
+        {
+          "source": 4,
+          "durationMs": 37.5
+        },
+        {
+          "source": 5,
+          "durationMs": 37.5
+        },
+        {
+          "source": 6,
+          "durationMs": 37.5
+        },
+        {
+          "source": 7,
+          "durationMs": 37.5
+        },
+        {
+          "source": 8,
+          "durationMs": 37.5
+        },
+        {
+          "source": 9,
+          "durationMs": 37.5
+        },
+        {
+          "source": 10,
+          "durationMs": 37.5
+        },
+        {
+          "source": 11,
+          "durationMs": 37.5
+        },
+        {
+          "source": 12,
+          "durationMs": 37.5
+        },
+        {
+          "source": 13,
+          "durationMs": 37.5
+        },
+        {
+          "source": 14,
+          "durationMs": 37.5
+        },
+        {
+          "source": 15,
+          "durationMs": 37.5
+        },
+        {
+          "source": 16,
+          "durationMs": 37.5
+        },
+        {
+          "source": 17,
+          "durationMs": 37.5
+        },
+        {
+          "source": 18,
+          "durationMs": 37.5
+        },
+        {
+          "source": 19,
+          "durationMs": 37.5
+        },
+        {
+          "source": 20,
+          "durationMs": 37.5
+        },
+        {
+          "source": 21,
+          "durationMs": 37.5
+        },
+        {
+          "source": 22,
+          "durationMs": 37.5
+        },
+        {
+          "source": 23,
+          "durationMs": 37.5
+        },
+        {
+          "source": 24,
+          "durationMs": 37.5
+        }
+      ]
+    }
+  },
+  "references": [
+    {
+      "label": "S13 — dominant exaggerated proportions and drawing style",
+      "url": "/art/concepts/images/s13-guarin-isometric-v02.png"
+    },
+    {
+      "label": "Intact exaggerated wolf v02 — exact animation identity input",
+      "url": "/art/sprites/wolf/whole-body/base-wolf-v02.png"
+    },
+    {
+      "label": "G15 — gritty game palette",
+      "url": "/art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png"
+    }
+  ],
+  "motion": {
+    "referenceHeight": 64,
+    "walkSpeed": 26.666666666666664,
+    "stride": 24,
+    "walkDuration": 900
+  },
+  "packing": "Complete painted source cells, fixed page-level registration, untrimmed logical canvases, two transparent pixels per edge, no rotation or parts assembly."
+}

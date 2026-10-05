@@ -7,6 +7,7 @@ This is the source of truth for the mood board → concept art → sprites → f
 - [x] Generate and inspect [the exaggerated intact v02 base](../art/sprites/wolf/whole-body/base-wolf-v02.png); preserve original bytes, full prompt and reference hashes. This is an appearance candidate, not a measured motion or camera pass.
 - [x] Redefine canine controls with shoulder/elbow/carpus and hip/stifle/hock joints, a 48-pixel head envelope versus a 32-pixel torso axis, 24-pixel stride and 5-pixel paw lift.
 - [x] Produce and preserve 24 intact walk drawings in two twelve-pose requests using the exact new base and controls. Add the whole-body E idle/walk study to the lab; remove the rejected assembly from the default wolf view. Thirty-five controller/guide tests pass. The actual walk still requires pose/contact repair; seven headings and other states are not claimed complete.
+- [x] Respond to the frenetic-walk report with eight new whole-body keys from enlarged four-pose controls. Change cadence from 26.67 to 8 pose changes/second and default travel from 40 to 54 screen pixels/second. Preserve the intact v02 identity, raw sources and exact lineage. Keep contact precision and full coverage unapproved.
 - [ ] Generate whole-body walk frames from this exact candidate and the numerical skeleton controls, then measure actual painted contacts and inspect the real export in the motion lab.
 - [ ] Pass the pilot before expanding to eight directions and other states. User visual approval remains open; the rejected 512-entry component package is not current game art.
 

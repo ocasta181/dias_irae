@@ -6,8 +6,8 @@ import { fileURLToPath } from "node:url";
 import { createCanvas, pixels, readBitmap, components } from "../source-parts.mjs";
 
 const root = dirname(fileURLToPath(import.meta.url)), hash = bytes => createHash("sha256").update(bytes).digest("hex");
-const atlas = JSON.parse(await readFile(resolve(root, "atlas.json")));
-const registrations = JSON.parse(await readFile(resolve(root, "registration.json")));
+const atlas = JSON.parse(await readFile(resolve(root, "atlas-v01.json")));
+const registrations = JSON.parse(await readFile(resolve(root, "registration-v01.json")));
 const page = await readBitmap(resolve(root, atlas.directions.E.image));
 assert.equal(hash(await readFile(resolve(root, atlas.directions.E.image))), atlas.directions.E.sha256);
 assert.deepEqual(Object.keys(atlas.directions), ["E"]);

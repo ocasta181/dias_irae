@@ -21,45 +21,45 @@
     "method": "One fixed scale and offset for the complete source sheet; no pose-level corrections."
   },
   {
-    "file": "walk-e-v03-1-4.png",
-    "columns": 2,
-    "rows": 2,
-    "scale": 0.14,
+    "file": "walk-e-01-12-v01.png",
+    "columns": 4,
+    "rows": 3,
+    "scale": 0.25,
     "offset": [
-      56,
-      81
+      52,
+      73
     ],
     "first": 1,
     "sourceSize": [
-      1415,
-      1111
+      1448,
+      1086
     ],
     "sourceCell": [
-      707.5,
-      555.5
+      362,
+      362
     ],
-    "sha256": "0ec665ae6223ba831ee9491d71eb4c7f732825e8a5a476b7996c74489be15598",
+    "sha256": "ce9739b5df14a2ca198256ebd8b78db01be9e04c9157428c80eaf83a723a1225",
     "method": "One fixed scale and offset for the complete source sheet; no pose-level corrections."
   },
   {
-    "file": "walk-e-v03-5-8.png",
-    "columns": 2,
-    "rows": 2,
-    "scale": 0.14,
+    "file": "walk-e-13-24-v01.png",
+    "columns": 4,
+    "rows": 3,
+    "scale": 0.25,
     "offset": [
-      56,
-      85
+      52,
+      73
     ],
-    "first": 5,
+    "first": 13,
     "sourceSize": [
-      1415,
-      1112
+      1448,
+      1086
     ],
     "sourceCell": [
-      707.5,
-      556
+      362,
+      362
     ],
-    "sha256": "aee69bace39d4430e11cee09525a30e918e9d54c5755add1816d8e3e62e5c61e",
+    "sha256": "47551f383a2c8191da15c49d6d0bce20b2f99dd5dadda429cfbf9c5a6b092fbf",
     "method": "One fixed scale and offset for the complete source sheet; no pose-level corrections."
   }
 ]
