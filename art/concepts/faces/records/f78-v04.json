@@ -1,0 +1,27 @@
+{
+  "id": "F78",
+  "title": "V22 · Receding sparse crown / Short crooked broad tip / Thin sloping strokes",
+  "provider": "built-in imagegen",
+  "model": "not exposed by tool",
+  "request": {
+    "prompt": "Use case: precise-object-edit. Asset: F78, full-body Guarin face study.\nImage 1 is the exact V22 base: keep its jaw and cheek silhouette, mouth, same huge head and tiny squat body, S13 costume, mail, ragged red scarf and cape, boots, sword, shield, pose, elevated game camera, charcoal background, dull brown/gray/burgundy palette, and coarse flat granular 2D drawing.\nImage 2 is the EXACT eye-only source selected by the human. REPLACE Image 1's eyes with those precise two eye marks. These are short irregular horizontal black ink lids with small centered downward projections and broken coarse edges, the near eye wider than the far eye. Match their shape, width, height, spacing, slant and weary expression directly. No detached square dot eyes, no round eyes, no white eyeballs or highlights, no new eye style. The eyes are NOT a variable. Keep them visually identical to Image 2, separated from the eyebrows.\nChange ONLY these three features:\nHAIR: Receding sparse crown. High temples with sparse short dark wisps and a visible crown; same adult identity, not an elderly redesign.\nNOSE: Short crooked broad rounded tip. About 35 pixels wide and 20–25 pixels tall at the original 1312-pixel canvas width, placed low. Remove the former long bridge; draw a short bent asymmetric nub with rounded uneven lobes and two tiny unequal nostrils. No rectangular end or tall sidewall. The nose contour may move locally; preserve the rest of the head and jaw.\nEYEBROWS: Thin sloping strokes: very thin tapered sloped eyebrows, separate from the eyes. Eyebrows ARE allowed to change. Do not change the eye shapes or squint them to follow the brows.\nKeep the same art style and outfit. Flat worn rough pigment, dark, muddy, tired and wretched but exaggerated and cartoony. No 3D rendering, smooth skin, clean comic-book finish, portrait crop, extra objects, text, labels or contact sheet. One complete character in the same full-body frame.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/concepts/expansion/images/v22-v01.png",
+      "/Users/ocasta/Code/Dias Irae/art/concepts/faces/references/approved-f37-eyes-only.png"
+    ],
+    "transparent_background": false
+  },
+  "source_sha256": "d5e349b3e48e298e4d551c872c5b8e2f05ff13aacf3ad35f221717c8395ad108",
+  "source_reference": "V22",
+  "original_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-3fbcc094-7587-4883-99c3-cfdff144e1e1.png",
+  "file": "art/concepts/faces/images/f78-v04.png",
+  "sha256": "1dfb0a32f67778df728de106723149ee9724fe66d7646558bd0da9df47bdf4e7",
+  "dimensions": [
+    1312,
+    1199
+  ],
+  "mode": "RGB",
+  "pixel_changes": "none",
+  "parent_visual_review": "pending",
+  "review_status": "pending"
+}
