@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dias Irae — Character motion lab</title>
   <link rel="stylesheet" href="viewer.css?v=2">
-  <script type="module" src="viewer.mjs?v=8"></script>
+  <script type="module" src="viewer.mjs?v=9"></script>
 </head>
 <body>
 <main>
@@ -19,7 +19,7 @@
   <section class="lab" aria-label="Character playground" hidden>
     <div class="stage-panel">
       <canvas id="stage" width="900" height="560" tabindex="0" aria-label="Character playground. WASD or arrow keys move; Space strikes."></canvas>
-      <p class="help">WASD or arrows to move · Space to strike</p>
+      <p id="stage-help" class="help">WASD or arrows to move · Space to strike</p>
       <p id="readout" aria-live="off"></p>
     </div>
     <aside class="controls">

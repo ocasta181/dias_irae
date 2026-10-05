@@ -24,6 +24,8 @@ Each generation receives the intact v02 identity, the actual skeleton guide, S13
 - [x] Compute shortened, exaggerated neutral and 24 walk controls.
 - [x] Generate and inspect intact exaggerated v02 identity.
 - [ ] Draw and measure the whole-body walk pilot.
+- [x] Draw two chronological twelve-pose whole-body source sheets and pack them deterministically for inspection. Proportions are retained; pose placement and planted-paw motion need revision.
+- [x] Make the intact wolf study the motion lab's default wolf. Offer only the available E heading and idle/walk states; never substitute a missing state with another drawing.
 - [ ] Verify real exported pilot in the local motion lab.
 - [ ] Pass motion and visual checks before expanding to eight directions and other states.
 - [ ] User reviews the identity and pilot; no final asset approval is inferred.

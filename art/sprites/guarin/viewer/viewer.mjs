@@ -29,7 +29,7 @@ let position = [450, 420];
 let extent;
 let scheduled = [];
 let scenarioTime = 0;
-const characters = { guarin: { root: "../", size: 160 }, wolf: { root: "../../wolf/", size: 96 } };
+const characters = { guarin: { root: "../", size: 160 }, wolf: { root: "../../wolf/whole-body/", size: 96 } };
 let characterId = "guarin";
 let loadVersion = 0;
 let loading = false;
@@ -42,9 +42,9 @@ function supports(action) {
 function actorSequences() {
   const result = { ...sequences };
   const facings = Object.keys(atlas.directions);
-  result.directions = { label: `Walk in all ${facings.length} directions`, steps: [...facings.map((direction, index) => ({ at: index * 1000, action: "walk", direction })), { at: facings.length * 1000, action: "idle" }] };
-  result.strike = { ...sequences.strike, label: `Walk → ${atlas.clips.cut.label.toLowerCase()} → walk`, steps: sequences.strike.steps.map(step => step.direction ? { ...step, direction: atlas.directions.E ? "E" : "SE" } : step) };
-  if (characterId === "wolf") result.tour = { label: "Wolf state tour", steps: [{ at: 200, action: "walk" }, { at: 1200, action: "cut" }, { at: 2300, action: "idle" }, { at: 3000, action: "hurt" }, { at: 4100, action: "death" }] };
+  result.directions = { label: facings.length === 1 ? `Walk → stand (${facings[0]})` : `Walk in all ${facings.length} directions`, steps: [...facings.map((direction, index) => ({ at: index * 1000, action: "walk", direction })), { at: facings.length * 1000, action: "idle" }] };
+  if (atlas.clips.cut) result.strike = { ...sequences.strike, label: `Walk → ${atlas.clips.cut.label.toLowerCase()} → walk`, steps: sequences.strike.steps.map(step => step.direction ? { ...step, direction: atlas.directions.E ? "E" : facings[0] } : step) };
+  if (characterId === "wolf") result.tour = { label: "Wolf state tour", steps: [{ at: 200, action: "walk" }, { at: 1200, action: "cut" }, { at: 2300, action: "idle" }, { at: 3000, action: "hurt" }, { at: 4100, action: "death" }].filter(step => supports(step.action)) };
   return Object.fromEntries(Object.entries(result).filter(([, sequence]) => sequence.steps.every(step => supports(step.action))));
 }
 
@@ -55,6 +55,7 @@ function applyCharacter(id, nextAtlas, loadedImages) {
   for (const [path, image] of loadedImages) images.set(path, image);
   keys.clear(); scheduled = []; scenarioTime = 0; logs.length = 0;
   player = createPlayer(); playing = true; lastTime = undefined; lastClip = undefined; stripKey = undefined;
+  player.direction = atlas.directions.SE ? "SE" : Object.keys(atlas.directions)[0];
   position = [450, stage.height * .75];
   const frames = Object.values(atlas.directions).flatMap(page => page.frames);
   extent = {
@@ -68,7 +69,8 @@ function applyCharacter(id, nextAtlas, loadedImages) {
   element("play").textContent = "Pause";
   element("basis").textContent = `${atlas.selection.gameplay_id} / ${atlas.selection.source_character} · ${atlas.sourceFrames} source frames · ${Object.keys(atlas.directions).length} directions · ${Object.keys(atlas.clips).length} clips`;
   element("load-status").textContent = atlas.reviewStatus;
-  element("shortcuts").textContent = `${supports("guard") ? "Hold G to guard; P starts/stops prayer; " : ""}H hurts; K defeats; R resets. Inputs keep their normal keyboard behavior.`;
+  element("stage-help").textContent = `${Object.keys(atlas.directions).length === 1 ? "D or Right arrow to walk; other headings pending" : "WASD or arrows to move"}${supports("cut") ? " · Space to strike" : " · Attack pending"}`;
+  element("shortcuts").textContent = `${supports("guard") ? "Hold G to guard; P starts/stops prayer; " : ""}${supports("hurt") ? "H hurts; " : ""}${supports("death") ? "K defeats; " : ""}R resets. Inputs keep their normal keyboard behavior.`;
   for (const [name, file] of [["review", "manifest.md"], ["assessment", "assessment.md"], ["metadata", "atlas.json"]]) element(`sprite-${name}`).href = characters[id].root + file;
   element("references").replaceChildren();
   for (const reference of atlas.references) {
@@ -88,7 +90,7 @@ async function loadCharacter(id) {
     const response = await fetch(`${characters[id].root}atlas.json`, { cache: "no-store" });
     if (!response.ok) throw new Error(`Sheet data unavailable (${response.status})`);
     const nextAtlas = await response.json();
-    if (!nextAtlas.directions.SE || !nextAtlas.clips.idle) throw new Error("Required starting direction or idle clip is missing.");
+    if (!Object.keys(nextAtlas.directions).length || !nextAtlas.clips.idle) throw new Error("Required starting direction or idle clip is missing.");
     const sourcePaths = new Set(Object.values(nextAtlas.directions).flatMap(page => page.frames.map(frame => frame.image)));
     const loadedImages = new Map();
     for (const path of sourcePaths) await new Promise((resolve, reject) => {
@@ -135,7 +137,7 @@ function act(action, fromSequence = false) {
   if (!fromSequence) cancelSequence();
   const before = player.clip;
   player = request(player, action);
-  if (action === "reset") position = [450, stage.height * .75];
+  if (action === "reset") { position = [450, stage.height * .75]; player.direction = atlas.directions.SE ? "SE" : Object.keys(atlas.directions)[0]; }
   playing = true;
   element("play").textContent = "Pause";
   updateClipControls();
@@ -274,9 +276,11 @@ function movement() {
   const y = Number(keys.has("ArrowDown") || keys.has("s")) - Number(keys.has("ArrowUp") || keys.has("w"));
   if (x || y) {
     const direction = [["NW", "N", "NE"], ["W", "S", "E"], ["SW", "S", "SE"]][y + 1][x + 1];
-    if (atlas.directions[direction]) player = face(player, direction);
+    if (!atlas.directions[direction] || !supports("walk")) { player = request(player, "idle"); updateClipControls(); return [0, 0]; }
+    player = face(player, direction);
     player = request(player, "walk");
   } else player = request(player, "idle");
+  updateClipControls();
   return [x, y];
 }
 
@@ -352,7 +356,7 @@ function populateActorControls() {
   }
   for (const button of document.querySelectorAll("[data-action]")) {
     button.hidden = !supports(button.dataset.action);
-    if (button.dataset.action === "cut") button.textContent = atlas.clips.cut.label;
+    if (button.dataset.action === "cut" && atlas.clips.cut) button.textContent = atlas.clips.cut.label;
   }
   for (const [id, sequence] of Object.entries(actorSequences())) {
     const button = document.createElement("button");

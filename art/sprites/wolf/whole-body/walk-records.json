@@ -1,0 +1,64 @@
+[
+  {
+    "source": "walk-e-01-12-v01.png",
+    "tool": "image_gen",
+    "model": "undisclosed",
+    "original_path": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-0d1e6995-dbe0-4523-a518-fe3aeb222289.png",
+    "prompt": "walk-e-01-12-v01-prompt.txt",
+    "sha256": "ce9739b5df14a2ca198256ebd8b78db01be9e04c9157428c80eaf83a723a1225",
+    "status": "whole-body experiment; motion and registration require revision",
+    "references": [
+      {
+        "role": "exact intact identity",
+        "path": "art/sprites/wolf/whole-body/base-wolf-v02.png",
+        "sha256": "ee925ea9d1d9946cdaea3cf8a1538950748d305e079c96c7a76f837ff551c3b0"
+      },
+      {
+        "role": "skeletal motion control",
+        "path": "art/sprites/wolf/whole-body/guides/e-walk-01-12-v02.png",
+        "sha256": "d57db9bdcaf1be175397fce93bd7c2135c408347962c0d32e53fa9445ac04e75"
+      },
+      {
+        "role": "proportions and drawing medium",
+        "path": "art/concepts/images/s13-guarin-isometric-v02.png",
+        "sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c"
+      },
+      {
+        "role": "palette",
+        "path": "art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+        "sha256": "191af0e5abbd484ec225633f530e6ed6dd9ebf01c5367910c09a353c4ca465d9"
+      }
+    ]
+  },
+  {
+    "source": "walk-e-13-24-v01.png",
+    "tool": "image_gen",
+    "model": "undisclosed",
+    "original_path": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-ac205215-7b6b-4436-a855-6567fcdcd013.png",
+    "prompt": "walk-e-13-24-v01-prompt.txt",
+    "sha256": "47551f383a2c8191da15c49d6d0bce20b2f99dd5dadda429cfbf9c5a6b092fbf",
+    "status": "whole-body experiment; motion and registration require revision",
+    "references": [
+      {
+        "role": "exact intact identity",
+        "path": "art/sprites/wolf/whole-body/base-wolf-v02.png",
+        "sha256": "ee925ea9d1d9946cdaea3cf8a1538950748d305e079c96c7a76f837ff551c3b0"
+      },
+      {
+        "role": "skeletal motion control",
+        "path": "art/sprites/wolf/whole-body/guides/e-walk-13-24-v02.png",
+        "sha256": "90c7c0e605c18a62292a0e3ca2895ece42adb0933e1ff1426e93f47c39ff93a3"
+      },
+      {
+        "role": "proportions and drawing medium",
+        "path": "art/concepts/images/s13-guarin-isometric-v02.png",
+        "sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c"
+      },
+      {
+        "role": "palette",
+        "path": "art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+        "sha256": "191af0e5abbd484ec225633f530e6ed6dd9ebf01c5367910c09a353c4ca465d9"
+      }
+    ]
+  }
+]

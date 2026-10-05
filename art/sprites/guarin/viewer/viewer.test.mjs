@@ -6,14 +6,16 @@ import * as animation from "./animation.mjs";
 
 const atlas = JSON.parse(readFileSync(new URL("../atlas.json", import.meta.url)));
 const wolf = JSON.parse(readFileSync(new URL("../../wolf/atlas.json", import.meta.url)));
+const wholeWolf = JSON.parse(readFileSync(new URL("../../wolf/whole-body/atlas.json", import.meta.url)));
 const source = readFileSync(new URL("viewer.mjs", import.meta.url), "utf8").replace(/^import .*\n/, "").replace(/^start\(\)\.catch.*$/m, "");
 
 function playground(startup = false) {
   const nodes = [];
   const context = new Proxy({}, { get: () => () => {} });
   function node() {
-    const value = { dataset: {}, listeners: {}, value: "", width: 900, height: 560, textContent: "", checked: false };
-    Object.assign(value, { addEventListener: (type, handler) => { value.listeners[type] = handler; }, setAttribute() {}, append() {}, replaceChildren() {}, getContext: () => context, getBoundingClientRect: () => ({ width: 900, height: 560 }) });
+    const value = { dataset: {}, listeners: {}, children: [], value: "", width: 900, height: 560, textContent: "", checked: false };
+    function remove(child) { nodes.splice(nodes.indexOf(child), 1); child.children.forEach(remove); }
+    Object.assign(value, { addEventListener: (type, handler) => { value.listeners[type] = handler; }, setAttribute() {}, append(...children) { value.children.push(...children); }, replaceChildren() { value.children.forEach(remove); value.children = []; }, getContext: () => context, getBoundingClientRect: () => ({ width: 900, height: 560 }) });
     nodes.push(value);
     return value;
   }
@@ -40,7 +42,7 @@ function playground(startup = false) {
     inspect: clip => { get("clip").value = clip; get("clip").listeners.change(); },
     tune: (speed, fps) => { get("speed").value = speed; get("fps").value = fps; get("fps").listeners.change(); },
     blur: () => window.listeners.blur(),
-    select: id => vm.runInContext(`applyCharacter("${id}", ${id === "wolf" ? "inputWolf" : "inputAtlas"}, new Map())`, scope),
+    select: (id, data) => { scope.inputSelected = data ?? (id === "wolf" ? wolf : atlas); return vm.runInContext(`applyCharacter("${id}", inputSelected, new Map())`, scope); },
     size: value => { get("size").value = value; },
     value: id => get(id).value,
     begin: () => vm.runInContext("start()", scope),
@@ -94,10 +96,40 @@ test("wolf uses bite for space and ignores unsupported human actions", () => {
   lab.step(0); lab.step(900); assert.equal(lab.state().player.clip, "idle");
 });
 
+test("whole-body pilot starts and resets in its actual available heading", () => {
+  const lab = playground(); lab.select("wolf", wholeWolf); lab.step(0);
+  assert.equal(lab.state().player.direction, "E");
+  lab.key("keydown", "r"); lab.step(50);
+  assert.equal(lab.state().player.direction, "E");
+  assert.equal(lab.key("keydown", " "), false);
+  assert.equal(lab.state().player.clip, "idle");
+});
+
+test("missing pilot headings cannot move a right-facing wolf sideways", () => {
+  const lab = playground(); lab.select("wolf", wholeWolf); lab.step(0);
+  lab.key("keydown", "a"); lab.step(100);
+  assert.equal(lab.state().position[0], 450);
+  assert.equal(lab.state().player.clip, "idle");
+  lab.key("keyup", "a"); lab.key("keydown", "d"); lab.step(1000);
+  assert.ok(Math.abs(lab.state().position[0] - 486) < 1e-8);
+  lab.key("keydown", "w"); lab.step(1100);
+  assert.ok(Math.abs(lab.state().position[0] - 486) < 1e-8);
+  assert.equal(lab.state().player.clip, "idle");
+});
+
+test("pilot presets offer only drawings that exist", () => {
+  const lab = playground(); lab.select("wolf", wholeWolf); lab.step(0);
+  lab.preset("directions"); lab.step(1100);
+  assert.equal(lab.state().player.clip, "idle");
+  assert.equal(lab.state().player.direction, "E");
+  lab.preset("tour"); lab.step(4000);
+  assert.equal(lab.state().player.clip, "idle");
+});
+
 test("wolf travel follows stride when size and playback rate change", () => {
   function travel(size, speed, fps) {
-    const lab = playground(); lab.select("wolf"); lab.size(size); lab.tune(speed, fps); lab.step(0);
-    lab.key("keydown", "d"); lab.key("keydown", "s"); lab.step(900);
+    const lab = playground(); lab.select("wolf"); lab.size(size); lab.step(0);
+    lab.key("keydown", "d"); lab.key("keydown", "s"); lab.tune(speed, fps); lab.step(900);
     return lab.state().position[0] - 450;
   }
   const fps = wolf.clips.walk.fps;
