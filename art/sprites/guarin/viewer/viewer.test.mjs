@@ -118,3 +118,13 @@ test("a preset's final stop retains travel before that stop", () => {
   assert.ok(Math.abs(lab.state().position[0] - 716) < 1e-8);
   assert.equal(lab.state().player.clip, "idle");
 });
+
+test("ground-plane movement matches the intended 45-degree elevated view", () => {
+  function travel(key) {
+    const lab = playground(); lab.step(0); lab.key("keydown", key); lab.step(200);
+    return lab.state().position;
+  }
+  const horizontal = travel("ArrowRight")[0] - 450;
+  const vertical = 420 - travel("ArrowUp")[1];
+  assert.ok(Math.abs(vertical / horizontal - Math.sin(Math.PI / 4)) < 1e-8);
+});

@@ -9,6 +9,7 @@ const logs = [];
 const keys = new Set();
 const movementKeys = new Set(["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "w", "a", "s", "d"]);
 const directionVectors = { N: [0, -1], NE: [1, -1], E: [1, 0], SE: [1, 1], S: [0, 1], SW: [-1, 1], W: [-1, 0], NW: [-1, -1] };
+const groundProjection = Math.sin(Math.PI / 4);
 const sequences = {
   strike: { label: "Walk → strike → walk", steps: [{ at: 0, action: "walk", direction: "E" }, { at: 900, action: "cut" }, { at: 2400, action: "idle" }] },
   directions: { label: "Walk in all 8 directions", steps: [...Object.keys(directionVectors).map((direction, index) => ({ at: index * 1000, action: "walk", direction })), { at: 8000, action: "idle" }] },
@@ -94,9 +95,10 @@ function background() {
   } else {
     context.strokeStyle = mode === "light" ? "#999281" : "#30372a";
     context.lineWidth = 1;
-    for (let x = -stage.height * 2; x < stage.width + stage.height * 2; x += 100) {
-      context.beginPath(); context.moveTo(x, 0); context.lineTo(x + stage.height * 2, stage.height); context.stroke();
-      context.beginPath(); context.moveTo(x, 0); context.lineTo(x - stage.height * 2, stage.height); context.stroke();
+    const run = stage.height / groundProjection;
+    for (let x = -run; x < stage.width + run; x += 100) {
+      context.beginPath(); context.moveTo(x, 0); context.lineTo(x + run, stage.height); context.stroke();
+      context.beginPath(); context.moveTo(x, 0); context.lineTo(x - run, stage.height); context.stroke();
     }
   }
 }
@@ -214,7 +216,7 @@ function advancePreview(delta) {
       const length = Math.hypot(x, y) || 1;
       const pixels = stage.width / stage.getBoundingClientRect().width;
       position[0] += x / length * step * .14 * pixels;
-      position[1] += y / length * step * .07 * pixels;
+      position[1] += y / length * step * .14 * groundProjection * pixels;
     }
     remaining -= step;
     updateClipControls();
