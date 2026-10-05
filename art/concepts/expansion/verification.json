@@ -20,5 +20,13 @@
     "Armor": 5,
     "Cloaks and tunics": 5,
     "Story cast": 10
+  },
+  "review_server_tests_passed": 16,
+  "browser_verified": {
+    "gallery_cards": 90,
+    "default_minimized_cards": 90,
+    "repair_links_match_current_images": true,
+    "decisions_and_commentary_visible_on_expand": true,
+    "screenshot": "art/concepts/expansion/review-gallery.png"
   }
 }

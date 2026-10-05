@@ -2,7 +2,7 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
-Last updated: 2026-10-05. Current stage: **the 24-screen gameplay exploration is under user review. The user has now authorized a researched campaign asset inventory, a complete Guarin animation pilot in the style of the #1 gameplay preference captured after the inventory check, and an animation-debugging app. This specific authorization releases the pilot from the older concept-approval gate. Other sprite categories and first-level implementation retain their review gates.**
+Last updated: 2026-10-05. Current stage: **45 exact-S13 equipment and cast candidates are ready for user review. The researched campaign inventory, first Guarin sprite study and keyboard motion lab are available. The 24-screen gameplay exploration remains under review. Further sprite categories and first-level implementation retain their review gates.**
 
 ## Story and visual constraints
 
@@ -11,6 +11,7 @@ Last updated: 2026-10-05. Current stage: **the 24-screen gameplay exploration is
 - [x] Define seven groups of five equipment/face choices and ten dossier-based cast subjects.
 - [x] Generate and inspect all 45 independent S13-referenced illustrations; record exact inputs and visual limits. Six further calls repair five subjects, giving 51 preserved outputs and 45 current candidates. No previous output is a generation input.
 - [x] Add the new drawings to the existing concept review gallery with decisions, commentary, ranking and direct saving. Preserve all earlier review rows and the saved ordering; new unranked cards begin at the top.
+- [x] Verify 51 distinct decoded source outputs, unchanged generator bytes and sole S13 input for all calls; preserve 63 earlier review rows and all 45 earlier saved positions. Confirm 90 minimized gallery cards, latest repair links, visible decision/comment controls and sixteen passing local review-server tests. Save [the gallery preview](../art/concepts/expansion/review-gallery.png) and [verification record](../art/concepts/expansion/verification.json).
 - [ ] User reviews the equipment and cast exploration before new sprite production.
 
 2026-10-05 decision at commit `ce606ee`: keep the existing sprite sources and animation state logic; make the tester a keyboard-controlled stage with side buttons for named sequences, and collapse detailed inspection tools by default. Confidence: 98%, based on the user's explicit control and layout request. This changes the static app only; no endpoint or persistence schema change is needed.
