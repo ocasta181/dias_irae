@@ -11,7 +11,6 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parent
 PROJECT = ROOT.parents[2]
-BASE = ROOT.parent / "images/s13-guarin-isometric-v02.png"
 GROK = "/Users/ocasta/.grok/bin/grok"
 PLAN = {item["id"]: item for item in json.loads((ROOT / "plan.json").read_text())}
 
@@ -37,13 +36,15 @@ def import_image(identifier, source, evidence=None, version="v01"):
     if destination.exists():
         raise ValueError(f"Refusing to replace {destination}")
     shutil.copyfile(source, destination)
+    raw_request = request(identifier, version)
     record = {
         "id": identifier,
         "title": PLAN[identifier]["title"],
         "provider": PLAN[identifier]["provider"],
         "model": "not exposed by tool",
-        "request": request(identifier, version),
-        "source_sha256": digest(BASE),
+        "request": raw_request,
+        "source_sha256": digest(Path(raw_request["referenced_image_paths"][0])),
+        "source_reference": PLAN[identifier].get("source_id", "S13"),
         "original_output": str(source),
         "file": str(destination.relative_to(PROJECT)),
         "sha256": digest(destination),
@@ -74,7 +75,11 @@ def generate_grok(identifier, version="v01"):
     cwd = Path("/private/tmp") / f"dias-face-{identifier.lower()}-{session}"
     cwd.mkdir()
     raw = request(identifier, version)
-    tool_input = {"prompt": raw["prompt"], "image": [str(BASE)], "aspect_ratio": "1:1"}
+    tool_input = {
+        "prompt": raw["prompt"],
+        "image": raw["referenced_image_paths"],
+        "aspect_ratio": "1:1",
+    }
     prompt_path = cwd / "request.txt"
     prompt_path.write_text(
         "Call native image_edit exactly once with the following literal JSON arguments. Do not rewrite or abbreviate the prompt, do not use image_gen, and do not call any other tool. After completion report the returned image path only.\n"

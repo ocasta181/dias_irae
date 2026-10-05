@@ -178,5 +178,245 @@
     "title": "Low contrast ghost marks",
     "provider": "built-in imagegen",
     "change": "Rounded rectangular huge head whose tiny eyes, blunt bent nose and small compressed mouth are drawn with faded brown broken marks only slightly darker than skin. Short heavy brows remain the darkest element. Broad stained pigment patches and dispersed dark stubble make a subdued exhausted face, readable without sharp black socket masses."
+  },
+  {
+    "id": "F31",
+    "title": "F25 · Nose: small round tip",
+    "provider": "grok",
+    "source_id": "F25",
+    "round": 2,
+    "change": "Replace the long squared nose with a short narrow bridge ending in a tiny irregular rounded tip, one dark nostril nick. Keep F25's little square eye marks, flat low brows and small mouth unchanged."
+  },
+  {
+    "id": "F32",
+    "title": "F25 · Nose: lean downward hook",
+    "provider": "grok",
+    "source_id": "F25",
+    "round": 2,
+    "change": "A thin gently bent bridge ends in a very small downward hook, drawn as two broken earthy strokes and a shallow dark underside. No bulb or rectangular tip. Keep F25's eyes, eyebrows and mouth."
+  },
+  {
+    "id": "F33",
+    "title": "F25 · Nose: blunt broken asymmetry",
+    "provider": "grok",
+    "source_id": "F25",
+    "round": 2,
+    "change": "A short broad flattened nose with uneven rounded lobes and a slightly crooked bridge, represented by a rough skin patch and two tiny detached nostril marks. Subtle old break, no wounds. Keep F25's other features."
+  },
+  {
+    "id": "F34",
+    "title": "F25 · Nose: soft low bulb",
+    "provider": "grok",
+    "source_id": "F25",
+    "round": 2,
+    "change": "An understated low round bulb nose with almost no visible bridge, a dull ochre oval patch and incomplete dark curved underside. Keep F25's tiny eyes, low brows and tucked closed mouth."
+  },
+  {
+    "id": "F35",
+    "title": "F25 · Nose: tapered teardrop",
+    "provider": "grok",
+    "source_id": "F25",
+    "round": 2,
+    "change": "A narrow tapering teardrop of dirty skin pigment and one interrupted curved side stroke; the point turns softly downward. Eyes, eyebrows, mouth and face outline remain F25."
+  },
+  {
+    "id": "F36",
+    "title": "F25 · Eyes: tiny round heavy dots",
+    "provider": "grok",
+    "source_id": "F25",
+    "round": 2,
+    "change": "Change only F25's square eye pixels into very small uneven round dark dots tucked beneath the same low brows; no whites. Use an understated short curved nose instead of the square nose. Keep the source mouth and face outline."
+  },
+  {
+    "id": "F37",
+    "title": "F25 · Eyes: tired tapered slits",
+    "provider": "grok",
+    "source_id": "F25",
+    "round": 2,
+    "change": "Replace square eyes with extremely short tapering horizontal eyelid cuts, almost closed, with one tiny under-eye tick. Original low eyebrows and mouth stay. Nose becomes a very small bent hook, not a block."
+  },
+  {
+    "id": "F38",
+    "title": "F25 · Mouth: crooked dry seam",
+    "provider": "grok",
+    "source_id": "F25",
+    "round": 2,
+    "change": "Keep F25's eyes and brows. Draw the small closed mouth as a thin interrupted crooked seam, one corner slightly lower, lower lip a detached two-pixel earthy nick. A tiny rounded bent nose replaces the squared nose."
+  },
+  {
+    "id": "F39",
+    "title": "F25 · Brows: two offset brush chunks",
+    "provider": "grok",
+    "source_id": "F25",
+    "round": 2,
+    "change": "Break each horizontal brow into two short rough offset chunks, maintaining the tired low placement and tiny original eyes. Keep original mouth. Nose is a short curved dry-pigment hook with a blunt rounded end."
+  },
+  {
+    "id": "F40",
+    "title": "V25 · Granular: low hook and lid nicks",
+    "provider": "grok",
+    "source_id": "V25",
+    "round": 2,
+    "change": "Stay very near V25's rough clustered skin. Make eyes tiny closed lid nicks under shallow ragged brows; nose a short broad rounded hook; mouth one shallow torn dark seam. Avoid anatomical gradients or square nose."
+  },
+  {
+    "id": "F41",
+    "title": "V22 · Dry pigment: narrow curved bridge",
+    "provider": "grok",
+    "source_id": "V22",
+    "round": 2,
+    "change": "Keep V22's dry mottled grain, eye placement and jaw. Nose becomes a narrow lightly arched bridge ending in a small rounded underside notch. Thin slack mouth line has one broken central gap. No clean portrait modeling."
+  },
+  {
+    "id": "F42",
+    "title": "F18 · Angular: oblique cuts and soft tip",
+    "provider": "grok",
+    "source_id": "F18",
+    "round": 2,
+    "change": "Retain F18's compact angular face and oblique closed eyes, shorten the brow marks to uneven separate wedges. Replace its rectangular nose with a slender bent taper ending in a small rounded nick; original tiny mouth stays."
+  },
+  {
+    "id": "F43",
+    "title": "F20 · Stalk: slight arch and droplet tip",
+    "provider": "grok",
+    "source_id": "F20",
+    "round": 2,
+    "change": "Stay close to F20's broad face and small close-set tired eyes. Nose is still long and thin but curves gently, ending in a little droplet-shaped tip instead of a flat square end. Shorter mouth seam, same tired mood."
+  },
+  {
+    "id": "F44",
+    "title": "V21 · Ink shorthand: interrupted curve",
+    "provider": "grok",
+    "source_id": "V21",
+    "round": 2,
+    "change": "Preserve V21's economical face marks and granular medium. Nose is one short interrupted curved ink stroke with a small separate nostril dot. Eyes become slightly narrower tiny dark lid marks; mouth remains closed and understated."
+  },
+  {
+    "id": "F45",
+    "title": "V23 · Carved: rounded elbow nose",
+    "provider": "grok",
+    "source_id": "V23",
+    "round": 2,
+    "change": "Keep V23's broad angular cheek grammar but replace the block nose with an irregular elbow-shaped hooked mark with a tapered rounded tip. Use two separated coarse brow wedges, small weary slits, very short flat mouth."
+  },
+  {
+    "id": "F46",
+    "title": "F25 · Nose: squat uneven button",
+    "provider": "built-in imagegen",
+    "source_id": "F25",
+    "round": 2,
+    "change": "Keep F25's original eyes, brows, mouth and huge-head silhouette. Nose becomes a very small squat uneven button, one dim rounded skin dab and a broken horseshoe underside, without a long bridge."
+  },
+  {
+    "id": "F47",
+    "title": "F25 · Nose: narrow humped profile",
+    "provider": "built-in imagegen",
+    "source_id": "F25",
+    "round": 2,
+    "change": "Replace the square nose with a long slender nose, a mild curved hump and small rounded downward tip. Use a few jagged pigment patches and one interrupted contour, no three-dimensional smooth shading. All other F25 features stay."
+  },
+  {
+    "id": "F48",
+    "title": "F25 · Nose: almost absent curved notch",
+    "provider": "built-in imagegen",
+    "source_id": "F25",
+    "round": 2,
+    "change": "Reduce the nose to a very small broken curved side mark and one shallow underside notch; broad unmarked worn skin occupies its former bridge. Keep F25's exact eye and brow grammar and original mouth."
+  },
+  {
+    "id": "F49",
+    "title": "F25 · Nose: off-center rough comma",
+    "provider": "built-in imagegen",
+    "source_id": "F25",
+    "round": 2,
+    "change": "A short slightly off-center narrow bridge merges into a coarse comma-shaped rounded tip; one separate tiny nostril. Keep the same face identity, small square eyes, heavy brows and original mouth."
+  },
+  {
+    "id": "F50",
+    "title": "F25 · Eyes: dim almond fragments",
+    "provider": "built-in imagegen",
+    "source_id": "F25",
+    "round": 2,
+    "change": "Change square eye marks into extremely small incomplete narrow almond fragments with dark centers and no bright whites; heavy lids dominate. Keep original brows and mouth. A little low rounded nose arch replaces the squared nose."
+  },
+  {
+    "id": "F51",
+    "title": "F25 · Mouth: shallow weighted curve",
+    "provider": "built-in imagegen",
+    "source_id": "F25",
+    "round": 2,
+    "change": "Draw a tiny closed shallow downturned mouth curve with a slightly heavier center and two dim detached lower-lip ticks. Not a big frown. Preserve F25's eye and eyebrow design; nose short, tapered and rounded."
+  },
+  {
+    "id": "F52",
+    "title": "F25 · Mouth: compressed offset lip",
+    "provider": "built-in imagegen",
+    "source_id": "F25",
+    "round": 2,
+    "change": "A short compressed closed lip seam, slightly offset, drawn as two unequal coarse horizontal pigment nicks rather than one smooth line. Preserve F25's eyes and brow; nose a small soft bent wedge without square tip."
+  },
+  {
+    "id": "F53",
+    "title": "F25 · Brows: depressed broken arches",
+    "provider": "built-in imagegen",
+    "source_id": "F25",
+    "round": 2,
+    "change": "Each low eyebrow becomes a shallow depressed arch of three coarse separated pigment dabs. Keep tiny F25 eye marks and mouth. Nose narrow, gently bent and rounded, not a column. Exhaustion without anger."
+  },
+  {
+    "id": "F54",
+    "title": "F25 · Brows: uneven tired shorthand",
+    "provider": "built-in imagegen",
+    "source_id": "F25",
+    "round": 2,
+    "change": "One eyebrow stays almost straight but ragged, the other is a short shallow bowed mark slightly lower. Keep F25's small eyes, jaw and mouth; add a tiny rounded hooked nose replacing the block. Very subtle asymmetry, no dramatic expression."
+  },
+  {
+    "id": "F55",
+    "title": "F19 · Double brow: dot eyes and round nub",
+    "provider": "built-in imagegen",
+    "source_id": "F19",
+    "round": 2,
+    "change": "Preserve F19's separated chunky eyebrow marks and worn face. Eyes become tiny low dark dot-and-lid pairs. Nose a short rounded nub with one tiny side tick. Mouth a very small irregular closed dash, not a grin."
+  },
+  {
+    "id": "F56",
+    "title": "F26 · Frayed brush: soft two-stroke nose",
+    "provider": "built-in imagegen",
+    "source_id": "F26",
+    "round": 2,
+    "change": "Preserve F26's loose granular facial marks. Nose is two short frayed curved strokes with a soft rounded end. Eyes remain little half-shut brush nicks with detached dull under-eye flecks; mouth a worn short horizontal dry-brush seam."
+  },
+  {
+    "id": "F57",
+    "title": "V24 · Soft face: smaller eyes and hooked dab",
+    "provider": "built-in imagegen",
+    "source_id": "V24",
+    "round": 2,
+    "change": "Retain V24's soft broad face but reduce its eyes to tiny dark oblong dots under uneven drooping lids, no bright whites. Nose is a short curved earthy dab ending in a rounded tip. Mouth one narrow softly downturned seam."
+  },
+  {
+    "id": "F58",
+    "title": "F23 · Stepped marks: tapered crooked nose",
+    "provider": "built-in imagegen",
+    "source_id": "F23",
+    "round": 2,
+    "change": "Keep F23's stepped irregular pigment clusters without pixelating the body. Replace its block nose with a tapering crooked curved contour built from coarse uneven steps and a rounded nub. Eyes tiny slanted clusters, brows two ragged low bars, mouth short offset nick."
+  },
+  {
+    "id": "F59",
+    "title": "F16 · Socket cuts: curved nose and lip gap",
+    "provider": "built-in imagegen",
+    "source_id": "F16",
+    "round": 2,
+    "change": "Stay near F16's charcoal eye sockets with very small dim skin-colored cuts for the eyes, not glowing whites. Nose defined by two small interrupted curved ticks and a round blunt tip. Mouth a tiny worn negative-space seam, same grain and huge head."
+  },
+  {
+    "id": "F60",
+    "title": "V25 · Granular: pin eyes and broken lips",
+    "provider": "built-in imagegen",
+    "source_id": "V25",
+    "round": 2,
+    "change": "Keep V25's mottled coarse pigment and huge head. Tiny dark pin eyes under short rough flat brows; nose small softly crooked tapered hook with a rounded end; mouth two tiny separated horizontal lip fragments. More economical feature grammar, same tired adult identity."
   }
 ]

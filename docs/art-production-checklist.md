@@ -21,6 +21,12 @@ Last updated: 2026-10-05. Current stage: **30 additional exact-S13 face studies 
 - [ ] User selects a face direction; resolve chosen candidate's eye, texture and anatomical scar-placement limits before sprite production.
 - [x] Make rank moves explicitly insert a card while preserving all other relative positions. Block number-field callbacks during card movement and update the shared script version on every board. Browser checks cover Enter, blur, downward movement, repeated first-place insertion and reload; four draft-preservation tests pass. The reported literal swap was not reproduced before the change; these checks establish the updated insertion behavior without altering the user's live rankings.
 
+2026-10-05 second face round, decision at commit `d33dc2e`, confidence 97%: the saved top twelve are V25, V22, F18, F20, F25, V21, V23, F19, F26, V24, F23 and F16. **F25 is the requested #5**. Preserve the [captured images and hashes](../art/concepts/faces/round-2-selection.json); an older in-app tab order is not the source.
+
+- [x] Define [30 distinct close variations](../art/concepts/faces/prepare_round2.py), F31–F60: 15 Grok and 15 built-in. Eighteen use F25 directly: nine noses, three eye treatments, three mouth treatments and three eyebrow treatments. Twelve cover the other preferred faces. Every request contains its exact selected source and excludes squared block noses.
+- [ ] Generate all 30 independently; no new output becomes an input. Inspect their facial changes, source costume, flat grain, palette, giant head, tiny body and camera. Repair only from the selected original reference if required.
+- [ ] Publish inspected studies in the existing single face gallery, preserving all current comments, decisions and saved relative order; new unranked studies begin at the top. Verify automatic saving and update the checklist.
+
 ## Story and visual constraints
 
 2026-10-05 next authorized exploration: use exact S13 for [35 equipment/face versions and ten story characters](../art/concepts/expansion/README.md). The [defined list](../art/concepts/expansion/plan.json) fixes category counts, named cast, dates/origins and intentional exceptions before generation. These are concept illustrations, not a new animation batch or first-level implementation.

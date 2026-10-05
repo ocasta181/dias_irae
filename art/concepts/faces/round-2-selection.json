@@ -1,0 +1,93 @@
+{
+  "commit": "d33dc2e",
+  "confidence_percent": 97,
+  "decision": "Another round retains the prior 15 Grok / 15 built-in allocation. Use 18 F25-focused feature studies and 12 studies around the other saved top-twelve faces. Selected references are explicitly authorized by the new user request; do not chain any new output as a source.",
+  "captured_utc": "2026-10-05T11:57:42.625950+00:00",
+  "saved_manifest_sha256": "93557f97835a9a8e5edd28e05a36947015ce9b37baeed063083f17a00fabd696",
+  "selected": [
+    {
+      "rank": 1,
+      "id": "V25",
+      "title": "Granular clustered face",
+      "file": "/Users/ocasta/Code/Dias Irae/art/concepts/expansion/images/v25-v01.png",
+      "sha256": "847a24085a097e94aea9aff525015d22a1ce05fe115082a85a2686eb78cc4246"
+    },
+    {
+      "rank": 2,
+      "id": "V22",
+      "title": "Dry pigment face",
+      "file": "/Users/ocasta/Code/Dias Irae/art/concepts/expansion/images/v22-v01.png",
+      "sha256": "d5e349b3e48e298e4d551c872c5b8e2f05ff13aacf3ad35f221717c8395ad108"
+    },
+    {
+      "rank": 3,
+      "id": "F18",
+      "title": "Oblique sliver eyes",
+      "file": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f18-v01.png",
+      "sha256": "d84a37bb6f83f737ce0f8dda99ea488659f75591c5c13e7642827ed6a4d87540"
+    },
+    {
+      "rank": 4,
+      "id": "F20",
+      "title": "Thin stalk nose",
+      "file": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f20-v01.png",
+      "sha256": "8f399589a8d5463edf66f317c06eab4baee306689cdab1fcc29accaeab5bfc7c"
+    },
+    {
+      "rank": 5,
+      "id": "F25",
+      "title": "Narrow lower mask",
+      "file": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f25-v01.png",
+      "sha256": "8b39749eb1c67c3050fe7de0ca23809dd466f4f78ceb842287d014e6debde45e"
+    },
+    {
+      "rank": 6,
+      "id": "V21",
+      "title": "Minimal ink features",
+      "file": "/Users/ocasta/Code/Dias Irae/art/concepts/expansion/images/v21-v01.png",
+      "sha256": "fec85d5c677abf4457db7ef9f1f10c0d19200d57888420a483d1052845fc3ae3"
+    },
+    {
+      "rank": 7,
+      "id": "V23",
+      "title": "Angular carved face",
+      "file": "/Users/ocasta/Code/Dias Irae/art/concepts/expansion/images/v23-v01.png",
+      "sha256": "36946f3c4d2d1f3287373165beb7c3e3745db5ec17ac4218232fb44cac440c2c"
+    },
+    {
+      "rank": 8,
+      "id": "F19",
+      "title": "Double mark brow",
+      "file": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f19-v01.png",
+      "sha256": "f8a7d4e6d3b11d2e0a113fda64f1a925f8c4230b1eed643c60d7eeebcea6e134"
+    },
+    {
+      "rank": 9,
+      "id": "F26",
+      "title": "Frayed brush features",
+      "file": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f26-v01.png",
+      "sha256": "3dcf1d473c054d96251cc737354351751a0d3f53fad562ecf48da16a61529e41"
+    },
+    {
+      "rank": 10,
+      "id": "V24",
+      "title": "Soft flat face shapes",
+      "file": "/Users/ocasta/Code/Dias Irae/art/concepts/expansion/images/v24-v01.png",
+      "sha256": "f88079887faaa7b50564ba3698fc5482b7936ed36683cdf2d388b647b1e6e59b"
+    },
+    {
+      "rank": 11,
+      "id": "F23",
+      "title": "Sparse stepped marks",
+      "file": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f23-v01.png",
+      "sha256": "ec4382e649322dfd25ed653d44febb4cf4bcbc06592691cf19f040bdad34b42f"
+    },
+    {
+      "rank": 12,
+      "id": "F16",
+      "title": "Chalk cut sockets",
+      "file": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f16-v01.png",
+      "sha256": "8ed7c957c60a711b9512bc5a14261c680893ffe0bbd7a38241482c0f87fcbc4b"
+    }
+  ]
+}
