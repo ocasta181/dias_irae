@@ -143,8 +143,9 @@ def build_manifest() -> dict:
                 "sha256": repaired["sha256"],
                 "dimensions": repaired["dimensions"],
                 "transparent_pixel_fraction": repaired["transparent_pixel_fraction"],
-                "inspection": "Only the six improved cut poses are used; other regenerated families are excluded.",
+                "inspection": f"Only the six improved {family} poses are used; other regenerated families are excluded.",
             }
+        data["unique_cell_hashes"] = len({frame["sha256"] for frame in data["frames"]})
         pages[direction] = {"image": filename, **data}
     clips = {
         "idle": clip("Idle", 0, 6, 6, True),

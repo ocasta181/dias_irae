@@ -1,0 +1,31 @@
+{
+  "direction": "SW",
+  "version": "v03",
+  "provider": "Built-in image generation",
+  "model": "Not exposed by tool",
+  "original_generated_path": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-28e8b25c-8f65-40b6-9b90-9c0c222064fc.png",
+  "image": "/Users/ocasta/Code/Dias Irae/art/sprites/guarin/pages/guarin-sw-v03.png",
+  "request": {
+    "prompt": "MANDATORY ROW 5: The sword must remain visibly held throughout the six HURT/recoil drawings. A recoil is not disarm. Use low sword positions with the intact blade sticking out down-left, not bare-fist gestures. The right hand always grips the sword; the left forearm holds the shield. Body may flinch but camera/facing/gear do not change.\n\nORIENTATION OVERRIDES THE REFERENCE POSE. Draw the character facing LOWER-LEFT, southWEST, from ABOVE his FRONT-LEFT shoulder. The LEFT shield arm is nearest viewer, occupying screen-right/front because this is the FRONT-LEFT body view. The RIGHT sword arm is farther, toward screen-left/back; retain anatomical handedness. The helmet's FRONT VISOR points to the LEFT, toes point lower-LEFT, ragged cape trails upper-right. Show his LEFT helmet wall and the front faceplate angled LEFT. Do not draw front-right/SOUTH-EAST. Keep the shield connected to his near LEFT forearm and the sword to his farther RIGHT glove. This is an independent southWEST turn of the SAME anatomical character, never a horizontal flip of art.\n\nDeliver a flat, dark, gritty HAND-DRAWN 2D game sprite sheet, with REAL TRANSPARENT background. Exactly six columns by eight rows, 48 separated full-body drawings. No text, grid lines, scenery or ground shadows. Leave generous transparent gaps; no neighboring figures touch. Each figure retains one consistent scale and foot anchor. Reference 1 G15 is the selected game texture/palette; reference 2 S13 supplies the exact costume. Draw newly oriented animation figures. Do not reuse its facing or copy it as a sprite.\n\nGuarin wears the same battered giant cylindrical iron greathelm, tiny squat torso and stumpy wrapped brown legs, faded wine ragged cloak/scarf, dull mail, brown gloves/belt, straight short sword held in ANATOMICAL RIGHT hand, worn narrow-red-striped kite shield on ANATOMICAL LEFT forearm. Helmet nearly HALF his total standing height, body cute and very short. Sooty outline and dirty mottled taupe/slate/wine paint. Flat subdued game art, never 3D/rendered/sculptural or glossy; no realistic adult anatomy. Fixed elevated orthographic game camera around 45 degrees. Camera and facing stay fixed across every pose; movement occurs within the poses.\n\nChronological frames left-to-right. Exactly eight rows, top-to-bottom:\n1 IDLE: six distinct restrained breathing/weight-settle drawings; same feet, barely moving cape; seamless loop.\n2 WALK: six distinct gait keyframes; right contact, right down/passing, left contact, left down/passing, recovery; both boots and knees visibly change, gear follows weight; in-place seamless loop, never translate whole character across cell.\n3 SWORD CUT: ready, wind-up, strong anticipation, blade contact arc, follow-through, return to ready. Sword remains straight, distinct arc; left shield on arm throughout.\n4 GUARD: lower shield begins raising; shield reaches guard; stable guarded pose; slight guarded breath; begin lowering; lowered ready. Keep sword safely withdrawn. Frames 3-4 will loop as hold.\n5 HURT: six physical RECOIL poses while retaining BOTH WEAPONS. Pose 1: takes hit, twists/slumps but RIGHT GLOVE GRIPS VISIBLE SWORD HILT; blade crosses low body with tip protruding well to screen-left. Pose 2: recoil peak, sword stays gripped and clearly visible tip down-left, shield remains attached. Pose 3: stagger, knees buckle, blade remains visible beside tiny legs. Pose 4: regains stance, still holding sword and shield. Pose 5: returns to ready with low blade. Pose 6: final recovered stance. Never show an empty right fist or a disappeared sword. Never transfer sword to shield arm. Keep the whole intact straight sword silhouette visible outside the body, not hidden behind the giant helmet.\n6 DEATH: knees buckle; falling; hits ground; rolls/settles; motion nearly stops; entirely still prone corpse. Helmet stays on, gear intact, no second helmet or lost limbs. Full body must actually lie down.\n7 INTERACT: reaches toward an object at chest/ground reach; makes contact; small manipulation; withdraws; settles; ready. Do not add an object or remove gear.\n8 PRAYER: lowers body toward kneel; kneels; quiet bowed held prayer; slight bowed breath; rising; upright ready. Frames 3-4 will loop as channel. Closed helmet remains huge, boots/body tiny.\nThe sheet is 48 NEW DRAWN animation poses of the exact reference knight. References are upstream style/design only, never paste the previous image. No camera/orientation/proportion changes between columns. Preserve anatomical handedness for this direction.\n",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+      "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png"
+    ],
+    "transparent_background": true
+  },
+  "inspection": "Parent inspected: all six HURT poses retain a visibly gripped sword with intact blade outside the tiny body, and retain the left shield. Select only this repaired row; keep the other 42 poses from SW v02. Texture/proportion matches remain visual-review decisions; no failed sprite inputs supplied.",
+  "actual_reference_inputs": [
+    "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+    "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png"
+  ],
+  "output_sha256": "8af5d5ea15093d0bb2de2359647510ab3dfbeb026fa1d469cac37edaa5d7f8cd",
+  "dimensions": [
+    1199,
+    1312
+  ],
+  "mode": "RGBA",
+  "reference_sha256": {
+    "art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png": "191af0e5abbd484ec225633f530e6ed6dd9ebf01c5367910c09a353c4ca465d9",
+    "art/concepts/images/s13-guarin-isometric-v02.png": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c"
+  }
+}

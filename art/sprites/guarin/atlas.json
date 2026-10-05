@@ -9140,151 +9140,151 @@
           "family": "hurt",
           "pose": 1,
           "rect": [
-            30,
-            727,
-            154,
-            162
+            27,
+            644,
+            179,
+            129
           ],
           "pivot": [
-            70.5,
-            146.92499999999995
+            87.5,
+            115.20000000000005
           ],
           "occupied": [
             3,
             3,
-            151,
-            159
+            176,
+            126
           ],
-          "sha256": "5593eea09b507b445f4aa42e849a24467ab751c50c0483dc861568ea6684c347",
+          "sha256": "06bdadd55f0cfdfc7562bd043738fc70b2bc30ac24321976e8e8b0551b7ae4cb",
           "border_touch": false,
           "neighbor_pixels_in_rectangle": 0,
-          "image": "pages/guarin-sw-v02.png",
-          "sourceStandingHeight": 159
+          "image": "pages/guarin-sw-v03.png",
+          "sourceStandingHeight": 136
         },
         {
           "family": "hurt",
           "pose": 2,
           "rect": [
-            220,
-            730,
-            142,
-            154
+            228,
+            643,
+            173,
+            126
           ],
           "pivot": [
-            61.5,
-            143.92499999999995
+            83.0,
+            116.20000000000005
           ],
           "occupied": [
             3,
             3,
-            139,
-            151
+            170,
+            123
           ],
-          "sha256": "3f3a4717a5d0a54a3289e3ba133b7829088f3a687258e6c61fbfe0925ae498fc",
+          "sha256": "fe1edfd751b43911ad53306b66d84d96c90175f880270b3d824b380394b2324b",
           "border_touch": false,
           "neighbor_pixels_in_rectangle": 0,
-          "image": "pages/guarin-sw-v02.png",
-          "sourceStandingHeight": 159
+          "image": "pages/guarin-sw-v03.png",
+          "sourceStandingHeight": 136
         },
         {
           "family": "hurt",
           "pose": 3,
           "rect": [
-            380,
-            726,
-            155,
-            167
+            429,
+            640,
+            158,
+            138
           ],
           "pivot": [
-            76.5,
-            147.92499999999995
+            74.0,
+            119.20000000000005
           ],
           "occupied": [
             3,
             3,
-            152,
-            164
+            155,
+            135
           ],
-          "sha256": "df020f780abd5dc1f4e85d904d53f887eaf940622964b407a9954e9160cf098c",
+          "sha256": "b9ad81470ab464ca3237dd1c3a39e6f22936a72526dcd7b570160438dab6a337",
           "border_touch": false,
           "neighbor_pixels_in_rectangle": 0,
-          "image": "pages/guarin-sw-v02.png",
-          "sourceStandingHeight": 159
+          "image": "pages/guarin-sw-v03.png",
+          "sourceStandingHeight": 136
         },
         {
           "family": "hurt",
           "pose": 4,
           "rect": [
-            570,
-            724,
-            142,
-            166
+            616,
+            638,
+            161,
+            136
           ],
           "pivot": [
-            63.5,
-            149.92499999999995
+            72.0,
+            121.20000000000005
           ],
           "occupied": [
             3,
             3,
-            139,
-            163
+            158,
+            133
           ],
-          "sha256": "c546723976ba1690e39df55cc6baf4c5e09bf219c7f4dc24aaed4e9277422f49",
+          "sha256": "675dbd2e11b326e9ac08df9da696ec6ac0bfbd1c774d7e1e08da9cc571f9e976",
           "border_touch": false,
           "neighbor_pixels_in_rectangle": 0,
-          "image": "pages/guarin-sw-v02.png",
-          "sourceStandingHeight": 159
+          "image": "pages/guarin-sw-v03.png",
+          "sourceStandingHeight": 136
         },
         {
           "family": "hurt",
           "pose": 5,
           "rect": [
-            736,
-            725,
-            146,
-            166
+            817,
+            633,
+            161,
+            142
           ],
           "pivot": [
-            73.5,
-            148.92499999999995
+            65.0,
+            126.20000000000005
           ],
           "occupied": [
             3,
             3,
-            143,
-            163
+            158,
+            139
           ],
-          "sha256": "99e766e5ea5c693da94868c9f072b55451b6e23605a7ebdd0d06b87b0041707c",
+          "sha256": "cc32d98b5dd6887355d65edc519993548d13a7c51d5dddeefc4f50bbef9e51fb",
           "border_touch": false,
           "neighbor_pixels_in_rectangle": 0,
-          "image": "pages/guarin-sw-v02.png",
-          "sourceStandingHeight": 159
+          "image": "pages/guarin-sw-v03.png",
+          "sourceStandingHeight": 136
         },
         {
           "family": "hurt",
           "pose": 6,
           "rect": [
-            910,
-            724,
-            147,
-            167
+            1008,
+            635,
+            170,
+            142
           ],
           "pivot": [
-            75.5,
-            149.92499999999995
+            62.0,
+            124.20000000000005
           ],
           "occupied": [
             3,
             3,
-            144,
-            164
+            167,
+            139
           ],
-          "sha256": "b25639d4ffcd2f666bdf7dde6f538c4728236822f60edff8a3b2d72a0d38cb78",
+          "sha256": "a65f3eed4ac37d25a8dc7972e9b18b50e2e12ad6b297eb7823ff77a221b1c2d5",
           "border_touch": false,
           "neighbor_pixels_in_rectangle": 0,
-          "image": "pages/guarin-sw-v02.png",
-          "sourceStandingHeight": 159
+          "image": "pages/guarin-sw-v03.png",
+          "sourceStandingHeight": 136
         },
         {
           "family": "death",
@@ -9740,7 +9740,18 @@
       "unique_cell_hashes": 48,
       "standingHeight": 159,
       "assessment": "Generated study; gait, guard coverage, prayer and directional identity require motion review. Figure regions are measured, with row/column foot anchors; manual pivot refinement remains open.",
-      "row_sources": {}
+      "row_sources": {
+        "hurt": {
+          "image": "pages/guarin-sw-v03.png",
+          "sha256": "8af5d5ea15093d0bb2de2359647510ab3dfbeb026fa1d469cac37edaa5d7f8cd",
+          "dimensions": [
+            1199,
+            1312
+          ],
+          "transparent_pixel_fraction": 0.5923,
+          "inspection": "Only the six improved hurt poses are used; other regenerated families are excluded."
+        }
+      }
     }
   },
   "clips": {

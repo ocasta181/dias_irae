@@ -92,7 +92,18 @@
       "alpha_fraction": 0.5278,
       "unique_cell_hashes": 48,
       "border_touching_frames": [],
-      "row_sources": {}
+      "row_sources": {
+        "hurt": {
+          "image": "pages/guarin-sw-v03.png",
+          "sha256": "8af5d5ea15093d0bb2de2359647510ab3dfbeb026fa1d469cac37edaa5d7f8cd",
+          "dimensions": [
+            1199,
+            1312
+          ],
+          "transparent_pixel_fraction": 0.5923,
+          "inspection": "Only the six improved hurt poses are used; other regenerated families are excluded."
+        }
+      }
     }
   },
   "limits": "Hashes prove different pixels, not correct motion. Parent visual inspection and user review remain necessary. Camera angle is not numerically calibrated."

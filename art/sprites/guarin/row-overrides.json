@@ -1,5 +1,8 @@
 {
   "E": {
     "cut": "pages/guarin-e-v03.png"
+  },
+  "SW": {
+    "hurt": "pages/guarin-sw-v03.png"
   }
 }
