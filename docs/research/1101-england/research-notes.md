@@ -20,4 +20,21 @@ Subagents may write only their assigned report. The parent reviews evidence, int
 
 ## Assignments and review
 
-Assignments and verification will be recorded here as they complete.
+| Owner | Report |
+|---|---|
+| `/root/regional_houses` | `noble-houses.md` |
+| `/root/religions_and_rumors` | `religions-and-rumors.md` |
+| `/root/music_visual_culture` | `culture.md` |
+| `/root/england_politics` | `politics.md` |
+
+The first three assignments retained the owners of the corresponding earlier research. The culture owner completed its report and released a slot; the fourth subagent then started politics. Each of the four topics has its own subagent.
+
+The user replaced all previous AGENTS.md instructions during this work. The parent passed the applicable new rules to the running agents. The new rules retain source review, verification, uncertainty, ordinary-chat questions, confidence-based reversible decisions, and explicit database approval boundaries. Earlier general coding and Git prescriptions are superseded. The parent continues the established repository research format and owns integration and Git actions as a task procedure, rather than attributing those procedures to the replacement instructions.
+
+## Parent review
+
+- Culture: read the complete report. Independently checked the London Archives' 1067 Old English charter, Stalley's Durham construction chronology, Parliament's Westminster roof history, and Historic Royal Palaces' Tower dates and labor description. The report distinguishes surviving objects from a reconstructed 1101 performance or wardrobe, and retains later building phases. Local-link, placeholder and final-newline checks passed.
+- Preliminary politics evidence: read the coronation-charter record and primary translation, and the British Library's Cotton Ch II 6 catalogue record. The charter's issue date is 5 August 1100 despite a copied introduction saying circa 1101; the writ remains dated 1100–1107. These ranges and distinctions were passed to the politics owner.
+- Shared-source allowances were coordinated between owners. The parent reserved brief index summaries rather than duplicating the reports.
+
+The remaining three reports, integrated comparison and final document checks are still in progress. No engine tests are needed for these prose-only additions.
