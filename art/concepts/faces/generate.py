@@ -150,7 +150,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--grok", nargs="+")
     parser.add_argument("--import-image", nargs=2, metavar=("ID", "ORIGINAL"))
-    parser.add_argument("--version", default="v01", choices=("v01", "v02"))
+    parser.add_argument("--version", default="v01", choices=("v01", "v02", "v03"))
     args = parser.parse_args()
     if args.import_image:
         import_image(*args.import_image, version=args.version)

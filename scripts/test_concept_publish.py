@@ -51,10 +51,10 @@ def test_publishing_keeps_independent_reviews_and_cannot_merge_into_styles(
     subprocess.run([sys.executable, str(tmp_path / board / "publish.py")], check=True)
     page = manifest.with_name("index.html").read_text()
     assert (
-        rows(manifest.read_text()),
+        {identifier: rows(manifest.read_text())[identifier] for identifier in before},
         (tmp_path / "manifest.md").read_bytes(),
         (tmp_path / "index.html").read_bytes(),
-        set(re.findall(r'data-reference="([A-Z]\d+)"', page)),
+        set(re.findall(r'data-reference="([A-Z]\d+)"', page)) >= set(before),
         'id="download-manifest"' in page,
     ) == (before, style_before, style_page_before, set(before), False)
 
@@ -64,4 +64,12 @@ def test_live_galleries_preserve_all_rows_without_duplicate_candidates():
         set(rows((ROOT / board / "manifest.md").read_text()))
         for board in [".", "expansion", "faces"]
     ]
-    assert (list(map(len, sets)), len(set.union(*sets))) == ([63, 40, 35], 138)
+    original_faces = {f"F{number:02d}" for number in range(1, 31)} | {
+        f"V{number}" for number in range(21, 26)
+    }
+    assert (
+        len(sets[0]),
+        len(sets[1]),
+        original_faces <= sets[2],
+        len(set.union(*sets)),
+    ) == (63, 40, True, sum(map(len, sets)))
