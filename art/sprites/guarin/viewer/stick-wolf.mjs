@@ -27,7 +27,7 @@ export function stickWolfAtlas(plan, references) {
   return {
     selection: { gameplay_id: "Wolf motion blocking", source_character: "twelve-pose v06 plan" },
     sourceFrames: 12,
-    reviewStatus: "Stick figure only: twelve distinct planned walking poses over one second. The painted replacement is still unfinished. These lines show the motion plan, not approved sprite art.",
+    reviewStatus: "Wolf stick figure approved on 2026-10-06: twelve distinct walking poses over one second. The painted replacement is still unfinished; this approval covers the motion blocking only.",
     directions,
     clips: {
       idle: { label: "Stand", loop: true, fps: 1, frames: [{ source: 0, durationMs: 1000 }] },

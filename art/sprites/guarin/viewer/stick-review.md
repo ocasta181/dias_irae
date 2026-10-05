@@ -1,5 +1,7 @@
 # Wolf stick-figure lab
 
+User approval: on 2026-10-06 the user explicitly approved the stick figure wolf at commit `24c570a`. This approval covers the twelve-pose blocking and its lab movement, not the unfinished painted replacement.
+
 Decision at `db6ccf71fa86e632c32eb8691fe7f3c5f6b10372`, confidence 98%: use the existing twelve-pose v06 targets for a bare stick-figure display. Project the same local joints into eight movement headings. Keep movement and manual frame inspection as separate modes so Right Arrow cannot both move and step.
 
 Authoritative input: `art/sprites/wolf/whole-body/walk-v06/targets.json`. This is planned motion, not measured or approved painted artwork. The older painted study stays available separately.
