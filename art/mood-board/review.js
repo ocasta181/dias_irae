@@ -155,8 +155,10 @@
     let press;
     let dropTarget;
     let suppressClick = false;
+    let applyingOrder = false;
 
     function applyOrder() {
+      applyingOrder = true;
       for (const id of preferenceOrder) preferenceGrid.append(cardsById.get(id));
       for (const card of cards) {
         const id = card.dataset.reference;
@@ -167,12 +169,13 @@
         earlier.disabled = index === 0;
         later.disabled = index === preferenceOrder.length - 1;
       }
+      applyingOrder = false;
     }
 
     function moveCard(id, index) {
-      const previous = preferenceOrder.indexOf(id);
-      preferenceOrder.splice(previous, 1);
-      preferenceOrder.splice(Math.max(0, Math.min(preferenceOrder.length, index)), 0, id);
+      const remaining = preferenceOrder.filter((reference) => reference !== id);
+      remaining.splice(Math.max(0, Math.min(remaining.length, index)), 0, id);
+      preferenceOrder = remaining;
       applyOrder();
       saveDraft();
     }
@@ -282,6 +285,7 @@
       position.required = true;
       position.setAttribute("aria-label", `Position for ${id}`);
       function enterPosition() {
+        if (applyingOrder) return;
         if (!position.checkValidity()) {
           position.reportValidity();
           return;

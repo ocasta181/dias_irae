@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-05",
+  "page": "/art/mood-board/tests/ranking.html",
+  "script_version": "18",
+  "method": "Actual browser number-entry, focus and reload actions; visible card order asserted after each case",
+  "diagnosis": "The reported literal swap was not reproduced in the current script. Numeric insertion already passed before the change. The update explicitly constructs the remaining order, blocks rank-entry callbacks during card DOM movement and makes every board load the new script version.",
+  "checks": [
+    { "case": "Fifth to first", "order": ["X05", "X01", "X02", "X03", "X04"] },
+    { "case": "Blur commits insertion", "order": ["X04", "X01", "X02", "X03", "X05"] },
+    { "case": "Second to fourth", "order": ["X01", "X03", "X04", "X02", "X05"] },
+    { "case": "Repeated first-place insertion", "order": ["X04", "X05", "X01", "X02", "X03"] },
+    { "case": "Order persists after reload", "order": ["X04", "X05", "X01", "X02", "X03"] }
+  ],
+  "draft_transfer_tests": { "passed": 4, "failed": 0, "skipped": 0 },
+  "user_review_changes": "No live user rankings, comments or decisions were edited for the check. The fixture uses its own browser draft key."
+}

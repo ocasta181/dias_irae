@@ -12,6 +12,7 @@ Last updated: 2026-10-05. Current stage: **30 additional exact-S13 face studies 
 - [x] Prepare the [updated exact save-contract proposal](proposals/concept-board-split/face-save-addition.md): add `expansion` and `faces` to `POST /api/review`. Browser drafts work; direct face saving is disabled pending explicit approval under supplied AGENTS.md section 15.
 - [ ] Obtain that specific approval; implement and verify independent direct saving, then complete the primary-style/equipment/cast/face content split without losing saved or browser-only reviews.
 - [ ] User selects a face direction; resolve chosen candidate's eye, texture and anatomical scar-placement limits before sprite production.
+- [x] Make rank moves explicitly insert a card while preserving all other relative positions. Block number-field callbacks during card movement and update the shared script version on every board. Browser checks cover Enter, blur, downward movement, repeated first-place insertion and reload; four draft-preservation tests pass. The reported literal swap was not reproduced before the change; these checks establish the updated insertion behavior without altering the user's live rankings.
 
 ## Story and visual constraints
 
