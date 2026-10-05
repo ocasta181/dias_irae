@@ -11,7 +11,7 @@ nav { display: flex; flex-wrap: wrap; gap: 8px 20px; }
 .lab { display: grid; grid-template-columns: minmax(0, 1fr) 290px; align-items: start; gap: 20px; margin-top: 22px; }
 [hidden] { display: none !important; }
 .stage-panel, .controls { background: #23231e; border: 1px solid #61583e; padding: 14px; }
-canvas#stage { width: 100%; display: block; background: #141511; }
+canvas#stage { width: 100%; height: 480px; display: block; background: #141511; }
 button, select, input[type=number] { font: inherit; color: #e5ddcc; background: #2c2d26; border: 1px solid #716343; border-radius: 3px; padding: 8px 10px; }
 button { cursor: pointer; }
 button:hover { background: #3b3c31; }

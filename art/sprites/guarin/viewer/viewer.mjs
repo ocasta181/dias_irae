@@ -14,7 +14,8 @@ let lastTime;
 let clipRate = 6;
 let lastClip;
 let stripKey;
-let position = [450, 350];
+let position = [450, 420];
+let extent;
 let scheduled = [];
 let scenarioTime = 0;
 
@@ -40,7 +41,7 @@ function act(action, fromSequence = false) {
   if (!fromSequence) scheduled = [];
   const before = player.clip;
   player = request(player, action);
-  if (action === "reset") position = [450, 350];
+  if (action === "reset") position = [450, stage.height * .75];
   playing = true;
   element("play").textContent = "Pause";
   updateClipControls();
@@ -113,11 +114,24 @@ function updateStrip(page, clip) {
 }
 
 function draw() {
+  const display = stage.getBoundingClientRect();
+  const canvasHeight = Math.round(stage.width * display.height / display.width);
+  if (canvasHeight !== stage.height) {
+    position[1] *= canvasHeight / stage.height;
+    stage.height = canvasHeight;
+  }
+  const size = element("size");
+  size.max = Math.floor(Math.min(240, (display.width - 24) / (extent.left + extent.right), (display.height - 24) / (extent.above + extent.below)) / 8) * 8;
+  size.value = Math.min(Number(size.value), Number(size.max));
+  element("size-label").textContent = `${size.value} px`;
   const page = atlas.directions[player.direction];
   const clip = atlas.clips[player.clip];
   const current = sample(clip, player.elapsedMs);
   const frame = page.frames[current.source];
-  const previewHeight = Number(element("size").value) * stage.width / stage.getBoundingClientRect().width;
+  const previewHeight = Number(size.value) * stage.width / display.width;
+  const margin = 12 * stage.width / display.width;
+  position[0] = Math.max(extent.left * previewHeight + margin, Math.min(stage.width - extent.right * previewHeight - margin, position[0]));
+  position[1] = Math.max(extent.above * previewHeight + margin, Math.min(stage.height - extent.below * previewHeight - margin, position[1]));
   const scale = previewHeight / frame.sourceStandingHeight;
   background();
   context.fillStyle = "#05080445";
@@ -183,7 +197,7 @@ function tick(time) {
       const [x, y] = movement();
       const length = Math.hypot(x, y) || 1;
       position[0] = Math.max(90, Math.min(810, position[0] + x / length * delta * .10));
-      position[1] = Math.max(220, Math.min(510, position[1] + y / length * delta * .05));
+      position[1] = Math.max(0, Math.min(stage.height, position[1] + y / length * delta * .05));
     }
     updateClipControls();
   }
@@ -245,13 +259,22 @@ async function start() {
   if (!response.ok) throw new Error(`Sheet data unavailable (${response.status})`);
   atlas = await response.json();
   if (!atlas.directions.SE || !atlas.clips.idle) throw new Error("Required starting direction or idle clip is missing.");
+  const frames = Object.values(atlas.directions).flatMap(page => page.frames);
+  extent = {
+    left: Math.max(...frames.map(frame => frame.pivot[0] / frame.sourceStandingHeight)),
+    right: Math.max(...frames.map(frame => (frame.rect[2] - frame.pivot[0]) / frame.sourceStandingHeight)),
+    above: Math.max(...frames.map(frame => frame.pivot[1] / frame.sourceStandingHeight)),
+    below: Math.max(...frames.map(frame => (frame.rect[3] - frame.pivot[1]) / frame.sourceStandingHeight)),
+  };
   const sourcePaths = new Set(Object.values(atlas.directions).flatMap(page => page.frames.map(frame => frame.image)));
-  await Promise.all([...sourcePaths].map(path => new Promise((resolve, reject) => {
-    const image = new Image();
-    image.onload = () => { images.set(path, image); resolve(); };
-    image.onerror = () => reject(new Error(`Source image cannot be loaded: ${path}`));
-    image.src = `../${path}`;
-  })));
+  for (const path of sourcePaths) {
+    await new Promise((resolve, reject) => {
+      const image = new Image();
+      image.onload = () => { images.set(path, image); resolve(); };
+      image.onerror = () => reject(new Error(`Source image cannot be loaded: ${path}`));
+      image.src = `../${path}`;
+    });
+  }
   element("basis").textContent = `${atlas.selection.gameplay_id} / ${atlas.selection.source_character} · exact upstream art · ${atlas.sourceFrames} source frames · ${Object.keys(atlas.directions).length} directions · ${Object.keys(atlas.clips).length} clips`;
   element("load-status").textContent = atlas.reviewStatus;
   for (const reference of atlas.references) {
