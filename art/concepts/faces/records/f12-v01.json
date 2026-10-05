@@ -20,8 +20,8 @@
   ],
   "mode": "RGB",
   "pixel_changes": "none",
-  "parent_visual_review": "pending",
-  "review_status": "pending",
+  "parent_visual_review": "Faceted head, narrow nose and short hatch marks create a scratchier angular option. Source costume and squat silhouette remain. Bright small eye wedges and prominent drawn face contours still need refinement.",
+  "review_status": "revise",
   "session_id": "79a1d7ac-2fe6-42f0-b731-d4e78c66fb4f",
   "fresh_session": true,
   "cwd": "/private/tmp/dias-face-f12-79a1d7ac-2fe6-42f0-b731-d4e78c66fb4f",
@@ -64,5 +64,6 @@
     "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f12-79a1d7ac-2fe6-42f0-b731-d4e78c66fb4f/79a1d7ac-2fe6-42f0-b731-d4e78c66fb4f/images/1.jpg",
     "filename": "1.jpg",
     "session_folder": "images"
-  }
+  },
+  "presentation": "review candidate"
 }

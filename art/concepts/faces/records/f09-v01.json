@@ -20,8 +20,8 @@
   ],
   "mode": "RGB",
   "pixel_changes": "none",
-  "parent_visual_review": "pending",
-  "review_status": "pending",
+  "parent_visual_review": "Angular cheek ledges, small chin and bent brows create a distinct narrow lower face. S13 outfit remains consistent. White eye gaps and clean face contour marks persist.",
+  "review_status": "revise",
   "session_id": "9d62634d-a351-46dc-a173-27971246b955",
   "fresh_session": true,
   "cwd": "/private/tmp/dias-face-f09-9d62634d-a351-46dc-a173-27971246b955",
@@ -64,5 +64,6 @@
     "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f09-9d62634d-a351-46dc-a173-27971246b955/9d62634d-a351-46dc-a173-27971246b955/images/1.jpg",
     "filename": "1.jpg",
     "session_folder": "images"
-  }
+  },
+  "presentation": "review candidate"
 }

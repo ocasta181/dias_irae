@@ -20,8 +20,8 @@
   ],
   "mode": "RGB",
   "pixel_changes": "none",
-  "parent_visual_review": "pending",
-  "review_status": "pending",
+  "parent_visual_review": "Low heavy brow, tiny deep dark eyes, short hair and rectangular head are readable and closer to the weary mood. Costume, camera and compact proportions remain consistent. Face is more anatomically modeled than the flat facial shorthand brief.",
+  "review_status": "revise",
   "session_id": "91a6fafe-e44d-43b7-98ff-c670ad699bc0",
   "fresh_session": true,
   "cwd": "/private/tmp/dias-face-f08-91a6fafe-e44d-43b7-98ff-c670ad699bc0",
@@ -64,5 +64,6 @@
     "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f08-91a6fafe-e44d-43b7-98ff-c670ad699bc0/91a6fafe-e44d-43b7-98ff-c670ad699bc0/images/1.jpg",
     "filename": "1.jpg",
     "session_folder": "images"
-  }
+  },
+  "presentation": "review candidate"
 }

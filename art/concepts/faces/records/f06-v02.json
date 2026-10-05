@@ -20,8 +20,8 @@
   ],
   "mode": "RGB",
   "pixel_changes": "none",
-  "parent_visual_review": "pending",
-  "review_status": "pending",
+  "parent_visual_review": "Soot band, stubby triangular nose and round head are clearly different from other Grok studies. Bright white eye shapes persist despite explicit prohibition and the face is too smooth; revise before production.",
+  "review_status": "revise",
   "session_id": "6363dbb6-05c9-45ca-9dee-b7b51a199c9b",
   "fresh_session": true,
   "cwd": "/private/tmp/dias-face-f06-6363dbb6-05c9-45ca-9dee-b7b51a199c9b",
@@ -64,5 +64,6 @@
     "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f06-6363dbb6-05c9-45ca-9dee-b7b51a199c9b/6363dbb6-05c9-45ca-9dee-b7b51a199c9b/images/1.jpg",
     "filename": "1.jpg",
     "session_folder": "images"
-  }
+  },
+  "presentation": "review candidate"
 }

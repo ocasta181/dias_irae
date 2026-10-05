@@ -20,8 +20,8 @@
   ],
   "mode": "RGB",
   "pixel_changes": "none",
-  "parent_visual_review": "pending",
-  "review_status": "pending",
+  "parent_visual_review": "Widely spaced tiny dark pin eyes and broad rounded cheeks form the simplest cutesy face. Outfit and compact body match the source. Head reads younger than 34 and cleaner than S13; useful shape exploration, revise age and texture.",
+  "review_status": "revise",
   "session_id": "14ed897e-84ac-4cc8-8111-8c08e9cf0ee8",
   "fresh_session": true,
   "cwd": "/private/tmp/dias-face-f13-14ed897e-84ac-4cc8-8111-8c08e9cf0ee8",
@@ -64,5 +64,6 @@
     "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f13-14ed897e-84ac-4cc8-8111-8c08e9cf0ee8/14ed897e-84ac-4cc8-8111-8c08e9cf0ee8/images/1.jpg",
     "filename": "1.jpg",
     "session_folder": "images"
-  }
+  },
+  "presentation": "review candidate"
 }

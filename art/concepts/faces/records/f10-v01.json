@@ -20,8 +20,8 @@
   ],
   "mode": "RGB",
   "pixel_changes": "none",
-  "parent_visual_review": "pending",
-  "review_status": "pending",
+  "parent_visual_review": "Long hooked bulb nose dominates the broad head, unlike the blunt-nose studies. Outfit and proportions remain recognizable. Skin is warmer/yellower than S13 and eye light gaps persist; adjust palette and tiny eyes before production.",
+  "review_status": "revise",
   "session_id": "d2c7dc5a-2286-456b-8b2d-e36fb1411086",
   "fresh_session": true,
   "cwd": "/private/tmp/dias-face-f10-d2c7dc5a-2286-456b-8b2d-e36fb1411086",
@@ -64,5 +64,6 @@
     "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f10-d2c7dc5a-2286-456b-8b2d-e36fb1411086/d2c7dc5a-2286-456b-8b2d-e36fb1411086/images/1.jpg",
     "filename": "1.jpg",
     "session_folder": "images"
-  }
+  },
+  "presentation": "review candidate"
 }

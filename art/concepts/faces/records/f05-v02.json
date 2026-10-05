@@ -20,8 +20,8 @@
   ],
   "mode": "RGB",
   "pixel_changes": "none",
-  "parent_visual_review": "pending",
-  "review_status": "pending",
+  "parent_visual_review": "Blunt broken-looking nose and heavy brows distinguish this square face. Source costume and short body remain consistent. Clean facial contour lines and a relatively smooth nose are still more comic-like than S13.",
+  "review_status": "revise",
   "session_id": "d0a2ca20-36e4-4502-8a08-84d072679a0f",
   "fresh_session": true,
   "cwd": "/private/tmp/dias-face-f05-d0a2ca20-36e4-4502-8a08-84d072679a0f",
@@ -64,5 +64,6 @@
     "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f05-d0a2ca20-36e4-4502-8a08-84d072679a0f/d0a2ca20-36e4-4502-8a08-84d072679a0f/images/1.jpg",
     "filename": "1.jpg",
     "session_folder": "images"
-  }
+  },
+  "presentation": "review candidate"
 }

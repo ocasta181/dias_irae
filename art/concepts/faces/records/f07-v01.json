@@ -20,8 +20,8 @@
   ],
   "mode": "RGB",
   "pixel_changes": "none",
-  "parent_visual_review": "pending",
-  "review_status": "pending",
+  "parent_visual_review": "Fine scattered scratches, thin tired nose and slack cheeks form a finer face grammar. Costume and source body remain intact. Light eye gaps and smooth skin patches remain; face texture is less coarse than S13.",
+  "review_status": "revise",
   "session_id": "57012735-cd0b-49f7-a143-a481573374a2",
   "fresh_session": true,
   "cwd": "/private/tmp/dias-face-f07-57012735-cd0b-49f7-a143-a481573374a2",
@@ -64,5 +64,6 @@
     "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f07-57012735-cd0b-49f7-a143-a481573374a2/57012735-cd0b-49f7-a143-a481573374a2/images/1.jpg",
     "filename": "1.jpg",
     "session_folder": "images"
-  }
+  },
+  "presentation": "review candidate"
 }

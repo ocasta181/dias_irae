@@ -20,8 +20,8 @@
   ],
   "mode": "RGB",
   "pixel_changes": "none",
-  "parent_visual_review": "pending",
-  "review_status": "pending",
+  "parent_visual_review": "Long narrow face, dark sunken socket masses and hollow cheeks give a gaunt option. Body, costume and projection remain recognizable. Head linework is cleaner than the granular body and white hair cut is oversized on the visible temple.",
+  "review_status": "revise",
   "session_id": "8714063a-43c4-471f-90dd-b24c831e8c2e",
   "fresh_session": true,
   "cwd": "/private/tmp/dias-face-f04-8714063a-43c4-471f-90dd-b24c831e8c2e",
@@ -64,5 +64,6 @@
     "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f04-8714063a-43c4-471f-90dd-b24c831e8c2e/8714063a-43c4-471f-90dd-b24c831e8c2e/images/1.jpg",
     "filename": "1.jpg",
     "session_folder": "images"
-  }
+  },
+  "presentation": "review candidate"
 }

@@ -20,8 +20,8 @@
   ],
   "mode": "RGB",
   "pixel_changes": "none",
-  "parent_visual_review": "pending",
-  "review_status": "pending",
+  "parent_visual_review": "Rounded jaw, curved short nose and sagging lids offer a softer adult face. Body and costume are preserved. Eyes show whites rather than shut shorthand; contours are cleaner than source texture.",
+  "review_status": "revise",
   "session_id": "baacac00-f75d-4f5a-b4ce-a22b2a5e9749",
   "fresh_session": true,
   "cwd": "/private/tmp/dias-face-f11-baacac00-f75d-4f5a-b4ce-a22b2a5e9749",
@@ -64,5 +64,6 @@
     "path": "/Users/ocasta/.grok/sessions/%2Fprivate%2Ftmp%2Fdias-face-f11-baacac00-f75d-4f5a-b4ce-a22b2a5e9749/baacac00-f75d-4f5a-b4ce-a22b2a5e9749/images/1.jpg",
     "filename": "1.jpg",
     "session_folder": "images"
-  }
+  },
+  "presentation": "review candidate"
 }
