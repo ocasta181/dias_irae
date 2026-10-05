@@ -2,7 +2,16 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
-Last updated: 2026-10-05. Current stage: **45 exact-S13 equipment and cast candidates are ready for user review. The researched campaign inventory, first Guarin sprite study and keyboard motion lab are available. The 24-screen gameplay exploration remains under review. Further sprite categories and first-level implementation retain their review gates.**
+Last updated: 2026-10-05. Current stage: **30 additional exact-S13 face studies are ready on a dedicated page, with 15 Grok and 15 built-in candidates plus five earlier face studies. The 45 equipment/cast candidates and 24 gameplay screens remain under review. The researched campaign inventory, first Guarin sprite study, keyboard motion lab and numerical foot-placement framework are available. Independent face/equipment project saving awaits specific contract approval. Further sprite categories and first-level implementation retain their review gates.**
+
+2026-10-05 face exploration, decision at commit `47bab5d`, confidence 98%: keep original S13 as the sole source, preserve outfit/body/camera and explore the unhelmeted facial shape and drawing grammar. Guarin's age, dark hair, stubble and weary expression remain the brief; the giant head and tiny squat body override realistic dossier stature.
+
+- [x] Define [30 distinct face briefs](../art/concepts/faces/plan.json) before generation: F01–F15 Grok, F16–F30 built-in. Preserve exact complete prompts and source hash.
+- [x] Generate and inspect 30 current candidates and six held-back Grok trials; every new call uses original S13 only. Preserve provider bytes, hashes, actual Grok inputs and fresh-session evidence. Record [visual limitations](../art/concepts/faces/assessment.md); ranking is not final approval.
+- [x] Publish the [dedicated 35-card face page](../art/concepts/faces/index.html), including V21–V25, with minimized cards, number/drag ordering, commentary, decisions and face close-ups. Verify 30 unique unchanged new outputs, 15 per provider, sole S13 references and all local links. Four draft-transfer tests pass; browser checks show collapsed cards and working detail/comment controls.
+- [x] Prepare the [updated exact save-contract proposal](proposals/concept-board-split/face-save-addition.md): add `expansion` and `faces` to `POST /api/review`. Browser drafts work; direct face saving is disabled pending explicit approval under supplied AGENTS.md section 15.
+- [ ] Obtain that specific approval; implement and verify independent direct saving, then complete the primary-style/equipment/cast/face content split without losing saved or browser-only reviews.
+- [ ] User selects a face direction; resolve chosen candidate's eye, texture and anatomical scar-placement limits before sprite production.
 
 ## Story and visual constraints
 
