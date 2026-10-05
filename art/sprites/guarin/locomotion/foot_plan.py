@@ -49,7 +49,7 @@ def pose(clip: str, phase: float) -> dict:
     elif clip == "idle":
         feet, root, hip = [(0, 0, True)] * 2, 0, 40
     elif clip == "start":
-        root, hip = 9 * phase**2.4, 40
+        root, hip = 9 * phase**2, 40
         feet = [
             (
                 24 * smoothstep(phase) - root,
@@ -59,7 +59,8 @@ def pose(clip: str, phase: float) -> dict:
             (-root, 0, True),
         ]
     else:
-        root = -8.4 * phase**3 + 1.8 * phase**2 + 21.6 * phase
+        brake = (phase - 2 / 3) * 3
+        root = 18 * phase if phase <= 2 / 3 else 12 + 6 * brake - 3 * brake**2
         hip = 40
         feet = [
             (15 - root, 0, True),

@@ -77,13 +77,37 @@ def test_transition_support_is_stationary_and_root_never_moves_backwards():
             previous = data["rootForward"]
 
 
+def test_transition_speeds_match_the_walk_without_an_acceleration_jump():
+    epsilon = 1e-5
+    speed = STRIDE / (CYCLE_MS / 1000)
+    entry = (
+        pose("start", 1)["rootForward"] - pose("start", 1 - epsilon)["rootForward"]
+    ) / (0.3 * epsilon)
+    assert entry == pytest.approx(speed, abs=0.001)
+    for clip in ("stop_left", "stop_right"):
+        for index in range(1000):
+            phase = index / 1000
+            velocity = (
+                pose(clip, phase + epsilon)["rootForward"]
+                - pose(clip, phase)["rootForward"]
+            ) / (0.3 * epsilon)
+            assert 0 <= velocity <= speed + 1e-9
+        assert pose(clip, epsilon)["rootForward"] / (0.3 * epsilon) == pytest.approx(
+            speed
+        )
+
+
 def test_frame_holds_limit_support_drift_instead_of_claiming_perfect_raster_lock():
-    for data in frames("E", "walk"):
-        for foot in data["feet"].values():
-            if foot["planted"]:
-                for boundary in (data["startMs"], data["endMs"]):
-                    delta = STRIDE * boundary / CYCLE_MS - data["rootForward"]
-                    assert abs(delta) <= 1 + 1e-12
+    for clip, (_, duration) in CLIPS.items():
+        for data in frames("E", clip):
+            for foot in data["feet"].values():
+                if foot["planted"]:
+                    for boundary in (data["startMs"], data["endMs"]):
+                        delta = (
+                            pose(clip, boundary / duration)["rootForward"]
+                            - data["rootForward"]
+                        )
+                        assert abs(delta) <= 1 + 1e-12
 
 
 def test_all_planned_frames_have_reachable_equal_length_legs_and_valid_canvas_targets():
