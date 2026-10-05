@@ -1,0 +1,26 @@
+{
+  "id": "F32",
+  "title": "F25 · Nose: lean downward hook",
+  "provider": "built-in imagegen",
+  "model": "not exposed by tool",
+  "request": {
+    "prompt": "Use case: precise-object-edit / stylized-concept.\nInput image: the exact preferred face study named below, used as the edit target and the drawing-medium reference. It is explicitly selected by the user. Produce ONE full-body Guarin image, with no panels, text, labels or inset.\nChange only the specified facial feature grammar. Retain the source's facial silhouette, giant head, short squat body, hair, stubble, weary adult identity, pose, elevated three-quarter camera, framing and charcoal background. Preserve the exact wine-red worn scarf/cape, dull mail, brown gloves, belt, wrapped legs, boots, straight sword in his right hand and battered wood-and-iron kite shield on his left arm. Do not redesign, brighten, rotate or enlarge the body or equipment.\nMatch the reference's flat 2D game drawing: irregular dark edges and granular broken pigment in muddy taupe, dark brown, dull bone and dead wine red. Facial marks must have the same roughness, grain, restrained values and ambient light as the rest of the character. Tiny eyes, oversized head and tiny exhausted body remain essential. Dark, poor, wretched, dirty, worn, tired and hopeless, with cute compact proportions. No 3D, modeled toy volume, airbrushed realism, clean comic contours, glossy highlights, anime eyes, large eye whites, smiling or bright colors.\nThe nose MUST NOT remain a squared rectangular block. Draw the requested alternate nose as a small irregular tapered or curved graphic mark, with rough edges consistent with the source. No straight rectangular column, squared shovel tip or cuboid nose. Curves are built from coarse broken pigment, not smooth vector outlines. Where another feature is the study's focus, use a short softly bent nose with a rounded tapered end and keep that nose understated.\nThis is a close feature-design variation, not a different costume, different illustration medium, new portrait or facial expression sheet. Make the named change visibly legible while keeping all other features as close to the reference as possible. Preserve the source's tired neutral closed-mouth expression unless its subtle mouth line is specifically being explored.\n\nSource: F25, Narrow lower mask, captured preference #5.\nStudy F32: Nose: lean downward hook.\nSpecific facial change: A thin gently bent bridge ends in a very small downward hook, drawn as two broken earthy strokes and a shallow dark underside. No bulb or rectangular tip. Keep F25's eyes, eyebrows and mouth.\nPreserve the reference everywhere outside those facial marks. One full-body image, no text.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f25-v01.png"
+    ],
+    "transparent_background": false
+  },
+  "source_sha256": "8b39749eb1c67c3050fe7de0ca23809dd466f4f78ceb842287d014e6debde45e",
+  "source_reference": "F25",
+  "original_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-b89683ef-6af1-460b-8b10-8b463ae139bf.png",
+  "file": "art/concepts/faces/images/f32-v03.png",
+  "sha256": "e15f2e89ad04a790611523845de12806151076ed635fc327a5f59b4a0e3832e6",
+  "dimensions": [
+    1312,
+    1199
+  ],
+  "mode": "RGB",
+  "pixel_changes": "none",
+  "parent_visual_review": "pending",
+  "review_status": "pending"
+}
