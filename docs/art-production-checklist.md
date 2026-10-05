@@ -18,6 +18,7 @@ Last updated: 2026-10-05. Current stage: **45 exact-S13 equipment and cast candi
 
 - [x] Simplify the motion lab to a controllable character, page-wide WASD/arrows and Space strike, with six named sequence buttons on the side. Collapse frame inspection by default; preserve source artwork and review data. Verify all presets in the browser and eighteen animation/controller tests, including held movement, key release and preset takeover.
 - [x] Reproduce and correct strike-recovery travel depending on display refresh: updates now split at animation boundaries and move only during walking time. Twenty timing/controller tests pass; sprite pixels and runtime-game combat remain unchanged.
+- [x] Correct preset timing across delayed display updates: start each action at its scheduled time and retain travel before the final stop. All 23 timing/controller tests pass.
 
 Source material: [story spine](../story/story-arch.md), [characters](../story/characters.md), [locations](../story/locations.md), [draft systems](../story/systems.md).
 

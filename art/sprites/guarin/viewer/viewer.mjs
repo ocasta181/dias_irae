@@ -226,18 +226,22 @@ function tick(time) {
   lastTime = time;
   if (playing && !document.hidden) {
     if (scheduled.length) {
-      scenarioTime += delta;
-      while (scheduled.length && scheduled[0].at <= scenarioTime) {
-        const step = scheduled.shift();
+      const end = scenarioTime + delta;
+      while (scheduled.length && scheduled[0].at <= end) {
+        const step = scheduled[0];
+        advancePreview(step.at - scenarioTime);
+        scenarioTime = step.at;
+        scheduled.shift();
         if (step.direction) player = face(player, step.direction);
         act(step.action, true);
       }
+      advancePreview(end - scenarioTime);
+      scenarioTime = end;
       if (!scheduled.length) {
         cancelSequence();
         element("sequence-status").textContent = player.terminal ? "Defeated. Reset character to play again." : "Sequence complete. Keyboard control ready.";
       }
-    }
-    advancePreview(delta);
+    } else advancePreview(delta);
   }
   draw();
   requestAnimationFrame(tick);

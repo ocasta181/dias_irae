@@ -96,3 +96,25 @@ test("strike recovery displacement does not depend on display refresh", () => {
   const frequent = Array.from({ length: 60 }, (_, index) => (index + 1) * 10);
   assert.ok(Math.abs(travel([600]) - travel(frequent)) < 1e-8);
 });
+
+test("preset actions start at their scheduled time within a display update", () => {
+  const lab = playground(); lab.step(0); lab.preset("strike"); lab.step(1000);
+  assert.equal(lab.state().player.clip, "cut");
+  assert.ok(Math.abs(lab.state().player.elapsedMs - 100) < 1e-8);
+});
+
+test("preset travel is identical across frequent and delayed display updates", () => {
+  function travel(times) {
+    const lab = playground(); lab.step(0); lab.preset("strike");
+    for (const time of times) lab.step(time);
+    return lab.state().position[0];
+  }
+  const frequent = Array.from({ length: 100 }, (_, index) => (index + 1) * 10);
+  assert.ok(Math.abs(travel([1000]) - travel(frequent)) < 1e-8);
+});
+
+test("a preset's final stop retains travel before that stop", () => {
+  const lab = playground(); lab.step(0); lab.preset("strike"); lab.step(2500);
+  assert.ok(Math.abs(lab.state().position[0] - 716) < 1e-8);
+  assert.equal(lab.state().player.clip, "idle");
+});
