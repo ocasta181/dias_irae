@@ -43,5 +43,9 @@
   "source_frames": 384,
   "selected_family": "guard",
   "visual_approval": "pending",
-  "inspection": "Source image viewed; protective torso coverage improved. Browser hold and release verification follows."
+  "inspection": "Actual new source and all six guard-in/hold/out pose selections viewed. Fresh browser renders the protective hold at 96px nearest on pale ground and 160px smooth on dark ground, with no neighboring figure visible. Guard release and guard/release/strike preset complete back to idle. Scale, camera and full motion approval remain pending.",
+  "browser_previews": [
+    "guard-review-96.png",
+    "guard-review-160.png"
+  ]
 }
