@@ -217,3 +217,13 @@ Gallery order, first to last. Ranking does not change acceptance decisions.
 43. S51
 44. S52
 45. S47
+
+## S13 equipment and cast exploration
+
+35 equipment/face choices and ten story subjects are defined in [the list](expansion/plan.json). Every drawing uses the exact original S13 as its only image input. Dates and regional limits are explicit. Malta is the requested later heraldic exception. These are concept studies; no new sprite or game implementation is implied.
+
+| Identifier | Candidate | Purpose | Image | Status | Notes |
+|---|---|---|---|---|---|
+| V01 | Long rounded kite | Shields | [V01](expansion/images/v01-v01.png) | pending | 1160–1180; Western European manuscript comparison. E69; manuscript silhouette, not a surviving French shield. Parent inspection: S13 helmet, body, sword, cloth, palette and view preserved. Rounded teardrop shield, ochre wood and boss are visible; lower tip longer than the original. |
+| V02 | Short flat-topped kite | Shields | [V02](expansion/images/v02-v01.png) | pending | circa 1200; Swiss surviving-shield comparison. E44; reconstruct complete shape rather than copying damage. Parent inspection: S13 identity and texture preserved. Flat shield top and charcoal boards differ from V01; overall shield height remains close to the original, so the requested shortening is modest. |
+| V03 | Domed round shield | Shields | [V03](expansion/images/v03-v01.png) | pending | circa 1150; Western European manuscript comparison. E68; construction inferred from illustrated profile. Parent inspection: S13 identity and texture preserved. Round convex shield and large boss read clearly; apparent oval is the oblique projection. Dark leather separates it from the two kite shapes. |

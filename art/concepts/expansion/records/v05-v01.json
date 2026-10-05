@@ -1,0 +1,24 @@
+{
+  "id": "V05",
+  "title": "Compact early heater",
+  "provider": "built-in imagegen",
+  "model": "not exposed by tool",
+  "request": {
+    "prompt": "Use case: stylized-concept.\nAsset: ONE full-body game character concept illustration, one figure only, no comparison sheet, no inset, no text.\nInput image 1 is the exact S13 original. It is the mandatory drawing-medium, camera, proportion, palette and texture reference. No other iteration is a reference.\nCopy its dark hand-drawn 2D language: rough irregular dark ink edges, granular dry pigment and modest stepped marks, dirty matte iron, dead wine-red cloth, muddy brown leather, grey-bone fabric. Somber poor wretched medieval world, exhausted and desperate rather than heroic or brightly cheerful. Preserve its soft charcoal ground and small diffuse contact shadow, flat restrained values, rough distressed surfaces. Never 3D, 2.5D miniature, glossy render, studio lighting, sculpted toy, comic-book splash, airbrushed realistic anatomy or photoreal portrait.\nPreserve the exact S13 elevated three-quarter viewing direction and orthographic-like projection. Do not invent a new camera angle. Huge head around half the whole standing height, tiny compact torso, short squat legs and arms, very small eyes wherever exposed. The overall silhouette must be cute and compact even in a hopeless mood. Full figure and complete weapons fit in the frame with generous margins. Draw coherent hands and straight shafts/blades; no duplicated hands, shields or weapons.\nThis is the SAME Guarin from S13. Preserve his pose, stature, greathelm, wine scarf and ragged cape, mail, belt, wrapped gloves/legs/boots, small straight sword in anatomical RIGHT hand and worn kite shield on anatomical LEFT arm EXCEPT the category explicitly changed below. Preserve the literal S13 costume components and weathering outside that category. No additional knee disks, plated bracers, decorations, new armor, extra straps or invented insignia. Make the requested category distinctly readable while the rest remains recognizable.\n\nRequested illustration: V05 — Compact early heater.\nExact change/subject: Replace only the shield with a compact triangular shield with a straight top and short pointed bottom, faded bone field and wine diagonal stripe. Keep the sword.\nContext: 1200–1230 design study; Western European transitional comparison. Evidence limitation: Early-13th allowance; shape inference from E44, not a dated surviving heater. These notes are context, not text to draw.\nDo not change any unrequested category. ONE full character, no panels or labels.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png"
+    ],
+    "transparent_background": false
+  },
+  "input_sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c",
+  "original_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-61602602-ce4d-43ea-8e6c-fe4a47c2f562.png",
+  "file": "art/concepts/expansion/images/v05-v01.png",
+  "sha256": "20e529648ef767858135cdf322386c231d9a1ba1db3df0f6d179b8315433d4a0",
+  "dimensions": [
+    1312,
+    1199
+  ],
+  "mode": "RGB",
+  "pixel_changes": "none",
+  "parent_visual_review": "pending"
+}
