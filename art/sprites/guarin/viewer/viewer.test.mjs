@@ -23,7 +23,7 @@ function playground(startup = false) {
       assert.ok(image, "a drawable image must be loaded before its rectangle is rendered");
       if (value === get("stage")) draws.push({ image, rect, translation, scale });
     } : () => {} });
-    Object.assign(value, { addEventListener: (type, handler) => { value.listeners[type] = handler; }, setAttribute() {}, append(...children) { value.children.push(...children); }, replaceChildren() { value.children.forEach(remove); value.children = []; }, getContext: () => context, getBoundingClientRect: () => ({ width: 900, height: 560 }) });
+    Object.assign(value, { addEventListener: (type, handler) => { value.listeners[type] = handler; }, focus() { value.focused = true; }, setAttribute() {}, append(...children) { value.children.push(...children); }, replaceChildren() { value.children.forEach(remove); value.children = []; }, getContext: () => context, getBoundingClientRect: () => ({ width: 900, height: 560 }) });
     nodes.push(value);
     return value;
   }
@@ -55,6 +55,7 @@ function playground(startup = false) {
     view: mode => { get("view").value = mode; get("view").listeners.change(); },
     click: id => get(id).listeners.click(),
     text: id => get(id).textContent,
+    focused: id => get(id).focused,
     size: value => { get("size").value = value; },
     value: id => get(id).value,
     begin: () => vm.runInContext("start()", scope),
@@ -148,6 +149,7 @@ test("selecting wolf during initial loading cannot strand a hidden lab", async (
 
 test("Space, Right Arrow and the visible button each step once; repeats never step", () => {
   const lab = playground(); lab.stick(); lab.view("stick-step"); lab.step(0);
+  assert.equal(lab.focused("stage"), true);
   assert.equal(lab.text("walk-frame"), "1 / 12");
   lab.key("keydown", " "); assert.equal(lab.text("walk-frame"), "2 / 12");
   lab.key("keydown", " ", { repeat: true }); assert.equal(lab.text("walk-frame"), "2 / 12");

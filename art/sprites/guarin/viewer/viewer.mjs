@@ -130,7 +130,7 @@ function log(message) {
 function cancelSequence() {
   if (scheduled.length) player = request(request(request(player, "idle"), "guard-off"), "prayer-off");
   scheduled = [];
-  element("sequence-status").textContent = "Keyboard control ready.";
+  element("sequence-status").textContent = viewMode === "stick-step" ? "Paused. Every press advances one walking frame." : "Keyboard control ready.";
   for (const button of document.querySelectorAll("[data-sequence]")) button.setAttribute("aria-pressed", "false");
 }
 
@@ -293,7 +293,7 @@ function draw() {
   element("frame").value = current.index;
   element("frame-label").textContent = `${current.index + 1} / ${clip.frames.length}`;
   element("walk-frame").textContent = `${current.index + 1} / ${clip.frames.length}`;
-  const text = `${clip.label} · ${player.direction} · pose ${current.index + 1}/${clip.frames.length} · ${Number(clipRate.toFixed(2))} FPS · ${current.complete ? "held final pose" : clip.loop ? "loop" : "one shot"}`;
+  const text = `${clip.label} · ${player.direction} · pose ${current.index + 1}/${clip.frames.length} · ${viewMode === "stick-step" ? "paused · one frame per press" : `${Number(clipRate.toFixed(2))} FPS · ${current.complete ? "held final pose" : clip.loop ? "loop" : "one shot"}`}`;
   if (element("readout").textContent !== text) element("readout").textContent = text;
   element("quality").textContent = page.assessment;
   for (const button of document.querySelectorAll(".frame-button")) button.setAttribute("aria-pressed", String(Number(button.dataset.frameIndex) === current.index));
@@ -328,13 +328,14 @@ function setView(mode) {
   element("play").textContent = playing ? "Pause" : "Play";
   for (const id of ["play", "clip", "speed", "fps"]) element(id).disabled = viewMode === "stick-step";
   element("load-status").textContent = atlas.reviewStatus;
-  element("basis").textContent = `${atlas.selection.gameplay_id} / ${atlas.selection.source_character} · ${atlas.sourceFrames} source frames · ${Object.keys(atlas.directions).length} directions · ${Object.keys(atlas.clips).length} clips`;
+  element("basis").textContent = `${atlas.selection.gameplay_id} / ${atlas.selection.source_character} · ${atlas.sourceFrames} source frames · ${Object.keys(atlas.directions).length} ${Object.keys(atlas.directions).length === 1 ? "direction" : "directions"} · ${Object.keys(atlas.clips).length} clips`;
   if (viewMode !== "sprite") {
     element("stage-help").textContent = viewMode === "stick-step" ? "Space or Right Arrow: next frame · Left Arrow: previous frame · twelve walking poses, paused" : "WASD or arrows: move the stick figure · release: stand still";
     element("shortcuts").textContent = "Stick figure motion plan. No painted skin or attack animation.";
     stage.setAttribute("aria-label", `Stick figure playground. ${element("stage-help").textContent}`);
   } else {
     element("stage-help").textContent = `${Object.keys(atlas.directions).length === 1 ? "D or Right arrow to walk; other headings pending" : "WASD or arrows to move"}${supports("cut") ? " · Space to strike" : " · Attack pending"}`;
+    element("shortcuts").textContent = `${supports("guard") ? "Hold G to guard; P starts/stops prayer; " : ""}${supports("hurt") ? "H hurts; " : ""}${supports("death") ? "K defeats; " : ""}R resets. Inputs keep their normal keyboard behavior.`;
     stage.setAttribute("aria-label", `Character playground. ${element("stage-help").textContent}`);
   }
   populateActorControls(); updateClipControls(); cancelSequence();
@@ -453,7 +454,7 @@ function populateActorControls() {
 function wireControls() {
   if (atlas) populateActorControls();
   element("character").addEventListener("change", () => loadCharacter(element("character").value));
-  element("view").addEventListener("change", () => { setView(element("view").value); draw(); });
+  element("view").addEventListener("change", () => { setView(element("view").value); draw(); stage.focus(); });
   element("walk-next").addEventListener("click", () => stepWalking(1));
   element("walk-previous").addEventListener("click", () => stepWalking(-1));
   for (const button of document.querySelectorAll("[data-action]")) button.addEventListener("click", () => act(button.dataset.action));
