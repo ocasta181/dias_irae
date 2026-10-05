@@ -79,3 +79,20 @@ test("taking control during a preset guard completes its exit", () => {
   lab.key("keydown", "w"); lab.step(1000);
   assert.equal(lab.state().player.clip, "walk");
 });
+
+test("movement resumes only for time after strike recovery", () => {
+  const lab = playground(); lab.step(0);
+  lab.key("keydown", "ArrowRight"); lab.key("keydown", " "); lab.step(600);
+  assert.ok(Math.abs(lab.state().position[0] - 464) < 1e-8);
+});
+
+test("strike recovery displacement does not depend on display refresh", () => {
+  function travel(times) {
+    const lab = playground(); lab.step(0);
+    lab.key("keydown", "ArrowRight"); lab.key("keydown", " ");
+    for (const time of times) lab.step(time);
+    return lab.state().position[0];
+  }
+  const frequent = Array.from({ length: 60 }, (_, index) => (index + 1) * 10);
+  assert.ok(Math.abs(travel([600]) - travel(frequent)) < 1e-8);
+});

@@ -197,6 +197,30 @@ function movement() {
   return [x, y];
 }
 
+function advancePreview(delta) {
+  let remaining = delta;
+  while (remaining > 0) {
+    if (keys.size && player.clip === "walk") movement();
+    const before = player.clip;
+    const clip = atlas.clips[before];
+    const rate = Number(element("speed").value) * clipRate / clip.fps;
+    const step = clip.loop || player.terminal ? remaining : Math.min(remaining, (duration(clip) - player.elapsedMs) / rate);
+    const result = advance(player, step * rate, atlas.clips);
+    player = result.player;
+    for (const event of result.events) log(`${player.direction} · ${event}`);
+    if (before !== player.clip) log(`completed: ${before} → ${player.clip}`);
+    if ((keys.size || scheduled.length) && before === "walk") {
+      const [x, y] = keys.size ? movement() : directionVectors[player.direction];
+      const length = Math.hypot(x, y) || 1;
+      const pixels = stage.width / stage.getBoundingClientRect().width;
+      position[0] += x / length * step * .14 * pixels;
+      position[1] += y / length * step * .07 * pixels;
+    }
+    remaining -= step;
+    updateClipControls();
+  }
+}
+
 function tick(time) {
   const delta = lastTime === undefined ? 0 : time - lastTime;
   lastTime = time;
@@ -213,19 +237,7 @@ function tick(time) {
         element("sequence-status").textContent = player.terminal ? "Defeated. Reset character to play again." : "Sequence complete. Keyboard control ready.";
       }
     }
-    const before = player.clip;
-    const result = advance(player, delta * Number(element("speed").value) * clipRate / atlas.clips[player.clip].fps, atlas.clips);
-    player = result.player;
-    for (const event of result.events) log(`${player.direction} · ${event}`);
-    if (before !== player.clip) log(`completed: ${before} → ${player.clip}`);
-    if ((keys.size || scheduled.length) && player.clip === "walk") {
-      const [x, y] = keys.size ? movement() : directionVectors[player.direction];
-      const length = Math.hypot(x, y) || 1;
-      const pixels = stage.width / stage.getBoundingClientRect().width;
-      position[0] += x / length * delta * .14 * pixels;
-      position[1] += y / length * delta * .07 * pixels;
-    }
-    updateClipControls();
+    advancePreview(delta);
   }
   draw();
   requestAnimationFrame(tick);
