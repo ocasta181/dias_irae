@@ -12,7 +12,7 @@ Change `pending` to `accepted`, `revise`, or `rejected`, and write a note. A ran
 |---|---|---|---:|---|---|
 | GP-S | Front | [S v01](pages/guarin-s-v01.png) | 48 | pending | Inspect symmetry, ground anchor, and loop joins. |
 | GP-SE | Front/right | [SE v01](pages/guarin-se-v01.png) | 48 | pending | Closest to source facing; inspect weapon sweep and prayer depth. |
-| GP-E | Right profile | [E v02](pages/guarin-e-v02.png) | 48 | revise | Cut reads as a thrust; a new upstream-only slash page is being generated. |
+| GP-E | Right profile | [E v02](pages/guarin-e-v02.png) | 48 | pending | E v02 supplies 42 poses; [E v03](pages/guarin-e-v03.png) supplies only the six improved cut poses. |
 | GP-NE | Rear/right | [NE v01](pages/guarin-ne-v01.png) | 48 | pending | Rear cloak and far shield; inspect gear continuity and ground anchor. |
 | GP-N | Rear | [N v01](pages/guarin-n-v01.png) | 48 | pending | Solid rear helmet and back cloak; inspect covered limbs in gait. |
 | GP-NW | Rear/left | [NW v02](pages/guarin-nw-v02.png) | 48 | pending | Replaces false front visor on the v01 rear view. |
@@ -25,7 +25,7 @@ Change `pending` to `accepted`, `revise`, or `rejected`, and write a note. A ran
 |---|---|---|---:|---|---|
 | P01 | Idle | idle | 6 | pending | Breathing should be restrained; texture flicker must not replace motion. |
 | P02 | Walk | walk | 6 | pending | Both feet participate; inspect passing/contact, sliding, and pose 6→1. |
-| P03 | Sword cut | cut | 6 | revise | East is being corrected. Keep anticipation, angular sweep, contact, and recovery distinct. |
+| P03 | Sword cut | cut | 6 | pending | East now uses an overhead/downward sweep. Inspect all cut recoveries and silhouette continuity. |
 | P04 | Guard | guard_in / guard_hold / guard_out | 2 / 2 / 2 | pending | Shield must meaningfully cover the body; hold must not replay raising/lowering. |
 | P05 | Hurt | hurt | 6 | pending | Inspect equipment continuity during recoil and recovered stance. |
 | P06 | Death | death | 6 | pending | All directions collapse to the ground; final corpse holds until explicit debug reset. |
@@ -42,9 +42,9 @@ Change `pending` to `accepted`, `revise`, or `rejected`, and write a note. A ran
 - [x] Isolate neighboring figures without changing generated pixels or synthesizing motion.
 - [x] Provide elapsed-time playback, unequal holds, twelve tags, eight facings, frame stepping, speed/rate/scale controls, overlays, and transition tests.
 - [x] Verify walk→cut→walk, guard release, prayer interruption, and terminal death in the browser; twelve deterministic timing/transition tests pass.
-- [ ] Finish the east cut repair and inspect its affected transitions.
+- [x] Repair east cut with six new poses; retain its earlier 42 unaffected poses and verify the selected sources.
 - [ ] Refine approximate foot anchors where in-motion review shows sliding or jumps.
 - [ ] Close remaining gesture/gear continuity and loop-join findings with specific pose repairs.
 - [ ] User approves motion, camera, pixel scale, and texture before final export or game integration.
 
-Original pages are 1086×1448 transparent RGBA PNGs. They are diagnostic animation sources, not tightly packed final game atlases. [atlas.json](atlas.json) defines measured rectangles, offsets, frame timing and events. Pixel hashes prove distinct drawings, not correct motion. Camera angle is estimated rather than calibrated.
+The logical sheet draws from nine unchanged 1086×1448 transparent RGBA PNG pages. Eight supply directional sets; one supplies only the repaired east cut row. They are diagnostic animation sources, not tightly packed final game atlases. [atlas.json](atlas.json) defines measured rectangles, offsets, frame timing and events. Pixel hashes prove distinct drawings, not correct motion. Camera angle is estimated rather than calibrated.

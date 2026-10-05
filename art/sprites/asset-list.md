@@ -52,10 +52,10 @@ The first pilot has eight independently drawn directions, six source frames per 
 These families produce twelve distinct playback clips: idle, walk, cut, guard-in, guard-hold, guard-out, hurt, death, interact, kneel, channel, rise. All have eight directions. The frame limit, actual usable count, and visual defects must be checked on generated pixels.
 
 - [x] Define first-pilot state, direction, timing, and transition coverage.
-- [ ] Capture the live #1 gameplay preference after the inventory check.
-- [ ] Generate and inspect all eight direction pages from the exact upstream references.
+- [x] Capture #1 after the inventory check: G15 / S13; exact time and hashes are in `guarin/selection.json`.
+- [x] Generate and initially inspect all eight directions from G15 / S13. Three wrong-facing pages were excluded; only the improved east cut row is used from its last repair.
 - [ ] Validate transparent cells, distinct poses, bounds, pivots, handedness, and loop motion.
-- [ ] Provide selectable animations, directions, frame stepping, playback speed, alignment guides, and transition tests in the viewer.
+- [x] Provide the [motion lab](guarin/viewer/index.html): twelve tags, eight directions, frame stepping, speed/rate/scale controls, overlays and transition tests. All 96 clip/direction selections load in the browser.
 - [ ] User reviews the pilot in motion at gameplay size.
 
 ## Guarin — campaign expansion and condition assets

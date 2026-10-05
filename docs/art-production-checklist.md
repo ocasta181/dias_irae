@@ -154,13 +154,19 @@ Do not invent pickups or state machines merely to fill a sheet. The story's alta
 
 **Latest authorization, 2026-10-05:** produce the complete first Guarin pilot and its selectable animation viewer after the inventory check, using the current #1 gameplay preference. This does not approve the art or authorize final assets for all other characters. Pilot coverage is eight directions × eight state families × six source frames (384 planned cells), with separate entry/hold/exit tags for guard and prayer. Final campaign abilities remain subject to the draft mechanic decisions recorded in the inventory.
 
+- [x] Capture the saved #1 preference after inventory verification: G15 / S13; [selection, ranking and hashes](../art/sprites/guarin/selection.json) retained.
+- [x] Generate the complete first character study: 384 poses, eight directions, twelve playback tags; preserve exact upstream inputs and exclude failed facings.
+- [x] Produce the [motion lab](../art/sprites/guarin/viewer/index.html), with selectable actions, timing controls, frame inspection, source references and transition demonstration.
+- [x] Check all 96 direction/tag selections in the browser; validate frame regions, alpha, bounds and selective east-cut repair; twelve timing/transition tests pass.
+- [x] Provide [sprite review decisions](../art/sprites/guarin/manifest.md) and [parent findings](../art/sprites/guarin/assessment.md). Foot alignment, loop joins, gesture continuity, camera and final pixel density remain review work.
+
 - [ ] Create and review one small style/animation pilot before producing the full set.
 - [ ] Produce character movement and action sheets from the defined character list.
 - [ ] Produce item and state sheets from the defined item list.
 - [ ] Produce environment tiles/sheets and prop states from the defined environment list.
 - [ ] Validate dimensions, alpha, alignment, frame order, silhouettes, loops and atlas boundaries deterministically.
 - [ ] Review animations in motion at intended gameplay scale, with provisional test lighting.
-- [ ] Record source art, prompts, cleanup, exports and accepted/rejected status in a sprite manifest.
+- [x] Record the first character study's source art, prompts, original bytes, input/output hashes, rejected attempts and pending decisions in its sprite manifest. Other asset categories remain unproduced.
 - [ ] **User approves the sprite set needed for first-level implementation.**
 
 Success: reviewed, consistent sprites and explicit animation/atlas metadata cover the agreed asset lists.
