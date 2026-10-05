@@ -29,4 +29,8 @@ Story source: [character dossiers](../../../story/characters.md). Art proportion
 - Cast identity, age, role, clothing, props and story condition follow the dossiers; no official order badge is assigned to Raimbaut's invented order.
 - Document drift and hold back unusable results; generation completion is not visual approval.
 
-Status: plan defined; generation and review pending. Exact prompts and records will be retained here as the batch progresses.
+Status: **45 current candidates generated and visually inspected**, ready in [the concept review gallery](../index.html#current-styles). Seven groups contain five choices each; the cast contains ten named subjects. Decisions, comments, ordering and direct project saving use the existing review controls. User acceptance remains open before new sprite production.
+
+51 independent calls are preserved: 45 first versions and six repairs across five subjects. The first open-cap face was too young; the first Malta emblem had the wrong geometry; two Agnes versions remained too large; Durand's face was covered; Lambert's first mitre was too tall. Latest inspected files replace these in the gallery while exact source outputs, prompts and records remain here. Every repair receives only the original S13.
+
+Remaining limits are explicit on the cards: face scars drift from the dossier's above-ear cut, two granular face treatments are close, some helmet/construction details are interpretations, Raimbaut's damaged nose is understated, and Isarn's tau became a pendant. These details need review before animation. No output is described as an attested regional costume merely because it resembles an equipment-board reference.

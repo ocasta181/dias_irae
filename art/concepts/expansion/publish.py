@@ -53,7 +53,7 @@ def publish():
         escape = html.escape
         cards.append(f'<article class="card" data-reference="{identifier}" id="{identifier.lower()}"><a class="picture" href="{relative}"><img src="{relative}" alt="{escape(identifier + ' — ' + item["title"])}" loading="lazy"></a><div class="body"><div class="meta">{identifier} · {escape(item["category"])} · {status}</div><h3>{escape(item["title"])}</h3><p>{escape(item["date"] + " · " + item["region"])}</p><p>{escape(item["basis"])}</p><p>{escape(record["parent_visual_review"])}</p><a href="images/s13-guarin-isometric-v02.png">Exact S13 base</a> · <a href="expansion/requests/{versioned_id}.json">Exact generation request</a></div></article>')
     if prior:
-        manifest = manifest[:prior.start()] + section + manifest[prior.end():]
+        manifest = manifest[:prior.start()].rstrip() + section + manifest[prior.end():]
     else:
         manifest = manifest.rstrip() + section
     manifest_path.write_text(manifest)

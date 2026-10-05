@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-05",
+  "current_candidates": 45,
+  "preserved_outputs": 51,
+  "distinct_outputs": 51,
+  "all_images_decode": true,
+  "unchanged_provider_bytes": true,
+  "sole_input_sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c",
+  "prior_review_baseline_commit": "5f4f4ac",
+  "prior_review_rows_preserved": 63,
+  "prior_ranking_preserved": true,
+  "gallery_cards": 90,
+  "publisher_repeat_is_idempotent": true,
+  "category_counts": {
+    "Shields": 5,
+    "One-handed weapons": 5,
+    "Two-handed weapons": 5,
+    "Helmets": 5,
+    "Unhelmeted face styles": 5,
+    "Armor": 5,
+    "Cloaks and tunics": 5,
+    "Story cast": 10
+  }
+}

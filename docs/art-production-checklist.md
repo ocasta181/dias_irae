@@ -9,8 +9,8 @@ Last updated: 2026-10-05. Current stage: **the 24-screen gameplay exploration is
 2026-10-05 next authorized exploration: use exact S13 for [35 equipment/face versions and ten story characters](../art/concepts/expansion/README.md). The [defined list](../art/concepts/expansion/plan.json) fixes category counts, named cast, dates/origins and intentional exceptions before generation. These are concept illustrations, not a new animation batch or first-level implementation.
 
 - [x] Define seven groups of five equipment/face choices and ten dossier-based cast subjects.
-- [ ] Generate and inspect all 45 independent S13-referenced illustrations; record exact inputs and visual limits.
-- [ ] Add the new drawings to the existing concept review gallery with decisions, commentary, ranking and direct saving.
+- [x] Generate and inspect all 45 independent S13-referenced illustrations; record exact inputs and visual limits. Six further calls repair five subjects, giving 51 preserved outputs and 45 current candidates. No previous output is a generation input.
+- [x] Add the new drawings to the existing concept review gallery with decisions, commentary, ranking and direct saving. Preserve all earlier review rows and the saved ordering; new unranked cards begin at the top.
 - [ ] User reviews the equipment and cast exploration before new sprite production.
 
 2026-10-05 decision at commit `ce606ee`: keep the existing sprite sources and animation state logic; make the tester a keyboard-controlled stage with side buttons for named sequences, and collapse detailed inspection tools by default. Confidence: 98%, based on the user's explicit control and layout request. This changes the static app only; no endpoint or persistence schema change is needed.
