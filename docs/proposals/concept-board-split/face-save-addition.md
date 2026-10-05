@@ -1,6 +1,8 @@
-# Independent face and equipment saving — proposed contract 2
+# Independent face and equipment saving — contract 2
 
-Status: prepared, awaiting the explicit affirmative approval required by the supplied AGENTS.md section 15. The current service contract remains version 1.
+Status: approved by the user's 2026-10-05 instruction: “Actually no save button should exist. any change to the front end should automatically be saved instantly.” This directly authorizes project saving on the face page after these exact destinations were presented for approval. Implement contract 2 before its dependent client.
+
+Decision at commit `42cc6f85b51a3129da5715df0850a8c75062b769`, confidence 96%: the user's explicit automatic-save instruction approves the previously presented face/equipment save destinations and replaces the proposed button interaction. Save review content (order, comments and decisions) automatically on the four concept exploration boards. View controls retain their existing display behavior. The already approved reference mood boards retain their separate export behavior.
 
 Decision at commit `866b128`, 2026-10-05, confidence 98%: keep three distinct review galleries: the earlier character style exploration, equipment/cast exploration, and Guarin face exploration. The latest face request places V21–V25 with the 30 new face studies. This updates the earlier two-page split proposal; no source image is moved or regenerated for the split.
 

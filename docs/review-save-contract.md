@@ -1,4 +1,4 @@
-# Direct review saving — contract 1
+# Automatic review saving — contract 2
 
 Status: explicitly approved by the user on 2026-10-05 under the supplied AGENTS.md, section 15. Approval also covers reading the relevant Brave review, including its comments and decisions.
 
@@ -23,12 +23,14 @@ Add `POST /api/review` with `Content-Type: application/json` and this exact requ
 }
 ```
 
-`board` is exactly `concepts` or `gameplay`. These map to fixed project paths:
+`board` is exactly `concepts`, `gameplay`, `expansion` or `faces`. The user authorized automatic project saving on 2026-10-05 after the two added destinations were presented in [contract 2](proposals/concept-board-split/face-save-addition.md). These map to fixed project paths:
 
 | Board | Destination |
 |---|---|
 | `concepts` | `art/concepts/manifest.md` |
 | `gameplay` | `art/concepts/gameplay/manifest.md` |
+| `expansion` | `art/concepts/expansion/manifest.md` |
+| `faces` | `art/concepts/faces/manifest.md` |
 
 No caller-supplied filesystem path is accepted. SHA-256 means Secure Hash Algorithm with a 256-bit result; it detects another save or edit made since this page loaded.
 
@@ -56,9 +58,9 @@ Bind only to `127.0.0.1`. Accept writes only from `http://127.0.0.1:8765` or `ht
 
 Before replacing a manifest, retain a dated copy in that board's `review-history` folder. Write the replacement atomically. No database is used. No saved browser review is deleted.
 
-## Button behavior
+## Automatic saving
 
-Save review keeps the browser draft, sends the complete review to the fixed local destination and shows success only after the server confirms the write. It updates the baseline for the next save. There is no download, file picker, manual file placement or extra user action on a normal save. A failed save leaves the draft intact and displays the error.
+Every change to ordering, commentary or decisions keeps a browser draft and sends the complete review to the fixed local destination. There is no Save button, download, file picker or manual file placement. Writes are serialized; rapid edits retain the latest complete review and use each confirmed baseline for the next write. Success appears only after the server confirms the latest write. Failed saves preserve the draft and show the error. Transient failures retry automatically; stale-save conflicts require reconciliation and cannot overwrite another review.
 
 The two approved mood boards retain their current review/export behavior; this change applies to the current concept review and the requested four gameplay-screen examples.
 

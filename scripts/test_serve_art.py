@@ -78,13 +78,36 @@ def test_save_preserves_the_complete_review_and_recoverable_original(
     )
 
 
-def test_repeated_save_uses_the_confirmed_baseline(review_server):
-    _, first = post(review_server, request())
+@pytest.mark.parametrize("board", BOARDS)
+def test_repeated_save_uses_the_confirmed_baseline(review_server, board):
+    _, first = post(review_server, request(board))
     second_content = UPDATED.replace("Muddy", "Dreary")
     status, result = post(
-        review_server, request(manifest=second_content, baseline=first["baseline"])
+        review_server,
+        request(board, manifest=second_content, baseline=first["baseline"]),
     )
     assert (status, result["baseline"]) == (200, digest(second_content.encode()))
+
+
+@pytest.mark.parametrize("board", BOARDS)
+def test_order_alone_is_saved_without_changing_comments(review_server, board):
+    ordered = INITIAL + "\n## Preference ranking\n\n1. S01\n"
+    status, result = post(review_server, request(board, manifest=ordered))
+    assert (
+        status,
+        result["baseline"],
+        (review_server.root / BOARDS[board]).read_text(),
+    ) == (200, digest(ordered.encode()), ordered)
+
+
+def test_each_board_keeps_an_independent_review_and_baseline(review_server):
+    for board in BOARDS:
+        content = UPDATED.replace("Muddy", board)
+        status, result = post(review_server, request(board, manifest=content))
+        assert (status, result["path"]) == (200, BOARDS[board])
+    assert {
+        board: (review_server.root / path).read_text() for board, path in BOARDS.items()
+    } == {board: UPDATED.replace("Muddy", board) for board in BOARDS}
 
 
 def test_stale_save_cannot_overwrite_a_newer_review(review_server):
@@ -169,11 +192,12 @@ def test_write_failure_preserves_the_original_review(review_server, monkeypatch)
     ) == (500, False, INITIAL)
 
 
-def test_reload_embeds_the_saved_review_without_executable_markup(review_server):
+@pytest.mark.parametrize("board", BOARDS)
+def test_reload_embeds_the_saved_review_without_executable_markup(review_server, board):
     content = UPDATED.replace("Muddy", "</script><script>not executable</script>")
-    post(review_server, request(manifest=content))
+    post(review_server, request(board, manifest=content))
     connection = http.client.HTTPConnection(*review_server.server_address)
-    connection.request("GET", "/art/concepts/index.html?v=16")
+    connection.request("GET", "/" + BOARDS[board].replace("manifest.md", "index.html"))
     response = connection.getresponse()
     html = response.read().decode()
     connection.close()

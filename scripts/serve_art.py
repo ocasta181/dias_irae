@@ -16,6 +16,8 @@ ROOT = Path(__file__).resolve().parents[1]
 BOARDS = {
     "concepts": "art/concepts/manifest.md",
     "gameplay": "art/concepts/gameplay/manifest.md",
+    "expansion": "art/concepts/expansion/manifest.md",
+    "faces": "art/concepts/faces/manifest.md",
 }
 ORIGINS = {"http://127.0.0.1:8765", "http://localhost:8765"}
 MAX_REQUEST = 1_048_576
