@@ -1,0 +1,62 @@
+{
+  "basis": "measured painted pixels, not planned targets",
+  "source": "E-walk-v07-01-guide-first-grok-v01.jpg",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "registration": "one fixed full-output scale 128/width plus logical offset (32,56)",
+  "method": "Human-identified visible paw regions; non-green lowest edge midpoint",
+  "uncertaintyPx": 1,
+  "targetBudgetPx": 3,
+  "observations": {
+    "RF": {
+      "region": [
+        540,
+        735,
+        116,
+        79
+      ],
+      "pointRaw": [
+        604.5,
+        808
+      ],
+      "pointLogical": [
+        107.5625,
+        157
+      ],
+      "target": [
+        113.5,
+        161.65685424949237
+      ],
+      "errorPx": 7.545872895233203
+    },
+    "RH": {
+      "region": [
+        360,
+        714,
+        102,
+        65
+      ],
+      "pointRaw": [
+        406.5,
+        772
+      ],
+      "pointLogical": [
+        82.8125,
+        152.5
+      ],
+      "target": [
+        72.5,
+        161.65685424949237
+      ],
+      "errorPx": 13.791143389742796
+    }
+  },
+  "passed": false,
+  "notes": [
+    "Putting the stick first did not alter the standing paw configuration.",
+    "Two independent fresh Grok calls received both verified references; neither follows the approved frame.",
+    "Reference-only guidance is insufficient; stop this method before generating the 96-frame batch."
+  ]
+}

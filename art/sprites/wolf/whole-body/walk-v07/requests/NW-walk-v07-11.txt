@@ -1,0 +1,10 @@
+Call native image_edit exactly once with the following exact arguments. Do not generate another image, call video, use prior sessions or images, or change privacy. Return the actual image path and stop.
+{
+  "tool": "image_edit",
+  "prompt": "Render ONE whole-body wolf matching image 1's exact enormous head, tiny squat torso, short thick legs, tiny weary eyes, grey-brown markings and rough flat dry-painted 2D game style, in rear three-quarter view facing upper left, at the same elevated 45-degree orthographic game camera. Image 2 is the approved pose: keep the head/torso/tail on its fixed lines and place each paw exactly at its line endpoint, with natural canine shoulder-elbow-carpus-paw and hip-stifle-hock-paw anatomy, one connected animal rather than separate pieces. Maintain this matching square canvas and scale; nose anchor is (30.06,46.00) and invisible ground root is (64,100) in a 128-square coordinate system; preserve the upper-body registration, coat texture and proportions while changing only the view and limb pose required by the guide. The figure stays fully inside the canvas on uniform solid #00ff00 with no ground shadow, diagram strokes, text, realistic long legs, big cartoon eyes, 3D rendering or glossy volume shading. This is pose 11/12, midpoint 0.875000, held for 83.333 ms; match the following anatomical joint rows in the crop's logical coordinates (four points per leg, hip/shoulder first and paw last):\nLH swing: (69.66,96.44) -> (62.26,95.37) -> (69.93,105.87) -> (66.04,106.43)\nLF planted: (47.03,80.44) -> (53.91,88.94) -> (55.16,98.21) -> (54.45,101.25)\nRH planted: (80.97,88.44) -> (76.60,92.63) -> (84.86,102.51) -> (82.03,104.75)\nRF planted: (58.34,72.44) -> (60.84,81.58) -> (53.75,81.21) -> (53.04,84.25)",
+  "image": [
+    "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/canonical-crop.png",
+    "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/guides/NW-walk-v07-11.png"
+  ],
+  "aspect_ratio": "1:1"
+}

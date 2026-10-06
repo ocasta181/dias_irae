@@ -1,0 +1,10 @@
+Call native image_edit exactly once with the following exact arguments. Use no other reference, prior session, failed painting or video tool. Do not change privacy. Return the actual output path and stop.
+{
+  "tool": "image_edit",
+  "image": [
+    "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/guides/E-walk-v07-01.png",
+    "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/canonical-crop.png"
+  ],
+  "aspect_ratio": "1:1",
+  "prompt": "Fill the black wolf stick drawing in IMAGE 1 with a complete intact wolf painted in IMAGE 2's exact gritty muted grey-brown 2D game style, enormous head, tiny squat body, very short thick legs, tiny weary eyes and coat markings. IMAGE 1 is the edit target and controls every leg pose and the exact square-canvas placement; IMAGE 2 supplies identity and texture only. The planted paw underside must end at each stick leg's endpoint; the far forepaw is lifted and folded forward, the near hindpaw is extended backward, and the body/head remain fixed, with a naturally connected neck and torso and proper canine joints. Render a right-facing wolf from the same elevated 45-degree orthographic camera, on perfectly uniform #00ff00, removing every guide stroke without a ground shadow, labels, extra limbs, realistic long legs, 3D shading or a change in proportions. Use the same 128-square logical layout as IMAGE 1 (8 output pixels per unit if 1024-square); each paw coordinate below is the centre of its underside, not the centre of the paw's painted mass; shoulder/hip, elbow/stifle, carpus/hock, underside coordinates follow:\nLH planted: (48.00,78.79) -> (59.34,81.57) -> (54.50,90.10) -> (58.50,94.34)\nLF swing: (80.00,78.79) -> (69.13,79.99) -> (72.56,88.12) -> (74.89,91.33)\nRH planted: (48.00,90.10) -> (48.86,98.56) -> (36.50,101.41) -> (40.50,105.66)\nRF planted: (80.00,90.10) -> (72.50,95.79) -> (80.50,102.12) -> (81.50,105.66)"
+}
