@@ -1,0 +1,610 @@
+{
+  "sourceDrawings": 18,
+  "paintedFrames": 30,
+  "completedCandidateSheets": 0,
+  "productionApproved": false,
+  "rows": [
+    {
+      "direction": "N",
+      "painted": 3,
+      "poses": [
+        {
+          "id": "N-01",
+          "pose": 1,
+          "image": "frames/N-01.png",
+          "sha256": "785270c0df77766bceb1a9ec2674fed67fda1d359086ef0c25fded5aaee94a5c",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "N-01-03",
+          "reflected": false
+        },
+        {
+          "id": "N-02",
+          "pose": 2,
+          "image": "frames/N-02.png",
+          "sha256": "892f3d80349603421c26520d07a260d202669d1e22b646367dbe6dc96ed10b88",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "N-01-03",
+          "reflected": false
+        },
+        {
+          "id": "N-03",
+          "pose": 3,
+          "image": "frames/N-03.png",
+          "sha256": "12b5113f4251a55904b5111771cf3b9e11a432ab264436666d4a818a903d3f80",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "N-01-03",
+          "reflected": false
+        }
+      ],
+      "complete": false
+    },
+    {
+      "direction": "NE",
+      "painted": 3,
+      "poses": [
+        {
+          "id": "NE-01",
+          "pose": 1,
+          "image": "frames/NE-01.png",
+          "sha256": "68467e667d4b9f000acc996ea01619eade1d58675d1d3b59e1901b25b29d3199",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "NE-01-03",
+          "reflected": false
+        },
+        {
+          "id": "NE-02",
+          "pose": 2,
+          "image": "frames/NE-02.png",
+          "sha256": "fd6531d9f3002710e13262c01f24d10936ea686a445c0b3d3c5bfe73b2464216",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "NE-01-03",
+          "reflected": false
+        },
+        {
+          "id": "NE-03",
+          "pose": 3,
+          "image": "frames/NE-03.png",
+          "sha256": "1c2b0a598cb766f562b23c686f036405be8f4120a8ef5b2e7cb2cdd740445ef4",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "NE-01-03",
+          "reflected": false
+        }
+      ],
+      "complete": false
+    },
+    {
+      "direction": "E",
+      "painted": 6,
+      "poses": [
+        {
+          "id": "E-01",
+          "pose": 1,
+          "image": "frames/E-01.png",
+          "sha256": "f2448a3009f94eb8abd5ba005c1068a20eef277bd12b2a1e3a6d4cbb0af0bfd4",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "E-01-03",
+          "reflected": false
+        },
+        {
+          "id": "E-02",
+          "pose": 2,
+          "image": "frames/E-02.png",
+          "sha256": "b7153ad62a9ae51298a65c6d0e963d5bbf29ca08ee083843d2eb1dbfe6923308",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "E-01-03",
+          "reflected": false
+        },
+        {
+          "id": "E-03",
+          "pose": 3,
+          "image": "frames/E-03.png",
+          "sha256": "cc978b1dbb59c0a39a8fba20c47ed0adf7e89216eb8b4f1f0e4c5f9303b517c6",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "E-01-03",
+          "reflected": false
+        },
+        {
+          "id": "E-04",
+          "pose": 4,
+          "image": "frames/E-04.png",
+          "sha256": "d6f3b0c324a2b8b1360798464584d9b3e256147f818c03becde0dec199c2e543",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "E-04-06",
+          "reflected": false
+        },
+        {
+          "id": "E-05",
+          "pose": 5,
+          "image": "frames/E-05.png",
+          "sha256": "89781859573d8e3557fbb933bddc93047e10f910b167a498efd11bbfcfb80660",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "E-04-06",
+          "reflected": false
+        },
+        {
+          "id": "E-06",
+          "pose": 6,
+          "image": "frames/E-06.png",
+          "sha256": "5d763d170ab1a51c36926f9676a5df0988de78f4f2bc83c15f71a4b4dd8a0198",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "E-04-06",
+          "reflected": false
+        }
+      ],
+      "complete": false
+    },
+    {
+      "direction": "SE",
+      "painted": 3,
+      "poses": [
+        {
+          "id": "SE-01",
+          "pose": 1,
+          "image": "frames/SE-01.png",
+          "sha256": "777c90f4e55b222bed18330ce642944095e493f82b846b6552e22d2740206e26",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "SE-01-03",
+          "reflected": false
+        },
+        {
+          "id": "SE-02",
+          "pose": 2,
+          "image": "frames/SE-02.png",
+          "sha256": "c98cff34b74f873199b5a774b6a8be49f5cc644ad30956ccbf7c1a19d92119dd",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "SE-01-03",
+          "reflected": false
+        },
+        {
+          "id": "SE-03",
+          "pose": 3,
+          "image": "frames/SE-03.png",
+          "sha256": "588540122b0f1f11241e79bac0daea5d3dc938103d69d500f47d71fbd9acd584",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "SE-01-03",
+          "reflected": false
+        }
+      ],
+      "complete": false
+    },
+    {
+      "direction": "S",
+      "painted": 3,
+      "poses": [
+        {
+          "id": "S-01",
+          "pose": 1,
+          "image": "frames/S-01.png",
+          "sha256": "1bf005eee742fb0f240b50cf9ea307a9a436cfc9522ff38ea5ca99b6ad7e1283",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "S-01-03",
+          "reflected": false
+        },
+        {
+          "id": "S-02",
+          "pose": 2,
+          "image": "frames/S-02.png",
+          "sha256": "b880e6329cc95abaf51e1afc9dea9904569712e482615cfc5af4ae2aae770407",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "S-01-03",
+          "reflected": false
+        },
+        {
+          "id": "S-03",
+          "pose": 3,
+          "image": "frames/S-03.png",
+          "sha256": "a46af3b2818086a5040b50bc5743bf4816df1b7080da9d6454b65e950e7092bc",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "S-01-03",
+          "reflected": false
+        }
+      ],
+      "complete": false
+    },
+    {
+      "direction": "SW",
+      "painted": 3,
+      "poses": [
+        {
+          "id": "SW-07",
+          "pose": 7,
+          "image": "frames/SW-07.png",
+          "sha256": "768f43d82ae001ff146ddeca2cc61987ed32196efc2b56bc52c1abc4bf23077f",
+          "page": "SE-01-03",
+          "reflected": true,
+          "sourceFacing": "SE",
+          "sourcePose": 1,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "SW-08",
+          "pose": 8,
+          "image": "frames/SW-08.png",
+          "sha256": "62c25f811e5b683f53f3721f818294229af92fe6b053405d09fa21982cccaa89",
+          "page": "SE-01-03",
+          "reflected": true,
+          "sourceFacing": "SE",
+          "sourcePose": 2,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "SW-09",
+          "pose": 9,
+          "image": "frames/SW-09.png",
+          "sha256": "4ac389fe6d375ae113a8b852feca24b2fc25eda4c0311a99269cd135996584d7",
+          "page": "SE-01-03",
+          "reflected": true,
+          "sourceFacing": "SE",
+          "sourcePose": 3,
+          "quality": "candidate; actual pose/contact measurements pending"
+        }
+      ],
+      "complete": false
+    },
+    {
+      "direction": "W",
+      "painted": 6,
+      "poses": [
+        {
+          "id": "W-07",
+          "pose": 7,
+          "image": "frames/W-07.png",
+          "sha256": "44359c23604b07c65c1330878ebd14a30f7f3a146925ebbac43809983cb5f595",
+          "page": "E-01-03",
+          "reflected": true,
+          "sourceFacing": "E",
+          "sourcePose": 1,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "W-08",
+          "pose": 8,
+          "image": "frames/W-08.png",
+          "sha256": "69503971cdd705d465433d45cf1bf6c9bdad5e54332d88c417e487bf32b3b5a3",
+          "page": "E-01-03",
+          "reflected": true,
+          "sourceFacing": "E",
+          "sourcePose": 2,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "W-09",
+          "pose": 9,
+          "image": "frames/W-09.png",
+          "sha256": "797d981ba1b403dbb07879bd74f43c2563f548da943b45c70f57c22eb71790ca",
+          "page": "E-01-03",
+          "reflected": true,
+          "sourceFacing": "E",
+          "sourcePose": 3,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "W-10",
+          "pose": 10,
+          "image": "frames/W-10.png",
+          "sha256": "04a1d9e2dcca681febb0c3f626161bb81bbd248379de9692ca5ae64c0eb9c8f4",
+          "page": "E-04-06",
+          "reflected": true,
+          "sourceFacing": "E",
+          "sourcePose": 4,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "W-11",
+          "pose": 11,
+          "image": "frames/W-11.png",
+          "sha256": "e7603a5c37785d7bfe649b034732081e02997abc27190f3f65356bf2f08d5eb4",
+          "page": "E-04-06",
+          "reflected": true,
+          "sourceFacing": "E",
+          "sourcePose": 5,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "W-12",
+          "pose": 12,
+          "image": "frames/W-12.png",
+          "sha256": "38d4694e152c6c0b2bd25e8b1bf57fb16a50fd3c1416733ed14a991cb5c25dd4",
+          "page": "E-04-06",
+          "reflected": true,
+          "sourceFacing": "E",
+          "sourcePose": 6,
+          "quality": "candidate; actual pose/contact measurements pending"
+        }
+      ],
+      "complete": false
+    },
+    {
+      "direction": "NW",
+      "painted": 3,
+      "poses": [
+        {
+          "id": "NW-07",
+          "pose": 7,
+          "image": "frames/NW-07.png",
+          "sha256": "6f35c06f89c42966fda5024062d6b5ef5731b0c4c5772ee5ed97fc0e6d23be7c",
+          "page": "NE-01-03",
+          "reflected": true,
+          "sourceFacing": "NE",
+          "sourcePose": 1,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "NW-08",
+          "pose": 8,
+          "image": "frames/NW-08.png",
+          "sha256": "318c802f2d45c33ce03755c614e0c8650bec2085bea7425bcb659535d210011d",
+          "page": "NE-01-03",
+          "reflected": true,
+          "sourceFacing": "NE",
+          "sourcePose": 2,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "NW-09",
+          "pose": 9,
+          "image": "frames/NW-09.png",
+          "sha256": "93577c2aa1f660a12824717029d6cfdc023ce71aae3d37f539c5c8efc1fcb82d",
+          "page": "NE-01-03",
+          "reflected": true,
+          "sourceFacing": "NE",
+          "sourcePose": 3,
+          "quality": "candidate; actual pose/contact measurements pending"
+        }
+      ],
+      "complete": false
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "tool": "built-in image_gen",
+  "actual_input": {
+    "prompt": "Use case: precise-object-edit. Draw exactly THREE complete whole-body wolf game sprites in the supplied wide registered template, one per bordered cell, ordered left to right. Image 1 is the ORIGINAL approved appearance basis: preserve its huge broad head, tiny squat torso, very short thick canine legs, small weary eyes, ears, grey-brown coat markings and gritty matte dry-painted flat 2D game medium. Image 2 is a fresh pose-shaped authoring template with the exact silhouettes/contact markers. Image 3 is the literal approved skeletal pose sequence. Geometry comes from images 2 and 3; image 1 supplies appearance only. Do not substitute the standing pose of image 1. No prior failed painting is an input.\nAll three face elevated right profile from the same 45-degree elevated orthographic camera. The animal remains a quadruped with a horizontal canine torso viewed from above, never an upright/biped creature. Fill the posed regions with one organically connected furry wolf per cell, with correct canine stifle/hock and elbow/carpus anatomy. Keep the head/spine/camera/scale and coat features identical across all three; only the specified limbs change. No 3D rendering, realistic tall anatomy, enlarged eyes, exposed paw pads, extra limbs, background props or cast shadow.\nEach cell is exactly 128×128 logical units, independent local coordinates. Keep every cyan cross at the paw UNDERSIDE EDGE MIDPOINT while painting, then erase the crosses. Respect planted versus swinging identities and all joint rows below; limbs may naturally occlude but must not relocate. Retain all THREE black cell borders, the full wide canvas, original cell margins and solid pure #00ff00 background; do not zoom, crop, recenter or rearrange. No labels or extra figures.\nCOLUMN 1: approved E walking pose 1/12. Spine/hip 48.00,84.44; shoulder 80.00,84.44.\nLH PLANTED: (48.00,78.79) → (59.34,81.57) → (54.50,90.10) → (58.50,94.34)\nLF SWING: (80.00,78.79) → (69.13,79.99) → (72.56,88.12) → (74.89,91.33)\nRH PLANTED: (48.00,90.10) → (48.86,98.56) → (36.50,101.41) → (40.50,105.66)\nRF PLANTED: (80.00,90.10) → (72.50,95.79) → (80.50,102.12) → (81.50,105.66)\n\nCOLUMN 2: approved E walking pose 2/12. Spine/hip 48.00,84.44; shoulder 80.00,84.44.\nLH PLANTED: (48.00,78.79) → (58.80,82.49) → (51.50,90.10) → (55.50,94.34)\nLF SWING: (80.00,78.79) → (72.12,84.22) → (82.78,88.12) → (85.11,91.33)\nRH PLANTED: (48.00,90.10) → (45.80,98.44) → (33.50,101.41) → (37.50,105.66)\nRF PLANTED: (80.00,90.10) → (71.30,94.86) → (77.50,102.12) → (78.50,105.66)\n\nCOLUMN 3: approved E walking pose 3/12. Spine/hip 48.00,84.44; shoulder 80.00,84.44.\nLH PLANTED: (48.00,78.79) → (57.80,83.68) → (48.50,90.10) → (52.50,94.34)\nLF SWING: (80.00,78.79) → (79.68,86.56) → (90.39,90.39) → (91.95,93.83)\nRH SWING: (48.00,90.10) → (43.53,97.98) → (31.39,101.25) → (36.05,105.14)\nRF PLANTED: (80.00,90.10) → (70.57,94.10) → (74.50,102.12) → (75.50,105.66)",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/canonical-crop.png",
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/E-01-03.png",
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/E-01-03.png"
+    ],
+    "transparent_background": false
+  },
+  "originalPath": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-addfd5f1-f2d0-4308-bb06-779e46ed1c67.png",
+  "rawSha256": "5bb21501813b05b15e7ff504060ae2e824725fda2a987d71fa3f543a24614ed7",
+  "dimensions": [
+    2172,
+    724
+  ],
+  "frames": [
+    {
+      "id": "E-01",
+      "pose": 1,
+      "image": "frames/E-01.png",
+      "sha256": "f2448a3009f94eb8abd5ba005c1068a20eef277bd12b2a1e3a6d4cbb0af0bfd4",
+      "rawCell": [
+        0,
+        0,
+        724,
+        724
+      ],
+      "registration": {
+        "scale": 0.17679558011049723,
+        "offset": [
+          32,
+          56
+        ]
+      },
+      "residualMarkerPixels": 0,
+      "quality": "candidate; actual pose/contact measurements pending"
+    },
+    {
+      "id": "E-02",
+      "pose": 2,
+      "image": "frames/E-02.png",
+      "sha256": "b7153ad62a9ae51298a65c6d0e963d5bbf29ca08ee083843d2eb1dbfe6923308",
+      "rawCell": [
+        724,
+        0,
+        724,
+        724
+      ],
+      "registration": {
+        "scale": 0.17679558011049723,
+        "offset": [
+          32,
+          56
+        ]
+      },
+      "residualMarkerPixels": 0,
+      "quality": "candidate; actual pose/contact measurements pending"
+    },
+    {
+      "id": "E-03",
+      "pose": 3,
+      "image": "frames/E-03.png",
+      "sha256": "cc978b1dbb59c0a39a8fba20c47ed0adf7e89216eb8b4f1f0e4c5f9303b517c6",
+      "rawCell": [
+        1448,
+        0,
+        724,
+        724
+      ],
+      "registration": {
+        "scale": 0.17679558011049723,
+        "offset": [
+          32,
+          56
+        ]
+      },
+      "residualMarkerPixels": 0,
+      "quality": "candidate; actual pose/contact measurements pending"
+    }
+  ],
+  "failedArtInputs": false,
+  "registration": "One uniform page/cell scale, fixed whole-frame placement; no per-silhouette fitting or runtime parts."
+}
