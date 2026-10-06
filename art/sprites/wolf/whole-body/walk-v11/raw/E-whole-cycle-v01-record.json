@@ -1,0 +1,190 @@
+{
+  "tool": "built-in image_gen",
+  "request": "../requests/E-whole-cycle.json",
+  "originalPath": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-6ad2b371-fc3d-41e5-b698-bc119d113e42.png",
+  "rawSha256": "0e1dda7e246a6518da20b48508d237e41ef5497a0feeae31857019ad922298da",
+  "status": "rejected; independent whole-body and paw-path review fails; not installed",
+  "dimensions": [
+    1448,
+    1086
+  ],
+  "registration": {
+    "scale": 0.35359116022099446,
+    "offset": [
+      32,
+      56
+    ],
+    "policy": "One page-level cell scale and fixed placement; no nose fitting, per-pose transforms or painted parts."
+  },
+  "frames": [
+    {
+      "id": "E-01",
+      "filename": "frames/E-01-v01.png",
+      "rawCell": [
+        0,
+        0,
+        362,
+        362
+      ],
+      "sha256": "2dbdb00ed9c9e1d2e5fd5c7479ebc3bd08eba4419a60f524d210c93fe6b47de5",
+      "status": "held pending measurement"
+    },
+    {
+      "id": "E-02",
+      "filename": "frames/E-02-v01.png",
+      "rawCell": [
+        362,
+        0,
+        362,
+        362
+      ],
+      "sha256": "17f9093c871b8fe1c994725665e4ae84d4178dc93dd8d80d7aa01d27fa929bee",
+      "status": "held pending measurement"
+    },
+    {
+      "id": "E-03",
+      "filename": "frames/E-03-v01.png",
+      "rawCell": [
+        724,
+        0,
+        362,
+        362
+      ],
+      "sha256": "241eae0da3f029c4775667c86fb87cb1898bfd44cca62239d95b296319a4f6b6",
+      "status": "held pending measurement"
+    },
+    {
+      "id": "E-04",
+      "filename": "frames/E-04-v01.png",
+      "rawCell": [
+        1086,
+        0,
+        362,
+        362
+      ],
+      "sha256": "c9eea8bc8602beac63e8b5565108a9ee4096c6832531d515a1ff678b48341618",
+      "status": "held pending measurement"
+    },
+    {
+      "id": "E-05",
+      "filename": "frames/E-05-v01.png",
+      "rawCell": [
+        0,
+        362,
+        362,
+        362
+      ],
+      "sha256": "7e198aef41e1003d7fe60200730857377e1ed5afb4e2b154df5a4d6922207ec4",
+      "status": "held pending measurement"
+    },
+    {
+      "id": "E-06",
+      "filename": "frames/E-06-v01.png",
+      "rawCell": [
+        362,
+        362,
+        362,
+        362
+      ],
+      "sha256": "04a941d0624994473fbbaaf1afcec76c6a85819b1ad06a6e01b3c44437e90795",
+      "status": "held pending measurement"
+    },
+    {
+      "id": "E-07",
+      "filename": "frames/E-07-v01.png",
+      "rawCell": [
+        724,
+        362,
+        362,
+        362
+      ],
+      "sha256": "2ba74b4258736037dee8aecf0259944119f559eaae2061f236483cab3d701b63",
+      "status": "held pending measurement"
+    },
+    {
+      "id": "E-08",
+      "filename": "frames/E-08-v01.png",
+      "rawCell": [
+        1086,
+        362,
+        362,
+        362
+      ],
+      "sha256": "fd2cd55c3b3ebc82a5665ba6a79791bb61d4e8e32294b0b877b332b2d328ce67",
+      "status": "held pending measurement"
+    },
+    {
+      "id": "E-09",
+      "filename": "frames/E-09-v01.png",
+      "rawCell": [
+        0,
+        724,
+        362,
+        362
+      ],
+      "sha256": "ca80a4be118fa36ce558db52242d36b4eb26fc9aa0693308d00310b295ad984b",
+      "status": "held pending measurement"
+    },
+    {
+      "id": "E-10",
+      "filename": "frames/E-10-v01.png",
+      "rawCell": [
+        362,
+        724,
+        362,
+        362
+      ],
+      "sha256": "912d4923e8d813a41ae7cefe00d016dd4d029eff6d622ecbbaac2ec2fb5031b7",
+      "status": "held pending measurement"
+    },
+    {
+      "id": "E-11",
+      "filename": "frames/E-11-v01.png",
+      "rawCell": [
+        724,
+        724,
+        362,
+        362
+      ],
+      "sha256": "fe4eb211d2c2a578c2c76218fd65bc470dff8c3c1db212516110a73612c5d04e",
+      "status": "held pending measurement"
+    },
+    {
+      "id": "E-12",
+      "filename": "frames/E-12-v01.png",
+      "rawCell": [
+        1086,
+        724,
+        362,
+        362
+      ],
+      "sha256": "a172c91bf3c3bec952826c11e8f5cf931cb76f86e0c19fda466896b26e830f0c",
+      "status": "held pending measurement"
+    }
+  ],
+  "actual_input": {
+    "prompt": "Asset: ONE COMPLETE 12-DRAWING WALK CYCLE, not a concept sheet. Exactly four columns by three rows; 12 square cells in chronological row-major order. All twelve intact wolves face screen RIGHT, from a fixed 45-degree elevated orthographic camera. Flat gritty hand-drawn 2D game paint, no 3D, tiny squat body and short thick legs under a disproportionately huge broad head. Image 1 is the ORIGINAL wolf identity and fur/style basis ONLY. Image 2 is a fresh whole-body pose/volume control; image 3 is its fresh skeleton. Copy geometry/registration from controls, not the standing pose from image1. No failed animation is provided.\nDraw a single organically connected animal in EVERY frame. The body moves as one coordinated animal: shoulder/chest roll and compression with the planted foreleg, haunch rotation and abdomen deformation with the hind step, attached neck/head counter-movement, short tail response, ruff and fur tufts following the bending masses. DO NOT freeze/copy the head, back or torso while changing only the legs. DO NOT create separate body parts or a paper-puppet rig. Preserve the same head/body VOLUMES and stable grey-brown coat patches while their pose changes; dirt/fur pattern must follow the skin, never random flickering redraws. Body/head excursions in the numerical controls are intentionally under 1.3 logical units; keep the walk restrained and grounded, not bouncing/flailing.\nThe 12 poses describe ONE calm four-beat walk over ONE second, not repeated generic walk keys. Every planted paw retreats exactly 3 logical units per sampled frame relative to the fixed body root, matching 36 logical units/second ground travel. Each swing travels backward→raised passing→forward landing in its own anatomical lane. Near RH/RF must not swap with far LH/LF. Canine foreleg shoulder-elbow-carpus-paw; hind hip-stifle-hock-paw. The complete loop must close at frame12→1, including head, chest, haunch, neck and coat. Design all12 together so there are no trio-boundary appearance resets.\nMaintain the exact 4×3 square-cell template, full 2048×1536 canvas with black dividers and pure #00ff00 background, no cast shadow. Each cell is128×128 logical units. Coordinates below are local within each cell; a paw coordinate is its underside-edge midpoint. Cell crop is the same for all12; no individual zoom/recenter, no viewpoint changes, no missing/extra figures. Remove all guide lines from the finished animals, retain cell borders for deterministic extraction. No lettering, no props, no ground, no captions.\nFRAME 1, row 1 column 1; hold 83.333 ms. Hip→shoulder (48.13,84.87)→(80.13,84.24); shoulder→neck/head→nose (80.13,84.24)→(89.90,71.83)→(111.90,70.27).\nLH STANCE: (48.13,79.21)→(59.58,81.64)→(54.50,90.10)→(58.50,94.34)\nLF SWING: (80.13,78.58)→(69.33,79.95)→(72.56,88.12)→(74.89,91.33)\nRH STANCE: (48.13,90.53)→(49.00,98.88)→(36.50,101.41)→(40.50,105.66)\nRF STANCE: (80.13,89.89)→(72.83,95.60)→(80.50,102.12)→(81.50,105.66)\n\nFRAME 2, row 1 column 2; hold 83.333 ms. Hip→shoulder (48.35,85.38)→(80.35,84.11); shoulder→neck/head→nose (80.35,84.11)→(90.10,71.62)→(112.10,70.14).\nLH STANCE: (48.35,79.72)→(59.37,82.78)→(51.50,90.10)→(55.50,94.34)\nLF SWING: (80.35,78.45)→(72.58,83.65)→(82.78,88.12)→(85.11,91.33)\nRH STANCE: (48.35,91.04)→(46.07,99.07)→(33.50,101.41)→(37.50,105.66)\nRF STANCE: (80.35,89.76)→(72.05,94.56)→(77.50,102.12)→(78.50,105.66)\n\nFRAME 3, row 1 column 3; hold 83.333 ms. Hip→shoulder (48.48,85.17)→(80.48,84.54); shoulder→neck/head→nose (80.48,84.54)→(90.28,71.73)→(112.28,70.09).\nLH STANCE: (48.48,79.51)→(58.26,84.03)→(48.50,90.10)→(52.50,94.34)\nLF SWING: (80.48,78.88)→(79.93,86.24)→(90.39,90.39)→(91.95,93.83)\nRH SWING: (48.48,90.83)→(43.64,98.18)→(31.39,101.25)→(36.05,105.14)\nRF STANCE: (80.48,90.19)→(71.21,93.96)→(74.50,102.12)→(75.50,105.66)\n\nFRAME 4, row 1 column 4; hold 83.333 ms. Hip→shoulder (48.48,84.54)→(80.48,85.17); shoulder→neck/head→nose (80.48,85.17)→(90.39,72.13)→(112.39,70.25).\nLH STANCE: (48.48,78.88)→(56.25,84.93)→(45.50,90.10)→(49.50,94.34)\nLF STANCE: (80.48,79.51)→(78.92,86.80)→(89.50,90.81)→(90.50,94.34)\nRH SWING: (48.48,90.19)→(50.30,98.17)→(37.40,99.33)→(42.89,102.64)\nRF STANCE: (80.48,90.83)→(70.49,93.67)→(71.50,102.12)→(72.50,105.66)\n\nFRAME 5, row 2 column 1; hold 83.333 ms. Hip→shoulder (48.35,84.11)→(80.35,85.38); shoulder→neck/head→nose (80.35,85.38)→(90.39,72.41)→(112.39,70.46).\nLH STANCE: (48.35,78.45)→(53.90,85.68)→(42.50,90.10)→(46.50,94.34)\nLF STANCE: (80.35,79.72)→(76.09,86.59)→(86.50,90.81)→(87.50,94.34)\nRH SWING: (48.35,89.76)→(58.36,94.15)→(47.62,99.33)→(53.11,102.64)\nRF STANCE: (80.35,91.04)→(70.20,93.72)→(68.50,102.12)→(69.50,105.66)\n\nFRAME 6, row 2 column 2; hold 83.333 ms. Hip→shoulder (48.13,84.24)→(80.13,84.87); shoulder→neck/head→nose (80.13,84.87)→(90.28,72.22)→(112.28,70.43).\nLH STANCE: (48.13,78.58)→(51.52,86.61)→(39.50,90.10)→(43.50,94.34)\nLF STANCE: (80.13,79.21)→(74.04,85.58)→(83.50,90.81)→(84.50,94.34)\nRH SWING: (48.13,89.89)→(59.48,92.54)→(55.29,101.25)→(59.95,105.14)\nRF SWING: (80.13,90.53)→(70.10,93.62)→(66.48,101.71)→(68.05,105.14)\n\nFRAME 7, row 2 column 3; hold 83.333 ms. Hip→shoulder (47.87,84.65)→(79.87,84.02); shoulder→neck/head→nose (79.87,84.02)→(90.10,71.61)→(112.10,70.05).\nLH STANCE: (47.87,79.00)→(48.99,87.55)→(36.50,90.10)→(40.50,94.34)\nLF STANCE: (79.87,78.36)→(72.69,84.36)→(80.50,90.81)→(81.50,94.34)\nRH STANCE: (47.87,90.31)→(59.35,92.89)→(54.50,101.41)→(58.50,105.66)\nRF SWING: (79.87,89.67)→(69.08,91.31)→(72.56,99.43)→(74.89,102.64)\n\nFRAME 8, row 2 column 4; hold 83.333 ms. Hip→shoulder (47.65,84.78)→(79.65,83.51); shoulder→neck/head→nose (79.65,83.51)→(89.90,71.02)→(111.90,69.54).\nLH STANCE: (47.65,79.12)→(46.10,87.84)→(33.50,90.10)→(37.50,94.34)\nLF STANCE: (79.65,77.85)→(71.57,83.43)→(77.50,90.81)→(78.50,94.34)\nRH STANCE: (47.65,90.44)→(58.83,93.82)→(51.50,101.41)→(55.50,105.66)\nRF SWING: (79.65,89.16)→(72.32,95.27)→(82.78,99.43)→(85.11,102.64)\n\nFRAME 9, row 3 column 1; hold 83.333 ms. Hip→shoulder (47.52,84.35)→(79.52,83.72); shoulder→neck/head→nose (79.52,83.72)→(89.72,70.91)→(111.72,69.27).\nLH SWING: (47.52,78.70)→(43.78,87.17)→(31.39,89.93)→(36.05,93.83)\nLF STANCE: (79.52,78.06)→(70.41,82.83)→(74.50,90.81)→(75.50,94.34)\nRH STANCE: (47.52,90.01)→(57.69,94.92)→(48.50,101.41)→(52.50,105.66)\nRF SWING: (79.52,89.37)→(79.92,97.56)→(90.39,101.71)→(91.95,105.14)\n\nFRAME 10, row 3 column 2; hold 83.333 ms. Hip→shoulder (47.52,83.72)→(79.52,84.35); shoulder→neck/head→nose (79.52,84.35)→(89.61,71.31)→(111.61,69.43).\nLH SWING: (47.52,78.06)→(50.27,86.73)→(37.40,88.02)→(42.89,91.33)\nLF STANCE: (79.52,78.70)→(69.57,82.43)→(71.50,90.81)→(72.50,94.34)\nRH STANCE: (47.52,89.37)→(55.87,95.87)→(45.50,101.41)→(49.50,105.66)\nRF STANCE: (79.52,90.01)→(78.87,98.18)→(89.50,102.12)→(90.50,105.66)\n\nFRAME 11, row 3 column 3; hold 83.333 ms. Hip→shoulder (47.65,83.51)→(79.65,84.78); shoulder→neck/head→nose (79.65,84.78)→(89.61,71.81)→(111.61,69.86).\nLH SWING: (47.65,77.85)→(57.98,82.46)→(47.62,88.02)→(53.11,91.33)\nLF STANCE: (79.65,79.12)→(69.45,82.35)→(68.50,90.81)→(69.50,94.34)\nRH STANCE: (47.65,89.16)→(53.73,96.78)→(42.50,101.41)→(46.50,105.66)\nRF STANCE: (79.65,90.44)→(75.96,98.07)→(86.50,102.12)→(87.50,105.66)\n\nFRAME 12, row 3 column 4; hold 83.333 ms. Hip→shoulder (47.87,84.02)→(79.87,84.65); shoulder→neck/head→nose (79.87,84.65)→(89.72,72.00)→(111.72,70.21).\nLH SWING: (47.87,78.36)→(59.24,81.18)→(55.29,89.93)→(59.95,93.83)\nLF SWING: (79.87,79.00)→(69.80,82.24)→(66.48,90.39)→(68.05,93.83)\nRH STANCE: (47.87,89.67)→(51.50,97.87)→(39.50,101.41)→(43.50,105.66)\nRF STANCE: (79.87,90.31)→(73.96,96.98)→(83.50,102.12)→(84.50,105.66)",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/canonical-crop.png",
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v11/controls/E-whole-cycle.png",
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v11/controls/E-stick-cycle.png"
+    ],
+    "transparent_background": false
+  },
+  "inputs": [
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/canonical-crop.png",
+      "sha256": "ce1e63c559fa3e7cd6d2f49dfb62014f8903eedb789fb793d3fd07cdeecbbb92"
+    },
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v11/controls/E-whole-cycle.png",
+      "sha256": "3b981e4a8d05af0302d9fbb620d5c9a5819a5d0a0321529c2b4e35d9431ab467"
+    },
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v11/controls/E-stick-cycle.png",
+      "sha256": "ed098047e59e8d60ee2882bd9697750f8ad7c250ee7fada04f42cc09e162c11d"
+    }
+  ],
+  "review": "../review-v01-independent.md",
+  "measurements": "../nose-measurements-v01.json"
+}

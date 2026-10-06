@@ -1,6 +1,6 @@
 # Complete wolf walking study
 
-2026-10-07 whole-body correction: a manual 96-frame comparison is in progress in `audit/`. V10's authoring instructions wrongly froze head/spine/coat and changed only the legs. That premise is withdrawn. Coverage remains complete, but the cycle needs coordinated whole-body drawings and measured contacts. Keep the runtime root straight; movement of shoulder/haunch/head/tail/fur must be drawn inside intact sprites.
+2026-10-07 whole-body correction: all 96 frames have been manually compared with their exact approved sticks in `audit/`. All eight cycles fail whole-body motion review. V10's authoring instructions wrongly froze head/spine/coat and changed only the legs. That premise is withdrawn. Coverage remains complete, but the cycle needs coordinated whole-body drawings and measured contacts. Keep the runtime root straight; movement of shoulder/haunch/head/tail/fur must be drawn inside intact sprites. A fresh complete-loop V11 pilot also fails control/whole-body fidelity and remains outside the lab.
 
 2026-10-06 decision at `35a4ccf`, confidence 99%: follow the user's instruction to fill every approved stick frame through the existing original-reference plus exact-pose still drawing method. AniDoc is not selected and no upload to it occurs.
 
