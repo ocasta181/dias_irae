@@ -1,0 +1,28 @@
+{
+  "id": "F82",
+  "title": "F18 · Ear-length ragged side part / Tiny round button / Thin sloping strokes",
+  "provider": "built-in imagegen",
+  "model": "not exposed by tool",
+  "request": {
+    "prompt": "Use case: precise-object-edit. Asset: F82, full-body Guarin face study.\nImage 1 is the exact F18 base: keep its jaw and cheek silhouette, mouth, same huge head and tiny squat body, S13 costume, mail, ragged red scarf and cape, boots, sword, shield, pose, elevated game camera, charcoal background, dull brown/gray/burgundy palette, and coarse flat granular 2D drawing.\nImage 2 is the full original F37 drawing: use only its two eye marks and their scale/placement, not its brows, hair, nose, mouth or jaw. Image 3 is the exact F37 eye-only crop, showing the same fixed marks. The full image is included so the tiny crop cannot be ignored or read as an anatomical eyelid. Do not retain the eyes from Image 1.\nFIXED EYES — literal graphic copy, not another style: Copy the two small flat dark ink marks from the original F37 reference. The near mark is an irregular little T: a short horizontal bar with a tiny central downward tick. The far mark is a smaller horizontal bar with a shorter downward tick. No eye anatomy, eyeballs, white wedges, sockets, squint creases, round dots, detached squares or highlights. Keep these marks completely independent of the eyebrow treatment.\nAt the original 1312 × 1199 frame, near eye is approximately 37 × 13 pixels, at x711–748 and y428–441. Far eye ink is approximately 24 × 10 pixels, at x807–831 and y429–440. Center spacing approximately 89 pixels. Match those small proportions exactly; do not enlarge or rotate them with the brows. Replace any pre-existing eye anatomy in the target. Preserve these two ink marks even as everything else listed below changes.\nChange ONLY these three features:\nHAIR: Ear-length ragged side part. Long coarse locks beside both ears and at the nape, uneven side fringe; a clearly longer silhouette.\nNOSE: Tiny detached round button. Remove the old long vertical bridge and its ink sidewalls and replace them with flat mottled skin. The nose is only a small round nub, about 20 pixels wide by 12 pixels high at the original 1312-pixel canvas width, near the lower end of the former bridge. One short curved underside dab, no vertical line connecting nose to brow, no square nose column. The nose contour may move locally; preserve the rest of the head and jaw.\nEYEBROWS: Thin sloping strokes: very thin tapered sloped eyebrows, separate from the eyes. Eyebrows ARE allowed to change. Do not change the eye shapes or squint them to follow the brows.\nKeep the same art style and outfit. Flat worn rough pigment, dark, muddy, tired and wretched but exaggerated and cartoony. No 3D rendering, smooth skin, clean comic-book finish, portrait crop, extra objects, text, labels or contact sheet. One complete character in the same full-body frame.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f18-v01.png",
+      "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f37-v03.png",
+      "/Users/ocasta/Code/Dias Irae/art/concepts/faces/references/approved-f37-eyes-only.png"
+    ],
+    "transparent_background": false
+  },
+  "source_sha256": "d84a37bb6f83f737ce0f8dda99ea488659f75591c5c13e7642827ed6a4d87540",
+  "source_reference": "F18",
+  "original_output": "/Users/ocasta/.codex/generated_images/01a10689-ef67-7153-aa2e-6bc4dc7c841c/exec-32d60e6c-8e54-4cdc-92c8-5d5e3ef5fbb6.png",
+  "file": "art/concepts/faces/images/f82-v05.png",
+  "sha256": "bcbf0678b9e9b594d0ed0bb5e8c3f4f43e88f76fb32dc5e3a18dc19db1a7ff11",
+  "dimensions": [
+    1312,
+    1199
+  ],
+  "mode": "RGB",
+  "pixel_changes": "none",
+  "parent_visual_review": "pending",
+  "review_status": "pending"
+}
