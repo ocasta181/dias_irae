@@ -1,389 +1,378 @@
 # Dias Irae — Characters
 
-Dossiers for the people of the campaign. Story order and secrets: [story-arch.md](story-arch.md). Rooms: [locations.md](locations.md).
+Active cast for autumn **1149**, in [England](https://www.google.com/maps/search/?api=1&query=England), around [Lewes](https://www.google.com/maps/search/?api=1&query=Lewes%2C+East+Sussex%2C+United+Kingdom). Plot and governing prayer: [story-arch.md](story-arch.md). Rooms and routes: [locations.md](locations.md). Names, roles, and development correspondences: [the reconsideration](../docs/research/1149-england/story-reconsideration.md).
 
-Ages are as of late summer 1101. Names are period-plausible for the Dauphiné, the Drôme, and the Provençal host. Historical persons are marked. Their fictional roles and uncertain biographical details remain distinct from dated evidence. Guarin's governing arc and exact prayer are in the story outline: despair gives way to will, conviction, hope, and the knowledge that his fight matters.
+The central cast is fictional. Their ages refer to the campaign season. Historical people are identified separately and kept within their dated roles. The new names do not identify people recovered from a local charter.
 
 ---
 
-## Guarin of Royans
+## Robert of Rookmere
 
 | | |
 |---|---|
-| Role | Protagonist. Mid-rank knight, returned cross-bearer. |
+| Role | Protagonist; returned secular knight and protector of the home household. |
 | Age | 34 |
-| Status | Castellan of Rivoire in name; his sister holds it in fact. |
+| Status | Lord of the invented Rookmere holding after his father's death; Alice has kept it operating. |
 
-**Appearance.** Tall in the household way, dark from the road, a new white cut through the hair above the left ear. He still wears the travel-stained bliaut over mail packed on the mule. The nasal helm is dinted at Dorylaeum and still waiting on a smith. His hands are a laborer's. The right is missing the last joint of the little finger — a Syrian surgeon. He keeps a rag-wrapped splinter of wood inside his shirt, over the sternum, and sleeps in it.
+**Appearance.** Road-worn mail, a repaired nasal helmet, plain wool, and a kite shield whose household paint has nearly gone. A white cut through the hair above the left ear and an injured sword-hand can remain identity marks. His clothes show repair and shortage rather than an official military-order uniform.
 
-**History.** Second son of **Aimar of Royans**, a petty castellan whose fictional holding owes service to Albon. His mother died in childbed with Almodis. He was raised for the household: letters enough to sign, psalms enough for a chapel. He took the cross in 1096 believing that he could serve Christ and do something worthy with his life.
+**History.** Walter's son, raised within an Anglo-Norman household among English-speaking neighbors. He knows household French and local English, with limited letters and familiar prayers. He departed in 1147 with a fictional company associated with William III de Warenne and Louis VII's army. He endured the failed eastern expedition, reached [Jerusalem](https://www.google.com/maps/search/?api=1&query=Jerusalem) in 1148, and returned after sickness and a slow journey. His particular experiences are invention.
 
-He went south and east with Raymond of Toulouse's host. He was at Nicaea, Dorylaeum, Antioch, and the taking of Jerusalem. Siege, hunger, illness, violence, and the deaths of people he knew changed him. He comes home tired, wounded, and scarred. There is no cannibalism in his history and no concealed personal atrocity that governs his arc.
+He carries a splinter acquired on a claim that it came from the True Cross. Its provenance is uncertain; his devotion is sincere. At home, he finds Alice protecting dwindling stores and Hamon's men demanding protection dues. His father's death is ordinary bereavement before it becomes a dispute over obligations and a misused seal.
 
-He bought a splinter said to be from the True Cross during his time in Jerusalem. Its provenance is uncertain, but his devotion to Christ is sincere. He started home in 1100, wintered sick in Apulia, and reaches the Royans in late summer 1101.
+**Temperament.** Dry, patient with useful work, and loyal to people whose names he knows. He still wants to oppose evil, but fear and exhaustion make him doubt whether anything he does can matter. Anger and bitterness can trouble his heart; no concealed atrocity governs his arc.
 
-**Temperament.** Dry, loyal, and patient with people trying to keep a house standing. He sleeps badly. He sees greed, cruelty, corruption, disease, and suffering everywhere, and fears that evil is irresistible. He still wants to fight it. His crisis is that he feels too weak to continue and can no longer see what the struggle can accomplish.
+**Speech.** Spare household language, with courtesy where it can help. At the stone cross he cries and struggles through the exact prayer in the outline. He asks Christ for hope, will, guidance, and strength.
 
-He is not indifferent to goodness; despair has made it hard for him to see and trust it. Anger, bitterness, and pride can trouble his own heart. They belong to his ordinary moral struggle, without turning the story into an investigation of his complicity.
+**Relationships.** Alice has done the work he hoped home would spare him. Godric taught him practical household responsibility. Hugh was his company's chaplain and remains a frightened man he wants to help. Oswin, Edith, and the care house give his protection particular faces. Gilbert offers a version of knighthood he must hear and reject.
 
-**Speech.** Spare, local, household cadence. He calls people by their working names. At the stone cross, he cries and speaks with emotional sincerity. The prayer is exactly the one recorded in the story outline. He asks Jesus to be his hope, his will, and his strength, and to guide him as His Sword and Mantle. He does not pray for shelter.
+**Arc.** Despair gives way to will, conviction, and hope through Christ. He stops specific harms, receives kindness, sees others choose courage, and defeats the Destroyer's local foothold. The community's future makes his victory meaningful.
 
-**Relationships.** Almodis shows him goodness through the people she has kept alive. Fulk was his company's chaplain and remains a frightened fellow man he wants to help, despite the harm Fulk has caused. Odo's earnest courage can sustain him even as Guarin protects the younger man. Raimon taught him to sit a horse. Agnes is a child who needs protection, not an instrument for exposing a hidden crime.
-
-**Arc.** From spiritual crisis to restored will and conviction through Christ. He discovers that acting can preserve lives, that his fellow men can choose goodness, and that he can resist evil with courage. His victory is the answer to his prayer: the world is worth saving, life is worth living, and his fight has not been in vain.
-
-**Design notes.** Player character. The early rain-and-stone-cross prayer is a required scene. His splinter can remain a devotional inventory object; it is not a second key for the enemy. Faith, prayer, and blessings strengthen him. Neither hidden guilt nor an unblessed final blow is a condition of victory.
+**Design notes.** Trained knight from the start. Secular status preserves kinship and household duties. Keep the prayer verbatim; do not make its answer a hidden corruption mechanism, a personal-atrocity confession, or an unblessed final blow.
 
 ---
 
-## Almodis of Royans
+## Alice of Rookmere
 
 | | |
 |---|---|
-| Role | Guarin's sister. Holder of the castrum. Human stake. |
+| Role | Robert's sister; keeper of the manor, witness, and organizer of its survival. |
 | Age | 28 |
-| Status | Widow. Runs Rivoire. |
+| Status | Widow; practical head of the household during Robert's absence. |
 
-**Appearance.** Aimar's height, their mother's mouth. Dark hair covered, always, even in the house. She wears last year's wool dyed a brown that was once red. A thin wedding band. The fire has left her skin and taken everything she manages.
+**Appearance.** Covered dark hair, repeatedly repaired wool, a plain ring, and hands marked by stores, laundry, and work. Her authority is visible in people responding when she speaks.
 
-**History.** Youngest of Aimar's children. Married at nineteen to a minor knight of the Vercors who died of a fever two years later, before the crusade was preached. She came home, ran her father's accounts, and remained a widow. When Guarin took the cross she told him to leave her dowry out of the speech. When Aimar's arm blackened in the spring of 1101 she sent for the Antonines and for a surgeon. Aimar sent the knife away. She buried him. The ground gave him back. She buried him again, shallower, with stones, and has kept from Mass since Giraud folded the chasuble.
+**History.** Her marriage and widowhood preceded Robert's departure in 1147. She returned to her father's household and kept its accounts. Walter died in spring 1149. Since then she has separated safe stores, protected seed grain, and resisted demands that would make the next year impossible. Her copies and recollection expose Hamon's misuse of the household seal.
 
-She has kept the castrum with a cook, a boy, and two old men who chose the hall over the hospice. She burned the rye in the inner paddock herself. The outer fields she needed for the winter.
+**Temperament.** Practical, sharp, and tired. She loves Robert and measures him by what he does for people. Fear becomes work in her hands. She can disagree with him without becoming an obstacle to his faith.
 
-**Temperament.** Practical, unsentimental, tired in the bone. She loves Guarin and withholds admiration. She will say the true thing in a kitchen that other people would save for a chapel. She treats the fire as a mess to be managed and resents anyone who promotes it to a sign. She is afraid, and she converts fear into work. She stays. That is the last definition of herself she still trusts: the person who stays.
+**Speech.** Domestic and precise: sacks, names, dates, and what a promise requires. She has little patience for an argument that leaves someone unfed.
 
-**Speech.** Sharp, domestic, occasionally coarse. She saves God's name for when she means it.
+**Relationships.** Godric is trusted in matters he actually knows. Agatha is a partner in arranging care. She protects Edith from adults who want a convenient explanation. Robert can regain her confidence through action.
 
-**Relationships.** Guarin is "you." Odo she treats as a useful boy until he proves otherwise. She will take Agnes in if asked, and will be practical about the fits. She thought Fulk too soft for a war-priest.
+**Arc.** Rookmere's return visits show the consequences of her work and the player's help. She participates in the later supply convoy, safeguards witnesses, and remains a person with a future in the epilogue.
 
-**Arc.** Holds the house. If the player returns between acts, she is the measure of whether the valley is dying faster than Guarin is working. At the end she is still there, with people whose lives she and Guarin have helped preserve. Her care is one of the goods his victory defends.
-
-**Design notes.** Hub character at Rivoire. The house can worsen with the blight, while aid brought home produces lasting relief and signs of recovery. She remains in the hall.
+**Design notes.** Household hub with political agency. Her useful evidence is not a modern audit system, and her care is not a numerical grace reward.
 
 ---
 
-## Fulk of Livron
+## Father Hugh
 
 | | |
 |---|---|
-| Role | Chaplain of Guarin's company. The finder. Servant in terror. |
+| Role | Former company chaplain; deceived donor and witness to the counterfeit. |
 | Age | 41 |
-| Status | Priest. The naming-syllable stays in his mouth. |
+| Status | Priest under a fictional supernatural binding; can be released and survive. |
 
-**Appearance.** Soft-faced for a man who walked to Jerusalem, going to fat now that he is home and eating crumbs. Tonsure grown out in patches. Hands always moving — crumbs, hem, mouth. His habit is clean in the way of a man who washes the same wool until it greys. In later meetings there are specks of black at the corners of his lips that he licks away without noticing. He looks at Guarin's eyes and past every crucifix.
+**Appearance.** Thin from the road, an uneven tonsure, hands always finding a hem or crumb. When the binding intrudes, his speech and movement no longer belong wholly to him. The distortion is a specific curse, not a sign that priesthood or illness is evil.
 
-**History.** A poor priest of Livron-sur-Drôme, enough Latin to say the office, no patron worth naming. He took the cross with Raymond's host because his bishop's man told him armies need confessors and because he was afraid to stay in a hungry parish that already disliked him. He attached himself to Guarin's small company after Nicaea, when their first chaplain died of dysentery.
+**History.** Accompanied Robert's fictional company in 1147–1148. During hunger and sickness, an apparition wearing a saint's face promised that an Eastern casket would preserve lives. He accepted it, then understood the deception and became afraid to refuse. He arrived home in spring 1149 with the casket and a small lot of rye and gave them to the House of Saint Michael.
 
-During the hunger and sickness of the campaign, a presence wearing a saint's face promised that obedience would let him save lives. He accepted its demands and later recognized the deception, but fear held him in service. The claimed holiness of the apparition is false. His binding is fictional and does not depend on Peter Bartholomew being a servant of the same presence.
+He left when the house began to question the gift, believing that speaking plainly would bring worse harm. He hides among displaced people and men gathered by Gilbert. His fear has caused injury; his return to truth can also help stop it.
 
-He served and bought time through small bargains, always hoping that another delay would give him the courage to refuse. He could still want to help people while obeying a master who used that desire against them.
+**Temperament.** Gentle, ashamed, and frightened enough to mistake delay for protection. He wants to warn Robert and cannot always bring himself to speak.
 
-He came home months ahead of the company carrying black grain in a box falsely presented as a sacred remnant. He gave it to the brothers at La-Motte as a pilgrim's thanks, left before the night office, and went to ground in the hospice network along the Isère. The counterfeit entered the provisions through trust, desperation, and concealed harm. No cannibalistic offering is part of its origin.
+**Speech.** Courtesy interrupted by the binding. The decisive words belong to him when he rejects the false master; the enemy's voice must be distinguishable.
 
-He is Renfield. He has lucidity the way a beaten dog has intervals. He wants to be saved. The syllable that would save him stays behind his teeth.
+**Relationships.** Robert protects a fellow man rather than using him as a relic detector. Thomas trusted him and needs his testimony. Anselm can hear his confession. Gilbert would punish him without understanding what keeps him afraid.
 
-**Temperament.** Gentle, sorry, hungry. His terror is polite. He agrees with whoever is in the room and then does what the voice said when the room is empty. He is ashamed in the specific way of a man who still thinks of himself as a priest. He hoards the blight's crumbs — raw grain and later flies — because the thing lets him have small lives so the large one remains property. He will warn Guarin in one breath and beg him to leave in the next. He is more afraid of Abaddon than of Hell, or he has come to think they are the same office and that service might still buy a reduction.
+**Arc.** Act III protection and release. Robert fights the attacks while Anselm offers confession and prayer. Hugh can recover and later keep vigil with another patient. If he dies while bound, the enemy can use his body as a hostile mouth; other evidence keeps the campaign solvable.
 
-**Speech.** Soft, chapter-house Provençal, full of unfinished psalms. When the voice is close, he slips into a courtly second person, as if reporting to a lord. When he is himself, he calls Guarin by name and cannot stop apologizing.
-
-**Relationships.** Guarin is the last human he trusts and the one he has most injured. Isarn is a man he used. Almodis he avoided. The false apparition is the promise he cannot stop remembering. Abaddon is the creditor.
-
-**Arc.** Found in Act III. Guarin protects and encourages him while a priest of the hospice offers confession and prayer. The knot can be cut as Fulk rejects his master and turns toward Christ. The fire has been in him too long for his body to recover, but he can die in grace, released from the binding. If he is killed with the knot tied, the body hatches into a demon. His release shows that terror does not put a man beyond help; Guarin's own confession of a past atrocity is not a prerequisite.
-
-**Design notes.** The binding and forced appetite are fictional signs of coercion. Guarin is a lay knight: he supports and protects Fulk; a priest gives absolution. The hatching leads to a fight. Genuine prayer does not strengthen the binding.
+**Design notes.** Release is not a scored penance gate. A priest gives absolution; Robert does not. Hugh's survival provides a new visible consequence rather than a compulsory tragic death.
 
 ---
 
-## Brother Odo
+## Brother Oswin
 
 | | |
 |---|---|
-| Role | Antonine lay brother. Guide. Witness of the house. |
-| Age | 22 |
-| Status | Lay brother. Can read and write. |
+| Role | Young clerk and charitable-house brother; witness and possible companion. |
+| Age | 19 |
+| Status | Lay member of the invented House of Saint Michael, learning letters. |
 
-**Appearance.** Tall, underfed, tau-cross stitched crooked on a habit too new to be comfortable. Shaved crown sunburnt. Ink on the left fingers. He looks like someone's younger brother because he is one. In later acts the whites of his eyes yellow, then clear again if he keeps to the main church.
+**Appearance.** Ink on a thumb, repaired plain clothing, a small book wrapped against wet weather. No Antonine tau uniform.
 
-**History.** A boy from a hamlet above La-Motte, taken in after the 1095 founding when the fire took his mother and the new brothers needed hands. Romans is the edge of his world. He believes that Christ's mercy can reach the suffering and that care for them is his vocation. Prior Isarn taught him his letters so the hospice would have a register. The register is how he first noticed the relics warming: he writes the date, and the ink dries too fast.
+**History.** Taken into the care house as an adolescent in the current generation. Thomas taught him to read and copy records. He notices that some relief deliveries recur in the accounts of people who become ill. He makes a duplicate instead of trusting one vulnerable book.
 
-He was left at Rivoire after Pentecost to record what the fire does in a parish. He asked for an escort back because he is obedient and because he is frightened, and he is still learning to tell those apart.
+**Temperament.** Earnest, proud of a newly acquired skill, and ashamed of fear. He learns that obedience does not require concealing harm.
 
-**Temperament.** Earnest, ashamed of fear, proud of his letters in a way he tries to hide. The wine, the bakehouse, and the prior's silences test his trust in those around him. He learns to question a harmful remedy without surrendering his faith in Christ. He becomes careful and brave in small acts: recording the truth, helping a patient, or telling Guarin something he is afraid to say.
+**Speech.** Too formal when uncertain, then suddenly direct. He can explain a copied entry in words a miller's daughter understands.
 
-**Speech.** Too many titles, then suddenly none when he is scared. He quotes the register as if it were a psalm.
+**Relationships.** Thomas is his teacher; Wulfstan showed him ordinary care; Agatha insists that a record is useful only if it helps a person. Robert can give his courage room to become action.
 
-**Relationships.** Isarn is father and abbot. Durand he loved the way a novice loves a competent older brother; the infirmary fight costs him. Guarin he addresses as *messire* until he forgets. Almodis terrifies him slightly. Once he knows Fulk, he keeps a room between them.
+**Arc.** Brings the petition and evidence in Act I, helps the Act II inquiry, and carries a copy beyond Hamon's reach. His later assistance is a consequence of preserved people and truth.
 
-**Arc.** Companion through Acts I–IV if he lives. He may drink the wine in a moment of institutional loyalty; if so he becomes a problem the player must treat. Prayer near the counterfeit exposes the hostile presence's resistance. His registers supply practical evidence as well. His courage can help Guarin recognize goodness, and care from Guarin and others can give Odo a future beyond the crisis.
-
-**Design notes.** Optional companion. His prayer and observations help expose the counterfeit. He is also a person to protect and a source of courage, not merely a detector.
+**Design notes.** He has no childhood at a 1095 foundation. Skill failures can change who helps read an entry; they do not remove the only route forward.
 
 ---
 
-## Prior Isarn
+## Master Thomas
 
 | | |
 |---|---|
-| Role | Prior of the Antonine house at La-Motte. Institutional ally. |
+| Role | Priest and head of the invented care house. |
 | Age | 51 |
-| Status | Priest. Head of house under Gaston of Valloire's patronage. |
+| Status | Responsible to local benefactors and the people his house serves. |
 
-**Appearance.** A mountain priest's build, grey tonsure, tau-cross in good cloth. Eyes that have looked at too many stumps. His hands are a nurse's. In Act IV he is already dying: the fire, or simply a body that has been in that smell for six years.
+**Appearance.** Greying tonsure, good cloth worn at the cuffs, and a face accustomed to listening while counting what remains in a store.
 
-**History.** A secular priest of the Viennois, brought in when Gaston's foundation needed someone who could run a hospital and keep a shrine. **Gaston of Valloire** is alive, a noble patron, and elsewhere; the historical founder stays in the charters. Isarn accepted the Eastern reliquary because a remnant of the Holy Land is a gift a prior accepts, and because the young charitable house wanted recognition and he failed to investigate its provenance. He put fire to the box when the warming began. Ordinary fire failed to break its hold. He sealed it in the side chapel and told himself a prior's first duty was the house's name.
+**History.** Leads the House of Saint Michael, a fictional charitable foundation supported by several local gifts. He is not the historical prior of the town's Cluniac community. He accepted Hugh's gift and delayed admitting that deliveries might harm people because he feared losing the support that kept beds and meals available. When he finally refused more suspect supplies, Hamon took the casket and remaining lot.
 
-He is a man who chose reputation over pouring out a cask, more than once.
+**Temperament.** Measured and exhausted, with an anger he reserves for threats to the house. His failure is choosing reputation and postponement over a timely warning.
 
-**Temperament.** Measured, exhausted, capable of sudden anger when the order is slandered. He can hear confessions while needing to acknowledge his own failures. His sin does not make priestly absolution a counterfeit or turn a valid sacrament into harm. He loves his brothers the way a good officer loves a company he knows is off its doctrine. He will help Guarin and ask him to keep Valence out of it.
+**Speech.** Correct Latin when trying to find safety in formality. Plain English when he finally names what he did.
 
-**Speech.** Correct, Latin when frightened, vernacular when bargaining. He says first that "the fire has learned a trick."
+**Relationships.** Oswin is his pupil, Wulfstan his trusted worker, and Agatha the person least impressed by an institutional excuse. Hugh's frightened account once reassured him. Robert makes concealment harder.
 
-**Relationships.** Odo is the son he acquired by accident. Durand was his best nurse. Gaston is a name he writes to and leaves unburdened. Fulk is the donor he can only half describe. Guarin is a useful sword and a dangerous witness.
+**Arc.** Admits the error, helps protect witnesses, and refuses the seizure party. Can remain an ally in Act IV. The house has a chance to serve honestly because its head chooses truth.
 
-**Arc.** Ally of Act II. Dying voice of Act IV, if he lives that long, or already in the charnel with the rest of the truth on the walls. He can admit what he concealed, help stop the harmful remedies, and support Guarin's resistance. His willingness to tell the truth gives the hospital a chance to serve its people again.
-
-**Design notes.** Face of the Antonines as an institution. Gaston stays offstage.
+**Design notes.** Accountability without making every cleric corrupt. His clerical powers remain real; his office does not make his mistakes harmless.
 
 ---
 
-## Brother Durand
+## Brother Wulfstan
 
 | | |
 |---|---|
-| Role | Infirmarian of La-Motte. Act II boss. |
+| Role | Caregiver and practical ally. |
 | Age | 44 |
-| Status | Lay brother. Nurse. |
+| Status | Lay brother of the invented care house. |
 
-**Appearance.** Heavy shoulders, forearms skinless — shiny, taut, sometimes dry. He wraps them in clean linen that stains from the inside. A pig-bone spatula at his belt for the lard. He smiles with his eyes at patients and misses when they flinch.
+**Appearance.** Heavy shoulders, linen at the forearms, tools for ordinary work, and a careful way of lifting someone whose joints hurt.
 
-**History.** A butcher's son from Romans, taken in for his hands. He learned the Antonine remedies — herb wine, pork fat, the relics carried around the ward — and believed in them because sometimes men lived. When the Eastern dust went into the bakehouse and the wine changed, he kept dosing. The patients who kept their limbs seemed like proof. That the limbs had learned a new joint seemed like a mystery for priests.
+**History.** Learned care through years of service, not a modern specialty. He initially trusted the relief provisions because some hungry people improved after eating. When the delivery pattern becomes clear, he helps stop the suspect food, separate stocks, and move patients during the seizure.
 
-**Temperament.** Kind in the way of a man whose identity is usefulness. Unused beds and withheld medicine pain him. Contradiction makes him gentle and immovable. He will hold a man down to dose him and pray while he does it.
+**Temperament.** Kind, stubborn, and attached to being useful. He must accept that admitting a harmful mistake is part of care.
 
-**Speech.** Kitchen Latin, endearments, the names of wounds. He calls Guarin "son" once, incorrectly.
+**Speech.** Endearments, practical instructions, and the names of people rather than categories.
 
-**Relationships.** Odo loved him. Isarn trusted him too long. The ward is his congregation.
+**Relationships.** Oswin learned from him. Agatha can make him hear what a patient says. Thomas's delay costs him confidence, but he can keep serving without pretending the error did not happen.
 
-**Arc.** Boss of the infirmary. When he falls, the wine beads like blood and then like sclerotia. He dies still sure he was curing them. That certainty is the horror.
+**Arc.** Changes course during Act II and helps keep the house alive. Later provides practical assistance to the convoy and those Robert releases.
 
-**Design notes.** Fight among the beds. Some patients help him, some help Guarin. Distinguishing them is the fight.
+**Design notes.** No mandatory nurse boss or transformation. His body and occupation do not make him an enemy.
 
 ---
 
-## Agnes
+## Agatha
 
 | | |
 |---|---|
-| Role | Miller's daughter. Seer by ergot and by something older. Called the Child of the Second Cross. |
+| Role | Lay caregiver, organizer, and defender of witnesses. |
+| Age | 52 |
+| Status | Widow working at the House of Saint Michael; not a member of a later nursing order. |
+
+**Appearance.** Covered hair, strong wrists, an apron repeatedly washed, and a habit of standing where a frightened person can see her.
+
+**History.** Joined the house through local kinship and need. She knows which patient arrived with which cart and which relative still visits. Her evidence comes from attention to people, not formal medical diagnosis. She distrusts Hamon's demand that witnesses travel separately under his men.
+
+**Temperament.** Patient with pain and impatient with excuses. She has enough losses of her own to resist the promise that obedience can make everyone safe.
+
+**Speech.** Short questions that require an actual answer. She uses a person's name until others do too.
+
+**Relationships.** Works with Alice to arrange safe food and shelter. Challenges Thomas without abandoning the house. Helps Edith speak without being exhibited as a marvel.
+
+**Arc.** Keeps people and testimony together in Act II, then supports the local coalition and convoy. Her choices make courage visible outside knighthood.
+
+**Design notes.** New central ally. Do not turn her into a hidden nun, an attested historical healer, or a reward dispenser.
+
+---
+
+## Edith
+
+| | |
+|---|---|
+| Role | Miller's daughter; endangered child and witness. |
 | Age | 11 |
-| Status | Orphan after Act I. |
+| Status | Recovering from illness; her father is missing after resisting a collection. |
 
-**Appearance.** Small, rye-dust still in her hair weeks after the mill burns. One pupil larger than the other after the fits. She wears a rope-belt someone in the flagellant band tied in the shape of a tau. She takes it off if Almodis tells her to, and puts it back on when she thinks no one is looking.
+**Appearance.** Grain dust in a hem, badly mended shoes, and a child's effort to look well enough that adults stop deciding things over her head.
 
-**History.** Daughter of the miller of Rivoire. She swept the mill floor. She ate what fell, as children do. The fits began before Guarin came home. When Giraud burned the mill her father was inside, trying to save a stone. She sat at the lychgate and recited Revelation 9 because a priest had read it at a funeral and the words stuck in a place the fire could reach. Flagellants on the Pont road named her.
+**History.** Helped at Rookmere's mill and remembers the relief sacks and the man who delivered them. Her fits began after food from that lot. Supernatural intrusions may trouble her, but her useful witness concerns ordinary things she saw. Her father can be recovered from the captives in Act III.
 
-In fit she repeats fragments of the voice that bound Fulk, and recognizes Guarin through that presence. In lucidity she wants her father and is ashamed of the rope.
+**Temperament.** Angry when treated as an object, tender with a familiar animal, and evasive about whether she has eaten. She wants her father and the ordinary work of home.
 
-**Temperament.** A child who has learned that adults will listen if she speaks in verses, and who sometimes cannot help it. She is angry when treated as a relic. She is tender with animals that will still come near her, which are fewer and fewer. She lies about small things (whether she has eaten, whether she slept) and tells the visions straight.
+**Speech.** A child's local speech. Any imposed voice is a specific intrusion, not evidence that she is a public saint or reliable prophet.
 
-**Speech.** Two registers: a girl's, local, missing teeth; and a flat reciting voice that belongs to the fire.
+**Relationships.** Alice and Agatha provide dependable care. Anselm knows her family. Robert frightens her less when he listens and protects rather than demanding a revelation.
 
-**Relationships.** Guarin frightens and interests her. Almodis is the adult she might accept. Odo tries to catechize her and fails kindly. The flagellants are a weather she was left in.
+**Arc.** Protected in Act I, given room to testify, and able to rejoin her father if he is rescued. In 1150 she asks about an ordinary meal.
 
-**Arc.** Found in Act I, again in Act III. She can be left with the band (they become a later fight with her voice in it), placed with Almodis, or left with Isarn. If she lives, she is the first person in 1102 to say the new rye is only rye.
-
-**Design notes.** Optional ward. She speaks as an eleven-year-old, except when the other register is on her.
+**Design notes.** Remove the flagellant band, child-prophet title, and conditional child boss. Recovery requires care and time; her illness is not guilt.
 
 ---
 
-## Raimon the Long
+## Godric
 
 | | |
 |---|---|
-| Role | Seneschal of Rivoire. Act I boss. |
+| Role | Household sergeant and keeper of practical local memory. |
 | Age | 63 |
-| Status | Household officer of thirty years. Dying of the fire, and of something that borrowed his legs. |
+| Status | Living ally at Rookmere; served Walter for decades. |
 
-**Appearance.** A long man, as the name says, now long in the wrong places. From the knee down he walks on what replaced the legs that taught Guarin to ride. He has bound the stumps in horse-hide and keeps his eyes up. He still wears Aimar's old belt with the castrum keys.
+**Appearance.** Long limbs, a repaired belt with the store keys, and one knee that makes stairs a negotiation.
 
-**History.** Came to Aimar as a young sergeant, stayed, ran the harvests, the stores, the boy-Guarin. Someone had to keep the house. He tried to grind the blighted rye in Lent because the stores were low and he had never failed a winter. That is likely when it took his legs. He has been giving reports to an empty hall since Aimar died.
+**History.** Kept the household's work and obligations in view while Robert was away. He can identify which collection was ordinary and when demands changed. His memories of recent trouble are personal; accounts of the Conquest come from the generation before him.
 
-**Temperament.** Dutiful past the point of sense. Embarrassed by his body. Kind to Almodis in the gruff way of old servants. He is a man finishing his duty on borrowed limbs.
+**Temperament.** Loyal, sometimes stubborn, embarrassed by the occasions when he obeyed an intimidating man too readily. He can admit a wrong without ceasing to be useful.
 
-**Speech.** Harvest numbers, weather, the names of tenants. He tries to give Guarin the report in the undercroft during the fight.
+**Speech.** Names, measures, weather, and what a person actually promised. Calls Robert the young master until corrected.
 
-**Relationships.** Aimar was his lord. Guarin is "the young master" even at thirty-four. Almodis he obeys without the title.
+**Relationships.** Respects Alice because she stayed. Loved Walter without making him faultless. Ernald's demands have made duty seem dangerous.
 
-**Arc.** Act I boss. When he falls he thanks Guarin, or tries to. What was in the legs goes into the rye. He should be buried in the churchyard and stay there if Guarin does it himself.
+**Arc.** Helps expose the collection, keeps the refuge operating, and guides the convoy. Can be injured or lost through events, but is not designed as an unavoidable first boss.
 
-**Design notes.** First named fight. Keep him human long enough that killing him feels like a household act.
+**Design notes.** Household affection remains visible in action. Do not give him personal memories of 1066.
 
 ---
 
-## Father Giraud
+## Father Anselm
 
 | | |
 |---|---|
-| Role | Parish priest of Saint-Laurent, Rivoire. |
+| Role | Priest of the invented parish of Saint Peter; spiritual and practical ally. |
 | Age | 47 |
-| Status | Priest. Chasuble in the chest. |
+| Status | Fictional local priest; distinct from the earlier historical archbishop. |
 
-**Appearance.** A country priest gone thin. Burn-scars on both palms from the mill. His chasuble is folded in a chest; he wears a plain alb gone grey.
+**Appearance.** Plain worn clerical clothing, mud at the hem, and a voice tired from keeping vigil rather than refusing his duties.
 
-**History.** Priest of Rivoire for eighteen years. Baptized Agnes. Buried Aimar twice. When the crucifix grew a tau he waited three days and then burned the mill, thinking the stone was the source. The miller died in it. Giraud has kept the Mass since. He has a small reserve of last year's wheaten hosts locked in the aumbry. Wheat is what he will consecrate.
+**History.** Serves Rookmere's parish and knows its households. He buried Walter and helps Alice shelter neighbors. He questions the relief bread without attributing its harm to the Mass. Keeps worship available as fear grows.
 
-**Temperament.** Stubborn, guilty, more intelligent than his Latin suggests. He is waiting for a bishop. He has withdrawn from his duties in fear and guilt over the miller's death. Guarin can help him face that wrong and protect the people who remain. Evidence of contaminated provisions and the counterfeit can help him resume service to the parish. The Mass itself is not the vector.
+**Temperament.** Stubborn, capable of anger, and willing to say that he does not know the cause of a sickness. He does not need perfect knowledge to remain with someone.
 
-**Speech.** Short sermons even when he is trying to converse. He calls the fire "the holy" with a bitterness he hates in himself.
+**Speech.** Plain instruction and familiar prayers. He can recognize a passage from Revelation without treating every frightened child as a prophet.
 
-**Relationships.** Almodis he has failed. Agnes he cannot look at without seeing the mill. Guarin is a lord and a penitent and he is ready for neither.
+**Relationships.** Supports Alice, knows Edith's family, and can hear Hugh's confession. Robert is a lay protector and a man seeking strength, not a rival priest.
 
-**Arc.** Optional Act I helper. Possible later confessor if restored.
+**Arc.** Supports the early prayer and ordinary parish life, then Hugh's release and preparation for the final approach.
+
+**Design notes.** No required mill-burning atrocity or withdrawal from Mass. Neither worship nor blessed attacks secretly powers the enemy.
 
 ---
 
-## Raimbaut of Saillans
+## Sir Gilbert
 
 | | |
 |---|---|
-| Role | Returned knight. The Leper Constable. Act III named agent. |
+| Role | Returned knight and founder of the Brotherhood of the Wounded; Act III antagonist. |
 | Age | 38 |
-| Status | Irregular master of a commandery he invented. |
+| Status | Master of an invented armed fraternity; no verified military-order affiliation. |
 
-**Appearance.** Once handsome in the southern way. The disease has taken the bridge of his nose and the feeling in his fingers. He wears gloves he can only half close and a white cloak he dyed himself. He still sits a horse better than whole men.
+**Appearance.** Once handsome, now scarred and tired, with gloves he struggles to close. Patched pale cloth bears an irregular badge of his own invention. It is not a standard Templar, Hospitaller, or Saint Lazarus uniform.
 
-**History.** A knight of Saillans who rode in the same host as Guarin, another company. He was marked before Jerusalem; he hid it. He came home to a wife who closed the door and a priest who opened one. He gathered other returned men — leprous, burned, sleepless — in a half-ruined castrum above the Drôme and wrote them a rule. He is inventing a heresy of chivalry a generation before anyone will bless the orthodox version.
+**History.** Rode in the same fictional company as Robert. He saw care and disciplined armed religious service in the East. At home he gathered veterans who wanted purpose and wrote a private rule. His men first guarded travelers. He then made submission to his rule the price of safety and treated neighbors' grain as his fraternity's right.
 
-They ride against the blight. When the blight is quiet they ride against anyone with whole skin and stored grain. He has a theology for this: the marked are already dead in law, therefore their sword is clean, therefore they are the proper sword.
+**Temperament.** Proud, articulate, bitterly courteous. He wants Robert's recognition. His losses are real; his claim that loss licenses domination is his choice.
 
-**Temperament.** Proud, articulate, bitterly courteous. He wants Guarin's recognition more than his death. The Crusade marked them. He has decided the mark makes them the proper sword. He can be spoken with. The rule is the floor he stands on.
+**Speech.** Formal brotherhood language that can become a soldier's threat. He calls coerced men brothers and expects the word to end the argument.
 
-**Speech.** Chapter-house formality, then sudden barrack coarseness. He calls his men "brothers" and means it.
+**Relationships.** Robert is a mirror he resents. Hamon is both rival and convenient excuse for taking power. Hugh is someone he would punish before understanding him. Some recruits still want to protect people and can reject his commands.
 
-**Relationships.** Guarin is a mirror he resents. Lambert he despises as a whole-skinned calculator. Fulk he would hang as a thief of relics. His postulants love him.
+**Arc.** Talk, evidence of predation, release of coerced men, and a named confrontation. Defeating or stopping him preserves people who can help later.
 
-**Arc.** Named fight in Act III. Protecting his uninfected postulants preserves people who can later help. Stopping his predation is righteous action; his men's illnesses do not establish guilt. He needs to be met as a knight, and then stopped.
-
-**Design notes.** Commandery as dungeon. Let him talk.
+**Design notes.** He appropriates an existing ideal of religious knighthood. His illness or disfigurement is not the basis of the fight.
 
 ---
 
-## Lambert
+## Hamon
 
 | | |
 |---|---|
-| Role | Irregular bishop in the closed town of Crest. Act III named agent. |
-| Age | 56 |
-| Status | Formerly a canon of Valence. Styles himself bishop. Rome has been silent. |
+| Role | Estate agent controlling the fictional relief route and enclosure; Act III antagonist. |
+| Age | 46 |
+| Status | Lay officer claiming a mandate; not the earl, sheriff, or a historical bishop. |
 
-**Appearance.** A clerk's body under a borrowed pontifical. Clean. The cleanliness is the point. Mitre when he must, skullcap when he works. Ink under the nails.
+**Appearance.** Clean cuffs, a good cap, a purse and a seal case. The cleanliness matters because someone else handles the sacks and prisoners.
 
-**History.** A capable canon who left Valence when the fire started to look like administration rather than weather. Crest had walls and an empty cathedra. He assumed the see in the way a competent man assumes a leaking boat. He walled the town, then walled the sick inside a second time. He has scripture for offering them to buy the healthy another winter. He keeps accounts. The accounts balance.
+**History.** Used the loss of the greater household's lord and Walter's death to make his demands difficult to challenge. Obtained the Rookmere seal improperly, made copied claims, and called his grain collections protection. When the care house refused the suspect lot, he took it and Hugh's casket to Blackthorn Hold. He continues distribution after recognizing the pattern of harm.
 
-He is a corrupt office-holder treating souls as kindling. Other Christians can resist his policy and help those he has abandoned.
+**Temperament.** Calm and capable, afraid of losing control, willing to describe suffering as a necessary entry in his account. His claimed commission does not establish the historical family's involvement.
 
-**Temperament.** Calm, sleepless, convinced that feeling is a luxury of men without ledgers. He will show Guarin the inner wall as a necessary work. He is afraid of the graffiti he cannot explain and more afraid of opening the gates. He can be killed. He can be unseated in front of his chapter and left alive. The second is harder.
+**Speech.** Numbers, duties, and the language of safety. Always knows which stronger authority he wants someone to fear.
 
-**Speech.** Administrative Latin, then the vernacular of a man explaining a sad necessity to a child. His voice stays level.
+**Relationships.** Alice is the witness he cannot make forget. Thomas first made concealment easier, then became a problem. Gilbert supplies a threat useful to his rhetoric. Ernald performs the violence his good cuffs conceal.
 
-**Relationships.** Isarn leaves his mitre unrecognized. Raimbaut he would have burned if he could have reached him. Guarin is a disruption to the arithmetic. The sick behind the inner wall are a category.
+**Arc.** His route is exposed, captives released, and enforcement stopped. He may be captured with witnesses or killed while attacking. His defeat makes ordinary supply and protection possible.
 
-**Arc.** Set-piece of Crest. Unseating him alive is remembered in the descent. Force may be necessary to stop him. The moral question concerns what he is doing and whom Guarin must protect, not whether an attack is blessed.
-
-**Design notes.** His chapel holds a ledger. His horror is policy.
+**Design notes.** Replace the usurped bishopric and closed-town arithmetic. His enclosure is one invented local yard, not a claim that the historical town was seized.
 
 ---
 
-## Aimar of Royans
+## Ernald
 
 | | |
 |---|---|
-| Role | Guarin and Almodis's father. Dead before the campaign. |
-| Age | Died at 61, spring 1101 |
-| Status | Buried twice in Saint-Laurent's yard. |
+| Role | Armed collector; first named opponent. |
+| Age | 32 |
+| Status | Hamon's enforcer, acting in the fictional manor dispute. |
 
-**Appearance in memory.** A short, thick castellan, broken nose, loud in the hall. In the grave, the second time, he has stones on the lid and the left arm is out of the winding sheet.
+**Appearance.** Repaired mail, a working helmet, a short weapon, and good boots paid for by collections. He is recognizably human.
 
-**History.** Held Rivoire from Albon, fought local wars, kept to his own hills. Sent the surgeon away when the fire took his arm. Died angry at Guarin for being on the road and at God for the rye. The ground pushed the coffin up. Almodis leaves this off the table.
+**History.** Learned that a claimed order, several armed men, and a threatened household can produce payment. He comes to take Alice's protected grain and the miller's family as leverage. The attack, not his occupation or allegiance alone, establishes the immediate need for force.
 
-**Temperament (remembered).** Blunt, hospitable, suspicious of monks, fond of Raimon. He thought the crusade a younger son's escape dressed as piety, and said so.
+**Temperament and speech.** Impatient with delay; prefers a quiet threat to an argument he cannot win. Can yield when stopped and kept under safe custody.
 
-**Arc.** Presence. His second grave is an Act I image. He may appear in a war-worn dream or a temptation toward despair. Receiving the sacrament is not a mechanism for making him accuse Guarin.
+**Arc.** Act I confrontation. His survival can provide another witness, but his testimony is not the only way forward.
+
+**Design notes.** Separate active attackers, surrender, coerced bystanders, and the first genuinely inhuman creature.
 
 ---
 
-## Gaston of Valloire
+## Walter of Rookmere
 
 | | |
 |---|---|
-| Role | Historical founder and patron of the Antonines. Offstage. |
-| Age | Not securely established here |
-| Status | Traditional local founder; offstage patron in this fiction |
+| Role | Robert and Alice's father; household history and disputed obligations. |
+| Age | Died at 61, spring 1149. |
+| Status | Ordinarily buried; his household seal was later misused. |
 
-Local foundation tradition places Gaston and his son at the beginnings of an alms fraternity around 1095 after the son's cure at Anthony's relics. Its mature religious organization belongs later. In this fiction, Isarn writes to the offstage patron. The campaign does not supply a verified 1101 age or chartered office for him.
+**History.** Held the invented manor within the Warenne sphere. Kept local responsibilities while his son went east. Could be blunt, proud, and wrong about people, while still loving his household. His death leaves practical duties and grief. His seal becomes evidence because those who knew his acts can distinguish them from Hamon's later claims.
 
-**Design notes.** Name in charters and in Isarn's mouth.
-
----
-
-## Historical persons who appear only in memory
-
-### Adhemar of Le Puy
-
-Papal legate, spiritual head of the First Crusade. Skeptical of Peter Bartholomew's lance because he had already seen a Holy Lance in Constantinople. Died of plague after Antioch, 1098. In Guarin's memories he is a spiritual leader taken by illness. Remembering his guidance can carry grief and also the example of a man who served others. Any spoken memory is fictional staging.
-
-### Peter Bartholomew
-
-Provençal peasant and visionary in Raymond's host. Claimed St. Andrew showed him the Holy Lance — in the claim, Longinus's spear — under St. Peter's in Antioch. Produced a scrap of iron, 15 June 1098. After Adhemar's death his visions multiplied; he spoke of weeding the sinful from the ranks. On Good Friday, 8 April 1099, he carried the iron through a corridor of fire. He came out roasted and died days later. The historical controversy can remain in Guarin's memories. It does not establish Peter as Fulk's predecessor in demonic service. A supernatural interpretation would be an additional fictional choice.
-
-### Longinus
-
-Tradition. The unnamed soldier of John 19 who pierced Christ's side; later named Longinus, healed of blindness by the blood and water, which the Church reads as Eucharist and Baptism. His tradition can provide an image of a soldier turning toward Christ. He lives in the claim made for the iron.
-
-### Urban II
-
-Preached the crusade in 1095. Local Antonine foundation tradition belongs to roughly the same period; the early fraternity should not be called a mature religious order confirmed that year. Dead in 1099. A name in the opening crawl and in old men's mouths.
-
-### Raymond of Toulouse
-
-Count whose host Guarin, Fulk, and Raimbaut marched in. Believed the Antioch lance. Kept it after Peter's death. Offstage. His host supplies the historical route and war background for Guarin's fictional service.
+**Presence.** An ordinary grave, unfinished work, a remembered kindness, and something Alice kept because it was useful. No required rising coffin or dream that accuses Robert through a sacrament.
 
 ---
 
-## Abaddon
+## Historical people in the background
 
-| | |
+These people supply dated context. Their involvement in the invented company or manor is not claimed as documented.
+
+| Person | Relevant position |
 |---|---|
-| Role | The Destroyer. Final presence. An office. |
-| Other name | Apollyon |
-| Status | King of the locusts that come up from the pit. Revelation 9. |
+| William III de Warenne | Earl who died on the Second Crusade in 1148; his loss connects household uncertainty to the same war. |
+| Isabel de Warenne | Heiress after her father's death; kept offstage. Her first-marriage date remains unresolved in the checked evidence. |
+| King Stephen | Reigning English king throughout the campaign and the 1150 epilogue. |
+| Empress Matilda | Rival claimant who withdrew from the English campaign in 1148; distinct from Stephen's wife. |
+| Queen Matilda of Boulogne | Stephen's wife and supporter. |
+| Henry, son of the Empress | Pursues the Angevin claim in 1149; not yet King Henry II. |
+| Louis VII | Leader of the army with which Robert's invented company travels. |
+| Eugene III and Bernard | Contemporary papal and preaching context; particular local conversations or texts require their own evidence. |
 
-**Appearance.** A 12th-century nightmare of the Apocalypse. A human face, too calm. A woman's fall of hair. A lorica of overlapping iron scales. A scorpion's last third. A king's circlet that is also a millstone. Around him, locusts with human faces, iron breastplates, and the hair of women — as John listed them. The room is a black silo the size of a night sky, raining sclerotia. He is locust, knight, and mill together.
-
-**History within the fiction.** A hostile will beneath the grainlands, with older traces in the buried rooms. Fulk carried a counterfeit sacred remnant whose contaminated material entered provisions. Abaddon wears the rye as flesh and exploits the false remedies and rites built around that object. This invented local history is distinct from Revelation's imagery.
-
-He seeks destruction through deception, coercion, corruption, and despair. Genuine faith, blessings, and righteous resistance oppose him; they do not feed him.
-
-**Temperament.** Courteous. Chronicling. He tells Guarin that every life saved will suffer again and that goodness cannot last. He uses the knight's memories of war to make surrender seem reasonable. These are his temptations and claims; the story defeats them through real goodness and meaningful victory.
-
-**Speech.** A clerk of the last days. Latin when quoting, the vernacular of the Royans when he wants to be understood. He uses *we* for the locusts and *I* for the office.
-
-**Arc.** Guarin breaks his local foothold, destroys the counterfeit, and confronts him through the strength and guidance of Christ. He is driven back into the pit. The valley lives, and the people Guarin has helped have a future.
-
-**Design notes.** Final fight of Act V. Teach the means of breaking his foothold in Act IV. Prayer and blessed attacks can contribute to victory. There is no unblessed-final-blow rule. His defeat fulfills Guarin's prayer and restores hope.
+The active research dates these roles and separates sources from story inference. No historical office-holder is secretly assigned the campaign's crimes.
 
 ---
 
-## Household and chorus
+## Abaddon / Apollyon
 
-| Name | Function |
-|---|---|
-| The cook at Rivoire | Stays with Almodis. Will say what the hall leaves unsaid. |
-| The boy of the castrum | Fetches. Sees Raimon's legs first. |
-| Flagellant master on the Pont road | Names Agnes. Later a fight if she is left with him. |
-| Illuminator of La-Motte | Blind two years. Paints what Guarin has yet to tell him. |
-| Uninfected postulants of Raimbaut | Can be spared. Remembered. |
-| Chapter of Crest | Can witness Lambert unseated. |
-| Patients of the infirmary | Some help Durand. Some help Guarin. |
+**Role.** Final antagonist, the Destroyer drawn from Revelation 9. The foothold, counterfeit, particular appearance, and means of defeat are fiction.
 
-Name these when a scene needs a name. The campaign is small on purpose.
+**Appearance.** Locust, armored ruler, and mill: human face, a woman's hair, iron breastplates, scorpion sting, and a millstone circlet. Sacred appearances belong to his deception, not a demonstration that genuine devotion is his power.
+
+**Temperament and speech.** Courteous, patient, and certain that he can make exhaustion sound like wisdom. He names a person's losses and calls every rescued life a wasted postponement.
+
+**Relationships.** Hugh is a coerced servant, Hamon and Gilbert responsible human agents he exploits, and Robert the man he wants to make surrender. He cannot erase the goodness people freely choose.
+
+**Arc.** His local foothold is broken and he is driven back into the pit. Robert wins through Christ, with the will and conviction for which he prayed. The community has a real future in 1150.
+
+**Design notes.** The final fight can use prayer and blessings. It has no unblessed-hit requirement and no compulsory confession of a concealed atrocity.
+
+---
+
+## Minor people with room to act
+
+- Edith's father, the unnamed miller: captive who can return to his daughter and work.
+- A neighboring household's clerk: can assess a claim, preserve a copy, and help witnesses be heard.
+- Men leaving Gilbert's fraternity: possible guards for the clean-supply convoy.
+- Patients, cooks, tenants, and travelers: individual choices, useful work, and particular needs rather than anonymous proof of universal ruin.
+- A sincere religious neighbor: offers help without being made the unverified historical prior.
+
+Their names, when introduced, must belong to this setting and agree with the active research. They are not additional attested people or approved numerical gameplay contracts.
