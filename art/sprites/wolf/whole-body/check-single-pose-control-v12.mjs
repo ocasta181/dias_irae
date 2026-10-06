@@ -6,11 +6,12 @@ import { createHash } from "node:crypto";
 const require = createRequire(import.meta.url), canvasModule = process.env.DIAS_IRAE_CANVAS_MODULE || "@napi-rs/canvas";
 const sharp = require(require.resolve("sharp", { paths: [dirname(require.resolve(canvasModule))] }));
 const root = new URL("single-pose-v12/", import.meta.url);
-const target = JSON.parse(await readFile(new URL("targets.json", root)));
+const variant = process.argv[2] || "", suffix = variant ? "-" + variant : "";
+const target = JSON.parse(await readFile(new URL(`targets${suffix}.json`, root)));
 const approved = JSON.parse(await readFile(new URL("walk-v07/manifest.json", import.meta.url))).directions.E.frames[5];
 assert.deepEqual(target.feet, approved.feet); assert.deepEqual(target.publicGuide, approved.guideLines);
 for (const reference of target.references) assert.equal(createHash("sha256").update(await readFile(reference.path)).digest("hex"), reference.sha256);
-const { data, info } = await sharp(await readFile(new URL("controls/E-06-contour.png", root))).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+const { data, info } = await sharp(await readFile(new URL(`controls/E-06-contour${suffix}.png`, root))).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
 assert.equal(info.width, 1024); assert.equal(info.height, 1024);
 const observations = {};
 for (const [id, foot] of Object.entries(target.feet)) {
@@ -28,5 +29,5 @@ for (let y = (122 - 56) * 8; y < (131 - 56) * 8; y++) for (let x = (140 - 32) * 
 const nose = [32 + (right + .5) / 8, 56 + ((Math.min(...ys) + Math.max(...ys)) / 2 + .5) / 8], noseError = Math.hypot(nose[0] - 144, nose[1] - 126);
 assert.ok(noseError <= .125, "Control nose edge conflicts with numeric tip: " + noseError);
 const report = { numericTargetMatch: true, sourceHashesMatch: true, observations, nose: { measured: nose, target: [144, 126], error: noseError }, status: "Raster/lineage preflight passes; independent anatomical/appearance review remains a separate requirement; no painting pass." };
-await writeFile(new URL("control-preflight.json", root), JSON.stringify(report, null, 2) + "\n");
+await writeFile(new URL(`control-preflight${suffix}.json`, root), JSON.stringify(report, null, 2) + "\n");
 console.log(JSON.stringify(report));

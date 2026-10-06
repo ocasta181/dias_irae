@@ -1,0 +1,19 @@
+{
+  "chosenBeforeV02": true,
+  "authority": "Astra/max single-pose protocol",
+  "pose": 6,
+  "rawRegistration": "128/outputWidth plus full logical offset(32,56); square outputs only, no fit",
+  "roleAssignment": "Trace attachment through bends to paw before examining targets; assign each observed paw once. Missing or ambiguous critical role fails.",
+  "soleRule": "Parent selects actual isolated paw ROI and component seed after unmarked topology review. Score alpha192 lowest boundary midpoint; alpha128 and connected lower contour bands4/8/16 rawpixels quantify threshold/sole-definition uncertainty. Do not select nearest target pixel or neighboring disconnected toe component.",
+  "uncertainty": "Include source sampling, threshold sensitivity, underside-definition sensitivity and annotation ambiguity; record vertical component separately.",
+  "acceptance": {
+    "layout": "truealpha, intact square registration, no guides/props/parts",
+    "topology": "both near attachments and bend orders correct, all4roles andsoles independently identifiable",
+    "staticSwing": "positionError+uncertainty<=1.5logicalpx; measuredY+verticalUncertainty<161.656854",
+    "farStance": "max norm at t=5/12 and6/12 using actual measured paw and approved worldcontact, plus uncertainty<=3logicalpx",
+    "nose": "edgeError+uncertainty<=1.5logicalpx",
+    "nearBends": "measure observable bends with uncertainty; hidden/inferred bone centers never copied from targets",
+    "style": "original gianthead,tinybody,shortlegs,tinywearyeyes,flatgrittypaint"
+  },
+  "failurePolicy": "One B edit attempt only. If geometry moves, stop this generation route; no alpha replacement, warp, fitting, per-paw movement or adjacent frames."
+}

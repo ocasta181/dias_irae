@@ -6,13 +6,14 @@ import { fileURLToPath } from "node:url";
 const require = createRequire(import.meta.url);
 const { createCanvas } = require(process.env.DIAS_IRAE_CANVAS_MODULE || "@napi-rs/canvas");
 const root = new URL("single-pose-v12/", import.meta.url);
+const variant = process.argv[2] || "", suffix = variant ? "-" + variant : "";
 const source = JSON.parse(await readFile(new URL("walk-v07/manifest.json", import.meta.url)));
 const pose = source.directions.E.frames[5];
 const colors = { LH: "#e69f00", LF: "#009e73", RH: "#d81b60", RF: "#1e88e5" };
 const roles = { LH: "FAR HIND · stance", LF: "FAR FORE · stance", RH: "NEAR HIND · late swing", RF: "NEAR FORE · early swing" };
 for (const dir of ["controls", "requests", "raw", "frames"]) await mkdir(new URL(dir + "/", root), { recursive: true });
 const canvas = createCanvas(1024, 1024), c = canvas.getContext("2d");
-c.fillStyle = "white"; c.fillRect(0, 0, 1024, 1024);
+if (!variant) { c.fillStyle = "white"; c.fillRect(0, 0, 1024, 1024); }
 c.save(); c.scale(8, 8); c.translate(-32, -56);
 c.lineWidth = .6; c.strokeStyle = "#252525"; c.lineJoin = "round"; c.lineCap = "round";
 function farLeg(id) {
@@ -57,9 +58,11 @@ c.beginPath(); c.moveTo(103, 109); c.quadraticCurveTo(99, 121, 109, 136); c.quad
 c.beginPath(); c.moveTo(129, 120); c.lineTo(133, 121); c.stroke();
 c.beginPath(); c.moveTo(142.5, 123.5); c.lineTo(143.7, 126); c.lineTo(141, 127.5); c.closePath(); c.fillStyle = "#252525"; c.fill();
 c.restore();
-const contourPath = new URL("controls/E-06-contour.png", root);
-await writeFile(contourPath, canvas.toBuffer("image/png"));
-const overlay = createCanvas(1024, 1024), a = overlay.getContext("2d"); a.drawImage(canvas, 0, 0);
+const contourPath = new URL(`controls/E-06-contour${suffix}.png`, root), roughPath = new URL(`controls/E-06-rough-alpha${suffix}.png`, root);
+if (variant) await writeFile(roughPath, canvas.toBuffer("image/png"));
+const diagram = createCanvas(1024, 1024), dc = diagram.getContext("2d"); dc.fillStyle = "white"; dc.fillRect(0, 0, 1024, 1024); dc.drawImage(canvas, 0, 0);
+await writeFile(contourPath, diagram.toBuffer("image/png"));
+const overlay = createCanvas(1024, 1024), a = overlay.getContext("2d"); a.drawImage(diagram, 0, 0);
 a.save(); a.scale(8, 8); a.translate(-32, -56); a.lineWidth = .5; a.lineCap = "round";
 for (const id of ["LH", "LF", "RH", "RF"]) {
   const f = pose.feet[id], p = f.points;
@@ -82,9 +85,9 @@ for (const [id, pos] of Object.entries(labelPositions)) {
 a.fillStyle = "#333"; a.fillText("E06 · complete whole-body contour · right-facing elevated view", 28, 32);
 a.fillText("Dashed: hidden far proximal paths. Solid: exposed distal paths and near legs.", 28, 59);
 a.fillText("HIP → STIFLE → HOCK → PAW (hind) / SHOULDER → ELBOW → CARPUS → PAW (fore)", 28, 87);
-const anatomyPath = new URL("controls/E-06-anatomy.png", root);
+const anatomyPath = new URL(`controls/E-06-anatomy${suffix}.png`, root);
 await writeFile(anatomyPath, overlay.toBuffer("image/png"));
 const originals = [source.identity.crop, fileURLToPath(new URL("../../../concepts/images/s13-guarin-isometric-v02.png", import.meta.url)), fileURLToPath(new URL("../../../concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png", import.meta.url))];
-const refs = [fileURLToPath(contourPath), fileURLToPath(anatomyPath), ...originals];
-await writeFile(new URL("targets.json", root), JSON.stringify({ status: "control candidate; not painted or preflight-approved", decision: { model: "gpt-6-astra", reasoning: "max", commit: "159403a", method: "A: single anatomical contour to paint", confidence: .95 }, pose: 6, source: "../walk-v07/manifest.json", crop: [32, 56, 128, 128], logicalSize: [192, 192], root: [96, 156], feet: pose.feet, publicGuide: pose.guideLines, privateGuidePolicy: "Full side-specific four-joint paths; approved public guide unchanged. Far upper segments are explanatory dashed paths; final sprite remains opaque.", references: await Promise.all(refs.map(async path => ({ path, sha256: createHash("sha256").update(await readFile(path)).digest("hex") }))) }, null, 2) + "\n");
+const refs = [fileURLToPath(variant ? roughPath : contourPath), fileURLToPath(anatomyPath), ...originals];
+await writeFile(new URL(`targets${suffix}.json`, root), JSON.stringify({ status: "control candidate; not painted or preflight-approved", decision: { model: "gpt-6-astra", reasoning: "max", commit: "159403a", method: variant ? "B: finish one verified transparent whole cel in place" : "A: single anatomical contour to paint", confidence: .95 }, pose: 6, source: "../walk-v07/manifest.json", crop: [32, 56, 128, 128], logicalSize: [192, 192], root: [96, 156], feet: pose.feet, publicGuide: pose.guideLines, privateGuidePolicy: "Full side-specific four-joint paths; approved public guide unchanged. Far upper segments are explanatory dashed paths; final sprite remains opaque.", references: await Promise.all(refs.map(async path => ({ path, sha256: createHash("sha256").update(await readFile(path)).digest("hex") }))) }, null, 2) + "\n");
 console.log("Prepared one fresh E06 anatomical contour and ownership guide; no painting request yet.");
