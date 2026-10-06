@@ -1,5 +1,5 @@
 {
-  "status": "Numerical/raster control preflight verified; independent Astra topology check passes after exposed distal paths made solid. Painting not generated.",
+  "status": "Numerical/raster controls and independent topology preflight verified. V01 painting topology improves, but full geometric proof is not accepted.",
   "decision": {
     "model": "gpt-6-astra",
     "reasoning": "max",

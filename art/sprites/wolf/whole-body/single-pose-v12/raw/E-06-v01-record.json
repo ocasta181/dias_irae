@@ -1,0 +1,59 @@
+{
+  "status": "Topology-only improvement independently verified by Astra; not accepted: actual paw positions exceed precision gate; no motion lab installation.",
+  "tool": "built-in image_gen",
+  "actual_input": {
+    "prompt": "Paint EXACTLY ONE intact whole-body wolf sprite in the precise E06 walking pose shown in image1, on true transparent background. This is a single pose-transfer proof, not a sheet or standing character concept. Preserve image1's entire square canvas, position, scale, four paw lanes and full body silhouette/leg crease construction. Do not crop or re-center the wolf. Image1 is the freshly authored WHOLE-WOLF CONTOUR controlling shape and pose. Image2 shows the SAME contour with anatomical ownership: magenta RH near hind comes from the HAUNCH; blue RF near fore comes from the CHEST; orange LH far hind and green LF far fore support it behind. Dashed proximal paths in image2 explain hidden joints; solid distal paths mark visible far paws. All four paw undersides must remain visible and distinct. Small dots mark the four joints of each chain.\nImage3 is the ORIGINAL wolf identity/coat basis only; DO NOT copy its standing legs or overwrite the posed contour with its standing shape. Keep its huge broad wolf head, tiny short squat torso, very short thick legs, compact paws, tiny tired eyes, rough grey-brown coat and cream muzzle. Image4 supplies the flat gritty hand-painted 2D game medium and exaggerated cute/squat proportions; it is a human STYLE reference, do not include its human body, helmet or equipment. Image5 supplies the dreary game's paint/material context only; include no environment, humans or props.\nThe key pose is near HIND leg advancing under the belly: trace haunch→forward STIFLE→backward HOCK→forward paw, ending at the left of the two close central paws. The OTHER central paw belongs to near FORE leg: chest→backward ELBOW→CARPUS→paw. These cannot become two chest/forelegs or be relabeled by nearest endpoint. Far hind paw stays behind on the higher projected lane; far fore paw supports behind the jaw on that same higher lane. Keep the continuous neck, chest, haunch and abdomen as ONE organically connected animal in this pose, with fur following the bent attached masses. Preserve visible internal crease/overlap clues under the finished coat. Four short canine legs only; no biped posture, detached parts, floating neck, fused paws, high stepping or extra appendages.\nFixed orthographic view45degrees above ground, looking at the animal's right side, muzzle pointing RIGHT. Flat 2D textured drawing, dark matte charcoal/taupe paint; no 3D/sculpt/glossy rendering, no realistic tall proportions, no large eyes, no cast shadow. Remove all guide colors, dots, letters, leader lines, ground rails and borders. Produce the complete sprite with genuine alpha.\nCoordinates use the full128×128 square crop, independent local coordinates. Scale to the returned square resolution with no repositioning. Rows mean attachment→stifle/elbow→hock/carpus→paw UNDERSIDE midpoint. Nose rightmost edge is(112,70); body centerline hip(48,84.4437)→shoulder(80,84.4437)→head/neck(90,71.7157). Ground root(64,100) is invisible. Preserve the paw underside centers, not the nearest toe or fur clump. Both near swing paws are only0.5178logical units above their near ground y105.6569; do not exaggerate lift.\nLH FAR HIND, STANCE: (48.0000,78.7868) → (51.6686,86.8658) → (39.5000,90.1005) → (43.5000,94.3431)\nLF FAR FORE, STANCE: (80.0000,78.7868) → (74.2380,85.4125) → (83.5000,90.8076) → (84.5000,94.3431)\nRH NEAR HIND, SWING: (48.0000,90.1005) → (59.4898,92.5484) → (55.2921,101.2484) → (59.9531,105.1391)\nRF NEAR FORE, SWING: (80.0000,90.1005) → (70.2062,93.6418) → (66.4807,101.7078) → (68.0469,105.1391)",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/single-pose-v12/controls/E-06-contour.png",
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/single-pose-v12/controls/E-06-anatomy.png",
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/canonical-crop.png",
+      "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png",
+      "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png"
+    ],
+    "transparent_background": true
+  },
+  "sourcePath": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-ec49d25a-125c-42d4-a036-55070283bf33.png",
+  "rawSha256": "441600388377ee3450e62046c00618215a5a02813e4705932c26f5d9004c5511",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "transparency": {
+    "transparentPixels": 1299565,
+    "occupiedPixels": 260244,
+    "realAlphaPresent": true
+  },
+  "registration": {
+    "scale": 0.10207336523125997,
+    "offset": [
+      32,
+      56
+    ],
+    "policy": "One fixed whole-square scale and placement; no fit, shift, part assembly, retouching or pixel pose correction."
+  },
+  "frame": "frames/E-06-v01.png",
+  "frameSha256": "1a2475d811f926b540baf9a061b5b941e5586a0d0bd5e7ea51c592227c4cf5c7",
+  "references": [
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/single-pose-v12/controls/E-06-contour.png",
+      "sha256": "29a18a6444807e638cfe4cb6a993da24b5e3a0357106a4f24e7cd1c2429a3021"
+    },
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/single-pose-v12/controls/E-06-anatomy.png",
+      "sha256": "47f645e4bcaa08d4c39ea76dac017e4c438b8fddd57319dd9c4735248a5a48e1"
+    },
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/canonical-crop.png",
+      "sha256": "ce1e63c559fa3e7cd6d2f49dfb62014f8903eedb789fb793d3fd07cdeecbbb92"
+    },
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png",
+      "sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c"
+    },
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+      "sha256": "191af0e5abbd484ec225633f530e6ed6dd9ebf01c5367910c09a353c4ca465d9"
+    }
+  ],
+  "topologyReview": "../topology-v01-astra.md"
+}

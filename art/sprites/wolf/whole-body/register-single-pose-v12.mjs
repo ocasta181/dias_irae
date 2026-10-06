@@ -1,0 +1,20 @@
+import { readFile, writeFile } from "node:fs/promises";
+import { createRequire } from "node:module";
+import { dirname } from "node:path";
+import { createHash } from "node:crypto";
+const require = createRequire(import.meta.url), canvasModule = process.env.DIAS_IRAE_CANVAS_MODULE || "@napi-rs/canvas";
+const sharp = require(require.resolve("sharp", { paths: [dirname(require.resolve(canvasModule))] }));
+const root = new URL("single-pose-v12/", import.meta.url), [sourcePath, variant = "v01"] = process.argv.slice(2);
+if (!sourcePath) throw new Error("Supply the original provider image path.");
+const bytes = await readFile(sourcePath), { data, info } = await sharp(bytes).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+await writeFile(new URL(`raw/E-06-${variant}.png`, root), bytes);
+if (info.width !== info.height) throw new Error("Single-pose square registration fails; raw bytes retained.");
+let transparentPixels = 0, occupiedPixels = 0;
+for (let i = 3; i < data.length; i += 4) { if (data[i] === 0) transparentPixels++; if (data[i] >= 192) occupiedPixels++; }
+const cell = await sharp(bytes).resize(128, 128, { kernel: "lanczos3" }).png().toBuffer();
+const frame = await sharp({ create: { width: 192, height: 192, channels: 4, background: { r: 0, g: 0, b: 0, alpha: 0 } } }).composite([{ input: cell, left: 32, top: 56 }]).png().toBuffer();
+await writeFile(new URL(`frames/E-06-${variant}.png`, root), frame);
+const args = JSON.parse(await readFile(new URL(`requests/E-06-${variant}.json`, root)));
+const record = { status: "candidate; topology-first and actual pixel QA pending; not in motion lab", tool: "built-in image_gen", actual_input: args, sourcePath, rawSha256: createHash("sha256").update(bytes).digest("hex"), dimensions: [info.width, info.height], transparency: { transparentPixels, occupiedPixels, realAlphaPresent: transparentPixels > 0 && occupiedPixels > 0 }, registration: { scale: 128 / info.width, offset: [32, 56], policy: "One fixed whole-square scale and placement; no fit, shift, part assembly, retouching or pixel pose correction." }, frame: `frames/E-06-${variant}.png`, frameSha256: createHash("sha256").update(frame).digest("hex"), references: await Promise.all(args.referenced_image_paths.map(async path => ({ path, sha256: createHash("sha256").update(await readFile(path)).digest("hex") }))) };
+await writeFile(new URL(`raw/E-06-${variant}-record.json`, root), JSON.stringify(record, null, 2) + "\n");
+console.log(JSON.stringify({ dimensions: record.dimensions, realAlphaPresent: record.transparency.realAlphaPresent, frame: record.frame }));
