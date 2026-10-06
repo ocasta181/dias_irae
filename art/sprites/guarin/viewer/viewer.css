@@ -33,8 +33,9 @@ label { display: block; margin: 12px 0; }
 .check { display: flex; align-items: center; gap: 8px; }
 .transport, .actions { display: flex; flex-wrap: wrap; gap: 8px; }
 .transport { margin-top: 12px; }
-#walk-step-controls .transport { align-items: center; justify-content: space-between; }
-#walk-frame { font-variant-numeric: tabular-nums; }
+#step-controls .transport { align-items: center; justify-content: space-between; }
+#step-frame { font-variant-numeric: tabular-nums; }
+.controls fieldset { margin-bottom: 14px; }
 .actions button { flex: 1 1 110px; }
 fieldset { border: 1px solid #61583e; padding: 10px; }
 .compass { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; }

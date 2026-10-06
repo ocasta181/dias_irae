@@ -46,15 +46,16 @@ function playground(startup = false) {
       return prevented;
     },
     step: time => vm.runInContext(`tick(${time})`, scope, { timeout: 200 }),
-    state: () => JSON.parse(vm.runInContext("JSON.stringify({player, position, scheduled, playing, viewMode})", scope)),
+    state: () => JSON.parse(vm.runInContext("JSON.stringify({player, position, scheduled, playing, frameByFrame, characterId})", scope)),
     preset: id => nodes.find(item => item.dataset.sequence === id).listeners.click(),
     inspect: clip => { get("clip").value = clip; get("clip").listeners.change(); },
     tune: (speed, fps) => { get("speed").value = speed; get("fps").value = fps; get("fps").listeners.change(); },
     blur: () => window.listeners.blur(),
     select: (id, data) => { scope.inputSelected = data ?? (id === "wolf" ? wolf : atlas); return vm.runInContext(`applyCharacter("${id}", inputSelected, new Map(Object.values(inputSelected.directions).flatMap(page => page.frames).map(frame => [frame.image, {path: frame.image}])))`, scope); },
-    stick: () => vm.runInContext("applyCharacter('wolf', inputWolf, new Map(), inputSticks)", scope),
-    human: () => vm.runInContext("applyCharacter('human', inputHuman, new Map(), inputHuman)", scope),
-    view: mode => { get("view").value = mode; get("view").listeners.change(); },
+    stick: () => vm.runInContext("applyCharacter('wolf-stick', inputSticks, new Map())", scope),
+    human: () => vm.runInContext("applyCharacter('human', inputHuman, new Map())", scope),
+    manual: enabled => { get("frame-by-frame").checked = enabled; get("frame-by-frame").listeners.change(); },
+    direction: heading => nodes.find(item => item.dataset.direction === heading).listeners.click(),
     click: id => get(id).listeners.click(),
     text: id => get(id).textContent,
     focused: id => get(id).focused,
@@ -139,50 +140,50 @@ test("page keyboard input moves diagonally and release returns to idle", () => {
 test("selecting wolf during initial loading cannot strand a hidden lab", async () => {
   const lab = playground(true), startup = lab.begin();
   assert.equal(lab.renders(), 1);
-  lab.change("wolf"); lab.respond(1, wolf);
+  lab.change("wolf-stick"); lab.respond(1, wolf);
   await new Promise(setImmediate);
   lab.respond(2, plan);
   await new Promise(setImmediate);
   assert.equal(lab.visible(), true);
-  assert.equal(lab.value("character"), "wolf");
+  assert.equal(lab.value("character"), "wolf-stick");
   lab.respond(0, atlas); await startup;
-  assert.equal(lab.value("character"), "wolf");
+  assert.equal(lab.value("character"), "wolf-stick");
   lab.step(0); assert.equal(lab.state().player.clip, "idle");
 });
 
 test("Space, Right Arrow and the visible button each step once; repeats never step", () => {
-  const lab = playground(); lab.stick(); lab.view("stick-step"); lab.step(0);
+  const lab = playground(); lab.stick(); lab.manual(true); lab.step(0);
   assert.equal(lab.focused("stage"), true);
-  assert.equal(lab.text("walk-frame"), "1 / 12");
-  lab.key("keydown", " "); assert.equal(lab.text("walk-frame"), "2 / 12");
-  lab.key("keydown", " ", { repeat: true }); assert.equal(lab.text("walk-frame"), "2 / 12");
+  assert.equal(lab.text("step-frame"), "1 / 12");
+  lab.key("keydown", " "); assert.equal(lab.text("step-frame"), "2 / 12");
+  lab.key("keydown", " ", { repeat: true }); assert.equal(lab.text("step-frame"), "2 / 12");
   lab.key("keyup", " "); lab.key("keydown", "ArrowRight");
-  assert.equal(lab.text("walk-frame"), "3 / 12");
-  lab.key("keydown", "ArrowRight", { repeat: true }); assert.equal(lab.text("walk-frame"), "3 / 12");
-  lab.click("walk-next"); assert.equal(lab.text("walk-frame"), "4 / 12");
-  lab.key("keydown", "ArrowLeft"); assert.equal(lab.text("walk-frame"), "3 / 12");
+  assert.equal(lab.text("step-frame"), "3 / 12");
+  lab.key("keydown", "ArrowRight", { repeat: true }); assert.equal(lab.text("step-frame"), "3 / 12");
+  lab.click("step-next"); assert.equal(lab.text("step-frame"), "4 / 12");
+  lab.key("keydown", "ArrowLeft"); assert.equal(lab.text("step-frame"), "3 / 12");
 });
 
 test("manual walking view visits all twelve distinct poses and wraps without moving", () => {
-  const lab = playground(); lab.stick(); lab.view("stick-step"); lab.step(0);
+  const lab = playground(); lab.stick(); lab.manual(true); lab.step(0);
   const before = lab.state().position;
   const seen = [];
   for (let index = 0; index < 12; index++) {
-    lab.step(index * 500); seen.push(lab.text("walk-frame"));
+    lab.step(index * 500); seen.push(lab.text("step-frame"));
     lab.key("keydown", " "); lab.key("keyup", " ");
   }
   assert.deepEqual(seen, Array.from({ length: 12 }, (_, index) => `${index + 1} / 12`));
-  assert.equal(lab.text("walk-frame"), "1 / 12");
+  assert.equal(lab.text("step-frame"), "1 / 12");
   assert.deepEqual(lab.state().position, before);
   assert.equal(lab.state().playing, false);
 });
 
 test("frame view cannot resume through movement, restart or editing a control", () => {
-  const lab = playground(); lab.stick(); lab.view("stick-step"); lab.step(0);
+  const lab = playground(); lab.stick(); lab.manual(true); lab.step(0);
   lab.key("keydown", "d"); lab.key("keydown", "ArrowUp"); lab.click("restart");
   lab.key("keydown", "ArrowRight", { editing: true });
   lab.key("keydown", " ", { ctrlKey: true }); lab.step(2000);
-  assert.equal(lab.text("walk-frame"), "1 / 12");
+  assert.equal(lab.text("step-frame"), "1 / 12");
   assert.equal(lab.state().playing, false);
   assert.equal(lab.state().player.elapsedMs, 0);
   assert.equal(lab.state().position[0], 450);
@@ -193,7 +194,7 @@ test("stick movement plays twelve poses over a second with a straight ground roo
   lab.key("keydown", "d"); lab.step(0);
   const poses = [], roots = [];
   for (let index = 1; index <= 60; index++) {
-    lab.step(index * 1000 / 60); poses.push(lab.text("walk-frame")); roots.push(lab.state().position);
+    lab.step(index * 1000 / 60); poses.push(lab.text("step-frame")); roots.push(lab.state().position);
   }
   assert.equal(new Set(poses).size, 12);
   assert.ok(Math.abs(lab.state().player.elapsedMs - 1000) < 1e-8);
@@ -207,9 +208,9 @@ test("stick controls support eight headings and clear held movement on mode chan
   lab.key("keydown", "w"); lab.key("keydown", "a"); lab.step(100);
   assert.equal(lab.state().player.direction, "NW");
   assert.ok(lab.state().position[0] < 450 && lab.state().position[1] < 420);
-  lab.view("stick-step"); lab.key("keyup", "a"); lab.key("keyup", "w");
+  lab.manual(true); lab.key("keyup", "a"); lab.key("keyup", "w");
   assert.equal(lab.state().player.clip, "walk");
-  lab.view("stick-move"); const root = lab.state().position; lab.step(200); lab.step(300);
+  lab.manual(false); const root = lab.state().position; lab.step(200); lab.step(300);
   assert.deepEqual(lab.state().position, root);
   lab.key("keydown", "d"); lab.blur(); assert.equal(lab.state().player.clip, "idle");
 });
@@ -236,24 +237,23 @@ test("human atlas loads without raster images and defaults to controllable stick
   await new Promise(setImmediate);
   assert.equal(lab.visible(), true);
   assert.equal(lab.value("character"), "human");
-  assert.equal(lab.state().viewMode, "stick-move");
+  assert.equal(lab.state().frameByFrame, false);
   assert.equal(lab.state().player.direction, "SE");
-  assert.equal(lab.hidden("sprite-view"), true);
   lab.respond(0, atlas); await startup;
   assert.equal(lab.value("character"), "human");
 });
 
 test("human frame view steps through twelve poses once per press and holds its ground root", () => {
-  const lab = playground(); lab.human(); lab.view("stick-step"); lab.step(0);
+  const lab = playground(); lab.human(); lab.manual(true); lab.step(0);
   const root = lab.state().position;
   for (let index = 1; index <= 12; index++) {
     lab.key("keydown", index % 2 ? " " : "ArrowRight");
     lab.key("keydown", index % 2 ? " " : "ArrowRight", { repeat: true });
     lab.step(index * 250);
-    assert.equal(lab.text("walk-frame"), `${index % 12 + 1} / 12`);
+    assert.equal(lab.text("step-frame"), `${index % 12 + 1} / 12`);
     assert.deepEqual(lab.state().position, root);
   }
-  lab.click("walk-next"); assert.equal(lab.text("walk-frame"), "2 / 12");
+  lab.click("step-next"); assert.equal(lab.text("step-frame"), "2 / 12");
   assert.equal(lab.state().playing, false);
 });
 
@@ -262,7 +262,7 @@ test("human walk draws all twelve phases over a second and travels the authored 
   lab.key("keydown", "ArrowRight"); lab.step(0);
   const seen = new Set();
   for (let index = 1; index <= 60; index++) {
-    lab.step(index * 1000 / 60); seen.add(lab.text("walk-frame"));
+    lab.step(index * 1000 / 60); seen.add(lab.text("step-frame"));
     assert.equal(lab.state().position[1], 420);
   }
   assert.equal(seen.size, 12);
@@ -270,17 +270,74 @@ test("human walk draws all twelve phases over a second and travels the authored 
   lab.key("keyup", "ArrowRight"); assert.equal(lab.state().player.clip, "idle");
 });
 
-test("human mode changes cannot select nonexistent paint or leave old character controls active", () => {
-  const lab = playground(); lab.human(); lab.view("sprite");
-  assert.equal(lab.state().viewMode, "stick-move");
+test("top character selection separates painted and stick models while retaining the playback setting", () => {
+  const lab = playground(); lab.human();
   assert.equal(lab.key("keydown", " "), false);
   lab.key("keydown", "w"); lab.key("keydown", "a");
   assert.equal(lab.state().player.direction, "NW");
   lab.select("guarin"); lab.key("keydown", " ");
   assert.equal(lab.state().player.clip, "cut");
-  assert.equal(lab.state().viewMode, "sprite");
-  lab.stick(); assert.equal(lab.state().viewMode, "stick-move");
-  assert.equal(lab.text("view-label"), "Wolf view");
+  assert.equal(lab.state().characterId, "guarin");
+  lab.stick(); assert.equal(lab.state().frameByFrame, false);
+  assert.equal(lab.state().characterId, "wolf-stick");
+  lab.manual(true); lab.select("wolf", wholeWolf);
+  assert.equal(lab.state().frameByFrame, true);
+  assert.equal(lab.state().characterId, "wolf");
+  assert.equal(lab.state().player.direction, "E");
+  assert.equal(lab.state().player.clip, "walk");
+  lab.step(0); assert.equal(lab.text("step-frame"), "1 / 8");
+});
+
+test("every character can step in every available direction without resetting its frame or moving", () => {
+  for (const [id, data] of [["guarin", atlas], ["wolf", wholeWolf], ["wolf-stick", sticks], ["human", human]]) {
+    const lab = playground(); lab.select(id, data); lab.manual(true); lab.step(0);
+    const root = lab.state().position;
+    lab.key("keydown", " ");
+    for (const direction of Object.keys(data.directions)) {
+      const phase = lab.state().player.elapsedMs;
+      lab.direction(direction);
+      assert.equal(lab.state().player.direction, direction);
+      assert.equal(lab.state().player.elapsedMs, phase);
+      lab.key("keydown", "ArrowRight"); lab.step(1000);
+      assert.equal(lab.state().player.elapsedMs, (phase + data.clips.walk.frames[0].durationMs) % animation.duration(data.clips.walk));
+      assert.deepEqual(lab.state().position, root);
+      assert.equal(lab.state().playing, false);
+    }
+  }
+});
+
+test("WASD selects all eight manual facings while Space and Right Arrow remain single frame steps", () => {
+  for (const select of ["stick", "human"]) {
+    const lab = playground(); lab[select](); lab.manual(true); lab.step(0);
+    lab.key("keydown", " "); const phase = lab.state().player.elapsedMs, root = lab.state().position;
+    for (const [heading, pressed] of [["N", ["w"]], ["NE", ["w", "d"]], ["E", ["d"]], ["SE", ["s", "d"]], ["S", ["s"]], ["SW", ["s", "a"]], ["W", ["a"]], ["NW", ["w", "a"]]]) {
+      for (const key of pressed) lab.key("keydown", key);
+      assert.equal(lab.state().player.direction, heading);
+      assert.equal(lab.state().player.elapsedMs, phase);
+      lab.step(5000); assert.deepEqual(lab.state().position, root);
+      for (const key of pressed) lab.key("keyup", key);
+      assert.equal(lab.state().player.clip, "walk");
+    }
+    lab.key("keydown", "ArrowRight"); assert.ok(lab.state().player.elapsedMs > phase);
+  }
+});
+
+test("manual inspection supports other Guarin clips and cannot be resumed by presets or Play", () => {
+  const lab = playground(); lab.manual(true); lab.inspect("cut"); lab.direction("NW"); lab.step(0);
+  lab.key("keydown", " "); assert.equal(lab.text("step-frame"), "2 / 6");
+  const before = lab.state(); lab.click("play"); lab.preset("tour"); lab.step(2000);
+  assert.deepEqual(lab.state(), before);
+  lab.manual(false); assert.equal(lab.state().player.direction, "NW");
+  assert.equal(lab.state().playing, true);
+});
+
+test("character variants use the upper selector and playback uses a shared checkbox, without a view dropdown", () => {
+  const html = readFileSync(new URL("index.html", import.meta.url), "utf8");
+  const options = html.match(/<select id="character">(.*?)<\/select>/s)[1];
+  for (const id of ["guarin", "human", "wolf", "wolf-stick"]) assert.ok(options.includes(`value="${id}"`));
+  assert.match(html, /id="frame-by-frame" type="checkbox"/);
+  assert.doesNotMatch(html, /id="view"|stick-view-controls|view-label/);
+  assert.ok(html.indexOf('id="directions"') > html.indexOf('<aside class="controls">'));
 });
 
 test("changing character clears defeated state, held keys and queued actions", () => {

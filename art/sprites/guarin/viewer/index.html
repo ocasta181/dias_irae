@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dias Irae — Character motion lab</title>
-  <link rel="stylesheet" href="viewer.css?v=3">
-  <script type="module" src="viewer.mjs?v=13"></script>
+  <link rel="stylesheet" href="viewer.css?v=4">
+  <script type="module" src="viewer.mjs?v=14"></script>
 </head>
 <body>
 <main>
   <header>
     <p class="eyebrow">Dias Irae · Sprite pilot</p>
     <h1>Character motion lab</h1>
-    <label>Character<select id="character"><option value="guarin">Guarin</option><option value="wolf">Wolf</option><option value="human">Human · stick figure</option></select></label>
+    <label>Character<select id="character"><option value="guarin">Guarin · painted</option><option value="human">Human · stick figure</option><option value="wolf-stick">Wolf · stick figure</option><option value="wolf">Wolf · painted</option></select></label>
     <p id="basis">Loading the saved art selection…</p>
   </header>
   <p id="load-status" role="status">Loading frame art…</p>
@@ -25,13 +25,12 @@
       <p id="playback-proof" class="help" aria-live="off"></p>
     </div>
     <aside class="controls">
-      <div id="stick-view-controls" hidden>
-        <label><span id="view-label">Wolf view</span><select id="view"><option value="stick-move">Stick figure · move</option><option value="stick-step">Stick figure · frame by frame</option><option id="sprite-view" value="sprite">Painted sprite · old study</option></select></label>
-        <div id="walk-step-controls" hidden>
-          <p>Paused walking poses. Each Space or Right Arrow press advances one frame. Hold does not repeat.</p>
-          <div class="transport"><button id="walk-previous" aria-label="Previous walking frame">←</button><output id="walk-frame">1 / 12</output><button id="walk-next" aria-label="Next walking frame">→</button></div>
-        </div>
-      </div>
+      <fieldset><legend>Playback</legend>
+        <label class="check"><input id="frame-by-frame" type="checkbox"> Frame by frame</label>
+        <p id="playback-mode-help" class="help">Continuous motion · WASD or arrows to move.</p>
+        <div id="step-controls" hidden><div class="transport"><button id="step-previous" aria-label="Previous animation frame">←</button><output id="step-frame">1 / 12</output><button id="step-next" aria-label="Next animation frame">→</button></div></div>
+      </fieldset>
+      <fieldset><legend>Facing</legend><div id="directions" class="compass"></div><p id="direction-help" class="help"></p></fieldset>
       <h2>Animation sequences</h2>
       <div class="sequences"></div>
       <p id="sequence-status" role="status">Keyboard control ready.</p>
@@ -50,7 +49,6 @@
     </div>
     <div class="settings">
       <label>Inspect clip<select id="clip"></select></label>
-      <fieldset><legend>Facing</legend><div id="directions" class="compass"></div></fieldset>
       <div class="actions"><button data-action="idle">Idle</button><button data-action="walk">Walk</button><button data-action="cut">Sword cut</button><button data-action="guard">Guard</button><button data-action="guard-off">Release guard</button><button data-action="prayer">Pray</button><button data-action="prayer-off">Rise</button><button data-action="interact">Interact</button><button data-action="hurt">Take hit</button><button data-action="death">Defeat</button></div>
       <label>Playback speed <output id="speed-label">1×</output><input id="speed" type="range" min="0.25" max="2" step="0.25" value="1"></label>
       <label>Clip rate (frames per second)<input id="fps" type="number" min="1" max="30" step="0.01" value="6"></label>

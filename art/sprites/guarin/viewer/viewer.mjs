@@ -20,8 +20,7 @@ const sequences = {
   tour: { label: "Full state tour", steps: [{ at: 200, action: "walk" }, { at: 1200, action: "cut" }, { at: 2300, action: "idle" }, { at: 2500, action: "guard" }, { at: 3400, action: "guard-off" }, { at: 4000, action: "prayer" }, { at: 5000, action: "hurt" }, { at: 5900, action: "death" }, { at: 7000, action: "idle" }] },
 };
 let atlas;
-let spriteAtlas, stickAtlas;
-let viewMode = "sprite";
+let frameByFrame = false;
 let player = createPlayer();
 let playing = true;
 let lastTime;
@@ -32,7 +31,7 @@ let position = [450, 420];
 let extent;
 let scheduled = [];
 let scenarioTime = 0;
-const characters = { guarin: { root: "../", size: 160 }, wolf: { root: "../../wolf/whole-body/", size: 96 }, human: { root: "../locomotion/stick-v01/", size: 160, review: "README.md", assessment: "README.md" } };
+const characters = { guarin: { root: "../", size: 160 }, wolf: { root: "../../wolf/whole-body/", size: 96 }, "wolf-stick": { root: "../../wolf/whole-body/", size: 96, direction: "E" }, human: { root: "../locomotion/stick-v01/", size: 160, review: "README.md", assessment: "README.md" } };
 let characterId = "guarin";
 let loadVersion = 0;
 let loading = false;
@@ -49,21 +48,20 @@ function actorSequences() {
   const facings = Object.keys(atlas.directions);
   result.directions = { label: facings.length === 1 ? `Walk → stand (${facings[0]})` : `Walk in all ${facings.length} directions`, steps: [...facings.map((direction, index) => ({ at: index * 1000, action: "walk", direction })), { at: facings.length * 1000, action: "idle" }] };
   if (atlas.clips.cut) result.strike = { ...sequences.strike, label: `Walk → ${atlas.clips.cut.label.toLowerCase()} → walk`, steps: sequences.strike.steps.map(step => step.direction ? { ...step, direction: atlas.directions.E ? "E" : facings[0] } : step) };
-  if (characterId === "wolf") result.tour = { label: "Wolf state tour", steps: [{ at: 200, action: "walk" }, { at: 1200, action: "cut" }, { at: 2300, action: "idle" }, { at: 3000, action: "hurt" }, { at: 4100, action: "death" }].filter(step => supports(step.action)) };
+  if (characterId.startsWith("wolf")) result.tour = { label: "Wolf state tour", steps: [{ at: 200, action: "walk" }, { at: 1200, action: "cut" }, { at: 2300, action: "idle" }, { at: 3000, action: "hurt" }, { at: 4100, action: "death" }].filter(step => supports(step.action)) };
   if (characterId === "human") result.tour = { label: "Stand → walk → stand", steps: [{ at: 0, action: "idle" }, { at: 500, action: "walk" }, { at: 2500, action: "idle" }] };
   return Object.fromEntries(Object.entries(result).filter(([, sequence]) => sequence.steps.every(step => supports(step.action))));
 }
 
-function applyCharacter(id, nextAtlas, loadedImages, nextStickAtlas) {
+function applyCharacter(id, nextAtlas, loadedImages) {
   characterId = id;
-  spriteAtlas = nextAtlas; stickAtlas = nextStickAtlas;
   atlas = nextAtlas;
   images.clear();
   for (const [path, image] of loadedImages) images.set(path, image);
   keys.clear(); scheduled = []; scenarioTime = 0; logs.length = 0;
   player = createPlayer(); playing = true; lastTime = undefined; lastClip = undefined; stripKey = undefined;
   lastDrawn = undefined;
-  player.direction = atlas.directions.SE ? "SE" : Object.keys(atlas.directions)[0];
+  player.direction = characters[id].direction ?? (atlas.directions.SE ? "SE" : Object.keys(atlas.directions)[0]);
   position = [450, stage.height * .75];
   const frames = Object.values(atlas.directions).flatMap(page => page.frames);
   extent = {
@@ -87,9 +85,10 @@ function applyCharacter(id, nextAtlas, loadedImages, nextStickAtlas) {
     image.src = reference.url; image.alt = reference.label; caption.textContent = reference.label; figure.append(image, caption); element("references").append(figure);
   }
   populateActorControls(); updateClipControls(); cancelSequence();
-  setView(stickAtlas ? "stick-move" : "sprite");
+  setFrameByFrame(frameByFrame);
   document.querySelector(".lab").hidden = false; document.querySelector(".frames").hidden = false;
   log(`${id} ready. Art remains under review; action buttons test transitions, clip selector inspects individual tags.`);
+  stage.focus({ preventScroll: true });
 }
 
 async function loadCharacter(id) {
@@ -99,15 +98,13 @@ async function loadCharacter(id) {
   try {
     const response = await fetch(`${characters[id].root}atlas.json`, { cache: "no-store" });
     if (!response.ok) throw new Error(`Sheet data unavailable (${response.status})`);
-    const nextAtlas = await response.json();
+    let nextAtlas = await response.json();
     if (!Object.keys(nextAtlas.directions).length || !nextAtlas.clips.idle) throw new Error("Required starting direction or idle clip is missing.");
-    let nextStickAtlas;
-    if (id === "wolf") {
+    if (id === "wolf-stick") {
       const planResponse = await fetch(`${characters.wolf.root}walk-v06/targets.json`, { cache: "no-store" });
       if (!planResponse.ok) throw new Error(`Stick plan unavailable (${planResponse.status})`);
-      nextStickAtlas = stickWolfAtlas(await planResponse.json(), nextAtlas.references);
+      nextAtlas = stickWolfAtlas(await planResponse.json(), nextAtlas.references);
     }
-    if (id === "human") nextStickAtlas = nextAtlas;
     const sourcePaths = new Set(Object.values(nextAtlas.directions).flatMap(page => page.frames.map(frame => frame.image)).filter(Boolean));
     const loadedImages = new Map();
     for (const path of sourcePaths) await new Promise((resolve, reject) => {
@@ -116,7 +113,7 @@ async function loadCharacter(id) {
       image.onerror = () => reject(new Error(`Source image cannot be loaded: ${path}`));
       image.src = `${characters[id].root}${path}`;
     });
-    if (version === loadVersion) applyCharacter(id, nextAtlas, loadedImages, nextStickAtlas);
+    if (version === loadVersion) applyCharacter(id, nextAtlas, loadedImages);
   } catch (error) {
     if (version === loadVersion) { element("load-status").textContent = `Cannot load ${id}: ${error.message}`; element("character").value = characterId; }
   } finally {
@@ -132,7 +129,7 @@ function log(message) {
 function cancelSequence() {
   if (scheduled.length) player = request(request(request(player, "idle"), "guard-off"), "prayer-off");
   scheduled = [];
-  element("sequence-status").textContent = viewMode === "stick-step" ? "Paused. Every press advances one walking frame." : "Keyboard control ready.";
+  element("sequence-status").textContent = frameByFrame ? "Paused. Every press advances one frame." : "Keyboard control ready.";
   for (const button of document.querySelectorAll("[data-sequence]")) button.setAttribute("aria-pressed", "false");
 }
 
@@ -151,7 +148,12 @@ function updateClipControls() {
 
 function act(action, fromSequence = false) {
   if (loading || !supports(action)) return;
-  if (viewMode === "stick-step") { if (action === "reset") seek(0); return; }
+  if (frameByFrame) {
+    cancelSequence();
+    if (action === "reset") { player.elapsedMs = 0; seek(0); return; }
+    const clip = { guard: "guard_in", "guard-off": "guard_out", prayer: "kneel", "prayer-off": "rise" }[action] ?? action;
+    player = inspect(player, clip); updateClipControls(); stripKey = undefined; draw(); return;
+  }
   if (!fromSequence) cancelSequence();
   const before = player.clip;
   player = request(player, action);
@@ -294,8 +296,8 @@ function draw() {
   updateStrip(page, clip);
   element("frame").value = current.index;
   element("frame-label").textContent = `${current.index + 1} / ${clip.frames.length}`;
-  element("walk-frame").textContent = `${current.index + 1} / ${clip.frames.length}`;
-  const text = `${clip.label} · ${player.direction} · pose ${current.index + 1}/${clip.frames.length} · ${viewMode === "stick-step" ? "paused · one frame per press" : `${Number(clipRate.toFixed(2))} FPS · ${current.complete ? "held final pose" : clip.loop ? "loop" : "one shot"}`}`;
+  element("step-frame").textContent = `${current.index + 1} / ${clip.frames.length}`;
+  const text = `${clip.label} · ${player.direction} · pose ${current.index + 1}/${clip.frames.length} · ${frameByFrame ? "paused · one frame per press" : `${Number(clipRate.toFixed(2))} FPS · ${current.complete ? "held final pose" : clip.loop ? "loop" : "one shot"}`}`;
   if (element("readout").textContent !== text) element("readout").textContent = text;
   element("quality").textContent = page.assessment;
   for (const button of document.querySelectorAll(".frame-button")) button.setAttribute("aria-pressed", String(Number(button.dataset.frameIndex) === current.index));
@@ -311,42 +313,35 @@ function seek(index) {
   draw();
 }
 
-function stepWalking(offset) {
-  const clip = atlas.clips.walk;
+function stepFrame(offset) {
+  const clip = atlas.clips[player.clip];
   seek((sample(clip, player.elapsedMs).index + offset + clip.frames.length) % clip.frames.length);
 }
 
-function setView(mode) {
-  if (characterId === "human" && mode === "sprite") mode = "stick-move";
-  viewMode = stickAtlas && mode !== "sprite" ? mode : "sprite";
-  atlas = viewMode === "sprite" ? spriteAtlas : stickAtlas;
-  keys.clear(); scheduled = []; player = createPlayer();
-  player.direction = atlas.directions.SE && (viewMode === "sprite" || characterId === "human") ? "SE" : Object.keys(atlas.directions).find(direction => direction === "E") ?? Object.keys(atlas.directions)[0];
-  if (viewMode === "stick-step") player = inspect(player, "walk");
-  playing = viewMode !== "stick-step";
-  lastTime = undefined; lastClip = undefined; stripKey = undefined; lastDrawn = undefined;
-  element("view").value = viewMode;
-  element("stick-view-controls").hidden = !stickAtlas;
-  element("view-label").textContent = characterId === "human" ? "Human view" : "Wolf view";
-  element("sprite-view").hidden = characterId === "human";
-  element("sprite-view").disabled = characterId === "human";
-  element("walk-step-controls").hidden = viewMode !== "stick-step";
+function setFrameByFrame(enabled) {
+  frameByFrame = enabled;
+  keys.clear(); cancelSequence();
+  if (enabled && player.clip === "idle" && atlas.clips.walk) player = inspect(player, "walk");
+  playing = !enabled; lastTime = undefined;
+  element("frame-by-frame").checked = enabled;
+  element("step-controls").hidden = !enabled;
   element("play").textContent = playing ? "Pause" : "Play";
-  for (const id of ["play", "clip", "speed", "fps"]) element(id).disabled = viewMode === "stick-step";
-  element("load-status").textContent = atlas.reviewStatus;
-  element("basis").textContent = `${atlas.selection.gameplay_id} / ${atlas.selection.source_character} · ${atlas.sourceFrames} source frames · ${Object.keys(atlas.directions).length} ${Object.keys(atlas.directions).length === 1 ? "direction" : "directions"} · ${Object.keys(atlas.clips).length} clips`;
-  if (viewMode !== "sprite") {
-    element("stage-help").textContent = viewMode === "stick-step" ? "Space or Right Arrow: next frame · Left Arrow: previous frame · twelve walking poses, paused" : "WASD or arrows: move the stick figure · release: stand still";
-    element("shortcuts").textContent = "Stick figure motion plan. No painted skin or attack animation.";
-    stage.setAttribute("aria-label", `Stick figure playground. ${element("stage-help").textContent}`);
-  } else {
-    element("stage-help").textContent = `${Object.keys(atlas.directions).length === 1 ? "D or Right arrow to walk; other headings pending" : "WASD or arrows to move"}${supports("cut") ? " · Space to strike" : " · Attack pending"}`;
-    element("shortcuts").textContent = `${supports("guard") ? "Hold G to guard; P starts/stops prayer; " : ""}${supports("hurt") ? "H hurts; " : ""}${supports("death") ? "K defeats; " : ""}R resets. Inputs keep their normal keyboard behavior.`;
-    stage.setAttribute("aria-label", `Character playground. ${element("stage-help").textContent}`);
+  for (const id of ["play", "speed", "fps"]) element(id).disabled = enabled;
+  for (const button of document.querySelectorAll("[data-sequence]")) button.disabled = enabled;
+  element("stage-help").textContent = enabled ? "WASD or facing buttons: choose direction · Space or Right Arrow: next frame · Left Arrow: previous frame" : `${Object.keys(atlas.directions).length === 1 ? "D or Right arrow to walk; other headings pending" : "WASD or arrows to move"}${supports("cut") ? " · Space to strike" : ""}`;
+  element("playback-mode-help").textContent = enabled ? "Paused. Each Space, Right Arrow or → click advances one frame. Holding does not repeat." : "Continuous motion · WASD or arrows to move.";
+  stage.setAttribute("aria-label", `Character playground. ${element("stage-help").textContent}`);
+  updateClipControls();
+}
+
+function faceFromKeys() {
+  const x = Number(keys.has("d")) - Number(keys.has("a"));
+  const y = Number(keys.has("ArrowDown") || keys.has("s")) - Number(keys.has("ArrowUp") || keys.has("w"));
+  if (x || y) {
+    const direction = [["NW", "N", "NE"], ["W", "S", "E"], ["SW", "S", "SE"]][y + 1][x + 1];
+    if (atlas.directions[direction]) player.direction = direction;
   }
-  populateActorControls(); updateClipControls(); cancelSequence();
-  for (const button of document.querySelectorAll("[data-action], [data-sequence]")) button.disabled = viewMode === "stick-step" && button.dataset.action !== "reset";
-  if (viewMode === "stick-step") element("sequence-status").textContent = "Paused. Every press advances one walking frame.";
+  updateClipControls(); draw();
 }
 
 function movement() {
@@ -391,7 +386,7 @@ function tick(time) {
   if (loading || !atlas) { lastTime = undefined; requestAnimationFrame(tick); return; }
   let delta = lastTime === undefined ? 0 : Math.max(0, time - lastTime);
   lastTime = time;
-  if (playing && !document.hidden) {
+  if (playing && !frameByFrame && !document.hidden) {
     if (element("preserve-frames").checked) {
       const rawDelta = delta, clip = atlas.clips[player.clip];
       const rate = Number(element("speed").value) * clipRate / clip.fps;
@@ -433,8 +428,10 @@ function populateActorControls() {
       button.textContent = direction; button.dataset.direction = direction; button.disabled = !atlas.directions[direction];
       button.addEventListener("click", () => {
         cancelSequence();
+        keys.clear();
         player.direction = direction;
         updateClipControls();
+        draw(); stage.focus({ preventScroll: true });
         log(`Inspect direction: ${direction}`);
       });
     }
@@ -448,6 +445,7 @@ function populateActorControls() {
     const button = document.createElement("button");
     button.dataset.sequence = id; button.textContent = sequence.label; button.setAttribute("aria-pressed", "false");
     button.addEventListener("click", () => {
+      if (frameByFrame) return;
       keys.clear(); act("reset"); scenarioTime = 0; scheduled = [...sequence.steps];
       button.setAttribute("aria-pressed", "true");
       element("sequence-status").textContent = `Running: ${sequence.label}. Move or strike to take control.`;
@@ -455,20 +453,21 @@ function populateActorControls() {
     });
     document.querySelector(".sequences").append(button);
   }
+  element("direction-help").textContent = Object.keys(atlas.directions).length === 1 ? "Only E art is available for this study." : "All eight directions are available, including while stepping.";
 }
 
 function wireControls() {
   if (atlas) populateActorControls();
   element("character").addEventListener("change", () => loadCharacter(element("character").value));
-  element("view").addEventListener("change", () => { setView(element("view").value); draw(); stage.focus(); });
-  element("walk-next").addEventListener("click", () => stepWalking(1));
-  element("walk-previous").addEventListener("click", () => stepWalking(-1));
+  element("frame-by-frame").addEventListener("change", () => { if (loading) return; setFrameByFrame(element("frame-by-frame").checked); draw(); stage.focus({ preventScroll: true }); });
+  element("step-next").addEventListener("click", () => stepFrame(1));
+  element("step-previous").addEventListener("click", () => stepFrame(-1));
   for (const button of document.querySelectorAll("[data-action]")) button.addEventListener("click", () => act(button.dataset.action));
   element("clip").addEventListener("change", () => { cancelSequence(); player = inspect(player, element("clip").value); updateClipControls(); stripKey = undefined; draw(); });
-  element("play").addEventListener("click", () => { playing = !playing; element("play").textContent = playing ? "Pause" : "Play"; });
-  element("previous").addEventListener("click", () => viewMode === "stick-step" ? stepWalking(-1) : seek(sample(atlas.clips[player.clip], player.elapsedMs).index - 1));
-  element("next").addEventListener("click", () => viewMode === "stick-step" ? stepWalking(1) : seek(sample(atlas.clips[player.clip], player.elapsedMs).index + 1));
-  element("restart").addEventListener("click", () => { if (viewMode === "stick-step") { seek(0); return; } cancelSequence(); player.elapsedMs = 0; playing = true; element("play").textContent = "Pause"; });
+  element("play").addEventListener("click", () => { if (frameByFrame) return; playing = !playing; element("play").textContent = playing ? "Pause" : "Play"; });
+  element("previous").addEventListener("click", () => frameByFrame ? stepFrame(-1) : seek(sample(atlas.clips[player.clip], player.elapsedMs).index - 1));
+  element("next").addEventListener("click", () => frameByFrame ? stepFrame(1) : seek(sample(atlas.clips[player.clip], player.elapsedMs).index + 1));
+  element("restart").addEventListener("click", () => { if (frameByFrame) { seek(0); return; } cancelSequence(); player.elapsedMs = 0; playing = true; element("play").textContent = "Pause"; });
   element("frame").addEventListener("input", () => seek(Number(element("frame").value)));
   element("speed").addEventListener("input", () => { element("speed-label").textContent = `${element("speed").value}×`; });
   element("size").addEventListener("input", () => { element("size-label").textContent = `${element("size").value} px`; });
@@ -478,11 +477,11 @@ function wireControls() {
     if (loading) return;
     if (event.target.closest("input, select, textarea, [contenteditable=true]") || event.ctrlKey || event.metaKey || event.altKey) return;
     const key = event.key.length === 1 ? event.key.toLowerCase() : event.key;
-    if (viewMode === "stick-step") {
+    if (frameByFrame) {
       if ([" ", "ArrowRight", "ArrowLeft"].includes(key)) {
         event.preventDefault();
-        if (!event.repeat) stepWalking(key === "ArrowLeft" ? -1 : 1);
-      } else if (movementKeys.has(key)) event.preventDefault();
+        if (!event.repeat) stepFrame(key === "ArrowLeft" ? -1 : 1);
+      } else if (movementKeys.has(key)) { event.preventDefault(); keys.add(key); faceFromKeys(); }
       return;
     }
     if (movementKeys.has(key)) {
@@ -501,11 +500,12 @@ function wireControls() {
     const key = event.key.length === 1 ? event.key.toLowerCase() : event.key;
     const held = keys.delete(key);
     if (held && key === "g") act("guard-off");
-    if (held && movementKeys.has(key)) movement();
+    if (held && movementKeys.has(key)) { if (frameByFrame) faceFromKeys(); else movement(); }
   });
   function releaseKeys() {
     if (!keys.size) return;
     keys.clear();
+    if (frameByFrame) return;
     player = request(player, "idle");
     player = request(player, "guard-off");
   }
