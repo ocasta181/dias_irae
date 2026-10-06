@@ -1,299 +1,221 @@
-# Dias Irae — Systems (draft)
+# Dias Irae — Game Systems
 
-First pass at attributes, axes, combat resources, abilities, and equipment. Narrative locks live in [story-arch.md](story-arch.md). This document is design, not implementation. The architecture already names Combat, Loot, and Progression as domains. Numerical progression remains a proposal; implementation should follow settled design decisions, not treat every draft value as approved.
+Systems draft for Robert of Rookmere's autumn-**1149** campaign. Governing narrative: [story-arch.md](story-arch.md). People: [characters.md](characters.md). Rooms: [locations.md](locations.md). Period boundaries: [material-culture research](../docs/research/1149-england/place-and-material-culture.md).
 
-Guarin is thirty-four and a veteran of the Provençal host. He does not begin as a level-one peasant and he does not become a demigod by Act V. Progression is vocational and spiritual. He begins as a trained knight. His will and conviction can be restored as Christ sustains him and he sees that his struggle matters. The fulfillment of his prayer must be visible in saved lives, goodness encountered, and meaningful victory, even if prayer also has combat effects.
+This revision aligns the proposals with the new story. Numerical values, progression thresholds, equipment effects, and exact encounter scripting remain design work. A prose proposal is not an implemented feature or a persistence contract.
+
+Robert is a trained secular knight, aged thirty-four. He returns from the Second Crusade with practiced arms and a crisis of hope. Progression restores his ability to act with will and conviction through Christ; the campaign also makes the consequences of protection, truth, and charity visible.
 
 ---
 
 ## Design pillars
 
-1. **D&D chassis, medieval loadout.** Six attributes, derived defenses, skills used in hubs and investigation. Combat itself is action, not turn-based to-hit rolls.
-2. **Progression through the campaign.** Martial practice, prayer, relationships, and victories can unlock abilities. The final structure of spiritual tracks remains open.
-3. **Faith strengthens resistance to evil.** Prayer can sustain will, conviction, courage, and discernment. Trust in Christ is not a susceptibility penalty or a trap.
-4. **Sword and Mantle.** Combat and protection serve the same vocation. The player fights hostile forces and protects people who need help. Illness and disfigurement alone do not identify an enemy.
-5. **Holy things remain good.** Genuine blessings, prayer, and sacraments can help. Counterfeits are exposed through evidence and discernment; righteous attacks do not power the final enemy.
-6. **Period kit.** 1101 is mail, nasal helm, kite shield, arming sword. Not plate.
+1. **Competent knight, action combat.** Six familiar attributes can support derived defenses and skills; attacks and movement remain action rather than turn-based hit rolls.
+2. **Sword and Mantle.** Fighting hostile forces and protecting people serve the same vocation. Illness and disfigurement do not select enemies.
+3. **Faith sustains resistance.** Prayer can support courage, discernment, and protection. It does not inherently increase the blight.
+4. **Consequences endure.** A protected witness, safe food route, freed captive, or repaired mill remains useful after the encounter.
+5. **Holy things remain good.** Counterfeits are investigated; genuine devotion and blessings are not hidden traps.
+6. **1149 equipment.** Mail, practical open-faced helmets, shields, and one-handed swords are the default. Later armor and order uniforms retain their dates.
 
-The exact opening prayer and the arc of restored hope are narrative requirements in the story outline. Do not reduce their fulfillment to a combat bonus or a numerical test of Guarin's worthiness.
-
----
+The exact prayer and meaningful victory are narrative requirements. Their fulfillment cannot be reduced to a worthiness score, a reward screen, or payment for divine help.
 
 ## Attributes
 
-Rolled or assigned once. They advance rarely and in small amounts — a point from a named event, not from a level-up screen. Use the familiar six so the chassis is readable.
+| Attribute | Combat use | Investigation and protection |
+|---|---|---|
+| **Strength** | Damage, shove, shield control. | Open a forced door, carry a wounded person, move a cart. |
+| **Dexterity** | Timing, attack control, movement. | Catch a falling object, handle tools, avoid a physical hazard. |
+| **Constitution** | Health, stagger resistance, endurance. | Escort work, injury, exhaustion, and blight exposure. |
+| **Intelligence** | Preparation informed by a learned tell. | Read with help where needed, compare records, follow a particular supply route. |
+| **Wisdom** | Discernment and resistance to fear or deceptive visions. | Hear a witness, judge an apparition, recognize a contradiction between a claim and an act. |
+| **Charisma** | Rally or steady companions if those abilities are retained. | Household authority, cooperation, a gate opened, a claim heard by useful people. |
 
-| Attribute | In this world | Combat | Out of combat |
-|---|---|---|---|
-| **Strength** | A hauberk-wearer's shoulders. | Melee damage, shove, how long the kite shield stays up. | Forced doors, carrying the wounded, the millstone. |
-| **Dexterity** | Hands on a sword-grip and a mule's reins. | Attack speed, block timing window, placing a thrust. | Catching a falling cask, a child's wrist, not walking into a scythe. |
-| **Constitution** | What the East did not take. | Maximum health, stagger resist, how slowly **Heat** becomes gangrene. | Forced marches, standing the infirmary smell, ergot fits. |
-| **Intelligence** | Letters, not wizardry. | None directly. Identifies enemy tells a half-second earlier if a lore check has already been made. | Latin, registers, graffiti, telling wheat from rye in a bakehouse, reading Isarn's books. |
-| **Wisdom** | Discernment and practical judgment. | Resistance to vision-stun; discerning deceptive apparitions and rites, supported by Faith. | Insight into Fulk, Agnes, Lambert's ledger; knowing when a psalm is wrong. |
-| **Charisma** | Household presence, not court beauty. | Companion staying power; shout range. | Almodis, Isarn, Lambert, Raimbaut, holding a chapter while a mitre comes off. |
-
-**Suggested start** (a competent mid-rank knight, not a hero of romances):
+**Provisional starting scores**, retained as a competent-knight proposal:
 
 | STR | DEX | CON | INT | WIS | CHA |
 |---|---|---|---|---|---|
 | 14 | 12 | 13 | 10 | 11 | 10 |
 
-Modifiers in the usual D&D shape (+2 Str, +1 Dex, +1 Con). He is already past the age of sudden athletic blooming. A +1 to an attribute is a story event: the infirmary teaches Constitution, the scriptorium Intelligence, helping Fulk resist the binding Wisdom or Charisma.
+Attribute growth should be small and tied to named experience. No particular increase, unlock, or reward is fixed by the new date.
 
----
-
-## Progression tracks
-
-The previous four-axis proposal is superseded where it made Penance the victory gate and Zeal a source of power for Abaddon. Replacement tracks, thresholds, and starting values remain undecided. No implementation should preserve those old rules.
+## Progression
 
 ### Arms
 
-Martial craft. New attacks, tighter timing, a little more health if the design keeps that option, and better use of shield and mail. Raised by fighting well, drilling, surviving named enemies, and learning from experienced soldiers.
+Martial practice: cleaner timing, useful attacks, shield work, adaptation to injury, and lessons from experienced soldiers. Robert begins trained; he does not acquire basic knighthood by completing Act I.
 
-Arms and faith can support one another. A blessed weapon or attack can be effective against evil. The final encounter does not require Guarin to abandon blessing or faith.
+Blessed weapons and faith can support martial resistance. There is no final encounter that requires abandoning them.
 
 ### Faith
 
-Prayer, trust in Christ, and spiritual discernment expressed through available abilities and story choices. It is not blind certainty that every relic claim or remedy is genuine. Recognizing deception need not diminish faith.
+Trust in Christ, prayer, and discernment expressed through story choices and possible abilities. Faith can grow as Robert recognizes goodness and perseveres. It does not mean accepting every relic claim or every order without inquiry.
 
-Faith can support resistance to fear and despair, protection, prayer against hostile presences, and the courage to continue. Its growth should connect to the answered prayer and goodness encountered. A low starting value, if retained, represents Guarin's spiritual crisis; it does not make Christ refuse him or turn his prayer into a mistake.
-
-Genuine worship and counsel can sustain him. False rites remain a danger because of the hostile presence and contaminated material behind them, not because sincere belief amplifies their power.
+A low opening value, if the design uses one, represents the crisis. It does not make Christ refuse the sincere prayer or turn worship into a source of corruption. Numbers pace gameplay, not God's availability.
 
 ### Will and conviction
 
-These are the strengths Guarin asks for. The campaign restores his capacity to keep fighting and his hope that the fight matters. Show this through perseverance, people helped, kindness received, allies choosing courage, and the final victory.
+The strengths named in the prayer. Show their restoration in Robert continuing to act, protecting people, accepting kindness, resisting the enemy's argument, and recognizing that his struggle matters.
 
-Whether will and conviction need a separate track, an encounter resource, or only narrative expression remains open. No starting numbers or unlock thresholds are fixed here. Mercy, repentance, and protection remain meaningful deeds without becoming payment for God's help or prerequisites for an unblessed final hit.
+Whether these need a separate track, resource, or only narrative expression remains open. No penance total, concealed-atrocity confession, or unblessed final hit gates victory.
 
 ### Sight
 
-A derived perception condition, if kept:
+A proposed perception condition:
 
 `Sight = f(Wisdom, Faith, Heat)`
 
-Discernment and prayer can reveal a hostile disguise. Heat can produce intrusive or misleading visions. Investigative evidence helps the player distinguish the two. Unworthy communion and unconfessed atrocities are removed as Sight triggers. Faith does not inherently make Guarin less able to recognize a counterfeit.
-
----
+Discernment can expose a hostile disguise. High Heat can produce intrusive or misleading perceptions. Records, witnesses, and physical evidence remain necessary to understand the supply route. Sight is not a historical chemical test or a substitute for every inquiry.
 
 ## Resources
 
 ### Health
 
-A single integer pool, as the combat domain already models. Constitution sets the base. Arms adds a little. There is no twenty-level hit-point balloon. A veteran’s body is already near its ceiling; late-game survival comes from armor, block, Heat management, protective prayer, and resisting the enemy's attacks.
+A bounded pool and ordinary injuries, consistent with the existing combat prototype's general health model. The campaign need not inflate a veteran's health across many levels.
 
-Wounds can be **ordinary** or **burning**. Burning damage is holy fire: it leaves a Heat remainder after the hit. Physic and clean wine clear ordinary wounds better than burning ones. Prayer and genuine sacramental life can sustain recovery. Counterfeit remedies may promise relief while continuing to poison him.
+Ordinary damage, burning exposure, and recovery are distinct presentation concerns. Their numerical effects remain draft. Care from Wulfstan, Agatha, and others can support recovery; no exact medical recipe or toxin-removal procedure is established.
 
-### Armor (soak, not D&D Armor Class)
+### Armor and shield
 
-This is an action game. Attacks connect. Armor reduces and deflects; it does not make swings miss as if the man were a cloud.
-
-| Layer | What it is in 1101 | What it does |
+| Layer | Period reference | Proposed combat purpose |
 |---|---|---|
-| **Padding** | Gambeson / aketon under the mail. | Flat soak, especially against crush and stagger. The real shock absorber. |
-| **Mail** | Hauberk, maybe coif and mufflers. | Strong against cut and thrust-glancing; weaker against maces, hammers, and the locusts’ iron. A deflect roll or percent, not immunity. |
-| **Helm** | Nasal helm. | Critical protection to the head. Does not cover the face. Vision-stun resist. |
-| **Shield** | Kite shield, left arm. | Active block. Holds a cone. Costs Strength-stamina. Can bash. |
+| Padding | A reference-specific textile layer. | Reduce impact and stagger if modeled. |
+| Mail | A repaired hauberk and possible coif. | Protection with limits, rather than universal immunity. |
+| Helmet | Practical nasal helmet as Robert's default. | Head protection with the face visible. |
+| Shield | Kite shield, repaired and worn. | Active guard, timed block, and bash. |
 
-No plate. See Equipment.
+Reduction, deflection, stamina cost, and armor degradation are proposals, not verified implemented rules. Select dated construction references before final art; do not infer a complete equipment package from one old image.
 
 ### Heat
 
-The fire in the body. Contaminated provisions, burning wounds, and exposure to the supernatural blight.
+Exposure to the fictional blight through compromised provisions, hostile attacks, and proximity to its foothold. Ergot supplies a material reference, but this is not a clinical simulator.
 
-- Builds from burning wounds, contaminated food or drink, the ticking counterfeit, and hostile attacks. Genuine blessings and righteous combat do not add Heat by their nature.
-- High Heat: Sight opens; attacks may ignite; visions interrupt; limbs threaten to charcoal (a stacking “member” risk, telegraphed, not a cheap instant death).
-- Reduced through appropriate care, safe provisions, recovery in a safe house, and prayer or sacramental support as the design settles. Stopping a harmful cask prevents further dosing. Confession of an invented past atrocity is not a treatment gate.
-- At the top of the bar he is in a fit: powerful and not steering. Agnes lives here. Fulk lives here.
+- Builds through specific hostile causes, not through sincere prayer or righteous combat.
+- High exposure can produce fits, impaired control, dangerous visions, and telegraphed bodily harm.
+- Appropriate care, separate safe provisions, rest, and spiritual support can matter as the design settles.
+- Stopping a harmful distribution prevents future exposure and changes the local world.
+- A visible fungal piece is a clue, not a guarantee that every apparently clean lot is safe.
 
-Heat is the ergot made mechanical. It is not mana.
+Heat is not a divine-favor meter or a reason to attack an ill person. Edith and Hugh need protection regardless of their exposure.
 
 ### Prayer use
 
-Cooldowns, concentration, or a small encounter resource may pace active prayer abilities. The choice remains open. It must not imply that grace is bought through scored deeds, that God abandons him when a meter empties, or that praying inherently adds the blight's Heat.
+Cooldowns, concentration, or a modest encounter resource may pace active abilities. The choice remains open. No empty meter implies that Christ has abandoned Robert, and no prayer action inherently feeds Abaddon.
 
----
+Ordinary worship and counsel can remain available outside the active-ability system.
 
 ## Skills
 
-Used in hubs, rites, and investigation. Combat abilities are a separate list. Checks are attribute + skill + settled progression modifiers, against a hidden difficulty. Fail forward: a failed Letters check still opens the book; Isarn notices you mouthed the Latin.
+Checks support investigation, cooperation, and physical action. A failed check changes assistance or difficulty, not the possibility of learning the only necessary truth.
 
-Draft list, kept short:
-
-| Skill | Attribute | What it is |
+| Skill | Main attributes | Use in this campaign |
 |---|---|---|
-| **Vigil** | Wisdom / Dexterity | Noticing a tau that was not carpentered, a wolf that stands too long, graffiti. |
-| **Letters** | Intelligence | Latin, registers, the illuminator’s margins, Lambert’s ledger. |
-| **Scripture** | Intelligence / Wisdom / Faith | Naming what Agnes recites; choosing the right psalm; knowing Revelation 9 when you see it. |
-| **Physic** | Intelligence / Wisdom | Wounds, lard, wine, whether a limb is still the man’s. |
-| **Authority** | Charisma | Household, chapter, Raimbaut’s courtesy, getting a gate open. |
-| **Insight** | Wisdom | Fulk’s two voices, Lambert’s fear, which patient is helping Durand. |
-| **Market** | Intelligence / Charisma | The splinter was bought. Brokers, authenticity, what a relic costs. |
-| **Endure** | Constitution | Fits, smells, forced marches, holding a block, holding a rite. |
+| **Vigil** | Wisdom / Dexterity | Watch a convoy, notice a sack or active threat, protect a witness. |
+| **Letters** | Intelligence | Compare house records, a copied claim, and Walter's misused seal with help from a clerk. |
+| **Scripture** | Intelligence / Wisdom / Faith | Recognize Revelation imagery and understand a devotional claim. |
+| **Physic** | Intelligence / Wisdom | Practical care and attention to a supply pattern, without modern diagnostic certainty. |
+| **Authority** | Charisma | Household obligations, a guard's refusal, Gilbert's courtesy, a claim heard before witnesses. |
+| **Insight** | Wisdom | Hugh's fear, Hamon's excuses, and a recruit's willingness to reject predation. |
+| **Market** | Intelligence / Charisma | Find separate provisions, identify a supplier, and assess an item's stated provenance. |
+| **Endure** | Constitution | Escort, illness, difficult travel, guard work, and holding an approach under attack. |
 
-No stealth class. No arcane spellcraft. A knight can walk softly; he is not a thief.
+Oswin, Alice, Agatha, Godric, Thomas, and a neighboring clerk provide different routes to useful information. Their survival changes particular scenes; optional deaths do not erase every route to the final foothold.
 
-Item memories or rare voices may add context and modify checks if retained. Their source and presentation remain open. Uncertain provenance should support investigation without making genuine devotion a hidden source of corruption.
-
----
-
-## Combat abilities
-
-A small bar, unlocked through martial and spiritual progression as the design settles.
+## Combat and protection abilities
 
 ### Arms
 
-- **Cut** — default. The arming sword's work.
-- **Thrust** — tighter, better against mail, costs cleaner timing.
-- **Guard** — hold the kite. Timed block, then riposte.
-- **Bash** — shield as a weapon. Stagger.
-- **Throw** — the dagger. Short resource.
+- **Cut**: default one-handed sword attack.
+- **Thrust**: more precise attack if the final combat design supports it.
+- **Guard**: hold the shield; timed block and riposte remain proposals.
+- **Bash**: use the shield to stop or displace an attacker.
+- **Throw**: a dagger or another specifically designed limited resource.
 
-Later Arms can retain a short charge, a bind-and-pommel, and adaptation to an injured hand.
+Later lessons can add a short charge, close work, and adaptation to the injured hand. Exact costs and unlocks remain unsettled.
 
 ### Faith and protection
 
-- **Sign of the Cross** — brief ward against a hostile presence. It does not punish Guarin for praying near a counterfeit.
-- **Psalm** — a short channel that can steady allies, resist fear, or oppose the blight. Exact effects remain draft. A mistaken quotation is not automatically food for the enemy.
-- **Spare** — a nonlethal option where a human can be safely stopped or protected. Outcomes depend on the person and situation, not a universal requirement to avoid righteous force.
-- **Aid during prayer** — protect a vulnerable person while a priest prays or hears confession, including the Fulk encounter. Guarin does not give priestly absolution.
+- **Sign of the Cross**: a possible brief ward against a hostile presence.
+- **Psalm**: a possible channel that steadies allies or resists fear.
+- **Spare**: a nonlethal option where an attacker can safely be stopped or taken into custody.
+- **Aid during prayer**: defend Hugh and Anselm while spiritual help is given.
+- **Escort and shelter**: encounter objectives that protect a person or usable route.
 
-Sacramental reception belongs to worship and support in the appropriate scene. Do not make a reserved host an instant consumable with an unworthy-reception damage mode.
+A person may need righteous force to stop an attack. Sparing everyone is not a universal victory condition, and wounds or appearance do not define the enemy group.
 
-Blessed attacks and invocations of Christ can contribute to defeating Abaddon. The old unconsecrated-blow finisher and rules that made holy attacks invalid at the last hit are removed. New attack names, resource costs, and unlock thresholds remain to be designed.
+Sacramental reception belongs to worship in its proper context. A reserved host is not an instant combat consumable. Robert does not give absolution, and holy attacks can contribute to the final victory.
 
-War memories can test perseverance and conviction. They contain no cannibalism mechanic or compulsory personal-atrocity confession.
+## Equipment and meaningful objects
 
----
+### Starting vocabulary
 
-## Equipment
+Mail, a nasal helmet, a kite shield, a one-handed arming sword, a dagger, a repaired wool cloak, linen, leather footwear, a belt and purse, and a borrowed mule. Exact textile layering, mail hand construction, and additional protection need dated references.
 
-### What a knight of 1101 actually wears
+A personal household mark can be an art choice. Robert does not wear an official military-order mantle simply because Templars and Hospitallers now exist.
 
-**Plate does not exist yet** as a harness. Full plate is a fifteenth-century thing. Even coat-of-plates is a century and a half away. Guarin’s world is the world of the Bayeux tapestry and the First Crusade:
+### Narrative equipment categories
 
-- **Gambeson** — thick quilted linen. Worn under mail. This is most of the blunt protection.
-- **Hauberk** — knee-length mail shirt, split for the saddle, sleeves to the wrist or to mail mittens (*mufflers*) made in one with the sleeve. A coif (mail hood) if he owns one.
-- **Nasal helm** — iron cone, nasal bar. The face is open. The great helm is later.
-- **Kite shield** — long teardrop, leather over wood, maybe a painted device. Heater shields are thirteenth century.
-- **Arming sword** — one-handed, worn at the left hip, used *with* the shield. Not a longsword.
-- **Dagger** / *cultellus*.
-- **Cloak** — wool, brooch. A full heraldic surcoat is only just beginning to appear; do not put him in late crusader white-and-cross unless you are making a point.
-- **Boots** — leather, riding.
-- **Gloves** — leather; the real hand armor is the muffler if the hauberk has it. No plate gauntlets.
-- **Belt, purse, pilgrim’s ampulla, the rag at the breast.**
-
-Chausses (mail legs) are possible for a man who came home with loot. They are a find, not a start. A spear or lance is a battlefield weapon; on foot in gorges he is a sword-and-shield man. The *memory* of the lance can inform an Arms ability, not a starting polearm he walks through Saint-Laurent with.
-
-### Slots
-
-| Slot | Starting piece | Notes |
+| Category | Starting or relevant object | Story purpose |
 |---|---|---|
-| Head | Nasal helm, dinted at Dorylaeum | Face open on purpose. Visions hit the eyes. |
-| Body, padding | Travel-stained gambeson | Soak. Can be replaced with Antonine-quilted linen, for better or worse. |
-| Body, mail | Hauberk | The knight’s wealth. Repairable. Does little against crush and against Heat. |
-| Hands | Leather gloves | Upgrade: mufflers, or Durand’s linen wraps (physic, no deflect). |
-| Feet | Riding boots | Upgrade: mail chausses + better boots, late. |
-| Cloak | Wool cloak of the Royans | Eastern cloak as a find: dust, prestige, Market, Heat. |
-| Off-hand | Kite shield, household paint worn off | Can be swapped for a second relic only at great foolishness. |
-| Weapon | Arming sword | It may be named or blessed later. A genuine blessing supports righteous use. |
-| Sidearm | Dagger | Throw and practical use. |
-| Relic | **The splinter**, in a rag, against the sternum | See below. |
-| Burden | Empty | Where the Antioch iron would sit. A second relic slot that *weighs*. |
+| Head | Repaired nasal helmet. | Ordinary protection and a recognizable face. |
+| Body | Mail and a selected textile layer. | Wealth, repair, and vulnerability. |
+| Hands and feet | Practical leather and selected period protection. | Work, injury, and travel. |
+| Cloak | Worn local wool. | Household identity and the journey home. |
+| Shield | Kite shield with worn personal paint. | Active protection. |
+| Weapon and sidearm | Arming sword and dagger. | Trained martial craft. |
+| Devotional object | Rag-wrapped splinter. | Sincere devotion with uncertain provenance. |
+| Evidence or burden | A copied record, seal impression, or the dangerous casket when a scene requires it. | Inquiry and responsibility, not automatic combat power. |
 
-Jewelry is scarce. A ring from Almodis if he takes it. No inventory of twenty magic rings.
+These categories describe narrative use; they do not change the prototype's inventory locations or define a new saved-data schema.
 
-### Item rules
-
-- Items have **weight**, **repair**, and **period materials** (linen, leather, iron, wool, bone, relic-dust).
-- Mail is excellent against the parish’s flails and against rye-men’s cuts. Maces, millstones, and locust iron ignore much of it. That is the historical truth and the encounter grammar.
-- Gear made by the brothers can support care and protection. Any contaminated item requires a specific cause; its Christian association is not itself a penalty.
-- A genuine blessing can help resist evil. Its benefits must not secretly reverse because Guarin prayed, fought righteously, or approached the counterfeit. A false claim about an item is investigated separately.
-- No random rare-green explosion. Named finds from named rooms.
-
----
-
-## Relics and exceptional items
-
-Relics can carry devotional meaning, uncertain provenance, and investigative interest. The Cross is not a concealed key for evil. Item claims and the genuine good of faith remain distinct.
+Items can carry weight, repair needs, period materials, and particular histories. Avoid an unrelated flood of magical jewelry. A genuine blessing does not secretly reverse because Robert prayed or opposed evil.
 
 ### The splinter
 
-A rag-wrapped sliver of wood, bought in Jerusalem on a claim that it came from the True Cross. Worn inside the shirt, over the sternum. Guarin's devotion is sincere even while its provenance remains uncertain.
+Acquired during Robert's 1148 pilgrimage on a claim of True Cross provenance. The uncertainty concerns the object, not whether sincere devotion is itself harmful.
 
-**As equipment.** Occupies Relic. Its exact effects remain draft. It may support prayer, recall a meaningful memory, or prompt investigation of a claim. It neither adds Heat because of his faith nor secretly counts as a key for Abaddon. No final encounter requires him to destroy it or reject the Cross.
+It may support a memory or prayer scene if the design retains that use. It is not a second hidden key for Abaddon and need not be destroyed to win. Item voices and their presentation remain open design questions.
 
-**As a voice or memory.** Presentation remains open. If it speaks, the writing must make the source meaningful rather than automatically equating devotion with a dangerous hallucination.
+### Hugh's counterfeit casket
 
-### The Antioch iron
+The dangerous object established by the plot. Hugh brought it home in spring 1149; the care house received it; Hamon took it to Blackthorn Hold.
 
-The claimed Holy Lance can remain part of Guarin's war memories. A westward journey and later appearance as a usable item are optional fiction; no such item is required to finish the campaign.
+Its false promise, specific contamination, and supernatural foothold create the danger. Evidence and prayer expose different aspects of it. Breaking the casket-heart belongs to the final approach. A generic rule that all relics feed evil would contradict the story.
 
-If retained, investigate its claim and particular history. Decide its effects separately. It cannot establish a universal rule that holy weapons strengthen Abaddon, nor can destroying it become a mandatory repudiation of faith.
+### Records and the household seal
 
-### Fulk's counterfeit
+Alice's recollection and copies, Oswin's entries, Agatha's witnesses, and Walter's misused seal establish what particular people did. They are tools for a local challenge, not modern administrative access keys.
 
-The Eastern box is the dangerous object established by the plot. Its deception and the contamination it carries supply a concrete cause for its effects. Evidence and prayer expose it. Breaking its foothold belongs to the final approach; genuine holy things remain distinct from it.
+A failed Letters check can bring a clerk into the scene. Missing one optional witness can increase the cost of reaching the truth; it cannot make the entire campaign insoluble.
 
----
+## What progression looks like in the world
 
-## Starting kit (the rest)
-
-What he actually has on the mule, late summer 1101:
-
-- Travel-stained bliaut over the gambeson
-- Hauberk, packed for the road, put on before the last league when he sees the rye
-- Nasal helm, dinted
-- Kite shield, device worn to a ghost
-- Arming sword, kept oiled
-- Dagger
-- Cloak of the Royans
-- Riding boots, leather gloves
-- Belt, empty purse, a pilgrim’s empty ampulla
-- The rag and the splinter
-- A borrowed mule (not a warhorse; those died or were sold coming west)
-
-No lance in the hand. No plate. No blessed sword yet. No Antioch iron.
-
----
-
-## How progression feels
-
-There is no ding. A named encounter, lesson, prayer, or act of protection can bring a new ability or a clearer sense of purpose. Numerical rewards remain draft.
-
-| Campaign beat | Progression or visible consequence |
+| Beat | Visible consequence |
 |---|---|
-| Prayer in the rain at the stone cross | Establishes the plea for will and hope; no complete instant resolution is required |
-| Protects someone in Rivoire | A person lives because he acted; the hub can show that outcome |
-| Stops Durand's harmful cask | Patients cease receiving the dose; safe care resumes |
-| Protects Raimbaut's postulants | Preserves people who may offer help later |
-| Helps Fulk resist the binding | A terrified man can turn toward Christ; a priest provides absolution |
-| Receives courage or kindness from others | Goodness becomes visible and sustains conviction |
-| Defeats Abaddon through faith and perseverance | A real victory; the saved people and rebuilding make its meaning visible |
+| Prayer at the stone cross. | The need for hope, will, guidance, and strength is named sincerely. |
+| Stops Ernald's collection. | Neighbors and seed grain remain protected. |
+| Defends the House of Saint Michael. | Patients are moved safely, witnesses remain, and separate meals resume. |
+| Frees captives and men coerced by Gilbert. | People return to kin or choose useful service. |
+| Protects Hugh during release. | A frightened man can turn toward Christ and survive to help another. |
+| Allies guard supplies during the descent. | Earlier protection becomes reciprocal action. |
+| Breaks the counterfeit and defeats Abaddon. | The local grip ends and a real future in 1150 becomes visible. |
 
-The answer to the prayer is the restoration of will, hope, and the knowledge that the fight matters. A reward screen alone cannot express it.
+The fellowship shown here is not a currency for grace. Robert's prayer is answered in restored strength, meaningful resistance, goodness recognized, and victory.
 
----
+## Memory encounters
 
-## What this gives the story
+Use the 1147–1148 march, failed siege, pilgrimage, and 1148–1149 road home. War memories can test perseverance and reveal a kindness Robert once overlooked.
 
-- **The prayer** establishes Guarin's spiritual crisis and the strengths he seeks.
-- **Faith** sustains the fight, protection, and discernment; it does not empower the enemy.
-- **The investigation** exposes contaminated provisions and the counterfeit through evidence and prayer.
-- **Fulk's encounter** joins protection and spiritual aid, with absolution belonging to a priest.
-- **Act V** tests the strength to persevere and confront evil. Prayer and blessings can help him win.
-- **The epilogue** shows lives preserved, goodness in other people, and a future worth living for.
+Remove the former personal visionary-lance episodes and any required later arrival of that lance as equipment. These are experiences of the Second Crusade and return, not a mechanical reskin of the First Crusade.
 
----
+## Open design decisions
 
-## Open questions
-
-- How are restored will and conviction expressed in play: narrative, a track, or an encounter resource?
+- How will restored will and conviction be expressed: narrative, a track, or an encounter resource?
 - What pacing mechanism suits active prayer abilities?
-- Is Arms allowed to add health, or does survival grow through skill, equipment, and support?
-- Does the mule exist as a carry-capacity / hub object, or is it flavor on the last league?
-- How, if at all, do item voices appear?
-- What numerical starting values and unlock conditions fit this spiritual crisis without measuring divine favor?
-- One save-file, progression persistent; no respec. Confirm.
+- How much survivability comes from health, armor, timing, allies, and protection?
+- Which rescues are mainline, and how do optional losses change assistance without blocking completion?
+- What exact equipment references and upgrade paths fit 1149?
+- Does the mule affect carry capacity or serve as homecoming presentation?
+- How, if at all, do item memories or voices appear?
+- Which save and respec decisions from the earlier draft remain wanted?
 
-These decisions remain open. The narrative requirements above are settled; replacement progression values are not yet an implementation contract.
+The period, names, governing prayer, care-house defense, and meaningful local victory are active narrative choices. Numerical values and new implementation contracts are not settled by this document.
