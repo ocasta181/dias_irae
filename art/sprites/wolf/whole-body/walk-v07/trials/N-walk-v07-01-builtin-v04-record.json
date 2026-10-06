@@ -1,0 +1,13 @@
+{
+  "tool": "built-in image_gen",
+  "actual_input": {
+    "prompt": "Use case: precise-object-edit. Finish this ONE pose-shaped wolf control into an intact flat 2D game sprite in strict REAR VIEW, looking away toward NORTH/up. This single input already combines the original wolf's gritty grey-brown dry-painted fur texture and the approved pose outline; it is not a failed painting. Remove the tiled seams and refine fur/anatomy WITHOUT moving or rescaling its overall silhouette.\nThe two CYAN contact crosses are the required bottom-edge/underside centres of its planted hind paws: left-screen (56,103.889087), right-screen (72,116.617009), in the entire 128-square layout. Preserve those exact paw positions, including the extended right rear leg; do not shorten it, shift both paws up, or replace the gait with a neutral stand. Erase the crosses after painting the paws at them. The back of the huge head, ears, tiny compact rump and tapered central tail are already placed. Keep this a quadruped with horizontal animal body viewed from above and behind, not an upright/biped creature. Front legs are occluded.\nRefine the repeating texture into coherent natural wolf fur with the same scratchy matte game brushwork, enormous-head/short-squat proportions and proper canine stifle/raised-hock anatomy. Small furry paws with tiny claws, no exposed pads, extra limbs, decorative circles, 3D shading, cast shadow, words or placeholders. Preserve the whole square-canvas registration and output genuine alpha transparency. One complete connected wolf only; no parts kit or sheet.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/N-walk-v07-01-textured-control-v02.png"
+    ],
+    "transparent_background": true
+  },
+  "original_path": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-62fa1e4a-32d4-4c9a-932b-1261a660e212.png",
+  "status": "static contact pass; cycle incomplete",
+  "failed_output_inputs": false
+}

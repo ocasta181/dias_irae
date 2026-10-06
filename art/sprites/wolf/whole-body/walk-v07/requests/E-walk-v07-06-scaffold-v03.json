@@ -1,0 +1,8 @@
+{
+  "tool": "image_edit",
+  "image": [
+    "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-06-scaffold-v03.png"
+  ],
+  "prompt": "Finish the incomplete wolf in this single pose-shaped edit target: paint the black lower-body/leg/paw silhouette regions with the same rough grey-brown fur and paw/claw detail as its already-painted upper body. Keep the silhouette's exact leg positions and paw underside endpoints, especially the stretched-back near hindpaw; preserve the complete upper-body pixels, huge head, tiny squat torso, tiny tired eyes, ears, muzzle, camera, scale and square-canvas placement. Blend every limb naturally into one complete intact animal, leaving a perfectly uniform #00ff00 background and no shadow, black placeholder, guide, label, extra limb, 3D shading or realistic long legs. This is flat gritty dry-painted 2D game sprite art, not a parts kit; preserve the posed outline while finishing its surfaces.",
+  "aspect_ratio": "1:1"
+}

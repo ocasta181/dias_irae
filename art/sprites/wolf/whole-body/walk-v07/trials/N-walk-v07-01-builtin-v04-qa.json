@@ -1,0 +1,60 @@
+{
+  "basis": "measured artwork; static pose only",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "registration": "fixed whole-image scale 128/width and offset (32,56)",
+  "method": "human-identified hind paw regions; alpha>=128 bottom-edge midpoint",
+  "uncertaintyPx": 1,
+  "targetBudgetPx": 3,
+  "observations": {
+    "LH": {
+      "region": [
+        495,
+        945,
+        80,
+        90
+      ],
+      "pointRaw": [
+        559.5,
+        1022
+      ],
+      "pointLogical": [
+        89.11004784688996,
+        160.3189792663477
+      ],
+      "target": [
+        88,
+        159.88908729652601
+      ],
+      "errorPx": 1.1903836894473108
+    },
+    "RH": {
+      "region": [
+        650,
+        1035,
+        155,
+        140
+      ],
+      "pointRaw": [
+        695,
+        1149
+      ],
+      "pointLogical": [
+        102.94098883572568,
+        173.28229665071768
+      ],
+      "target": [
+        104,
+        172.61700935788386
+      ],
+      "errorPx": 1.2506445650398907
+    }
+  },
+  "passed": true,
+  "notes": [
+    "The original wide left-paw rectangle included the central tail.",
+    "The corrected ROI was chosen from the actual paw close-up and excludes the separate tail component."
+  ]
+}

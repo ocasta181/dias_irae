@@ -1,0 +1,13 @@
+{
+  "tool": "built-in image_gen",
+  "actual_input": {
+    "prompt": "Use case: precise-object-edit. Complete this single original pose-shaped wolf scaffold as ONE intact whole-body flat 2D game sprite, walking pose E-4/12. All flat taupe areas are unfinished regions: paint them with the SAME mid grey-brown rough dry-painted fur and small claw details as the existing torso. Legs/paws must not become black or much darker than the body. The tapered rear-left wedge is a furry tail, not a leg; only the two near paws are visible while the far pair is naturally occluded.\nThe CYAN crosses mark the exact paw UNDERSIDE CONTACT EDGE MIDPOINTS. Near HIND: 33.508301% across, 80.186787% down the whole canvas; lifted 4.268 logical height units and recovering forward. Near FORE: 56.640625% across, 82.544417% down; planted. Finish the existing posed silhouettes without moving those contacts or changing the joint bends, then remove the crosses. Paws are very small, furry on top with short right-pointing claws and no exposed pads or joint circles. Keep true canine stifle/raised-hock and elbow/carpus anatomy.\nPreserve the original upper-body pixels, coat markings, huge head, tiny squat torso, tiny weary eye, ears, muzzle, elevated orthographic right-profile camera, scale and entire square registration. Blend into one organically connected complete animal. Same gritty matte 2D game texture throughout; no 3D shading, extra legs, placeholder, guide, word or ground shadow. Remove all green and output genuine alpha transparency. One whole wolf only, not parts or a sheet.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-04-scaffold-v03.png"
+    ],
+    "transparent_background": true
+  },
+  "original_path": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-9e4912e3-3a04-468d-8016-ecb03522b113.png",
+  "status": "candidate; measured QA pending",
+  "failed_output_inputs": false
+}

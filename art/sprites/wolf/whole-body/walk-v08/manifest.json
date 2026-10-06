@@ -1,0 +1,1278 @@
+{
+  "source": "../walk-v07/manifest.json",
+  "fps": 12,
+  "cycleMs": 1000,
+  "frames": [
+    {
+      "id": "N-walk-v08-01",
+      "direction": "N",
+      "index": 1,
+      "sourcePoseId": "N-walk-v07-01",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/N-walk-v08-01.png",
+      "request": "requests/N-walk-v08-01.json",
+      "markerIds": [
+        "LH",
+        "RH"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "N-walk-v08-02",
+      "direction": "N",
+      "index": 2,
+      "sourcePoseId": "N-walk-v07-02",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/N-walk-v08-02.png",
+      "request": "requests/N-walk-v08-02.json",
+      "markerIds": [
+        "LH",
+        "RH"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "N-walk-v08-03",
+      "direction": "N",
+      "index": 3,
+      "sourcePoseId": "N-walk-v07-03",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/N-walk-v08-03.png",
+      "request": "requests/N-walk-v08-03.json",
+      "markerIds": [
+        "LH",
+        "RH"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "N-walk-v08-04",
+      "direction": "N",
+      "index": 4,
+      "sourcePoseId": "N-walk-v07-04",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/N-walk-v08-04.png",
+      "request": "requests/N-walk-v08-04.json",
+      "markerIds": [
+        "LH",
+        "RH"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "N-walk-v08-05",
+      "direction": "N",
+      "index": 5,
+      "sourcePoseId": "N-walk-v07-05",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/N-walk-v08-05.png",
+      "request": "requests/N-walk-v08-05.json",
+      "markerIds": [
+        "LH",
+        "RH"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "N-walk-v08-06",
+      "direction": "N",
+      "index": 6,
+      "sourcePoseId": "N-walk-v07-06",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/N-walk-v08-06.png",
+      "request": "requests/N-walk-v08-06.json",
+      "markerIds": [
+        "LH",
+        "RH"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "N-walk-v08-07",
+      "direction": "N",
+      "index": 7,
+      "sourcePoseId": "N-walk-v07-07",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/N-walk-v08-07.png",
+      "request": "requests/N-walk-v08-07.json",
+      "markerIds": [
+        "LH",
+        "RH"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "N-walk-v08-08",
+      "direction": "N",
+      "index": 8,
+      "sourcePoseId": "N-walk-v07-08",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/N-walk-v08-08.png",
+      "request": "requests/N-walk-v08-08.json",
+      "markerIds": [
+        "LH",
+        "RH"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "N-walk-v08-09",
+      "direction": "N",
+      "index": 9,
+      "sourcePoseId": "N-walk-v07-09",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/N-walk-v08-09.png",
+      "request": "requests/N-walk-v08-09.json",
+      "markerIds": [
+        "LH",
+        "RH"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "N-walk-v08-10",
+      "direction": "N",
+      "index": 10,
+      "sourcePoseId": "N-walk-v07-10",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/N-walk-v08-10.png",
+      "request": "requests/N-walk-v08-10.json",
+      "markerIds": [
+        "LH",
+        "RH"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "N-walk-v08-11",
+      "direction": "N",
+      "index": 11,
+      "sourcePoseId": "N-walk-v07-11",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/N-walk-v08-11.png",
+      "request": "requests/N-walk-v08-11.json",
+      "markerIds": [
+        "LH",
+        "RH"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "N-walk-v08-12",
+      "direction": "N",
+      "index": 12,
+      "sourcePoseId": "N-walk-v07-12",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/N-walk-v08-12.png",
+      "request": "requests/N-walk-v08-12.json",
+      "markerIds": [
+        "LH",
+        "RH"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NE-walk-v08-01",
+      "direction": "NE",
+      "index": 1,
+      "sourcePoseId": "NE-walk-v07-01",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NE-walk-v08-01.png",
+      "request": "requests/NE-walk-v08-01.json",
+      "markerIds": [
+        "LH",
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NE-walk-v08-02",
+      "direction": "NE",
+      "index": 2,
+      "sourcePoseId": "NE-walk-v07-02",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NE-walk-v08-02.png",
+      "request": "requests/NE-walk-v08-02.json",
+      "markerIds": [
+        "LH",
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NE-walk-v08-03",
+      "direction": "NE",
+      "index": 3,
+      "sourcePoseId": "NE-walk-v07-03",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NE-walk-v08-03.png",
+      "request": "requests/NE-walk-v08-03.json",
+      "markerIds": [
+        "LH",
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NE-walk-v08-04",
+      "direction": "NE",
+      "index": 4,
+      "sourcePoseId": "NE-walk-v07-04",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NE-walk-v08-04.png",
+      "request": "requests/NE-walk-v08-04.json",
+      "markerIds": [
+        "LH",
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NE-walk-v08-05",
+      "direction": "NE",
+      "index": 5,
+      "sourcePoseId": "NE-walk-v07-05",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NE-walk-v08-05.png",
+      "request": "requests/NE-walk-v08-05.json",
+      "markerIds": [
+        "LH",
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NE-walk-v08-06",
+      "direction": "NE",
+      "index": 6,
+      "sourcePoseId": "NE-walk-v07-06",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NE-walk-v08-06.png",
+      "request": "requests/NE-walk-v08-06.json",
+      "markerIds": [
+        "LH",
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NE-walk-v08-07",
+      "direction": "NE",
+      "index": 7,
+      "sourcePoseId": "NE-walk-v07-07",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NE-walk-v08-07.png",
+      "request": "requests/NE-walk-v08-07.json",
+      "markerIds": [
+        "LH",
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NE-walk-v08-08",
+      "direction": "NE",
+      "index": 8,
+      "sourcePoseId": "NE-walk-v07-08",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NE-walk-v08-08.png",
+      "request": "requests/NE-walk-v08-08.json",
+      "markerIds": [
+        "LH",
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NE-walk-v08-09",
+      "direction": "NE",
+      "index": 9,
+      "sourcePoseId": "NE-walk-v07-09",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NE-walk-v08-09.png",
+      "request": "requests/NE-walk-v08-09.json",
+      "markerIds": [
+        "LH",
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NE-walk-v08-10",
+      "direction": "NE",
+      "index": 10,
+      "sourcePoseId": "NE-walk-v07-10",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NE-walk-v08-10.png",
+      "request": "requests/NE-walk-v08-10.json",
+      "markerIds": [
+        "LH",
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NE-walk-v08-11",
+      "direction": "NE",
+      "index": 11,
+      "sourcePoseId": "NE-walk-v07-11",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NE-walk-v08-11.png",
+      "request": "requests/NE-walk-v08-11.json",
+      "markerIds": [
+        "LH",
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NE-walk-v08-12",
+      "direction": "NE",
+      "index": 12,
+      "sourcePoseId": "NE-walk-v07-12",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NE-walk-v08-12.png",
+      "request": "requests/NE-walk-v08-12.json",
+      "markerIds": [
+        "LH",
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "E-walk-v08-01",
+      "direction": "E",
+      "index": 1,
+      "sourcePoseId": "E-walk-v07-01",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/E-walk-v08-01.png",
+      "request": "requests/E-walk-v08-01.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "E-walk-v08-02",
+      "direction": "E",
+      "index": 2,
+      "sourcePoseId": "E-walk-v07-02",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/E-walk-v08-02.png",
+      "request": "requests/E-walk-v08-02.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "E-walk-v08-03",
+      "direction": "E",
+      "index": 3,
+      "sourcePoseId": "E-walk-v07-03",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/E-walk-v08-03.png",
+      "request": "requests/E-walk-v08-03.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "E-walk-v08-04",
+      "direction": "E",
+      "index": 4,
+      "sourcePoseId": "E-walk-v07-04",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/E-walk-v08-04.png",
+      "request": "requests/E-walk-v08-04.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "E-walk-v08-05",
+      "direction": "E",
+      "index": 5,
+      "sourcePoseId": "E-walk-v07-05",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/E-walk-v08-05.png",
+      "request": "requests/E-walk-v08-05.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "E-walk-v08-06",
+      "direction": "E",
+      "index": 6,
+      "sourcePoseId": "E-walk-v07-06",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/E-walk-v08-06.png",
+      "request": "requests/E-walk-v08-06.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "E-walk-v08-07",
+      "direction": "E",
+      "index": 7,
+      "sourcePoseId": "E-walk-v07-07",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/E-walk-v08-07.png",
+      "request": "requests/E-walk-v08-07.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "E-walk-v08-08",
+      "direction": "E",
+      "index": 8,
+      "sourcePoseId": "E-walk-v07-08",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/E-walk-v08-08.png",
+      "request": "requests/E-walk-v08-08.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "E-walk-v08-09",
+      "direction": "E",
+      "index": 9,
+      "sourcePoseId": "E-walk-v07-09",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/E-walk-v08-09.png",
+      "request": "requests/E-walk-v08-09.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "E-walk-v08-10",
+      "direction": "E",
+      "index": 10,
+      "sourcePoseId": "E-walk-v07-10",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/E-walk-v08-10.png",
+      "request": "requests/E-walk-v08-10.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "E-walk-v08-11",
+      "direction": "E",
+      "index": 11,
+      "sourcePoseId": "E-walk-v07-11",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/E-walk-v08-11.png",
+      "request": "requests/E-walk-v08-11.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "E-walk-v08-12",
+      "direction": "E",
+      "index": 12,
+      "sourcePoseId": "E-walk-v07-12",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/E-walk-v08-12.png",
+      "request": "requests/E-walk-v08-12.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SE-walk-v08-01",
+      "direction": "SE",
+      "index": 1,
+      "sourcePoseId": "SE-walk-v07-01",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SE-walk-v08-01.png",
+      "request": "requests/SE-walk-v08-01.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SE-walk-v08-02",
+      "direction": "SE",
+      "index": 2,
+      "sourcePoseId": "SE-walk-v07-02",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SE-walk-v08-02.png",
+      "request": "requests/SE-walk-v08-02.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SE-walk-v08-03",
+      "direction": "SE",
+      "index": 3,
+      "sourcePoseId": "SE-walk-v07-03",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SE-walk-v08-03.png",
+      "request": "requests/SE-walk-v08-03.json",
+      "markerIds": [
+        "RH",
+        "RF",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SE-walk-v08-04",
+      "direction": "SE",
+      "index": 4,
+      "sourcePoseId": "SE-walk-v07-04",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SE-walk-v08-04.png",
+      "request": "requests/SE-walk-v08-04.json",
+      "markerIds": [
+        "RH",
+        "RF",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SE-walk-v08-05",
+      "direction": "SE",
+      "index": 5,
+      "sourcePoseId": "SE-walk-v07-05",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SE-walk-v08-05.png",
+      "request": "requests/SE-walk-v08-05.json",
+      "markerIds": [
+        "RH",
+        "RF",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SE-walk-v08-06",
+      "direction": "SE",
+      "index": 6,
+      "sourcePoseId": "SE-walk-v07-06",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SE-walk-v08-06.png",
+      "request": "requests/SE-walk-v08-06.json",
+      "markerIds": [
+        "RH",
+        "RF",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SE-walk-v08-07",
+      "direction": "SE",
+      "index": 7,
+      "sourcePoseId": "SE-walk-v07-07",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SE-walk-v08-07.png",
+      "request": "requests/SE-walk-v08-07.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SE-walk-v08-08",
+      "direction": "SE",
+      "index": 8,
+      "sourcePoseId": "SE-walk-v07-08",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SE-walk-v08-08.png",
+      "request": "requests/SE-walk-v08-08.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SE-walk-v08-09",
+      "direction": "SE",
+      "index": 9,
+      "sourcePoseId": "SE-walk-v07-09",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SE-walk-v08-09.png",
+      "request": "requests/SE-walk-v08-09.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SE-walk-v08-10",
+      "direction": "SE",
+      "index": 10,
+      "sourcePoseId": "SE-walk-v07-10",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SE-walk-v08-10.png",
+      "request": "requests/SE-walk-v08-10.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SE-walk-v08-11",
+      "direction": "SE",
+      "index": 11,
+      "sourcePoseId": "SE-walk-v07-11",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SE-walk-v08-11.png",
+      "request": "requests/SE-walk-v08-11.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SE-walk-v08-12",
+      "direction": "SE",
+      "index": 12,
+      "sourcePoseId": "SE-walk-v07-12",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SE-walk-v08-12.png",
+      "request": "requests/SE-walk-v08-12.json",
+      "markerIds": [
+        "RH",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "S-walk-v08-01",
+      "direction": "S",
+      "index": 1,
+      "sourcePoseId": "S-walk-v07-01",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/S-walk-v08-01.png",
+      "request": "requests/S-walk-v08-01.json",
+      "markerIds": [
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "S-walk-v08-02",
+      "direction": "S",
+      "index": 2,
+      "sourcePoseId": "S-walk-v07-02",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/S-walk-v08-02.png",
+      "request": "requests/S-walk-v08-02.json",
+      "markerIds": [
+        "LF",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "S-walk-v08-03",
+      "direction": "S",
+      "index": 3,
+      "sourcePoseId": "S-walk-v07-03",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/S-walk-v08-03.png",
+      "request": "requests/S-walk-v08-03.json",
+      "markerIds": [
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "S-walk-v08-04",
+      "direction": "S",
+      "index": 4,
+      "sourcePoseId": "S-walk-v07-04",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/S-walk-v08-04.png",
+      "request": "requests/S-walk-v08-04.json",
+      "markerIds": [
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "S-walk-v08-05",
+      "direction": "S",
+      "index": 5,
+      "sourcePoseId": "S-walk-v07-05",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/S-walk-v08-05.png",
+      "request": "requests/S-walk-v08-05.json",
+      "markerIds": [
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "S-walk-v08-06",
+      "direction": "S",
+      "index": 6,
+      "sourcePoseId": "S-walk-v07-06",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/S-walk-v08-06.png",
+      "request": "requests/S-walk-v08-06.json",
+      "markerIds": [
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "S-walk-v08-07",
+      "direction": "S",
+      "index": 7,
+      "sourcePoseId": "S-walk-v07-07",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/S-walk-v08-07.png",
+      "request": "requests/S-walk-v08-07.json",
+      "markerIds": [
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "S-walk-v08-08",
+      "direction": "S",
+      "index": 8,
+      "sourcePoseId": "S-walk-v07-08",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/S-walk-v08-08.png",
+      "request": "requests/S-walk-v08-08.json",
+      "markerIds": [
+        "LF",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "S-walk-v08-09",
+      "direction": "S",
+      "index": 9,
+      "sourcePoseId": "S-walk-v07-09",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/S-walk-v08-09.png",
+      "request": "requests/S-walk-v08-09.json",
+      "markerIds": [
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "S-walk-v08-10",
+      "direction": "S",
+      "index": 10,
+      "sourcePoseId": "S-walk-v07-10",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/S-walk-v08-10.png",
+      "request": "requests/S-walk-v08-10.json",
+      "markerIds": [
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "S-walk-v08-11",
+      "direction": "S",
+      "index": 11,
+      "sourcePoseId": "S-walk-v07-11",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/S-walk-v08-11.png",
+      "request": "requests/S-walk-v08-11.json",
+      "markerIds": [
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "S-walk-v08-12",
+      "direction": "S",
+      "index": 12,
+      "sourcePoseId": "S-walk-v07-12",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/S-walk-v08-12.png",
+      "request": "requests/S-walk-v08-12.json",
+      "markerIds": [
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SW-walk-v08-01",
+      "direction": "SW",
+      "index": 1,
+      "sourcePoseId": "SW-walk-v07-01",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SW-walk-v08-01.png",
+      "request": "requests/SW-walk-v08-01.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SW-walk-v08-02",
+      "direction": "SW",
+      "index": 2,
+      "sourcePoseId": "SW-walk-v07-02",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SW-walk-v08-02.png",
+      "request": "requests/SW-walk-v08-02.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SW-walk-v08-03",
+      "direction": "SW",
+      "index": 3,
+      "sourcePoseId": "SW-walk-v07-03",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SW-walk-v08-03.png",
+      "request": "requests/SW-walk-v08-03.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SW-walk-v08-04",
+      "direction": "SW",
+      "index": 4,
+      "sourcePoseId": "SW-walk-v07-04",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SW-walk-v08-04.png",
+      "request": "requests/SW-walk-v08-04.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SW-walk-v08-05",
+      "direction": "SW",
+      "index": 5,
+      "sourcePoseId": "SW-walk-v07-05",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SW-walk-v08-05.png",
+      "request": "requests/SW-walk-v08-05.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SW-walk-v08-06",
+      "direction": "SW",
+      "index": 6,
+      "sourcePoseId": "SW-walk-v07-06",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SW-walk-v08-06.png",
+      "request": "requests/SW-walk-v08-06.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SW-walk-v08-07",
+      "direction": "SW",
+      "index": 7,
+      "sourcePoseId": "SW-walk-v07-07",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SW-walk-v08-07.png",
+      "request": "requests/SW-walk-v08-07.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SW-walk-v08-08",
+      "direction": "SW",
+      "index": 8,
+      "sourcePoseId": "SW-walk-v07-08",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SW-walk-v08-08.png",
+      "request": "requests/SW-walk-v08-08.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SW-walk-v08-09",
+      "direction": "SW",
+      "index": 9,
+      "sourcePoseId": "SW-walk-v07-09",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SW-walk-v08-09.png",
+      "request": "requests/SW-walk-v08-09.json",
+      "markerIds": [
+        "LH",
+        "LF",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SW-walk-v08-10",
+      "direction": "SW",
+      "index": 10,
+      "sourcePoseId": "SW-walk-v07-10",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SW-walk-v08-10.png",
+      "request": "requests/SW-walk-v08-10.json",
+      "markerIds": [
+        "LH",
+        "LF",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SW-walk-v08-11",
+      "direction": "SW",
+      "index": 11,
+      "sourcePoseId": "SW-walk-v07-11",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SW-walk-v08-11.png",
+      "request": "requests/SW-walk-v08-11.json",
+      "markerIds": [
+        "LH",
+        "LF",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "SW-walk-v08-12",
+      "direction": "SW",
+      "index": 12,
+      "sourcePoseId": "SW-walk-v07-12",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/SW-walk-v08-12.png",
+      "request": "requests/SW-walk-v08-12.json",
+      "markerIds": [
+        "LH",
+        "LF",
+        "RF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "W-walk-v08-01",
+      "direction": "W",
+      "index": 1,
+      "sourcePoseId": "W-walk-v07-01",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/W-walk-v08-01.png",
+      "request": "requests/W-walk-v08-01.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "W-walk-v08-02",
+      "direction": "W",
+      "index": 2,
+      "sourcePoseId": "W-walk-v07-02",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/W-walk-v08-02.png",
+      "request": "requests/W-walk-v08-02.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "W-walk-v08-03",
+      "direction": "W",
+      "index": 3,
+      "sourcePoseId": "W-walk-v07-03",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/W-walk-v08-03.png",
+      "request": "requests/W-walk-v08-03.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "W-walk-v08-04",
+      "direction": "W",
+      "index": 4,
+      "sourcePoseId": "W-walk-v07-04",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/W-walk-v08-04.png",
+      "request": "requests/W-walk-v08-04.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "W-walk-v08-05",
+      "direction": "W",
+      "index": 5,
+      "sourcePoseId": "W-walk-v07-05",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/W-walk-v08-05.png",
+      "request": "requests/W-walk-v08-05.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "W-walk-v08-06",
+      "direction": "W",
+      "index": 6,
+      "sourcePoseId": "W-walk-v07-06",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/W-walk-v08-06.png",
+      "request": "requests/W-walk-v08-06.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "W-walk-v08-07",
+      "direction": "W",
+      "index": 7,
+      "sourcePoseId": "W-walk-v07-07",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/W-walk-v08-07.png",
+      "request": "requests/W-walk-v08-07.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "W-walk-v08-08",
+      "direction": "W",
+      "index": 8,
+      "sourcePoseId": "W-walk-v07-08",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/W-walk-v08-08.png",
+      "request": "requests/W-walk-v08-08.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "W-walk-v08-09",
+      "direction": "W",
+      "index": 9,
+      "sourcePoseId": "W-walk-v07-09",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/W-walk-v08-09.png",
+      "request": "requests/W-walk-v08-09.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "W-walk-v08-10",
+      "direction": "W",
+      "index": 10,
+      "sourcePoseId": "W-walk-v07-10",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/W-walk-v08-10.png",
+      "request": "requests/W-walk-v08-10.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "W-walk-v08-11",
+      "direction": "W",
+      "index": 11,
+      "sourcePoseId": "W-walk-v07-11",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/W-walk-v08-11.png",
+      "request": "requests/W-walk-v08-11.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "W-walk-v08-12",
+      "direction": "W",
+      "index": 12,
+      "sourcePoseId": "W-walk-v07-12",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/W-walk-v08-12.png",
+      "request": "requests/W-walk-v08-12.json",
+      "markerIds": [
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NW-walk-v08-01",
+      "direction": "NW",
+      "index": 1,
+      "sourcePoseId": "NW-walk-v07-01",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NW-walk-v08-01.png",
+      "request": "requests/NW-walk-v08-01.json",
+      "markerIds": [
+        "RH",
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NW-walk-v08-02",
+      "direction": "NW",
+      "index": 2,
+      "sourcePoseId": "NW-walk-v07-02",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NW-walk-v08-02.png",
+      "request": "requests/NW-walk-v08-02.json",
+      "markerIds": [
+        "RH",
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NW-walk-v08-03",
+      "direction": "NW",
+      "index": 3,
+      "sourcePoseId": "NW-walk-v07-03",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NW-walk-v08-03.png",
+      "request": "requests/NW-walk-v08-03.json",
+      "markerIds": [
+        "RH",
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NW-walk-v08-04",
+      "direction": "NW",
+      "index": 4,
+      "sourcePoseId": "NW-walk-v07-04",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NW-walk-v08-04.png",
+      "request": "requests/NW-walk-v08-04.json",
+      "markerIds": [
+        "RH",
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NW-walk-v08-05",
+      "direction": "NW",
+      "index": 5,
+      "sourcePoseId": "NW-walk-v07-05",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NW-walk-v08-05.png",
+      "request": "requests/NW-walk-v08-05.json",
+      "markerIds": [
+        "RH",
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NW-walk-v08-06",
+      "direction": "NW",
+      "index": 6,
+      "sourcePoseId": "NW-walk-v07-06",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NW-walk-v08-06.png",
+      "request": "requests/NW-walk-v08-06.json",
+      "markerIds": [
+        "RH",
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NW-walk-v08-07",
+      "direction": "NW",
+      "index": 7,
+      "sourcePoseId": "NW-walk-v07-07",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NW-walk-v08-07.png",
+      "request": "requests/NW-walk-v08-07.json",
+      "markerIds": [
+        "RH",
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NW-walk-v08-08",
+      "direction": "NW",
+      "index": 8,
+      "sourcePoseId": "NW-walk-v07-08",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NW-walk-v08-08.png",
+      "request": "requests/NW-walk-v08-08.json",
+      "markerIds": [
+        "RH",
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NW-walk-v08-09",
+      "direction": "NW",
+      "index": 9,
+      "sourcePoseId": "NW-walk-v07-09",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NW-walk-v08-09.png",
+      "request": "requests/NW-walk-v08-09.json",
+      "markerIds": [
+        "RH",
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NW-walk-v08-10",
+      "direction": "NW",
+      "index": 10,
+      "sourcePoseId": "NW-walk-v07-10",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NW-walk-v08-10.png",
+      "request": "requests/NW-walk-v08-10.json",
+      "markerIds": [
+        "RH",
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NW-walk-v08-11",
+      "direction": "NW",
+      "index": 11,
+      "sourcePoseId": "NW-walk-v07-11",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NW-walk-v08-11.png",
+      "request": "requests/NW-walk-v08-11.json",
+      "markerIds": [
+        "RH",
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "NW-walk-v08-12",
+      "direction": "NW",
+      "index": 12,
+      "sourcePoseId": "NW-walk-v07-12",
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v08/controls/NW-walk-v08-12.png",
+      "request": "requests/NW-walk-v08-12.json",
+      "markerIds": [
+        "RH",
+        "LH",
+        "LF"
+      ],
+      "status": "pending"
+    }
+  ],
+  "skinFramesComplete": 0
+}

@@ -1,0 +1,56 @@
+{
+  "basis": "measured artwork; static pose only",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "registration": "fixed scale 128/width plus (32,56)",
+  "method": "actual paw regions; non-green opaque bottom-edge midpoint",
+  "targetBudgetPx": 3,
+  "uncertaintyPx": 1,
+  "observations": {
+    "RH": {
+      "region": [
+        440,
+        891,
+        124,
+        95
+      ],
+      "pointRaw": [
+        536.5,
+        962
+      ],
+      "pointLogical": [
+        86.76236044657097,
+        154.1945773524721
+      ],
+      "target": [
+        85.109375,
+        158.63908729652601
+      ],
+      "errorPx": 4.741943644685119
+    },
+    "RF": {
+      "region": [
+        627,
+        943,
+        125,
+        92
+      ],
+      "pointRaw": [
+        706,
+        1017
+      ],
+      "pointLogical": [
+        104.06379585326954,
+        159.80861244019138
+      ],
+      "target": [
+        101.5,
+        161.65685424949237
+      ],
+      "errorPx": 3.1605453584611425
+    }
+  },
+  "passed": false
+}

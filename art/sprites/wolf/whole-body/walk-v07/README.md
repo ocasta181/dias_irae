@@ -23,3 +23,21 @@ Built-in results: E-01, E-02 v03 and E-07 pass the three-pixel static near-paw b
 Rear-view pilots rotate correctly but have not met the contact/layout budget. The filled-control experiment also exposed a control error: thick rounded ends could project beyond the intended paw underside. The latest clean N control clips those ends at the contact and passes actual pixel-boundary checks; its marked version is a new authoring input, never a prior failed painting. A further layout test is required. No failed N drawing is used as a canonical reference.
 
 PNG handling: the built-in 1254-square RGBA originals decode correctly with Sharp. Use decoded RGBA for measurements/packing; one canvas decoder rejected them. The on-pale previews are QA-only flattened copies; original alpha bytes remain unchanged. A lossless re-encoding was pixel-compared to the original decode.
+
+## Current checkpoint — 2026-10-06
+
+At `8a49a5f`, confidence 95%: keep the requested eight sheets × twelve approved poses, with intact whole-body drawings and fixed source registration. Six isolated candidates meet the measured visible-paw budget: E01, E02, E03, E06, E07 and N01. None is a production frame until its complete cycle, silhouette stability, contacts and playback pass. The corrected N01 observation excludes the separate tail from its left-paw region; both actual hind paws miss by less than 1.3 logical pixels.
+
+A fixed black border corrects the model's repeated zoom/framing changes, but it does not reliably constrain limb geometry. Its E04, E05 and E08 trials still fail the three-pixel budget; E04's hind paw misses by 8.13 pixels. Its E06 passes at 0.09/2.90. These are original-derived controls, never rejected image inputs. No further batch is authorized by this evidence. The current free-form still method has reached its precision limit; stop repeat purchases of the same failure. A pose-conditioned drawing method or a manually controlled whole-body authoring workflow is required before expansion.
+
+Whole-frame reflection with a six-pose phase shift matches all projected joints for E↔W, SE↔SW and NE↔NW within floating-point error. This reduces work only after the source cycle passes. It is not a painted-part rig, a per-frame rescale, a repeated pose, or a finished reflected animation. The wolf has no asymmetric equipment. Painted reflection is unverified.
+
+- [x] Preserve all raw provider outputs, exact requests and failed/static candidate measurements.
+- [x] Prepare all 96 exact original-derived pose guides; three input-integrity tests pass.
+- [x] Test sparse guides, silhouette controls, original fur texture controls and fixed-border registration. Record the remaining precision failure.
+- [ ] Obtain a drawing method that respects every approved pose before spending on the other cycles.
+- [ ] Complete and measure twelve painted poses in each facing; verify actual world contacts and loop seams.
+- [ ] Export eight transparent sheets and all 96 source frames; check exact reconstruction.
+- [ ] Load the verified sheets into the painted-wolf option in the existing local lab and review normal/slow/stepped playback.
+
+`coverage.json` is the machine-readable checkpoint. Rebuild it with `node art/sprites/wolf/whole-body/report-production-v07.mjs`. Final frames: **0/96**. Complete sheets: **0/8**. The approved stick lab remains functional; the painted lab still contains the rejected earlier E study.

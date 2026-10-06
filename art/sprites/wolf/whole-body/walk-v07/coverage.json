@@ -1,0 +1,2173 @@
+{
+  "updated": "2026-10-06",
+  "decisionCommit": "8a49a5f",
+  "confidence": 0.95,
+  "requirement": "Eight walking sheets, twelve distinct whole-body poses each. Idle aliases pose 1. Other actions await their own approved controls.",
+  "fps": 12,
+  "cycleMs": 1000,
+  "stride": 36,
+  "canvas": [
+    192,
+    192
+  ],
+  "pivot": [
+    96,
+    156
+  ],
+  "counts": {
+    "planned": 96,
+    "staticCandidates": 6,
+    "finalFrames": 0,
+    "completedSheets": 0,
+    "drawingTrials": 22
+  },
+  "stage": "Drawing method limitation: no full painted cycle passes geometry and motion checks.",
+  "blockers": [
+    "Still-image tools change paw positions despite explicit pose silhouettes, contact coordinates and fixed borders; latest E04 hind-paw error is 8.13 logical pixels, budget 3.",
+    "The separate Grok video workflow is stopped under zero data retention because output storage is unconfigured. Privacy has not been changed."
+  ],
+  "reflection": {
+    "scope": "Unarmed wolf only; entire verified frame, no painted-part assembly",
+    "mapping": {
+      "W": "reflect E with +6 phase offset",
+      "SW": "reflect SE with +6 phase offset",
+      "NW": "reflect NE with +6 phase offset"
+    },
+    "targetGeometryVerified": true,
+    "paintedOutputVerified": false
+  },
+  "directions": {
+    "N": [
+      {
+        "id": "N-walk-v07-01",
+        "pose": 1,
+        "guide": "guides/N-walk-v07-01.png",
+        "phase": 0.041666666666666664,
+        "durationMs": 83.33333333333333,
+        "candidate": {
+          "image": "trials/N-walk-v07-01-builtin-v04.png",
+          "qa": "trials/N-walk-v07-01-builtin-v04-qa.json",
+          "sha256": "ba41b2a4571b5a1ee94de98bae22a20bc3c64f407479a90fb7733347018b7a31"
+        },
+        "status": "static candidate; cycle unverified",
+        "final": null
+      },
+      {
+        "id": "N-walk-v07-02",
+        "pose": 2,
+        "guide": "guides/N-walk-v07-02.png",
+        "phase": 0.125,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "N-walk-v07-03",
+        "pose": 3,
+        "guide": "guides/N-walk-v07-03.png",
+        "phase": 0.20833333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "N-walk-v07-04",
+        "pose": 4,
+        "guide": "guides/N-walk-v07-04.png",
+        "phase": 0.2916666666666667,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "N-walk-v07-05",
+        "pose": 5,
+        "guide": "guides/N-walk-v07-05.png",
+        "phase": 0.375,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "N-walk-v07-06",
+        "pose": 6,
+        "guide": "guides/N-walk-v07-06.png",
+        "phase": 0.4583333333333333,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "N-walk-v07-07",
+        "pose": 7,
+        "guide": "guides/N-walk-v07-07.png",
+        "phase": 0.5416666666666666,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "N-walk-v07-08",
+        "pose": 8,
+        "guide": "guides/N-walk-v07-08.png",
+        "phase": 0.625,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "N-walk-v07-09",
+        "pose": 9,
+        "guide": "guides/N-walk-v07-09.png",
+        "phase": 0.7083333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "N-walk-v07-10",
+        "pose": 10,
+        "guide": "guides/N-walk-v07-10.png",
+        "phase": 0.7916666666666666,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "N-walk-v07-11",
+        "pose": 11,
+        "guide": "guides/N-walk-v07-11.png",
+        "phase": 0.875,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "N-walk-v07-12",
+        "pose": 12,
+        "guide": "guides/N-walk-v07-12.png",
+        "phase": 0.9583333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      }
+    ],
+    "NE": [
+      {
+        "id": "NE-walk-v07-01",
+        "pose": 1,
+        "guide": "guides/NE-walk-v07-01.png",
+        "phase": 0.041666666666666664,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NE-walk-v07-02",
+        "pose": 2,
+        "guide": "guides/NE-walk-v07-02.png",
+        "phase": 0.125,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NE-walk-v07-03",
+        "pose": 3,
+        "guide": "guides/NE-walk-v07-03.png",
+        "phase": 0.20833333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NE-walk-v07-04",
+        "pose": 4,
+        "guide": "guides/NE-walk-v07-04.png",
+        "phase": 0.2916666666666667,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NE-walk-v07-05",
+        "pose": 5,
+        "guide": "guides/NE-walk-v07-05.png",
+        "phase": 0.375,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NE-walk-v07-06",
+        "pose": 6,
+        "guide": "guides/NE-walk-v07-06.png",
+        "phase": 0.4583333333333333,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NE-walk-v07-07",
+        "pose": 7,
+        "guide": "guides/NE-walk-v07-07.png",
+        "phase": 0.5416666666666666,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NE-walk-v07-08",
+        "pose": 8,
+        "guide": "guides/NE-walk-v07-08.png",
+        "phase": 0.625,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NE-walk-v07-09",
+        "pose": 9,
+        "guide": "guides/NE-walk-v07-09.png",
+        "phase": 0.7083333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NE-walk-v07-10",
+        "pose": 10,
+        "guide": "guides/NE-walk-v07-10.png",
+        "phase": 0.7916666666666666,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NE-walk-v07-11",
+        "pose": 11,
+        "guide": "guides/NE-walk-v07-11.png",
+        "phase": 0.875,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NE-walk-v07-12",
+        "pose": 12,
+        "guide": "guides/NE-walk-v07-12.png",
+        "phase": 0.9583333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      }
+    ],
+    "E": [
+      {
+        "id": "E-walk-v07-01",
+        "pose": 1,
+        "guide": "guides/E-walk-v07-01.png",
+        "phase": 0.041666666666666664,
+        "durationMs": 83.33333333333333,
+        "candidate": {
+          "image": "trials/E-walk-v07-01-scaffold-v02-builtin-v01.png",
+          "qa": "trials/E-walk-v07-01-scaffold-v02-builtin-v01-qa.json",
+          "sha256": "933dfea398ae0df7c3965afa604b81c45178fc962458698eb10bc5622e1bc29e"
+        },
+        "status": "static candidate; cycle unverified",
+        "final": null
+      },
+      {
+        "id": "E-walk-v07-02",
+        "pose": 2,
+        "guide": "guides/E-walk-v07-02.png",
+        "phase": 0.125,
+        "durationMs": 83.33333333333333,
+        "candidate": {
+          "image": "trials/E-walk-v07-02-builtin-v03.png",
+          "qa": "trials/E-walk-v07-02-builtin-v03-qa.json",
+          "sha256": "ed8eb150fbb303b9e51c4f71a3d1c407e766e10ab87c3672bb1b060651a58ddd"
+        },
+        "status": "static candidate; cycle unverified",
+        "final": null
+      },
+      {
+        "id": "E-walk-v07-03",
+        "pose": 3,
+        "guide": "guides/E-walk-v07-03.png",
+        "phase": 0.20833333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": {
+          "image": "trials/E-walk-v07-03-builtin-v01.png",
+          "qa": "trials/E-walk-v07-03-builtin-v01-qa.json",
+          "sha256": "4f58fdcaa3d8bd40c58c2de14eaf69528ac64055e49348e5ef6e03f165a844d3"
+        },
+        "status": "static candidate; cycle unverified",
+        "final": null
+      },
+      {
+        "id": "E-walk-v07-04",
+        "pose": 4,
+        "guide": "guides/E-walk-v07-04.png",
+        "phase": 0.2916666666666667,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "E-walk-v07-05",
+        "pose": 5,
+        "guide": "guides/E-walk-v07-05.png",
+        "phase": 0.375,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "E-walk-v07-06",
+        "pose": 6,
+        "guide": "guides/E-walk-v07-06.png",
+        "phase": 0.4583333333333333,
+        "durationMs": 83.33333333333333,
+        "candidate": {
+          "image": "trials/E-walk-v07-06-border-v01.png",
+          "qa": "trials/E-walk-v07-06-border-v01-qa.json",
+          "sha256": "8df93a8f73031ee5412eca442529e8ab5923624dec6e6b1488d3319c51a7deb9"
+        },
+        "status": "static candidate; cycle unverified",
+        "final": null
+      },
+      {
+        "id": "E-walk-v07-07",
+        "pose": 7,
+        "guide": "guides/E-walk-v07-07.png",
+        "phase": 0.5416666666666666,
+        "durationMs": 83.33333333333333,
+        "candidate": {
+          "image": "trials/E-walk-v07-07-builtin-v01.png",
+          "qa": "trials/E-walk-v07-07-builtin-v01-qa.json",
+          "sha256": "f0bc58162c0381b023dafb8c4d9dd691117ee9c0d7b8b17dd55f99ccee89bbc9"
+        },
+        "status": "static candidate; cycle unverified",
+        "final": null
+      },
+      {
+        "id": "E-walk-v07-08",
+        "pose": 8,
+        "guide": "guides/E-walk-v07-08.png",
+        "phase": 0.625,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "E-walk-v07-09",
+        "pose": 9,
+        "guide": "guides/E-walk-v07-09.png",
+        "phase": 0.7083333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "E-walk-v07-10",
+        "pose": 10,
+        "guide": "guides/E-walk-v07-10.png",
+        "phase": 0.7916666666666666,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "E-walk-v07-11",
+        "pose": 11,
+        "guide": "guides/E-walk-v07-11.png",
+        "phase": 0.875,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "E-walk-v07-12",
+        "pose": 12,
+        "guide": "guides/E-walk-v07-12.png",
+        "phase": 0.9583333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      }
+    ],
+    "SE": [
+      {
+        "id": "SE-walk-v07-01",
+        "pose": 1,
+        "guide": "guides/SE-walk-v07-01.png",
+        "phase": 0.041666666666666664,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SE-walk-v07-02",
+        "pose": 2,
+        "guide": "guides/SE-walk-v07-02.png",
+        "phase": 0.125,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SE-walk-v07-03",
+        "pose": 3,
+        "guide": "guides/SE-walk-v07-03.png",
+        "phase": 0.20833333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SE-walk-v07-04",
+        "pose": 4,
+        "guide": "guides/SE-walk-v07-04.png",
+        "phase": 0.2916666666666667,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SE-walk-v07-05",
+        "pose": 5,
+        "guide": "guides/SE-walk-v07-05.png",
+        "phase": 0.375,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SE-walk-v07-06",
+        "pose": 6,
+        "guide": "guides/SE-walk-v07-06.png",
+        "phase": 0.4583333333333333,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SE-walk-v07-07",
+        "pose": 7,
+        "guide": "guides/SE-walk-v07-07.png",
+        "phase": 0.5416666666666666,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SE-walk-v07-08",
+        "pose": 8,
+        "guide": "guides/SE-walk-v07-08.png",
+        "phase": 0.625,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SE-walk-v07-09",
+        "pose": 9,
+        "guide": "guides/SE-walk-v07-09.png",
+        "phase": 0.7083333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SE-walk-v07-10",
+        "pose": 10,
+        "guide": "guides/SE-walk-v07-10.png",
+        "phase": 0.7916666666666666,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SE-walk-v07-11",
+        "pose": 11,
+        "guide": "guides/SE-walk-v07-11.png",
+        "phase": 0.875,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SE-walk-v07-12",
+        "pose": 12,
+        "guide": "guides/SE-walk-v07-12.png",
+        "phase": 0.9583333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      }
+    ],
+    "S": [
+      {
+        "id": "S-walk-v07-01",
+        "pose": 1,
+        "guide": "guides/S-walk-v07-01.png",
+        "phase": 0.041666666666666664,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "S-walk-v07-02",
+        "pose": 2,
+        "guide": "guides/S-walk-v07-02.png",
+        "phase": 0.125,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "S-walk-v07-03",
+        "pose": 3,
+        "guide": "guides/S-walk-v07-03.png",
+        "phase": 0.20833333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "S-walk-v07-04",
+        "pose": 4,
+        "guide": "guides/S-walk-v07-04.png",
+        "phase": 0.2916666666666667,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "S-walk-v07-05",
+        "pose": 5,
+        "guide": "guides/S-walk-v07-05.png",
+        "phase": 0.375,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "S-walk-v07-06",
+        "pose": 6,
+        "guide": "guides/S-walk-v07-06.png",
+        "phase": 0.4583333333333333,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "S-walk-v07-07",
+        "pose": 7,
+        "guide": "guides/S-walk-v07-07.png",
+        "phase": 0.5416666666666666,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "S-walk-v07-08",
+        "pose": 8,
+        "guide": "guides/S-walk-v07-08.png",
+        "phase": 0.625,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "S-walk-v07-09",
+        "pose": 9,
+        "guide": "guides/S-walk-v07-09.png",
+        "phase": 0.7083333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "S-walk-v07-10",
+        "pose": 10,
+        "guide": "guides/S-walk-v07-10.png",
+        "phase": 0.7916666666666666,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "S-walk-v07-11",
+        "pose": 11,
+        "guide": "guides/S-walk-v07-11.png",
+        "phase": 0.875,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "S-walk-v07-12",
+        "pose": 12,
+        "guide": "guides/S-walk-v07-12.png",
+        "phase": 0.9583333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      }
+    ],
+    "SW": [
+      {
+        "id": "SW-walk-v07-01",
+        "pose": 1,
+        "guide": "guides/SW-walk-v07-01.png",
+        "phase": 0.041666666666666664,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SW-walk-v07-02",
+        "pose": 2,
+        "guide": "guides/SW-walk-v07-02.png",
+        "phase": 0.125,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SW-walk-v07-03",
+        "pose": 3,
+        "guide": "guides/SW-walk-v07-03.png",
+        "phase": 0.20833333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SW-walk-v07-04",
+        "pose": 4,
+        "guide": "guides/SW-walk-v07-04.png",
+        "phase": 0.2916666666666667,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SW-walk-v07-05",
+        "pose": 5,
+        "guide": "guides/SW-walk-v07-05.png",
+        "phase": 0.375,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SW-walk-v07-06",
+        "pose": 6,
+        "guide": "guides/SW-walk-v07-06.png",
+        "phase": 0.4583333333333333,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SW-walk-v07-07",
+        "pose": 7,
+        "guide": "guides/SW-walk-v07-07.png",
+        "phase": 0.5416666666666666,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SW-walk-v07-08",
+        "pose": 8,
+        "guide": "guides/SW-walk-v07-08.png",
+        "phase": 0.625,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SW-walk-v07-09",
+        "pose": 9,
+        "guide": "guides/SW-walk-v07-09.png",
+        "phase": 0.7083333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SW-walk-v07-10",
+        "pose": 10,
+        "guide": "guides/SW-walk-v07-10.png",
+        "phase": 0.7916666666666666,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SW-walk-v07-11",
+        "pose": 11,
+        "guide": "guides/SW-walk-v07-11.png",
+        "phase": 0.875,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "SW-walk-v07-12",
+        "pose": 12,
+        "guide": "guides/SW-walk-v07-12.png",
+        "phase": 0.9583333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      }
+    ],
+    "W": [
+      {
+        "id": "W-walk-v07-01",
+        "pose": 1,
+        "guide": "guides/W-walk-v07-01.png",
+        "phase": 0.041666666666666664,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "W-walk-v07-02",
+        "pose": 2,
+        "guide": "guides/W-walk-v07-02.png",
+        "phase": 0.125,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "W-walk-v07-03",
+        "pose": 3,
+        "guide": "guides/W-walk-v07-03.png",
+        "phase": 0.20833333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "W-walk-v07-04",
+        "pose": 4,
+        "guide": "guides/W-walk-v07-04.png",
+        "phase": 0.2916666666666667,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "W-walk-v07-05",
+        "pose": 5,
+        "guide": "guides/W-walk-v07-05.png",
+        "phase": 0.375,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "W-walk-v07-06",
+        "pose": 6,
+        "guide": "guides/W-walk-v07-06.png",
+        "phase": 0.4583333333333333,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "W-walk-v07-07",
+        "pose": 7,
+        "guide": "guides/W-walk-v07-07.png",
+        "phase": 0.5416666666666666,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "W-walk-v07-08",
+        "pose": 8,
+        "guide": "guides/W-walk-v07-08.png",
+        "phase": 0.625,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "W-walk-v07-09",
+        "pose": 9,
+        "guide": "guides/W-walk-v07-09.png",
+        "phase": 0.7083333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "W-walk-v07-10",
+        "pose": 10,
+        "guide": "guides/W-walk-v07-10.png",
+        "phase": 0.7916666666666666,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "W-walk-v07-11",
+        "pose": 11,
+        "guide": "guides/W-walk-v07-11.png",
+        "phase": 0.875,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "W-walk-v07-12",
+        "pose": 12,
+        "guide": "guides/W-walk-v07-12.png",
+        "phase": 0.9583333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      }
+    ],
+    "NW": [
+      {
+        "id": "NW-walk-v07-01",
+        "pose": 1,
+        "guide": "guides/NW-walk-v07-01.png",
+        "phase": 0.041666666666666664,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NW-walk-v07-02",
+        "pose": 2,
+        "guide": "guides/NW-walk-v07-02.png",
+        "phase": 0.125,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NW-walk-v07-03",
+        "pose": 3,
+        "guide": "guides/NW-walk-v07-03.png",
+        "phase": 0.20833333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NW-walk-v07-04",
+        "pose": 4,
+        "guide": "guides/NW-walk-v07-04.png",
+        "phase": 0.2916666666666667,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NW-walk-v07-05",
+        "pose": 5,
+        "guide": "guides/NW-walk-v07-05.png",
+        "phase": 0.375,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NW-walk-v07-06",
+        "pose": 6,
+        "guide": "guides/NW-walk-v07-06.png",
+        "phase": 0.4583333333333333,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NW-walk-v07-07",
+        "pose": 7,
+        "guide": "guides/NW-walk-v07-07.png",
+        "phase": 0.5416666666666666,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NW-walk-v07-08",
+        "pose": 8,
+        "guide": "guides/NW-walk-v07-08.png",
+        "phase": 0.625,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NW-walk-v07-09",
+        "pose": 9,
+        "guide": "guides/NW-walk-v07-09.png",
+        "phase": 0.7083333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NW-walk-v07-10",
+        "pose": 10,
+        "guide": "guides/NW-walk-v07-10.png",
+        "phase": 0.7916666666666666,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NW-walk-v07-11",
+        "pose": 11,
+        "guide": "guides/NW-walk-v07-11.png",
+        "phase": 0.875,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      },
+      {
+        "id": "NW-walk-v07-12",
+        "pose": 12,
+        "guide": "guides/NW-walk-v07-12.png",
+        "phase": 0.9583333333333334,
+        "durationMs": 83.33333333333333,
+        "candidate": null,
+        "status": "painting unfinished",
+        "final": null
+      }
+    ]
+  },
+  "trials": [
+    {
+      "image": "trials/E-walk-v07-01-grok-v01.jpg",
+      "record": "trials/E-walk-v07-01-grok-v01-record.json",
+      "sha256": "5a1ffb79f2097597901e66364596ee9ec57e7978c8b60702b7165c83f348010c",
+      "status": "held back: measured paw failure",
+      "qa": {
+        "basis": "measured painted pixels, not planned targets",
+        "source": "E-walk-v07-01-grok-v01.jpg",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "registration": "one fixed full-output scale 128/width plus logical offset (32,56)",
+        "method": "Human-identified visible paw regions; non-green lowest edge midpoint",
+        "uncertaintyPx": 1,
+        "targetBudgetPx": 3,
+        "observations": {
+          "RF": {
+            "region": [
+              540,
+              735,
+              116,
+              79
+            ],
+            "pointRaw": [
+              604.5,
+              808
+            ],
+            "pointLogical": [
+              107.5625,
+              157
+            ],
+            "target": [
+              113.5,
+              161.65685424949237
+            ],
+            "errorPx": 7.545872895233203
+          },
+          "RH": {
+            "region": [
+              360,
+              714,
+              102,
+              65
+            ],
+            "pointRaw": [
+              406,
+              772
+            ],
+            "pointLogical": [
+              82.75,
+              152.5
+            ],
+            "target": [
+              72.5,
+              161.65685424949237
+            ],
+            "errorPx": 13.744470879100673
+          }
+        },
+        "passed": false,
+        "notes": [
+          "Appearance and upper-body registration largely preserve the canonical wolf.",
+          "Visible paw placements do not follow the approved stick frame; the image still reads as the canonical standing pose.",
+          "Do not use this output as a later reference or publish it as a working sprite."
+        ]
+      },
+      "finalFrame": false
+    },
+    {
+      "image": "trials/E-walk-v07-01-guide-first-grok-v01.jpg",
+      "record": "trials/E-walk-v07-01-guide-first-grok-v01-record.json",
+      "sha256": "620b7b53e276f194ac24622a7d18d8180ab78d3a60b95a8c2680145b7cc3275b",
+      "status": "held back: measured paw failure",
+      "qa": {
+        "basis": "measured painted pixels, not planned targets",
+        "source": "E-walk-v07-01-guide-first-grok-v01.jpg",
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "registration": "one fixed full-output scale 128/width plus logical offset (32,56)",
+        "method": "Human-identified visible paw regions; non-green lowest edge midpoint",
+        "uncertaintyPx": 1,
+        "targetBudgetPx": 3,
+        "observations": {
+          "RF": {
+            "region": [
+              540,
+              735,
+              116,
+              79
+            ],
+            "pointRaw": [
+              604.5,
+              808
+            ],
+            "pointLogical": [
+              107.5625,
+              157
+            ],
+            "target": [
+              113.5,
+              161.65685424949237
+            ],
+            "errorPx": 7.545872895233203
+          },
+          "RH": {
+            "region": [
+              360,
+              714,
+              102,
+              65
+            ],
+            "pointRaw": [
+              406.5,
+              772
+            ],
+            "pointLogical": [
+              82.8125,
+              152.5
+            ],
+            "target": [
+              72.5,
+              161.65685424949237
+            ],
+            "errorPx": 13.791143389742796
+          }
+        },
+        "passed": false,
+        "notes": [
+          "Putting the stick first did not alter the standing paw configuration.",
+          "Two independent fresh Grok calls received both verified references; neither follows the approved frame.",
+          "Reference-only guidance is insufficient; stop this method before generating the 96-frame batch."
+        ]
+      },
+      "finalFrame": false
+    },
+    {
+      "image": "trials/E-walk-v07-01-scaffold-grok-v01.jpg",
+      "record": "trials/E-walk-v07-01-scaffold-grok-v01-record.json",
+      "sha256": "5f5be2a280b55a3802378a0816c83e8dfdcb16a0f39ad193a9ffaadae6a0d80d",
+      "status": "held-back: invalid anatomy and extra paw/limb-like forms",
+      "qa": null,
+      "finalFrame": false
+    },
+    {
+      "image": "trials/E-walk-v07-01-scaffold-v02-builtin-v01.png",
+      "record": "trials/E-walk-v07-01-scaffold-v02-builtin-v01-record.json",
+      "sha256": "933dfea398ae0df7c3965afa604b81c45178fc962458698eb10bc5622e1bc29e",
+      "status": "static near-contact pass; cycle and other views still required",
+      "qa": {
+        "basis": "measured artwork; static pilot only",
+        "source": "E-walk-v07-01-scaffold-v02-builtin-v01.png",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "registration": "one whole-output scale 128/width plus logical offset (32,56)",
+        "method": "Human-identified near-paw regions; alpha>=128 lowest-edge midpoint",
+        "uncertaintyPx": 1,
+        "targetBudgetPx": 3,
+        "observations": {
+          "RH": {
+            "region": [
+              320,
+              977,
+              140,
+              75
+            ],
+            "pointRaw": [
+              401.5,
+              1034
+            ],
+            "pointLogical": [
+              72.98245614035088,
+              161.5438596491228
+            ],
+            "target": [
+              72.5,
+              161.65685424949237
+            ],
+            "errorPx": 0.49551156099020005
+          },
+          "RF": {
+            "region": [
+              749,
+              977,
+              147,
+              75
+            ],
+            "pointRaw": [
+              806,
+              1035
+            ],
+            "pointLogical": [
+              114.27113237639553,
+              161.64593301435406
+            ],
+            "target": [
+              113.5,
+              161.65685424949237
+            ],
+            "errorPx": 0.7712097090301444
+          }
+        },
+        "nearContactPass": true,
+        "alphaCorners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "opaqueGreenRatio": 0,
+        "fullCycleVerified": false,
+        "farContacts": "occluded; not measured"
+      },
+      "finalFrame": false
+    },
+    {
+      "image": "trials/E-walk-v07-02-builtin-v01.png",
+      "record": "trials/E-walk-v07-02-builtin-v01-record.json",
+      "sha256": "9c6f65618b2d3b91786d8ef8496b5e13cf52adeb880ffaef9d1b87d19bb16b8a",
+      "status": "held back: contact failure",
+      "qa": {
+        "basis": "measured artwork; static pose only",
+        "source": "E-walk-v07-02-builtin-v01.png",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "registration": "one whole-output scale 128/width plus logical offset (32,56)",
+        "method": "Human-identified near-paw regions; alpha>=128 lowest-edge midpoint",
+        "uncertaintyPx": 1,
+        "targetBudgetPx": 3,
+        "observations": {
+          "RH": {
+            "region": [
+              284,
+              952,
+              166,
+              96
+            ],
+            "pointRaw": [
+              370.5,
+              1037
+            ],
+            "pointLogical": [
+              69.81818181818181,
+              161.85007974481658
+            ],
+            "target": [
+              69.5,
+              161.65685424949237
+            ],
+            "planted": true,
+            "errorPx": 0.37225765467586025
+          },
+          "RF": {
+            "region": [
+              698,
+              948,
+              176,
+              102
+            ],
+            "pointRaw": [
+              803.5,
+              1038
+            ],
+            "pointLogical": [
+              114.01594896331738,
+              161.95215311004785
+            ],
+            "target": [
+              110.5,
+              161.65685424949237
+            ],
+            "planted": true,
+            "errorPx": 3.5283280076684984
+          }
+        },
+        "nearContactPass": false,
+        "fullCycleVerified": false,
+        "farContacts": "occluded; not measured"
+      },
+      "finalFrame": false
+    },
+    {
+      "image": "trials/E-walk-v07-02-builtin-v03.png",
+      "record": "trials/E-walk-v07-02-builtin-v03-record.json",
+      "sha256": "ed8eb150fbb303b9e51c4f71a3d1c407e766e10ab87c3672bb1b060651a58ddd",
+      "status": "static contact pass; cycle incomplete",
+      "qa": {
+        "basis": "measured artwork; static pose only",
+        "source": "E-walk-v07-02-builtin-v03.png",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "registration": "fixed scale 128/width and offset (32,56)",
+        "method": "human-identified paw regions; alpha>=128 bottom edge midpoint",
+        "uncertaintyPx": 1,
+        "targetBudgetPx": 3,
+        "observations": {
+          "RH": {
+            "region": [
+              284,
+              952,
+              166,
+              96
+            ],
+            "pointRaw": [
+              371,
+              1031
+            ],
+            "pointLogical": [
+              69.86921850079744,
+              161.23763955342903
+            ],
+            "target": [
+              69.5,
+              161.65685424949237
+            ],
+            "errorPx": 0.5586262281047919
+          },
+          "RF": {
+            "region": [
+              698,
+              948,
+              176,
+              102
+            ],
+            "pointRaw": [
+              791,
+              1032
+            ],
+            "pointLogical": [
+              112.74003189792664,
+              161.33971291866027
+            ],
+            "target": [
+              110.5,
+              161.65685424949237
+            ],
+            "errorPx": 2.262370775856775
+          }
+        },
+        "nearContactPass": true,
+        "fullCycleVerified": false
+      },
+      "finalFrame": false
+    },
+    {
+      "image": "trials/E-walk-v07-03-builtin-v01.png",
+      "record": "trials/E-walk-v07-03-builtin-v01-record.json",
+      "sha256": "4f58fdcaa3d8bd40c58c2de14eaf69528ac64055e49348e5ef6e03f165a844d3",
+      "status": "candidate; measured QA pending",
+      "qa": {
+        "basis": "measured artwork; static pose only",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "registration": "fixed scale 128/width plus (32,56)",
+        "method": "actual paw regions; alpha>=128 bottom-edge midpoint",
+        "uncertaintyPx": 1,
+        "targetBudgetPx": 3,
+        "observations": {
+          "RH": {
+            "region": [
+              265,
+              926,
+              145,
+              107
+            ],
+            "pointRaw": [
+              352,
+              1008
+            ],
+            "pointLogical": [
+              67.9298245614035,
+              158.88995215311004
+            ],
+            "target": [
+              68.046875,
+              161.13908729652601
+            ],
+            "errorPx": 2.252178878003345
+          },
+          "RF": {
+            "region": [
+              666,
+              952,
+              171,
+              91
+            ],
+            "pointRaw": [
+              762,
+              1024
+            ],
+            "pointLogical": [
+              109.77990430622009,
+              160.52312599681022
+            ],
+            "target": [
+              107.5,
+              161.65685424949237
+            ],
+            "errorPx": 2.546233177941608
+          }
+        },
+        "passed": true
+      },
+      "finalFrame": false
+    },
+    {
+      "image": "trials/E-walk-v07-04-border-v01.png",
+      "record": "trials/E-walk-v07-04-border-v01-record.json",
+      "sha256": "33ca930a9f9716a51b8e5f7b906bb02c8d08d9a577cee735182ef9236cc93e28",
+      "status": "held back: measured paw failure",
+      "qa": {
+        "basis": "measured artwork; static pose only",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "registration": "fixed scale 128/width plus (32,56)",
+        "method": "actual paw regions; non-green opaque bottom-edge midpoint",
+        "targetBudgetPx": 3,
+        "uncertaintyPx": 1,
+        "observations": {
+          "RH": {
+            "region": [
+              413,
+              936,
+              136,
+              90
+            ],
+            "pointRaw": [
+              498.5,
+              991
+            ],
+            "pointLogical": [
+              82.88357256778309,
+              157.15470494417863
+            ],
+            "target": [
+              74.89062500000001,
+              158.63908729652601
+            ],
+            "errorPx": 8.129612646940181
+          },
+          "RF": {
+            "region": [
+              655,
+              943,
+              126,
+              110
+            ],
+            "pointRaw": [
+              731,
+              1030
+            ],
+            "pointLogical": [
+              106.61562998405104,
+              161.13556618819777
+            ],
+            "target": [
+              104.5,
+              161.65685424949237
+            ],
+            "errorPx": 2.178906026487623
+          }
+        },
+        "passed": false
+      },
+      "finalFrame": false
+    },
+    {
+      "image": "trials/E-walk-v07-04-builtin-v01.png",
+      "record": "trials/E-walk-v07-04-builtin-v01-record.json",
+      "sha256": "cae68c6e34bff3881384adc6dcdb7cc38510350787907b6d38d8fdfc17523877",
+      "status": "candidate; measured QA pending",
+      "qa": null,
+      "finalFrame": false
+    },
+    {
+      "image": "trials/E-walk-v07-05-border-v01.png",
+      "record": "trials/E-walk-v07-05-border-v01-record.json",
+      "sha256": "43f9b54b801114ae6c9d243d4213b6eb6c24757eda78f84fa022bad821422912",
+      "status": "held back: measured paw failure",
+      "qa": {
+        "basis": "measured artwork; static pose only",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "registration": "fixed scale 128/width plus (32,56)",
+        "method": "actual paw regions; non-green opaque bottom-edge midpoint",
+        "targetBudgetPx": 3,
+        "uncertaintyPx": 1,
+        "observations": {
+          "RH": {
+            "region": [
+              440,
+              891,
+              124,
+              95
+            ],
+            "pointRaw": [
+              536.5,
+              962
+            ],
+            "pointLogical": [
+              86.76236044657097,
+              154.1945773524721
+            ],
+            "target": [
+              85.109375,
+              158.63908729652601
+            ],
+            "errorPx": 4.741943644685119
+          },
+          "RF": {
+            "region": [
+              627,
+              943,
+              125,
+              92
+            ],
+            "pointRaw": [
+              706,
+              1017
+            ],
+            "pointLogical": [
+              104.06379585326954,
+              159.80861244019138
+            ],
+            "target": [
+              101.5,
+              161.65685424949237
+            ],
+            "errorPx": 3.1605453584611425
+          }
+        },
+        "passed": false
+      },
+      "finalFrame": false
+    },
+    {
+      "image": "trials/E-walk-v07-05-builtin-v01.png",
+      "record": "trials/E-walk-v07-05-builtin-v01-record.json",
+      "sha256": "205cf2397f4f5a48b40c7c13c21a3b951efa4ec06113c301d5262ef892a93206",
+      "status": "held back: enlarged/shifted source registration",
+      "qa": null,
+      "finalFrame": false
+    },
+    {
+      "image": "trials/E-walk-v07-06-border-v01.png",
+      "record": "trials/E-walk-v07-06-border-v01-record.json",
+      "sha256": "8df93a8f73031ee5412eca442529e8ab5923624dec6e6b1488d3319c51a7deb9",
+      "status": "candidate; fixed bordered-canvas registration",
+      "qa": {
+        "basis": "measured artwork; static pose only",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "registration": "fixed scale 128/width plus (32,56)",
+        "method": "actual paw regions; non-green opaque bottom-edge midpoint",
+        "targetBudgetPx": 3,
+        "uncertaintyPx": 1,
+        "observations": {
+          "RH": {
+            "region": [
+              500,
+              920,
+              120,
+              125
+            ],
+            "pointRaw": [
+              586.5,
+              1030
+            ],
+            "pointLogical": [
+              91.86602870813397,
+              161.13556618819777
+            ],
+            "target": [
+              91.953125,
+              161.13908729652601
+            ],
+            "errorPx": 0.08716743807565039
+          },
+          "RF": {
+            "region": [
+              627,
+              926,
+              107,
+              112
+            ],
+            "pointRaw": [
+              695,
+              1032
+            ],
+            "pointLogical": [
+              102.94098883572568,
+              161.33971291866027
+            ],
+            "target": [
+              100.046875,
+              161.13908729652601
+            ],
+            "errorPx": 2.901059381397689
+          }
+        },
+        "passed": true
+      },
+      "finalFrame": false
+    },
+    {
+      "image": "trials/E-walk-v07-06-builtin-v01.png",
+      "record": "trials/E-walk-v07-06-builtin-v01-record.json",
+      "sha256": "f0181ffaf7769beacdc0b3bcab2456342e1b072ca7fc5f4da08ee5857a524e26",
+      "status": "held back: enlarged/shifted source registration",
+      "qa": null,
+      "finalFrame": false
+    },
+    {
+      "image": "trials/E-walk-v07-07-builtin-v01.png",
+      "record": "trials/E-walk-v07-07-builtin-v01-record.json",
+      "sha256": "f0bc58162c0381b023dafb8c4d9dd691117ee9c0d7b8b17dd55f99ccee89bbc9",
+      "status": "static near-contact pass; cycle incomplete",
+      "qa": {
+        "basis": "measured artwork; static pose only",
+        "source": "E-walk-v07-07-builtin-v01.png",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "registration": "one whole-output scale 128/width plus logical offset (32,56)",
+        "method": "Human-identified near-paw regions; alpha>=128 lowest-edge midpoint",
+        "uncertaintyPx": 1,
+        "targetBudgetPx": 3,
+        "observations": {
+          "RH": {
+            "region": [
+              486,
+              947,
+              181,
+              100
+            ],
+            "pointRaw": [
+              565.5,
+              1032
+            ],
+            "pointLogical": [
+              89.7224880382775,
+              161.33971291866027
+            ],
+            "target": [
+              90.5,
+              161.65685424949237
+            ],
+            "planted": true,
+            "errorPx": 0.8397043970014211
+          },
+          "RF": {
+            "region": [
+              674,
+              921,
+              158,
+              107
+            ],
+            "pointRaw": [
+              749.5,
+              988
+            ],
+            "pointLogical": [
+              108.50398724082935,
+              156.84848484848484
+            ],
+            "target": [
+              106.890625,
+              158.63908729652601
+            ],
+            "planted": false,
+            "errorPx": 2.4102271359904903
+          }
+        },
+        "nearContactPass": true,
+        "fullCycleVerified": false,
+        "farContacts": "occluded; not measured"
+      },
+      "finalFrame": false
+    },
+    {
+      "image": "trials/E-walk-v07-08-border-v01.png",
+      "record": "trials/E-walk-v07-08-border-v01-record.json",
+      "sha256": "8f4b2af50e273fa579a0c4fc75aa45608b3fa75ac2c4c780bbb64730a4bcb91a",
+      "status": "held back: measured paw failure",
+      "qa": {
+        "basis": "measured artwork; static pose only",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "registration": "fixed scale 128/width plus (32,56)",
+        "method": "actual paw regions; non-green opaque bottom-edge midpoint",
+        "targetBudgetPx": 3,
+        "uncertaintyPx": 1,
+        "observations": {
+          "RH": {
+            "region": [
+              479,
+              932,
+              126,
+              120
+            ],
+            "pointRaw": [
+              556,
+              1018
+            ],
+            "pointLogical": [
+              88.75279106858054,
+              159.91068580542264
+            ],
+            "target": [
+              87.5,
+              161.65685424949237
+            ],
+            "errorPx": 2.1490904347141937
+          },
+          "RF": {
+            "region": [
+              737,
+              874,
+              174,
+              121
+            ],
+            "pointRaw": [
+              861.5,
+              988
+            ],
+            "pointLogical": [
+              119.93620414673046,
+              156.84848484848484
+            ],
+            "target": [
+              117.109375,
+              158.63908729652601
+            ],
+            "errorPx": 3.3462247610906077
+          }
+        },
+        "passed": false
+      },
+      "finalFrame": false
+    },
+    {
+      "image": "trials/E-walk-v07-08-builtin-v01.png",
+      "record": "trials/E-walk-v07-08-builtin-v01-record.json",
+      "sha256": "4fc6c33a1f13503c9254e9ad1578b9cc61c49b5ad065341c603329ca8e6dfcc5",
+      "status": "held back: enlarged/shifted source registration",
+      "qa": null,
+      "finalFrame": false
+    },
+    {
+      "image": "trials/N-walk-v07-01-builtin-v02.png",
+      "record": "trials/N-walk-v07-01-builtin-v02-record.json",
+      "sha256": "44671db938c0f5453ca7f14e393350b6764bcf90a10a0637466a72d9ff35cc34",
+      "status": "held-back: contact failure",
+      "qa": {
+        "basis": "measured artwork; static pose only",
+        "source": "N-walk-v07-01-builtin-v02.png",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "registration": "fixed scale 128/width and offset (32,56)",
+        "method": "human-identified paw regions; alpha>=128 bottom edge midpoint",
+        "uncertaintyPx": 1,
+        "targetBudgetPx": 3,
+        "observations": {
+          "LH": {
+            "region": [
+              490,
+              920,
+              145,
+              120
+            ],
+            "pointRaw": [
+              610.5,
+              1040
+            ],
+            "pointLogical": [
+              94.31578947368422,
+              162.15629984051037
+            ],
+            "target": [
+              88,
+              159.88908729652601
+            ],
+            "errorPx": 6.710398601834351
+          },
+          "RH": {
+            "region": [
+              650,
+              1000,
+              155,
+              200
+            ],
+            "pointRaw": [
+              705,
+              1089
+            ],
+            "pointLogical": [
+              103.96172248803828,
+              167.1578947368421
+            ],
+            "target": [
+              104,
+              172.61700935788386
+            ],
+            "errorPx": 5.459248814039692
+          }
+        },
+        "nearContactPass": false,
+        "fullCycleVerified": false
+      },
+      "finalFrame": false
+    },
+    {
+      "image": "trials/N-walk-v07-01-builtin-v03.png",
+      "record": "trials/N-walk-v07-01-builtin-v03-record.json",
+      "sha256": "60b2596f8de9bfbc64b26fd7e169eb7b22ae6b78e5d0682c190ba97f08b6498d",
+      "status": "held back: measured paw failure",
+      "qa": {
+        "basis": "measured artwork; static pose only",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "registration": "fixed whole-image scale 128/width and offset (32,56)",
+        "method": "human-identified visible paw regions; alpha>=128 bottom-edge midpoint",
+        "uncertaintyPx": 1,
+        "targetBudgetPx": 3,
+        "observations": {
+          "LH": {
+            "region": [
+              470,
+              880,
+              123,
+              116
+            ],
+            "pointRaw": [
+              585.5,
+              996
+            ],
+            "pointLogical": [
+              91.7639553429027,
+              157.66507177033492
+            ],
+            "target": [
+              88,
+              159.88908729652601
+            ],
+            "errorPx": 4.371910896176279
+          },
+          "RH": {
+            "region": [
+              643,
+              996,
+              157,
+              154
+            ],
+            "pointRaw": [
+              717,
+              1075
+            ],
+            "pointLogical": [
+              105.1866028708134,
+              165.72886762360446
+            ],
+            "target": [
+              104,
+              172.61700935788386
+            ],
+            "errorPx": 6.989601056179405
+          }
+        },
+        "passed": false
+      },
+      "finalFrame": false
+    },
+    {
+      "image": "trials/N-walk-v07-01-builtin-v04.png",
+      "record": "trials/N-walk-v07-01-builtin-v04-record.json",
+      "sha256": "ba41b2a4571b5a1ee94de98bae22a20bc3c64f407479a90fb7733347018b7a31",
+      "status": "static contact pass; cycle incomplete",
+      "qa": {
+        "basis": "measured artwork; static pose only",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "registration": "fixed whole-image scale 128/width and offset (32,56)",
+        "method": "human-identified hind paw regions; alpha>=128 bottom-edge midpoint",
+        "uncertaintyPx": 1,
+        "targetBudgetPx": 3,
+        "observations": {
+          "LH": {
+            "region": [
+              495,
+              945,
+              80,
+              90
+            ],
+            "pointRaw": [
+              559.5,
+              1022
+            ],
+            "pointLogical": [
+              89.11004784688996,
+              160.3189792663477
+            ],
+            "target": [
+              88,
+              159.88908729652601
+            ],
+            "errorPx": 1.1903836894473108
+          },
+          "RH": {
+            "region": [
+              650,
+              1035,
+              155,
+              140
+            ],
+            "pointRaw": [
+              695,
+              1149
+            ],
+            "pointLogical": [
+              102.94098883572568,
+              173.28229665071768
+            ],
+            "target": [
+              104,
+              172.61700935788386
+            ],
+            "errorPx": 1.2506445650398907
+          }
+        },
+        "passed": true,
+        "notes": [
+          "The original wide left-paw rectangle included the central tail.",
+          "The corrected ROI was chosen from the actual paw close-up and excludes the separate tail component."
+        ]
+      },
+      "finalFrame": false
+    },
+    {
+      "image": "../walk-v08/trials/NW-walk-v08-01-builtin-v01.png",
+      "record": "../walk-v08/trials/NW-walk-v08-01-builtin-v01-record.json",
+      "sha256": "7964e360e17d8c4f9ab12778be2f0d597570a398b5dd12bdaa5ae9c39356b821",
+      "status": "held back: measured paw failure",
+      "qa": {
+        "basis": "measured artwork; static pose only",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "registration": "fixed scale 128/width and offset (32,56)",
+        "method": "human-identified paw rectangles; alpha>=128 bottom-edge midpoint",
+        "uncertaintyPx": 1,
+        "targetBudgetPx": 3,
+        "observations": {
+          "LF": {
+            "region": [
+              410,
+              820,
+              153,
+              115
+            ],
+            "pointRaw": [
+              467.5,
+              909
+            ],
+            "pointLogical": [
+              79.71929824561403,
+              148.7846889952153
+            ],
+            "target": [
+              82.64231096164788,
+              151.53692054703365
+            ],
+            "errorPx": 4.014820276540407
+          },
+          "LH": {
+            "region": [
+              584,
+              978,
+              160,
+              109
+            ],
+            "pointRaw": [
+              658,
+              1059
+            ],
+            "pointLogical": [
+              99.16427432216906,
+              164.0956937799043
+            ],
+            "target": [
+              94.23223304703363,
+              162.75
+            ],
+            "errorPx": 5.112330475322647
+          }
+        },
+        "passed": false
+      },
+      "finalFrame": false
+    },
+    {
+      "image": "../walk-v08/trials/S-walk-v08-01-builtin-v01.png",
+      "record": "../walk-v08/trials/S-walk-v08-01-builtin-v01-record.json",
+      "sha256": "d4d9e8386a94bbc1f0f479c8273c2708f1339e3bc52b0c3bd0ce955511a1085f",
+      "status": "candidate; measured QA pending",
+      "qa": {
+        "basis": "measured artwork; static pose only",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "registration": "fixed scale 128/width and offset (32,56)",
+        "method": "human-identified paw rectangles; alpha>=128 bottom-edge midpoint",
+        "uncertaintyPx": 1,
+        "targetBudgetPx": 3,
+        "observations": {
+          "RF": {
+            "region": [
+              443,
+              1000,
+              160,
+              140
+            ],
+            "pointRaw": [
+              524.5,
+              1106
+            ],
+            "pointLogical": [
+              85.53748006379585,
+              168.89314194577352
+            ],
+            "target": [
+              88,
+              168.37436867076457
+            ],
+            "errorPx": 2.5165711090820353
+          }
+        },
+        "passed": true
+      },
+      "finalFrame": false
+    },
+    {
+      "image": "../walk-v08/trials/SE-walk-v08-01-builtin-v01.png",
+      "record": "../walk-v08/trials/SE-walk-v08-01-builtin-v01-record.json",
+      "sha256": "bcc5d3536632b568b9265a8428e1e04286fce063c3edfa4831130e124cc9237e",
+      "status": "held back: measured paw failure",
+      "qa": {
+        "basis": "measured artwork; static pose only",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "registration": "fixed scale 128/width and offset (32,56)",
+        "method": "human-identified paw rectangles; alpha>=128 bottom-edge midpoint",
+        "uncertaintyPx": 1,
+        "targetBudgetPx": 3,
+        "observations": {
+          "RH": {
+            "region": [
+              220,
+              750,
+              160,
+              155
+            ],
+            "pointRaw": [
+              310.5,
+              884
+            ],
+            "pointLogical": [
+              63.69377990430622,
+              146.23285486443382
+            ],
+            "target": [
+              73.72613639262374,
+              148.25
+            ],
+            "errorPx": 10.233134964741991
+          },
+          "RF": {
+            "region": [
+              610,
+              1025,
+              167,
+              125
+            ],
+            "pointRaw": [
+              698.5,
+              1117
+            ],
+            "pointLogical": [
+              103.29824561403508,
+              170.01594896331738
+            ],
+            "target": [
+              102.7175144212722,
+              168.75
+            ],
+            "errorPx": 1.3927941326600146
+          }
+        },
+        "passed": false
+      },
+      "finalFrame": false
+    }
+  ]
+}

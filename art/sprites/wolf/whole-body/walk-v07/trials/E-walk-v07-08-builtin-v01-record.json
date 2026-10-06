@@ -1,0 +1,14 @@
+{
+  "tool": "built-in image_gen",
+  "actual_input": {
+    "prompt": "Use case: precise-object-edit. Complete this single original pose-shaped wolf scaffold as ONE intact whole-body flat 2D game sprite, walking pose E-8/12. All flat taupe areas are unfinished regions: paint them with the SAME mid grey-brown rough dry-painted fur and small claw details as the existing torso. Legs/paws must not become black or much darker than the body. The tapered rear-left wedge is a furry tail, not a leg; only the two near paws are visible while the far pair is naturally occluded.\nThe CYAN crosses mark the exact paw UNDERSIDE CONTACT EDGE MIDPOINTS. Near HIND: 43.359375% across, 82.544417% down the whole canvas; planted. Near FORE: 66.491699% across, 80.186787% down the whole canvas; lifted 4.268 logical height units, swinging forward. Finish the existing posed silhouettes without moving those contacts or changing the joint bends, then remove the crosses. Paws are very small, furry on top with short right-pointing claws and no exposed pads or joint circles. Keep true canine stifle/raised-hock and elbow/carpus anatomy.\nPreserve the original upper-body pixels, coat markings, huge head, tiny squat torso, tiny weary eye, ears, muzzle, elevated orthographic right-profile camera, scale and entire square registration. Blend into one organically connected complete animal. Same gritty matte 2D game texture throughout; no 3D shading, extra legs, placeholder, guide, word or ground shadow. Remove all green and output genuine alpha transparency. One whole wolf only, not parts or a sheet.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-08-scaffold-v03.png"
+    ],
+    "transparent_background": true
+  },
+  "original_path": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-17dc04e3-32d6-46e6-a30e-37ae26c5e165.png",
+  "originalSha256": "4fc6c33a1f13503c9254e9ad1578b9cc61c49b5ad065341c603329ca8e6dfcc5",
+  "status": "held back: enlarged/shifted source registration",
+  "failed_output_inputs": false
+}
