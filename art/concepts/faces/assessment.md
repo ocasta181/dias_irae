@@ -32,3 +32,12 @@ All 30 current outputs were checked as original full figures and diagnostic face
 Limits: mouth and some brow changes remain subtle at gameplay scale; inspect face zoom. F34, F42, F56 and F58 still retain too much straight or squared nose structure for their precise nose briefs and are marked revise. Other nose bridges may still be long even where the tip is curved. These are 30 comparison candidates, not 30 production-approved faces. Existing scar/white-temple placement has not become approved canon.
 
 Grok's 15 initial outputs plus one constrained F31 repair were unsuitable: clean outlines, exaggerated noses or isolated feature rendering did not match the grain. They are preserved as held-back evidence. The current 30 use the built-in image generator; the initial 15/15 provider plan was changed explicitly after inspection. All provider files are copied byte-for-byte, with hashes and exact request records. Diagnostic crops are inspection artifacts only.
+
+
+## Fixed-eye hair, nose and eyebrow round F61–F87 — 2026-10-06
+
+All 27 current drawings were inspected as original full-body images and final head/eye comparisons. Nine variants each derive from the selected F37, V22 and F18. Every family contains three hair silhouettes, three rounded/curved nose designs and three eyebrow treatments. The source confusion is resolved: F37 was previously headed with its parent source F25. The actual chosen eye close-up matches F37. Candidate IDs now appear in their own titles and compact controls; source IDs appear only in explicit Based on labels.
+
+Twenty initial trials with enlarged eyes or retained source-eye anatomy were excluded and independently regenerated from selected originals. Full F37 and its eye-only crop are supplied to V22/F18 repairs; no failed output is used. All 27 current studies share small flat dark ink bars with short downward ticks, rather than detached squares or bright anatomical eyes. Generative redraw changes small edges, widths, slant or placement; these are visual matches, not pixel-identical copies. Several brow/nose differences remain subtle and require zoom. Outfit, proportions, rough pigment, palette and camera remain consistent. These are review candidates, with no production approval.
+
+All current source and output hashes match the logged originals, and provider files were copied without pixel changes. The diagnostic sheets are inspection-only artifacts. Gallery publication preserves all original 65 reviews and relative ordering, and review data still saves automatically.

@@ -6,7 +6,8 @@
   "sources": {
     "F25": {
       "file": "/Users/ocasta/Code/Dias Irae/art/concepts/faces/images/f25-v01.png",
-      "sha256": "8b39749eb1c67c3050fe7de0ca23809dd466f4f78ceb842287d014e6debde45e"
+      "sha256": "8b39749eb1c67c3050fe7de0ca23809dd466f4f78ceb842287d014e6debde45e",
+      "role": "Historical mistaken base label; not a current generation input."
     },
     "V22": {
       "file": "/Users/ocasta/Code/Dias Irae/art/concepts/expansion/images/v22-v01.png",
@@ -427,5 +428,35 @@
     "commit": "8fe2400",
     "confidence_percent": 98,
     "reason": "The user identified the misleading source-prefixed F37 title as the selection confusion; use the shown F37 drawing for the formerly F25-labeled family."
-  }
+  },
+  "current_versions": {
+    "F61": "v05",
+    "F62": "v04",
+    "F63": "v04",
+    "F64": "v04",
+    "F65": "v05",
+    "F66": "v04",
+    "F67": "v05",
+    "F68": "v04",
+    "F69": "v04",
+    "F70": "v05",
+    "F71": "v05",
+    "F72": "v05",
+    "F73": "v05",
+    "F74": "v05",
+    "F75": "v05",
+    "F76": "v05",
+    "F77": "v05",
+    "F78": "v05",
+    "F79": "v05",
+    "F80": "v05",
+    "F81": "v05",
+    "F82": "v05",
+    "F83": "v05",
+    "F84": "v05",
+    "F85": "v05",
+    "F86": "v05",
+    "F87": "v05"
+  },
+  "current_provider": "built-in imagegen"
 }

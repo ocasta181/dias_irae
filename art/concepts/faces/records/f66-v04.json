@@ -22,7 +22,7 @@
   ],
   "mode": "RGB",
   "pixel_changes": "none",
-  "parent_visual_review": "Inspected original full-body drawing and side-by-side head/eye comparison against the user-selected F37 close-up. Retains the small horizontal lid marks with downward ticks rather than square dots, eye whites or anatomical eyes. Hair, nose and eyebrow treatments vary within the same rough medium; outfit, huge head, squat body and camera remain consistent. Eye pixels vary slightly under generative redraw; human review remains pending.",
+  "parent_visual_review": "Inspected original full-body output, final head/eye contact sheets and selected F37 eye reference. Ear-length ragged side part; Short crooked broad tip; Heavy level bars. The small flat ink bars with downward ticks retain the selected eye grammar; no square-dot or white-eye exploration. Source costume, giant head, squat body, elevated camera and granular drawing remain consistent. Generative repaint changes some eye edges and placement; these are visually matched studies, not pixel-identical copies. Some nose and brow differences need face zoom. Human selection remains pending.",
   "review_status": "pending",
   "source_inputs": [
     {

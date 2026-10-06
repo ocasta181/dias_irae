@@ -47,12 +47,12 @@ F61–F69 use F37, F70–F78 use V22, and F79–F87 use F18. Each family crosses
 - [x] Resolve candidate/source ambiguity: card titles and compact controls show their own IDs, with sources separately labeled “Based on”.
 - [x] Capture exact eye reference, source hashes, candidate matrix and independent raw requests.
 - [x] Generate all 27 first corrected-source trials and inspect original full figures and head/eye comparisons.
-- [x] Publish seven checked studies: F61–F64, F66, F68 and F69. All 65 previous decisions/comments and their relative ranking are preserved; 72 cards are live.
-- [ ] Correct the 20 held-back trials for eye enlargement or retained source-eye features.
+- [x] Publish all 27 checked studies F61–F87. The original 65 decisions/comments and their relative ranking are preserved; 92 cards are live.
+- [x] Independently replace the 20 eye-drifted trials from original selected references, using literal ink-mark geometry and the full F37 drawing alongside its eye-only crop.
 - [ ] User reviews and chooses the face direction.
 
-Current seven images: F61 uses `images/f61-v05.png`; the other six use their `v04` images. Only these inspected variants are currently published. The remaining V22/F18 trials still reproduce source-eye anatomy or light gaps, and F65/F67 enlarge the requested marks; all twenty remain held back. Their references are correctly logged, but tool completion did not satisfy the eye constraint. Eye pixels in the displayed F37 family are visually consistent rather than mathematically identical.
+Current images: F62, F63, F64, F66, F68 and F69 use their `v04` images; F61, F65, F67 and F70–F87 use `v05`. All 27 are published. For V22/F18 repairs, each request includes the literal selected base, full original F37 as an eye-only reference and the exact original eye crop. The earlier twenty source-eye/enlargement trials stay held back. They were never inputs. The displayed studies share the selected graphic eye treatment; generative redraw changes some edges and placements, so they are not mathematically identical pixels. Some nose/brow differences are subtle at full-body scale and need face zoom. No face is production-approved.
 
-The page saves positions, comments and decisions automatically. A fresh browser load confirms all seven new images load at the beginning and saving is ready. Four publisher tests and six autosave tests pass. Source and provider output hashes are verified; provider image bytes are unchanged.
+The page saves positions, comments and decisions automatically. Four publisher tests and six autosave tests cover review/identity preservation and saving behavior. Source and provider output hashes are verified; provider image bytes are unchanged. Final browser verification follows publication.
 
 Correction history: early F61/F70 pilots used loose eye grammar; F70/F79 v02 mistakenly locked eyebrows; 15 completed v03 trials used original F25 square eyes. These are held back. F61 v04 finally used the chosen eye grammar but retained an overly long nose, so its independently generated v05 replaced it. The F25 title on F37 was a source label presented as a candidate title; IDs are now unambiguous.

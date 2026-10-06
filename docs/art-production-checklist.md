@@ -333,3 +333,10 @@ Current decision at commit `3aef464`: preserve the four explicitly selected styl
 
 
 2026-10-06 publication checkpoint at commit `24c570a`: all 27 first corrected-source trials inspected; seven F37-family studies published, with 65 prior reviews preserved. Live gallery has 72 cards; all seven new images load at the beginning. Twenty trials held for eye enlargement or retained original V22/F18 eye features. These are not inputs. Eye corrections and the remaining two family comparisons are still required; no face-production approval is claimed.
+
+
+2026-10-06 completed publication at commit `a023149`: F61–F87 now contains 27 checked hairstyle/nose/brow variants, nine per selected F37/V22/F18. Corrected source IDs and full F37 eye references replace the twenty held-back eye-drifted trials without using their outputs. Shared eye grammar is visually matched; generative edges/placement are not identical pixels. All source/provider hashes verified. Gallery has 92 cards, with all original 65 comments/decisions and relative ranking preserved. Human face selection remains pending.
+
+- [x] Publish 27 independent fixed-eye hairstyle/nose/brow studies in the face gallery.
+- [x] Preserve candidate/source identity and earlier review state.
+- [ ] User reviews F61–F87 and selects combinations.
