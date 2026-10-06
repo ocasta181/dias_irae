@@ -1,5 +1,13 @@
 # Whole-body wolf replacement
 
+## Current whole-body motion correction — 2026-10-07
+
+Decision at `1a99439`, confidence 99%: the user's latest instruction requires manual comparison of every active drawing with its exact approved stick pose, and coordinated movement of the complete animal. The fixed-head/fixed-spine instructions below are historical and superseded for new drawings. The approved paw schedule and straight ground travel remain authoritative. Small shoulder, haunch, spine, neck, head and tail changes belong inside each complete bitmap. Fur landmarks follow those masses; random texture replacement is a defect.
+
+Do not author or animate separate painted parts. Each step is one intact wolf with continuous neck/torso/limbs and retained exaggerated proportions. The runtime uses one fixed canvas/pivot/scale and straight root travel; it adds no wobble, bob, rotation or body deformation. New drawing controls may articulate the torso/head while retaining the approved paw endpoints and stance/swing identities. Body motion amplitudes are explicit pilot hypotheses, not biological measurements or user approval.
+
+V10 supplies 96 candidate frames, not a motion-quality pass. Registered manual comparisons are in `walk-v10/audit/`; planned overlays are not measurements. Repair a complete pilot loop and inspect its actual paw positions, body/coat continuity and seam before replacing the active eight-direction study. Supply only the original identity and fresh controls to the drawing tool. Preserve the rejected V10 paintings as evidence. Do not use nose registration to erase deliberately drawn head motion.
+
 ## Current cadence decision
 
 2026-10-05 user clarification at `68c47fb`, confidence 100%: **12 FPS means twelve distinct newly drawn whole-body poses across one second of action.** Create more frames; do not shorten the eight-frame cycle or accelerate travel. The incorrect timing-only change is withdrawn. The new pilot uses twelve drawings, 83.333 ms holds, a 1,000 ms cycle, 36 logical px/stride and the original 36 logical px/s ground speed (54 screen px/s at default size).

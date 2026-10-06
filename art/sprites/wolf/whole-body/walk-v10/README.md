@@ -1,5 +1,7 @@
 # Complete wolf walking study
 
+2026-10-07 whole-body correction: a manual 96-frame comparison is in progress in `audit/`. V10's authoring instructions wrongly froze head/spine/coat and changed only the legs. That premise is withdrawn. Coverage remains complete, but the cycle needs coordinated whole-body drawings and measured contacts. Keep the runtime root straight; movement of shoulder/haunch/head/tail/fur must be drawn inside intact sprites.
+
 2026-10-06 decision at `35a4ccf`, confidence 99%: follow the user's instruction to fill every approved stick frame through the existing original-reference plus exact-pose still drawing method. AniDoc is not selected and no upload to it occurs.
 
 The target is eight facings × twelve distinct whole-body bitmap poses, one one-second cycle at twelve pose changes per second. Idle holds pose 1. Sixty source poses cover E/NE/SE/N/S; W/NW/SW reflect the whole corresponding source image with a six-pose phase shift and swapped anatomical sides. That mapping matches the approved joint geometry, not merely the screen direction.

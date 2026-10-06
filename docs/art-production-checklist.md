@@ -2,6 +2,13 @@
 
 This is the source of truth for the mood board → concept art → sprites → first-level workflow. Update it at each significant step. An unchecked approval is a real gate; silence, surviving files, and elapsed time are not approval.
 
+2026-10-07 active correction, decision at `1a99439`, confidence 99%: manually compare all 96 active wolf drawings with their corresponding approved sticks. Replace V10's fixed-head/spine authoring premise with coordinated *drawn* shoulder/haunch/torso/head/tail/fur movement. Each pose remains one intact bitmap; runtime root travel stays straight with fixed scale/pivot.
+
+- [x] Prepare 96 registered painting/stick/overlay comparison images from the actual active sources, retaining source hashes and exact target mappings in `art/sprites/wolf/whole-body/walk-v10/audit/`. Parent has individually inspected all 24 E/W pairs; independent N/S, NE/NW and SE/SW reviews are in progress.
+- [ ] Complete and integrate the manual 96-frame audit, including contact visibility, whole-body continuity, adjacent boundaries and loop seams.
+- [ ] Draw and measure a corrected complete whole-body pilot from the original identity and fresh controls; preserve approved paw trajectories, exaggerated proportions, twelve distinct poses and one-second timing. Do not promote failed art to a new identity reference.
+- [ ] Replace the active package only after actual contact and whole-body continuity checks pass; retain every source as a complete sprite and test the export in the motion lab.
+
 2026-10-05 active wolf correction: the user rejected the painted-component assembly and the realistic first whole-body base. Use [whole-body skeleton-guided drawing](../art/sprites/wolf/whole-body/production-contract.md), with original S13 as the dominant proportion reference. Decision at commit `d33dc2e`, confidence 99%: the wolf must share Guarin's oversized head, tiny squat torso and short thick legs. M15 supplies species features only; rejected outputs are excluded from generation inputs.
 
 - [x] Generate and inspect [the exaggerated intact v02 base](../art/sprites/wolf/whole-body/base-wolf-v02.png); preserve original bytes, full prompt and reference hashes. This is an appearance candidate, not a measured motion or camera pass.
