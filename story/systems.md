@@ -15,7 +15,7 @@ Robert is a trained secular knight, aged thirty-four. He returns from the Second
 3. **Faith sustains resistance.** Prayer can support courage, discernment, and protection. It does not inherently increase the blight.
 4. **Consequences endure.** A protected witness, safe food route, freed captive, or repaired mill remains useful after the encounter.
 5. **Holy things remain good.** Counterfeits are investigated; genuine devotion and blessings are not hidden traps.
-6. **1149 equipment.** Mail, practical open-faced helmets, shields, and one-handed swords are the default. Later armor and order uniforms retain their dates.
+6. **1149 equipment.** Mail, shields, and one-handed swords are the default. Nasal helmets supply the conservative period reference; the author's approved greathelm remains an explicit visual exception. Later armor and order uniforms retain their dates.
 
 The exact prayer and meaningful victory are narrative requirements. Their fulfillment cannot be reduced to a worthiness score, a reward screen, or payment for divine help.
 
@@ -80,7 +80,7 @@ Ordinary damage, burning exposure, and recovery are distinct presentation concer
 |---|---|---|
 | Padding | A reference-specific textile layer. | Reduce impact and stagger if modeled. |
 | Mail | A repaired hauberk and possible coif. | Protection with limits, rather than universal immunity. |
-| Helmet | Practical nasal helmet as Robert's default. | Head protection with the face visible. |
+| Helmet | Nasal helmet as the period reference; approved greathelm as a visual exception. | Head protection; presentation follows the chosen approved design. |
 | Shield | Kite shield, repaired and worn. | Active guard, timed block, and bash. |
 
 Reduction, deflection, stamina cost, and armor degradation are proposals, not verified implemented rules. Select dated construction references before final art; do not infer a complete equipment package from one old image.
@@ -148,7 +148,7 @@ Sacramental reception belongs to worship in its proper context. A reserved host 
 
 ### Starting vocabulary
 
-Mail, a nasal helmet, a kite shield, a one-handed arming sword, a dagger, a repaired wool cloak, linen, leather footwear, a belt and purse, and a borrowed mule. Exact textile layering, mail hand construction, and additional protection need dated references.
+Mail, a repaired helmet, a kite shield, a one-handed arming sword, a dagger, a repaired wool cloak, linen, leather footwear, a belt and purse, and a borrowed mule. Exact textile layering, mail hand construction, and additional protection need dated references. Preserve the recorded greathelm allowance when using that approved design; its historical date remains a separate claim.
 
 A personal household mark can be an art choice. Robert does not wear an official military-order mantle simply because Templars and Hospitallers now exist.
 
@@ -156,7 +156,7 @@ A personal household mark can be an art choice. Robert does not wear an official
 
 | Category | Starting or relevant object | Story purpose |
 |---|---|---|
-| Head | Repaired nasal helmet. | Ordinary protection and a recognizable face. |
+| Head | Repaired helmet; approved greathelm exception retained where used. | Ordinary protection and the selected character identity. |
 | Body | Mail and a selected textile layer. | Wealth, repair, and vulnerability. |
 | Hands and feet | Practical leather and selected period protection. | Work, injury, and travel. |
 | Cloak | Worn local wool. | Household identity and the journey home. |

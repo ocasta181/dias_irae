@@ -1,4 +1,6 @@
-# Guarin face review
+# Robert face review — earlier source studies
+
+**Name revision — 6 October 2026.** Robert of Rookmere is the active protagonist; see [the current story brief](../1149-story-brief.md). Earlier source names and image IDs remain provenance. This annotation changes no candidate, image, ranking, decision, or review comment.
 
 Drawing IDs identify the candidate, not its source or preference position. Based on labels identify source images separately. Face studies preserve the S13 outfit and proportions. F01–F30 use original S13; F31–F60 use the captured preferred faces. The new hairstyle/nose/brow studies use F37, V22 and F18 bases with the exact eye marks in the user's F37 close-up; eyebrows vary. Five earlier face candidates remain for comparison. Review statuses are inspection notes, not production approval.
 

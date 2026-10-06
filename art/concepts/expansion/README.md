@@ -1,5 +1,7 @@
 # S13 equipment and cast exploration
 
+**Earlier cast and equipment study.** [The active story brief](../1149-story-brief.md) now defines Robert of Rookmere's autumn-1149 cast and roles. The original names, exact S13 inputs, dates, deliberate exceptions, and output list below are preserved provenance; the illustrated roles do not automatically become the revised cast.
+
 The user authorizes 35 equipment/face variants and ten new character illustrations. The initial sprite and keyboard playground are complete as a first study; this exploration does not imply final sprite approval.
 
 ## Defined output list

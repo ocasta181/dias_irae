@@ -18,13 +18,15 @@ The national archaeological synthesis finds significant regional crop variation 
 
 Ergot provides a material reference for contaminated cereal and burning illness; no outbreak at this town in autumn 1149 is claimed. Impossible movement, voices, transformed creatures, and the casket's influence are supernatural fiction. The plot does not require victims to eat fungal pieces as a historically established religious remedy.
 
+**Modern food-safety evidence, not characters' knowledge.** Ergot alkaloids can occur in several cereals, and visible fungal bodies are not a complete safety test: apparently clean samples can still contain them. The story's replacement food comes from a separate uncompromised supply, rather than a claim that picking out black pieces or baking proves safety. No doses or treatment protocol are supplied. [European Food Safety Authority, exposure assessment](https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2017.4902).
+
 Separate seed grain, household food, dues, and relief supplies. Hamon's attempts to take seed and close access to a mill threaten the next year's life, not just the current ration. A sack, its route, witness accounts, and two conflicting records can establish the game's particular harm without reconstructing a complete medieval bureaucracy.
 
 Bread, cooked grain, pulses, available vegetables, dairy, and household-specific meat or preserved food are conservative scene choices. Ale, water, and wine have different costs and uses; wine is not an absent substance in an English setting. Exact menus, prices, portions, and medicinal recipes remain unverified. The earlier provisions report supplies dated evidence, with its broad phases retained. [Earlier English provisions evidence](../1101-england/technology-and-provisions.md).
 
 ## Rank, names, and speech
 
-Use an Anglo-Norman household within an English-speaking local community. **Robert, Alice, Walter, Hugh, Thomas, Gilbert, Hamon, Agatha, Godric, Oswin, Wulfstan, and Edith** are authorial, period-plausible name choices, not people recovered from a local 1149 charter. A name does not determine loyalty or language. The mixed household should contain personal histories rather than two modern national teams.
+Use an Anglo-Norman household within an English-speaking local community. **Robert, Alice, Walter, Hugh, Thomas, Anselm, Gilbert, Hamon, Ernald, Agatha, Godric, Oswin, Wulfstan, and Edith** are authorial, period-plausible name choices, not people recovered from a local 1149 charter. A name does not determine loyalty or language. The mixed household should contain personal histories rather than two modern national teams.
 
 Dialogue is presented in readable modern English. Robert and Alice can move between household French and local English; Hugh and Thomas have clerical Latin; Oswin is learning to read. These individual competencies are fiction. Latin texts need translations or a credible reader, and differences in training can affect who controls a written claim. The earlier culture dossier dates the surviving language and manuscript evidence instead of reconstructing every person's speech. [Earlier English cultural evidence](../1101-england/culture.md).
 
@@ -42,7 +44,7 @@ The later Isenheim imagery may remain an art reference for suffering and grotesq
 
 Mail, a practical helmet, shield, one-handed sword, wool, linen, leather, and repaired equipment remain the starting vocabulary. Fully enclosed great-helm forms develop later in the twelfth century, and a full plate harness is much later. A 1149 date therefore does not automatically validate every existing helmet concept. [Museum's equipment chronology](https://www.metmuseum.org/essays/arms-and-armor-in-medieval-europe).
 
-Robert's default is a nasal helmet and mail with a kite shield. Specific padded layers, sleeve and hand construction, mail legs, and horse equipment need reference selection before final art. A worn personal or household mark is an artistic choice; it is not a claim to a securely dated hereditary coat of arms and full livery package.
+The conservative historical reference is a nasal helmet and mail with a kite shield. The existing art brief records an author-approved full-face greathelm exception; preserve that deliberate choice when using its approved design, without calling it documented 1149 equipment. Specific padded layers, sleeve and hand construction, mail legs, and horse equipment need reference selection before final art. A worn personal or household mark is an artistic choice; it is not a claim to a securely dated hereditary coat of arms and full livery package.
 
 Real military-order dress belongs to real members when introduced. The rogue fraternity uses an invented irregular badge and patched cloaks. The care house has work clothing and simple devotional signs, not a transported Antonine uniform. The active research distinguishes the usable Templar references from later Hospitaller war dress and heraldry.
 

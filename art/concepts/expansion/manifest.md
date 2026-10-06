@@ -1,5 +1,7 @@
 # S13 equipment and story cast review
 
+**Earlier cast review.** Use [the active 1149 story brief](../1149-story-brief.md) for Robert of Rookmere and the revised roles. The source names, images, chronological comparisons, statuses, and review comments below remain as recorded. This notice changes no selection.
+
 ## S13 equipment and cast exploration
 
 Thirty equipment choices and ten named characters. The five earlier face studies are on the [face board](../faces/index.html). Every drawing uses exact original S13. Dates, regions and intentional exceptions remain on each card.
@@ -50,5 +52,4 @@ Thirty equipment choices and ten named characters. The five earlier face studies
 ## Preference ranking
 
 Gallery order, first to last. Ranking does not change acceptance decisions.
-
 

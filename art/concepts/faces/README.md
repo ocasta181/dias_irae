@@ -1,4 +1,6 @@
-# Guarin face exploration
+# Robert face exploration — earlier source studies
+
+**Name revision — 6 October 2026.** Robert of Rookmere is the active protagonist. [The current story brief](../1149-story-brief.md) supplies his revised context. Guarin in the source decisions below identifies the original studies; their inputs, face preferences, proportions, and recorded approvals are preserved.
 
 Decision at commit `47bab5d`, 2026-10-05, confidence 98%: the user requests 30 additional face studies of the same Guarin, not a new costume or 30 new whole-character media. Use only the unchanged original S13 for each generation. Remove the helm, keep the huge head and squat body, clothing, equipment, pose, palette, camera and rough drawing medium. Explore facial silhouette and feature grammar. Guarin is 34, dark-haired, with a white cut through his hair above his left ear; the dossier's realistic stature does not override the approved exaggerated game proportions.
 

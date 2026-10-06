@@ -1,5 +1,7 @@
 # England comparison: scope and verification
 
+**Historical task record.** The author subsequently authorized an autumn-1149 English campaign and a fresh story reconsideration on 6 October 2026. [The active research record](../1149-england/research-notes.md) governs that revision. The decisions and verification below record the earlier 1101 work, including statements that canon was unchanged at that time.
+
 Requested on 5 October 2026 as an extension of the existing 1101 story research.
 
 Starting checkpoint: `e208bfd6ed1776831248e54416907569103b9b5d`.

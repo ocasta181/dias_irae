@@ -14,7 +14,7 @@ The central cast is fictional. Their ages refer to the campaign season. Historic
 | Age | 34 |
 | Status | Lord of the invented Rookmere holding after his father's death; Alice has kept it operating. |
 
-**Appearance.** Road-worn mail, a repaired nasal helmet, plain wool, and a kite shield whose household paint has nearly gone. A white cut through the hair above the left ear and an injured sword-hand can remain identity marks. His clothes show repair and shortage rather than an official military-order uniform.
+**Appearance.** Road-worn mail, repaired helmet, plain wool, and a kite shield whose household paint has nearly gone. The approved full-face greathelm may remain the explicit visual exception; a nasal helmet is the conservative historical alternative. A white cut through the hair above the left ear and an injured sword-hand can remain identity marks. His clothes show repair and shortage rather than an official military-order uniform.
 
 **History.** Walter's son, raised within an Anglo-Norman household among English-speaking neighbors. He knows household French and local English, with limited letters and familiar prayers. He departed in 1147 with a fictional company associated with William III de Warenne and Louis VII's army. He endured the failed eastern expedition, reached [Jerusalem](https://www.google.com/maps/search/?api=1&query=Jerusalem) in 1148, and returned after sickness and a slow journey. His particular experiences are invention.
 

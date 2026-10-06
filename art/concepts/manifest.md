@@ -1,5 +1,7 @@
 # Concept art review manifest
 
+**Story revision — 6 October 2026.** The current protagonist is Robert of Rookmere in autumn 1149. [The active brief](1149-story-brief.md) governs new cast and scene requirements. Earlier source names, exact inputs, images, reviews, and approvals below retain their recorded history.
+
 Current checkpoint: **45 S13 equipment and cast candidates are ready for review: seven groups of five, plus ten named story characters.** The latest inspected versions are in the existing ordered gallery. Every call uses the exact original S13; prior failures are excluded as inputs. Dates, regional limits and visual deviations are recorded per card. No new sprite assets are approved by this checkpoint.
 
 Previous gameplay checkpoint: **The user selected S49, S13, S15 and S01, in that order, for four gameplay-screen comparisons on 2026-10-05.** The complete Brave review has been saved into this manifest, including all comments, decisions and 45 ranked drawings. The latest instruction requires these exact selected files as gameplay inputs, preserving design and medium. This does not approve a calibrated camera or production assets.

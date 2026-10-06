@@ -1,4 +1,6 @@
-# Guarin animation study
+# Robert animation reference — legacy Guarin study
+
+**Name revision — 6 October 2026.** The active protagonist is Robert of Rookmere; [the current story brief](../../concepts/1149-story-brief.md) supplies his context. The Guarin asset directory, filenames, image hashes, viewer, and production evidence remain stable legacy identifiers. This writing revision regenerates no sprite.
 
 Open [the motion lab](http://127.0.0.1:8765/art/sprites/guarin/viewer/index.html). The existing art server runs as the macOS login service `com.diasirae.art-server`, independent of Codex. It starts at login and restarts if its process exits. It listens only on this computer, at `127.0.0.1:8765`, and uses Homebrew Python with the standard library. The app needs no package install or build step.
 

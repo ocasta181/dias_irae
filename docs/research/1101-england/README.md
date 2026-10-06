@@ -1,5 +1,7 @@
 # England in 1101: differences from the story region
 
+**Superseded setting — 6 October 2026.** The active campaign is now autumn 1149 with an English backdrop. Use [the active dossier](../1149-england/README.md) and its reconsidered story. This file preserves the earlier 1101 comparison; its people, dates, sources, and former canon statements retain that historical scope.
+
 This dossier extends the [original story-region research](../1101-royans/README.md). It uses the same late-summer-to-winter **1101** date. Its purpose is to identify supported differences in politics, noble households, religion and rumors, culture, climate and the sky, and everyday technology and provisions.
 
 The comparison is between [England](https://www.google.com/maps/search/?api=1&query=England) and the campaign's [Royans](https://www.google.com/maps/search/?api=1&query=Royans%2C+France), [Isère](https://www.google.com/maps/search/?api=1&query=Is%C3%A8re+valley%2C+France), [Drôme](https://www.google.com/maps/search/?api=1&query=Dr%C3%B4me+valley%2C+France), and [Rhône](https://www.google.com/maps/search/?api=1&query=Rh%C3%B4ne+valley%2C+France) setting. Modern map labels locate the areas. They do not define medieval borders, and the campaign region does not stand for all of medieval France.

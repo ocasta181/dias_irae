@@ -1,5 +1,7 @@
 # Reference-based gameplay exploration
 
+**Earlier scene exploration.** The active story is Robert of Rookmere's autumn-1149 English campaign; use [the active brief](../1149-story-brief.md) for new scenes. The matrix and selected inputs below preserve the earlier exploration. Its former plot-dependent scene requirements do not override the revised story.
+
 The user selected S49, S13, S15 and S01, in that order. Their latest request is **three Grok screens plus three built-in screens per exact character source: 24 outputs**. Each of the six uses a different scene/composition/lighting prompt. The original files remain unchanged and are actual generator inputs.
 
 Use a complete written prompt for every call. The production chain is **approved mood-board images → character exploration → exact selected character image → gameplay-screen exploration**. For gameplay screens, supply the unchanged selected character file as an actual image input, preserve its design and rendering medium, and extend that medium across the entire world. Do not substitute a written approximation. Do not use failed gameplay outputs, screenshots, composites, generated guides or prior session history as references. Grok uses a fresh session and native `image_edit`; the built-in generator receives the exact source path. Record source paths and SHA256 hashes, inspect actual tool inputs, and view every output before presentation. Check character identity, squat proportions, equal human actor scale, shared palette, lighting, texture and projection.

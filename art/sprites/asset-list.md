@@ -1,5 +1,7 @@
 # Digital asset inventory
 
+**Story scope superseded — 6 October 2026.** This is the earlier campaign's inventory and completion record. The active cast and scene requirements are in [the 1149 story brief](../concepts/1149-story-brief.md). Preserve completed assets, IDs, and approvals; reassess old plot-dependent Required/Conditional entries against the revised story before new production.
+
 Source of truth for asset scope, states, and production status. Updated 2026-10-05. The production checklist is [../../docs/art-production-checklist.md](../../docs/art-production-checklist.md). Sprite rules and research are in [production-spec.md](production-spec.md).
 
 ## Scope and status

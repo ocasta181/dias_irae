@@ -49,7 +49,7 @@ The ages remain character-design choices. Births and childhoods move to the appr
 
 | Earlier organizing element | Active decision |
 |---|---|
-| French petty castellany under Albon | Invented Rookmere manor in the Warenne sphere; household protection and disputed demands. |
+| French petty castellany under a regional count | Invented Rookmere manor in the Warenne sphere; household protection and disputed demands. |
 | Antonine abbey-hospital | Invented House of Saint Michael with local religious and lay support; the real Cluniac community remains a separate neighbor. |
 | Gorge-and-pilgrimage circuit | Home parish, mill and crossing, care house, market and records, veterans' refuge, fortified provision depot. |
 | Sealed town governed by a rogue bishop | A coercive enclosure and grain monopoly run by a lay agent within the fictional local disturbance. |

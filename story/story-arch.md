@@ -19,7 +19,7 @@ In autumn 1149, Robert of Rookmere comes home from the failed eastern expedition
 | Home | **Rookmere**, an invented subordinate manor and parish in the Warenne sphere. Robert does not own the historical earl's castle. |
 | Political pressure | Stephen remains king; the succession is contested. William III de Warenne has died on the same crusade. Local agents claim duties and emergency powers while households still need protection. |
 | Religious neighbors | An established Cluniac community; the fictional parish of **Saint Peter** and fictional **House of Saint Michael**. |
-| Material world | Working farms, a mill, a market, timber and selected masonry, painted churches, mail, a nasal helmet, a kite shield, repaired wool and leather. |
+| Material world | Working farms, a mill, a market, timber and selected masonry, painted churches, mail, shields, repaired wool and leather. The approved greathelm remains an explicit visual exception; a nasal helmet is the conservative period reference. |
 | The blight | Burning illness associated with compromised food, and a hostile supernatural will exploiting dependence and fear. Its local outbreak and impossible effects are fiction. |
 
 The war is memory; the playable campaign is local. People elsewhere continue ordinary work and worship. The district's invented crisis does not establish nationwide devastation, and the player's victory does not settle the historical royal succession.

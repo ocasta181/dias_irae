@@ -1,5 +1,7 @@
 # Historical research for Dias Irae in 1101
 
+**Superseded setting — 6 October 2026.** The author has authorized an autumn-1149 English campaign. [The active dossier](../1149-england/README.md) contains the new context and fresh story reconsideration. The reports below remain dated 1101 evidence; their regional institutions, contemporary leaders, and story suggestions are not current canon.
+
 These six reports examine the people, institutions, beliefs, environment, and material culture around the story. They use the campaign's existing date, from late summer into winter 1101. The aim is to give the story and art team a usable historical base, with clear boundaries between evidence, later tradition, and deliberate invention.
 
 The setting comes from [the story outline](../../../story/story-arch.md) and [the location dossiers](../../../story/locations.md). Those documents establish the fiction; the sources linked in the research reports establish historical claims. This research does not change the story files.

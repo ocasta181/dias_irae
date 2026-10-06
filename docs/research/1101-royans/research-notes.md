@@ -1,5 +1,7 @@
 # Research scope and verification record
 
+**Historical task record.** This records the earlier 1101 regional research. The author authorized a new autumn-1149 English backdrop and fresh story reconsideration on 6 October 2026; use [the active research record](../1149-england/research-notes.md) for current decisions. Earlier statements preserving the original canon describe that completed task.
+
 Research requested on 5 October 2026 for the existing Dias Irae story.
 
 ## Decisions at the starting commit

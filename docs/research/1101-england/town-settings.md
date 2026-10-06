@@ -1,4 +1,6 @@
-# English town settings for Guarin's story
+# English town settings for the earlier 1101 story
+
+**Earlier setting study.** The active campaign now uses the district around [Lewes](https://www.google.com/maps/search/?api=1&query=Lewes%2C+East+Sussex%2C+United+Kingdom) in autumn 1149, with the new cast and fictional Rookmere holding. See [the active dossier](../1149-england/README.md). The ranking and separate circa-1150 discussion below are preserved as the earlier investigation, not the current plot or a new authorization boundary.
 
 **Recommendation:** if an English setting is chosen, prefer **[Lewes](https://www.google.com/maps/search/?api=1&query=Lewes%2C+East+Sussex%2C+England) and a small fictional manor in its surrounding district**. **[Castle Acre](https://www.google.com/maps/search/?api=1&query=Castle+Acre%2C+Norfolk%2C+England)** is strongest for a more intimate campaign. **[Shrewsbury](https://www.google.com/maps/search/?api=1&query=Shrewsbury%2C+Shropshire%2C+England)** is the third finalist when pressure from armed local power should be more prominent. The working setting and late-summer-to-winter **1101** date remain unchanged.
 
