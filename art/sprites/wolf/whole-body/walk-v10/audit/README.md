@@ -21,7 +21,7 @@ Visible paws also miss planned contacts or support identities. Clear examples in
 
 Keep one complete separately drawn wolf per step. Draw shoulder/haunch loading, chest/abdomen deformation, connected neck/head response, tail response and fur flow as one animal. Coat markings must follow their underlying mass rather than shimmer randomly. Keep the approved paw endpoints/support sequence, huge head/tiny body, fixed camera, twelve distinct drawings over one second and straight runtime ground travel. Add no runtime bob, sway, scaling, rotation or painted-part deformation.
 
-The V11 pilot tests one complete twelve-pose request instead of four independently generated trios. Its fresh whole-body controls retain all 48 approved paw endpoints and support labels while recomputing reachable joints around restrained upper-body articulation. Only the original identity and new controls are generation inputs. Head movement is drawn; no nose fitting removes it afterward. The current V10 package remains preserved while the pilot is measured.
+Two V11 pilots test a complete twelve-pose request instead of four independently generated trios. Fresh whole-body controls retain all 48 approved paw endpoints and support labels while recomputing reachable joints around restrained upper-body articulation. The second fixes the first template's contradictory muzzle silhouette. Only the original identity and new controls are generation inputs; no nose fitting removes intended head motion afterward. Parent and independent reviewer inspect all twelve frames in each pilot and reject remaining lane/support, upper-body and loop-height failures. Both stay outside the motion lab. The active V10 source bytes are unchanged.
 
 ## Evidence limits
 

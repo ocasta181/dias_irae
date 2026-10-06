@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-07",
+  "manualAudit": {
+    "frames": 96,
+    "directions": 8,
+    "perFrameReports": 4,
+    "allCycleVerdicts": "fail whole-body coherence",
+    "actualContactPass": false
+  },
+  "pilots": {
+    "provider": "built-in image_gen",
+    "requests": 2,
+    "framesEach": 12,
+    "parentAndIndependentReview": true,
+    "accepted": 0,
+    "failedPaintingInputs": false,
+    "activePackageChanged": false
+  },
+  "softwareChecks": {
+    "passed": 61,
+    "failed": 0,
+    "scope": "existing controller/input/timing, original input lineage and whole-bitmap atlas reconstruction; not art quality"
+  },
+  "comparisonArtifacts": {
+    "registeredPairs": 96,
+    "uniqueSourceHashesPreserved": 96
+  },
+  "browser": {
+    "auditPage": "http://127.0.0.1:8765/art/sprites/wolf/whole-body/walk-v10/audit/index.html",
+    "desktopWidth": 1440,
+    "narrowWidth": 390,
+    "horizontalOverflow": false,
+    "comparisonImagesInDOM": 96,
+    "firstComparisonDecoded": true,
+    "findingsExpand": true,
+    "proof": "browser-frame-proof.png"
+  },
+  "remaining": [
+    "correct actual painted support lanes and trajectories",
+    "coordinated mass and fur articulation inside whole sprites",
+    "stable full-cycle registration and loop seam",
+    "measure all required actual contacts",
+    "verify repaired export in playback",
+    "user approval"
+  ]
+}

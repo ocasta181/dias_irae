@@ -1,0 +1,248 @@
+{
+  "method": "Parent selects visible muzzle ROI independently from rendered pixels; alpha>=192 rightmost boundary with vertical midpoint. This measures a silhouette edge, not a planted contact. No fitting applied.",
+  "controlNote": "Versioned filled muzzle now ends at numerical nose tip; approved numeric pose targets unchanged.",
+  "samples": [
+    {
+      "frame": "E-01",
+      "landmark": "visible muzzle rightmost boundary midpoint",
+      "roi": [
+        141,
+        113,
+        20,
+        27
+      ],
+      "measured": [
+        154,
+        125.5
+      ],
+      "target": [
+        143.896472381959,
+        126.26890664690231
+      ],
+      "error": 10.132743348184034,
+      "uncertaintyPx": 1.5
+    },
+    {
+      "frame": "E-02",
+      "landmark": "visible muzzle rightmost boundary midpoint",
+      "roi": [
+        141,
+        113,
+        20,
+        27
+      ],
+      "measured": [
+        154,
+        125.5
+      ],
+      "target": [
+        144.103527618041,
+        126.14090097423302
+      ],
+      "error": 9.917203217926419,
+      "uncertaintyPx": 1.5
+    },
+    {
+      "frame": "E-03",
+      "landmark": "visible muzzle rightmost boundary midpoint",
+      "roi": [
+        141,
+        113,
+        20,
+        27
+      ],
+      "measured": [
+        154,
+        124.5
+      ],
+      "target": [
+        144.28284271247463,
+        126.09160956960139
+      ],
+      "error": 9.846642411124417,
+      "uncertaintyPx": 1.5
+    },
+    {
+      "frame": "E-04",
+      "landmark": "visible muzzle rightmost boundary midpoint",
+      "roi": [
+        141,
+        113,
+        20,
+        27
+      ],
+      "measured": [
+        154,
+        124
+      ],
+      "target": [
+        144.38637033051563,
+        126.25070859536835
+      ],
+      "error": 9.873579118194938,
+      "uncertaintyPx": 1.5
+    },
+    {
+      "frame": "E-05",
+      "landmark": "visible muzzle rightmost boundary midpoint",
+      "roi": [
+        141,
+        113,
+        20,
+        27
+      ],
+      "measured": [
+        154,
+        122
+      ],
+      "target": [
+        144.38637033051563,
+        126.45909902576697
+      ],
+      "error": 10.597426081062611,
+      "uncertaintyPx": 1.5
+    },
+    {
+      "frame": "E-06",
+      "landmark": "visible muzzle rightmost boundary midpoint",
+      "roi": [
+        141,
+        113,
+        20,
+        27
+      ],
+      "measured": [
+        154,
+        122.5
+      ],
+      "target": [
+        144.28284271247463,
+        126.42800567266929
+      ],
+      "error": 10.481048340458575,
+      "uncertaintyPx": 1.5
+    },
+    {
+      "frame": "E-07",
+      "landmark": "visible muzzle rightmost boundary midpoint",
+      "roi": [
+        141,
+        113,
+        20,
+        27
+      ],
+      "measured": [
+        153,
+        122.5
+      ],
+      "target": [
+        144.103527618041,
+        126.04929140463165
+      ],
+      "error": 9.578344863177112,
+      "uncertaintyPx": 1.5
+    },
+    {
+      "frame": "E-08",
+      "landmark": "visible muzzle rightmost boundary midpoint",
+      "roi": [
+        141,
+        113,
+        20,
+        27
+      ],
+      "measured": [
+        153,
+        121
+      ],
+      "target": [
+        143.896472381959,
+        125.54090097423303
+      ],
+      "error": 10.173199926779462,
+      "uncertaintyPx": 1.5
+    },
+    {
+      "frame": "E-09",
+      "landmark": "visible muzzle rightmost boundary midpoint",
+      "roi": [
+        141,
+        113,
+        20,
+        27
+      ],
+      "measured": [
+        154,
+        117.5
+      ],
+      "target": [
+        143.71715728752537,
+        125.27199432733072
+      ],
+      "error": 12.889559731563894,
+      "uncertaintyPx": 1.5
+    },
+    {
+      "frame": "E-10",
+      "landmark": "visible muzzle rightmost boundary midpoint",
+      "roi": [
+        141,
+        113,
+        20,
+        27
+      ],
+      "measured": [
+        154,
+        117.5
+      ],
+      "target": [
+        143.61362966948437,
+        125.4310933530977
+      ],
+      "error": 13.068241290172361,
+      "uncertaintyPx": 1.5
+    },
+    {
+      "frame": "E-11",
+      "landmark": "visible muzzle rightmost boundary midpoint",
+      "roi": [
+        141,
+        113,
+        20,
+        27
+      ],
+      "measured": [
+        153,
+        118.5
+      ],
+      "target": [
+        143.61362966948437,
+        125.85909902576697
+      ],
+      "error": 11.927291664608042,
+      "uncertaintyPx": 1.5
+    },
+    {
+      "frame": "E-12",
+      "landmark": "visible muzzle rightmost boundary midpoint",
+      "roi": [
+        141,
+        113,
+        20,
+        27
+      ],
+      "measured": [
+        154,
+        117.5
+      ],
+      "target": [
+        143.71715728752537,
+        126.20839043039861
+      ],
+      "error": 13.474899559467994,
+      "uncertaintyPx": 1.5
+    }
+  ],
+  "maxError": 13.474899559467994,
+  "status": "registration/muzzle target fails; no contact pass"
+}
