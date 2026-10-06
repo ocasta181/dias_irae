@@ -1,0 +1,14 @@
+{
+  "tool": "built-in image_gen",
+  "actual_input": {
+    "prompt": "Use case: precise-object-edit. Asset: ONE intact whole-body flat 2D game wolf sprite, walking pose E-01 of twelve.\nThe input is an unfinished pose scaffold made from the canonical wolf and the approved skeleton. Finish only its taupe lower-body/tail regions and black leg/paw regions with the same rough dry-painted grey-brown fur and small clawed paws as the upper body. The tapered taupe wedge at the rear left is a furry TAIL, not a leg. Only the two near-side paws are visible in this profile; the far-side pair is naturally occluded behind the bulky torso. Keep proper canine foreleg shoulder/elbow/carpus anatomy and hindleg hip/stifle/raised-hock anatomy. Paws point right and show furry tops with small claws; no exposed underside pads or circular joint decorations.\nPreserve the exact silhouette and placements of the two posed legs. The near HIND paw's underside midpoint is at 31.640625% of canvas width and 82.544417% of canvas height. The near FORE paw's underside midpoint is at 63.671875% of width and the same 82.544417% height. Both are planted on that same horizontal ground line; the rear paw stretches backward and the foreleg bends under the chest. Do not move those contacts or replace the pose with a generic standing wolf.\nKeep the original upper-body pixels, huge head, tiny squat torso, tiny weary eye, ears, muzzle, coat markings, camera, scale and entire square-canvas registration unchanged. Blend the completed lower body and limbs organically into one complete animal. Match the gritty matte hand-drawn 2D style exactly, without 3D rendering, glossy volume, long realistic legs, extra legs, placeholders, text or ground shadow. Remove all green background and produce genuine transparent alpha. Draw only this single complete wolf, not a sheet, diagram or separated body parts.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-01-scaffold-v02.png"
+    ],
+    "transparent_background": true
+  },
+  "source_path": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-e9d7bae1-5de9-421a-bbe5-a1ff8d951005.png",
+  "sha256": "933dfea398ae0df7c3965afa604b81c45178fc962458698eb10bc5622e1bc29e",
+  "status": "static near-contact pass; cycle and other views still required",
+  "failed_output_inputs": false
+}

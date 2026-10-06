@@ -1,0 +1,58 @@
+{
+  "basis": "measured artwork; static pose only",
+  "source": "E-walk-v07-02-builtin-v03.png",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "registration": "fixed scale 128/width and offset (32,56)",
+  "method": "human-identified paw regions; alpha>=128 bottom edge midpoint",
+  "uncertaintyPx": 1,
+  "targetBudgetPx": 3,
+  "observations": {
+    "RH": {
+      "region": [
+        284,
+        952,
+        166,
+        96
+      ],
+      "pointRaw": [
+        371,
+        1031
+      ],
+      "pointLogical": [
+        69.86921850079744,
+        161.23763955342903
+      ],
+      "target": [
+        69.5,
+        161.65685424949237
+      ],
+      "errorPx": 0.5586262281047919
+    },
+    "RF": {
+      "region": [
+        698,
+        948,
+        176,
+        102
+      ],
+      "pointRaw": [
+        791,
+        1032
+      ],
+      "pointLogical": [
+        112.74003189792664,
+        161.33971291866027
+      ],
+      "target": [
+        110.5,
+        161.65685424949237
+      ],
+      "errorPx": 2.262370775856775
+    }
+  },
+  "nearContactPass": true,
+  "fullCycleVerified": false
+}

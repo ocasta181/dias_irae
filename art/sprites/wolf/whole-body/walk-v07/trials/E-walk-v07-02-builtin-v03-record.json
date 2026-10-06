@@ -1,0 +1,14 @@
+{
+  "tool": "built-in image_gen",
+  "actual_input": {
+    "prompt": "Use case: precise-object-edit. Finish the incomplete full-body wolf in this single original pose scaffold, keeping its exact upper-body pixels, huge head, tiny squat torso, short legs, weary eye, grey-brown markings and gritty dry-painted flat 2D style.\nThe CYAN CROSS marks the required UNDERSIDE MIDPOINT of the near FORE paw: it must sit at 61.328125% across and 82.544417% down the entire canvas, slightly behind the vertical line through its shoulder. Keep this forepaw retracted under the chest, with its small furry top and short right-pointing claws; place its bottom contact edge centre exactly on the cross, then remove the cross. The near HIND paw remains at 29.296875% across and the same 82.544417% height. Both paws are planted. Preserve the bent canine limb paths and the existing pose rather than widening the paw spacing. Keep natural shoulder/elbow/carpus and hip/stifle/raised-hock anatomy, with no exposed pads or decorative joint circles.\nPaint the taupe lower-body/tail regions and black paw/leg silhouettes naturally into one connected complete animal. The rear-left wedge is the furry tail, not another limb; only the two near paws are visible and the far pair is occluded behind the body. Do not change camera, body/head placement, scale, coat texture or canvas registration. No extra legs, 3D shading, shadow, placeholder, guide or word. Replace all green with real transparent alpha. One whole wolf only.\nAll flat taupe areas are unfinished colour regions: fully texture them in the SAME mid grey-brown fur as the torso. The legs and paws must not become black or much darker than the body. Maintain their contact geometry and remove the cyan mark.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-02-taupe-contact-target.png"
+    ],
+    "transparent_background": true
+  },
+  "original_path": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-154a5800-315b-45c5-8249-10aac707085a.png",
+  "status": "static contact pass; cycle incomplete",
+  "failed_output_inputs": false,
+  "sha256": "ed8eb150fbb303b9e51c4f71a3d1c407e766e10ab87c3672bb1b060651a58ddd"
+}

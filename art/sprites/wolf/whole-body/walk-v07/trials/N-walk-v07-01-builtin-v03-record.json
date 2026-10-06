@@ -1,0 +1,14 @@
+{
+  "tool": "built-in image_gen",
+  "actual_input": {
+    "prompt": "Use the CORRECTED pose silhouette in Image 1 as the exact edit target. The CYAN CROSSES mark the two planted HIND paw underside contact centres: the left-screen paw at (56,103.889087) and the right-screen paw at (72,116.617009) in the complete 128-square canvas. Place the bottom contact edge centre of each paw exactly on its cross, then remove both crosses. The right rear leg is extended much farther back toward the viewer than the left one, so its paw is lower on screen; do not shorten that extended leg into a neutral standing pose or recenter the figure. The source silhouette's actual paw ends have been pixel-checked against those coordinates.\nRender a quadruped wolf with its compact body parallel to the ground, viewed from behind and above. Image 2 supplies the exact grey-brown dry-painted fur texture, enormous broad head, ears and tiny squat-body proportions only. Show the back of the skull, compact rump and tapered central fluffy tail, with no face, eyes or profile muzzle. The front legs are farther away and may be occluded. Maintain proper canine hip/stifle/raised-hock/paw anatomy, furry paw tops and short claws, not human hands, circular pads or extra limbs.\nPreserve the entire silhouette layout, very short limbs, scale, canvas placement and elevated 45-degree orthographic camera. Paint one connected full-body animal inside that pose-shaped footprint with the same gritty matte flat 2D game style, not a 3D or upright/biped creature. Complete alpha transparency, no shadow, guide, placeholder or text. One whole wolf, not parts or a sheet.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/N-walk-v07-01-contact-corrected-v03.png",
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/canonical-crop.png"
+    ],
+    "transparent_background": true
+  },
+  "original_path": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-a472c9b5-2811-4ccf-ac22-c2bcdf4d5a11.png",
+  "status": "candidate; measured QA pending",
+  "failed_output_inputs": false
+}

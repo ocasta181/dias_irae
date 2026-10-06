@@ -1,0 +1,58 @@
+{
+  "basis": "measured artwork; static pose only",
+  "source": "N-walk-v07-01-builtin-v02.png",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "registration": "fixed scale 128/width and offset (32,56)",
+  "method": "human-identified paw regions; alpha>=128 bottom edge midpoint",
+  "uncertaintyPx": 1,
+  "targetBudgetPx": 3,
+  "observations": {
+    "LH": {
+      "region": [
+        490,
+        920,
+        145,
+        120
+      ],
+      "pointRaw": [
+        610.5,
+        1040
+      ],
+      "pointLogical": [
+        94.31578947368422,
+        162.15629984051037
+      ],
+      "target": [
+        88,
+        159.88908729652601
+      ],
+      "errorPx": 6.710398601834351
+    },
+    "RH": {
+      "region": [
+        650,
+        1000,
+        155,
+        200
+      ],
+      "pointRaw": [
+        705,
+        1089
+      ],
+      "pointLogical": [
+        103.96172248803828,
+        167.1578947368421
+      ],
+      "target": [
+        104,
+        172.61700935788386
+      ],
+      "errorPx": 5.459248814039692
+    }
+  },
+  "nearContactPass": false,
+  "fullCycleVerified": false
+}

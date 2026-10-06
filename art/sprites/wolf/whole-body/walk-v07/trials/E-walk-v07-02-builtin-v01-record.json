@@ -1,0 +1,14 @@
+{
+  "tool": "built-in image_gen",
+  "actual_input": {
+    "prompt": "Use case: precise-object-edit. Asset: ONE intact whole-body flat 2D wolf game sprite, E walking pose 2 of twelve.\nFinish only the taupe lower-body/tail regions and black leg/paw regions in this single posed edit target with the same rough dry-painted grey-brown fur and small claws as its original upper body. The tapered taupe rear-left wedge is a furry TAIL, not a leg. Only the two near-side paws are visible; the far pair is naturally occluded behind the bulky torso. Keep proper canine hip/stifle/raised-hock and shoulder/elbow/carpus anatomy. Paws point right, with furry tops and small claws; no exposed underside pads or circular joint decorations.\nThe near HIND paw underside midpoint is 29.296875% across and 82.544417% down the entire square canvas. The near FORE paw underside midpoint is 61.328125% across and 82.544417% down. Both are planted on that same horizontal ground line and retract slightly relative to the fixed torso. Preserve these exact silhouette positions, including the bent joint paths in the input. Do not shift the animal or substitute its generic standing pose.\nKeep the original upper-body pixels, huge head, tiny squat torso, tiny tired eye, ears, muzzle, coat markings, elevated orthographic right-profile camera, scale and complete canvas registration unchanged. Blend the finished surfaces into one connected complete wolf. Match its gritty matte hand-drawn 2D style without 3D shading, extra limbs, placeholders, guide lines, words or ground shadow. Remove the green background and produce genuine transparent alpha. Draw this one full-body pose only; no separated parts or sheet.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-02-scaffold-v02.png"
+    ],
+    "transparent_background": true
+  },
+  "original_path": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-60a096a5-373e-400d-a91a-09ad8df57c50.png",
+  "status": "held back: contact failure",
+  "failed_output_inputs": false,
+  "sha256": "9c6f65618b2d3b91786d8ef8496b5e13cf52adeb880ffaef9d1b87d19bb16b8a"
+}

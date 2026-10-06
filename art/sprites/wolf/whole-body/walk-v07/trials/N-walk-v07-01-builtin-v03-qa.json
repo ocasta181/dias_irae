@@ -1,0 +1,56 @@
+{
+  "basis": "measured artwork; static pose only",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "registration": "fixed whole-image scale 128/width and offset (32,56)",
+  "method": "human-identified visible paw regions; alpha>=128 bottom-edge midpoint",
+  "uncertaintyPx": 1,
+  "targetBudgetPx": 3,
+  "observations": {
+    "LH": {
+      "region": [
+        470,
+        880,
+        123,
+        116
+      ],
+      "pointRaw": [
+        585.5,
+        996
+      ],
+      "pointLogical": [
+        91.7639553429027,
+        157.66507177033492
+      ],
+      "target": [
+        88,
+        159.88908729652601
+      ],
+      "errorPx": 4.371910896176279
+    },
+    "RH": {
+      "region": [
+        643,
+        996,
+        157,
+        154
+      ],
+      "pointRaw": [
+        717,
+        1075
+      ],
+      "pointLogical": [
+        105.1866028708134,
+        165.72886762360446
+      ],
+      "target": [
+        104,
+        172.61700935788386
+      ],
+      "errorPx": 6.989601056179405
+    }
+  },
+  "passed": false
+}
