@@ -1,0 +1,10 @@
+{
+  "source": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v06/canonical-canvas.png",
+  "sourceSha256": "493f1a64ef6e9cb98fc18e3e0eb4a98a7f81e56b600354ccad0afadf69846fb4",
+  "pose": "E-walk-v07-10",
+  "sourceGuideSha256": "d662c89dfc56e26d4ff6aeb02e7e2e1b48799872fc720f2e797e425feb5208da",
+  "outputSha256": "e9bfd9ac08fcef761ea3ac1c9c1fb772b0d92d63db7a1af0d2b0da00ae2410f4",
+  "role": "one registered pose-shaped edit target; original upper-body pixels plus provisional lower-body ink; not final art",
+  "privacyChanged": false,
+  "failedOutputInputs": false
+}

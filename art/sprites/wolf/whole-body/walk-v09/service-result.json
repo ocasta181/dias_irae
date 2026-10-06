@@ -1,0 +1,11 @@
+{
+  "provider": "fffiloni/AniDoc",
+  "api_name": "/colorize_sketch_sequence",
+  "status": "not run: automatic approval review rejected upload",
+  "inputs": ["reference.png", "E-lineart-14-controls.mp4"],
+  "reason": "This would upload the private wolf reference and pose sequence to the external Hugging Face AniDoc service, but the user authorized Grok specifically—not this destination or this exact payload.",
+  "uploadOccurred": false,
+  "generationOccurred": false,
+  "privacyChanged": false,
+  "requiredNextStep": "Human explicitly approves uploading these two files to AniDoc on Hugging Face for one test. Do not bypass this rejection with another client, endpoint or browser route."
+}

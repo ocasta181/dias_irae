@@ -1,0 +1,124 @@
+{
+  "provider": "AniDoc author-endorsed Hugging Face demo",
+  "reference": "reference.png",
+  "referenceSha256": "ce1e63c559fa3e7cd6d2f49dfb62014f8903eedb789fb793d3fd07cdeecbbb92",
+  "controlVideo": "E-lineart-14-controls.mp4",
+  "frames": [
+    {
+      "index": 0,
+      "approvedPose": 12,
+      "input": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-12-scaffold-v03-plain.png",
+      "inputSha256": "aef5b03cbb5579f67a9b49533fe0495daf7f313c7be907e4050ae21cde83f4c3",
+      "output": "controls/control-01.png",
+      "role": "seam guard; exclude from final twelve"
+    },
+    {
+      "index": 1,
+      "approvedPose": 1,
+      "input": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-01-scaffold-v03-plain.png",
+      "inputSha256": "b16a2d10470fb95b103c623bf5a4e54746f54dae03177e52c7812ead3aacfe4d",
+      "output": "controls/control-02.png",
+      "role": "approved walking pose; whole-body contour control"
+    },
+    {
+      "index": 2,
+      "approvedPose": 2,
+      "input": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-02-scaffold-v03-plain.png",
+      "inputSha256": "71a1c23da5ac2beff112550b68449a28ab653e2ead77089671e22a9fe8ba64c3",
+      "output": "controls/control-03.png",
+      "role": "approved walking pose; whole-body contour control"
+    },
+    {
+      "index": 3,
+      "approvedPose": 3,
+      "input": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-03-scaffold-v03-plain.png",
+      "inputSha256": "d7f88b0c14191caf763d1901588169f81374ec71b413603665b30f3024b3de52",
+      "output": "controls/control-04.png",
+      "role": "approved walking pose; whole-body contour control"
+    },
+    {
+      "index": 4,
+      "approvedPose": 4,
+      "input": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-04-scaffold-v03-plain.png",
+      "inputSha256": "4c7c335a7cbf605a225232f7314e88564525a93d67fba9ad199e0b366f186f61",
+      "output": "controls/control-05.png",
+      "role": "approved walking pose; whole-body contour control"
+    },
+    {
+      "index": 5,
+      "approvedPose": 5,
+      "input": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-05-scaffold-v03-plain.png",
+      "inputSha256": "2b7837b07056a8bbfd4661f291286426c2507f7d31f2b26a61a89968204fea9a",
+      "output": "controls/control-06.png",
+      "role": "approved walking pose; whole-body contour control"
+    },
+    {
+      "index": 6,
+      "approvedPose": 6,
+      "input": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-06-scaffold-v03-plain.png",
+      "inputSha256": "85c54f5b58b4d3de8cb28b5477cc270aafd384c83447fbfb8efa73d75cf42c2d",
+      "output": "controls/control-07.png",
+      "role": "approved walking pose; whole-body contour control"
+    },
+    {
+      "index": 7,
+      "approvedPose": 7,
+      "input": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-07-scaffold-v03-plain.png",
+      "inputSha256": "d7f66c3078fd9c62d91ab07a6bedd4697c874978044eb2d3ca88553d52376eae",
+      "output": "controls/control-08.png",
+      "role": "approved walking pose; whole-body contour control"
+    },
+    {
+      "index": 8,
+      "approvedPose": 8,
+      "input": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-08-scaffold-v03-plain.png",
+      "inputSha256": "85830e82f74722b30a9fd0c25ab77a1e8f609d9c9bf8da48a007b2be52ab0765",
+      "output": "controls/control-09.png",
+      "role": "approved walking pose; whole-body contour control"
+    },
+    {
+      "index": 9,
+      "approvedPose": 9,
+      "input": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-09-scaffold-v03-plain.png",
+      "inputSha256": "6b1423f10f4d1990ea8067b575cede6782eaa5617825be4e8c1183b9d37a38fe",
+      "output": "controls/control-10.png",
+      "role": "approved walking pose; whole-body contour control"
+    },
+    {
+      "index": 10,
+      "approvedPose": 10,
+      "input": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-10-scaffold-v03-plain.png",
+      "inputSha256": "e9bfd9ac08fcef761ea3ac1c9c1fb772b0d92d63db7a1af0d2b0da00ae2410f4",
+      "output": "controls/control-11.png",
+      "role": "approved walking pose; whole-body contour control"
+    },
+    {
+      "index": 11,
+      "approvedPose": 11,
+      "input": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-11-scaffold-v03-plain.png",
+      "inputSha256": "09f5a6bb29b2d95497f5e387bed8e637f2c5a49340553c88ca2ff6492186e7e9",
+      "output": "controls/control-12.png",
+      "role": "approved walking pose; whole-body contour control"
+    },
+    {
+      "index": 12,
+      "approvedPose": 12,
+      "input": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-12-scaffold-v03-plain.png",
+      "inputSha256": "aef5b03cbb5579f67a9b49533fe0495daf7f313c7be907e4050ae21cde83f4c3",
+      "output": "controls/control-13.png",
+      "role": "approved walking pose; whole-body contour control"
+    },
+    {
+      "index": 13,
+      "approvedPose": 1,
+      "input": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/E-walk-v07-01-scaffold-v03-plain.png",
+      "inputSha256": "b16a2d10470fb95b103c623bf5a4e54746f54dae03177e52c7812ead3aacfe4d",
+      "output": "controls/control-14.png",
+      "role": "seam guard; exclude from final twelve"
+    }
+  ],
+  "outputExtraction": "Retain frames 1..12 (zero-based). Do not interpolate, accelerate or select a repeated pose. Final holds 1000/12 ms.",
+  "privacyChanged": false,
+  "priorFailedArtInputs": false,
+  "finalSheetReady": false
+}

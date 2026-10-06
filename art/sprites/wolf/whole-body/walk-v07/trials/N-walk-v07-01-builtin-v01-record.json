@@ -1,0 +1,15 @@
+{
+  "tool": "built-in image_gen",
+  "actual_input": {
+    "prompt": "Use case: sketch-to-render. Produce ONE complete flat 2D game wolf sprite in REAR VIEW, facing directly away toward screen NORTH/up, matching approved walking pose N-01.\nImage 1 is the exact pose and canvas layout. Paint the wolf over those sticks: the upper central line is the head/neck/spine, the lower central line is its fluffy tail, and the four side branches are canine legs. Image 2 controls the wolf's identity and appearance only: retain its enormous broad head, tiny squat rounded torso, very short thick limbs, ears, grey-brown coat markings and gritty matte dry-painted game texture. Rotate the ENTIRE animal into a true back view at the same 45-degree elevated orthographic camera: show the back of the skull and ears, rump and tail; no face, eyes or side-profile muzzle.\nUse Image 1's entire 128-square logical canvas, with invisible ground root (64,100) and projected head centre 64.00,53.33. Keep its exact scale/placement and place visible paw undersides at their stick endpoints. The anatomical front legs are farther from the viewer; hidden features may occlude naturally, but never duplicate a leg or invent a measured visible contact. Full canine shoulder-elbow-carpus-paw and hip-stifle-raised-hock-paw coordinates below are in that same crop. Maintain one connected organic body, S13's exaggerated proportions and a weary, wretched game mood. No realistic lanky wolf, 3D render, glossy shading, diagram line, label, cast shadow, extra animal or missing body region. Output genuine transparent alpha and just this complete pose, not a sheet.\nLH planted: 56.00,95.76 → 56.00,90.52 → 56.00,102.47 → 56.00,103.89\nLF lifted: 56.00,73.13 → 56.00,82.01 → 56.00,87.72 → 56.00,89.28\nRH planted: 72.00,95.76 → 72.00,103.61 → 72.00,115.20 → 72.00,116.62\nRF planted: 72.00,73.13 → 72.00,84.12 → 72.00,84.80 → 72.00,87.63",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/guides/N-walk-v07-01.png",
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/canonical-crop.png"
+    ],
+    "transparent_background": true
+  },
+  "original_path": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-414119f7-ad6a-48cd-b494-194aade65aaa.png",
+  "originalSha256": "7bc5e69b79721e833ccafc9cbef01fffc6117ba0a157752aaa54377f9edc9496",
+  "status": "held back: generic stance and layout failure",
+  "failed_output_inputs": false
+}

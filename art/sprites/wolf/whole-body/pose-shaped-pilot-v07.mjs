@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 
 const require = createRequire(import.meta.url), { createCanvas, loadImage } = require(process.env.DIAS_IRAE_CANVAS_MODULE || "@napi-rs/canvas");
 const root = new URL("walk-v07/", import.meta.url), manifest = JSON.parse(await readFile(new URL("manifest.json", root)));
-const grey = process.argv.includes("v03"), corrected = grey || process.argv.includes("v02"), suffix = grey ? "-v03" : corrected ? "-v02" : "";
+const plain = process.argv.includes("plain"), grey = process.argv.includes("v03"), corrected = grey || process.argv.includes("v02"), suffix = (grey ? "-v03" : corrected ? "-v02" : "") + (plain ? "-plain" : "");
 const index = Number(process.argv.find(value => /^pose=\d+$/.test(value))?.split("=")[1] ?? 1) - 1;
 const pose = manifest.directions.E.frames[index], crop = manifest.identity.cropLogicalRect, scale = 6;
 const canvas = createCanvas(768, 768), context = canvas.getContext("2d");
@@ -32,7 +32,7 @@ for (const [id, foot] of Object.entries(pose.feet)) {
   else context.fillRect(points[3][0] - 3.5, points[3][1] - 4, 7, 4);
 }
 context.restore();
-if (grey) {
+if (grey && !plain) {
   context.strokeStyle = "#00ffff"; context.lineWidth = 3;
   for (const id of ["RH", "RF"]) { const q = pose.feet[id].points[3], x = (q[0] - crop[0]) * scale, y = (q[1] - crop[1]) * scale; context.beginPath(); context.moveTo(x - 7, y); context.lineTo(x + 7, y); context.moveTo(x, y - 7); context.lineTo(x, y + 7); context.stroke(); }
 }

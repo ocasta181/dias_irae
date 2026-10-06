@@ -28,7 +28,7 @@ PNG handling: the built-in 1254-square RGBA originals decode correctly with Shar
 
 At `8a49a5f`, confidence 95%: keep the requested eight sheets × twelve approved poses, with intact whole-body drawings and fixed source registration. Six isolated candidates meet the measured visible-paw budget: E01, E02, E03, E06, E07 and N01. None is a production frame until its complete cycle, silhouette stability, contacts and playback pass. The corrected N01 observation excludes the separate tail from its left-paw region; both actual hind paws miss by less than 1.3 logical pixels.
 
-A fixed black border corrects the model's repeated zoom/framing changes, but it does not reliably constrain limb geometry. Its E04, E05 and E08 trials still fail the three-pixel budget; E04's hind paw misses by 8.13 pixels. Its E06 passes at 0.09/2.90. These are original-derived controls, never rejected image inputs. No further batch is authorized by this evidence. The current free-form still method has reached its precision limit; stop repeat purchases of the same failure. A pose-conditioned drawing method or a manually controlled whole-body authoring workflow is required before expansion.
+A fixed black border corrects the model's repeated zoom/framing changes, but it does not reliably constrain limb geometry. Its E04, E05 and E08 trials still fail the three-pixel budget; E04's hind paw misses by 8.13 pixels. Its E06 passes at 0.09/2.90. These are original-derived controls, never rejected image inputs. No further batch is justified by this evidence. The current free-form still method has reached its precision limit; stop repeat purchases of the same failure. A pose-conditioned drawing method or a manually controlled whole-body authoring workflow is required before expansion.
 
 Whole-frame reflection with a six-pose phase shift matches all projected joints for E↔W, SE↔SW and NE↔NW within floating-point error. This reduces work only after the source cycle passes. It is not a painted-part rig, a per-frame rescale, a repeated pose, or a finished reflected animation. The wolf has no asymmetric equipment. Painted reflection is unverified.
 
@@ -41,3 +41,13 @@ Whole-frame reflection with a six-pose phase shift matches all projected joints 
 - [ ] Load the verified sheets into the painted-wolf option in the existing local lab and review normal/slow/stepped playback.
 
 `coverage.json` is the machine-readable checkpoint. Rebuild it with `node art/sprites/wolf/whole-body/report-production-v07.mjs`. Final frames: **0/96**. Complete sheets: **0/8**. The approved stick lab remains functional; the painted lab still contains the rejected earlier E study.
+
+## Prepared alternative — awaiting explicit upload approval
+
+AniDoc's author-endorsed Hugging Face demo exposes `/colorize_sketch_sequence` with a reference image and a motion-control video. Its source describes sketch-sequence colorization, rather than free-form pose invention. The actual live API contract was read before preparing the call. This is a proposed test, not evidence that AniDoc can meet the wolf's final style or precision budget.
+
+`walk-v09/` contains the exact original wolf crop, fourteen whole-body outline controls, a verified fourteen-frame MP4 and the source/hash/pose mapping. Interior frames 1..12 correspond to the twelve approved E poses; frames 0 and 13 are seam guards. The outlines are authoring guides, not final sprites. None contains a failed generated painting or a runtime part rig.
+
+The native file-chooser attempt timed out without selecting or uploading files. The direct API execution was then rejected before starting by automatic approval review: the review considered Grok authorized but required explicit authorization for this private art payload to the separate AniDoc/Hugging Face destination. Do not bypass it through the browser, another client, another endpoint or a duplicate Space. Await human approval for one pilot using the two exact files before sending them. Grok privacy stays unchanged.
+
+The new local progress page is linked from the motion lab and displays all 96 guide cards and current failures. Browser inspection verifies its direct load, eight coverage rows, current counts and exact link. Requested 390/1440 viewport overrides did not take effect; the observed page remained 560 pixels wide without horizontal overflow. Those two breakpoint checks are not claimed passed.

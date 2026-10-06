@@ -38,8 +38,8 @@ const coverage = {
   requirement: "Eight walking sheets, twelve distinct whole-body poses each. Idle aliases pose 1. Other actions await their own approved controls.",
   fps: 12, cycleMs: 1000, stride: 36, canvas: [192, 192], pivot: [96, 156],
   counts: { planned: 96, staticCandidates: Object.keys(selected).length, finalFrames: 0, completedSheets: 0, drawingTrials: trials.length },
-  stage: "Drawing method limitation: no full painted cycle passes geometry and motion checks.",
-  blockers: ["Still-image tools change paw positions despite explicit pose silhouettes, contact coordinates and fixed borders; latest E04 hind-paw error is 8.13 logical pixels, budget 3.", "The separate Grok video workflow is stopped under zero data retention because output storage is unconfigured. Privacy has not been changed."],
+  stage: "Drawing method limitation; prepared AniDoc pilot awaits explicit upload approval.",
+  blockers: ["Still-image tools change paw positions despite explicit pose silhouettes, contact coordinates and fixed borders; latest E04 hind-paw error is 8.13 logical pixels, budget 3.", "The separate Grok video workflow is stopped under zero data retention because output storage is unconfigured. Privacy has not been changed.", "Automatic approval review rejected uploading the original wolf reference and fourteen-frame outline control to AniDoc on Hugging Face. Explicit authorization for that destination and payload is required; no upload or generation ran."],
   reflection: { scope: "Unarmed wolf only; entire verified frame, no painted-part assembly", mapping: { W: "reflect E with +6 phase offset", SW: "reflect SE with +6 phase offset", NW: "reflect NE with +6 phase offset" }, targetGeometryVerified: true, paintedOutputVerified: false },
   directions, trials,
 };

@@ -19,12 +19,13 @@
     "staticCandidates": 6,
     "finalFrames": 0,
     "completedSheets": 0,
-    "drawingTrials": 22
+    "drawingTrials": 24
   },
-  "stage": "Drawing method limitation: no full painted cycle passes geometry and motion checks.",
+  "stage": "Drawing method limitation; prepared AniDoc pilot awaits explicit upload approval.",
   "blockers": [
     "Still-image tools change paw positions despite explicit pose silhouettes, contact coordinates and fixed borders; latest E04 hind-paw error is 8.13 logical pixels, budget 3.",
-    "The separate Grok video workflow is stopped under zero data retention because output storage is unconfigured. Privacy has not been changed."
+    "The separate Grok video workflow is stopped under zero data retention because output storage is unconfigured. Privacy has not been changed.",
+    "Automatic approval review rejected uploading the original wolf reference and fourteen-frame outline control to AniDoc on Hugging Face. Explicit authorization for that destination and payload is required; no upload or generation ran."
   ],
   "reflection": {
     "scope": "Unarmed wolf only; entire verified frame, no painted-part assembly",
@@ -1327,6 +1328,14 @@
       "finalFrame": false
     },
     {
+      "image": "trials/E-walk-v07-02-builtin-v02.png",
+      "record": "trials/E-walk-v07-02-builtin-v02-record.json",
+      "sha256": "0b7b1928ba3a8a8c4ded8d33178c0b6ef8a188a381d1862e97b6c466eaf9eeb5",
+      "status": "held back: legs much too dark",
+      "qa": null,
+      "finalFrame": false
+    },
+    {
       "image": "trials/E-walk-v07-02-builtin-v03.png",
       "record": "trials/E-walk-v07-02-builtin-v03-record.json",
       "sha256": "ed8eb150fbb303b9e51c4f71a3d1c407e766e10ab87c3672bb1b060651a58ddd",
@@ -1803,6 +1812,14 @@
       "record": "trials/E-walk-v07-08-builtin-v01-record.json",
       "sha256": "4fc6c33a1f13503c9254e9ad1578b9cc61c49b5ad065341c603329ca8e6dfcc5",
       "status": "held back: enlarged/shifted source registration",
+      "qa": null,
+      "finalFrame": false
+    },
+    {
+      "image": "trials/N-walk-v07-01-builtin-v01.png",
+      "record": "trials/N-walk-v07-01-builtin-v01-record.json",
+      "sha256": "7bc5e69b79721e833ccafc9cbef01fffc6117ba0a157752aaa54377f9edc9496",
+      "status": "held back: generic stance and layout failure",
       "qa": null,
       "finalFrame": false
     },
