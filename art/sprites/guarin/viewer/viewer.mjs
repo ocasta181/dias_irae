@@ -461,7 +461,8 @@ function populateActorControls() {
     });
     document.querySelector(".sequences").append(button);
   }
-  element("direction-help").textContent = Object.keys(atlas.directions).length === 1 ? "Only E art is available for this study." : "All eight directions are available, including while stepping.";
+  const available = Object.keys(atlas.directions);
+  element("direction-help").textContent = available.length === 8 ? "All eight directions are available, including while stepping." : `Available painted headings: ${available.join(", ")}. Remaining headings are in progress.`;
 }
 
 function wireControls() {

@@ -8,6 +8,7 @@ import { stickWolfAtlas } from "./stick-wolf.mjs";
 const atlas = JSON.parse(readFileSync(new URL("../atlas.json", import.meta.url)));
 const wolf = JSON.parse(readFileSync(new URL("../../wolf/atlas.json", import.meta.url)));
 const wholeWolf = JSON.parse(readFileSync(new URL("../../wolf/whole-body/atlas.json", import.meta.url)));
+const paintedWolf = JSON.parse(readFileSync(new URL("../../wolf/whole-body/walk-v10/atlas.json", import.meta.url)));
 const human = JSON.parse(readFileSync(new URL("../locomotion/stick-v01/atlas.json", import.meta.url)));
 const plan = JSON.parse(readFileSync(new URL("../../wolf/whole-body/walk-v06/targets.json", import.meta.url)));
 const sticks = stickWolfAtlas(plan, wholeWolf.references);
@@ -77,6 +78,38 @@ function playground(startup = false) {
 function distinctPoses(poses) {
   return poses.filter((pose, index) => index === 0 || pose !== poses[index - 1]);
 }
+
+test("painted wolf steps every exported facing through twelve frames without moving the root", () => {
+  const lab = playground(); lab.select("wolf", paintedWolf); lab.manual(true);
+  const start = lab.state().position;
+  for (const direction of Object.keys(paintedWolf.directions)) {
+    lab.direction(direction);
+    assert.equal(lab.state().player.direction, direction);
+    assert.equal(lab.state().player.elapsedMs, 0);
+    for (let index = 0; index < 12; index++) {
+      lab.key("keydown", index % 2 ? "ArrowRight" : " ");
+      assert.equal(lab.text("step-frame"), `${(index+1)%12+1} / 12`);
+      assert.deepEqual(lab.state().position, start);
+    }
+  }
+});
+
+test("painted twelve-pose walking retains the approved straight travel and clears on release", () => {
+  const inputs = {N:["w"],NE:["w","d"],E:["d"],SE:["s","d"],S:["s"],SW:["s","a"],W:["a"],NW:["w","a"]};
+  const vectors = {N:[0,-1],NE:[1,-1],E:[1,0],SE:[1,1],S:[0,1],SW:[-1,1],W:[-1,0],NW:[-1,-1]};
+  for (const direction of Object.keys(paintedWolf.directions)) {
+    const lab = playground(); lab.select("wolf", paintedWolf); lab.step(0);
+    for (const key of inputs[direction]) lab.key("keydown", key);
+    for (let tick=0; tick<=60; tick++) lab.step(tick*1000/60);
+    const vector=vectors[direction], length=Math.hypot(...vector), state=lab.state();
+    assert.equal(state.player.direction,direction);
+    assert.ok(Math.abs(state.position[0] - (450+vector[0]/length*54))<1e-7);
+    assert.ok(Math.abs(state.position[1] - (420+vector[1]/length*54*Math.SQRT1_2))<1e-7);
+    assert.ok(lab.text("playback-proof").includes("12/12 seen"));
+    for (const key of inputs[direction]) lab.key("keyup",key);
+    assert.equal(lab.state().player.clip,"idle");
+  }
+});
 
 test("normal 60 Hz playback draws every wolf pose in the actual declared order", () => {
   const lab = playground(); lab.select("wolf", wholeWolf); lab.step(0);

@@ -20,7 +20,7 @@
       "id": "N-01",
       "pose": 1,
       "image": "frames/N-01.png",
-      "sha256": "785270c0df77766bceb1a9ec2674fed67fda1d359086ef0c25fded5aaee94a5c",
+      "sha256": "1024cbde68fd5fe188d9d518e93d000c99a7eb8f76ffcebb673e942c32ab9419",
       "rawCell": [
         0,
         0,
@@ -32,6 +32,10 @@
         "offset": [
           32,
           56
+        ],
+        "pageShift": [
+          0,
+          0
         ]
       },
       "residualMarkerPixels": 0,
@@ -41,7 +45,7 @@
       "id": "N-02",
       "pose": 2,
       "image": "frames/N-02.png",
-      "sha256": "892f3d80349603421c26520d07a260d202669d1e22b646367dbe6dc96ed10b88",
+      "sha256": "888e17effb54fb63ffd7ecc8966b49b0a428bd3827076d00bb40df371b4ce09d",
       "rawCell": [
         724,
         0,
@@ -53,6 +57,10 @@
         "offset": [
           32,
           56
+        ],
+        "pageShift": [
+          0,
+          0
         ]
       },
       "residualMarkerPixels": 0,
@@ -62,7 +70,7 @@
       "id": "N-03",
       "pose": 3,
       "image": "frames/N-03.png",
-      "sha256": "12b5113f4251a55904b5111771cf3b9e11a432ab264436666d4a818a903d3f80",
+      "sha256": "16c6db0e0adaf593ca34f33fda49935f6e99129cfb73bdcfbd998d33b469779d",
       "rawCell": [
         1448,
         0,
@@ -74,6 +82,10 @@
         "offset": [
           32,
           56
+        ],
+        "pageShift": [
+          0,
+          0
         ]
       },
       "residualMarkerPixels": 0,
@@ -81,5 +93,10 @@
     }
   ],
   "failedArtInputs": false,
-  "registration": "One uniform page/cell scale, fixed whole-frame placement; no per-silhouette fitting or runtime parts."
+  "noseObservations": [],
+  "pageShift": [
+    0,
+    0
+  ],
+  "registration": "One uniform page/cell scale and one shared page translation from measured profile nose tips to canonical (144,126); no per-pose fitting, silhouette scaling or runtime parts. Other views retain the fixed crop."
 }

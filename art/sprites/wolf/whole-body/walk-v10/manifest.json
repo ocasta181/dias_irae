@@ -27,7 +27,7 @@
           "id": "N-01",
           "pose": 1,
           "image": "frames/N-01.png",
-          "sha256": "785270c0df77766bceb1a9ec2674fed67fda1d359086ef0c25fded5aaee94a5c",
+          "sha256": "1024cbde68fd5fe188d9d518e93d000c99a7eb8f76ffcebb673e942c32ab9419",
           "rawCell": [
             0,
             0,
@@ -39,6 +39,10 @@
             "offset": [
               32,
               56
+            ],
+            "pageShift": [
+              0,
+              0
             ]
           },
           "residualMarkerPixels": 0,
@@ -48,7 +52,7 @@
           "id": "N-02",
           "pose": 2,
           "image": "frames/N-02.png",
-          "sha256": "892f3d80349603421c26520d07a260d202669d1e22b646367dbe6dc96ed10b88",
+          "sha256": "888e17effb54fb63ffd7ecc8966b49b0a428bd3827076d00bb40df371b4ce09d",
           "rawCell": [
             724,
             0,
@@ -60,6 +64,10 @@
             "offset": [
               32,
               56
+            ],
+            "pageShift": [
+              0,
+              0
             ]
           },
           "residualMarkerPixels": 0,
@@ -69,7 +77,7 @@
           "id": "N-03",
           "pose": 3,
           "image": "frames/N-03.png",
-          "sha256": "12b5113f4251a55904b5111771cf3b9e11a432ab264436666d4a818a903d3f80",
+          "sha256": "16c6db0e0adaf593ca34f33fda49935f6e99129cfb73bdcfbd998d33b469779d",
           "rawCell": [
             1448,
             0,
@@ -81,6 +89,10 @@
             "offset": [
               32,
               56
+            ],
+            "pageShift": [
+              0,
+              0
             ]
           },
           "residualMarkerPixels": 0,
@@ -107,7 +119,7 @@
           "id": "N-04",
           "pose": 4,
           "image": "frames/N-04.png",
-          "sha256": "f6ae0e47808e4a6e51e18164d74b788d72104fb44c03c88908a98fa45b970368",
+          "sha256": "6ef4b0ec070bfbcfb4340d05d053e1e6f107ce8f8af9f47b33f25f5296026b51",
           "rawCell": [
             0,
             0,
@@ -119,6 +131,10 @@
             "offset": [
               32,
               56
+            ],
+            "pageShift": [
+              0,
+              0
             ]
           },
           "residualMarkerPixels": 0,
@@ -128,7 +144,7 @@
           "id": "N-05",
           "pose": 5,
           "image": "frames/N-05.png",
-          "sha256": "234ad8f1fa055a5942142e72c77e7a709db52bcddfd7a420c713bc46dcca4208",
+          "sha256": "2b5e180b32b68df24cc7a8e7a317a8d90e55e556458914bc991b36d059eb7f1b",
           "rawCell": [
             724,
             0,
@@ -140,6 +156,10 @@
             "offset": [
               32,
               56
+            ],
+            "pageShift": [
+              0,
+              0
             ]
           },
           "residualMarkerPixels": 0,
@@ -149,7 +169,7 @@
           "id": "N-06",
           "pose": 6,
           "image": "frames/N-06.png",
-          "sha256": "e001d421d427c57e772ad0657b7d2a93d7b83844762560bf405cef296dc2b5b7",
+          "sha256": "665819c981abc532b182ad295147a63c4f68b9591df566dbc54fb1b9eb2a6f97",
           "rawCell": [
             1448,
             0,
@@ -161,6 +181,10 @@
             "offset": [
               32,
               56
+            ],
+            "pageShift": [
+              0,
+              0
             ]
           },
           "residualMarkerPixels": 0,
@@ -187,7 +211,7 @@
           "id": "N-07",
           "pose": 7,
           "image": "frames/N-07.png",
-          "sha256": "61baab295df877804f755caabcf6c4cb9159050044b4533cb8435f0dd0e57690",
+          "sha256": "5f79db84e4404c78c2ad16c9581ea3461440bebb62b83e45c43112d5e19e2984",
           "rawCell": [
             0,
             0,
@@ -212,7 +236,7 @@
           "id": "N-08",
           "pose": 8,
           "image": "frames/N-08.png",
-          "sha256": "1818a5d1e8eb0519eb9e364a2df0a5052b9d8ed8a589bd229afa2609e8299e5b",
+          "sha256": "2a6e34664ca9faa142168b5812a019243f15eb2e726e9aad4d8296ad678d933f",
           "rawCell": [
             724,
             0,
@@ -237,7 +261,7 @@
           "id": "N-09",
           "pose": 9,
           "image": "frames/N-09.png",
-          "sha256": "af74fc7a59dbbbe1fe6405b39168f498333dd4e2fbabc707294cd835c0fee833",
+          "sha256": "300689d3c8cbec7a0c884c2be50a2f2d2643db2b31ae709543dd807336f0d076",
           "rawCell": [
             1448,
             0,
@@ -279,7 +303,7 @@
           "id": "N-10",
           "pose": 10,
           "image": "frames/N-10.png",
-          "sha256": "20226258a758e96128f44c9a2f629312f9aacf7e5321670defbfbb385cd42034",
+          "sha256": "533cfe0e2f1b3cce42cbcebb6764eb47d5c63ac529b40d7aed863d7a06cc569e",
           "rawCell": [
             0,
             0,
@@ -304,7 +328,7 @@
           "id": "N-11",
           "pose": 11,
           "image": "frames/N-11.png",
-          "sha256": "2add71c39429900afb50206b13b5e087b827d7294c9d36f3b7b7e7553478b29a",
+          "sha256": "bac4db15918b182ff52542ebe22fe388d43b22fb4706a12cf28805601686599c",
           "rawCell": [
             724,
             0,
@@ -329,7 +353,7 @@
           "id": "N-12",
           "pose": 12,
           "image": "frames/N-12.png",
-          "sha256": "8e2b6f23ba0117fd75bedf75325e7bb8e914380d9146192efc68e184f34b467b",
+          "sha256": "1fcbc762cc6c57368916d7daecbec33f7dd00288a4467e3ea29e9a7b46855a87",
           "rawCell": [
             1448,
             0,
@@ -371,7 +395,7 @@
           "id": "NE-01",
           "pose": 1,
           "image": "frames/NE-01.png",
-          "sha256": "0f137087181919d4cf135181713de1528987584ff12d29ec9301f743d6fb4425",
+          "sha256": "05e6cf31a82af4e9e4f1fd04f1676fad9f4923ea415afcd3949508da72c55b58",
           "rawCell": [
             0,
             0,
@@ -396,7 +420,7 @@
           "id": "NE-02",
           "pose": 2,
           "image": "frames/NE-02.png",
-          "sha256": "4ed2aad07bcbebdd19bef817c902507ed05ec1096ea190b11153b4ecd1e18723",
+          "sha256": "31211e70a30a93a189bc12f064128591099fd359ed6ee71dbe88fa75eb58e830",
           "rawCell": [
             724,
             0,
@@ -421,7 +445,7 @@
           "id": "NE-03",
           "pose": 3,
           "image": "frames/NE-03.png",
-          "sha256": "0154c2a84af5b48daa8ee2a8369a5e0fa0744565eaa9cfb5c3ae07a55244fa60",
+          "sha256": "cf9769339bfe6594fae51794d01162ef63f37b943567996675920a594fcbb032",
           "rawCell": [
             1448,
             0,
@@ -463,7 +487,7 @@
           "id": "NE-04",
           "pose": 4,
           "image": "frames/NE-04.png",
-          "sha256": "f63df90f1683bccc743d5cc91bbc1eb62ed1d2734fd6722a65825857e04d4544",
+          "sha256": "5af50fca66ac602de4da70b2fee8b2d1c88629738f90a770fa76d778702dc856",
           "rawCell": [
             0,
             0,
@@ -488,7 +512,7 @@
           "id": "NE-05",
           "pose": 5,
           "image": "frames/NE-05.png",
-          "sha256": "44861eea94349b95d3720e5848dde8efaf880bb37f744a20eee62158aee46413",
+          "sha256": "ba890e0fa5907b91aa3d5f56e1397c59d1a928958048a34d9ae1eff8c8d8c968",
           "rawCell": [
             724,
             0,
@@ -513,7 +537,7 @@
           "id": "NE-06",
           "pose": 6,
           "image": "frames/NE-06.png",
-          "sha256": "80f0d542e7d45fd3e7696a1ea5df34cd5e516f9fc22ee461063e6910c49e22cd",
+          "sha256": "6cb6f265747ab6820f73751da7264e1bcc0062edc06b4e0038b323ae74cd6920",
           "rawCell": [
             1448,
             0,
@@ -548,9 +572,86 @@
       "controlSha256": "ba505598d2c7b2b35aac85d64da0de9c194a740034313fee1b54113aefc430f9",
       "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/NE-07-09.png",
       "request": "requests/NE-07-09.json",
-      "status": "held back: green interior hind-leg defect in pose 9 and raised muzzle",
-      "record": "raw/NE-07-09-held-v01-record.json",
-      "heldRecord": "raw/NE-07-09-held-v01-record.json"
+      "status": "drawn candidate",
+      "record": "raw/NE-07-09-repair-v02-record.json",
+      "heldRecord": "raw/NE-07-09-held-v01-record.json",
+      "frames": [
+        {
+          "id": "NE-07",
+          "pose": 7,
+          "image": "frames/NE-07.png",
+          "sha256": "70be1bb2cc6df4767259c320b8818238fbd6156d07e0756f866cf0a0a2096f7b",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "NE-08",
+          "pose": 8,
+          "image": "frames/NE-08.png",
+          "sha256": "b5e1adbb87932fbb28dab02e31764e708d2dc2f08ab4d9f36d00ef583dd68db2",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "NE-09",
+          "pose": 9,
+          "image": "frames/NE-09.png",
+          "sha256": "1218af1fe3658c76cd1272600df72faecaa6b6d4f06c35ecf5f4020ae828a3aa",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        }
+      ]
     },
     {
       "id": "NE-10-12",
@@ -571,7 +672,7 @@
           "id": "NE-10",
           "pose": 10,
           "image": "frames/NE-10.png",
-          "sha256": "0a4e08fa8cd83a40c29f3ba25d768eb451cf4907cffeaf935fe766b18c2a1bea",
+          "sha256": "4f7fbefbbb5c2f051f039e8fd2991171bc6a9e6963c2b32091920dc129b950da",
           "rawCell": [
             0,
             0,
@@ -596,7 +697,7 @@
           "id": "NE-11",
           "pose": 11,
           "image": "frames/NE-11.png",
-          "sha256": "fb22e72d515c787e8250fcdbd27777b4000cfaf974a8c4936edc91072cb36851",
+          "sha256": "7b4798c7667de0fce5f3f0c17d6195324611dc184537386bfe4ce046e5ff61b0",
           "rawCell": [
             724,
             0,
@@ -621,7 +722,7 @@
           "id": "NE-12",
           "pose": 12,
           "image": "frames/NE-12.png",
-          "sha256": "d3b6387ec2a48ff5f620e42a066c9fc469e648b3bdef91a0b8051d4b910f1ed6",
+          "sha256": "951fbc09b1ad9db8004b13f0f0c824dfed7e1a2934119c07781890b172b8c94e",
           "rawCell": [
             1448,
             0,
@@ -663,7 +764,7 @@
           "id": "E-01",
           "pose": 1,
           "image": "frames/E-01.png",
-          "sha256": "ec3b122111e9369f754d188468ce519d68934828193e66088a8fd57c8ad99628",
+          "sha256": "ac3f8195d46573b405daa0b3b936d559ed776a017fed9ea063140d10555dcd12",
           "rawCell": [
             0,
             0,
@@ -688,7 +789,7 @@
           "id": "E-02",
           "pose": 2,
           "image": "frames/E-02.png",
-          "sha256": "cdd710e990bb5cbf186d9681d108833c0d03f98edd5f85315a8ea9b7cd823225",
+          "sha256": "b82ac5b2993dcf4a9a1f3a4acd21ccc683d52fda98100204288d42b420d489a9",
           "rawCell": [
             724,
             0,
@@ -713,7 +814,7 @@
           "id": "E-03",
           "pose": 3,
           "image": "frames/E-03.png",
-          "sha256": "3b29dd5c3cfc8c8fd697b0c9a1dfbd0ac8305ba299109ebafdf858dc901a5539",
+          "sha256": "16b7b829bdb5b00d5afacebe6a7715c008760198f68dead0f4582b35ad6a8609",
           "rawCell": [
             1448,
             0,
@@ -755,7 +856,7 @@
           "id": "E-04",
           "pose": 4,
           "image": "frames/E-04.png",
-          "sha256": "ce40bc33441118989e5e3ea172e8c622b29781a34c064cb253a4643b70356348",
+          "sha256": "5b62eb968ed57302f59bf13bc3481df5ccf84a393ba89cc84a22c8ff30cb4ccc",
           "rawCell": [
             0,
             0,
@@ -780,7 +881,7 @@
           "id": "E-05",
           "pose": 5,
           "image": "frames/E-05.png",
-          "sha256": "9ba6376ce5153427240322d894430e720a13db9640729bad388018bfc57109d1",
+          "sha256": "38d95e99de34c340cc39f1d9d747fe7d58a2ce37b2c2136558f4b2bcb7abefa0",
           "rawCell": [
             724,
             0,
@@ -805,7 +906,7 @@
           "id": "E-06",
           "pose": 6,
           "image": "frames/E-06.png",
-          "sha256": "bd74351756141571f5eb6732f750f8de2fdc24b2b0b489e3a54c227e019986a0",
+          "sha256": "a79713641a6d146cd8438610355e00e18ffead36a07c0131b35e96811cb67d6e",
           "rawCell": [
             1448,
             0,
@@ -847,7 +948,7 @@
           "id": "E-07",
           "pose": 7,
           "image": "frames/E-07.png",
-          "sha256": "1a3738222a468a64343581134e0460e57305a95b7032f8024d873d203d577660",
+          "sha256": "7259c8f99bbf475a4fcecbafc478659fda610dd09ddac4ecd5284e990d824872",
           "rawCell": [
             0,
             0,
@@ -872,7 +973,7 @@
           "id": "E-08",
           "pose": 8,
           "image": "frames/E-08.png",
-          "sha256": "39205ac521032cd029965e328bc381ecaf608609de9938400a235bc9faf8e687",
+          "sha256": "1d9af9e343bced2be310624a8276cf1b38651e78b8c5c717f0bec48f3bebc25d",
           "rawCell": [
             724,
             0,
@@ -897,7 +998,7 @@
           "id": "E-09",
           "pose": 9,
           "image": "frames/E-09.png",
-          "sha256": "993a3b9c2cb34e291fc8376088627145aa93cd0f58f2a9759e9e2f4e9fb9dd56",
+          "sha256": "141f07500a51953e018555809b5d82eb0e4d949ba18b24a4131d411f958dc78f",
           "rawCell": [
             1448,
             0,
@@ -939,7 +1040,7 @@
           "id": "E-10",
           "pose": 10,
           "image": "frames/E-10.png",
-          "sha256": "6ff88bcc14928d400ed348c3126e059a8dd8f59449c52e3114e9e7ce5d74249b",
+          "sha256": "82a229a6adba4403c6c0b8709acef962a467302c0ff61247443d8e7e523195af",
           "rawCell": [
             0,
             0,
@@ -964,7 +1065,7 @@
           "id": "E-11",
           "pose": 11,
           "image": "frames/E-11.png",
-          "sha256": "12f3114109282c0efed669a007dc7182ab1dce32610f1b214aa4305d814e666c",
+          "sha256": "9fccf05694b9f5347ba585e2cc2bf67a73015bdaf60bb8a05c208a97bc3f2e48",
           "rawCell": [
             724,
             0,
@@ -989,7 +1090,7 @@
           "id": "E-12",
           "pose": 12,
           "image": "frames/E-12.png",
-          "sha256": "0cfcd0eb43d4b9f0162aff518ed3298715398a99f81edbdb224eada617c3dedf",
+          "sha256": "6f0a59fec9d9a553da3603a25e999796d62d985bc7be946b3066d529e3807085",
           "rawCell": [
             1448,
             0,
@@ -1031,7 +1132,7 @@
           "id": "SE-01",
           "pose": 1,
           "image": "frames/SE-01.png",
-          "sha256": "c73c197e8b60c6f408f4332ca0920d857794c40d68b4d26c37274739543617b3",
+          "sha256": "c958fab91a72a7cff74f5fa60abce4d7d6e59210bdcf118acd44a78c28edeacc",
           "rawCell": [
             0,
             0,
@@ -1056,7 +1157,7 @@
           "id": "SE-02",
           "pose": 2,
           "image": "frames/SE-02.png",
-          "sha256": "5815605dc51c6c9267aee9117244df1b90a15e133430e03b0159eeddc4e4ef9d",
+          "sha256": "d9bed2fd20762499681c93796e56a98f55b0766aa579bd8587702e58dee543b5",
           "rawCell": [
             724,
             0,
@@ -1081,7 +1182,7 @@
           "id": "SE-03",
           "pose": 3,
           "image": "frames/SE-03.png",
-          "sha256": "3ef1e8f0274d24a2f5469b8001cbada458ba9d8cf7f0992b919dba71fa48a720",
+          "sha256": "895dea9b2fbdc81bf247cf22a8de3fb0c426077ce5b6e2c6c65a5d4c52f313dd",
           "rawCell": [
             1448,
             0,
@@ -1116,7 +1217,85 @@
       "controlSha256": "67e8694e83c657736baa60f2e4f9b9f3d5fc8136552b8b88f42d9203b5c3ae63",
       "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/SE-04-06.png",
       "request": "requests/SE-04-06.json",
-      "status": "pending"
+      "status": "drawn candidate",
+      "record": "raw/SE-04-06-record.json",
+      "frames": [
+        {
+          "id": "SE-04",
+          "pose": 4,
+          "image": "frames/SE-04.png",
+          "sha256": "1dc49139b560b18c5332f38f22b5354443c67ffcfab435cb2a865373100ff96f",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "SE-05",
+          "pose": 5,
+          "image": "frames/SE-05.png",
+          "sha256": "245b63a29f1ac8a8fcfc591ae96d54bd7a0bf33644ede015d06746fcbf49b207",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "SE-06",
+          "pose": 6,
+          "image": "frames/SE-06.png",
+          "sha256": "c6b0a14d499848b78c0b7bcb1fed9a87f7690407091fe6f26a6afd4c6606f833",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        }
+      ]
     },
     {
       "id": "SE-07-09",
@@ -1130,7 +1309,85 @@
       "controlSha256": "abee35ed57069277ae963466793934d835384c06f0ec12c64a1beaa917e3756a",
       "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/SE-07-09.png",
       "request": "requests/SE-07-09.json",
-      "status": "pending"
+      "status": "drawn candidate",
+      "record": "raw/SE-07-09-record.json",
+      "frames": [
+        {
+          "id": "SE-07",
+          "pose": 7,
+          "image": "frames/SE-07.png",
+          "sha256": "38a39a431e79b92d394388afa5d69e82d9ca0e148eae143b261def7f2f91f0e3",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "SE-08",
+          "pose": 8,
+          "image": "frames/SE-08.png",
+          "sha256": "eeaea65386d834f21da8a15623098e11eb126a0c224e6178b4bd01b2510163a2",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "SE-09",
+          "pose": 9,
+          "image": "frames/SE-09.png",
+          "sha256": "d7e6a83bc5c834ac9ed88b2b043502fd3962ef7ab7702f0139d8ac06e3cb420a",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        }
+      ]
     },
     {
       "id": "SE-10-12",
@@ -1144,7 +1401,85 @@
       "controlSha256": "24d8a4a880ad3bc0f3194280967358a38060267d8429e48d0152597e42e74ed5",
       "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/SE-10-12.png",
       "request": "requests/SE-10-12.json",
-      "status": "pending"
+      "status": "drawn candidate",
+      "record": "raw/SE-10-12-record.json",
+      "frames": [
+        {
+          "id": "SE-10",
+          "pose": 10,
+          "image": "frames/SE-10.png",
+          "sha256": "fb5bc3456ee3dd68aaeb31f17e598f7cbb2717168e61ed04e05101b76aacb2e9",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "SE-11",
+          "pose": 11,
+          "image": "frames/SE-11.png",
+          "sha256": "4be01e679f5bd657efb936969645cac5583219b36cbf2d5f1fa9e5b3a51ac548",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "SE-12",
+          "pose": 12,
+          "image": "frames/SE-12.png",
+          "sha256": "9f25415607a3a0223df27e1c0524a0db7ca347e1d174769b4402c268cf72802b",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        }
+      ]
     },
     {
       "id": "S-01-03",
@@ -1165,7 +1500,7 @@
           "id": "S-01",
           "pose": 1,
           "image": "frames/S-01.png",
-          "sha256": "1bf005eee742fb0f240b50cf9ea307a9a436cfc9522ff38ea5ca99b6ad7e1283",
+          "sha256": "3fc137831b5fc7dc5bc0af90fa1696e194fb5edffc70535eda9edd3fd4b788f9",
           "rawCell": [
             0,
             0,
@@ -1177,6 +1512,10 @@
             "offset": [
               32,
               56
+            ],
+            "pageShift": [
+              0,
+              0
             ]
           },
           "residualMarkerPixels": 0,
@@ -1186,7 +1525,7 @@
           "id": "S-02",
           "pose": 2,
           "image": "frames/S-02.png",
-          "sha256": "b880e6329cc95abaf51e1afc9dea9904569712e482615cfc5af4ae2aae770407",
+          "sha256": "165d04d0a197bbc04532c8ea3e23173a67e52e192d70f1803f255d95f56f55dc",
           "rawCell": [
             724,
             0,
@@ -1198,6 +1537,10 @@
             "offset": [
               32,
               56
+            ],
+            "pageShift": [
+              0,
+              0
             ]
           },
           "residualMarkerPixels": 0,
@@ -1207,7 +1550,7 @@
           "id": "S-03",
           "pose": 3,
           "image": "frames/S-03.png",
-          "sha256": "a46af3b2818086a5040b50bc5743bf4816df1b7080da9d6454b65e950e7092bc",
+          "sha256": "d50027153726ff7c813fedaba8528bd4880a0845dac2949d253dba41540f4e51",
           "rawCell": [
             1448,
             0,
@@ -1219,6 +1562,10 @@
             "offset": [
               32,
               56
+            ],
+            "pageShift": [
+              0,
+              0
             ]
           },
           "residualMarkerPixels": 0,
@@ -1245,7 +1592,7 @@
           "id": "S-04",
           "pose": 4,
           "image": "frames/S-04.png",
-          "sha256": "3687bbba89df448e62d62032c98c45c9ed34924c5bc7842d0a6255319f29bfc4",
+          "sha256": "fc94e35928c9e63dabb4639348046f02e4e0814ee5076202f8f3b4f7c5254f75",
           "rawCell": [
             0,
             0,
@@ -1270,7 +1617,7 @@
           "id": "S-05",
           "pose": 5,
           "image": "frames/S-05.png",
-          "sha256": "7b6070851030fc404d3753602896be27c91d6fffc607529e6a36ad4585bcb60a",
+          "sha256": "24c2413f661b643249407fb7fd6724906edc7131d7e22740e9fe50ec1e48df61",
           "rawCell": [
             724,
             0,
@@ -1295,7 +1642,7 @@
           "id": "S-06",
           "pose": 6,
           "image": "frames/S-06.png",
-          "sha256": "56a76c8cabe0763a13574e8df027002d6196196beb586d429238460efad94c49",
+          "sha256": "1e93732a1f369e6999c85afaba18662df215a3d81728bcf96528c199b68c8445",
           "rawCell": [
             1448,
             0,
@@ -1337,7 +1684,7 @@
           "id": "S-07",
           "pose": 7,
           "image": "frames/S-07.png",
-          "sha256": "7bc860f8a76a09d5ea4c570882d8cc1fee8d6b522b9ad37cf37fcf934a2c6971",
+          "sha256": "8b0ab6fe24afa520ddd0a3413820b4a0a5682998be3db24d8d6c30a86c496f73",
           "rawCell": [
             0,
             0,
@@ -1362,7 +1709,7 @@
           "id": "S-08",
           "pose": 8,
           "image": "frames/S-08.png",
-          "sha256": "923425cf3aa47f356d8d27750578774ab586f4c4e70f96ac7ddda76ac766a38e",
+          "sha256": "44a08fed6d33c1e08406b5c5a17d21a2d91ce5cc57cc1d46cf2e57370cfb87d9",
           "rawCell": [
             724,
             0,
@@ -1387,7 +1734,7 @@
           "id": "S-09",
           "pose": 9,
           "image": "frames/S-09.png",
-          "sha256": "23657e3f908ed74afa18b0b9809415f507adfe4ba71b2712bc93843fc7689551",
+          "sha256": "b30ebbdf021fcb3fcc33cf531c1b95f89022347093d6222c0c9fb1b4afc89924",
           "rawCell": [
             1448,
             0,
@@ -1422,7 +1769,85 @@
       "controlSha256": "f282419b770bc0b537899a46be144bba5ed416a55f01957810bfd9dd3bedf04e",
       "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/S-10-12.png",
       "request": "requests/S-10-12.json",
-      "status": "pending"
+      "status": "drawn candidate",
+      "record": "raw/S-10-12-record.json",
+      "frames": [
+        {
+          "id": "S-10",
+          "pose": 10,
+          "image": "frames/S-10.png",
+          "sha256": "0360852e5e4f751bca664358669cdf9e33ae30b1ab422d5b13f07f2ca743d692",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "S-11",
+          "pose": 11,
+          "image": "frames/S-11.png",
+          "sha256": "a0eac7ddec6da34144c247522513b0a066a2aa595abe1de1df87a3665ee39db4",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "S-12",
+          "pose": 12,
+          "image": "frames/S-12.png",
+          "sha256": "5149c0da8148bb3d4fad387fc4dff84a3857b31c1fb5c2973184d250c84cf85e",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        }
+      ]
     }
   ],
   "sourceDrawingsRequired": 60,

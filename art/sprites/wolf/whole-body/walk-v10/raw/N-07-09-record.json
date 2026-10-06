@@ -20,7 +20,7 @@
       "id": "N-07",
       "pose": 7,
       "image": "frames/N-07.png",
-      "sha256": "61baab295df877804f755caabcf6c4cb9159050044b4533cb8435f0dd0e57690",
+      "sha256": "5f79db84e4404c78c2ad16c9581ea3461440bebb62b83e45c43112d5e19e2984",
       "rawCell": [
         0,
         0,
@@ -45,7 +45,7 @@
       "id": "N-08",
       "pose": 8,
       "image": "frames/N-08.png",
-      "sha256": "1818a5d1e8eb0519eb9e364a2df0a5052b9d8ed8a589bd229afa2609e8299e5b",
+      "sha256": "2a6e34664ca9faa142168b5812a019243f15eb2e726e9aad4d8296ad678d933f",
       "rawCell": [
         724,
         0,
@@ -70,7 +70,7 @@
       "id": "N-09",
       "pose": 9,
       "image": "frames/N-09.png",
-      "sha256": "af74fc7a59dbbbe1fe6405b39168f498333dd4e2fbabc707294cd835c0fee833",
+      "sha256": "300689d3c8cbec7a0c884c2be50a2f2d2643db2b31ae709543dd807336f0d076",
       "rawCell": [
         1448,
         0,

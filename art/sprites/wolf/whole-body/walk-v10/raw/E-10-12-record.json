@@ -20,7 +20,7 @@
       "id": "E-10",
       "pose": 10,
       "image": "frames/E-10.png",
-      "sha256": "6ff88bcc14928d400ed348c3126e059a8dd8f59449c52e3114e9e7ce5d74249b",
+      "sha256": "82a229a6adba4403c6c0b8709acef962a467302c0ff61247443d8e7e523195af",
       "rawCell": [
         0,
         0,
@@ -45,7 +45,7 @@
       "id": "E-11",
       "pose": 11,
       "image": "frames/E-11.png",
-      "sha256": "12f3114109282c0efed669a007dc7182ab1dce32610f1b214aa4305d814e666c",
+      "sha256": "9fccf05694b9f5347ba585e2cc2bf67a73015bdaf60bb8a05c208a97bc3f2e48",
       "rawCell": [
         724,
         0,
@@ -70,7 +70,7 @@
       "id": "E-12",
       "pose": 12,
       "image": "frames/E-12.png",
-      "sha256": "0cfcd0eb43d4b9f0162aff518ed3298715398a99f81edbdb224eada617c3dedf",
+      "sha256": "6f0a59fec9d9a553da3603a25e999796d62d985bc7be946b3066d529e3807085",
       "rawCell": [
         1448,
         0,
@@ -95,12 +95,12 @@
   "failedArtInputs": false,
   "noseObservations": [
     [
-      146.7403314917127,
-      118.93922651933701
+      146.56353591160223,
+      119.02762430939227
     ],
     [
       146.56353591160223,
-      119.11602209944752
+      119.02762430939227
     ],
     [
       146.56353591160223,

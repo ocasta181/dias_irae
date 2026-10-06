@@ -12,6 +12,7 @@ const bytes=await readFile(originalPath), {data,info}=await sharp(bytes).ensureA
 if(info.width!==info.height*3) throw new Error("The generated page does not preserve three square cells: "+info.width+"x"+info.height);
 await writeFile(new URL("raw/"+id+variant+".png",root),bytes);
 const request=JSON.parse(await readFile(new URL(requestOverride ?? page.request,root))), frames=[];
+const greenKey=(r,g,b)=>g>Math.max(r,b)+12 && g>r*1.25 && g>b*1.25;
 const noseObservations=[];
 if(page.direction==="E")for(let column=0;column<3;column++){
   let right=-1, ys=[];
@@ -19,7 +20,7 @@ if(page.direction==="E")for(let column=0;column<3;column++){
     const lx=32+x*128/info.height,ly=56+y*128/info.height;
     if(lx<115 || lx>155 || ly<105 || ly>140)continue;
     const k=(y*info.width+column*info.height+x)*4,r=data[k],g=data[k+1],b=data[k+2];
-    if(g>100&&g>r*1.5&&g>b*1.5)continue;
+    if(greenKey(r,g,b))continue;
     if(x>right){right=x;ys=[];}if(x===right)ys.push(y);
   }
   if(right<0)throw new Error("Profile nose registration landmark missing.");
@@ -32,7 +33,7 @@ for(let column=0; column<3; column++) {
   let occupied=0, residualMarks=0;
   for(let y=0;y<side;y++)for(let x=0;x<side;x++) {
     const k=(y*info.width+column*side+x)*4, out=(y*side+x)*4;
-    const r=data[k],g=data[k+1],b=data[k+2], matte=g>100 && g>r*1.5 && g>b*1.5;
+    const r=data[k],g=data[k+1],b=data[k+2], matte=greenKey(r,g,b);
     const marker=b>120&&g>120&&r<100;
     const inside=x>=border&&x<side-border&&y>=border&&y<side-border;
     rgba[out]=r;rgba[out+1]=g;rgba[out+2]=b;rgba[out+3]=inside&&!matte&&!marker?data[k+3]:0;
