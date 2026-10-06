@@ -2,6 +2,8 @@
 
 2026-10-07. **All 96 active painted frames were individually compared with their corresponding approved stick poses. All eight cycles fail whole-body motion review.** No frame or cycle is promoted to production approval.
 
+The user explicitly rejects the entire 96-frame pose transfer: all paintings are off the approved stick figures, not merely E-06 or a few isolated contacts. Preserve this set as failed evidence only. Rebuild starts with one correctly implemented intact sprite; no further sheet or painting is authorized until the root-cause investigation produces a credible strategy.
+
 | Directions | Frame-by-frame review | Coverage |
 | --- | --- | --- |
 | E, W | [Parent review](review-e-w.md) | 24 individual pairs |

@@ -4,7 +4,7 @@
     "source_character": "S13 proportions / wolf base v02"
   },
   "sourceFrames": 96,
-  "reviewStatus": "Painted wolf study: twelve distinct whole-body drawings per available direction, twelve poses per second. All 96 frame slots are filled from the original wolf and approved pose controls. Actual pose/contact/camera fidelity and continuous gait quality remain under review; use Frame by frame and the approved-pose overlay to inspect alignment.",
+  "reviewStatus": "REJECTED: the entire 96-frame painted set does not follow the approved stick poses. Retained for diagnosis only. No repaired painted walk exists. Astra/max is investigating; the next proof is one correct whole-body sprite, not another sheet.",
   "directions": {
     "N": {
       "image": "walk-v10/sheets/wolf-n-walk.png",
@@ -2559,7 +2559,7 @@
           }
         }
       ],
-      "assessment": "Twelve whole-body drawing candidates follow the approved phase order. Actual paw contacts, source-view registration, camera and loop transitions remain under visual/geometric review. The pose overlay is the approved control, not a measurement pass."
+      "assessment": "Entire painted set rejected for pose correspondence and whole-body motion. No accepted sprite in this package."
     },
     "NE": {
       "image": "walk-v10/sheets/wolf-ne-walk.png",
@@ -5114,7 +5114,7 @@
           }
         }
       ],
-      "assessment": "Twelve whole-body drawing candidates follow the approved phase order. Actual paw contacts, source-view registration, camera and loop transitions remain under visual/geometric review. The pose overlay is the approved control, not a measurement pass."
+      "assessment": "Entire painted set rejected for pose correspondence and whole-body motion. No accepted sprite in this package."
     },
     "E": {
       "image": "walk-v10/sheets/wolf-e-walk.png",
@@ -7669,7 +7669,7 @@
           }
         }
       ],
-      "assessment": "Twelve whole-body drawing candidates follow the approved phase order. Actual paw contacts, source-view registration, camera and loop transitions remain under visual/geometric review. The pose overlay is the approved control, not a measurement pass."
+      "assessment": "Entire painted set rejected for pose correspondence and whole-body motion. No accepted sprite in this package."
     },
     "SE": {
       "image": "walk-v10/sheets/wolf-se-walk.png",
@@ -10224,7 +10224,7 @@
           }
         }
       ],
-      "assessment": "Twelve whole-body drawing candidates follow the approved phase order. Actual paw contacts, source-view registration, camera and loop transitions remain under visual/geometric review. The pose overlay is the approved control, not a measurement pass."
+      "assessment": "Entire painted set rejected for pose correspondence and whole-body motion. No accepted sprite in this package."
     },
     "S": {
       "image": "walk-v10/sheets/wolf-s-walk.png",
@@ -12779,7 +12779,7 @@
           }
         }
       ],
-      "assessment": "Twelve whole-body drawing candidates follow the approved phase order. Actual paw contacts, source-view registration, camera and loop transitions remain under visual/geometric review. The pose overlay is the approved control, not a measurement pass."
+      "assessment": "Entire painted set rejected for pose correspondence and whole-body motion. No accepted sprite in this package."
     },
     "SW": {
       "image": "walk-v10/sheets/wolf-sw-walk.png",
@@ -15334,7 +15334,7 @@
           }
         }
       ],
-      "assessment": "Twelve whole-body drawing candidates follow the approved phase order. Actual paw contacts, source-view registration, camera and loop transitions remain under visual/geometric review. The pose overlay is the approved control, not a measurement pass."
+      "assessment": "Entire painted set rejected for pose correspondence and whole-body motion. No accepted sprite in this package."
     },
     "W": {
       "image": "walk-v10/sheets/wolf-w-walk.png",
@@ -17889,7 +17889,7 @@
           }
         }
       ],
-      "assessment": "Twelve whole-body drawing candidates follow the approved phase order. Actual paw contacts, source-view registration, camera and loop transitions remain under visual/geometric review. The pose overlay is the approved control, not a measurement pass."
+      "assessment": "Entire painted set rejected for pose correspondence and whole-body motion. No accepted sprite in this package."
     },
     "NW": {
       "image": "walk-v10/sheets/wolf-nw-walk.png",
@@ -20444,7 +20444,7 @@
           }
         }
       ],
-      "assessment": "Twelve whole-body drawing candidates follow the approved phase order. Actual paw contacts, source-view registration, camera and loop transitions remain under visual/geometric review. The pose overlay is the approved control, not a measurement pass."
+      "assessment": "Entire painted set rejected for pose correspondence and whole-body motion. No accepted sprite in this package."
     }
   },
   "clips": {

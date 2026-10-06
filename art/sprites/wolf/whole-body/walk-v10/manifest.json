@@ -46,7 +46,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "N-02",
@@ -71,7 +71,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "N-03",
@@ -96,7 +96,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     },
@@ -138,7 +138,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "N-05",
@@ -163,7 +163,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "N-06",
@@ -188,7 +188,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     },
@@ -230,7 +230,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "N-08",
@@ -255,7 +255,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "N-09",
@@ -280,7 +280,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     },
@@ -322,7 +322,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "N-11",
@@ -347,7 +347,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "N-12",
@@ -372,7 +372,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     },
@@ -414,7 +414,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "NE-02",
@@ -439,7 +439,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "NE-03",
@@ -464,7 +464,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     },
@@ -506,7 +506,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "NE-05",
@@ -531,7 +531,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "NE-06",
@@ -556,7 +556,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     },
@@ -599,7 +599,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "NE-08",
@@ -624,7 +624,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "NE-09",
@@ -649,7 +649,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     },
@@ -691,7 +691,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "NE-11",
@@ -716,7 +716,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "NE-12",
@@ -741,7 +741,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     },
@@ -783,7 +783,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "E-02",
@@ -808,7 +808,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "E-03",
@@ -833,7 +833,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     },
@@ -875,7 +875,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "E-05",
@@ -900,7 +900,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "E-06",
@@ -925,7 +925,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     },
@@ -967,7 +967,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "E-08",
@@ -992,7 +992,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "E-09",
@@ -1017,7 +1017,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     },
@@ -1059,7 +1059,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "E-11",
@@ -1084,7 +1084,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "E-12",
@@ -1109,7 +1109,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     },
@@ -1151,7 +1151,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "SE-02",
@@ -1176,7 +1176,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "SE-03",
@@ -1201,7 +1201,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     },
@@ -1243,7 +1243,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "SE-05",
@@ -1268,7 +1268,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "SE-06",
@@ -1293,7 +1293,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     },
@@ -1335,7 +1335,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "SE-08",
@@ -1360,7 +1360,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "SE-09",
@@ -1385,7 +1385,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     },
@@ -1427,7 +1427,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "SE-11",
@@ -1452,7 +1452,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "SE-12",
@@ -1477,7 +1477,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     },
@@ -1519,7 +1519,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "S-02",
@@ -1544,7 +1544,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "S-03",
@@ -1569,7 +1569,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     },
@@ -1611,7 +1611,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "S-05",
@@ -1636,7 +1636,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "S-06",
@@ -1661,7 +1661,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     },
@@ -1703,7 +1703,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "S-08",
@@ -1728,7 +1728,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "S-09",
@@ -1753,7 +1753,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     },
@@ -1795,7 +1795,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "S-11",
@@ -1820,7 +1820,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         },
         {
           "id": "S-12",
@@ -1845,7 +1845,7 @@
             ]
           },
           "residualMarkerPixels": 0,
-          "quality": "candidate; actual pose/contact measurements pending"
+          "quality": "rejected as part of whole-set pose-transfer failure"
         }
       ]
     }
@@ -1878,5 +1878,5 @@
     128,
     128
   ],
-  "state": "Full drawing coverage in progress; numerical and visual QA remain distinct from coverage."
+  "state": "Entire 96-frame painted pose transfer rejected by user on 2026-10-07. Preserve as failed evidence. Astra/max investigation and one correct whole-body sprite are required before any sheet."
 }
