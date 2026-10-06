@@ -1,428 +1,223 @@
 # Dias Irae — Story Arch
 
-The campaign of *Dias Irae*, end to end. Companion documents: [characters.md](characters.md), [locations.md](locations.md), [systems.md](systems.md).
+The active campaign, end to end. Companion documents: [characters.md](characters.md), [locations.md](locations.md), [systems.md](systems.md). Historical foundation: [1149 research](../docs/research/1149-england/chronology-and-politics.md). The authorial decisions and earlier-name correspondences are in [the reconsideration](../docs/research/1149-england/story-reconsideration.md).
 
-This file is the spine. It says what happens, when the player learns it, and what must remain true. Names, faces, rooms, and gameplay proposals live in the companion files.
+This file owns what happens, when it becomes known, and what must remain true. The campaign has been reconsidered for a new date and country; its local incidents are fiction within the researched political world.
 
 ---
 
 ## Logline
 
-In the late summer of 1101 a wounded crusader comes home to the Royans and finds disease, poverty, greed, and corruption overwhelming the people he loves. In spiritual crisis, he kneels in the rain at a stone cross and asks Jesus to be his hope, his will, and his strength. Guided and sustained through his faith, he fights the evil taking hold of his hometown and valley. His victory answers that prayer: he sees goodness in his fellow men again, knows his struggle matters, and finds the world worth saving and life worth living.
-
----
+In autumn 1149, Robert of Rookmere comes home from the failed eastern expedition of the Second Crusade to find his neighbors paying for a protection that leaves them hungry and afraid. At a familiar stone cross, he asks Jesus for hope, will, guidance, and strength. With his sister, a small charitable house, and people who still choose goodness, he fights the men and the supernatural power exploiting the district. His victory preserves a community and answers his prayer: life is worth living, these people are worth loving, and his struggle matters.
 
 ## Setting
 
 | | |
 |---|---|
-| Year | Late summer into winter, 1101 |
-| Country | The Royans and the Isère, then the Drôme and the Rhône corridor — the lands that will later be called the Dauphiné |
-| Material culture | Romanesque churches, limewash, barrel vaults, painted Christs in Majesty. Mail hauberks, kite shields, nasal helms, arming swords. |
-| Political frame | Overlapping castellanies, episcopal rights, and growing Albon power within imperial Burgundy-Arles. The Kingdom of Jerusalem is two years old. Urban II has been dead since 1099. The early Antonine charitable fraternity is traditionally dated to about 1095. |
-| The fire | *Ignis sacer*, holy fire, St. Anthony's Fire. In the body it is ergot. In the soul it is a presence. The valley has one wound and two names for it. |
+| Season | Autumn into early winter **1149**; epilogue in **1150**. |
+| Country and district | [England](https://www.google.com/maps/search/?api=1&query=England), around [Lewes](https://www.google.com/maps/search/?api=1&query=Lewes%2C+East+Sussex%2C+United+Kingdom). |
+| Home | **Rookmere**, an invented subordinate manor and parish in the Warenne sphere. Robert does not own the historical earl's castle. |
+| Political pressure | Stephen remains king; the succession is contested. William III de Warenne has died on the same crusade. Local agents claim duties and emergency powers while households still need protection. |
+| Religious neighbors | An established Cluniac community; the fictional parish of **Saint Peter** and fictional **House of Saint Michael**. |
+| Material world | Working farms, a mill, a market, timber and selected masonry, painted churches, mail, a nasal helmet, a kite shield, repaired wool and leather. |
+| The blight | Burning illness associated with compromised food, and a hostile supernatural will exploiting dependence and fear. Its local outbreak and impossible effects are fiction. |
 
-The East is the memory of war and the source of Guarin's exhaustion and scars. The player walks the lands of modern France. The ruin of this particular valley is the campaign's fiction; it does not establish nationwide devastation in 1101.
+The war is memory; the playable campaign is local. People elsewhere continue ordinary work and worship. The district's invented crisis does not establish nationwide devastation, and the player's victory does not settle the historical royal succession.
 
-The Royans and 1101 remain the working setting. The central Christian arc can also work in England. A change of country or year is a separate authorial choice, not a consequence required by the prayer.
+## Historical ground and the new conflict
 
----
+Robert, Father Hugh, and Sir Gilbert left in **1147** with a fictional company associated with William III de Warenne and Louis VII's army. The earl died in **1148**. Robert reached [Jerusalem](https://www.google.com/maps/search/?api=1&query=Jerusalem) that year and survived the failed expedition against [Damascus](https://www.google.com/maps/search/?api=1&query=Damascus%2C+Syria), then illness and a slow journey west. His particular service and injuries are invention. He has no personal memories of the First Crusade.
 
-## Historical ground
+His sister Alice has kept Rookmere going. Their father Walter died in spring **1149**. Since then Hamon, a fictional estate agent, has claimed a mandate to secure supplies and enforce obligations for the greater household. He collects grain, withholds food, and confines people who resist. The loss of the earl makes his claims difficult for isolated neighbors to challenge, but the historical heiress and her family are not identified as authors of his crimes.
 
-The First Crusade gives Guarin a recent war from which to return, physically wounded and spiritually exhausted. Jerusalem was taken in 1099; his journey home ends in late summer 1101. His losses, illness, and memories of suffering explain his crisis without making a concealed atrocity its foundation.
-
-Holy fire supplies the local material horror. Ergot poisoning comes from contaminated grain and can cause convulsions, burning pain, and gangrene. The people of the valley do not know the fungus as its cause. The supernatural will behind this campaign's blight is a separate fictional element.
-
-Local tradition dates the beginnings of the Antonine alms fraternity to about 1095, associated with Gaston of Valloire, his son's cure, and devotion to Anthony the Great. In 1101 it is an early charitable community beside a monastic shrine. The campaign's extensive hospital, fictional leadership, tau imagery, and exact treatments are deliberate adaptations, not a documented six-year-old mature order. Familiar military orders belong to later developments.
-
-The dated evidence and its limits are in the [regional research](../docs/research/1101-royans/README.md) and the [England comparison](../docs/research/1101-england/README.md).
-
----
+This is the ordinary injustice Robert first encounters. It gives the supernatural evil a route into daily life: the men controlling relief supplies can compel desperate people to accept what harms them. The conflict concerns particular abuses, not a declaration that every obligation or every bearer of authority is evil.
 
 ## Theological spine
 
-This is a Christian story. Christ answers Guarin's prayer and sustains his struggle against evil. Faith strengthens his will, conviction, courage, and discernment. His renewed hope becomes visible in people helped, evil overcome, and goodness freely chosen by his fellow men.
+This is a Christian story. Christ answers Robert's prayer and sustains his struggle against evil. Faith strengthens his will, conviction, courage, and discernment. The answer becomes visible in people protected, truth spoken, harm interrupted, and goodness freely chosen by his fellow men.
 
-At the beginning, Guarin sees suffering as meaningless and evil as an irresistible tide. He wants to fight, but feels weak and insufficient. He asks Jesus for the will to continue and the conviction not to give up. Shelter is given to him along the way; shelter is not what he asks for.
-
-His prayer is preserved exactly:
+At the beginning Robert sees suffering as endless and his sacrifices as fruitless. He wants to oppose evil, but feels weak and insufficient. His prayer is preserved exactly:
 
 > Lord Jesus. I have lost all hope. I pray that you be my hope. I have lost all will, I pray that you be my will. Guide me, be my strength. Allow me to be your Sword and your Mantle, and to purge a path of righteousness in your name
 
-His own heart remains part of the moral struggle: anger, bitterness, pride, and the temptation to surrender can obstruct his vocation. Confession and repentance may have their ordinary Christian place. His arc is not a revelation of concealed complicity or a compulsory confession of an atrocity in the East. Cannibalism is removed from the story.
+The early prayer scene is sincere and emotional. He kneels in rain, his helmet beside him, and cries before he can finish speaking. His crisis need not vanish immediately; the campaign shows the real fulfillment of what he asks.
 
-The Mass, prayer, blessings, and genuine devotion are sources of grace. Abaddon deceives people with a counterfeit relic and rites that imitate holy things. His power comes through that deception, coercion, and corrupt human choices. Genuine faith and righteous action do not nourish him. No valid sacrament becomes a successful rite for an evil presence.
+His own anger, pride, bitterness, and temptation to surrender are part of the moral struggle. They do not conceal an atrocity that the player must expose. There is no cannibalism premise or compulsory confession of a secret crime in the East.
 
-The blight's physical route is tainted food and drink. Discovering and interrupting that route is practical work alongside spiritual resistance. Its victims are people to protect; illness itself does not make a person evil.
+Mass, prayer, confession, blessings, and genuine devotion remain sources of good. A counterfeit exploits sacred appearances; it does not establish that valid sacraments nourish evil. Robert is a lay knight. He protects people seeking spiritual help, while a priest gives absolution.
 
----
+Illness and disfigurement do not identify guilt or a combat target. Some sick people help others; some healthy people exploit them. Righteous force can stop active attackers and supernatural enemies. A meaningful opportunity to spare or protect someone must depend on the situation and the person's choices.
 
-## The secret
+## How the false mercy came home
 
-The fire in the grain is both a bodily danger and, in this fiction, a foothold for a hostile will. Behind the will is the name the campaign draws from Revelation 9:
+Father Hugh was the chaplain of Robert's company. In the campaign's hunger and sickness, an apparition wearing a saint's face promised that a small Eastern casket would keep people from starving. Hugh accepted the promise and then its demands. Once he understood that it was a deception, fear kept him obedient.
 
-**Abaddon. In the Greek, Apollyon. The Destroyer. King of the locusts that come up from the pit.**
+He returned in spring **1149**, months before Robert, carrying the casket and a small lot of rye. He offered them to the House of Saint Michael as a pilgrim's thanks. Master Thomas trusted him. Brother Wulfstan used provisions that looked like a relief from shortage. When illness followed, Thomas delayed acknowledging the problem because he feared losing benefactors and leaving patients with nothing.
 
-His locust host takes its visual language from the text: human faces, iron breastplates, and the hair of women. His identity as the campaign's evil antagonist, his local history beneath the grainlands, and the means of defeating him are fictional uses of that imagery.
+When the house began to refuse the suspect supplies, Hamon seized the remaining lot and the casket. He promised an orderly distribution under protection. His men mixed the lot into controlled relief supplies and guarded their depot at **Blackthorn Hold**. He knows that harm follows the distribution; he continues because dependence gives him power.
 
-Abaddon works to make suffering seem endless, goodness futile, and corruption inevitable. He exploits frightened people, coerces servants, and imitates sacred authority. He wants Guarin to conclude that nothing he saves can matter. The story proves that claim false.
+The casket is the counterfeit's material foothold. The guarded supply route spreads its influence. The harm is neither a normal medieval remedy nor a consequence of sincere Christian worship. Practical evidence can reveal where the supplies went; prayer and discernment can expose the hostile presence claiming holiness.
 
-The older rooms beneath the hospital hold traces of previous encounters with the blight. Their invented history explains its local foothold. The Crusade is Guarin's experience of war, not a vast rite that secretly fed the Destroyer.
+Robert carries a rag-wrapped splinter acquired on a claim that it came from the True Cross. Its provenance remains uncertain, and his devotion is sincere. It is a distinct object, not a second hidden key for the enemy.
 
----
+## The enemy's purpose
 
-## How the wound came home
+The name behind the foothold is **Abaddon**, or **Apollyon**: the Destroyer and king of the locust host drawn from Revelation 9. His local presence, counterfeit casket, and means of defeat are fictional uses of that imagery.
 
-The carrier is **Fulk of Livron**, chaplain to Guarin's small company. In the hunger and sickness of the campaign, a presence wearing a saint's face promised that obedience would let him save lives. Fulk accepted its demands, then became afraid to refuse them. The apparition's claimed holiness is a lie.
+He wants Robert to believe that every rescued person will suffer again, every promise will fail, and every good act is wasted. He uses the knight's experience of the failed expedition and the district's abused authority to make that lie feel reasonable. He coerces Hugh, imitates mercy, and encourages people to surrender responsibility for their neighbors.
 
-He came home months before Guarin carrying a box of black grain falsely presented as a sacred remnant. He gave it to the brothers at La-Motte as a pilgrim's thanks. Their trust in its donor, desperation for remedies, and later concealment allowed the contaminated material into food and drink. These events are the campaign's invention; mixing such material into provisions is not presented as a normal historical rite.
+The story defeats that claim. Care, truth, faith, and courage have effects that endure. Robert does not have to end every war to make saving these people matter.
 
-Fulk hides along the hospice roads. He wants release, but the binding prevents him from naming his master. The harm he has caused is his own story. Guarin's task is to resist the thing using him and help a frightened fellow man turn toward Christ.
+## What becomes known
 
-Guarin's rag-wrapped splinter, carried in devotion to the Cross, is distinct from Fulk's counterfeit. Its provenance remains uncertain. It is neither a second key for Abaddon nor a hidden punishment for Guarin's faith.
-
-The remembered controversy around the Antioch lance belongs to the war's atmosphere. Peter Bartholomew's historical claims and ordeal do not make him a demonstrated servant of Abaddon. Any later appearance of the iron in this campaign would be a separate fictional plot choice.
-
----
-
-## Dramatic question
-
-Can a wounded man who has lost hope receive the will and conviction to keep fighting, overcome the evil threatening his home, and come to see the goodness of his fellow men and the worth of life again?
-
-Yes. Christ answers his prayer. Guarin becomes able to act bravely, save people, and defeat an enemy that seemed intractable. The victory is real, and his struggle has not been in vain.
-
----
-
-## What the player knows, and when
-
-The player begins with Guarin's exhaustion, desire to oppose evil, and fear that the struggle has become meaningless. The early prayer states what he needs.
-
-| Revelation | When it lands |
+| Revelation | Where it lands |
 |---|---|
-| His home is wounded, but Almodis and others are still caring for people | Act I, the village and castrum |
-| Acting can save someone; his first successes matter | Act I, through protection and practical help |
-| The brothers are frightened, and some provisions are doing harm | Act I turn / Act II |
-| The Eastern box is a counterfeit; food and drink carry the blight | Act II, chapel, infirmary, and bakehouse |
-| Courage and charity remain within the hospital despite corruption | Act II, through brothers and patients who help |
-| Named human agents exploit fear through force and policy | Act III |
-| Fulk carried the counterfeit in terror; he can still choose to reject its master | Act III, the hospice |
-| Abaddon has a local foothold that can be broken | Act IV, the descent |
-| His promise of inevitable defeat is false; faith sustains Guarin's resistance | Act IV–V |
-| Saving the valley has preserved lives and made a future possible | Victory and epilogue |
-
-The year after is still 1102. The ending restores hope through a meaningful victory.
+| Alice and others have kept people alive during Robert's absence. | Act I, home and parish. |
+| Particular relief supplies, rather than every field or every sick person, are linked to the harm. | Act I, mill and household stores. |
+| The care house trusted Hugh's gift and then concealed its doubts; Hamon removed the suspect lot and casket. | Act II, records, witnesses, and the empty casket recess. |
+| Predatory protection and forced dependence keep the supply route operating. | Act III, Hamon's enclosure and Gilbert's fraternity. |
+| Hugh was deceived and bound, but he can reject his master and turn toward Christ. | Act III, the return to the parish. |
+| The casket and depot sustain a supernatural foothold beneath Blackthorn Hold. | Act IV, testimony and descent. |
+| The Destroyer can be defeated, and the lives preserved remain part of a real future. | Act V and the 1150 epilogue. |
 
 ---
 
-## Tone
+# Act I — The House Without Protection
 
-Steal from Orderic Vitalis; the *Gesta Francorum*; Revelation 9; the medical descriptions of limbs shedding; the Isenheim Altarpiece painted four centuries later for an Antonine house, which is the art bible whether or not the game admits it.
+## Homecoming and prayer
 
-Guarin is a wounded armed pilgrim whose hope has been shaken. The Levant is a wound in memory. Disease looks like holy fire: blackened limbs, burning, rye. Churches are Romanesque, small, painted, damp. Mail in the yards. Humor, when it comes, is monastic and dry — a brother noting in the margin that the Devil has no sense of proportion.
+Robert arrives on a borrowed mule, mail packed and his sword maintained with more care than his clothes. The last road contains ordinary work: a cart being mended, a woman carrying water, a boy watching animals. Then come the closed doors, an abandoned sack, and someone who will not take bread from the relief cart.
 
-The Church is many people. The brothers are trying to help; some fail, and some show courage and love at real cost. A bishop makes a monstrous administrative choice. A chaplain made a terrified one. Their corruption gives Guarin something to confront while other Christians give him help and reason to hope. The counterfeit borrows sacred appearances; Christ remains his strength.
+At the parish cross he sees enough suffering to fear that home has become another place he cannot save. He kneels, cries, and says the exact prayer. The scene has time and silence. It establishes the need the whole journey answers.
 
-Horror must leave room for goodness to become visible. A meal shared, a patient protected, a prayer kept, or a neighbor helped carries weight because these acts endure in a wounded place.
+## The household that remained
 
-The opening, in period voice:
+Alice receives him without ceremony. Their father is buried once, in an ordinary grave. His absence has left duties, disputed demands, and people who need a living lord. Alice has kept separate stores, helped neighbors, and refused to surrender the seed grain. Godric still holds the keys and knows which households have eaten from which supply.
 
-> In the year of the Incarnation 1095, the fire that men call holy walked in Francia, and Urban, bishop of the Romans, lifted up the cross and sent the armed pilgrimage into the lands of the East. In that same year the brothers of Anthony took in the burning at La-Motte, and prayed for relief while they tended the suffering.
->
-> In the year 1099 the city of Jerusalem was taken, and many who had vowed the road turned their faces toward home.
->
-> Now it is 1101, and the fire has learned their names.
+Father Anselm continues worship and care at Saint Peter's. Edith, the miller's daughter, is recovering from illness. She is frightened of the relief sacks and can identify the man who brought them. Her father is missing after challenging a collection; the story does not require a priest to burn him in his mill.
 
----
+## The first fight
 
-# Act I — The Unkept House
+Ernald brings armed men to take the household's protected grain and seize the miller’s family as leverage. His claimed authority is heard, but his attack makes the immediate wrong clear. Robert must keep people out of the fighting and stop the collector. Ernald can be killed or safely taken alive; victory does not require attacking every soldier or sick neighbor.
 
-**Region:** the castrum and village of Rivoire, in the Royans.
+The first impossible creature emerges from a compromised sack. It moves after the sack is cut, with joints that belong to no animal. Robert can distinguish this hostile presence from the people the food has injured.
 
-**Tone:** silence, smoke, ordinary horror. The first enemies are people Guarin can name.
+**Turn.** Brother Oswin asks for help taking clean supplies to the House of Saint Michael. His copied entries connect its relief deliveries with the parish's illness. Alice keeps Rookmere open as a refuge.
 
-## Landing
-
-Guarin comes up the last league on a borrowed mule, mail packed, the Eastern splinter in a rag inside his shirt. He is tired, wounded, and scarred by war. He wants to fight evil, but feels insufficient before everything he has seen. He hopes that home will still contain people and a life he can love.
-
-He finds the rye standing wrong — heads swollen, dark, curved like cockspurs. Animals turn their heads from it. The village stone cross is streaked with rain and soot. The mill is a wet charcoal shell. **Father Giraud** burned it. The fire kept walking.
-
-## The prayer at the stone cross
-
-Early in the game, after the first signs of the valley's suffering, rain falls as Guarin kneels at the stone cross. His helmet lies beside him. He cries openly. His shoulders shake; he needs time to speak. The scene is emotional and sincere.
-
-He says the exact prayer recorded above, with the pauses of a man struggling through tears. He wants the strength of will to continue the fight and the strength of conviction to have hope. He is not asking to hide from the world.
-
-The scene establishes the prayer the whole campaign answers. His crisis need not vanish in a moment. The particular form and timing of any visible divine response remain open; the answer itself is real.
-
-## The household
-
-The castrum is shuttered and kept. **Almodis** has held it with a dwindling household. She is angry he is late, angry he is alive when their father is in the yard twice, and she stays. **Aimar of Royans** died in the spring, black to the elbow, having sent the surgeon away. She buried him in the churchyard and then had to bury him again when the ground pushed the coffin up.
-
-Almodis has kept others alive. Their work is the first evidence of goodness Guarin can recognize, even while he struggles to feel hope. She has one piece of useful news. A company of Antonines came down from La-Motte after Pentecost with the tau-cross and a cask. They took the worst of the burning to the hospice. They left **Brother Odo** to write what the fire does. Odo is very young. He is already afraid of his own notes.
-
-## The village
-
-The first encounters are among the parish. Some people are dangerous under the blight; others are frightened, sick, or trying to help. Protecting the latter belongs to the same fight as stopping the former. Guarin recognizes men and women he knew at the harvest of 1095, grey and taut, some missing hands, some rocking and muttering Latin they never learned. Those turned hostile swing flails because flails are what they have. Wolves are in the paddock. They are wolves, until one stands too long on its hind legs.
-
-A child recites from Revelation 9 at the lychgate. She is **Agnes**, the miller's daughter. Giraud says she has fits since the mill burned. The flagellants on the Pont road have already given her another name. Guarin meets the name first. The band waits on the road.
-
-Inside Saint-Laurent the parish crucifix has sprouted a second, smaller crossbar — the Antonine tau — without a carpenter. Giraud swears the wood did it. He has set the chasuble in a chest. He is waiting for a bishop. The road from Die stays empty.
-
-Giraud still keeps clean wheat for the Mass. Prayer in the church can steady Guarin, while Giraud and Odo's observations lead him toward the undercroft. The parish's tainted daily bread is evidence of the blight. The sacrament does not punish Guarin's undisclosed past or make him see through unworthy reception.
-
-## The seneschal
-
-**Raimon the Long** still tries to give a report of the harvest. His legs have charcoal'd off at the knee. He walks on something else. He is a household officer finishing his duty. The fight is in the undercroft among last year's apples, which have mummified into black fists.
-
-When Raimon falls he thanks Guarin, or tries to. The thing that had been using his legs looks for another pair, finds the rye, and goes into it.
-
-## Turn
-
-Odo begs an escort to La-Motte. He has a petition for the prior. The relics have begun to *warm*. He keeps this from Almodis. He says it on the road, once the castrum is out of sight, as if the house itself should be spared the hearing.
-
-Almodis remains. She is the reason to come back down the mountain. The player can return to Rivoire between acts. The house can worsen as the blight advances, but help brought home has durable effects: safer provisions, people sheltered, and work begun again.
-
-**Act I boss:** Raimon the Long.
-
-**Act I evidence:** animals refuse the rye; the crucifix grows a tau; Odo records a pattern in the illness; the mill-sclerotia bleed when smashed.
-
-**Act I hope:** Almodis has preserved lives; Guarin protects people and sees that intervening changes an outcome.
+**Durable good.** Neighbors survive the collection; seed and clean stores remain available; the mill can return to useful work. Godric is a living ally, not an obligatory first corpse.
 
 ---
 
-# Act II — The Tau
+# Act II — The Bread of Mercy
 
-**Region:** the Bourne road, Pont-en-Royans, the processional path, the abbey-hospital of Saint Anthony at La-Motte-Saint-Didier.
+## The road and the house
 
-**Tone:** dread within a charitable house under pressure. Corruption and mistaken remedies coexist with sincere service and courage.
+The route follows farms, a crossing, and a damaged storehouse. Hostile collectors and inhuman things threaten the escort, while frightened travelers can accept help. Wheat and barley fields, gardens, grazing, and ordinary food remain visible beside the compromised lot.
 
-## The road
+The House of Saint Michael is a modest charitable household supported by lay benefactors and religious neighbors. Master Thomas is its priest and head. Wulfstan tends patients; Agatha manages bedding, meals, and the movement of witnesses. There is no imported Antonine uniform or complete shrine-medical institution.
 
-Penitential processions move toward the relics. Some are ordinary fear. Some have decided the fire is a baptism and scourge themselves until they find a second cross on their own backs. Brigands take what the dead no longer need. The first clearly inhuman things appear in the terraces: rye-men, chaff angels, pigs with human mouths. Anthony's animal, corrupted. The brothers use pork fat on the sores. The pigs have been eating the same rye.
+## A harmful mistake admitted
 
-A lazaret on the Pont road holds those still waiting on the abbey's beds. Among them is the rumor of a knight who came home from Antioch already white.
+Oswin's entries, Edith's account, and the provisions show a pattern. Wulfstan first resists because he remembers hungry people improving after a meal. He then helps separate suspect supplies and replace them. Thomas admits receiving Hugh's gift and postponing an inquiry. He also admits that Hamon took the casket when the house refused another distribution.
 
-## The abbey
+The casket's empty recess is scorched, with marks that do not resemble a proper devotional inscription. Prayer can steady people and expose a hostile disguise, while the physical investigation establishes the supply route. A valid Mass has not been performed for another power.
 
-The early charitable house at La-Motte is already too full; its scale here is a fictional adaptation. Tau-crosses on black habits. Rows of patients whose lost hands have been replaced with pig-bone prostheses. The smell is wine, lard, and sweet gangrene. **Prior Isarn** receives Guarin because Guarin is a returned cross-bearer and because Odo's petition has the right seals. **Gaston of Valloire**, the traditional founder, remains an offstage patron in this fiction.
+## Defense of the ward
 
-The scriptorium is painting Anthony's temptations. The marginal beasts match things Guarin killed on the Bourne road *before* the page was painted. The illuminator has been blind for two years.
+Hamon's men return to take the records, remaining stores, and two witnesses. The set-piece is the defense and evacuation of a care house. Beds hold people to protect. Wulfstan and Agatha help them move; Thomas refuses the demand he previously feared to question. A hostile thing wearing a collector's outline supplies the main supernatural fight.
 
-In a side chapel, a pilgrim's reliquary ticks like a beetle. It is Eastern work. It is warm. Isarn admits, late and unwilling, that it was received as thanks from a priest of Raymond's host, and honored, because a remnant of the Holy Land is a gift a prior accepts. They have tried ordinary fire against it. That fails to break its hold. Prayer and blessings do not feed it.
+**Turn.** The rescued witnesses connect Hamon's enclosure to Blackthorn Hold. A returned knight named Gilbert has offered another kind of protection nearby. Hugh has been seen among the displaced people on that route.
 
-## The tainted provisions
-
-The infirmary teaches the rest. **Brother Durand**, the infirmarian, administers the house wine as sovereign remedy. Patients who drink it sometimes keep their limbs, and the limbs have learned a new joint. Durand's arms are skinless. He is at peace with this. He believes he is curing them.
-
-The bakehouse tells the other half. In the famine after Pentecost the brothers mixed what grain they had. Material from the Eastern box went into ordinary bread as a supposed remedy. Clean wheat is kept for the Mass. In the side chapel, rites around the box have begun to imitate worship while promising cures. Odo can say the *Agnus Dei* in the main church; near the counterfeit, prayer exposes resistance from the presence hiding there. Registers, provisions, and witness accounts also supply evidence. The investigation distinguishes food poisoning and deception from genuine sacramental life.
-
-A side descent into the **maladrerie** below the abbey: lepers, and among them the first talk of **Raimbaut of Saillans**, who is gathering unmarked and marked men into an irregular commandery down the Isère. Raimbaut is writing a rule for the living dead, years before anyone will bless such a rule.
-
-## The infirmarian
-
-Durand is the Act II boss. He is a nurse who kept dosing after the medicine changed. The fight is among the beds. Some patients try to help him. Some try to help Guarin. Distinguishing them is part of the fight.
-
-When Durand falls, the wine in his cask beads like blood and then like sclerotia. Isarn orders the cask sealed, to protect the order's name. This conceals harm. Guarin can stop its use and pour it out. The relief at the hospital is real: patients cease receiving the dose. Brothers and patients who help him show that the house contains goodness worth preserving.
-
-## Turn
-
-Isarn, cornered, names the donor as well as he can: a chaplain, Provençal or of the Drôme, who left before the night office, who claimed the box held a sacred remnant. He went on toward Crest and Romans. The prior asks Guarin to find him and to keep Valence out of it.
-
-Guarin can carry his splinter as a devotional reminder of the Cross. Near the box, his faith helps him resist its claims. He has not unknowingly carried a second key for the enemy.
-
-**Act II boss:** Brother Durand.
-
-**Act II evidence:** paintings that remember the road; the ticking counterfeit; harmful wine and grain; the presence resisting prayer; Isarn's account of the donor.
-
-**Act II hope:** treatment improves when the harmful provisions are stopped; people within the house help protect the patients.
+**Durable good.** Safe meals and ordinary care resume. Thomas keeps a copy of the truth instead of hiding it; Wulfstan becomes an ally. The place can remain useful on later visits.
 
 ---
 
-# Act III — The Plague Lands
+# Act III — Whose Peace?
 
-**Region:** the Isère and Rhône corridor — abandoned castra, charcoal camps, the collegiate shadow of Romans, the closed town of Crest, a pilgrimage hospice.
+## Two promises of protection
 
-**Tone:** the world worsens with the road, and the logic is epidemiological *and* spiritual. The blight follows grain routes and pilgrimage roads.
+The market neighborhood around Lewes contains people doing business, keeping worship, and trying to reach kin. Hamon's fictional enclosure interrupts one part of that life. It is a guarded yard and storehouse, not a documented seizure of the historical town or a new episcopal see.
 
-The enemy ladder steps up.
+Hamon says that only his levy and distribution keep the district alive. He uses copied claims, Walter's improperly obtained household seal, armed custody, and fear of a worse faction to make refusal seem impossible. Records and witnesses can expose what he took and where it went. A scribe or clerk matters because Robert cannot make every written command disappear with his sword.
 
-| Circle | What the land thinks it is | What it is |
-|---|---|---|
-| Outer | Famine riot, wolves, brigands | Distinguish hungry people from predators and hostile creatures |
-| Middle | Flagellants, false pilgrims, corrupted Antonines | The converted |
-| Inner | Things with iron breastplates and women's hair | Abaddon’s locusts, as John wrote them |
-| Named | "Saints" the blight has canonized | Lieutenants |
+Gilbert offers protection through the **Brotherhood of the Wounded**. His men include veterans with injuries, illness, sleeplessness, and unbroken bodies. He has seen actual religious knighthood and copied its permanent commitment into a private rule. He now claims that suffering gives his veterans the sole right to judge who deserves safety. They begin by guarding travelers and end by taking grain and punishing those who refuse their rule.
 
-## The Child
+## Confronting the agents
 
-Agnes is found again among a flagellant band on the Crest road. They call her the Child of the Second Cross. Her seizures are treated as prophecy. The presence in her fits recognizes Guarin through Fulk. In lucidity she is an eleven-year-old whose father burned with his mill. In fit she recites fragments of the voice that bound Fulk.
+Robert can hear Gilbert, help coerced men leave, and stop the fraternity's attacks. Gilbert is a named fight because of his predation. His condition is not his guilt, and healthy members are not automatically innocent. Survivors who reject his commands can help guard the later supply convoy.
 
-She can be left. She can be taken as far as the next church that will hold her. Getting her into reliable care is a meaningful act of protection. If she stays with the band, the band becomes a later fight with her voice in it. If she is placed with Almodis or with Isarn, she survives the winter and is the one who notices when the rye, at the end, stands straight.
+At Hamon's enclosure, captives can be released, witnesses protected, and a public claim challenged before people who can act on it. Hamon may be captured after his champion is stopped, or killed while actively attacking. The plot does not require a modern trial procedure or give Robert power to resolve the royal succession. An allied household and religious witnesses can sustain the immediate change.
 
-## The Leper Constable
+## Hugh's release
 
-**Raimbaut of Saillans** has raised a rogue commandery in a half-ruined castrum above the Drôme. Returned men, some leprous, some burned, some only unable to sleep. He has given them a rule he wrote himself. They ride against the blight and then, when the blight is quiet, against anyone who still has whole skin and stored grain. It is a heresy of chivalry. He will talk, at length, about purity and the living dead. The Crusade marked them. He has decided the mark makes them the proper sword.
+Hugh is found hiding among the people Gilbert claimed to protect. He remembers Robert and fears that speaking will cost other lives. The binding interferes with his voice and movement. He can reveal enough to identify the casket and Blackthorn Hold, but must reject the false master himself.
 
-He is a named fight. He can be heard first. Protecting his uninfected postulants can preserve lives and win help later. Their illness or disfigurement is not what makes his attacks evil; his coercion and predation are.
+Robert brings him to Saint Peter's and protects him while Father Anselm hears his confession and prays. The enemy attacks through the binding and creatures at the churchyard's edge. Robert fights for Hugh's chance to choose; he does not absolve him. Hugh can survive the release and recovery. His continued service later is a visible consequence, rather than a predetermined death.
 
-## The Closed Town
+If Hugh dies while still bound, the enemy uses his body as a hostile mouth. That branch changes testimony and the later encounter, not the goodness of the sacrament or the possibility of Robert's victory. The main story gives protection and release a real chance to succeed.
 
-**Crest** has walled itself, then walled its sick in a second time. **Lambert**, who styles himself bishop there, is a capable frightened administrator, formerly a canon of Valence, irregular in his see and sure of his arithmetic. He has scripture for offering the sick to buy the healthy another winter. The inner wall is the Act III set-piece: a town inside a town, tainted bread distributed as a supposed holy remedy, Latin on the plaster in a hand foreign to the Drôme — *ex abysso locustae*.
+**Turn.** Hugh's testimony, the house records, and the recovered supplies converge on Blackthorn Hold. Robert now knows what must be stopped and whom he is defending.
 
-Lambert is a corrupt office-holder treating souls as kindling. Christians within the town can oppose him and help Guarin reach those he has abandoned. He can be killed. He can be unseated in front of his chapter and left alive. The second is harder and is remembered.
-
-## The Chaplain
-
-Fulk is found in a pilgrimage hospice on the old road, gentle, sorry, and sharing his skin. Guarin helps a frightened man resist his master while a priest of the hospice offers confession and prayer.
-
-He will warn Guarin. He will weep. He will try to name his master and vomit black sclerotia instead of words. Then he will go back to the blight's crumbs — raw rye, flies when the locust-things thicken — because the fear is larger than the shame. Abaddon lets him have small lives so the large one remains property.
-
-He explains how the false apparition persuaded him that obedience could save lives, and how fear kept him obeying after he knew it was wrong. His testimony reveals the donor and the binding. His turn toward Christ contradicts the enemy's claim that a frightened man is beyond help.
-
-The binding is specific. **The naming-syllable stays in his mouth.** Killing him while the knot is tied hatches him: the body splits into a first true demon, still recognizably a priest, and the blight drops the disguise of disease.
-
-The Act III climax is prayer and resistance under attack, followed by a fight against the presence that means to keep Fulk. Guarin protects him and helps him persevere; the hospice priest hears his confession and gives absolution. Guarin is a lay knight and does not absolve him. The scene has no prerequisite that Guarin confess an invented atrocity from the East.
-
-A shriven Fulk dies anyway. The fire has been in him too long. He dies in grace, which is the only thing he wanted since Antioch and the only thing he could take only from another mouth. That is enough.
-
-**Act III bosses:** Raimbaut; Lambert (or his champion and then Lambert); Fulk, rite and body.
-
-**Act III evidence:** Agnes repeating the binding's voice; contaminated provisions disguised as holy remedies; rye whispering the *Te Deum*; the graffiti; Fulk's account; the hatching if the knot stays tied.
-
-**Act III hope:** those protected from Raimbaut or Lambert survive; Fulk can turn toward Christ despite the terror holding him.
+**Durable good.** Captives can return to kin; coerced veterans can leave; a frightened priest can recover; clean supplies move under actual protection.
 
 ---
 
-# Act IV — The Pit in the Grain
+# Act IV — The Hold and the Pit
 
-**Region:** back to La-Motte, then down. The cathedral of this game is a descent through older rooms.
+## Help becomes reciprocal
 
-**Tone:** the enemy's foothold revealed, and the courage to confront it sustained by faith and help from others.
+The people Robert has helped act in return. Alice organizes separate supplies. Godric knows the stores and routes. Oswin carries a duplicate record; Agatha refuses to let witnesses vanish. Wulfstan continues care. Thomas and Anselm offer spiritual help. Veterans who left Gilbert's fraternity can guard people on the road.
 
-## Descent
+These are consequences, not a score that purchases grace. Some help is always available through the main story; optional rescues change which particular people can offer it. The descent must remain possible even if an optional ally is lost.
 
-The way down:
+## Blackthorn Hold
 
-1. The Antonine charnel, where the limbs the fire took are boxed by year.
-2. A Merovingian crypt the brothers keep off the pilgrim circuit, older burials, lime and iron.
-3. A Roman granary and a mithraeum, invented for this precise location. Ancient religious remains supply archaeological depth; they do not establish a living medieval cult or equate Christianity with a soldier-cult. Any earlier encounter with the blight here is fictional history.
-4. A shaft older than the granary, which uses the Roman work the way a hermit crab uses a shell.
+The hold is an invented damaged fortification reused as a guarded provision depot. Its outer yard shows recent human acts: stolen sacks, confinement, a patched palisade, records of forced collections, and a chapel where Hugh's casket has been installed as a false source of safety.
 
-On the walls, if the player reads: older attempts to contain the blight, evidence of the counterfeit's movement, and a fictional list of earlier soundings. War memories can intrude as Abaddon tries to renew Guarin's despair.
+The player frees the people still there and stops the remaining distribution. Allies hold the living route while Robert descends through store pits and a well passage. Beneath them is impossible depth, a supernatural shaft that does not pretend to be excavated Roman or early medieval architecture.
 
-## The truth spoken
+The counterfeit's influence tries to make the knight relive the failed march, shortages, distrust, and the road home. Kindness from those same memories also becomes visible: a shared drink, a man refusing to leave someone, a priest keeping vigil. Despair had made Robert overlook what endured.
 
-Fulk's testimony, records, and evidence in the buried rooms reveal the enemy's foothold. **Prior Isarn**, if alive, helps Guarin understand what must be done:
+## Breaking the foothold
 
-Abaddon can be *unseated* — driven back into the pit — by breaking his foothold and confronting him. Prayer and righteous resistance weaken his hold. Guarin's faith is his strength in this fight; he need not abandon it to win.
+The casket has become the heart of the depot's wrong life. Evidence identifies it; prayer, courage, and righteous resistance make the approach possible. Ordinary efforts to burn it have failed. The fight breaks its protection and exposes the Destroyer's local body below.
 
-The counterfeit must be broken, tainted supplies stopped, and the ovens made safe. Genuine holy things remain aids to the people. Guarin's splinter need not be destroyed. Any separate claim around the Antioch iron is judged on its own evidence.
+The gauntlet is formed from coercion, hunger, false promises, and the locust host. Rescued allies do not automatically reappear as compulsory undead bosses. Robert's devotional splinter does not need to be destroyed, and a blessed attack does not strengthen the enemy.
 
-Clean provisions and a restored place of worship help the living community endure. The Mass strengthens the faithful as they prepare for the descent.
-
-## The gauntlet
-
-The four agents again, transfigured: Durand as a nurse of flies; Raimbaut as a leper-angel in a rule of iron; Lambert as a mitred locust counting souls; Fulk, if the knot held, as the mouth. Then the reliquary, grown into a heart.
-
-Earlier victories affect the descent through their consequences: people saved can offer help, the harmful supplies are no longer in use, and Fulk's testimony can reveal a way forward. Faith sustains Guarin through the gauntlet. Prayer, blessed weapons, and righteous combat do not lengthen it or feed the enemy.
-
-**Act IV boss:** the reliquary-heart, after the gauntlet.
-
-**Act IV evidence:** the enemy's foothold, older attempts to contain it, and a way to break the counterfeit.
-
-**Act IV hope:** help received from those Guarin has helped makes the meaning of his struggle unmistakable.
+**Durable good.** The guarded food route has been interrupted above, while the supernatural foothold is broken below. The living community is already acting to preserve its future.
 
 ---
 
 # Act V — Apollyon
 
-The pit opens in the deepest granary. A black silo the size of a night sky, raining sclerotia, and in it a crowned thing that is locust, knight, and mill together.
+The pit opens into a black granary beyond ordinary dimensions. Abaddon is locust, armored ruler, and grinding mill: a human face, a woman's fall of hair, iron breastplates, a scorpion's sting, and a circlet like a millstone. The bestiary draws from Revelation 9; its combined body is the game's invention.
 
-Abaddon looks like a 12th-century nightmare of Revelation:
+He recounts the war and the suffering at home as if they prove that every rescue is futile. He promises Robert relief from responsibility if he will cease resisting. His courtesy is the courtesy of someone treating a person's exhaustion as property.
 
-- a human face, too calm
-- a woman's fall of hair
-- a lorica of overlapping iron scales
-- a scorpion's last third
-- a king's circlet that is also a millstone
-- around him, the locusts — endgame trash — exactly as John listed them
+Robert has seen the answer. Alice kept people alive; caregivers chose truth; neighbors shared their stores; frightened men rejected cruel commands; Hugh could turn toward Christ. His actions have changed what happened to them. He fights with the will and conviction for which he prayed, through Christ as his strength.
 
-He speaks like a chronicler. He names the suffering Guarin has seen and calls each rescued life a delay before another death. He insists that the world will always return to corruption and that the knight's struggle is wasted. These are the enemy's claims, not the story's judgment.
+Prayer, blessed weapons, and righteous attacks can contribute to victory. The encounter tests martial skill, protection, perseverance, and resistance to the enemy's attacks. There is no required unblessed final blow or hidden rule that successful holy resistance renews Abaddon's power.
 
-Guarin confronts him with the will and conviction for which he prayed. He has seen people choose goodness. He has saved lives. He now knows what he is defending, and Christ is his strength as he fights.
+The Destroyer is driven from the local foothold. The impossible granary becomes a broken shaft. Its grip on the district ends.
 
-The winning attack can be made in Christ's name, with prayer or a blessed weapon. The encounter tests courage, martial skill, and perseverance against the enemy's attacks. There is no requirement to leave the final blow unblessed, and no hidden rule that righteous violence renews Abaddon's power.
+## The ending in 1150
 
-The Destroyer is driven back into the pit. His grip on the valley breaks. The victory fulfills the prayer rather than exposing it as a mistake.
+The relief supply no longer carries the counterfeit's influence. People still need food, work, repair, and care, and the game shows them beginning those things. Alice keeps the household; the mill resumes; seed remains for the next planting. Worship continues. Hugh, if protected, helps someone else keep vigil. Edith asks an ordinary question about the next meal.
 
----
+Stephen remains king and the succession is still contested. Robert has not failed because he did not end every conflict. He has defeated the evil taking hold here and preserved lives whose future is real. The people he loves can act, recover, and help one another.
 
-## The only ending
+He recognizes goodness in his fellow men again and knows that life is worth living and the world worth saving. Christ has been his hope, his will, and his strength. This is the fulfillment of the opening prayer.
 
-Unseating Abaddon is a real victory for the valley and the fulfillment of Guarin's prayer.
+## Encounter and memory boundaries
 
-What must be true when the silo closes:
-
-1. Abaddon's local foothold and the counterfeit that sustains it are broken.
-2. The harmful provisions are stopped and the people can begin rebuilding.
-3. Guarin fights through his faith, with the will and conviction to resist evil.
-4. The lives saved and goodness encountered remain visible in the world after the fight.
-
-The world after is still 1102. Some people are missing hands. The next harvest needs work. The brothers continue caring for patients. Almodis holds the castrum, and the household has a future it can work toward. Agnes, if she lived, notices that the new rye is only rye.
-
-The epilogue gives room to people living: a shared meal, a repaired home, neighbors tending someone who needs them, worship renewed. Guarin can recognize their goodness and receive their love. The suffering he has seen no longer prevents him from seeing what is precious.
-
-He knows that his fight was not in vain. He sees the world as worth saving, life as worth living, and goodness in his fellow men again. He is victorious against the evil that seemed irresistible. Christ has been his hope, his will, and his strength.
-
----
-
-## Guarin's restored hope
-
-The prayer is the through-line. Its answer is strength of will to continue fighting and strength of conviction to have hope. It reaches fulfillment as Guarin comes to understand that his actions matter and that life and his fellow men remain worth loving.
-
-- Act I: he names his despair before Christ at the stone cross. Almodis's care and his own first acts of protection show goodness he has almost lost the ability to see.
-- Act II: he stops harm in the hospital and witnesses courageous service within it. A good outcome endures because someone acted.
-- Act III: he opposes predatory authority, protects the vulnerable, and helps Fulk turn toward Christ. Fear and corruption do not have the final word in a human heart.
-- Act IV: help from others and the consequences of earlier victories sustain him when the enemy tries to make the struggle seem pointless again.
-- Act V: he fights with hope and conviction, defeats the Destroyer, and returns to people whose future he helped preserve.
-
-Hope may be tested throughout the journey. The story's movement is toward its restoration. Spiritual growth and repentance concern the ordinary evil in his own heart as well as the world around him; no hidden atrocity confession replaces the prayer as the central arc.
-
----
-
-## Enemy ladder (campaign)
-
-| Stage | Faces | Notes |
+| Stage | Hostile forces | People to distinguish and protect |
 |---|---|---|
-| Act I | Known parishioners, wolves, the seneschal | Human names first |
-| Act II | Flagellants, rye-men, chaff angels, holy pigs, Durand | Anthony's legend, inverted |
-| Act III | Converted pilgrims, the commandery, Lambert's watch, early locusts, Fulk | Revelation beginning to show through |
-| Act IV | Transfigured lieutenants, the heart | Earlier victories, allies, and resistance to despair |
-| Act V | The locust host as John wrote it; Apollyon | Bestiary drawn from the book they already carry |
+| Act I | Ernald's attacking collectors; first compromised-grain creature. | Household, miller's family, hungry neighbors, injured people. |
+| Act II | Seizure party; the hostile ward intruder. | Patients, caregivers, witnesses, ordinary travelers. |
+| Act III | Gilbert's predatory fraternity; Hamon's enforcers; the binding's attacks. | Coerced veterans, captives, Hugh, townspeople outside the fictional enclosure. |
+| Act IV | Depot guards still attacking; creatures of hunger and confinement; casket-heart. | People released from the hold and allies maintaining supplies. |
+| Act V | Abaddon and the locust host. | The community whose future the fight preserves. |
 
----
+Memory rooms concern the **1147–1148** march, failed siege, illness, pilgrimage, and journey home. They are authored reconstructions of Robert's experiences, not certified historical eyewitness accounts. They contain no personal 1099 conquest, visionary-lance ordeal, cannibalism scene, or compulsory secret-atrocity confession.
 
-## Themes that have to stay in the hand
-
-- Christ answers a sincere prayer for hope, will, guidance, and strength.
-- Guarin wants to fight evil; despair makes him doubt his capacity and the meaning of the fight.
-- Faith enables him to persevere, protect people, and act righteously.
-- Goodness in ordinary people becomes visible beside greed, cruelty, corruption, and fear.
-- Evil in his own heart is something to resist, without making concealed complicity the story's foundation.
-- The counterfeit exploits sacred appearances; genuine prayer, blessings, and sacraments remain good.
-- Illness and disfigurement do not establish a person's wickedness.
-- His victory matters. The world is worth saving, life is worth living, and his struggle is not in vain.
-
----
-
-## Memory-dungeons
-
-If the game uses dreams or war flashbacks, they show the experiences that shook Guarin's hope:
-
-- Antioch: hunger, siege, sickness, and men helping one another endure.
-- The road home: a wounded companion, exhaustion, and the fear that suffering has no end.
-- Jerusalem: the violence and losses he witnessed, alongside the devotion and hopes with which he went east.
-- A quiet remembered kindness that he overlooked while despairing, but can understand differently as hope returns.
-
-The enemy can use these memories to tempt him toward surrender. They contain no cannibalism scene and are not compulsory confessions of an invented personal atrocity. Their eventual meaning includes the goodness that survived within the suffering.
+The governing themes are vows fulfilled in protection, authority tested by responsibility, charity under pressure, faith sustaining courage, and hope made visible through a meaningful victory.
