@@ -340,3 +340,6 @@ Current decision at commit `3aef464`: preserve the four explicitly selected styl
 - [x] Publish 27 independent fixed-eye hairstyle/nose/brow studies in the face gallery.
 - [x] Preserve candidate/source identity and earlier review state.
 - [ ] User reviews F61–F87 and selects combinations.
+
+
+2026-10-06 final browser verification: fresh page contains all 92 cards and F61–F87 at the beginning; compact headers and titles match their drawing IDs. Automatic saving is ready, with no Save button. All 27 served images match provider hashes, and 92 positions are saved while preserving previous relative order. Four publisher tests, six autosave tests and lint pass. User face review remains the next step.
