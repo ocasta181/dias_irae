@@ -1,12 +1,12 @@
 {
-  "sourceDrawings": 18,
-  "paintedFrames": 30,
-  "completedCandidateSheets": 0,
+  "sourceDrawings": 30,
+  "paintedFrames": 51,
+  "completedCandidateSheets": 2,
   "productionApproved": false,
   "rows": [
     {
       "direction": "N",
-      "painted": 3,
+      "painted": 6,
       "poses": [
         {
           "id": "N-01",
@@ -76,19 +76,12 @@
           "quality": "candidate; actual pose/contact measurements pending",
           "page": "N-01-03",
           "reflected": false
-        }
-      ],
-      "complete": false
-    },
-    {
-      "direction": "NE",
-      "painted": 3,
-      "poses": [
+        },
         {
-          "id": "NE-01",
-          "pose": 1,
-          "image": "frames/NE-01.png",
-          "sha256": "68467e667d4b9f000acc996ea01619eade1d58675d1d3b59e1901b25b29d3199",
+          "id": "N-04",
+          "pose": 4,
+          "image": "frames/N-04.png",
+          "sha256": "f6ae0e47808e4a6e51e18164d74b788d72104fb44c03c88908a98fa45b970368",
           "rawCell": [
             0,
             0,
@@ -100,6 +93,86 @@
             "offset": [
               32,
               56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "N-04-06",
+          "reflected": false
+        },
+        {
+          "id": "N-05",
+          "pose": 5,
+          "image": "frames/N-05.png",
+          "sha256": "234ad8f1fa055a5942142e72c77e7a709db52bcddfd7a420c713bc46dcca4208",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "N-04-06",
+          "reflected": false
+        },
+        {
+          "id": "N-06",
+          "pose": 6,
+          "image": "frames/N-06.png",
+          "sha256": "e001d421d427c57e772ad0657b7d2a93d7b83844762560bf405cef296dc2b5b7",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "N-04-06",
+          "reflected": false
+        }
+      ],
+      "complete": false
+    },
+    {
+      "direction": "NE",
+      "painted": 6,
+      "poses": [
+        {
+          "id": "NE-01",
+          "pose": 1,
+          "image": "frames/NE-01.png",
+          "sha256": "0f137087181919d4cf135181713de1528987584ff12d29ec9301f743d6fb4425",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
             ]
           },
           "residualMarkerPixels": 0,
@@ -111,7 +184,7 @@
           "id": "NE-02",
           "pose": 2,
           "image": "frames/NE-02.png",
-          "sha256": "fd6531d9f3002710e13262c01f24d10936ea686a445c0b3d3c5bfe73b2464216",
+          "sha256": "4ed2aad07bcbebdd19bef817c902507ed05ec1096ea190b11153b4ecd1e18723",
           "rawCell": [
             724,
             0,
@@ -123,6 +196,10 @@
             "offset": [
               32,
               56
+            ],
+            "pageShift": [
+              0,
+              0
             ]
           },
           "residualMarkerPixels": 0,
@@ -134,7 +211,7 @@
           "id": "NE-03",
           "pose": 3,
           "image": "frames/NE-03.png",
-          "sha256": "1c2b0a598cb766f562b23c686f036405be8f4120a8ef5b2e7cb2cdd740445ef4",
+          "sha256": "0154c2a84af5b48daa8ee2a8369a5e0fa0744565eaa9cfb5c3ae07a55244fa60",
           "rawCell": [
             1448,
             0,
@@ -146,25 +223,22 @@
             "offset": [
               32,
               56
+            ],
+            "pageShift": [
+              0,
+              0
             ]
           },
           "residualMarkerPixels": 0,
           "quality": "candidate; actual pose/contact measurements pending",
           "page": "NE-01-03",
           "reflected": false
-        }
-      ],
-      "complete": false
-    },
-    {
-      "direction": "E",
-      "painted": 6,
-      "poses": [
+        },
         {
-          "id": "E-01",
-          "pose": 1,
-          "image": "frames/E-01.png",
-          "sha256": "f2448a3009f94eb8abd5ba005c1068a20eef277bd12b2a1e3a6d4cbb0af0bfd4",
+          "id": "NE-04",
+          "pose": 4,
+          "image": "frames/NE-04.png",
+          "sha256": "f63df90f1683bccc743d5cc91bbc1eb62ed1d2734fd6722a65825857e04d4544",
           "rawCell": [
             0,
             0,
@@ -176,6 +250,98 @@
             "offset": [
               32,
               56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "NE-04-06",
+          "reflected": false
+        },
+        {
+          "id": "NE-05",
+          "pose": 5,
+          "image": "frames/NE-05.png",
+          "sha256": "44861eea94349b95d3720e5848dde8efaf880bb37f744a20eee62158aee46413",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "NE-04-06",
+          "reflected": false
+        },
+        {
+          "id": "NE-06",
+          "pose": 6,
+          "image": "frames/NE-06.png",
+          "sha256": "80f0d542e7d45fd3e7696a1ea5df34cd5e516f9fc22ee461063e6910c49e22cd",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "NE-04-06",
+          "reflected": false
+        }
+      ],
+      "complete": false
+    },
+    {
+      "direction": "E",
+      "painted": 12,
+      "poses": [
+        {
+          "id": "E-01",
+          "pose": 1,
+          "image": "frames/E-01.png",
+          "sha256": "ec3b122111e9369f754d188468ce519d68934828193e66088a8fd57c8ad99628",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              28,
+              61
+            ],
+            "pageShift": [
+              -4,
+              5
             ]
           },
           "residualMarkerPixels": 0,
@@ -187,7 +353,7 @@
           "id": "E-02",
           "pose": 2,
           "image": "frames/E-02.png",
-          "sha256": "b7153ad62a9ae51298a65c6d0e963d5bbf29ca08ee083843d2eb1dbfe6923308",
+          "sha256": "cdd710e990bb5cbf186d9681d108833c0d03f98edd5f85315a8ea9b7cd823225",
           "rawCell": [
             724,
             0,
@@ -197,8 +363,12 @@
           "registration": {
             "scale": 0.17679558011049723,
             "offset": [
-              32,
-              56
+              28,
+              61
+            ],
+            "pageShift": [
+              -4,
+              5
             ]
           },
           "residualMarkerPixels": 0,
@@ -210,7 +380,7 @@
           "id": "E-03",
           "pose": 3,
           "image": "frames/E-03.png",
-          "sha256": "cc978b1dbb59c0a39a8fba20c47ed0adf7e89216eb8b4f1f0e4c5f9303b517c6",
+          "sha256": "3b29dd5c3cfc8c8fd697b0c9a1dfbd0ac8305ba299109ebafdf858dc901a5539",
           "rawCell": [
             1448,
             0,
@@ -220,8 +390,12 @@
           "registration": {
             "scale": 0.17679558011049723,
             "offset": [
-              32,
-              56
+              28,
+              61
+            ],
+            "pageShift": [
+              -4,
+              5
             ]
           },
           "residualMarkerPixels": 0,
@@ -233,7 +407,7 @@
           "id": "E-04",
           "pose": 4,
           "image": "frames/E-04.png",
-          "sha256": "d6f3b0c324a2b8b1360798464584d9b3e256147f818c03becde0dec199c2e543",
+          "sha256": "ce40bc33441118989e5e3ea172e8c622b29781a34c064cb253a4643b70356348",
           "rawCell": [
             0,
             0,
@@ -243,8 +417,12 @@
           "registration": {
             "scale": 0.17679558011049723,
             "offset": [
-              32,
-              56
+              30,
+              64
+            ],
+            "pageShift": [
+              -2,
+              8
             ]
           },
           "residualMarkerPixels": 0,
@@ -256,7 +434,7 @@
           "id": "E-05",
           "pose": 5,
           "image": "frames/E-05.png",
-          "sha256": "89781859573d8e3557fbb933bddc93047e10f910b167a498efd11bbfcfb80660",
+          "sha256": "9ba6376ce5153427240322d894430e720a13db9640729bad388018bfc57109d1",
           "rawCell": [
             724,
             0,
@@ -266,8 +444,12 @@
           "registration": {
             "scale": 0.17679558011049723,
             "offset": [
-              32,
-              56
+              30,
+              64
+            ],
+            "pageShift": [
+              -2,
+              8
             ]
           },
           "residualMarkerPixels": 0,
@@ -279,7 +461,7 @@
           "id": "E-06",
           "pose": 6,
           "image": "frames/E-06.png",
-          "sha256": "5d763d170ab1a51c36926f9676a5df0988de78f4f2bc83c15f71a4b4dd8a0198",
+          "sha256": "bd74351756141571f5eb6732f750f8de2fdc24b2b0b489e3a54c227e019986a0",
           "rawCell": [
             1448,
             0,
@@ -289,17 +471,183 @@
           "registration": {
             "scale": 0.17679558011049723,
             "offset": [
-              32,
-              56
+              30,
+              64
+            ],
+            "pageShift": [
+              -2,
+              8
             ]
           },
           "residualMarkerPixels": 0,
           "quality": "candidate; actual pose/contact measurements pending",
           "page": "E-04-06",
           "reflected": false
+        },
+        {
+          "id": "E-07",
+          "pose": 7,
+          "image": "frames/E-07.png",
+          "sha256": "1a3738222a468a64343581134e0460e57305a95b7032f8024d873d203d577660",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              26,
+              57
+            ],
+            "pageShift": [
+              -6,
+              1
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "E-07-09",
+          "reflected": false
+        },
+        {
+          "id": "E-08",
+          "pose": 8,
+          "image": "frames/E-08.png",
+          "sha256": "39205ac521032cd029965e328bc381ecaf608609de9938400a235bc9faf8e687",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              26,
+              57
+            ],
+            "pageShift": [
+              -6,
+              1
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "E-07-09",
+          "reflected": false
+        },
+        {
+          "id": "E-09",
+          "pose": 9,
+          "image": "frames/E-09.png",
+          "sha256": "993a3b9c2cb34e291fc8376088627145aa93cd0f58f2a9759e9e2f4e9fb9dd56",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              26,
+              57
+            ],
+            "pageShift": [
+              -6,
+              1
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "E-07-09",
+          "reflected": false
+        },
+        {
+          "id": "E-10",
+          "pose": 10,
+          "image": "frames/E-10.png",
+          "sha256": "6ff88bcc14928d400ed348c3126e059a8dd8f59449c52e3114e9e7ce5d74249b",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              29,
+              63
+            ],
+            "pageShift": [
+              -3,
+              7
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "E-10-12",
+          "reflected": false
+        },
+        {
+          "id": "E-11",
+          "pose": 11,
+          "image": "frames/E-11.png",
+          "sha256": "12f3114109282c0efed669a007dc7182ab1dce32610f1b214aa4305d814e666c",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              29,
+              63
+            ],
+            "pageShift": [
+              -3,
+              7
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "E-10-12",
+          "reflected": false
+        },
+        {
+          "id": "E-12",
+          "pose": 12,
+          "image": "frames/E-12.png",
+          "sha256": "0cfcd0eb43d4b9f0162aff518ed3298715398a99f81edbdb224eada617c3dedf",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              29,
+              63
+            ],
+            "pageShift": [
+              -3,
+              7
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending",
+          "page": "E-10-12",
+          "reflected": false
         }
       ],
-      "complete": false
+      "complete": true
     },
     {
       "direction": "SE",
@@ -309,7 +657,7 @@
           "id": "SE-01",
           "pose": 1,
           "image": "frames/SE-01.png",
-          "sha256": "777c90f4e55b222bed18330ce642944095e493f82b846b6552e22d2740206e26",
+          "sha256": "c73c197e8b60c6f408f4332ca0920d857794c40d68b4d26c37274739543617b3",
           "rawCell": [
             0,
             0,
@@ -321,6 +669,10 @@
             "offset": [
               32,
               56
+            ],
+            "pageShift": [
+              0,
+              0
             ]
           },
           "residualMarkerPixels": 0,
@@ -332,7 +684,7 @@
           "id": "SE-02",
           "pose": 2,
           "image": "frames/SE-02.png",
-          "sha256": "c98cff34b74f873199b5a774b6a8be49f5cc644ad30956ccbf7c1a19d92119dd",
+          "sha256": "5815605dc51c6c9267aee9117244df1b90a15e133430e03b0159eeddc4e4ef9d",
           "rawCell": [
             724,
             0,
@@ -344,6 +696,10 @@
             "offset": [
               32,
               56
+            ],
+            "pageShift": [
+              0,
+              0
             ]
           },
           "residualMarkerPixels": 0,
@@ -355,7 +711,7 @@
           "id": "SE-03",
           "pose": 3,
           "image": "frames/SE-03.png",
-          "sha256": "588540122b0f1f11241e79bac0daea5d3dc938103d69d500f47d71fbd9acd584",
+          "sha256": "3ef1e8f0274d24a2f5469b8001cbada458ba9d8cf7f0992b919dba71fa48a720",
           "rawCell": [
             1448,
             0,
@@ -367,6 +723,10 @@
             "offset": [
               32,
               56
+            ],
+            "pageShift": [
+              0,
+              0
             ]
           },
           "residualMarkerPixels": 0,
@@ -461,7 +821,7 @@
           "id": "SW-07",
           "pose": 7,
           "image": "frames/SW-07.png",
-          "sha256": "768f43d82ae001ff146ddeca2cc61987ed32196efc2b56bc52c1abc4bf23077f",
+          "sha256": "4c1c9f70f23c6c2d0b9a51337ae873ccd616be93f9611f5373e27948da1dccaf",
           "page": "SE-01-03",
           "reflected": true,
           "sourceFacing": "SE",
@@ -472,7 +832,7 @@
           "id": "SW-08",
           "pose": 8,
           "image": "frames/SW-08.png",
-          "sha256": "62c25f811e5b683f53f3721f818294229af92fe6b053405d09fa21982cccaa89",
+          "sha256": "d398c0c74b4c66240be60b78a233c9878b675f0c78d63f2253986a1e743e1424",
           "page": "SE-01-03",
           "reflected": true,
           "sourceFacing": "SE",
@@ -483,7 +843,7 @@
           "id": "SW-09",
           "pose": 9,
           "image": "frames/SW-09.png",
-          "sha256": "4ac389fe6d375ae113a8b852feca24b2fc25eda4c0311a99269cd135996584d7",
+          "sha256": "771115245432557c86e5b5bfc79e46b60d76e66241a3b2b280e4d9c7a3437cfd",
           "page": "SE-01-03",
           "reflected": true,
           "sourceFacing": "SE",
@@ -495,13 +855,79 @@
     },
     {
       "direction": "W",
-      "painted": 6,
+      "painted": 12,
       "poses": [
+        {
+          "id": "W-01",
+          "pose": 1,
+          "image": "frames/W-01.png",
+          "sha256": "50cb0b4357640460af21930a31a8cf53be1ef55852b742ac7d04827ac85fc463",
+          "page": "E-07-09",
+          "reflected": true,
+          "sourceFacing": "E",
+          "sourcePose": 7,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "W-02",
+          "pose": 2,
+          "image": "frames/W-02.png",
+          "sha256": "8b6c0db0964ff7351dc6d758a87afe8f95362f60d056faafff6528a4304f19e0",
+          "page": "E-07-09",
+          "reflected": true,
+          "sourceFacing": "E",
+          "sourcePose": 8,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "W-03",
+          "pose": 3,
+          "image": "frames/W-03.png",
+          "sha256": "55386ebdc79d6bd6a94e296829c3769655c170ca64d4aaf6d76f3e71ec0b78ff",
+          "page": "E-07-09",
+          "reflected": true,
+          "sourceFacing": "E",
+          "sourcePose": 9,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "W-04",
+          "pose": 4,
+          "image": "frames/W-04.png",
+          "sha256": "5f70e3981229c9b7c78c4c9f983c06dff7a8629d247e3dddd828c3d950b1c21a",
+          "page": "E-10-12",
+          "reflected": true,
+          "sourceFacing": "E",
+          "sourcePose": 10,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "W-05",
+          "pose": 5,
+          "image": "frames/W-05.png",
+          "sha256": "abcb2cefa282208b207f3aba9e5b643d2bdf151e2ff5da49a2bf8f7c92d94bed",
+          "page": "E-10-12",
+          "reflected": true,
+          "sourceFacing": "E",
+          "sourcePose": 11,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "W-06",
+          "pose": 6,
+          "image": "frames/W-06.png",
+          "sha256": "1f75f4ce4e7e2455843d88f4a7beac478d87420766d7d3b5b248da45546abbe7",
+          "page": "E-10-12",
+          "reflected": true,
+          "sourceFacing": "E",
+          "sourcePose": 12,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
         {
           "id": "W-07",
           "pose": 7,
           "image": "frames/W-07.png",
-          "sha256": "44359c23604b07c65c1330878ebd14a30f7f3a146925ebbac43809983cb5f595",
+          "sha256": "35445ca7d3b3f56e79fb1d4ef50d834b68dab867495af81e884aa8c9af5240ba",
           "page": "E-01-03",
           "reflected": true,
           "sourceFacing": "E",
@@ -512,7 +938,7 @@
           "id": "W-08",
           "pose": 8,
           "image": "frames/W-08.png",
-          "sha256": "69503971cdd705d465433d45cf1bf6c9bdad5e54332d88c417e487bf32b3b5a3",
+          "sha256": "096cdf80086062b201288cd4fc45498cbb6513052b3432dac19433aa3ab44e69",
           "page": "E-01-03",
           "reflected": true,
           "sourceFacing": "E",
@@ -523,7 +949,7 @@
           "id": "W-09",
           "pose": 9,
           "image": "frames/W-09.png",
-          "sha256": "797d981ba1b403dbb07879bd74f43c2563f548da943b45c70f57c22eb71790ca",
+          "sha256": "8d092401f99ed2411653fbaa1145282865a49a664fe966f2a180a8a05d060120",
           "page": "E-01-03",
           "reflected": true,
           "sourceFacing": "E",
@@ -534,7 +960,7 @@
           "id": "W-10",
           "pose": 10,
           "image": "frames/W-10.png",
-          "sha256": "04a1d9e2dcca681febb0c3f626161bb81bbd248379de9692ca5ae64c0eb9c8f4",
+          "sha256": "ace2360b5160908ee7771e6b7547be9bde0a1b899c103a202002c24733d77881",
           "page": "E-04-06",
           "reflected": true,
           "sourceFacing": "E",
@@ -545,7 +971,7 @@
           "id": "W-11",
           "pose": 11,
           "image": "frames/W-11.png",
-          "sha256": "e7603a5c37785d7bfe649b034732081e02997abc27190f3f65356bf2f08d5eb4",
+          "sha256": "d17692cfc44cccc96476bdc3559f4c21528359f384d85ce9ae4b0956ecb52ae1",
           "page": "E-04-06",
           "reflected": true,
           "sourceFacing": "E",
@@ -556,7 +982,7 @@
           "id": "W-12",
           "pose": 12,
           "image": "frames/W-12.png",
-          "sha256": "38d4694e152c6c0b2bd25e8b1bf57fb16a50fd3c1416733ed14a991cb5c25dd4",
+          "sha256": "3d0b40f66229296d601bd4c0a683872b83bf0417dfab11d8be5769968bf386ba",
           "page": "E-04-06",
           "reflected": true,
           "sourceFacing": "E",
@@ -564,17 +990,17 @@
           "quality": "candidate; actual pose/contact measurements pending"
         }
       ],
-      "complete": false
+      "complete": true
     },
     {
       "direction": "NW",
-      "painted": 3,
+      "painted": 6,
       "poses": [
         {
           "id": "NW-07",
           "pose": 7,
           "image": "frames/NW-07.png",
-          "sha256": "6f35c06f89c42966fda5024062d6b5ef5731b0c4c5772ee5ed97fc0e6d23be7c",
+          "sha256": "7a52bcb7db2b5b95f173f5164328d7ab5612e9888e0d940d0bd51d645b4127e9",
           "page": "NE-01-03",
           "reflected": true,
           "sourceFacing": "NE",
@@ -585,7 +1011,7 @@
           "id": "NW-08",
           "pose": 8,
           "image": "frames/NW-08.png",
-          "sha256": "318c802f2d45c33ce03755c614e0c8650bec2085bea7425bcb659535d210011d",
+          "sha256": "97262acb7f8ee6b7f54d88931fa1b99fac6ba51e2d2d85ddc72c9f08cbdc11ce",
           "page": "NE-01-03",
           "reflected": true,
           "sourceFacing": "NE",
@@ -596,11 +1022,44 @@
           "id": "NW-09",
           "pose": 9,
           "image": "frames/NW-09.png",
-          "sha256": "93577c2aa1f660a12824717029d6cfdc023ce71aae3d37f539c5c8efc1fcb82d",
+          "sha256": "82dd239faa6c2b2ef57efb21c7a6c950826f77ae0b564f87a9e1d780e6d52133",
           "page": "NE-01-03",
           "reflected": true,
           "sourceFacing": "NE",
           "sourcePose": 3,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "NW-10",
+          "pose": 10,
+          "image": "frames/NW-10.png",
+          "sha256": "12d0e65ed4ced491ecf3b43e6effd2ff1f3b84eea1047eacb57c0abad337a0c7",
+          "page": "NE-04-06",
+          "reflected": true,
+          "sourceFacing": "NE",
+          "sourcePose": 4,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "NW-11",
+          "pose": 11,
+          "image": "frames/NW-11.png",
+          "sha256": "be5b91bda1907424122323bcce94252448d57cf9ddfecb365c954ded71d66dee",
+          "page": "NE-04-06",
+          "reflected": true,
+          "sourceFacing": "NE",
+          "sourcePose": 5,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "NW-12",
+          "pose": 12,
+          "image": "frames/NW-12.png",
+          "sha256": "bdb580628992cf69307dbc2447aa54df2a9939c4204590d15c3596b51492043b",
+          "page": "NE-04-06",
+          "reflected": true,
+          "sourceFacing": "NE",
+          "sourcePose": 6,
           "quality": "candidate; actual pose/contact measurements pending"
         }
       ],

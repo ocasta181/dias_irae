@@ -1,0 +1,102 @@
+{
+  "tool": "built-in image_gen",
+  "actual_input": {
+    "prompt": "Use case: precise-object-edit. Draw exactly THREE complete whole-body wolf game sprites in the supplied wide registered template, one per bordered cell, ordered left to right. Image 1 is the ORIGINAL approved appearance basis: preserve its huge broad head, tiny squat torso, very short thick canine legs, small weary eyes, ears, grey-brown coat markings and gritty matte dry-painted flat 2D game medium. Image 2 is a fresh pose-shaped authoring template with the exact silhouettes/contact markers. Image 3 is the literal approved skeletal pose sequence. Geometry comes from images 2 and 3; image 1 supplies appearance only. Do not substitute the standing pose of image 1. No prior failed painting is an input.\nAll three face rear three-quarter, looking upper-right from the same 45-degree elevated orthographic camera. The animal remains a quadruped with a horizontal canine torso viewed from above, never an upright/biped creature. Fill the posed regions with one organically connected furry wolf per cell, with correct canine stifle/hock and elbow/carpus anatomy. Keep the head/spine/camera/scale and coat features identical across all three; only the specified limbs change. No 3D rendering, realistic tall anatomy, enlarged eyes, exposed paw pads, extra limbs, background props or cast shadow.\nEach cell is exactly 128×128 logical units, independent local coordinates. Keep every cyan cross at the paw UNDERSIDE EDGE MIDPOINT while painting, then erase the crosses. Respect planted versus swinging identities and all joint rows below; limbs may naturally occlude but must not relocate. Retain all THREE black cell borders, the full wide canvas, original cell margins and solid pure #00ff00 background; do not zoom, crop, recenter or rearrange. No labels or extra figures.\nCOLUMN 1: approved NE walking pose 4/12. Spine/hip 52.69,92.44; shoulder 75.31,76.44.\nLH PLANTED: (47.03,88.44) → (52.87,90.47) → (45.26,101.01) → (48.09,103.25)\nLF PLANTED: (69.66,72.44) → (69.04,80.63) → (76.37,79.71) → (77.08,82.75)\nRH SWING: (58.34,96.44) → (60.00,103.60) → (50.85,110.97) → (54.73,111.54)\nRF PLANTED: (80.97,80.44) → (74.07,88.91) → (74.96,96.71) → (75.67,99.75)\n\nCOLUMN 2: approved NE walking pose 5/12. Spine/hip 52.69,92.44; shoulder 75.31,76.44.\nLH PLANTED: (47.03,88.44) → (51.40,92.63) → (43.14,102.51) → (45.97,104.75)\nLF PLANTED: (69.66,72.44) → (67.16,81.58) → (74.25,81.21) → (74.96,84.25)\nRH SWING: (58.34,96.44) → (65.74,95.37) → (58.07,105.87) → (61.96,106.43)\nRF PLANTED: (80.97,80.44) → (74.09,88.94) → (72.84,98.21) → (73.55,101.25)\n\nCOLUMN 3: approved NE walking pose 6/12. Spine/hip 52.69,92.44; shoulder 75.31,76.44.\nLH PLANTED: (47.03,88.44) → (49.62,94.69) → (41.02,104.01) → (43.85,106.25)\nLF PLANTED: (69.66,72.44) → (65.58,81.95) → (72.13,82.71) → (72.84,85.75)\nRH SWING: (58.34,96.44) → (66.47,93.15) → (63.50,103.95) → (66.80,105.51)\nRF SWING: (80.97,80.44) → (74.05,88.88) → (71.41,98.81) → (72.52,101.46)\nVIEW LOCK: The nose points to TWO OCLOCK; rump is lower-left, head upper-right. Show the back/top of the skull and back, not the face.\nCOLUMN 1 head/neck attachment 82.38,58.72; muzzle endpoint 97.94,46.00 in the local 128-square cell. Preserve this projection.\nCOLUMN 2 head/neck attachment 82.38,58.72; muzzle endpoint 97.94,46.00 in the local 128-square cell. Preserve this projection.\nCOLUMN 3 head/neck attachment 82.38,58.72; muzzle endpoint 97.94,46.00 in the local 128-square cell. Preserve this projection.\nRear-view head rule: preserve a LEVEL neutral canine neck and head, aligned with its horizontal spine. Show the back of the huge skull and ears; the small snout is naturally hidden behind the head. Do not lift the nose skyward, extend the neck, show an upward-facing muzzle or depict a howl. This is walking, not howling. The whole animal axis is about 35 degrees up-right on screen.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/canonical-crop.png",
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/NE-04-06.png",
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/NE-04-06.png"
+    ],
+    "transparent_background": false
+  },
+  "originalPath": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-30169451-fa7a-4ae4-9a72-f27518966959.png",
+  "rawSha256": "36923201fe6d7060cd5250b35292385785890f2dba73872ee40a66e5c784aecf",
+  "dimensions": [
+    2172,
+    724
+  ],
+  "frames": [
+    {
+      "id": "NE-04",
+      "pose": 4,
+      "image": "frames/NE-04.png",
+      "sha256": "f63df90f1683bccc743d5cc91bbc1eb62ed1d2734fd6722a65825857e04d4544",
+      "rawCell": [
+        0,
+        0,
+        724,
+        724
+      ],
+      "registration": {
+        "scale": 0.17679558011049723,
+        "offset": [
+          32,
+          56
+        ],
+        "pageShift": [
+          0,
+          0
+        ]
+      },
+      "residualMarkerPixels": 0,
+      "quality": "candidate; actual pose/contact measurements pending"
+    },
+    {
+      "id": "NE-05",
+      "pose": 5,
+      "image": "frames/NE-05.png",
+      "sha256": "44861eea94349b95d3720e5848dde8efaf880bb37f744a20eee62158aee46413",
+      "rawCell": [
+        724,
+        0,
+        724,
+        724
+      ],
+      "registration": {
+        "scale": 0.17679558011049723,
+        "offset": [
+          32,
+          56
+        ],
+        "pageShift": [
+          0,
+          0
+        ]
+      },
+      "residualMarkerPixels": 0,
+      "quality": "candidate; actual pose/contact measurements pending"
+    },
+    {
+      "id": "NE-06",
+      "pose": 6,
+      "image": "frames/NE-06.png",
+      "sha256": "80f0d542e7d45fd3e7696a1ea5df34cd5e516f9fc22ee461063e6910c49e22cd",
+      "rawCell": [
+        1448,
+        0,
+        724,
+        724
+      ],
+      "registration": {
+        "scale": 0.17679558011049723,
+        "offset": [
+          32,
+          56
+        ],
+        "pageShift": [
+          0,
+          0
+        ]
+      },
+      "residualMarkerPixels": 0,
+      "quality": "candidate; actual pose/contact measurements pending"
+    }
+  ],
+  "failedArtInputs": false,
+  "noseObservations": [],
+  "pageShift": [
+    0,
+    0
+  ],
+  "registration": "One uniform page/cell scale and one shared page translation from measured profile nose tips to canonical (144,126); no per-pose fitting, silhouette scaling or runtime parts. Other views retain the fixed crop."
+}

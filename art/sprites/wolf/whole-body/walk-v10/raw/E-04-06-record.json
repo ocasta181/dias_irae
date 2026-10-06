@@ -20,7 +20,7 @@
       "id": "E-04",
       "pose": 4,
       "image": "frames/E-04.png",
-      "sha256": "d6f3b0c324a2b8b1360798464584d9b3e256147f818c03becde0dec199c2e543",
+      "sha256": "ce40bc33441118989e5e3ea172e8c622b29781a34c064cb253a4643b70356348",
       "rawCell": [
         0,
         0,
@@ -30,8 +30,12 @@
       "registration": {
         "scale": 0.17679558011049723,
         "offset": [
-          32,
-          56
+          30,
+          64
+        ],
+        "pageShift": [
+          -2,
+          8
         ]
       },
       "residualMarkerPixels": 0,
@@ -41,7 +45,7 @@
       "id": "E-05",
       "pose": 5,
       "image": "frames/E-05.png",
-      "sha256": "89781859573d8e3557fbb933bddc93047e10f910b167a498efd11bbfcfb80660",
+      "sha256": "9ba6376ce5153427240322d894430e720a13db9640729bad388018bfc57109d1",
       "rawCell": [
         724,
         0,
@@ -51,8 +55,12 @@
       "registration": {
         "scale": 0.17679558011049723,
         "offset": [
-          32,
-          56
+          30,
+          64
+        ],
+        "pageShift": [
+          -2,
+          8
         ]
       },
       "residualMarkerPixels": 0,
@@ -62,7 +70,7 @@
       "id": "E-06",
       "pose": 6,
       "image": "frames/E-06.png",
-      "sha256": "5d763d170ab1a51c36926f9676a5df0988de78f4f2bc83c15f71a4b4dd8a0198",
+      "sha256": "bd74351756141571f5eb6732f750f8de2fdc24b2b0b489e3a54c227e019986a0",
       "rawCell": [
         1448,
         0,
@@ -72,8 +80,12 @@
       "registration": {
         "scale": 0.17679558011049723,
         "offset": [
-          32,
-          56
+          30,
+          64
+        ],
+        "pageShift": [
+          -2,
+          8
         ]
       },
       "residualMarkerPixels": 0,
@@ -81,5 +93,23 @@
     }
   ],
   "failedArtInputs": false,
-  "registration": "One uniform page/cell scale, fixed whole-frame placement; no per-silhouette fitting or runtime parts."
+  "noseObservations": [
+    [
+      145.50276243093924,
+      118.32044198895028
+    ],
+    [
+      145.67955801104972,
+      118.23204419889503
+    ],
+    [
+      145.67955801104972,
+      118.32044198895028
+    ]
+  ],
+  "pageShift": [
+    -2,
+    8
+  ],
+  "registration": "One uniform page/cell scale and one shared page translation from measured profile nose tips to canonical (144,126); no per-pose fitting, silhouette scaling or runtime parts. Other views retain the fixed crop."
 }

@@ -31,7 +31,7 @@ let position = [450, 420];
 let extent;
 let scheduled = [];
 let scenarioTime = 0;
-const characters = { guarin: { root: "../", size: 160 }, wolf: { root: "../../wolf/whole-body/", size: 96 }, "wolf-stick": { root: "../../wolf/whole-body/", size: 96, direction: "E" }, human: { root: "../locomotion/stick-v01/", size: 160, review: "README.md", assessment: "README.md" } };
+const characters = { guarin: { root: "../", size: 160 }, wolf: { root: "../../wolf/whole-body/", size: 96, metadata: "walk-v10/atlas.json", review: "walk-v10/README.md", assessment: "walk-v10/README.md" }, "wolf-stick": { root: "../../wolf/whole-body/", size: 96, direction: "E" }, human: { root: "../locomotion/stick-v01/", size: 160, review: "README.md", assessment: "README.md" } };
 let characterId = "guarin";
 let loadVersion = 0;
 let loading = false;
@@ -96,7 +96,7 @@ async function loadCharacter(id) {
   loading = true;
   element("load-status").textContent = `Loading ${id}…`;
   try {
-    const response = await fetch(`${characters[id].root}atlas.json`, { cache: "no-store" });
+    const response = await fetch(`${characters[id].root}${characters[id].metadata ?? "atlas.json"}`, { cache: "no-store" });
     if (!response.ok) throw new Error(`Sheet data unavailable (${response.status})`);
     let nextAtlas = await response.json();
     if (!Object.keys(nextAtlas.directions).length || !nextAtlas.clips.idle) throw new Error("Required starting direction or idle clip is missing.");
@@ -291,6 +291,14 @@ function draw() {
       const [px, py] = mark.point.map((value, index) => position[index] + (value - frame.trimOffset[index] - frame.pivot[index]) * scale);
       context.fillStyle = mark.planted ? "#7cc887" : "#e6a75d";
       context.fillRect(px - 2, py - 2, 4, 4);
+    }
+    if (frame.poseGuide) {
+      context.save();
+      context.translate(position[0] - frame.pivot[0] * scale, position[1] - frame.pivot[1] * scale);
+      context.scale(scale, scale); context.strokeStyle = element("background").value === "light" ? "#111" : "#eee";
+      context.lineWidth = 1.4; context.lineCap = "round"; context.lineJoin = "round";
+      for (const points of frame.poseGuide.lines) { context.beginPath(); context.moveTo(...points[0]); for (const point of points.slice(1)) context.lineTo(...point); context.stroke(); }
+      context.restore();
     }
   }
   updateStrip(page, clip);
