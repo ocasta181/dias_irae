@@ -180,7 +180,85 @@
       "controlSha256": "71969a98bc9376b2f90369b0e7849bd83b9102742424ef09ed346e6c3c2baaa8",
       "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/N-07-09.png",
       "request": "requests/N-07-09.json",
-      "status": "pending"
+      "status": "drawn candidate",
+      "record": "raw/N-07-09-record.json",
+      "frames": [
+        {
+          "id": "N-07",
+          "pose": 7,
+          "image": "frames/N-07.png",
+          "sha256": "61baab295df877804f755caabcf6c4cb9159050044b4533cb8435f0dd0e57690",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "N-08",
+          "pose": 8,
+          "image": "frames/N-08.png",
+          "sha256": "1818a5d1e8eb0519eb9e364a2df0a5052b9d8ed8a589bd229afa2609e8299e5b",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "N-09",
+          "pose": 9,
+          "image": "frames/N-09.png",
+          "sha256": "af74fc7a59dbbbe1fe6405b39168f498333dd4e2fbabc707294cd835c0fee833",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        }
+      ]
     },
     {
       "id": "N-10-12",
@@ -194,7 +272,85 @@
       "controlSha256": "2510b31974a4999b23dc5d33f5843b6ff7a4f4d2ce0084bbdcb93e8f7d6c2d10",
       "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/N-10-12.png",
       "request": "requests/N-10-12.json",
-      "status": "pending"
+      "status": "drawn candidate",
+      "record": "raw/N-10-12-record.json",
+      "frames": [
+        {
+          "id": "N-10",
+          "pose": 10,
+          "image": "frames/N-10.png",
+          "sha256": "20226258a758e96128f44c9a2f629312f9aacf7e5321670defbfbb385cd42034",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "N-11",
+          "pose": 11,
+          "image": "frames/N-11.png",
+          "sha256": "2add71c39429900afb50206b13b5e087b827d7294c9d36f3b7b7e7553478b29a",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "N-12",
+          "pose": 12,
+          "image": "frames/N-12.png",
+          "sha256": "8e2b6f23ba0117fd75bedf75325e7bb8e914380d9146192efc68e184f34b467b",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        }
+      ]
     },
     {
       "id": "NE-01-03",
@@ -392,7 +548,9 @@
       "controlSha256": "ba505598d2c7b2b35aac85d64da0de9c194a740034313fee1b54113aefc430f9",
       "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/NE-07-09.png",
       "request": "requests/NE-07-09.json",
-      "status": "pending"
+      "status": "held back: green interior hind-leg defect in pose 9 and raised muzzle",
+      "record": "raw/NE-07-09-held-v01-record.json",
+      "heldRecord": "raw/NE-07-09-held-v01-record.json"
     },
     {
       "id": "NE-10-12",
@@ -406,7 +564,85 @@
       "controlSha256": "4567202302b30ce8c25d922861721d3bc85b81fe433d06f280a33fc96f106cd2",
       "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/NE-10-12.png",
       "request": "requests/NE-10-12.json",
-      "status": "pending"
+      "status": "drawn candidate",
+      "record": "raw/NE-10-12-record.json",
+      "frames": [
+        {
+          "id": "NE-10",
+          "pose": 10,
+          "image": "frames/NE-10.png",
+          "sha256": "0a4e08fa8cd83a40c29f3ba25d768eb451cf4907cffeaf935fe766b18c2a1bea",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "NE-11",
+          "pose": 11,
+          "image": "frames/NE-11.png",
+          "sha256": "fb22e72d515c787e8250fcdbd27777b4000cfaf974a8c4936edc91072cb36851",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "NE-12",
+          "pose": 12,
+          "image": "frames/NE-12.png",
+          "sha256": "d3b6387ec2a48ff5f620e42a066c9fc469e648b3bdef91a0b8051d4b910f1ed6",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        }
+      ]
     },
     {
       "id": "E-01-03",
@@ -1002,7 +1238,85 @@
       "controlSha256": "372acd639cd05e24a2cbfe385535650a1432d27de4c8f0ba9def2b3075fe4f0a",
       "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/S-04-06.png",
       "request": "requests/S-04-06.json",
-      "status": "pending"
+      "status": "drawn candidate",
+      "record": "raw/S-04-06-record.json",
+      "frames": [
+        {
+          "id": "S-04",
+          "pose": 4,
+          "image": "frames/S-04.png",
+          "sha256": "3687bbba89df448e62d62032c98c45c9ed34924c5bc7842d0a6255319f29bfc4",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "S-05",
+          "pose": 5,
+          "image": "frames/S-05.png",
+          "sha256": "7b6070851030fc404d3753602896be27c91d6fffc607529e6a36ad4585bcb60a",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "S-06",
+          "pose": 6,
+          "image": "frames/S-06.png",
+          "sha256": "56a76c8cabe0763a13574e8df027002d6196196beb586d429238460efad94c49",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        }
+      ]
     },
     {
       "id": "S-07-09",
@@ -1016,7 +1330,85 @@
       "controlSha256": "7a1b7e092434f372265b14d7b70893413ed014d29bde31b584e36daba5b2cedf",
       "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/S-07-09.png",
       "request": "requests/S-07-09.json",
-      "status": "pending"
+      "status": "drawn candidate",
+      "record": "raw/S-07-09-record.json",
+      "frames": [
+        {
+          "id": "S-07",
+          "pose": 7,
+          "image": "frames/S-07.png",
+          "sha256": "7bc860f8a76a09d5ea4c570882d8cc1fee8d6b522b9ad37cf37fcf934a2c6971",
+          "rawCell": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "S-08",
+          "pose": 8,
+          "image": "frames/S-08.png",
+          "sha256": "923425cf3aa47f356d8d27750578774ab586f4c4e70f96ac7ddda76ac766a38e",
+          "rawCell": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        },
+        {
+          "id": "S-09",
+          "pose": 9,
+          "image": "frames/S-09.png",
+          "sha256": "23657e3f908ed74afa18b0b9809415f507adfe4ba71b2712bc93843fc7689551",
+          "rawCell": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "registration": {
+            "scale": 0.17679558011049723,
+            "offset": [
+              32,
+              56
+            ],
+            "pageShift": [
+              0,
+              0
+            ]
+          },
+          "residualMarkerPixels": 0,
+          "quality": "candidate; actual pose/contact measurements pending"
+        }
+      ]
     },
     {
       "id": "S-10-12",
