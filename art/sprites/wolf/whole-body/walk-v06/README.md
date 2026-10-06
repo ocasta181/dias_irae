@@ -1,6 +1,6 @@
 # Twelve distinct wolf walk drawings
 
-The user requires twelve different whole-body drawings across one second of walking, with the original 36 logical px/s travel. The eight-frame speed-up is withdrawn. The live lab now defaults to the twelve-pose bare stick plan, with controllable movement and a paused one-frame-per-press view. Its separate painted view retains the rejected old study; no replacement painted motion is approved.
+The user requires twelve different whole-body drawings across one second of walking, with the original 36 logical px/s travel. The eight-frame speed-up is withdrawn. The lab's upper selector now separates Wolf · stick figure from Wolf · painted. Both use the shared right-panel playback setting and facing buttons. The user approved the twelve-pose stick motion on 2026-10-06; the painted choice retains the rejected E-only old study, and no replacement painted motion is approved.
 
 Visibility decision at `5abd966`, confidence 99%: show current production status, all twelve new guides and the held-back trials on the same local server, linked from the motion lab. This exposes progress without presenting planned diagrams or rejected trials as a completed replacement.
 

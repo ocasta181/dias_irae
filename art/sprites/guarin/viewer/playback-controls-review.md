@@ -12,7 +12,11 @@ Success criteria:
 - [x] Continuous/manual playback is a right-panel setting for all four choices.
 - [x] Each available direction steps correctly without resetting the pose or moving the root.
 - [x] Repeats, input editing, focus loss, loop wrap and original continuous playback retain their tested behavior.
-- [ ] Verify the live page, responsive controls, character switching and native keyboard stepping.
-- [ ] Save evidence and update the production checklist; commit and push.
+- [x] Verify the live page, responsive controls, character switching and native keyboard stepping.
+- [x] Save evidence and update the production checklist; commit and push.
 
 Initial verification: 63 geometry and playback tests pass, including all directions of all four variants, diagonal manual keyboard facing, per-press stepping, manual Guarin action clips, shared mode retention, disabled autoplay in manual mode, the selector structure and unchanged pose geometry.
+
+Native browser verification: the wolf stick steps N/NE/E/SE/S/SW/W/NW through successive poses 2–9 without resetting at a turn. Human NE/NW step correctly. The painted wolf steps its eight-frame E clip; its other headings are disabled. Switching to Guarin retains manual mode and steps SW; disabling manual mode restores its SW sword strike. Keyboard A then Space selects W and advances once. The upper menu contains all four choices and the extra view dropdown is absent.
+
+At 1440 px, the Playback and Facing panels are physically to the right of the canvas. `shared-controls-proof.png` captures this actual page. At 390 px, controls wrap below the canvas without horizontal overflow and manual keyboard input still works. The temporary viewport override is restored. Character and mode choices remain transient inspection state; direct links select their character and fresh loads start in continuous mode. Approval and production-art limitations are unchanged.
