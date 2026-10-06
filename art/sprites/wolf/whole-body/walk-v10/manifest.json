@@ -1,0 +1,321 @@
+{
+  "decision": {
+    "commit": "07962d5",
+    "confidence": 0.99,
+    "instruction": "2026-10-06 user explicitly says to continue the existing approach and fill every approved stick frame first; no AniDoc upload."
+  },
+  "originalReference": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/canonical-crop.png",
+  "originalSha256": "ce1e63c559fa3e7cd6d2f49dfb62014f8903eedb789fb793d3fd07cdeecbbb92",
+  "sourcePlan": "../walk-v07/manifest.json",
+  "pages": [
+    {
+      "id": "N-01-03",
+      "direction": "N",
+      "poses": [
+        1,
+        2,
+        3
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/N-01-03.png",
+      "controlSha256": "dc11a927e500cc9205285400d426947b11808f53a30eecd0a4139c1155f68fd0",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/N-01-03.png",
+      "request": "requests/N-01-03.json",
+      "status": "pending"
+    },
+    {
+      "id": "N-04-06",
+      "direction": "N",
+      "poses": [
+        4,
+        5,
+        6
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/N-04-06.png",
+      "controlSha256": "7911dca15efb7b405c650f9bfa7a05639674160b5b71dea118a9409cd79c22cb",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/N-04-06.png",
+      "request": "requests/N-04-06.json",
+      "status": "pending"
+    },
+    {
+      "id": "N-07-09",
+      "direction": "N",
+      "poses": [
+        7,
+        8,
+        9
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/N-07-09.png",
+      "controlSha256": "71969a98bc9376b2f90369b0e7849bd83b9102742424ef09ed346e6c3c2baaa8",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/N-07-09.png",
+      "request": "requests/N-07-09.json",
+      "status": "pending"
+    },
+    {
+      "id": "N-10-12",
+      "direction": "N",
+      "poses": [
+        10,
+        11,
+        12
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/N-10-12.png",
+      "controlSha256": "2510b31974a4999b23dc5d33f5843b6ff7a4f4d2ce0084bbdcb93e8f7d6c2d10",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/N-10-12.png",
+      "request": "requests/N-10-12.json",
+      "status": "pending"
+    },
+    {
+      "id": "NE-01-03",
+      "direction": "NE",
+      "poses": [
+        1,
+        2,
+        3
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/NE-01-03.png",
+      "controlSha256": "397ffceb592b49661dea18196c659543f120148839676af48728c3ac9101e8f9",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/NE-01-03.png",
+      "request": "requests/NE-01-03.json",
+      "status": "pending"
+    },
+    {
+      "id": "NE-04-06",
+      "direction": "NE",
+      "poses": [
+        4,
+        5,
+        6
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/NE-04-06.png",
+      "controlSha256": "c6f5d49f9510445ad39d70d3ead2e87777350de04915b18f6d2669c8b0474a64",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/NE-04-06.png",
+      "request": "requests/NE-04-06.json",
+      "status": "pending"
+    },
+    {
+      "id": "NE-07-09",
+      "direction": "NE",
+      "poses": [
+        7,
+        8,
+        9
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/NE-07-09.png",
+      "controlSha256": "ba505598d2c7b2b35aac85d64da0de9c194a740034313fee1b54113aefc430f9",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/NE-07-09.png",
+      "request": "requests/NE-07-09.json",
+      "status": "pending"
+    },
+    {
+      "id": "NE-10-12",
+      "direction": "NE",
+      "poses": [
+        10,
+        11,
+        12
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/NE-10-12.png",
+      "controlSha256": "4567202302b30ce8c25d922861721d3bc85b81fe433d06f280a33fc96f106cd2",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/NE-10-12.png",
+      "request": "requests/NE-10-12.json",
+      "status": "pending"
+    },
+    {
+      "id": "E-01-03",
+      "direction": "E",
+      "poses": [
+        1,
+        2,
+        3
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/E-01-03.png",
+      "controlSha256": "acd46b6e38c0ba7434fd11a8372b1b071c8b44c73690cbf12ab741a524f77d69",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/E-01-03.png",
+      "request": "requests/E-01-03.json",
+      "status": "pending"
+    },
+    {
+      "id": "E-04-06",
+      "direction": "E",
+      "poses": [
+        4,
+        5,
+        6
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/E-04-06.png",
+      "controlSha256": "ac3addeefb07438857dac0b87eeab2c97c798d88955f631f96a9e4e5a0eae800",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/E-04-06.png",
+      "request": "requests/E-04-06.json",
+      "status": "pending"
+    },
+    {
+      "id": "E-07-09",
+      "direction": "E",
+      "poses": [
+        7,
+        8,
+        9
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/E-07-09.png",
+      "controlSha256": "5367b4ca36068927381c2ae7c618d8ffc67c9bdc366179a00f05920e43b69404",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/E-07-09.png",
+      "request": "requests/E-07-09.json",
+      "status": "pending"
+    },
+    {
+      "id": "E-10-12",
+      "direction": "E",
+      "poses": [
+        10,
+        11,
+        12
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/E-10-12.png",
+      "controlSha256": "87b96e51b8e14c950318d7608e5d835219766d1f9138603b19249b505e638d44",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/E-10-12.png",
+      "request": "requests/E-10-12.json",
+      "status": "pending"
+    },
+    {
+      "id": "SE-01-03",
+      "direction": "SE",
+      "poses": [
+        1,
+        2,
+        3
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/SE-01-03.png",
+      "controlSha256": "00e8d8227f5d1512f5d7a677901dc60aeb372efcd433aab2e7de312ff2fe5c20",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/SE-01-03.png",
+      "request": "requests/SE-01-03.json",
+      "status": "pending"
+    },
+    {
+      "id": "SE-04-06",
+      "direction": "SE",
+      "poses": [
+        4,
+        5,
+        6
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/SE-04-06.png",
+      "controlSha256": "67e8694e83c657736baa60f2e4f9b9f3d5fc8136552b8b88f42d9203b5c3ae63",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/SE-04-06.png",
+      "request": "requests/SE-04-06.json",
+      "status": "pending"
+    },
+    {
+      "id": "SE-07-09",
+      "direction": "SE",
+      "poses": [
+        7,
+        8,
+        9
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/SE-07-09.png",
+      "controlSha256": "abee35ed57069277ae963466793934d835384c06f0ec12c64a1beaa917e3756a",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/SE-07-09.png",
+      "request": "requests/SE-07-09.json",
+      "status": "pending"
+    },
+    {
+      "id": "SE-10-12",
+      "direction": "SE",
+      "poses": [
+        10,
+        11,
+        12
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/SE-10-12.png",
+      "controlSha256": "24d8a4a880ad3bc0f3194280967358a38060267d8429e48d0152597e42e74ed5",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/SE-10-12.png",
+      "request": "requests/SE-10-12.json",
+      "status": "pending"
+    },
+    {
+      "id": "S-01-03",
+      "direction": "S",
+      "poses": [
+        1,
+        2,
+        3
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/S-01-03.png",
+      "controlSha256": "5fd27b14ed0299dde1cef368210ef2724dc3fe077f4042dbc9e79d2c2806d626",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/S-01-03.png",
+      "request": "requests/S-01-03.json",
+      "status": "pending"
+    },
+    {
+      "id": "S-04-06",
+      "direction": "S",
+      "poses": [
+        4,
+        5,
+        6
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/S-04-06.png",
+      "controlSha256": "372acd639cd05e24a2cbfe385535650a1432d27de4c8f0ba9def2b3075fe4f0a",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/S-04-06.png",
+      "request": "requests/S-04-06.json",
+      "status": "pending"
+    },
+    {
+      "id": "S-07-09",
+      "direction": "S",
+      "poses": [
+        7,
+        8,
+        9
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/S-07-09.png",
+      "controlSha256": "7a1b7e092434f372265b14d7b70893413ed014d29bde31b584e36daba5b2cedf",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/S-07-09.png",
+      "request": "requests/S-07-09.json",
+      "status": "pending"
+    },
+    {
+      "id": "S-10-12",
+      "direction": "S",
+      "poses": [
+        10,
+        11,
+        12
+      ],
+      "control": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/controls/S-10-12.png",
+      "controlSha256": "f282419b770bc0b537899a46be144bba5ed416a55f01957810bfd9dd3bedf04e",
+      "guide": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v10/guides/S-10-12.png",
+      "request": "requests/S-10-12.json",
+      "status": "pending"
+    }
+  ],
+  "sourceDrawingsRequired": 60,
+  "exportFramesRequired": 96,
+  "mirrors": {
+    "W": {
+      "source": "E",
+      "phaseOffset": 6
+    },
+    "NW": {
+      "source": "NE",
+      "phaseOffset": 6
+    },
+    "SW": {
+      "source": "SE",
+      "phaseOffset": 6
+    }
+  },
+  "fps": 12,
+  "cycleMs": 1000,
+  "pivot": [
+    96,
+    156
+  ],
+  "crop": [
+    32,
+    56,
+    128,
+    128
+  ],
+  "state": "Full drawing coverage in progress; numerical and visual QA remain distinct from coverage."
+}
