@@ -1,0 +1,66 @@
+{
+  "numericTargetMatch": true,
+  "sourceHashesMatch": true,
+  "observations": {
+    "LH": {
+      "target": [
+        75.5,
+        150.34314575050763
+      ],
+      "measured": [
+        75.5625,
+        150.3125
+      ],
+      "error": 0.06960899384545048,
+      "method": "Independent raster bottom-edge midpoint within narrow sole ROI; non-white threshold230; source-pixel centers."
+    },
+    "LF": {
+      "target": [
+        116.5,
+        150.34314575050763
+      ],
+      "measured": [
+        116.5625,
+        150.3125
+      ],
+      "error": 0.06960899384545048,
+      "method": "Independent raster bottom-edge midpoint within narrow sole ROI; non-white threshold230; source-pixel centers."
+    },
+    "RH": {
+      "target": [
+        91.953125,
+        161.13908729652601
+      ],
+      "measured": [
+        92,
+        161.0625
+      ],
+      "error": 0.08979353882191998,
+      "method": "Independent raster bottom-edge midpoint within narrow sole ROI; non-white threshold230; source-pixel centers."
+    },
+    "RF": {
+      "target": [
+        100.046875,
+        161.13908729652601
+      ],
+      "measured": [
+        100.125,
+        161.0625
+      ],
+      "error": 0.10940351737564773,
+      "method": "Independent raster bottom-edge midpoint within narrow sole ROI; non-white threshold230; source-pixel centers."
+    }
+  },
+  "nose": {
+    "measured": [
+      143.9375,
+      125.9375
+    ],
+    "target": [
+      144,
+      126
+    ],
+    "error": 0.08838834764831845
+  },
+  "status": "Raster/lineage preflight passes; independent anatomical/appearance review remains a separate requirement; no painting pass."
+}
