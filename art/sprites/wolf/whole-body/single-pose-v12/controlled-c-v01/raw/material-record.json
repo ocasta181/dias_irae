@@ -1,0 +1,109 @@
+{
+  "status": "Authored whole-body geometry with generated material; numerical/visual QA pending, not approved",
+  "tool": "built-in image_gen for material; deterministic whole-canvas protected painting/export",
+  "actual_input": {
+    "prompt": "Asset: ONE whole-canvas MATERIAL PAINT LAYER for the complete E06 wolf in image1. The local authoring system already fixes the entire wolf silhouette and all limb geometry. You supply the painted surface over this ONE complete posed animal; do not produce separate parts or a sheet. Image1 is the fresh complete geometry master with finishing outer contour and a nose pad; it contains no prior failed painting. Preserve its whole square placement, proportions and anatomical shape as the guide for coherent surface features. Extend the matching surface colors approximately3logical pixels beyond its outline as PAINT BLEED, not a new pose or enlarged final animal. The final artist clips this paint to the frozen master. Paint the full square opaquely, with a uniform dark taupe background and no transparency or ground/shadow/scene.\nImage2 is the ORIGINAL wolf coat/species/identity reference; use its rough gray-brown mottled fur, cream muzzle, huge broad skull, tiny squat body, very short legs and small tired eyes. Its standing pose must not replace image1. Image3 is S13's flat gritty game paint and exaggerated proportions only; include no human, helmet or gear. Image4 is original game's dreary paint context only; no environment/people/props.\nPaint one organically coherent furry animal over the master: near hind leg begins at the rear HAUNCH and reaches FORWARD under the belly, bending back at the hock then forward into left-central paw; near foreleg begins at the CHEST and folds back into the separate right-central paw. The two smaller far paws remain at rear-left/front-right on the higher plane. Coat flow, shading and overlaps must reinforce these different attachments. No extra appendage, false foreleg on the haunch, disconnected chest, pasted texture or fused paws.\nFinish all surface details with irregular dry paint and broken dark edges. DO NOT copy long smooth construction curves; model the haunch, chest and neck using coherent fur overlap/value changes rather than diagram arcs. Tiny weary eye, not big cute eyeballs. Nose must coincide with the deliberate black pad already in the master; do not paint another displaced nose. Keep grayscale/taupe dark poor wretched flat2D game medium; no3D/glossy sculpt. Facial and paw details must align with the master; bleed ensures matching material coverage at its boundary and is NOT permission to change anatomical positions.\nUse the same complete square canvas, no crop/re-centering/rotation/zoom. Local crop is128square logical units. Nose edge(112,70). Paw UNDERSIDES: farhind(43.5,94.343146), farfore(84.5,94.343146), nearhind(59.953125,105.139087), nearfore(68.046875,105.139087). All four outlines already exist in image1; paint their actual surfaces, don't redraw them where paws usually belong. No labels, charts, bones or reference colors. ONE full-canvas paint layer only.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/single-pose-v12/controlled-c-v01/master/E-06-clean-master.png",
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/canonical-crop.png",
+      "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png",
+      "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png"
+    ],
+    "transparent_background": false
+  },
+  "sourcePath": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-6e50b704-52d0-425e-9739-e362128e9660.png",
+  "rawSha256": "1c0eeccbe3f3008e8fc0ea8a55e828d5e0f1d97d4247116ff22401ee1e3c1b03",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "master": {
+    "decision": {
+      "commit": "faf5ace",
+      "method": "C: authored whole-body geometry with generated material under protected finishing ink",
+      "confidence": 0.9
+    },
+    "status": "Frozen before material generation; final visual appearance unproved",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "source": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/single-pose-v12/controls/E-06-rough-alpha-v02.png",
+    "sourceSha256": "a1bc9865a9e0efe433db41ae409131f97991ff688f878c773ed48aa941b66450",
+    "alphaSha256": "2b84b3d392e6353c4e017d2a65e89fa3a85032dce9cf59420a5f012202b65a49",
+    "masterPath": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/single-pose-v12/controlled-c-v01/master/E-06-clean-master.png",
+    "masterSha256": "0093728b99f6e8b354e94ddf3ac5c11bd3c3a71cc71feef624a245fa2be392bf",
+    "inkPath": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/single-pose-v12/controlled-c-v01/master/E-06-finishing-ink.png",
+    "inkSha256": "7778075f0e8048e9f60b013d35fa68544a1ded3ef8e6b5b2828568cf3c7270d8",
+    "crop": [
+      32,
+      56,
+      128,
+      128
+    ],
+    "references": [
+      {
+        "path": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/single-pose-v12/controlled-c-v01/master/E-06-clean-master.png",
+        "sha256": "0093728b99f6e8b354e94ddf3ac5c11bd3c3a71cc71feef624a245fa2be392bf"
+      },
+      {
+        "path": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/canonical-crop.png",
+        "sha256": "ce1e63c559fa3e7cd6d2f49dfb62014f8903eedb789fb793d3fd07cdeecbbb92"
+      },
+      {
+        "path": "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png",
+        "sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c"
+      },
+      {
+        "path": "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+        "sha256": "191af0e5abbd484ec225633f530e6ed6dd9ebf01c5367910c09a353c4ca465d9"
+      }
+    ],
+    "operation": "One whole-canvas material layer beneath frozen finishing ink and inside frozen master alpha. No fitting, patching, part selections, per-limb offsets, deformation, later mask revisions or failed-image inputs. Alpha comes from authored geometry, not the generator. Gray filler and internal construction arcs are not copied into final art."
+  },
+  "materialScale": 0.8165869218500797,
+  "final": "final/wolf-E-06-authored-c-v01.png",
+  "finalSha256": "e6e67288ff5f8f0851fe8782ac65d4a9e77ef70753fa11c9bf5ad5d02aebc9c2",
+  "finalAlphaSha256": "2b84b3d392e6353c4e017d2a65e89fa3a85032dce9cf59420a5f012202b65a49",
+  "alphaExactlyPreserved": true,
+  "logicalRegistration": {
+    "cropScale": 0.125,
+    "offset": [
+      32,
+      56
+    ],
+    "fullCanvasPixels": [
+      1536,
+      1536
+    ],
+    "fullCanvasLogical": [
+      192,
+      192
+    ],
+    "logicalPixelScale": 8,
+    "pivot": [
+      768,
+      1248
+    ],
+    "sourceStandingHeight": 512
+  },
+  "operation": "One predetermined whole-canvas RGB material operation beneath protected outer/nose/sole ink with frozen authored alpha. No gray filler, old painting, separate body-part layer, per-limb transform, fitting, texture patch or mask revision.",
+  "references": [
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/single-pose-v12/controlled-c-v01/master/E-06-clean-master.png",
+      "sha256": "0093728b99f6e8b354e94ddf3ac5c11bd3c3a71cc71feef624a245fa2be392bf"
+    },
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/canonical-crop.png",
+      "sha256": "ce1e63c559fa3e7cd6d2f49dfb62014f8903eedb789fb793d3fd07cdeecbbb92"
+    },
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png",
+      "sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c"
+    },
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+      "sha256": "191af0e5abbd484ec225633f530e6ed6dd9ebf01c5367910c09a353c4ca465d9"
+    }
+  ]
+}

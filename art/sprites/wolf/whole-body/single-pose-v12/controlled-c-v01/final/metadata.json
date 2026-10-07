@@ -1,0 +1,24 @@
+{
+  "cropScale": 0.125,
+  "offset": [
+    32,
+    56
+  ],
+  "fullCanvasPixels": [
+    1536,
+    1536
+  ],
+  "fullCanvasLogical": [
+    192,
+    192
+  ],
+  "logicalPixelScale": 8,
+  "pivot": [
+    768,
+    1248
+  ],
+  "sourceStandingHeight": 512,
+  "image": "wolf-E-06-full-canvas-c-v01.png",
+  "pose": "E06",
+  "status": "REJECTED debugging proof: painted RGB leg positions miss controls; mask exposes background-filled near legs. No style approval, no animation cycle, not installed."
+}

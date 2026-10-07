@@ -1,5 +1,7 @@
 # Complete wolf walking study
 
+2026-10-07 coordinate correction: the historical nose-derived page shifts below are a confirmed defect, not a valid future registration policy. They move E04–06 `(-2,+8)` relative to unchanged root/foot targets, and change again at page boundaries. `register-walk-page-v10.mjs` now uses fixed offset `(32,56)` and keeps nose observations diagnostic. A regression fixture fails under the former policy and passes after correction. The archived 96 paintings/exports remain unchanged and rejected; removing shifts cannot repair errors already present in raw drawings. Future work begins with one native spatially controlled whole-body pose in the original style.
+
 2026-10-07 whole-body correction: all 96 frames have been manually compared with their exact approved sticks in `audit/`. All eight cycles fail whole-body motion review. V10's authoring instructions wrongly froze head/spine/coat and changed only the legs. That premise is withdrawn. Coverage remains complete, but the cycle needs coordinated whole-body drawings and measured contacts. Keep the runtime root straight; movement of shoulder/haunch/head/tail/fur must be drawn inside intact sprites. A fresh complete-loop V11 pilot also fails control/whole-body fidelity and remains outside the lab.
 
 2026-10-06 decision at `35a4ccf`, confidence 99%: follow the user's instruction to fill every approved stick frame through the existing original-reference plus exact-pose still drawing method. AniDoc is not selected and no upload to it occurs.

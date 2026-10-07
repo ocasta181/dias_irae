@@ -1,5 +1,15 @@
 # Whole-body wolf replacement
 
+## Current coordinate and appearance authority — 2026-10-07
+
+Decision at `04b7677`, confidence 99%: the latest user correction rejects the changed finish in the single-pose debugging drawings. The original exaggerated v02 wolf, S13 and G15 remain appearance authority. No A/B/C prototype is accepted or installed. The newer instruction supersedes any earlier style-only approval inferred for C. Construction arcs, clipped gray/brown filler and generic anatomy are debugging defects, never a new art direction.
+
+The corrected Astra investigation identifies misplaced painted leg coordinates as the central failure. Visible hip connections are not a success proxy. Verify the actual painted shafts, bends and soles against the approved targets, with uncertainty, plus coherent original-style paint over the entire body.
+
+All future generation uses a predeclared fixed whole-canvas mapping. V10's historic nose fitting shifted E pages by up to eight logical pixels without shifting ground targets; it is a confirmed export defect. The register now retains `(32,56)` and a zero page shift; nose observations are diagnostic. The old rejected 96 PNGs and their original registration records remain unchanged for comparison. Do not rerun their exporter to imply they have been repaired. The historical nose-pinning policy below is superseded.
+
+One correct E06 whole-body sprite comes first. A/B/C semantic-reference routes are stopped. An actual spatially conditioned painting pipeline is the next capability experiment; no further prompt-only variant or material clipped into a mask is justified. A successful still permits a small adjacent-pose test, then twelve distinct whole-body drawings and measured travelling-loop review. Runtime positioning stays straight root travel only.
+
 ## Current whole-body motion correction — 2026-10-07
 
 Decision at `1a99439`, confidence 99%: the user's latest instruction requires manual comparison of every active drawing with its exact approved stick pose, and coordinated movement of the complete animal. The fixed-head/fixed-spine instructions below are historical and superseded for new drawings. The approved paw schedule and straight ground travel remain authoritative. Small shoulder, haunch, spine, neck, head and tail changes belong inside each complete bitmap. Fur landmarks follow those masses; random texture replacement is a defect.

@@ -1,6 +1,10 @@
 # One E06 whole-body pose proof
 
-2026-10-07. **The second candidate passes four-paw position, stance-hold and swing-clearance checks, and independent anatomical ownership review. The complete sprite remains unaccepted.** Nose registration exceeds the predeclared limit and the retained construction curves need a finished treatment. Neither candidate replaces the motion lab wolf; no other pose or sheet was generated.
+2026-10-07. **All A/B/C drawings are rejected debugging artifacts, not an accepted style change or repaired walk.** B passes four-paw endpoint, stance-hold and swing-clearance checks, but this does not establish the full painted leg paths. Its nose misses the limit and its construction arcs/finish are rejected. None replaces the motion lab wolf.
+
+The latest user rejects the changed artistic finish shown in B. Preserve the original exaggerated v02 wolf, S13 and G15. Any earlier C style-only approval is superseded by this correction. The parent opened original/B/C images and confirms C has background-filled near-leg extensions; it is not a valid painted pose even though its alpha matches the authored mask.
+
+`astra-coordinate-reassessment.md` supersedes the earlier investigation's hip-attachment emphasis. Astra saved this report before its run ended on an account usage limit; the parent reviewed it as an investigation artifact, not a completed successful art review. The confirmed additional V10 defect is page-dependent nose fitting, including E04–06 `(-2,+8)`. The fixed-crop register regression test reproduces the failure and verifies the correction without modifying the historical rejected frames.
 
 The requested Astra/max investigation is in `../astra-pose-investigation.md`. It found a feasible numerical plan and concrete handoff/QA defects: copied standing upper body, E-specific occlusion of leg attachments, anonymous incomplete sticks, same-color limb silhouettes and endpoint scoring without anatomical ownership/uncertainty. The first new controls expose all four chains and integrate the near hind and forelegs into one continuous contour. Public stick poses and endpoints are unchanged.
 
@@ -30,8 +34,8 @@ Astra's `topology-v02-astra.md` records visible bend features and uncertainty. E
 
 ## Stop and next method
 
-The existing free-form generation/finishing route is stopped under the predeclared protocol. It now transfers anatomical ownership and all four paw positions, but it does not reliably preserve every protected contour or complete the line finish. No third wording retry, adjacent pose or sheet follows this result.
+The existing free-form generation/finishing route is stopped under the predeclared protocol. B's four paw endpoints transfer, but complete leg-path correspondence is not established, the nose shifts and the finish fails. No third wording retry, adjacent pose or sheet follows this result.
 
 The next method must supply an actual protected whole-cel boundary/paint operation or explicit spatial conditioning, with the same complete-sprite anatomy. A prose request to keep alpha unchanged has not enforced it. Direct whole-cel finishing and spatially conditioned generation are Astra's remaining alternatives; neither is implemented or proven here. Do not revive parts, modify privacy, upload to an unapproved service, warp this candidate or loosen its gate.
 
-`measurements-v02.json` and the independent report are the evidence. This is a materially improved single-pose candidate with an explicit remaining defect, not a production-ready asset or an approved animation.
+`measurements-v02.json` and the independent report are the endpoint evidence. No complete painted sprite passes. After B, C's one-call protected-canvas test also fails: the material image paints standing paws elsewhere and the predetermined mask exposes background RGB as lower legs. `controlled-c-v01/raw/` and `final/` preserve both stages; exact mask correspondence is not painted-pose correspondence. No fitting, repair, new call or lab installation follows C. The next gate is a real spatial-control capability, then one whole-body proof in the original style.

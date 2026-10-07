@@ -26,8 +26,7 @@ if(page.direction==="E")for(let column=0;column<3;column++){
   if(right<0)throw new Error("Profile nose registration landmark missing.");
   noseObservations.push([32+right*128/info.height,56+(Math.min(...ys)+Math.max(...ys))/2*128/info.height]);
 }
-const shift=noseObservations.length?[Math.round(144-noseObservations.reduce((s,p)=>s+p[0],0)/3),Math.round(126-noseObservations.reduce((s,p)=>s+p[1],0)/3)]:[0,0];
-if(shift.some(value=>Math.abs(value)>8))throw new Error("Page registration exceeds the bounded whole-page correction; inspect the drawing.");
+const shift=[0,0];
 for(let column=0; column<3; column++) {
   const side=info.height, rgba=Buffer.alloc(side*side*4), border=Math.ceil(side*2/128);
   let occupied=0, residualMarks=0;
@@ -47,7 +46,7 @@ for(let column=0; column<3; column++) {
   await writeFile(new URL("frames/"+name+".png",root),canvas);
   frames.push({id:name,pose:page.poses[column],image:"frames/"+name+".png",sha256:createHash("sha256").update(canvas).digest("hex"),rawCell:[column*side,0,side,side],registration:{scale:128/side,offset:[32+shift[0],56+shift[1]],pageShift:shift},residualMarkerPixels:residualMarks,quality:"candidate; actual pose/contact measurements pending"});
 }
-const record={tool:"built-in image_gen",actual_input:request,originalPath,rawSha256:createHash("sha256").update(bytes).digest("hex"),dimensions:[info.width,info.height],frames,failedArtInputs:false,noseObservations,pageShift:shift,registration:"One uniform page/cell scale and one shared page translation from measured profile nose tips to canonical (144,126); no per-pose fitting, silhouette scaling or runtime parts. Other views retain the fixed crop."};
+const record={tool:"built-in image_gen",actual_input:request,originalPath,rawSha256:createHash("sha256").update(bytes).digest("hex"),dimensions:[info.width,info.height],frames,failedArtInputs:false,noseObservations,pageShift:shift,registration:"Fixed whole-cell scale 128/sourceSide and crop offset (32,56). Nose observations are diagnostic only; no drawing-derived translation, fitting, silhouette scaling or runtime parts."};
 await writeFile(new URL("raw/"+id+variant+"-record.json",root),JSON.stringify(record,null,2)+"\n");
 page.status="drawn candidate";page.record="raw/"+id+variant+"-record.json";page.frames=frames;
 await writeFile(new URL("manifest.json",root),JSON.stringify(manifest,null,2)+"\n");
