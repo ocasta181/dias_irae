@@ -1,0 +1,53 @@
+{
+  "status": "candidate; topology-first and actual pixel QA pending; not in motion lab",
+  "tool": "built-in image_gen",
+  "actual_input": {
+    "prompt": "Use case: precise-object-edit / interior style transfer. EDIT IMAGE1 IN PLACE. Image1 is the complete VERIFIED E06 whole-wolf RGBA cel and the actual edit target. It already has the correct anatomy, posture, four paw positions, complete alpha silhouette, internal haunch/chest connection lines, perspective, scale and square registration. This is NOT a request to create or compose a new wolf. ONLY finish the INTERIOR surface of this exact cel: replace flat gray fill with the gritty flat hand-painted wolf coat and add small weary facial detail. Keep its alpha boundary and dark contour/attachment line locations unchanged. Do not add fur beyond the boundary, grow/reposition paws, replace the shapes, change the pose or alter the canvas margins. Preserve the exact flat underside edges of all four paws.\nImage2 is the ORIGINAL wolf material/identity reference. Use its gray-brown coat patches, cream muzzle, tiny tired eyes, rough flat painted grain and species traits; its standing pose is NOT geometry authority. Image3 is the original S13 art-medium/proportion reference only; include no human or equipment. Image4 is original game paint context only; include no environment or other characters. No previous failed painted pose is provided. Keep the existing huge head, tiny compressed body and short thick legs of image1 while applying the original gritty matte surface. Do not turn the cel into a different standing wolf. Flat2D game drawing, no3D or glossy sculpted lighting.\nThis existing pose has two different near limbs: left-central low paw comes from the HAUNCH, through forward stifle/back hock/forward toes; right-central low paw comes from the CHEST through a backward foreleg. Keep those exact paths and the internal anatomical creases visible under the coat. Two smaller far paws remain visible behind, both higher. No painted-part kit, extra leg, changed occlusion, fused paws or lost soles.\nThe edit target's full canvas is128×128logical units, shown at1024square pixels. Preserve it exactly; output true transparency with the same whole-square scale and padding. Nose edge(112,70). Paw underside midpoints: LH farhind(43.5,94.343146); LF farfore(84.5,94.343146); RH nearhind(59.953125,105.139087); RF nearfore(68.046875,105.139087). These points already exist on the target; KEEP them rather than redrawing where a paw usually belongs. Do not stretch/crop/re-center. No background/shadow/labels/guide marks. Finish one complete existing cel only, no sheet, duplicates or additional pose.",
+    "referenced_image_paths": [
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/single-pose-v12/controls/E-06-rough-alpha-v02.png",
+      "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/canonical-crop.png",
+      "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png",
+      "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png"
+    ],
+    "transparent_background": true
+  },
+  "sourcePath": "/Users/ocasta/.codex/generated_images/01a10b9b-d97e-7ed0-834a-6054c83af53f/exec-944fb42e-bb30-46e8-a359-b2d64818f2a3.png",
+  "rawSha256": "23ad25881fc9fbc65180c035716a6db2305fcffff3a67a10d4a3949508bc0602",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "transparency": {
+    "transparentPixels": 1282501,
+    "occupiedPixels": 275648,
+    "realAlphaPresent": true
+  },
+  "registration": {
+    "scale": 0.10207336523125997,
+    "offset": [
+      32,
+      56
+    ],
+    "policy": "One fixed whole-square scale and placement; no fit, shift, part assembly, retouching or pixel pose correction."
+  },
+  "frame": "frames/E-06-v02.png",
+  "frameSha256": "7ba93cfdb99b65be14ec559734b30f8f93ceb0fdd36f8e3492437f7b1cc500dd",
+  "references": [
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/single-pose-v12/controls/E-06-rough-alpha-v02.png",
+      "sha256": "a1bc9865a9e0efe433db41ae409131f97991ff688f878c773ed48aa941b66450"
+    },
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/sprites/wolf/whole-body/walk-v07/canonical-crop.png",
+      "sha256": "ce1e63c559fa3e7cd6d2f49dfb62014f8903eedb789fb793d3fd07cdeecbbb92"
+    },
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/concepts/images/s13-guarin-isometric-v02.png",
+      "sha256": "02b9e869ba964d9c82e45f1aa4627d170b78cda1219c210bf9b425244c392c5c"
+    },
+    {
+      "path": "/Users/ocasta/Code/Dias Irae/art/concepts/gameplay/images/g15-s13-builtin-night-courtyard-v01.png",
+      "sha256": "191af0e5abbd484ec225633f530e6ed6dd9ebf01c5367910c09a353c4ca465d9"
+    }
+  ]
+}

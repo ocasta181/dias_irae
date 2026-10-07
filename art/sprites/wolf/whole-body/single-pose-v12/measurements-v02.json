@@ -1,0 +1,558 @@
+{
+  "sourceSha256": "23ad25881fc9fbc65180c035716a6db2305fcffff3a67a10d4a3949508bc0602",
+  "registration": {
+    "scale": 0.10207336523125997,
+    "offset": [
+      32,
+      56
+    ],
+    "fitted": false
+  },
+  "topology": "Independent categorical review required; this code does not identify limbs.",
+  "observations": {
+    "LH": {
+      "region": [
+        355,
+        860,
+        125,
+        95
+      ],
+      "seed": [
+        420,
+        900
+      ],
+      "role": "far hind: rear-haunch distal emergence",
+      "samples": [
+        {
+          "threshold": 192,
+          "bandRawPx": 0,
+          "raw": [
+            427,
+            922.5
+          ],
+          "logical": [
+            75.58532695374801,
+            150.16267942583733
+          ]
+        },
+        {
+          "threshold": 192,
+          "bandRawPx": 4,
+          "raw": [
+            427,
+            922.5
+          ],
+          "logical": [
+            75.58532695374801,
+            150.16267942583733
+          ]
+        },
+        {
+          "threshold": 192,
+          "bandRawPx": 8,
+          "raw": [
+            426.5,
+            922.5
+          ],
+          "logical": [
+            75.53429027113238,
+            150.16267942583733
+          ]
+        },
+        {
+          "threshold": 192,
+          "bandRawPx": 16,
+          "raw": [
+            424.5,
+            922.5
+          ],
+          "logical": [
+            75.33014354066987,
+            150.16267942583733
+          ]
+        },
+        {
+          "threshold": 128,
+          "bandRawPx": 0,
+          "raw": [
+            427.5,
+            923.5
+          ],
+          "logical": [
+            75.63636363636363,
+            150.2647527910686
+          ]
+        },
+        {
+          "threshold": 128,
+          "bandRawPx": 4,
+          "raw": [
+            426.5,
+            923.5
+          ],
+          "logical": [
+            75.53429027113238,
+            150.2647527910686
+          ]
+        },
+        {
+          "threshold": 128,
+          "bandRawPx": 8,
+          "raw": [
+            426.5,
+            923.5
+          ],
+          "logical": [
+            75.53429027113238,
+            150.2647527910686
+          ]
+        },
+        {
+          "threshold": 128,
+          "bandRawPx": 16,
+          "raw": [
+            425,
+            923.5
+          ],
+          "logical": [
+            75.3811802232855,
+            150.2647527910686
+          ]
+        }
+      ],
+      "measured": [
+        75.58532695374801,
+        150.16267942583733
+      ],
+      "target": [
+        75.5,
+        150.34314575050763
+      ],
+      "error": 0.19962160047430497,
+      "uncertainty": 0.40829346092503294,
+      "verticalUncertainty": 0.25518341307815284,
+      "uncertaintyMethod": "Maximum alpha/connected-sole-band sensitivity plus half-pixel sampling and one raw-pixel annotation allowance.",
+      "holdError": 1.5955656190266652,
+      "clearance": null,
+      "positionalPass": true,
+      "clearancePass": null
+    },
+    "LF": {
+      "region": [
+        765,
+        860,
+        120,
+        95
+      ],
+      "seed": [
+        828,
+        900
+      ],
+      "role": "far fore: behind chest/ruff",
+      "samples": [
+        {
+          "threshold": 192,
+          "bandRawPx": 0,
+          "raw": [
+            828,
+            922.5
+          ],
+          "logical": [
+            116.51674641148325,
+            150.16267942583733
+          ]
+        },
+        {
+          "threshold": 192,
+          "bandRawPx": 4,
+          "raw": [
+            827.5,
+            922.5
+          ],
+          "logical": [
+            116.46570972886762,
+            150.16267942583733
+          ]
+        },
+        {
+          "threshold": 192,
+          "bandRawPx": 8,
+          "raw": [
+            828,
+            922.5
+          ],
+          "logical": [
+            116.51674641148325,
+            150.16267942583733
+          ]
+        },
+        {
+          "threshold": 192,
+          "bandRawPx": 16,
+          "raw": [
+            827.5,
+            922.5
+          ],
+          "logical": [
+            116.46570972886762,
+            150.16267942583733
+          ]
+        },
+        {
+          "threshold": 128,
+          "bandRawPx": 0,
+          "raw": [
+            827.5,
+            923.5
+          ],
+          "logical": [
+            116.46570972886762,
+            150.2647527910686
+          ]
+        },
+        {
+          "threshold": 128,
+          "bandRawPx": 4,
+          "raw": [
+            827.5,
+            923.5
+          ],
+          "logical": [
+            116.46570972886762,
+            150.2647527910686
+          ]
+        },
+        {
+          "threshold": 128,
+          "bandRawPx": 8,
+          "raw": [
+            828,
+            923.5
+          ],
+          "logical": [
+            116.51674641148325,
+            150.2647527910686
+          ]
+        },
+        {
+          "threshold": 128,
+          "bandRawPx": 16,
+          "raw": [
+            827.5,
+            923.5
+          ],
+          "logical": [
+            116.46570972886762,
+            150.2647527910686
+          ]
+        }
+      ],
+      "measured": [
+        116.51674641148325,
+        150.16267942583733
+      ],
+      "target": [
+        116.5,
+        150.34314575050763
+      ],
+      "error": 0.18124165260109135,
+      "uncertainty": 0.2672315395215236,
+      "verticalUncertainty": 0.25518341307815284,
+      "uncertaintyMethod": "Maximum alpha/connected-sole-band sensitivity plus half-pixel sampling and one raw-pixel annotation allowance.",
+      "holdError": 1.5274448504241898,
+      "clearance": null,
+      "positionalPass": true,
+      "clearancePass": null
+    },
+    "RH": {
+      "region": [
+        510,
+        960,
+        125,
+        85
+      ],
+      "seed": [
+        578,
+        1005
+      ],
+      "role": "near hind: traced from haunch through forward stifle/backward hock",
+      "samples": [
+        {
+          "threshold": 192,
+          "bandRawPx": 0,
+          "raw": [
+            583,
+            1026.5
+          ],
+          "logical": [
+            91.50877192982456,
+            160.77830940988835
+          ]
+        },
+        {
+          "threshold": 192,
+          "bandRawPx": 4,
+          "raw": [
+            582.5,
+            1025.5
+          ],
+          "logical": [
+            91.45773524720893,
+            160.67623604465712
+          ]
+        },
+        {
+          "threshold": 192,
+          "bandRawPx": 8,
+          "raw": [
+            582,
+            1025.5
+          ],
+          "logical": [
+            91.4066985645933,
+            160.67623604465712
+          ]
+        },
+        {
+          "threshold": 192,
+          "bandRawPx": 16,
+          "raw": [
+            580.5,
+            1025.5
+          ],
+          "logical": [
+            91.25358851674642,
+            160.67623604465712
+          ]
+        },
+        {
+          "threshold": 128,
+          "bandRawPx": 0,
+          "raw": [
+            584,
+            1026.5
+          ],
+          "logical": [
+            91.61084529505582,
+            160.77830940988835
+          ]
+        },
+        {
+          "threshold": 128,
+          "bandRawPx": 4,
+          "raw": [
+            582,
+            1026.5
+          ],
+          "logical": [
+            91.4066985645933,
+            160.77830940988835
+          ]
+        },
+        {
+          "threshold": 128,
+          "bandRawPx": 8,
+          "raw": [
+            582,
+            1026.5
+          ],
+          "logical": [
+            91.4066985645933,
+            160.77830940988835
+          ]
+        },
+        {
+          "threshold": 128,
+          "bandRawPx": 16,
+          "raw": [
+            580,
+            1026.5
+          ],
+          "logical": [
+            91.20255183413079,
+            160.77830940988835
+          ]
+        }
+      ],
+      "measured": [
+        91.50877192982456,
+        160.77830940988835
+      ],
+      "target": [
+        91.953125,
+        161.13908729652601
+      ],
+      "error": 0.5723725486613389,
+      "uncertainty": 0.45933014354066437,
+      "verticalUncertainty": 0.2551834130781244,
+      "uncertaintyMethod": "Maximum alpha/connected-sole-band sensitivity plus half-pixel sampling and one raw-pixel annotation allowance.",
+      "holdError": null,
+      "clearance": 0.8785448396040181,
+      "positionalPass": true,
+      "clearancePass": true
+    },
+    "RF": {
+      "region": [
+        625,
+        960,
+        110,
+        85
+      ],
+      "seed": [
+        675,
+        1005
+      ],
+      "role": "near fore: traced from chest through backward foreleg",
+      "samples": [
+        {
+          "threshold": 192,
+          "bandRawPx": 0,
+          "raw": [
+            671.5,
+            1026.5
+          ],
+          "logical": [
+            100.54226475279107,
+            160.77830940988835
+          ]
+        },
+        {
+          "threshold": 192,
+          "bandRawPx": 4,
+          "raw": [
+            672,
+            1026.5
+          ],
+          "logical": [
+            100.5933014354067,
+            160.77830940988835
+          ]
+        },
+        {
+          "threshold": 192,
+          "bandRawPx": 8,
+          "raw": [
+            673,
+            1026.5
+          ],
+          "logical": [
+            100.69537480063796,
+            160.77830940988835
+          ]
+        },
+        {
+          "threshold": 192,
+          "bandRawPx": 16,
+          "raw": [
+            673,
+            1026.5
+          ],
+          "logical": [
+            100.69537480063796,
+            160.77830940988835
+          ]
+        },
+        {
+          "threshold": 128,
+          "bandRawPx": 0,
+          "raw": [
+            673,
+            1026.5
+          ],
+          "logical": [
+            100.69537480063796,
+            160.77830940988835
+          ]
+        },
+        {
+          "threshold": 128,
+          "bandRawPx": 4,
+          "raw": [
+            672,
+            1026.5
+          ],
+          "logical": [
+            100.5933014354067,
+            160.77830940988835
+          ]
+        },
+        {
+          "threshold": 128,
+          "bandRawPx": 8,
+          "raw": [
+            672.5,
+            1026.5
+          ],
+          "logical": [
+            100.64433811802233,
+            160.77830940988835
+          ]
+        },
+        {
+          "threshold": 128,
+          "bandRawPx": 16,
+          "raw": [
+            673,
+            1026.5
+          ],
+          "logical": [
+            100.69537480063796,
+            160.77830940988835
+          ]
+        }
+      ],
+      "measured": [
+        100.54226475279107,
+        160.77830940988835
+      ],
+      "target": [
+        100.046875,
+        161.13908729652601
+      ],
+      "error": 0.6128390413943419,
+      "uncertainty": 0.3062200956937843,
+      "verticalUncertainty": 0.15311004784688995,
+      "uncertaintyMethod": "Maximum alpha/connected-sole-band sensitivity plus half-pixel sampling and one raw-pixel annotation allowance.",
+      "holdError": null,
+      "clearance": 0.8785448396040181,
+      "positionalPass": true,
+      "clearancePass": true
+    }
+  },
+  "pawsPass": true,
+  "nose": {
+    "roi": [
+      1030,
+      640,
+      110,
+      120
+    ],
+    "raw": [
+      1083.5,
+      678
+    ],
+    "logical": [
+      142.5964912280702,
+      125.20574162679426
+    ],
+    "independentEnvelope": {
+      "x": [
+        1083,
+        1085
+      ],
+      "y": [
+        674,
+        682
+      ],
+      "source": "Astra independent raw-nose inspection; bounds include pixel-center sampling"
+    },
+    "target": [
+      144,
+      126
+    ],
+    "error": 1.6126633983232022,
+    "uncertainty": 0.48709429003215465,
+    "pass": false
+  },
+  "status": "Measurements only; style/topology and visible bend review remain separate. No automatic complete-pose acceptance."
+}
