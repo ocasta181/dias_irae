@@ -1,0 +1,254 @@
+{
+  "decision": {
+    "commit": "4cf5e4e",
+    "confidence": 0.9,
+    "method": "native SDXL Canny spatial input plus separate original wolf IP-Adapter Plus input"
+  },
+  "status": "inputs frozen for one E06 proof; not artwork or a quality pass",
+  "size": [
+    1024,
+    1024
+  ],
+  "logicalMap": {
+    "scale": 0.125,
+    "offset": [
+      32,
+      56
+    ]
+  },
+  "sources": {
+    "single-pose-v12/controls/E-06-rough-alpha-v02.png": "a1bc9865a9e0efe433db41ae409131f97991ff688f878c773ed48aa941b66450",
+    "walk-v07/canonical-crop.png": "ce1e63c559fa3e7cd6d2f49dfb62014f8903eedb789fb793d3fd07cdeecbbb92"
+  },
+  "inputs": {
+    "control-E06.png": "871027a8fd87835b0b09d518f57c28b8377736a628144c7391c2d7973154bbe6",
+    "appearance-wolf.png": "94b615b764f770f4de425bc192346b2d54d8f37a12017e7ec032dac81a83e57b",
+    "appearance-processed.png": "eb54460799c3a9f4dcdc9cf9542708c7461e7c31f5fdb8c1cecefed1c7a3edf3"
+  },
+  "control": "Single Canny alpha-boundary edge: white on black, RGB, no colors/labels/long construction arcs. Whole authored control, not a failed painting.",
+  "appearance": "Only original wolf encoded. S13/G15 inspected as inherited style authority; not averaged with animal encoding to avoid introducing human gear/environment.",
+  "feet": {
+    "LH": {
+      "planted": true,
+      "lift": 0,
+      "points": [
+        [
+          80,
+          134.78679656440357
+        ],
+        [
+          83.66855794837755,
+          142.8658337155558
+        ],
+        [
+          71.5,
+          146.10050506338834
+        ],
+        [
+          75.5,
+          150.34314575050763
+        ]
+      ]
+    },
+    "LF": {
+      "planted": true,
+      "lift": 0,
+      "points": [
+        [
+          112,
+          134.78679656440357
+        ],
+        [
+          106.2379836643243,
+          141.41247267131547
+        ],
+        [
+          115.5,
+          146.8076118445749
+        ],
+        [
+          116.5,
+          150.34314575050763
+        ]
+      ]
+    },
+    "RH": {
+      "planted": false,
+      "lift": 0.7322330470336347,
+      "points": [
+        [
+          80,
+          146.10050506338834
+        ],
+        [
+          91.48980824778545,
+          148.54839256377733
+        ],
+        [
+          87.292138427022,
+          157.24838015215502
+        ],
+        [
+          91.953125,
+          161.13908729652601
+        ]
+      ]
+    },
+    "RF": {
+      "planted": false,
+      "lift": 0.7322330470336297,
+      "points": [
+        [
+          112,
+          146.10050506338834
+        ],
+        [
+          102.20623143887721,
+          149.64183937203265
+        ],
+        [
+          98.4806928436505,
+          157.70782852946016
+        ],
+        [
+          100.046875,
+          161.13908729652601
+        ]
+      ]
+    }
+  },
+  "nose": [
+    144,
+    126
+  ],
+  "nearShaftSamples": [
+    {
+      "limb": "RH",
+      "segment": 1,
+      "fraction": 0.25,
+      "point": [
+        90.44039079259458,
+        150.72338946087174
+      ]
+    },
+    {
+      "limb": "RH",
+      "segment": 1,
+      "fraction": 0.5,
+      "point": [
+        89.39097333740372,
+        152.89838635796616
+      ]
+    },
+    {
+      "limb": "RH",
+      "segment": 1,
+      "fraction": 0.75,
+      "point": [
+        88.34155588221286,
+        155.0733832550606
+      ]
+    },
+    {
+      "limb": "RH",
+      "segment": 2,
+      "fraction": 0.25,
+      "point": [
+        88.4573850702665,
+        158.22105693824778
+      ]
+    },
+    {
+      "limb": "RH",
+      "segment": 2,
+      "fraction": 0.5,
+      "point": [
+        89.622631713511,
+        159.19373372434052
+      ]
+    },
+    {
+      "limb": "RH",
+      "segment": 2,
+      "fraction": 0.75,
+      "point": [
+        90.7878783567555,
+        160.16641051043325
+      ]
+    },
+    {
+      "limb": "RF",
+      "segment": 1,
+      "fraction": 0.25,
+      "point": [
+        101.27484679007054,
+        151.6583366613895
+      ]
+    },
+    {
+      "limb": "RF",
+      "segment": 1,
+      "fraction": 0.5,
+      "point": [
+        100.34346214126386,
+        153.6748339507464
+      ]
+    },
+    {
+      "limb": "RF",
+      "segment": 1,
+      "fraction": 0.75,
+      "point": [
+        99.41207749245717,
+        155.6913312401033
+      ]
+    },
+    {
+      "limb": "RF",
+      "segment": 2,
+      "fraction": 0.25,
+      "point": [
+        98.87223838273788,
+        158.56564322122662
+      ]
+    },
+    {
+      "limb": "RF",
+      "segment": 2,
+      "fraction": 0.5,
+      "point": [
+        99.26378392182525,
+        159.4234579129931
+      ]
+    },
+    {
+      "limb": "RF",
+      "segment": 2,
+      "fraction": 0.75,
+      "point": [
+        99.65532946091263,
+        160.28127260475955
+      ]
+    }
+  ],
+  "gates": {
+    "staticErrorPlusUncertainty": 1.5,
+    "stanceHoldErrorPlusUncertainty": 3,
+    "nearGroundY": 161.65685424949237,
+    "rgb": "Each actual painted leg must occupy target corridors; authored alpha cannot supply missing paint.",
+    "style": "Original huge head, squat body, short thick legs, tiny weary eyes, flat gritty jagged gray/brown/cream paint. No clean comic ink or construction arcs.",
+    "motion": "A still proves no walk. One E06 first, adjacent frames only after full spatial/style pass, then twelve distinct poses and manual travelling-loop review."
+  },
+  "prompt": "single full body 2D game wolf sprite, huge broad head, tiny squat body, short thick legs, small tired eyes, muddy gray brown cream fur, gritty dry painted flecks, rough broken edges, flat dreary gouache, right facing elevated orthographic view, four paws in guided walking pose, isolated plain white background",
+  "negative_prompt": "photograph, realistic anatomy, glossy 3D render, smooth sculpture, clean comic ink, anime, long thin legs, large eyes, tall lean body, diagram, construction lines, skeleton, labels, extra limbs, missing paws, fused paws, background scene, floor shadow",
+  "settings": {
+    "seed": 0,
+    "steps": 50,
+    "guidance": 5.0,
+    "controlStrength": 1.0,
+    "controlStart": 0.0,
+    "controlEnd": 1.0,
+    "appearanceStrength": 0.6
+  },
+  "settingsReason": "Control strength1 is the native API default, chosen for precise geometry instead of the checkpoint example's generalization-oriented0.5. Appearance0.6 is a bounded experimental compromise. No parameter/seed sweep."
+}
